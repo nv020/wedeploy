@@ -4,17 +4,17 @@ import { ArrowRight } from "lucide-react";
 const diensten = [
   {
     title: "Detachering & Detavast",
-    desc: "Flexibele plaatsingen met de ruimte om door te groeien naar een vast dienstverband. Geschikt voor organisaties die zekerheid willen zonder risico.",
+    desc: "Flexibel starten, met ruimte om door te groeien. Zekerheid voor organisaties, bewegingsvrijheid voor professionals.",
     href: "#diensten",
   },
   {
     title: "Recruitment",
-    desc: "Wij zoeken de kandidaat die écht bij jouw organisatie past — niet alleen op papier, maar ook op cultuur en ambitie.",
+    desc: "De kandidaat die écht past — niet alleen op papier, maar op cultuur en ambitie.",
     href: "#diensten",
   },
   {
     title: "Interim",
-    desc: "Ervaren professionals die snel inzetbaar zijn en direct impact maken. Ideaal voor projecten, pieken of tijdelijke vervanging.",
+    desc: "Ervaren professionals, direct inzetbaar. Voor projecten, pieken of tijdelijke vervanging.",
     href: "#diensten",
   },
 ];
@@ -31,15 +31,15 @@ const itemVariants = {
 
 export function DienstenOverview() {
   return (
-    <section id="diensten" className="py-24 bg-card">
+    <section id="diensten" className="py-28 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-14">
-          <span className="text-sm font-semibold tracking-widest uppercase text-accent">Onze diensten</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-bold text-primary">Hoe wij helpen</h2>
+          <span className="text-xs font-semibold tracking-widest uppercase text-accent">Onze diensten</span>
+          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Hoe wij helpen</h2>
         </div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-5"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -49,10 +49,13 @@ export function DienstenOverview() {
             <motion.div
               key={d.title}
               variants={itemVariants}
-              className="group relative flex flex-col bg-background rounded-2xl border border-border/60 p-8 hover:border-accent/40 hover:shadow-lg transition-all duration-300"
+              whileHover={{ y: -5, boxShadow: "0 16px 40px hsl(0 0% 0% / 0.08)" }}
+              transition={{ duration: 0.2 }}
+              className="group relative flex flex-col bg-background rounded-2xl border border-border/60 p-9 hover:border-accent/30 transition-colors duration-300"
             >
-              <h3 className="text-xl font-semibold text-primary mb-4 leading-snug">{d.title}</h3>
-              <p className="text-muted-foreground leading-relaxed flex-1">{d.desc}</p>
+              <div className="w-2 h-2 rounded-full bg-accent mb-6 opacity-70" />
+              <h3 className="text-xl font-bold text-primary mb-3 leading-snug">{d.title}</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm flex-1">{d.desc}</p>
               <a
                 href={d.href}
                 className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-accent group-hover:gap-3 transition-all duration-200"
