@@ -152,8 +152,10 @@ export function Hero() {
           </div>
         </motion.div>
 
-        <div className="hidden lg:flex items-center justify-center">
-          <WVisual />
+        <div className="flex items-center justify-center mt-8 lg:mt-0">
+          <div className="w-full max-w-[300px] sm:max-w-[380px] lg:max-w-none opacity-90">
+            <WVisual />
+          </div>
         </div>
       </div>
     </section>
