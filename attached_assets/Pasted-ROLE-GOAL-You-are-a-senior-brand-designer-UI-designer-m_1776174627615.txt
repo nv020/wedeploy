@@ -1,0 +1,218 @@
+ROLE & GOAL
+
+You are a senior brand designer, UI designer, motion designer and front-end developer.
+
+You are refining an existing premium homepage for a Dutch staffing company called Wedeploy.
+
+The current site is good but needs final upgrades to become:
+- distinctive
+- visually strong
+- modern
+- slightly bold
+- premium
+- not boring
+
+This is a boutique staffing brand, not a generic recruitment site.
+
+---
+
+1. HERO W ANIMATION (FIX + UPGRADE)
+
+Fix the current W shape.
+
+Requirements:
+- must clearly form a correct W (not mirrored)
+- start top-left → down → up → down → end top-right
+- symmetrical spacing
+- middle peak slightly higher or equal
+
+Design:
+- 5–7 nodes
+- thin connecting lines
+- consistent spacing
+- clean geometry
+
+Animation:
+- lines draw from left to right (connection building)
+- nodes softly pulse
+- very subtle floating motion
+
+Enhancement:
+- add slight glow on active nodes
+- add depth with very soft shadow or blur layer
+
+Keep it:
+- minimal
+- premium
+- slightly “tech/network”
+- NOT chaotic
+
+---
+
+2. HERO POLISH
+
+- keep headline strong
+- shorten subheadline to max 2 lines
+- improve CTA buttons:
+  - subtle gradient or hover glow
+  - slight elevation on hover
+
+Add:
+- soft layered background shapes
+- very subtle gradient (almost invisible)
+
+---
+
+3. REDUCE TEXT (IMPORTANT)
+
+Reduce ALL text by 30–40%.
+
+Rules:
+- max 2–3 lines per block
+- remove repetition
+- keep meaning, remove fluff
+- more whitespace
+
+---
+
+4. USP SECTION (MAKE IT PREMIUM)
+
+Redesign USP cards:
+
+- larger cards
+- more padding
+- clearer hierarchy
+- short title + 1 short sentence only
+
+Add:
+- subtle color variation per card
+- soft hover lift
+- refined shadow
+
+Make them feel like:
+high-end SaaS feature cards
+
+---
+
+5. VISUAL RHYTHM
+
+Improve flow across page:
+
+- alternate backgrounds:
+  white / light grey / soft blue
+- introduce 1 darker section mid-page
+- increase vertical spacing
+
+Goal:
+more dynamic, less flat
+
+---
+
+6. TYPOGRAPHY
+
+- increase headline size
+- reduce body density
+- increase line-height
+- add breathing space
+
+Make it:
+premium, editorial, calm
+
+---
+
+7. HOW WE WORK (SIMPLIFY)
+
+Each step:
+- title
+- 1 short line
+
+Add:
+- vertical timeline or numbered flow
+- subtle connectors
+
+---
+
+8. SPLIT SECTION (KANDIDATEN / OPDRACHTGEVERS)
+
+- increase contrast between both sides
+- one side slightly darker
+- stronger CTA styling
+- cleaner bullets
+
+---
+
+9. VACANCY CARDS
+
+Upgrade:
+- better spacing
+- stronger typography
+- clearer tags (type/location)
+- hover interaction
+
+---
+
+10. FINAL CTA (MAKE IT POP)
+
+- stronger gradient background
+- better contrast
+- more visual presence
+
+Still:
+- calm tone
+- not pushy
+
+---
+
+11. MICRO INTERACTIONS
+
+Add:
+- button hover (lift + glow)
+- card hover (elevation)
+- smooth transitions (200ms)
+- subtle scroll fade-ins
+
+---
+
+12. DESIGN BALANCE
+
+Target:
+- 80% calm
+- 20% visual impact
+
+Avoid:
+- clutter
+- over-animation
+- generic look
+
+---
+
+13. KEEP BRAND FEEL
+
+The site must feel:
+- human
+- sharp
+- modern
+- trustworthy
+- slightly distinctive
+
+---
+
+FINAL CHECK
+
+The homepage must feel like:
+- a real premium agency
+- not a template
+- not generic
+- not boring
+
+---
+
+DELIVERABLE
+
+Refine existing homepage code:
+- improved design
+- improved animation
+- shorter copy
+- better UX
+
+Do not rebuild from scratch unnecessarily.
