@@ -18,12 +18,13 @@ const opdrachtgeverItems = [
 
 const sideVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 export function SplitSection() {
   return (
     <section id="kandidaten" className="py-24 bg-card">
+      <span id="opdrachtgevers" className="sr-only" />
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-14 text-center">
           <span className="text-sm font-semibold tracking-widest uppercase text-accent">Voor iedereen</span>

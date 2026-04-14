@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function TrustIntro() {
   return (
-    <section id="over ons" className="py-24 bg-card text-center">
+    <section id="over-ons" className="py-24 bg-card text-center">
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

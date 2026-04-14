@@ -1,7 +1,13 @@
 import { Linkedin } from "lucide-react";
 
 const navLinks = [
-  "Home", "Diensten", "Kandidaten", "Opdrachtgevers", "Vacatures", "Over ons", "Contact"
+  { label: "Home", href: "#home" },
+  { label: "Diensten", href: "#diensten" },
+  { label: "Kandidaten", href: "#kandidaten" },
+  { label: "Opdrachtgevers", href: "#opdrachtgevers" },
+  { label: "Vacatures", href: "#vacatures" },
+  { label: "Over ons", href: "#over-ons" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Footer() {
@@ -10,10 +16,10 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-1 font-bold text-xl tracking-tight mb-4">
+            <a href="#home" className="flex items-center gap-0.5 font-bold text-xl tracking-tight mb-4">
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
-            </div>
+            </a>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
               Wij verbinden professionals en organisaties met zorg, niet met volume.
             </p>
@@ -23,12 +29,12 @@ export function Footer() {
             <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wide">Navigatie</h4>
             <ul className="space-y-3">
               {navLinks.map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={link.href}
                     className="text-sm text-white/60 hover:text-white transition-colors duration-200"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
