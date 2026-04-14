@@ -49,7 +49,7 @@ export function SplitSection() {
             <h3 className="text-2xl font-bold text-primary mb-7 leading-snug">
               Jouw volgende stap,<br />op jouw manier.
             </h3>
-            <ul className="space-y-3.5 mb-9">
+            <ul className="space-y-3.5 mb-6">
               {kandidaatItems.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
@@ -57,15 +57,29 @@ export function SplitSection() {
                 </li>
               ))}
             </ul>
-            <motion.a
-              href="#vacatures"
-              whileHover={{ y: -2, boxShadow: "0 8px 24px hsl(220 50% 18% / 0.15)" }}
-              whileTap={{ y: 0 }}
-              transition={{ duration: 0.2 }}
-              className="inline-flex items-center gap-2 rounded-full border-2 border-primary text-primary px-7 py-3 text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-            >
-              Bekijk vacatures <ArrowRight className="w-4 h-4" />
-            </motion.a>
+            <p className="text-xs text-muted-foreground/70 mb-8 leading-relaxed">
+              Actief binnen o.a. Facility Management, vastgoed en technische rollen.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <motion.a
+                href="#vacatures"
+                whileHover={{ y: -2, boxShadow: "0 8px 24px hsl(220 50% 18% / 0.15)" }}
+                whileTap={{ y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="inline-flex items-center gap-2 rounded-full border-2 border-primary text-primary px-6 py-3 text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+              >
+                Bekijk vacatures <ArrowRight className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                href="#contact"
+                whileHover={{ y: -2, boxShadow: "0 8px 20px hsl(0 0% 0% / 0.06)" }}
+                whileTap={{ y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="inline-flex items-center gap-2 rounded-full border border-border text-muted-foreground px-6 py-3 text-sm font-semibold hover:border-primary hover:text-primary transition-colors duration-200"
+              >
+                Laat je gegevens achter
+              </motion.a>
+            </div>
           </motion.div>
 
           <motion.div

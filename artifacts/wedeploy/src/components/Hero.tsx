@@ -179,7 +179,7 @@ export function Hero() {
               transition={{ duration: 0.5 }}
               className="inline-block text-xs font-semibold tracking-widest uppercase text-accent mb-5"
             >
-              Boutique staffing & recruitment
+              Werving & selectie en detachering met aandacht
             </motion.span>
             <h1 className="text-5xl md:text-[3.75rem] font-bold text-primary leading-[1.05] tracking-tight">
               Wij vinden mensen<br />die blijven.
@@ -187,7 +187,7 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-            Persoonlijke verbindingen tussen professionals en organisaties. Kwaliteit boven kwantiteit, altijd.
+            Mensen en organisaties verbinden met zorg. Altijd op maat, nooit op volume.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mt-2">

@@ -21,7 +21,8 @@ export function Footer() {
               <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
-              Wij verbinden professionals en organisaties met zorg, niet met volume.
+              Werving & selectie en detachering met aandacht.<br />
+              Actief in Facility Management, vastgoed en technische rollen.
             </p>
           </div>
 

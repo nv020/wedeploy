@@ -34,10 +34,10 @@ export function FinalCTA() {
         >
           <p className="text-xs font-semibold tracking-widest uppercase text-accent mb-6">Klaar om te starten?</p>
           <h2 className="text-4xl md:text-6xl font-bold text-white leading-[1.05] tracking-tight mb-6">
-            Zet de juiste stap vandaag.
+            Zet de juiste stap —<br />met de juiste mensen.
           </h2>
           <p className="text-white/60 text-base leading-relaxed mb-12 max-w-md mx-auto">
-            Of je nu een nieuwe uitdaging zoekt of een sterke kandidaat — we denken graag met je mee. Zonder druk.
+            Of je nu een nieuwe rol zoekt of de juiste kandidaat — wij denken met je mee. Altijd zonder druk.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <motion.a
