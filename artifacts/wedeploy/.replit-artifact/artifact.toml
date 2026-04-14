@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Wedeploy"
+version = "1.0.0"
+id = "artifacts/wedeploy"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24421
+
+[services.development]
+run = "pnpm --filter @workspace/wedeploy run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wedeploy", "run", "build" ]
+publicDir = "artifacts/wedeploy/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24421"
+BASE_PATH = "/"
