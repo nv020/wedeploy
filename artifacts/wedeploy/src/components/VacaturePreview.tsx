@@ -3,9 +3,9 @@ import { MapPin, ArrowRight } from "lucide-react";
 
 const vacatures = [
   {
-    title: "Senior Software Engineer",
+    title: "Senior Softwareontwikkelaar",
     location: "Amsterdam",
-    type: "Full-time",
+    type: "Vast",
     typeColor: "bg-accent/10 text-accent",
   },
   {
@@ -15,7 +15,7 @@ const vacatures = [
     typeColor: "bg-primary/10 text-primary",
   },
   {
-    title: "Project Manager",
+    title: "Projectmanager",
     location: "Rotterdam",
     type: "Detachering",
     typeColor: "bg-secondary text-secondary-foreground",
