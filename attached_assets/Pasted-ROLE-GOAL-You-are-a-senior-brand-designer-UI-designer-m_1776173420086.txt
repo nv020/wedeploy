@@ -1,0 +1,287 @@
+ROLE & GOAL
+
+You are a senior brand designer, UI designer, motion designer and front-end developer.
+
+You are improving an existing homepage for a Dutch staffing company called Wedeploy.
+
+The current site is clean and professional but too static, too text-heavy and not distinctive enough.
+
+Your goal is to transform it into a premium, modern, slightly bold and visually engaging homepage that stands out from generic recruitment websites.
+
+The result must feel:
+- premium
+- modern
+- confident
+- slightly bold / visually interesting
+- not boring
+- not generic
+- not messy
+
+IMPORTANT:
+We want more visual impact and identity, but still controlled and professional.
+Think: boutique agency meets modern SaaS.
+
+---
+
+CORE IMPROVEMENTS REQUIRED
+
+1. HERO VISUAL (CRITICAL – COMPLETE REDESIGN)
+
+Replace the current circular animation with a custom animated visual:
+
+Create an abstract “W” shape made from nodes and connecting lines.
+
+Requirements:
+- 5 to 7 nodes
+- thin connecting lines
+- forms a subtle “W” shape (not literal typography)
+- use brand colors (dark navy + light blue)
+
+Animation:
+- lines animate in (draw effect)
+- nodes softly pulse
+- optional subtle floating motion
+
+Make it:
+- visually striking
+- minimal
+- elegant
+- slightly “tech / network” feeling
+
+DO NOT:
+- make it chaotic
+- use heavy 3D
+- use flashy gradients
+- make it look like a stock animation
+
+This visual must communicate:
+“we connect people and organizations”
+
+---
+
+2. HERO LAYOUT UPGRADE
+
+Improve the hero section:
+
+LEFT:
+- headline stays strong and large:
+  “Wij vinden mensen die blijven.”
+
+- subheadline shorter and sharper (max 2 lines)
+
+RIGHT:
+- new animated W visual
+
+Add:
+- subtle gradient background layer (very light)
+- depth through layering (soft shapes)
+
+CTA buttons:
+- improve styling (premium feel)
+- add hover states (slight lift / glow)
+
+---
+
+3. REDUCE TEXT BY 30–40%
+
+Across the entire homepage:
+
+- shorten all paragraphs
+- remove repetition
+- keep only essential meaning
+
+Rules:
+- max 2–3 lines per block
+- no long paragraphs
+- more whitespace
+
+Tone:
+- direct
+- calm
+- professional
+
+---
+
+4. USP SECTION REDESIGN (HIGH IMPACT)
+
+Current USP section is too flat.
+
+Redesign into strong visual cards:
+
+- larger cards
+- more spacing
+- subtle background differences
+- better hierarchy
+
+Each card:
+- short title
+- max 1 short sentence
+
+Add:
+- hover effect
+- slight elevation
+- soft color accents
+
+Make it feel like:
+premium feature cards (SaaS style)
+
+---
+
+5. ADD VISUAL RHYTHM (VERY IMPORTANT)
+
+The page currently feels too uniform.
+
+Add variation:
+
+- alternate section backgrounds:
+  white / light grey / soft blue tint
+- introduce occasional darker section
+- vary spacing between sections
+
+Goal:
+create flow and rhythm without making it busy
+
+---
+
+6. TYPOGRAPHY IMPROVEMENT
+
+- increase headline sizes
+- reduce body text size slightly
+- increase line spacing
+- add more breathing space
+
+Make it feel:
+- more premium
+- more editorial
+- less dense
+
+---
+
+7. “HOE WIJ WERKEN” SIMPLIFICATION
+
+Reduce each step to:
+
+- title
+- 1 short line
+
+Add visual timeline or step indicator:
+- subtle line
+- numbered steps
+
+Make it:
+clean and structured
+
+---
+
+8. SPLIT SECTION (KANDIDATEN / OPDRACHTGEVERS)
+
+Improve this section:
+
+- make stronger visual contrast between left and right
+- one side light, one side slightly darker
+- clearer CTA buttons
+
+Add:
+- icons or minimal visual cues (subtle)
+
+---
+
+9. VACATURE CARDS UPGRADE
+
+Improve cards:
+
+- more padding
+- better typography
+- subtle hover animation
+- highlight “type” and “location” better
+
+Make them feel clickable and modern.
+
+---
+
+10. FINAL CTA SECTION (MAKE IT STRONG)
+
+Current is good but can be stronger.
+
+Enhance:
+
+- add subtle gradient background
+- stronger typography
+- clearer CTA hierarchy
+
+Still:
+- not aggressive
+- but more presence
+
+---
+
+11. MICRO-INTERACTIONS
+
+Add:
+
+- button hover animations (lift + shadow)
+- card hover effects
+- smooth transitions (200–300ms)
+- subtle fade-in on scroll (light, not heavy)
+
+DO NOT:
+- over-animate
+- use heavy libraries unnecessarily
+
+---
+
+12. DESIGN ENERGY LEVEL
+
+We want:
+
+- more personality
+- more identity
+- more visual impact
+
+But still:
+- controlled
+- clean
+- professional
+
+Balance:
+“slightly flashy” but still “premium”
+
+---
+
+13. KEEP WHAT WORKS
+
+Do NOT break:
+
+- navigation structure
+- overall layout logic
+- professional tone
+- clarity
+
+---
+
+FINAL QUALITY CHECK
+
+The homepage must now feel:
+
+- clearly better than standard recruitment websites
+- modern and slightly bold
+- visually memorable
+- not text-heavy
+- not generic
+- not template-like
+
+It should feel like a brand, not just a website.
+
+---
+
+DELIVERABLE
+
+Update the existing homepage code:
+- improved layout
+- improved styling
+- improved animation
+- improved copy (shorter)
+- better UX
+
+Do not rebuild from scratch unnecessarily.
+Refactor and upgrade intelligently.
