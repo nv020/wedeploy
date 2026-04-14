@@ -1,0 +1,375 @@
+ROLE & GOAL
+
+You are a senior UI designer, brand designer, front-end developer and conversion-focused copywriter with deep expertise in the Dutch staffing, recruitment and secondment market.
+
+Your task is to design and build a premium homepage for a staffing agency called Wedeploy.
+
+This is NOT a generic recruitment website.
+This is NOT a loud lead generation funnel.
+This is NOT a corporate template.
+
+This must be a modern, premium, visually strong, calm and trustworthy homepage that positions Wedeploy as a boutique, high-quality staffing partner.
+
+The design must feel:
+- professional
+- modern
+- slightly playful
+- calm and confident
+- not busy
+- not salesy
+- not generic
+
+The homepage must be visually impressive but restrained.
+It should feel more like a modern SaaS landing page combined with a boutique consultancy firm.
+
+IMPORTANT:
+The homepage is the foundation for the entire website.
+Design decisions here must be reusable for future pages.
+
+---
+
+TECH STACK
+
+- Next.js 14+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Fully responsive
+- Static (SSG)
+- Optimized for Vercel
+- Clean component-based structure
+
+---
+
+LOGO USAGE
+
+Use the provided Wedeploy logo as the main brand anchor.
+
+Logo characteristics:
+- “WE” in light blue
+- “DEPLOY” in dark navy
+
+Use this to guide:
+- color palette
+- accents
+- visual identity
+
+Do NOT distort the logo.
+Do NOT overuse gradients.
+
+---
+
+COLOR & DESIGN SYSTEM
+
+Base the entire design on the logo colors:
+
+Primary:
+- dark navy (from logo)
+
+Secondary:
+- bright blue (from “WE”)
+
+Background:
+- off-white / very light grey
+
+Support:
+- soft blue-grey tones
+
+Rules:
+- keep it calm and premium
+- use color to guide attention, not to decorate everything
+- avoid loud gradients
+- subtle contrast between sections
+- CTAs visible but not aggressive
+
+---
+
+TYPOGRAPHY
+
+Use a modern sans-serif font.
+
+Style:
+- clean
+- premium
+- readable
+- strong hierarchy
+
+Headlines:
+- large
+- confident
+- minimal words
+
+Body:
+- compact
+- clear
+- Dutch language
+
+---
+
+TONE OF VOICE (MANDATORY)
+
+Language: Dutch
+
+Tone:
+- calm
+- professional
+- human
+- direct
+- no exaggeration
+- no marketing fluff
+
+Avoid:
+- “wij zijn de beste”
+- “dé specialist”
+- empty buzzwords
+- startup hype language
+
+---
+
+HOMEPAGE STRUCTURE (MANDATORY)
+
+Build the homepage with the following sections:
+
+---
+
+1. HEADER
+
+- Sticky header
+- Left: logo
+- Right: navigation
+
+Navigation:
+- Home
+- Diensten
+- Kandidaten
+- Opdrachtgevers
+- Vacatures
+- Over ons
+- Contact
+
+Include a subtle CTA button (e.g. “Contact”)
+
+Mobile menu must be clean and premium.
+
+---
+
+2. HERO SECTION (CRITICAL)
+
+Left side:
+Headline:
+“Wij vinden mensen die blijven.”
+
+Subheadline:
+Explain in 1–2 sentences what Wedeploy does:
+- connecting professionals and organizations
+- focus on quality, not volume
+- calm, credible tone
+
+Two CTA buttons:
+- “Voor opdrachtgevers”
+- “Voor kandidaten”
+
+Right side:
+- NO busy stock images
+- Use either:
+  - one calm professional image
+  OR
+  - an abstract visual (network / connection / structured shapes)
+
+Add subtle visual layering:
+- shapes
+- soft gradients (very minimal)
+- depth
+
+---
+
+3. TRUST INTRO
+
+Short section explaining:
+- what Wedeploy does
+- focus on careful matching
+- not a volume-driven agency
+
+Keep it short and strong.
+
+---
+
+4. USP SECTION (VERY IMPORTANT)
+
+Create 5 visually strong cards.
+
+Use these themes:
+
+- Geen cv’s, maar de juiste mensen
+- Minder mismatches door diepgaande intake
+- Transparant en duidelijk proces
+- Netwerkgedreven search
+- Nazorg als standaard
+
+Design:
+- NOT basic icon boxes
+- use elevated cards
+- subtle backgrounds
+- visual rhythm
+- different card sizes or layout variation
+
+---
+
+5. DIENSTEN OVERVIEW
+
+3 cards:
+- Detachering & Detavast
+- Recruitment
+- Interim
+
+Each card:
+- short explanation
+- link (dummy for now)
+
+---
+
+6. HOE WIJ WERKEN
+
+Structured process in 4 steps:
+
+- Kennismaking en intake
+- Gerichte search
+- Selectie en afstemming
+- Begeleiding tijdens plaatsing
+
+Must feel:
+- structured
+- calm
+- credible
+
+---
+
+7. SPLIT SECTION
+
+Two columns:
+
+LEFT: Voor kandidaten
+- what to expect
+- no pressure
+- personal contact
+
+RIGHT: Voor opdrachtgevers
+- careful intake
+- quality selection
+- clear communication
+
+Each side:
+- short bullets
+- CTA
+
+---
+
+8. VACATURE PREVIEW
+
+Show 3 example vacancy cards (static for now).
+
+Each card:
+- title
+- location
+- type
+
+Design must feel clean and premium.
+
+---
+
+9. LIGHT SOCIAL PROOF
+
+- placeholder logos
+- 1–2 short quotes
+- neutral tone
+
+No big claims.
+
+---
+
+10. FINAL CTA
+
+Calm closing block.
+
+Text:
+Invite contact without pressure.
+
+CTA:
+- “Neem contact op”
+- or “Plan een kennismaking”
+
+Design:
+- visually strong but not aggressive
+
+---
+
+11. FOOTER
+
+Include:
+- company name
+- contact details (placeholder)
+- navigation
+- privacy link
+- LinkedIn placeholder
+
+Must feel:
+- compact
+- professional
+
+---
+
+UX & INTERACTIONS
+
+- subtle hover states
+- smooth transitions
+- no heavy animations
+- premium button feel
+- clear spacing
+- mobile optimized
+
+---
+
+CODE STRUCTURE
+
+Use reusable components:
+
+- Header
+- Hero
+- Section wrapper
+- Cards
+- CTA blocks
+- Footer
+
+Keep code clean and scalable.
+
+---
+
+QUALITY BAR
+
+The homepage must:
+- look like a real premium agency website
+- not look AI-generated
+- not look like a template
+- not look generic
+
+It should feel:
+- calm
+- strong
+- modern
+- trustworthy
+- slightly distinctive
+
+---
+
+DELIVERABLE
+
+Generate:
+- full working Next.js homepage
+- clean Tailwind styling
+- reusable components
+- Dutch copy (no lorem ipsum)
+- responsive design
+- ready for Vercel deployment
+
+Include a short README:
+- how to run
+- how to edit content
