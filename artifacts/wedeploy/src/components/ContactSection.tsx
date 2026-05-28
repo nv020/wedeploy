@@ -184,7 +184,7 @@ export function ContactSection() {
 
                 <div className="space-y-3.5">
                   {[
-                    "Altijd direct contact met een senior partner",
+                    "Korte lijnen, persoonlijk contact",
                     "Reactie binnen één werkdag",
                     "Volledig vertrouwelijk & vrijblijvend",
                   ].map((item) => (

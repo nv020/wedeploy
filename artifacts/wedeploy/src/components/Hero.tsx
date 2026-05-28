@@ -96,8 +96,8 @@ export function Hero() {
             {/* Main photo */}
             <div className="relative z-10 w-[97%] h-full rounded-[22px] overflow-hidden shadow-[0_28px_72px_hsl(220_50%_18%/0.13)]">
               <img
-                src="https://images.unsplash.com/photo-1758518730037-a16581a040e8?w=900&q=80"
-                alt="Professionals in overleg bij Wedeploy recruitment en detachering"
+                src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&dpr=1"
+                alt="Twee professionals in gesprek bij Wedeploy recruitment en detachering"
                 title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
                 className="w-full h-full object-cover"
                 style={{ objectPosition: "50% 20%" }}
