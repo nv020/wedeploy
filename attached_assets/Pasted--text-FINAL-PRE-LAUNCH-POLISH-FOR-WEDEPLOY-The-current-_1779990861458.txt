@@ -1,0 +1,384 @@
+```text
+FINAL PRE-LAUNCH POLISH FOR WEDEPLOY
+
+The current Wedeploy website direction is strong and should now be finalized into a polished, premium and believable boutique recruitment brand website ready for launch.
+
+DO NOT radically redesign the current site anymore.
+The current structure, positioning and direction are good.
+
+This final phase is about:
+- refinement
+- consistency
+- premium detailing
+- stronger brand feeling
+- conversion optimization
+- mobile perfection
+- removing remaining “AI-generated” feeling
+
+The website should feel like:
+- a modern boutique recruitment partner
+- human and personal
+- premium but approachable
+- calm but confident
+- professional without being corporate
+- designed intentionally by a real designer
+
+The final result should feel closer to:
+- Level.works in rhythm and playfulness
+- Lakehouse in calm premium feeling
+- YER in compositional strength
+
+But remain uniquely Wedeploy.
+
+IMPORTANT:
+Do NOT overdesign the site.
+Do NOT add unnecessary animations.
+Do NOT make it flashy.
+Do NOT add fake testimonials, fake logos or fake numbers.
+
+The strength should come from:
+- composition
+- typography
+- spacing
+- photography
+- editorial rhythm
+- tone of voice
+- visual consistency
+
+====================================================
+1. GLOBAL VISUAL REFINEMENT
+====================================================
+
+Refine the entire visual system.
+
+Ensure:
+- consistent spacing throughout the site
+- consistent border radius
+- consistent shadow softness
+- consistent typography hierarchy
+- consistent button styling
+- consistent image treatment
+
+The site should feel like one cohesive premium brand.
+
+Reduce any remaining:
+- generic card feeling
+- default UI feeling
+- template patterns
+- repeated layouts
+
+====================================================
+2. TYPOGRAPHY POLISH
+====================================================
+
+Improve typography globally.
+
+Requirements:
+- larger body text where needed
+- increase readability
+- improve line-height
+- reduce overly long paragraph widths
+- avoid awkward line breaks in headings
+- create stronger editorial hierarchy
+
+Headlines should feel:
+- intentional
+- premium
+- confident
+- human
+
+Avoid generic marketing wording where possible.
+
+Introduce a few stronger brand statements such as:
+- “Een cv vertelt niet hoe iemand samenwerkt.”
+- “De juiste match ontstaat niet in een spreadsheet.”
+- “Kwaliteit begint bij aandacht.”
+- “Niet meer cv’s. Betere matches.”
+
+Use these carefully throughout the site.
+
+====================================================
+3. HERO FINAL POLISH
+====================================================
+
+Refine the hero into a premium launch-ready section.
+
+Requirements:
+- improve spacing
+- stronger visual balance
+- larger feeling image
+- stronger CTA styling
+- more premium overlap composition
+- better mobile stacking
+
+Add subtle layered shapes behind the image:
+- navy rounded background shape
+- soft beige offset layer
+
+Ensure hero feels:
+- human
+- premium
+- warm
+- trustworthy
+
+Improve the floating cards:
+- cleaner shadows
+- less generic
+- more believable
+- less “UI demo”
+
+CTA buttons:
+- richer hover states
+- smoother transitions
+- slightly larger padding
+
+====================================================
+4. BRAND VISUAL LANGUAGE
+====================================================
+
+Create stronger visual identity consistency.
+
+Introduce subtle recurring Wedeploy design elements:
+- soft navy rounded shapes
+- layered blocks
+- offset sections
+- subtle connection lines/dots
+- editorial overlays
+
+Use consistently throughout the site.
+
+IMPORTANT:
+Keep it subtle.
+Avoid becoming overly decorative.
+
+====================================================
+5. PHOTOGRAPHY & IMAGE TREATMENT
+====================================================
+
+Unify all photography.
+
+Current issue:
+Some images still feel too much like random stock images.
+
+Improve:
+- color grading consistency
+- crop consistency
+- warmth consistency
+- lighting consistency
+
+All imagery should feel:
+- warm
+- realistic
+- professional
+- calm
+- editorial
+
+Avoid:
+- cheesy smiles
+- fake corporate poses
+- obvious stock feeling
+
+Use:
+- meetings
+- collaboration
+- project environments
+- facility/project settings
+- real interactions
+- natural light
+
+Add subtle hover zoom effects on selected images.
+
+====================================================
+6. SECTION RHYTHM & FLOW
+====================================================
+
+Improve flow between sections.
+
+Ensure the site feels like:
+one continuous premium story,
+not stacked website blocks.
+
+Add:
+- more visual breathing room
+- subtle overlap between sections
+- better transition rhythm
+- occasional asymmetry
+
+Avoid:
+- repetitive centered layouts
+- identical spacing patterns
+- too many equal-height blocks
+
+====================================================
+7. “HOW WE WORK” SECTION POLISH
+====================================================
+
+This section still needs refinement.
+
+Make it feel:
+- more premium
+- more intentional
+- more visual
+- less wireframe-like
+
+Improve:
+- timeline styling
+- connecting lines
+- card hierarchy
+- spacing
+- typography
+- number treatment
+
+Possible improvements:
+- larger faded background numbers
+- alternating layout rhythm
+- more editorial alignment
+
+====================================================
+8. VACANCY SECTION POLISH
+====================================================
+
+Current vacancies are cleaner but still too placeholder-like.
+
+Improve:
+- hover interactions
+- hierarchy
+- metadata styling
+- spacing
+- typography
+
+Each vacancy card should feel:
+- real
+- premium
+- worth clicking
+
+Add:
+- category badge
+- location
+- role type
+- short meaningful intro sentence
+
+Keep boutique feeling:
+Do NOT make it feel like a giant job board.
+
+====================================================
+9. FORM & CONTACT FINALIZATION
+====================================================
+
+The form section is much stronger now but still needs premium detailing.
+
+Improve:
+- input spacing
+- focus states
+- drag & drop upload styling
+- validation styling
+- tab transitions
+- form shadows
+- submit interaction
+
+Make form feel:
+- premium
+- trustworthy
+- calm
+- easy
+
+Add a subtle success state after submission.
+
+====================================================
+10. SPAM PROTECTION
+====================================================
+
+Ensure forms are launch-ready and protected.
+
+Implement properly:
+- Cloudflare Turnstile
+- honeypot field
+- backend validation placeholder
+- basic rate limiting placeholder
+
+Add clear comments for:
+CLOUDFLARE_TURNSTILE_SITE_KEY
+CLOUDFLARE_TURNSTILE_SECRET_KEY
+
+Do NOT rely on frontend validation alone.
+
+====================================================
+11. MOBILE OPTIMIZATION
+====================================================
+
+This is CRITICAL before launch.
+
+Thoroughly optimize:
+- hero stacking
+- section spacing
+- overlaps
+- typography scaling
+- image crops
+- buttons
+- forms
+- timeline layout
+
+The mobile site must feel:
+- premium
+- spacious
+- intentional
+- easy to navigate
+
+Avoid:
+- cramped sections
+- broken overlaps
+- tiny text
+- awkward whitespace
+
+====================================================
+12. PERFORMANCE & TRUST
+====================================================
+
+Before launch:
+- optimize images
+- lazy load where appropriate
+- ensure fast loading
+- ensure smooth scrolling
+- improve accessibility basics
+
+Add:
+- proper favicon
+- proper OG image
+- proper SEO titles/descriptions
+- proper social preview image
+
+Ensure:
+- LinkedIn link placeholder exists
+- contact info consistent everywhere
+- address correct:
+Krijn Taconiskade 461
+1087 HW Amsterdam
+Netherlands
+
+====================================================
+13. FINAL BRAND FEEL
+====================================================
+
+The final website should feel like:
+
+“A modern recruitment partner that values people over volume.”
+
+It should NOT feel like:
+- a startup template
+- a generic staffing agency
+- a CV factory
+- a flashy SaaS company
+
+It SHOULD feel like:
+- thoughtful
+- human
+- credible
+- premium
+- calm
+- personal
+- involved
+- trustworthy
+
+The website should leave visitors with the feeling:
+“These people take recruitment seriously.”
+```

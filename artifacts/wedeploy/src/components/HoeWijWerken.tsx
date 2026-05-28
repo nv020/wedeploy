@@ -16,13 +16,13 @@ const steps = [
   {
     number: "03",
     title: "Introductie",
-    desc: "We introduceren een selecte groep — geen stapels profielen. Elke kandidaat heeft een duidelijke reden waarom we hem of haar voordragen.",
+    desc: "We introduceren een selecte groep. Elke kandidaat heeft een duidelijke reden waarom we hem of haar voordragen — geen stapels profielen.",
     align: "left",
   },
   {
     number: "04",
     title: "Match & opvolging",
-    desc: "Na de start blijven we betrokken. We checken in bij zowel de professional als de opdrachtgever om een duurzame landing te borgen.",
+    desc: "Na de start blijven we betrokken. We checken in bij zowel de professional als de opdrachtgever voor een duurzame landing.",
     align: "right",
   },
 ];
@@ -61,7 +61,7 @@ export function HoeWijWerken() {
           className="relative max-w-3xl mx-auto"
         >
           {/* Center line — desktop */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/60 -translate-x-1/2 hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/50 -translate-x-1/2 hidden md:block" />
 
           <div className="flex flex-col gap-10">
             {steps.map((step) => (
@@ -75,17 +75,26 @@ export function HoeWijWerken() {
                 {/* Content block — desktop */}
                 <div
                   className={`flex-1 hidden md:block ${
-                    step.align === "right" ? "pl-10 pr-0" : "pr-10 pl-0"
+                    step.align === "right" ? "pl-10" : "pr-10"
                   }`}
                 >
                   <div
-                    className={`bg-background border border-border/50 rounded-2xl p-7 ${
-                      step.align === "right" ? "" : "ml-auto"
+                    className={`relative bg-background border border-border/50 rounded-2xl p-7 overflow-hidden ${
+                      step.align === "left" ? "ml-auto" : ""
                     }`}
-                    style={{ maxWidth: "340px", marginLeft: step.align === "left" ? "auto" : undefined }}
+                    style={{ maxWidth: "340px" }}
                   >
-                    <h3 className="text-[16px] font-bold text-primary mb-2">{step.title}</h3>
-                    <p className="text-[13.5px] text-muted-foreground leading-relaxed">{step.desc}</p>
+                    {/* Large faded background number */}
+                    <div
+                      className="absolute -bottom-3 -right-1 text-[88px] font-black leading-none select-none pointer-events-none"
+                      style={{ color: "hsl(220 50% 18% / 0.05)" }}
+                    >
+                      {step.number}
+                    </div>
+                    <div className="relative z-10">
+                      <h3 className="text-[16px] font-bold text-primary mb-2">{step.title}</h3>
+                      <p className="text-[13.5px] text-muted-foreground leading-relaxed">{step.desc}</p>
+                    </div>
                   </div>
                 </div>
 
@@ -96,7 +105,7 @@ export function HoeWijWerken() {
                   </div>
                 </div>
 
-                {/* Spacer — desktop opposite side */}
+                {/* Spacer — desktop */}
                 <div className="hidden md:block flex-1" />
 
                 {/* Mobile layout */}
@@ -105,9 +114,17 @@ export function HoeWijWerken() {
                     <span className="text-[10px] font-bold text-accent tabular-nums">{step.number}</span>
                   </div>
                 </div>
-                <div className="md:hidden flex-1 bg-background border border-border/50 rounded-2xl p-6">
-                  <h3 className="text-[15px] font-bold text-primary mb-1.5">{step.title}</h3>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed">{step.desc}</p>
+                <div className="md:hidden flex-1 relative bg-background border border-border/50 rounded-2xl p-6 overflow-hidden">
+                  <div
+                    className="absolute -bottom-2 -right-1 text-[64px] font-black leading-none select-none pointer-events-none"
+                    style={{ color: "hsl(220 50% 18% / 0.05)" }}
+                  >
+                    {step.number}
+                  </div>
+                  <div className="relative z-10">
+                    <h3 className="text-[15px] font-bold text-primary mb-1.5">{step.title}</h3>
+                    <p className="text-[13px] text-muted-foreground leading-relaxed">{step.desc}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}

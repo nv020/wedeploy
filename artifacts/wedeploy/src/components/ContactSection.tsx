@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Upload, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Upload, CheckCircle2 } from "lucide-react";
 
 type Tab = "kandidaat" | "opdrachtgever";
 
@@ -167,10 +167,10 @@ export function ContactSection() {
                     {kandSent ? (
                       <div className="text-center py-12">
                         <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                          <ArrowRight className="w-6 h-6 text-accent" />
+                          <CheckCircle2 className="w-7 h-7 text-accent" />
                         </div>
                         <h3 className="text-[18px] font-bold text-primary mb-2">Bericht ontvangen!</h3>
-                        <p className="text-muted-foreground text-[14px]">We nemen zo snel mogelijk contact met je op.</p>
+                        <p className="text-muted-foreground text-[14px] max-w-xs mx-auto leading-relaxed">We nemen binnen één werkdag contact met u op.</p>
                       </div>
                     ) : (
                       <form onSubmit={(e) => { e.preventDefault(); setKandSent(true); }} className="flex flex-col gap-5">
@@ -247,10 +247,10 @@ export function ContactSection() {
                     {opdrSent ? (
                       <div className="text-center py-12">
                         <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                          <ArrowRight className="w-6 h-6 text-accent" />
+                          <CheckCircle2 className="w-7 h-7 text-accent" />
                         </div>
                         <h3 className="text-[18px] font-bold text-primary mb-2">Bericht ontvangen!</h3>
-                        <p className="text-muted-foreground text-[14px]">We nemen zo snel mogelijk contact met u op.</p>
+                        <p className="text-muted-foreground text-[14px] max-w-xs mx-auto leading-relaxed">We nemen binnen één werkdag contact met u op.</p>
                       </div>
                     ) : (
                       <form onSubmit={(e) => { e.preventDefault(); setOpdrSent(true); }} className="flex flex-col gap-5">
