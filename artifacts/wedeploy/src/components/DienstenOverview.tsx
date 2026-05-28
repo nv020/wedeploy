@@ -24,7 +24,9 @@ export function DienstenOverview() {
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Hoe wij helpen</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {/* items-stretch ensures both cards match height in the grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
+
           {/* Opdrachtgevers */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -42,15 +44,16 @@ export function DienstenOverview() {
               <h3 className="text-[1.55rem] font-bold text-white leading-[1.2] mb-4">
                 Professionals die direct waarde toevoegen.
               </h3>
-              <p className="text-[14.5px] text-white/60 leading-relaxed mb-8">
+              <p className="text-[15px] text-white/60 leading-relaxed mb-8">
                 Wij helpen organisaties aan professionals die direct waarde toevoegen binnen
                 Facility Management, vastgoed en technische projecten.
               </p>
-              <ul className="space-y-3 mb-10 flex-1">
+              {/* flex-1 pushes CTA to bottom */}
+              <ul className="space-y-3.5 flex-1 mb-10">
                 {opdrachtgeverBullets.map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
-                    <span className="text-[14px] text-white/75">{item}</span>
+                    <span className="text-[14.5px] text-white/75">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -59,7 +62,7 @@ export function DienstenOverview() {
                 whileHover={{ y: -2, boxShadow: "0 8px 30px hsl(205 85% 53% / 0.4)" }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.2 }}
-                className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3.5 text-[13.5px] font-bold self-start"
+                className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
               >
                 Bespreek uw vraagstuk <ArrowRight className="w-4 h-4" />
               </motion.a>
@@ -78,15 +81,16 @@ export function DienstenOverview() {
             <h3 className="text-[1.55rem] font-bold text-primary leading-[1.2] mb-4">
               Opdrachten die passen bij wie u bent.
             </h3>
-            <p className="text-[14.5px] text-muted-foreground leading-relaxed mb-8">
+            <p className="text-[15px] text-muted-foreground leading-relaxed mb-8">
               Wij verbinden ervaren professionals met opdrachten en functies die passen bij hun
               expertise, ambitie en manier van werken.
             </p>
-            <ul className="space-y-3 mb-10 flex-1">
+            {/* flex-1 pushes CTA to bottom */}
+            <ul className="space-y-3.5 flex-1 mb-10">
               {professionalBullets.map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
-                  <span className="text-[14px] text-muted-foreground">{item}</span>
+                  <span className="text-[14.5px] text-muted-foreground">{item}</span>
                 </li>
               ))}
             </ul>
@@ -95,7 +99,7 @@ export function DienstenOverview() {
               whileHover={{ y: -2, boxShadow: "0 8px 24px hsl(220 50% 18% / 0.10)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.2 }}
-              className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-7 py-3.5 text-[13.5px] font-bold self-start"
+              className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
             >
               Bekijk mogelijkheden <ArrowRight className="w-4 h-4" />
             </motion.a>

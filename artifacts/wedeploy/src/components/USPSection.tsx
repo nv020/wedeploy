@@ -1,104 +1,96 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const blocks = [
+const insightCards = [
   {
     num: "01",
-    title: "Interim professionals",
-    desc: "Snel schakelen zonder concessies aan kwaliteit. Wij leveren ervaren interimmers die direct inzetbaar zijn en zelfstandig kunnen opereren binnen complexe omgevingen.",
-    tags: ["Facility Management", "Vastgoed", "Workplace", "Operations"],
-    cta: "Interim capaciteit bespreken",
+    title: "Persoonlijke screening",
+    desc: "Wij kijken verder dan beschikbaarheid en functietitels. Beschikbaar zijn is niet hetzelfde als passen.",
   },
   {
     num: "02",
-    title: "Projectrollen",
-    desc: "Voor trajecten die specialistische kennis en projectervaring vragen. Wij selecteren professionals die projecten beheersen van intake tot oplevering.",
-    tags: ["Projectmanagement", "Huisvesting", "Techniek", "Transformatie"],
-    cta: "Projectondersteuning bespreken",
+    title: "Teamfit & cultuur",
+    desc: "Een goede samenwerking begint vóór de eerste werkdag. We kijken naar de mens achter het cv.",
   },
   {
     num: "03",
-    title: "Vaste functies",
-    desc: "Zorgvuldige werving voor posities waarbij de langetermijnfit met het team en de organisatie bepalend is. Geen stapels cv's, maar gerichte introducties.",
-    tags: ["Werving & Selectie", "Senior functies", "Leidinggevenden", "Specialisten"],
-    cta: "Wervingsopdracht bespreken",
+    title: "Transparante communicatie",
+    desc: "Heldere verwachtingen voor kandidaat én opdrachtgever. We houden contact, ook als er even geen update is.",
   },
 ];
 
-const rowVariants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55 } },
+const cardVariants = {
+  hidden: { opacity: 0, y: 18 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const stagger = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.13 } },
+  visible: { transition: { staggerChildren: 0.12 } },
 };
 
 export function USPSection() {
   return (
     <section className="py-28 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-14">
-          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Werkwijze</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight mb-4">
-            Werving zoals het hoort.
-          </h2>
-          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-xl">
-            Goed werven vraagt meer dan snelheid. Het vraagt inhoudelijke kennis, scherpe vragen
-            en het lef om niet zomaar iedereen voor te stellen.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-        <motion.div
-          variants={stagger}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="flex flex-col divide-y divide-border/40"
-        >
-          {blocks.map((block) => (
-            <motion.div
-              key={block.num}
-              variants={rowVariants}
-              className="group grid grid-cols-1 lg:grid-cols-[100px_1fr_auto] gap-6 lg:gap-10 items-start py-10"
+          {/* Left — editorial text, sticky on desktop */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="lg:sticky lg:top-28"
+          >
+            <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Werkwijze</span>
+            <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight leading-[1.08] mb-6">
+              Werving zoals het hoort.
+            </h2>
+            <p className="text-[16px] text-muted-foreground leading-[1.85] mb-4 max-w-[420px]">
+              Goede werving begint met aandacht. Niet met zoveel mogelijk profielen doorsturen,
+              maar met begrijpen wat iemand kan, wil en nodig heeft om succesvol te zijn.
+            </p>
+            <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[420px] mb-10">
+              We nemen liever iets meer tijd dan dat we de verkeerde match voorstellen.
+            </p>
+            <motion.a
+              href="#contact"
+              whileHover={{ y: -2 }}
+              whileTap={{ y: 0 }}
+              transition={{ duration: 0.18 }}
+              className="inline-flex items-center gap-2 text-[14px] font-semibold text-primary border border-primary/25 rounded-full px-6 py-3 hover:border-primary/60 transition-colors duration-200"
             >
-              {/* Number */}
-              <div className="flex items-start gap-3">
-                <span className="text-[11px] font-bold text-accent/60 tracking-[2px] pt-1">{block.num}</span>
-                <h3 className="text-[18px] font-bold text-primary leading-snug lg:hidden">{block.title}</h3>
-              </div>
+              Bespreek uw vraagstuk <ArrowRight className="w-4 h-4" />
+            </motion.a>
+          </motion.div>
 
-              {/* Content */}
-              <div>
-                <h3 className="hidden lg:block text-[19px] font-bold text-primary mb-3 leading-snug group-hover:text-accent transition-colors duration-200">
-                  {block.title}
-                </h3>
-                <p className="text-[14.5px] text-muted-foreground leading-relaxed mb-5 max-w-xl">
-                  {block.desc}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {block.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[11px] font-semibold text-primary/60 bg-background border border-border/60 rounded-full px-3 py-1"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* CTA */}
-              <a
-                href="#contact"
-                className="hidden lg:flex items-center gap-2 text-[13px] font-semibold text-accent hover:gap-3 transition-all duration-200 whitespace-nowrap mt-1 self-start"
+          {/* Right — 3 compact insight cards */}
+          <motion.div
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            className="flex flex-col gap-4"
+          >
+            {insightCards.map((card) => (
+              <motion.div
+                key={card.num}
+                variants={cardVariants}
+                className="group rounded-2xl border border-border/50 bg-white p-8 flex gap-6 items-start hover:border-accent/30 hover:shadow-[0_8px_30px_hsl(220_50%_18%/0.06)] transition-all duration-300"
               >
-                {block.cta} <ArrowRight className="w-3.5 h-3.5" />
-              </a>
-            </motion.div>
-          ))}
-        </motion.div>
+                <span className="text-[11px] font-bold text-accent/60 tracking-[2px] mt-1 flex-shrink-0 w-8">{card.num}</span>
+                <div>
+                  <h3 className="text-[16.5px] font-bold text-primary mb-2 leading-snug group-hover:text-accent transition-colors duration-200">
+                    {card.title}
+                  </h3>
+                  <p className="text-[14px] text-muted-foreground leading-relaxed">{card.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+        </div>
       </div>
     </section>
   );

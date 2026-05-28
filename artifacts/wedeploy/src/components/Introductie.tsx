@@ -46,12 +46,16 @@ export function Introductie() {
             <div className="h-px w-8 bg-accent/40 rounded-full" />
             <span className="text-[10px] font-bold tracking-[3px] uppercase text-accent/70">Onze visie</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary leading-[1.1] tracking-tight mb-5">
-            Een goede match begint niet bij een cv.
+          <h2 className="text-4xl md:text-[2.8rem] font-bold text-primary leading-[1.1] tracking-tight mb-5">
+            Een cv vertelt niet hoe iemand samenwerkt.
           </h2>
-          <p className="text-[15.5px] text-muted-foreground leading-relaxed">
-            Wij kijken verder dan functietitels en zoekwoorden. We willen begrijpen wat een
-            organisatie nodig heeft, welke professional past en waarom juist die combinatie werkt.
+          <p className="text-[16px] text-muted-foreground leading-relaxed mb-6">
+            Daarom kijken wij verder dan functietitels, beschikbaarheid en werkervaring. We willen
+            begrijpen wie iemand is, wat een team nodig heeft en wanneer een samenwerking op lange
+            termijn echt klopt.
+          </p>
+          <p className="text-[13.5px] font-bold text-accent tracking-wide">
+            Niet meer cv's. Betere matches.
           </p>
         </motion.div>
 
@@ -78,7 +82,7 @@ export function Introductie() {
               <h3 className={`text-[17px] font-bold leading-snug ${i === 0 ? "text-white" : "text-primary"}`}>
                 {card.title}
               </h3>
-              <p className={`text-[13.5px] leading-relaxed ${i === 0 ? "text-white/60" : "text-muted-foreground"}`}>
+              <p className={`text-[14px] leading-relaxed ${i === 0 ? "text-white/60" : "text-muted-foreground"}`}>
                 {card.desc}
               </p>
               {i === 0 && (

@@ -1,0 +1,386 @@
+FINAL LAUNCH POLISH — WEDEPLOY HOMEPAGE
+
+This is the final pre-launch update for the Wedeploy website.
+
+Do NOT radically redesign the site anymore. The current structure and direction are good. This task is about final polish, making the site more human, slightly warmer, more readable, less AI-generated, SEO-ready and fully launch-ready.
+
+The website remains a one-page website for now. Later, separate pages for services, candidates, clients, vacancies and expertise areas will be added. For now, all key content must remain on this single homepage.
+
+GENERAL GOAL
+Make the site feel like a serious boutique recruitment and staffing partner:
+
+* human
+* personal
+* premium
+* trustworthy
+* calm
+* specialist
+* not generic
+* not AI-generated
+* not a mass staffing agency
+
+Wedeploy stands for:
+
+* quality over volume
+* no CV-shuffling
+* careful screening
+* personal contact
+* transparent communication
+* guidance for both clients and candidates
+* sustainable matches
+
+VISUAL FINAL POLISH
+Apply final refinement:
+
+* Make body text slightly larger overall.
+* Improve readability by increasing line-height.
+* Use a slightly softer/lighter text color where it feels too heavy, but keep enough contrast for accessibility.
+* Make small labels and helper text more readable.
+* Reduce any remaining cramped text.
+* Avoid awkward heading line breaks.
+* Add a little more human warmth to the copy.
+* Keep the premium calm look.
+
+HEADER
+
+* Make the Wedeploy logo in the header larger.
+* Header logo should visually match the footer logo size/importance better.
+* Keep header clean and sticky.
+* Ensure navigation remains balanced after increasing the logo size.
+* Keep the CTA button in the header premium and subtle.
+
+HERO SECTION
+Improve the hero readability and remove remaining “UI-demo” feeling.
+
+Hero headline should stay strong and specialist:
+“Duurzame matches in Facility Management, Vastgoed & Techniek.”
+
+Improve the supporting line:
+Current text like “Voor interim, project- en vaste rollen binnen Facility Management, Vastgoed en Techniek” is too small and not readable enough.
+
+Replace this with a more scannable expertise row using pill tags or clear labels:
+
+* Interim
+* Projectrollen
+* Vaste functies
+* Facility Management
+* Vastgoed & Techniek
+
+Make these tags readable, subtle and premium.
+
+Review the floating bubbles/cards on the hero image.
+If they feel like fake SaaS/UI-demo bubbles, remove them or replace them with more credible human/recruitment labels:
+
+* Zorgvuldige screening
+* Persoonlijke intake
+* Betere matches
+
+Do not use fake placement claims like “Facility manager geplaatst” unless this is real.
+
+VISION SECTION
+Make this more human and more brand-like.
+
+Use this structure:
+Section label:
+“Onze visie”
+
+Title:
+“Een cv vertelt niet hoe iemand samenwerkt.”
+
+Text:
+“Daarom kijken wij verder dan functietitels, beschikbaarheid en werkervaring. We willen begrijpen wie iemand is, wat een team nodig heeft en wanneer een samenwerking op lange termijn echt klopt.”
+
+Small punchline:
+“Niet meer cv’s. Betere matches.”
+
+WERVING ZOALS HET HOORT SECTION
+The current layout has too much empty space between the left text and the right CTA/link area.
+
+Improve this section so the empty space feels intentional.
+
+Recommended solution:
+Turn the right side into compact insight cards instead of loose far-away CTA links.
+
+Use 3 compact insight cards:
+
+1. Persoonlijke screening
+   “Wij kijken verder dan beschikbaarheid en functietitels.”
+
+2. Teamfit & cultuur
+   “Een goede samenwerking begint vóór de eerste werkdag.”
+
+3. Transparante communicatie
+   “Heldere verwachtingen voor kandidaat én opdrachtgever.”
+
+Keep the left editorial text but make it warmer and more human:
+“Goede werving begint met aandacht. Niet met zoveel mogelijk profielen doorsturen, maar met begrijpen wat iemand kan, wil en nodig heeft om succesvol te zijn.”
+
+EXPERTISE SECTION
+Use correct terminology:
+Replace any wording like:
+“Vastgoed & Property Management”
+with:
+“Vastgoed- en Property Management”
+
+This is the preferred label for now.
+
+Also ensure the other expertise labels are consistent:
+
+* Facility Management
+* Projectmanagement
+* Vastgoed- en Property Management
+* Techniek & Installaties
+
+Make image alt text and titles SEO-friendly and descriptive.
+
+HOW WE HELP SECTION
+Make the two main cards exactly the same height via CSS.
+Ensure the CTA buttons align perfectly at the bottom.
+Use flex layout if needed.
+
+Make both cards feel balanced:
+
+* same vertical rhythm
+* same spacing
+* same button alignment
+* same visual weight
+
+HUMAN COPY REFINEMENT
+Make the copy slightly less generic and more human.
+
+Use phrasing like:
+
+* “Beschikbaar zijn is niet hetzelfde als passen.”
+* “Een goede match moet ook in het team werken.”
+* “We houden contact, ook als er even geen update is.”
+* “We nemen liever iets meer tijd dan dat we de verkeerde match voorstellen.”
+* “Kwaliteit begint bij aandacht.”
+
+Do not overdo it. Use these as subtle improvements where useful.
+
+PROCESS SECTION
+Final polish:
+
+* Make background numbers more subtle if they compete with the text.
+* Improve spacing.
+* Ensure timeline feels premium, not wireframe-like.
+* Keep the process simple and readable.
+
+VACANCIES SECTION
+Keep this boutique and not job-board-like.
+
+Improve vacancy cards if needed:
+
+* clearer category badge
+* location
+* type
+* short intro sentence
+* subtle hover
+* stronger readability
+
+Do not add fake vacancies unless current examples are placeholders clearly intended for launch. If they are placeholders, make sure they can be easily replaced.
+
+CONTACT SECTION
+Final polish:
+
+* Make form labels and input text more readable.
+* Improve drag-and-drop upload area styling.
+* Add clear success state after submission.
+* Add clear error state.
+* Keep the left contact panel minimal, typographic and premium.
+* Do not use a random dark photo placeholder in the contact block.
+* Use strong typographic content instead.
+
+Suggested left panel text:
+“Direct schakelen met een specialist.”
+
+Supporting text:
+“Heb je een vraag, zoek je versterking of wil je vrijblijvend kennismaken? Laat je gegevens achter, dan nemen we persoonlijk contact met je op.”
+
+Contact details:
+[info@wedeploy.nl](mailto:info@wedeploy.nl)
++31 6 52345011
+Krijn Taconiskade 461
+1087 HW Amsterdam
+Netherlands
+
+CONTACT FORM FUNCTIONALITY
+The contact form must work.
+
+When someone submits the form, send the message to:
+[info@wedeploy.nl](mailto:info@wedeploy.nl)
+
+Email subject:
+“Aanvraag via wedeploy.nl”
+
+If possible, include whether the submission is from:
+
+* Kandidaat
+* Opdrachtgever
+
+Email body should include all submitted fields clearly:
+
+* type formulier
+* naam/contactpersoon
+* bedrijf if applicable
+* email
+* telefoonnummer
+* LinkedIn if applicable
+* message/omschrijving
+* uploaded CV or attachment if provided
+
+If file upload handling is not fully implemented yet, clearly add the backend code structure/placeholders needed for production file upload handling.
+
+SPAM PROTECTION
+Add real spam protection readiness:
+
+* Cloudflare Turnstile frontend integration placeholder
+* Cloudflare Turnstile backend verification placeholder
+* honeypot hidden field
+* basic rate limiting placeholder
+
+Add clear environment variable comments:
+CLOUDFLARE_TURNSTILE_SITE_KEY
+CLOUDFLARE_TURNSTILE_SECRET_KEY
+
+Do not rely on frontend validation only.
+
+SEO FINALIZATION
+Act as a Google SEO expert and add proper one-page SEO setup.
+
+Set SEO page title:
+“Wedeploy | Recruitment, Detachering & Interim voor Facility, Vastgoed en Techniek”
+
+Set meta description:
+“Wedeploy verbindt organisaties en professionals binnen Facility Management, Vastgoed, Techniek en Projectmanagement. Persoonlijke screening, transparante communicatie en duurzame matches.”
+
+Suggested focus keywords:
+
+* recruitment facility management
+* detachering facility management
+* interim facility management
+* vastgoed recruitment
+* vastgoedmanagement recruitment
+* technisch personeel detachering
+* projectmanagement recruitment
+* recruitmentbureau Amsterdam
+* Wedeploy recruitment
+
+Add Open Graph metadata:
+og:title:
+“Wedeploy | Duurzame matches in Facility Management, Vastgoed & Techniek”
+
+og:description:
+“Geen cv-doorschuivers, maar persoonlijke recruitment en detachering met aandacht voor kwaliteit, teamfit en lange termijn.”
+
+og:type:
+website
+
+og:url:
+https://wedeploy.nl
+
+og:image:
+Use a proper branded social preview image from the site assets. If not available, create/prepare a placeholder OG image path and clearly mark it.
+
+Add Twitter/X card metadata:
+twitter:card:
+summary_large_image
+
+twitter:title:
+“Wedeploy | Recruitment & Detachering”
+
+twitter:description:
+“Persoonlijke recruitment en detachering voor Facility Management, Vastgoed, Techniek en Projectmanagement.”
+
+twitter:image:
+same as og:image
+
+SCHEMA.ORG STRUCTURED DATA
+Add JSON-LD schema for:
+
+1. Organization
+2. LocalBusiness or ProfessionalService
+3. WebSite
+4. ContactPoint
+
+Use:
+Name: Wedeploy
+URL: https://wedeploy.nl
+Email: [info@wedeploy.nl](mailto:info@wedeploy.nl)
+Phone: +31 6 52345011
+Address:
+Krijn Taconiskade 461
+1087 HW Amsterdam
+Netherlands
+
+Business type:
+ProfessionalService / EmploymentAgency if suitable.
+
+SameAs:
+Add LinkedIn placeholder if actual LinkedIn URL is not available yet.
+
+IMAGE SEO
+For all important images:
+
+* Add descriptive alt text.
+* Add title attributes where useful.
+* Use clean file names where possible.
+* Avoid generic names like image1.jpg.
+* Use names like:
+
+  * wedeploy-recruitment-facility-management.jpg
+  * wedeploy-vastgoed-techniek-recruitment.jpg
+  * wedeploy-persoonlijke-screening.jpg
+
+Examples of alt text:
+
+* “Wedeploy recruitment voor Facility Management en Vastgoed”
+* “Persoonlijke screening van kandidaten bij Wedeploy”
+* “Recruitment en detachering voor technische en vastgoedfuncties”
+
+ACCESSIBILITY & PERFORMANCE
+Before launch:
+
+* Optimize images.
+* Use lazy loading for non-critical images.
+* Ensure good contrast.
+* Ensure buttons have accessible labels.
+* Ensure forms are keyboard accessible.
+* Ensure headings follow logical order.
+* Ensure mobile layout is polished.
+* Ensure no broken links.
+* Ensure no console errors.
+
+FOOTER
+Make footer final and premium:
+
+* Header logo and footer logo should feel visually consistent.
+* Footer should use asymmetrical grid.
+* Logo/description column should have more width and breathing room.
+* Navigation columns can be more compact.
+* Include address and contact details.
+* Include privacy statement and terms links as placeholders if pages are not ready yet.
+
+FINAL CHECKLIST
+Before finishing, verify:
+
+* website is one-page and launch-ready
+* copy feels more human
+* body text is more readable
+* header logo is larger
+* hero expertise text is readable
+* fake hero bubbles are removed or replaced
+* “Werving zoals het hoort” section has less awkward empty space
+* “Hoe wij helpen” cards have equal height and aligned buttons
+* “Vastgoed- en Property Management” is used consistently
+* contact form sends to [info@wedeploy.nl](mailto:info@wedeploy.nl)
+* email subject is “Aanvraag via wedeploy.nl”
+* spam protection placeholders are present
+* SEO title and meta description are added
+* Open Graph metadata is added
+* schema.org JSON-LD is added
+* image alt text is improved
+* mobile version is checked
+* no fake testimonials, fake logos or fake claims are added
+
+After this update, the website should be ready to go live.

@@ -10,10 +10,18 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
 
-const badges = [
-  { label: "Facility Manager geplaatst", sub: "Amsterdam", top: "top-[12%]", pos: "left-[-20px]" },
-  { label: "Projectleider Huisvesting", sub: "Utrecht",    top: "top-[46%]", pos: "left-[-36px]" },
-  { label: "Interim opdracht ingevuld", sub: "Rotterdam",  top: "top-[76%]", pos: "left-[-20px]" },
+const processLabels = [
+  { label: "Zorgvuldige screening", top: "top-[12%]", pos: "left-[-20px]" },
+  { label: "Persoonlijke intake",    top: "top-[46%]", pos: "left-[-36px]" },
+  { label: "Betere matches",         top: "top-[76%]", pos: "left-[-20px]" },
+];
+
+const expertiseTags = [
+  "Interim",
+  "Projectrollen",
+  "Vaste functies",
+  "Facility Management",
+  "Vastgoed & Techniek",
 ];
 
 export function Hero() {
@@ -32,27 +40,27 @@ export function Hero() {
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-7">
               <div className="w-8 h-0.5 rounded-full bg-accent" />
               <span className="text-[11px] font-bold tracking-[2px] uppercase text-accent">
-                Werving &amp; selectie · Detachering
+                Recruitment &amp; Detachering
               </span>
             </motion.div>
 
             <motion.h1
               variants={fadeUp}
-              className="text-[2.8rem] md:text-[3.5rem] font-extrabold leading-[1.05] text-primary tracking-tight mb-6"
+              className="text-[2.75rem] md:text-[3.4rem] font-extrabold leading-[1.06] text-primary tracking-tight mb-6"
             >
               Duurzame matches in Facility Management, Vastgoed &amp; Techniek.
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
-              className="text-[16px] leading-[1.85] text-muted-foreground mb-9 max-w-[460px]"
+              className="text-[16.5px] leading-[1.85] text-muted-foreground mb-9 max-w-[460px]"
             >
               We verbinden organisaties met professionals die niet alleen passen op papier,
               maar ook in de praktijk: bij het team, de opdracht en de fase waarin een
               organisatie zich bevindt.
             </motion.p>
 
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-6">
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-8">
               <motion.a
                 href="#contact"
                 whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(220 50% 18% / 0.20)" }}
@@ -64,27 +72,23 @@ export function Hero() {
               </motion.a>
               <motion.a
                 href="#kandidaten"
-                whileHover={{ y: -2, borderColor: "hsl(220 50% 18% / 0.5)" }}
+                whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.18 }}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent text-primary px-8 py-4 text-[14.5px] font-semibold transition-colors duration-200"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent text-primary px-8 py-4 text-[14.5px] font-semibold hover:border-primary/40 transition-colors duration-200"
               >
                 Voor professionals
               </motion.a>
             </motion.div>
 
-            <motion.p variants={fadeUp} className="text-[12.5px] text-muted-foreground/50 mb-10">
-              Voor interim, project- en vaste rollen binnen Facility Management, Vastgoed en Techniek.
-            </motion.p>
-
-            <motion.div
-              variants={fadeUp}
-              className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[12px] text-muted-foreground/45 font-medium pt-2 border-t border-border/30"
-            >
-              {["Persoonlijke aanpak", "Kwaliteit boven volume", "Begeleiding na plaatsing"].map((item, i) => (
-                <span key={item} className="flex items-center gap-2">
-                  {i > 0 && <span className="text-border/70">·</span>}
-                  {item}
+            {/* Expertise tag row */}
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-2">
+              {expertiseTags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-[12.5px] font-medium text-primary/60 border border-border/70 rounded-full px-3.5 py-1.5 bg-white"
+                >
+                  {tag}
                 </span>
               ))}
             </motion.div>
@@ -97,14 +101,14 @@ export function Hero() {
             transition={{ duration: 0.75, delay: 0.15 }}
             className="relative h-[540px] lg:h-[620px] hidden lg:block"
           >
-            {/* Layer 1 — beige offset block (bottom-right) */}
+            {/* Beige offset block */}
             <div
               className="absolute bottom-[-12px] right-[-12px] w-[90%] h-[90%] rounded-[24px] opacity-60"
               style={{ background: "hsl(36 35% 90%)" }}
             />
-            {/* Layer 2 — navy accent block (top-left) */}
+            {/* Subtle navy accent shape */}
             <div
-              className="absolute top-[-16px] left-[-16px] w-[60%] h-[60%] rounded-[20px] opacity-[0.06]"
+              className="absolute top-[-16px] left-[-16px] w-[55%] h-[55%] rounded-[20px] opacity-[0.06]"
               style={{ background: "hsl(220 50% 18%)" }}
             />
 
@@ -112,33 +116,31 @@ export function Hero() {
             <div className="relative z-10 w-[97%] h-full rounded-[22px] overflow-hidden shadow-[0_28px_72px_hsl(220_50%_18%/0.13)]">
               <img
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&q=80"
-                alt="Professionals in overleg over een project"
+                alt="Professionals in overleg over een project bij Wedeploy recruitment"
+                title="Wedeploy — persoonlijke screening en begeleiding"
                 className="w-full h-full object-cover object-center"
+                loading="eager"
               />
-              {/* Subtle warm vignette */}
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
                   background:
-                    "linear-gradient(160deg, transparent 45%, hsl(220 50% 10% / 0.15) 100%)",
+                    "linear-gradient(160deg, transparent 45%, hsl(220 50% 10% / 0.14) 100%)",
                 }}
               />
             </div>
 
-            {/* Floating status badges */}
-            {badges.map((badge, i) => (
+            {/* Process labels — credible, not fake placement claims */}
+            {processLabels.map((item, i) => (
               <motion.div
-                key={badge.label}
+                key={item.label}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.8 + i * 0.15 }}
-                className={`absolute ${badge.top} ${badge.pos} z-20 bg-white rounded-2xl px-4 py-3 shadow-[0_6px_24px_hsl(220_50%_18%/0.09)] flex items-center gap-3 min-w-[215px] border border-border/30`}
+                transition={{ duration: 0.4, delay: 0.85 + i * 0.15 }}
+                className={`absolute ${item.top} ${item.pos} z-20 bg-white rounded-2xl px-4 py-3 shadow-[0_6px_24px_hsl(220_50%_18%/0.08)] flex items-center gap-3 min-w-[200px] border border-border/25`}
               >
                 <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 shadow-[0_0_0_3px_hsl(205_85%_53%/0.15)]" />
-                <div>
-                  <div className="text-[12.5px] font-bold text-primary leading-tight">{badge.label}</div>
-                  <div className="text-[10.5px] text-muted-foreground/55 mt-0.5">{badge.sub}</div>
-                </div>
+                <span className="text-[13px] font-semibold text-primary">{item.label}</span>
               </motion.div>
             ))}
           </motion.div>
