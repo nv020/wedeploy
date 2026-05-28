@@ -2,5 +2,6 @@
 type ModuleMap = Record<string, () => Promise<Record<string, unknown>>>;
 export const modules: ModuleMap = {
   "./components/mockups/wedeploy/VariantA.tsx": () => import("../components/mockups/wedeploy/VariantA.tsx"),
-  "./components/mockups/wedeploy/VariantB.tsx": () => import("../components/mockups/wedeploy/VariantB.tsx")
+  "./components/mockups/wedeploy/VariantB.tsx": () => import("../components/mockups/wedeploy/VariantB.tsx"),
+  "./components/mockups/wedeploy/VariantC.tsx": () => import("../components/mockups/wedeploy/VariantC.tsx")
 };
