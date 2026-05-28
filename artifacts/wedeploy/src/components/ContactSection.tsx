@@ -138,19 +138,32 @@ export function ContactSection() {
             />
             <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full opacity-[0.05] -translate-x-1/3 translate-y-1/3 pointer-events-none"
               style={{ background: "hsl(205 85% 53%)" }} />
+            {/* Subtle vignette — adds depth and richness without being visible */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{ background: "radial-gradient(ellipse at 25% 10%, transparent 35%, hsl(220 58% 10% / 0.22) 100%)" }}
+            />
 
             <div className="relative flex-1 flex flex-col">
-              {/* Portrait — subtle, human, premium */}
+              {/* Portrait — editorial, human, premium */}
               <div className="flex flex-col items-start gap-2 mb-8">
-                <div className="w-[84px] h-[100px] rounded-2xl overflow-hidden border border-white/[0.08]">
+                <div className="w-[88px] h-[96px] rounded-[14px] overflow-hidden border border-white/[0.10]">
                   <img
                     src={nickyPhoto}
                     alt="Nicky — Wedeploy"
-                    className="w-full h-full object-cover object-center"
-                    style={{ filter: "grayscale(55%) brightness(1.06)" }}
+                    className="w-full h-full object-cover"
+                    style={{
+                      filter: "grayscale(50%) brightness(1.08) contrast(0.96)",
+                      objectPosition: "50% 18%",
+                      transform: "scale(1.08)",
+                      transformOrigin: "50% 20%",
+                    }}
                   />
                 </div>
-                <span className="text-[11.5px] font-semibold tracking-[1.5px] text-white/35">Nicky</span>
+                <div className="flex flex-col gap-0.5">
+                  <span className="text-[12px] font-semibold tracking-[1px] text-white/50">Nicky</span>
+                  <span className="text-[10.5px] text-white/25 tracking-[0.3px]">Persoonlijk contact &amp; begeleiding</span>
+                </div>
               </div>
 
               <div className="flex items-center gap-2.5 mb-8">
@@ -183,35 +196,35 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-5 pt-10 border-t border-white/10 mt-10">
-                <a href="mailto:info@wedeploy.nl" className="flex items-start gap-4 group">
-                  <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition-colors duration-200">
-                    <Mail className="w-4 h-4 text-white/70 group-hover:text-white transition-colors" />
+              <div className="flex flex-col gap-6 pt-10 border-t border-white/[0.08] mt-10">
+                <a href="mailto:info@wedeploy.nl" className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-white/[0.07] flex items-center justify-center flex-shrink-0 group-hover:bg-accent/25 transition-colors duration-250">
+                    <Mail className="w-[17px] h-[17px] text-white/50 group-hover:text-white transition-colors duration-250" />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold tracking-widest uppercase text-white/30 mb-0.5">E-mail</p>
-                    <p className="text-[13.5px] text-white font-medium">info@wedeploy.nl</p>
+                    <p className="text-[10px] font-bold tracking-[2px] uppercase text-white/25 mb-1">E-mail</p>
+                    <p className="text-[14px] text-white/80 font-medium group-hover:text-white transition-colors duration-200">info@wedeploy.nl</p>
                   </div>
                 </a>
 
-                <a href="tel:+31652345011" className="flex items-start gap-4 group">
-                  <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition-colors duration-200">
-                    <Phone className="w-4 h-4 text-white/70 group-hover:text-white transition-colors" />
+                <a href="tel:+31652345011" className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-white/[0.07] flex items-center justify-center flex-shrink-0 group-hover:bg-accent/25 transition-colors duration-250">
+                    <Phone className="w-[17px] h-[17px] text-white/50 group-hover:text-white transition-colors duration-250" />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold tracking-widest uppercase text-white/30 mb-0.5">Telefoon</p>
-                    <p className="text-[13.5px] text-white font-medium">+31 6 52345011</p>
+                    <p className="text-[10px] font-bold tracking-[2px] uppercase text-white/25 mb-1">Telefoon</p>
+                    <p className="text-[14px] text-white/80 font-medium group-hover:text-white transition-colors duration-200">+31 6 52345011</p>
                   </div>
                 </a>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-4 h-4 text-white/70" />
+                  <div className="w-10 h-10 rounded-xl bg-white/[0.07] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <MapPin className="w-[17px] h-[17px] text-white/50" />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold tracking-widest uppercase text-white/30 mb-0.5">Adres</p>
-                    <p className="text-[13.5px] text-white font-medium leading-relaxed">
-                      Krijn Taconiskade 461<br />1087 HW Amsterdam<br />Nederland
+                    <p className="text-[10px] font-bold tracking-[2px] uppercase text-white/25 mb-1">Adres</p>
+                    <p className="text-[14px] text-white/80 font-medium leading-[1.7]">
+                      Krijn Taconiskade 461<br />1087 HW Amsterdam
                     </p>
                   </div>
                 </div>

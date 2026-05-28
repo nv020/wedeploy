@@ -12,7 +12,7 @@ const proofPoints = [
   },
   {
     title: "Begeleiding na de match",
-    desc: "We blijven betrokken na de start. Zo borgen we dat een goede match ook op de lange termijn standhoudt.",
+    desc: "We blijven betrokken na de start. Een goede match moet ook binnen het team landen — we houden contact met beide kanten.",
   },
 ];
 

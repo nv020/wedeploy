@@ -1,0 +1,134 @@
+Final micro-polish before launch.
+
+The current direction is strong and should NOT be redesigned anymore. This update is only about subtle premium refinement, stronger human feeling and final visual polish.
+
+1. CONTACT SECTION — PORTRAIT POLISH
+
+The portrait integration of Nicky works well and should remain subtle and premium.
+
+Make the portrait slightly more editorial:
+
+* crop slightly closer to the face
+* reduce the “passport/LinkedIn profile” feeling
+* make it feel more like a calm editorial portrait
+* keep natural and understated
+
+Do NOT enlarge it too much.
+Keep it subtle and integrated into the layout.
+
+Keep only:
+“Nicky”
+
+Optional subtle supporting line underneath:
+“Persoonlijk contact & begeleiding”
+
+Very small and understated.
+
+2. DARK CONTACT PANEL REFINEMENT
+
+The dark blue contact panel is good but can feel slightly flat.
+
+Add a VERY subtle premium treatment:
+
+* soft navy gradient
+  OR
+* subtle texture/noise overlay
+  OR
+* soft vignette/light falloff
+
+IMPORTANT:
+Keep this extremely subtle.
+The effect should only add depth and richness.
+
+Do NOT create obvious gradients or flashy effects.
+
+3. CONTACT DETAILS HIERARCHY
+
+Improve the hierarchy of:
+
+* phone
+* email
+* address
+
+Make them feel slightly more editorial:
+
+* a bit more spacing between items
+* slightly better line-height
+* subtle icon refinement
+* slightly stronger readability
+
+The contact block should feel:
+
+* calm
+* premium
+* trustworthy
+* human
+
+4. FINAL HUMAN COPY POLISH
+
+Preserve the strongest brand statements such as:
+
+* “Een cv vertelt niet hoe iemand samenwerkt.”
+* “Niet meer cv’s. Betere matches.”
+
+Reduce remaining generic recruitment wording where possible.
+
+Prefer human observations over corporate language.
+
+Examples of stronger tone:
+
+* “Beschikbaar zijn is niet hetzelfde als passen.”
+* “Een goede match moet ook binnen het team werken.”
+* “We nemen liever iets meer tijd dan dat we de verkeerde match voorstellen.”
+
+Do NOT overdo this.
+Use subtly.
+
+5. FINAL VISUAL CONSISTENCY CHECK
+
+Before launch, check:
+
+* spacing consistency
+* border-radius consistency
+* hover consistency
+* shadow consistency
+* image color grading consistency
+* typography hierarchy
+* button consistency
+
+The website should feel like one cohesive premium brand.
+
+6. MOBILE FINAL CHECK
+
+Carefully review mobile:
+
+* portrait placement
+* hero spacing
+* form usability
+* typography readability
+* overlapping sections
+* timeline layout
+* button sizes
+* footer spacing
+
+Ensure the mobile version still feels premium and spacious.
+
+7. FINAL BRAND FEEL
+
+The final website should feel:
+
+* personal
+* calm
+* specialist
+* premium
+* human
+* trustworthy
+
+NOT:
+
+* generic staffing agency
+* flashy startup
+* AI-generated template
+* CV factory
+
+After these final refinements, the website should be considered launch-ready.

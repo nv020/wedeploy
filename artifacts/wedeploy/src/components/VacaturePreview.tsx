@@ -9,7 +9,7 @@ const vacatures = [
     type: "Interim",
     typeColor: "bg-accent/10 text-accent",
     popular: true,
-    desc: "Interimopdracht voor een ervaren facility manager bij een grote zakelijke dienstverlener in de regio Amsterdam.",
+    desc: "Interimopdracht bij een grote zakelijke dienstverlener in Amsterdam. Zelfstandig opereren, directe impact, weinig overhead.",
   },
   {
     title: "Projectleider Huisvesting",
@@ -18,7 +18,7 @@ const vacatures = [
     type: "Project",
     typeColor: "bg-primary/10 text-primary",
     popular: false,
-    desc: "Leidende rol in een huisvestingstraject voor een overheidsorganisatie in transitie. Complexe stakeholderdynamiek.",
+    desc: "Huisvestingstraject voor een overheidsorganisatie in beweging. Navigeren door complexe stakeholders, met ruimte voor eigen inbreng.",
   },
   {
     title: "Technisch Vastgoed Coördinator",
@@ -27,7 +27,7 @@ const vacatures = [
     type: "Vast",
     typeColor: "bg-muted text-muted-foreground",
     popular: false,
-    desc: "Verantwoordelijk voor het technisch beheer en onderhoud van een omvangrijke commerciële vastgoedportefeuille.",
+    desc: "Verantwoordelijk voor technisch beheer van een commerciële vastgoedportefeuille in de Randstad. Inhoudelijke diepgang, overzichtelijke structuur.",
   },
 ];
 
@@ -60,7 +60,7 @@ export function VacaturePreview() {
           </a>
         </div>
 
-        <p className="text-[14.5px] text-muted-foreground mb-12 max-w-xl leading-relaxed">
+        <p className="text-[15px] text-muted-foreground mb-12 max-w-xl leading-relaxed">
           Wij werken aan opdrachten binnen Facility Management, vastgoed, workplace en techniek.
           Niet iedere rol wordt openbaar gepubliceerd.
         </p>
@@ -96,7 +96,7 @@ export function VacaturePreview() {
                 <ArrowRight className="w-4 h-4 text-muted-foreground/30 group-hover:text-accent group-hover:translate-x-1 transition-all duration-200 mt-1" />
               </div>
               <h3 className="text-[17px] font-bold text-primary leading-snug mb-2">{v.title}</h3>
-              <p className="text-[13px] text-muted-foreground leading-relaxed flex-1">{v.desc}</p>
+              <p className="text-[13.5px] text-muted-foreground leading-[1.75] flex-1">{v.desc}</p>
               <div className="flex items-center gap-4 text-[12px] text-muted-foreground mt-7 pt-5 border-t border-border/40">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="w-3 h-3 flex-shrink-0" />
@@ -109,9 +109,9 @@ export function VacaturePreview() {
           ))}
         </motion.div>
 
-        <p className="mt-8 text-[13px] text-muted-foreground/60 text-center max-w-lg mx-auto leading-relaxed">
-          Heeft u een specifieke rol in gedachten? Neem contact op — veel opdrachten worden
-          discreet ingevuld en zijn niet openbaar gepubliceerd.
+        <p className="mt-8 text-[13px] text-muted-foreground/55 text-center max-w-lg mx-auto leading-relaxed">
+          Heeft u een specifieke rol in gedachten? Veel opdrachten worden discreet ingevuld
+          en zijn niet openbaar zichtbaar — neem gerust contact op.
         </p>
       </div>
     </section>

@@ -22,7 +22,7 @@ const steps = [
   {
     number: "04",
     title: "Match & opvolging",
-    desc: "Na de start blijven we betrokken. We checken in bij zowel de professional als de opdrachtgever voor een duurzame landing.",
+    desc: "Na de start blijven we betrokken. Een goede match moet ook écht landen — we checken in bij zowel de professional als de opdrachtgever.",
     align: "right",
   },
 ];
