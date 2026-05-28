@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Upload, CheckCircle2, AlertCircle } from "lucide-react";
+import nickyPhoto from "@assets/Nick_1779994992412.png";
 
 /**
  * Contact form — submits to /api/contact on the API server.
@@ -139,6 +140,19 @@ export function ContactSection() {
               style={{ background: "hsl(205 85% 53%)" }} />
 
             <div className="relative flex-1 flex flex-col">
+              {/* Portrait — subtle, human, premium */}
+              <div className="flex flex-col items-start gap-2 mb-8">
+                <div className="w-[84px] h-[100px] rounded-2xl overflow-hidden border border-white/[0.08]">
+                  <img
+                    src={nickyPhoto}
+                    alt="Nicky — Wedeploy"
+                    className="w-full h-full object-cover object-center"
+                    style={{ filter: "grayscale(55%) brightness(1.06)" }}
+                  />
+                </div>
+                <span className="text-[11.5px] font-semibold tracking-[1.5px] text-white/35">Nicky</span>
+              </div>
+
               <div className="flex items-center gap-2.5 mb-8">
                 <div className="w-5 h-0.5 rounded-full bg-accent" />
                 <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent/80">Direct contact</span>
