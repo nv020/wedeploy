@@ -4,38 +4,38 @@ const areas = [
   {
     id: "fm",
     title: "Facility Management",
-    sentence: "Van facilitaire managers tot coördinatoren en servicespecialisten.",
+    sentence: "Van facilitaire managers en coördinatoren tot servicespecialisten op strategisch niveau.",
     img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80",
     alt: "Modern faciliteitenbeheer en kantooromgeving",
     span: "lg:col-span-2",
-    height: "h-72 lg:h-80",
+    height: "h-[300px] lg:h-[340px]",
   },
   {
     id: "pm",
     title: "Projectmanagement",
-    sentence: "Projectmanagers en programmamanagers voor complexe trajecten.",
+    sentence: "Projectmanagers en programmamanagers voor complexe trajecten in vastgoed en infra.",
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80",
     alt: "Professioneel team in projectoverleg",
     span: "lg:col-span-1",
-    height: "h-72 lg:h-80",
+    height: "h-[300px] lg:h-[340px]",
   },
   {
     id: "tech",
     title: "Techniek & Installaties",
-    sentence: "Technisch specialisten, engineers en installatieprofessionals.",
-    img: "https://images.unsplash.com/photo-1581092921461-7031c12c4c1d?w=700&q=80",
-    alt: "Technische professional aan het werk",
+    sentence: "Technisch specialisten, werktuigbouwkundigen, E&W-engineers en installatieprofessionals.",
+    img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80",
+    alt: "Technische professional aan het werk in industriële omgeving",
     span: "lg:col-span-1",
-    height: "h-64 lg:h-72",
+    height: "h-[280px] lg:h-[300px]",
   },
   {
     id: "vastgoed",
     title: "Vastgoedmanagement",
-    sentence: "Property managers, assetmanagers en vastgoedprofessionals.",
+    sentence: "Property managers, asset managers en vastgoedprofessionals voor commercieel en institutioneel vastgoed.",
     img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80",
     alt: "Modern vastgoed en gebouwbeheer",
     span: "lg:col-span-2",
-    height: "h-64 lg:h-72",
+    height: "h-[280px] lg:h-[300px]",
   },
 ];
 
@@ -60,11 +60,12 @@ export function ExpertiseAreas() {
           </h2>
           <p className="text-[15px] text-muted-foreground leading-relaxed max-w-xl">
             Met ruim twee decennia aan ervaring binnen de top van facility- en vastgoedmanagement
-            begrijpen we de dynamiek van de markt door en door.
+            begrijpen we de dynamiek van elke sector van binnenuit. We plaatsen geen kandidaten
+            in rollen waar we zelf nooit iets van hebben gehoord.
           </p>
         </div>
 
-        {/* Bento grid — FM + Vastgoed: 2/3 wide, PM + Techniek: 1/3 wide */}
+        {/* Bento grid — FM + Vastgoed: col-span-2, PM + Techniek: col-span-1 */}
         <motion.div
           variants={stagger}
           initial="hidden"
@@ -82,17 +83,22 @@ export function ExpertiseAreas() {
                 src={area.img}
                 alt={area.alt}
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
               />
+              {/* Gradient overlay */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(to top, hsl(220 50% 10% / 0.92) 0%, hsl(220 50% 10% / 0.30) 55%, transparent 100%)",
+                    "linear-gradient(to top, hsl(220 50% 10% / 0.90) 0%, hsl(220 50% 10% / 0.25) 50%, transparent 100%)",
                 }}
               />
+              {/* Top-left subtle accent dot */}
+              <div className="absolute top-5 left-5 w-2 h-2 rounded-full bg-accent opacity-70" />
+
               <div className="absolute bottom-0 left-0 p-7">
-                <h3 className="text-white text-xl font-bold leading-snug mb-1.5">{area.title}</h3>
-                <p className="text-white/60 text-[12.5px] leading-snug opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                <h3 className="text-white text-[18px] font-bold leading-snug mb-1.5">{area.title}</h3>
+                <p className="text-white/65 text-[12.5px] leading-snug max-w-[280px] opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
                   {area.sentence}
                 </p>
               </div>
@@ -100,9 +106,9 @@ export function ExpertiseAreas() {
           ))}
         </motion.div>
 
-        <p className="mt-8 text-[13.5px] text-muted-foreground/70 text-center max-w-xl mx-auto leading-relaxed">
-          Onze ervaring ligt in deze vakgebieden, maar we denken ook graag mee over andere
-          specialistische functies waar kwaliteit en fit belangrijk zijn.
+        <p className="mt-8 text-[13px] text-muted-foreground/60 text-center max-w-xl mx-auto leading-relaxed">
+          Naast deze vier kerngebieden denken we ook graag mee over aangrenzende specialistische functies
+          waarbij kwaliteit en langetermijnfit bepalend zijn.
         </p>
       </div>
     </section>

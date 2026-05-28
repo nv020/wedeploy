@@ -16,9 +16,6 @@ export function ContactSection() {
   const kandFileRef = useRef<HTMLInputElement>(null);
   const opdrFileRef = useRef<HTMLInputElement>(null);
 
-  const inputCls =
-    "w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-[14px] text-white placeholder:text-white/35 outline-none focus:border-accent/60 focus:ring-2 focus:ring-accent/15 transition-all duration-200";
-
   const inputClsLight =
     "w-full rounded-xl border border-border bg-background px-4 py-3 text-[14px] text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all duration-200";
 
@@ -44,19 +41,56 @@ export function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 bg-primary relative overflow-hidden p-10 lg:p-12 flex flex-col"
+            className="lg:col-span-2 bg-primary relative overflow-hidden flex flex-col"
           >
+            {/* Radial glow top right */}
             <div
-              className="absolute bottom-0 left-0 w-64 h-64 rounded-full opacity-10 -translate-x-1/3 translate-y-1/3"
+              className="absolute top-0 right-0 w-72 h-72 opacity-[0.08] -translate-y-1/4 translate-x-1/4"
+              style={{ background: "radial-gradient(circle, hsl(205 85% 53%) 0%, transparent 70%)", borderRadius: "50%" }}
+            />
+            {/* Soft circle bottom left */}
+            <div
+              className="absolute bottom-0 left-0 w-48 h-48 rounded-full opacity-[0.07] -translate-x-1/3 translate-y-1/3"
               style={{ background: "hsl(205 85% 53%)" }}
             />
 
-            <div className="relative flex-1 flex flex-col">
-              <p className="text-[16px] text-white/75 leading-relaxed mb-10 max-w-xs">
-                We maken graag kennis.
-              </p>
+            <div className="relative flex-1 flex flex-col p-10 lg:p-12">
+              {/* CTA headline block */}
+              <div className="mb-8">
+                <div className="flex items-center gap-2.5 mb-5">
+                  <div className="w-5 h-0.5 rounded-full bg-accent" />
+                  <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent/80">Direct contact</span>
+                </div>
+                <h3 className="text-[1.65rem] font-bold text-white leading-[1.2] mb-4">
+                  Direct sparren met een specialist?
+                </h3>
+                <p className="text-[14px] text-white/65 leading-relaxed">
+                  U spreekt altijd direct met een ervaren partner. Geen junior recruiters, geen doorschakelen,
+                  geen wachtrijen. Gewoon eerlijk advies van iemand die uw markt door en door kent.
+                </p>
+              </div>
 
-              <div className="flex flex-col gap-6 mt-auto">
+              {/* Editorial portrait */}
+              <div className="relative mb-8 rounded-2xl overflow-hidden h-[200px] flex-shrink-0">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80"
+                  alt="Senior consultant Wedeploy"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: "linear-gradient(to top, hsl(220 50% 12% / 0.75) 0%, transparent 60%)",
+                  }}
+                />
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-white text-[13px] font-semibold leading-snug">Senior partner</p>
+                  <p className="text-white/55 text-[11.5px] mt-0.5">Facility · Vastgoed · Techniek</p>
+                </div>
+              </div>
+
+              {/* Contact details */}
+              <div className="flex flex-col gap-5 mt-auto">
                 <a
                   href="mailto:info@wedeploy.nl"
                   className="flex items-start gap-4 group"
@@ -65,8 +99,8 @@ export function ContactSection() {
                     <Mail className="w-4 h-4 text-white/70 group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <p className="text-[11px] font-bold tracking-widest uppercase text-white/35 mb-0.5">E-mail</p>
-                    <p className="text-[14px] text-white font-medium">info@wedeploy.nl</p>
+                    <p className="text-[10.5px] font-bold tracking-widest uppercase text-white/30 mb-0.5">E-mail</p>
+                    <p className="text-[13.5px] text-white font-medium">info@wedeploy.nl</p>
                   </div>
                 </a>
 
@@ -78,8 +112,8 @@ export function ContactSection() {
                     <Phone className="w-4 h-4 text-white/70 group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <p className="text-[11px] font-bold tracking-widest uppercase text-white/35 mb-0.5">Telefoon</p>
-                    <p className="text-[14px] text-white font-medium">+31 6 52345011</p>
+                    <p className="text-[10.5px] font-bold tracking-widest uppercase text-white/30 mb-0.5">Telefoon</p>
+                    <p className="text-[13.5px] text-white font-medium">+31 6 52345011</p>
                   </div>
                 </a>
 
@@ -88,11 +122,10 @@ export function ContactSection() {
                     <MapPin className="w-4 h-4 text-white/70" />
                   </div>
                   <div>
-                    <p className="text-[11px] font-bold tracking-widest uppercase text-white/35 mb-0.5">Adres</p>
-                    <p className="text-[14px] text-white font-medium leading-relaxed">
+                    <p className="text-[10.5px] font-bold tracking-widest uppercase text-white/30 mb-0.5">Adres</p>
+                    <p className="text-[13.5px] text-white font-medium leading-relaxed">
                       Krijn Taconiskade 461<br />
-                      1087 HW Amsterdam<br />
-                      Nederland
+                      1087 HW Amsterdam
                     </p>
                   </div>
                 </div>
