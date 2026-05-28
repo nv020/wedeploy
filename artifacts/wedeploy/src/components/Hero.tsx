@@ -10,20 +10,6 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
 
-const processLabels = [
-  { label: "Zorgvuldige screening", top: "top-[12%]", pos: "left-[-20px]" },
-  { label: "Persoonlijke intake",    top: "top-[46%]", pos: "left-[-36px]" },
-  { label: "Betere matches",         top: "top-[76%]", pos: "left-[-20px]" },
-];
-
-const expertiseTags = [
-  "Interim",
-  "Projectrollen",
-  "Vaste functies",
-  "Facility Management",
-  "Vastgoed & Techniek",
-];
-
 export function Hero() {
   return (
     <section id="home" className="min-h-[calc(100vh-68px)] flex items-center bg-background overflow-hidden">
@@ -55,12 +41,11 @@ export function Hero() {
               variants={fadeUp}
               className="text-[16.5px] leading-[1.85] text-muted-foreground mb-9 max-w-[460px]"
             >
-              We verbinden organisaties met professionals die niet alleen passen op papier,
-              maar ook in de praktijk: bij het team, de opdracht en de fase waarin een
-              organisatie zich bevindt.
+              Wedeploy verbindt organisaties en professionals met aandacht voor
+              kwaliteit, teamfit en duurzame samenwerking.
             </motion.p>
 
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-8">
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-7">
               <motion.a
                 href="#contact"
                 whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(220 50% 18% / 0.20)" }}
@@ -68,7 +53,7 @@ export function Hero() {
                 transition={{ duration: 0.18 }}
                 className="inline-flex items-center gap-2.5 rounded-full bg-primary text-white px-8 py-4 text-[14.5px] font-bold"
               >
-                Bespreek uw vraagstuk <span aria-hidden>→</span>
+                Ik zoek versterking <span aria-hidden>→</span>
               </motion.a>
               <motion.a
                 href="#kandidaten"
@@ -77,21 +62,17 @@ export function Hero() {
                 transition={{ duration: 0.18 }}
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent text-primary px-8 py-4 text-[14.5px] font-semibold hover:border-primary/40 transition-colors duration-200"
               >
-                Voor professionals
+                Ik ben professional
               </motion.a>
             </motion.div>
 
-            {/* Expertise tag row */}
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-2">
-              {expertiseTags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-[12.5px] font-medium text-primary/60 border border-border/70 rounded-full px-3.5 py-1.5 bg-white"
-                >
-                  {tag}
-                </span>
-              ))}
-            </motion.div>
+            {/* Supporting line — no pill styling */}
+            <motion.p
+              variants={fadeUp}
+              className="text-[11.5px] tracking-[0.8px] text-primary/38 font-medium"
+            >
+              Persoonlijke screening · Transparante communicatie · Duurzame matches
+            </motion.p>
           </motion.div>
 
           {/* Right — layered image composition */}
@@ -99,50 +80,38 @@ export function Hero() {
             initial={{ opacity: 0, x: 32 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.75, delay: 0.15 }}
-            className="relative h-[540px] lg:h-[620px] hidden lg:block"
+            className="relative h-[560px] lg:h-[660px] hidden lg:block"
           >
-            {/* Beige offset block */}
+            {/* Beige offset block — slightly larger for more asymmetric editorial feel */}
             <div
-              className="absolute bottom-[-12px] right-[-12px] w-[90%] h-[90%] rounded-[24px] opacity-60"
+              className="absolute bottom-[-16px] right-[-16px] w-[88%] h-[92%] rounded-[28px] opacity-55"
               style={{ background: "hsl(36 35% 90%)" }}
             />
-            {/* Subtle navy accent shape */}
+            {/* Navy accent shape — taller, more asymmetric */}
             <div
-              className="absolute top-[-16px] left-[-16px] w-[55%] h-[55%] rounded-[20px] opacity-[0.06]"
+              className="absolute top-[-20px] left-[-20px] w-[48%] h-[62%] rounded-[22px] opacity-[0.055]"
               style={{ background: "hsl(220 50% 18%)" }}
             />
 
             {/* Main photo */}
             <div className="relative z-10 w-[97%] h-full rounded-[22px] overflow-hidden shadow-[0_28px_72px_hsl(220_50%_18%/0.13)]">
               <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&q=80"
-                alt="Professionals in overleg over een project bij Wedeploy recruitment"
-                title="Wedeploy — persoonlijke screening en begeleiding"
-                className="w-full h-full object-cover object-center"
+                src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=900&q=80"
+                alt="Professional bij Wedeploy recruitment en detachering"
+                title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "50% 20%" }}
                 loading="eager"
               />
+              {/* Warm cinematic overlay */}
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
                   background:
-                    "linear-gradient(160deg, transparent 45%, hsl(220 50% 10% / 0.14) 100%)",
+                    "linear-gradient(175deg, hsl(36 55% 70% / 0.10) 0%, transparent 38%, hsl(220 50% 10% / 0.22) 100%)",
                 }}
               />
             </div>
-
-            {/* Process labels — credible, not fake placement claims */}
-            {processLabels.map((item, i) => (
-              <motion.div
-                key={item.label}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.85 + i * 0.15 }}
-                className={`absolute ${item.top} ${item.pos} z-20 bg-white rounded-2xl px-4 py-3 shadow-[0_6px_24px_hsl(220_50%_18%/0.08)] flex items-center gap-3 min-w-[200px] border border-border/25`}
-              >
-                <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 shadow-[0_0_0_3px_hsl(205_85%_53%/0.15)]" />
-                <span className="text-[13px] font-semibold text-primary">{item.label}</span>
-              </motion.div>
-            ))}
           </motion.div>
 
         </div>
