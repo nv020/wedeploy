@@ -1,0 +1,87 @@
+2. Specifieke Prompts voor CSS & Styling (Indien je handmatig codeert)
+Als je Replit gebruikt om specifieke CSS-componenten te herschrijven, gebruik dan deze prompts:
+
+Voor het asymmetrische Bento Grid (Vakgebieden):
+Plaintext
+Genereer de HTML en CSS (bij voorkeur met CSS Grid of flexibele flexbox-opzet geschikt voor een schone presentatie) voor een asymmetrisch 'Bento Grid' voor de 4 vakgebieden. 
+- Kaart 1 (Facility Management) en Kaart 2 (Vastgoedmanagement) moeten prominent zijn en visueel meer gewicht krijgen (bijvoorbeeld breder of met een subtiele, zachte achtergrondkleur).
+- Kaart 3 (Projectmanagement) en Kaart 4 (Techniek) sluiten hier asymmetrisch op aan.
+- Geen harde, goedkope randen. Gebruik uiterst subtiele schaduwen of zachte tinten om de kaarten te onderscheiden. De typografie binnen de kaarten moet strak en minimalistisch zijn, met royale padding.
+Voor de paginabrede Visie-Sectie (De Grid-Breker):
+Plaintext
+Maak een minimalistische, paginabrede quote-sectie om de herhaling van de website-blokken te doorbreken. 
+- De achtergrond moet een hele zachte, gedempte ijsblauwe of off-white tint hebben.
+- De tekst moet gecentreerd zijn, met een groot, elegant, schreefloos lettertype. 
+- Tekst: "Wij geloven niet in CV's schuiven. Wij geloven in het bouwen van fundamenten."
+- Voeg hier geen afbeeldingen of iconen aan toe; laat de witruimte en de typografie de premium kwaliteit uitstralen.
+3. Tekstuele Content & Toon-Prompt (Voor de puntjes op de i)
+Gebruik dit om de teksten in je Replit-bestanden (zoals index.html of je content-componenten) direct te optimaliseren:
+
+Plaintext
+Vervang de placeholder-teksten op de website door deze definitieve, professionele copy:
+
+[HERO]
+H1: Duurzame matches in Facility, Vastgoed & Techniek.
+Subkop: Gebouwd op meer dan 20 jaar expertise.
+Body: Geen snelle CV-selecties, maar strategische partnerships. Wij verbinden opdrachtgevers en professionals die samen een duurzaam fundament willen bouwen.
+
+[VAKGEBIEDEN INTRO]
+H2: Expertise die verder gaat dan een LinkedIn-profiel
+Body: Met ruim twee decennia aan ervaring binnen de top van facility- en vastgoedmanagement begrijpen we de dynamiek van de markt door en door. We schuiven geen cv's; we doorgronden de strategische uitdaging en vinden de professional die écht het verschil maakt. Ook binnen complexe technische rollen hanteren we deze grondige, kwalitatieve aanpak.
+
+[CTA-KNOPPEN]
+Primair (Opdrachtgever): Sparren over capaciteit
+Secundair (Kandidaat): Vertrouwelijk kennismaken
+
+[VACATURE SECTIE]
+Titel: Actuele Projecten & Rollen
+Subtekst: Een selectie van strategische posities en interim-vraagstukken die wij momenteel exclusief begeleiden.
+4. Architectuur & Code-Hygiëne Checklist voor Replit
+Wanneer de Replit Agent of jijzelf klaar bent met bouwen, controleer dan de code op de volgende 'premium' aspecten:
+
+Box-Sizing: Staat box-sizing: border-box; overal aan om layout-verschuivingen te voorkomen?
+
+Geen Flex/Grid op Body-level: Zorg dat de grid-definities uitsluitend op container-niveau (.grid-container, .bento-grid) worden toegepast voor maximale stabiliteit en clean code.
+
+Responsive Spacing: Worden de paddings en margins groter op desktop (bijv. padding: 80px 0;) voor dat ruimtelijke, luxe gevoel, en schalen ze netjes af op mobiel?
+"""
+
+Write to file
+with open("replit_upgrade_prompts.md", "w", encoding="utf-8") as f:
+f.write(content)
+
+print("File generated successfully: replit_upgrade_prompts.md")
+
+Je Replit-prompts en het strategische upgrade-plan zijn volledig uitgewerkt en staan klaar in een overzichtelijk Markdown-bestand. Hierin is je expertise direct aangescherpt naar **meer dan 20 jaar**, en zijn de prompts zo geformuleerd dat Replit of de Replit Agent exact begrijpt hoe die premium, asymmetrische look (zonder de 'zigzag-vloek') gebouwd moet worden.
+
+Je kunt het Markdown-bestand hier vinden:
+[file-tag: code-generated-file-0-1779981468125938790]
+
+Hieronder vind je de belangrijkste **Master Prompt** die je direct in de Replit Agent kunt kopiëren en plakken voor de complete transformatie:
+
+### De Replit Agent Master Prompt
+
+```text
+Bouw of upgrade mijn recruitment/detachering website naar een premium, high-end "Strategic Talent Partner" platform. De website dient puur als een uiterst professionele bedrijfspresentatie (geen agressieve leadgenerator). 
+
+Hanteer de volgende harde richtlijnen voor design en structuur:
+1. DOELGROEP & TOON: De uitstraling moet senioriteit, zakelijke klasse en diepgaande expertise uitstralen (gericht op directies en top-professionals). Absoluut GEEN goedkope iconen, generieke poppetjes, handdruk-clichés of overdreven elementen. De focus ligt op krachtige, rustige typografie en een strakke, minimalistische stijl.
+2. EXPERTISE: Verwerk subtiel en krachtig dat de oprichter ruim 20 jaar track-record en expertise heeft binnen Facility Management, Vastgoedmanagement en Projectmanagement, en van daaruit ook hoogwaardige Technische rollen invult.
+3. KLEURENPALET: Gebruik een verfijnd palet van diep donkerblauw (voor autoriteit en tekst), ijsblauw/lichtblauw als subtiele accentkleur, en wissel de secties af met spierwit en een uiterst zachte, rustgevende off-white/lichtgrijze tint om natuurlijke kaders te vormgeven.
+4. GRID & STRUCTUUR (GEEN zigzag-vloek): 
+   - Vervang repeterende, identieke kolommen door een asymmetrische opzet.
+   - De vakgebieden moeten in een 'Bento Grid' of asymmetrische kaartenstructuur: geef Facility Management en Vastgoedmanagement grote, prominente kaarten (bijv. 2/3 breedte) vanwege de diepste expertise, en Projectmanagement en Techniek in compactere, aansluitende kaarten (1/3 breedte).
+5. HERO & CALL TO ACTIONS: 
+   - Slogan: "Duurzame matches in Facility, Vastgoed & Techniek. Gebouwd op meer dan 20 jaar expertise."
+   - Subtekst: "Geen snelle CV-selecties, maar strategische partnerships. Wij verbinden opdrachtgevers en professionals die samen een duurzaam fundament willen bouwen."
+   - Navigatie & Footer CTA's gesplitst maar exclusief: "Sparren over capaciteit" (voor Opdrachtgevers) en "Vertrouwelijk kennismaken" (voor Kandidaten).
+6. SECTIES:
+   - Hero-sectie met rustige, high-end achtergrond (geen schreeuwerige tech-vlakken).
+   - Asymmetrische Vakgebieden-grid.
+   - Grote, paginabrede visie-statement/quote die de herhaling doorbreekt: "Wij geloven niet in CV's schuiven. Wij geloven in het bouwen van fundamenten."
+   - "Actuele Projecten & Rollen" sectie met 2-3 strak vormgegeven demo-profielen/vacatures (géén kale 'Vacatures' titel).
+   - Testimonial/Aanbevelingen-sectie ingericht op persoonlijke expertise en integriteit.
+   - Clean, overzichtelijke footer met de juiste bedrijfsgegevens en de gesplitste CTA's.
+
+Zorg dat alle code modern, responsive, perfect uitgelijnd en semantisch correct is. Breng visuele hiërarchie aan door middel van royale witruimte (padding/margin) en wisselende sectie-achtergronden.
+In het gegenereerde .md bestand vind je daarnaast ook nog specifieke CSS-prompts voor het Bento Grid, de exacte tekstblokken om placeholders te vervangen, en een kwaliteitschecklist voor de code-hygiëne binnen Replit. Succes met de final upgrade!

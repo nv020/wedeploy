@@ -32,36 +32,35 @@ export function Hero() {
 
             <motion.h1
               variants={fadeUp}
-              className="text-5xl md:text-[3.6rem] font-extrabold leading-[1.07] text-primary tracking-tight mb-6"
+              className="text-5xl md:text-[3.5rem] font-extrabold leading-[1.07] text-primary tracking-tight mb-4"
             >
-              Geen cv-doorschuivers.<br />
-              Mensen die écht passen.
+              Duurzame matches in Facility, Vastgoed &amp; Techniek.
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
-              className="text-[17px] leading-[1.7] text-muted-foreground mb-2.5 max-w-[460px]"
+              className="text-[17px] font-semibold text-primary/50 mb-5 tracking-tight"
             >
-              Wedeploy helpt organisaties en professionals vooruit met persoonlijke begeleiding,
-              zorgvuldige screening en matches voor de lange termijn.
+              Gebouwd op meer dan 20 jaar expertise.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
-              className="text-[13px] text-muted-foreground/60 italic mb-10"
+              className="text-[16px] leading-[1.75] text-muted-foreground mb-10 max-w-[460px]"
             >
-              Gespecialiseerd in Facility Management, Projectmanagement, Vastgoed en Technische functies.
+              Geen snelle CV-selecties, maar strategische partnerships. Wij verbinden opdrachtgevers
+              en professionals die samen een duurzaam fundament willen bouwen.
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-9">
               <motion.a
-                href="#contact"
+                href="#opdrachtgevers"
                 whileHover={{ y: -2, boxShadow: "0 12px 32px hsl(220 50% 18% / 0.18)" }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-8 py-[15px] text-[14.5px] font-bold"
               >
-                Ik zoek talent <span>→</span>
+                Sparren over capaciteit <span>→</span>
               </motion.a>
               <motion.a
                 href="#kandidaten"
@@ -70,7 +69,7 @@ export function Hero() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent text-primary px-8 py-[15px] text-[14.5px] font-semibold hover:border-primary/40 transition-colors duration-200"
               >
-                Ik ben kandidaat
+                Vertrouwelijk kennismaken
               </motion.a>
             </motion.div>
 
@@ -111,7 +110,7 @@ export function Hero() {
               initial={{ opacity: 0, x: -16 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.65 }}
-              className="absolute bottom-9 left-[-28px] z-20 bg-white rounded-2xl px-5 py-3.5 shadow-[0_12px_40px_hsl(220_50%_18%/0.11)] flex items-center gap-3 min-w-[220px]"
+              className="absolute bottom-9 left-[-28px] z-20 bg-white rounded-2xl px-5 py-3.5 shadow-[0_12px_40px_hsl(220_50%_18%/0.11)] flex items-center gap-3 min-w-[230px]"
             >
               <div
                 className="w-9 h-9 rounded-[10px] flex-shrink-0 flex items-center justify-center"
@@ -120,8 +119,8 @@ export function Hero() {
                 <div className="w-3 h-3 rounded-full bg-accent" />
               </div>
               <div>
-                <div className="text-[13px] font-bold text-primary leading-tight">Persoonlijke aanpak</div>
-                <div className="text-[11.5px] text-muted-foreground mt-0.5">Altijd op maat, nooit op volume</div>
+                <div className="text-[13px] font-bold text-primary leading-tight">20+ jaar expertise</div>
+                <div className="text-[11.5px] text-muted-foreground mt-0.5">Facility · Vastgoed · Techniek</div>
               </div>
             </motion.div>
           </motion.div>

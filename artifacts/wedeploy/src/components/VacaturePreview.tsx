@@ -45,19 +45,20 @@ export function VacaturePreview() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-6">
           <div>
             <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Actueel</span>
-            <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Recente vacatures</h2>
+            <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">
+              Actuele Projecten &amp; Rollen
+            </h2>
           </div>
           <a
             href="#vacatures"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold text-accent hover:gap-3 transition-all duration-200"
           >
-            Alle vacatures <ArrowRight className="w-4 h-4" />
+            Bekijk alles <ArrowRight className="w-4 h-4" />
           </a>
         </div>
 
         <p className="text-[14.5px] text-muted-foreground mb-12 max-w-xl leading-relaxed">
-          Een selectie van actuele mogelijkheden. Staat jouw functie er niet tussen?
-          Laat alsnog je gegevens achter.
+          Een selectie van strategische posities en interim-vraagstukken die wij momenteel exclusief begeleiden.
         </p>
 
         <motion.div

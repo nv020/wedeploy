@@ -71,7 +71,7 @@ export function SplitSection() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-6 py-3 text-[13.5px] font-semibold"
               >
-                Upload je cv <ArrowRight className="w-4 h-4" />
+                Vertrouwelijk kennismaken <ArrowRight className="w-4 h-4" />
               </motion.a>
               <motion.a
                 href="#vacatures"
@@ -129,7 +129,7 @@ export function SplitSection() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3 text-[13.5px] font-semibold hover:bg-accent/90 transition-colors duration-200"
               >
-                Plan een kennismaking <ArrowRight className="w-4 h-4" />
+                Sparren over capaciteit <ArrowRight className="w-4 h-4" />
               </motion.a>
             </div>
           </motion.div>
