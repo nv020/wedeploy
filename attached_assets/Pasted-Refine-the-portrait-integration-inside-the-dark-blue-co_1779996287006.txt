@@ -1,0 +1,88 @@
+Refine the portrait integration inside the dark blue contact panel to make it feel more editorial, premium and naturally integrated into the composition.
+
+IMPORTANT:
+The current portrait placement feels slightly too much like a LinkedIn/profile card.
+The goal is NOT to create a profile section.
+The goal is subtle human trust.
+
+LAYOUT CHANGES
+Do NOT place the portrait as a standalone block at the very top anymore.
+
+Instead create a small horizontal intro composition:
+
+[Portrait]  Nicky
+Persoonlijk contact & begeleiding
+
+Position this compact intro ABOVE the main headline:
+“Direct schakelen met een specialist.”
+
+This intro should feel:
+
+* subtle
+* elegant
+* editorial
+* integrated
+* calm
+
+NOT:
+
+* profile card
+* LinkedIn box
+* founder spotlight
+
+PORTRAIT STYLING
+Refine the portrait:
+
+* crop slightly closer to the face
+* reduce excess whitespace around the portrait
+* make it feel less like a passport/profile picture
+* keep calm and professional
+
+The portrait may become slightly larger than now, but still remain subtle.
+
+Recommended size:
+
+* around 90–120px width desktop
+* responsive smaller mobile
+
+Keep:
+
+* rounded corners
+* premium treatment
+* slightly desaturated or black-and-white look
+
+TYPOGRAPHY HIERARCHY
+Reduce the visual dominance of:
+
+* “Nicky”
+* “Persoonlijk contact & begeleiding”
+
+These should remain small supporting elements.
+
+The main focus of the section should still be:
+“Direct schakelen met een specialist.”
+
+CONTACT DETAILS
+Replace the current mobile number with:
+
+085 212 8668
+
+Use this consistently in:
+
+* contact panel
+* footer
+* contact links
+* structured data/schema
+* any visible phone references
+
+FINAL EFFECT
+The section should feel:
+
+* more human
+* more premium
+* more editorial
+* less template-like
+* less profile-card-like
+* more boutique recruitment agency
+
+The portrait should feel naturally integrated into the brand experience instead of looking like a separate profile widget.

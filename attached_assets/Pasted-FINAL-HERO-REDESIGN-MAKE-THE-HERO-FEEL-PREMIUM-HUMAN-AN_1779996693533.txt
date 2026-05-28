@@ -1,0 +1,197 @@
+FINAL HERO REDESIGN — MAKE THE HERO FEEL PREMIUM, HUMAN AND MEMORABLE
+
+The current hero is cleaner than before, but it still does not fully feel like a strong boutique recruitment brand yet.
+
+Current issues:
+
+* the “interim / projectrollen / vaste functies” bubbles below the hero feel unnecessary and slightly UI/template-like
+* the current image of a man behind a laptop feels too generic and isolated
+* the hero still feels somewhat “safe”
+* the hero does not yet communicate enough human connection, trust and professional collaboration
+* the remaining floating UI-style elements still create slight SaaS/AI-template vibes
+
+The goal:
+Create a hero that feels:
+
+* premium
+* human
+* editorial
+* trustworthy
+* calm
+* memorable
+* designed
+* specialist
+* not generic recruitment
+* not SaaS
+* not AI-generated
+
+ART DIRECTION
+Move the hero more toward:
+
+* boutique consultancy recruitment
+* premium editorial photography
+* calm corporate storytelling
+* human interaction
+
+Less:
+
+* SaaS
+* UI-demo
+* startup
+* playful recruitment app
+
+Remove unnecessary floating UI elements and gimmicks.
+
+HERO IMAGE — COMPLETE REPLACEMENT
+
+Replace the current “man behind laptop” image with a stronger editorial recruitment image.
+
+The ideal image should show:
+
+* 2 or 3 professionals in conversation
+* real interaction
+* collaboration
+* discussion
+* professional environment
+* subtle warmth
+* natural body language
+
+Possible contexts:
+
+* meeting table
+* project discussion
+* facility/project environment
+* modern office
+* real consultation moment
+
+IMPORTANT:
+Avoid:
+
+* handshake stock photos
+* high fives
+* exaggerated smiles
+* fake corporate energy
+* overly polished AI-looking people
+* callcenter recruiter vibe
+* startup coworking cliché
+* isolated laptop-only imagery
+
+The image should feel:
+“these people genuinely take time to understand each other.”
+
+IMAGE TREATMENT
+Use:
+
+* warm editorial color grading
+* subtle depth
+* slight cinematic feel
+* natural contrast
+* soft shadows
+* realistic atmosphere
+
+The image should feel:
+premium and believable.
+
+HERO LAYOUT REFINEMENT
+
+Refine the entire hero composition:
+
+* larger image presence
+* stronger asymmetry
+* more breathing room
+* more premium spacing
+* slightly less centered
+* more editorial rhythm
+
+Use:
+
+* subtle overlapping composition
+* soft navy shape behind image
+* warm beige offset layer
+* gentle layering
+
+Keep this subtle and premium.
+
+REMOVE THESE ELEMENTS
+Remove:
+
+* the bubbles/tags underneath the hero (“interim”, “projectrollen”, etc.)
+* unnecessary floating UI labels
+* fake placement bubbles
+* SaaS-style overlays
+
+These currently weaken the premium boutique feeling.
+
+Instead:
+Create ONE subtle supporting line underneath the buttons:
+
+“Persoonlijke screening · Transparante communicatie · Duurzame matches”
+
+Keep this minimal and elegant.
+
+HERO COPY REFINEMENT
+
+Main headline:
+“Duurzame matches in Facility Management, Vastgoed & Techniek.”
+
+Keep this.
+
+Improve typography:
+
+* slightly larger
+* stronger line-height
+* better balance
+* avoid awkward wrapping
+
+Supporting text:
+Make it warmer and more human.
+
+Suggested direction:
+“Wedeploy verbindt organisaties en professionals met aandacht voor kwaliteit, teamfit en duurzame samenwerking.”
+
+Keep concise.
+Avoid generic recruitment jargon.
+
+CTA BUTTONS
+Keep:
+Primary:
+“Ik zoek versterking”
+
+Secondary:
+“Ik ben professional”
+
+Improve:
+
+* hover states
+* spacing
+* subtle interaction
+* premium button feel
+
+HERO TRUST FEELING
+
+The hero should immediately communicate:
+
+* calm confidence
+* personal involvement
+* quality over quantity
+* thoughtful recruitment
+* specialist positioning
+
+Visitors should feel:
+“These people are selective and involved.”
+
+FINAL RESULT
+The hero should feel closer to:
+
+* a premium consultancy recruitment firm
+* an editorial business brand
+* a boutique specialist agency
+
+NOT:
+
+* a recruitment template
+* a SaaS startup
+* a generic staffing company
+* an AI-generated homepage
+
+The hero should become the strongest visual and emotional section of the entire website.
