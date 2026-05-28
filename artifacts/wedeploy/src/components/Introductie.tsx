@@ -2,43 +2,57 @@ import { motion } from "framer-motion";
 
 export function Introductie() {
   return (
-    <section className="py-24 border-y border-border/40" style={{ background: "hsl(36 30% 95%)" }}>
+    <section className="py-28 overflow-hidden" style={{ background: "hsl(36 40% 93%)" }}>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
 
-          {/* Left — big statement */}
+          {/* Left — vertical label + big statement */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="flex items-start gap-5"
           >
-            <p className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent mb-6">Onze visie</p>
-            <h2 className="text-3xl md:text-[2.4rem] font-bold text-primary leading-[1.2] tracking-tight">
-              Goede recruitment draait niet om snelheid.<br className="hidden md:block" /> Het draait om de juiste fit.
-            </h2>
-            <div className="mt-8 pt-8 border-t border-border/50">
-              <p className="text-[15px] text-muted-foreground/70 italic font-medium">
-                "Minder volume. Meer relevantie."
-              </p>
+            {/* Vertical label */}
+            <div className="hidden md:flex flex-col items-center gap-2 pt-1 flex-shrink-0">
+              <div className="w-px h-14 rounded-full bg-accent/40" />
+              <span
+                className="text-[9px] font-bold tracking-[3px] uppercase text-accent/60"
+                style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+              >
+                Onze visie
+              </span>
+            </div>
+
+            <div>
+              <h2 className="text-[2rem] md:text-[2.6rem] font-bold text-primary leading-[1.15] tracking-tight">
+                Een cv vertelt niet hoe iemand samenwerkt.
+              </h2>
+              <div className="mt-8 pt-8 border-t border-primary/10">
+                <p
+                  className="text-[17px] font-semibold text-primary/40 italic leading-snug tracking-tight"
+                >
+                  "Minder volume. Meer relevantie."
+                </p>
+              </div>
             </div>
           </motion.div>
 
           {/* Right — paragraph */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="lg:pt-14"
+            className="lg:pt-12"
           >
-            <p className="text-[16.5px] text-muted-foreground leading-[1.85]">
-              Te vaak worden kandidaten voorgesteld voordat de functie, het team en de organisatie echt goed zijn
-              begrepen. Wij geloven dat betere matches ontstaan door scherpere vragen, eerlijke gesprekken en
-              echte aandacht voor de mens achter het cv.
+            <p className="text-[16.5px] text-primary/65 leading-[1.85]">
+              Daarom kijken wij verder dan ervaring en beschikbaarheid. We willen begrijpen wie
+              iemand is, wat een team nodig heeft en wanneer een samenwerking op lange termijn
+              echt klopt.
             </p>
           </motion.div>
-
         </div>
       </div>
     </section>

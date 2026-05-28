@@ -1,0 +1,449 @@
+Update the current Wedeploy website so it no longer feels like a clean AI-generated template. The current version is professional, but still too safe, too symmetrical and too predictable. The next version must feel designed by a real senior web designer: more playful, more branded, more editorial and more memorable — while staying premium, calm and trustworthy.
+
+Do NOT rewrite the whole site into a completely different business. Keep Wedeploy’s positioning, copy direction and structure, but improve the visual identity, layout rhythm and brand feeling.
+
+MAIN GOAL
+Make Wedeploy feel like a modern boutique recruitment and staffing brand with:
+- personal attention
+- quality over volume
+- careful screening
+- transparency
+- human guidance
+- professional credibility
+
+The website should feel more like:
+- Level.works: playful, approachable, energetic
+- YER: dynamic, branded, structured
+- Lakehouse: calm, premium, trustworthy
+
+But do NOT copy these websites. Use them only as art-direction inspiration.
+
+IMPORTANT
+Avoid:
+- generic AI layout
+- endless card grids
+- perfect symmetrical sections everywhere
+- boring centered sections
+- too much white space without purpose
+- technical SaaS visuals
+- AI glow effects
+- abstract network graphics
+- fake testimonials
+- fake logos
+- exaggerated claims
+
+Use:
+- stronger art direction
+- asymmetrical layouts
+- overlapping elements
+- offset images
+- layered sections
+- playful but subtle branded shapes
+- more visual rhythm
+- larger photography
+- better typography
+- richer hover states
+- stronger CTA treatment
+
+BRAND VISUAL LANGUAGE
+Create a recognizable Wedeploy design language.
+
+Use these visual devices throughout the site:
+1. Soft navy rounded background shapes behind images.
+2. Warm beige/sand accent panels.
+3. Subtle diagonal or curved section transitions.
+4. Overlapping floating cards.
+5. Offset image blocks.
+6. Slightly staggered content blocks.
+7. Small branded “connection” lines or dots, but keep them human and subtle, not technical.
+8. Large editorial quotes/statements.
+
+The site should feel intentionally designed, not generated.
+
+COLOR PALETTE
+Keep:
+- dark navy
+- off-white
+- light warm grey
+- warm sand/beige
+- subtle blue accent
+
+Add more contrast by using:
+- at least one stronger dark navy breakout section
+- at least one warm beige editorial section
+- several offset colored background shapes behind images
+
+TYPOGRAPHY
+Improve typography significantly:
+- larger headings
+- better line-height
+- stronger editorial section titles
+- body text at least 16px or 17px where possible
+- avoid awkward line breaks
+- use max-widths properly
+- make key statements feel like brand statements
+
+LAYOUT PRINCIPLES
+Break the repetitive pattern.
+
+Do NOT use the same layout repeatedly:
+title → text → cards
+
+Instead alternate:
+- hero split layout
+- editorial two-column section
+- asymmetric image + text block
+- overlapping cards
+- dark breakout section
+- wide image banner
+- staggered grid
+- form section with card overlap
+
+The page should have rhythm and movement.
+
+HEADER
+Keep the header clean and sticky.
+Add subtle premium interaction:
+- slight blur on scroll
+- active nav underline or small dot
+- stronger CTA button hover
+
+HERO SECTION
+Make the hero more visually distinctive.
+
+Current hero is okay but too standard. Improve it with:
+- larger image
+- offset image placement
+- soft navy or beige shape behind the image
+- floating mini-card overlapping the image
+- stronger CTA buttons
+- better spacing
+- more editorial feel
+
+Hero headline:
+“Geen cv-doorschuivers. Mensen die écht passen.”
+
+Subtext:
+“Wedeploy helpt organisaties en professionals vooruit met persoonlijke begeleiding, zorgvuldige screening en matches voor de lange termijn.”
+
+Supporting line:
+“Gespecialiseerd in Facility Management, Projectmanagement, Vastgoed en Technische functies.”
+
+CTA buttons:
+Primary:
+“Ik zoek talent”
+
+Secondary:
+“Ik ben kandidaat”
+
+Trust line:
+“Persoonlijke aanpak · Zorgvuldige screening · Transparante communicatie · Kwaliteit boven volume”
+
+Hero image:
+Use warm professional photography of people in conversation, project environment, management setting or office/facility context. Avoid cheesy smiling stock.
+
+Add a small floating card on the image:
+“Persoonlijke aanpak”
+“Niet meer cv’s, maar betere matches.”
+
+SECTION AFTER HERO — MAKE IT A MANIFESTO
+The current “Goede recruitment draait niet om snelheid” section is good, but make it more branded and editorial.
+
+Use:
+- warm beige background
+- large quote-style headline
+- asymmetrical layout
+- maybe a small vertical label
+- one oversized statement
+
+Headline:
+“Een cv vertelt niet hoe iemand samenwerkt.”
+
+Supporting text:
+“Daarom kijken wij verder dan ervaring en beschikbaarheid. We willen begrijpen wie iemand is, wat een team nodig heeft en wanneer een samenwerking op lange termijn echt klopt.”
+
+Add small punchline:
+“Minder volume. Meer relevantie.”
+
+WHY WEDEPLOY SECTION
+Make this less card-like and more editorial.
+
+Title:
+“Werving zoals het hoort.”
+
+Instead of five equal cards, create:
+- one large dark navy feature block
+- two medium light blocks
+- two smaller accent blocks
+
+Content:
+1. Geen cv-doorschuiven
+“Wij sturen geen stapels profielen. We stellen alleen mensen voor die echt passen bij de functie, het team en de context.”
+
+2. Persoonlijke screening
+“We nemen de tijd om ervaring, motivatie, verwachtingen en persoonlijkheid goed te begrijpen.”
+
+3. Team- en cultuurfit
+“Een sterke match klopt niet alleen op papier, maar ook binnen het team en de organisatie.”
+
+4. Transparant proces
+“Heldere communicatie voor opdrachtgevers en kandidaten. Geen ruis, geen loze beloftes.”
+
+5. Begeleiding na plaatsing
+“We blijven betrokken na de start, zodat de samenwerking goed landt.”
+
+EXPERTISE SECTION
+Make this section more visually alive.
+
+Current image cards are okay but still too grid-like.
+
+Improve:
+- use staggered card heights
+- slightly offset cards
+- add dark overlay gradients
+- add hover zoom
+- add small category labels
+- add a short sentence per card
+- add subtle background shape behind the whole grid
+
+Cards:
+- Facility Management
+- Projectmanagement
+- Vastgoedbeheer & Vastgoedmanagement
+- Techniek & Installaties
+
+Supporting text:
+“Onze ervaring ligt in deze vakgebieden, maar we denken ook graag mee over andere specialistische functies waar kwaliteit en fit belangrijk zijn.”
+
+SERVICES SECTION
+Current services still feel like standard cards.
+
+Make this more dynamic:
+- Use a horizontal editorial panel or accordion-like layout.
+- Add one image or visual accent on the side.
+- Use numbered services.
+- Add a stronger CTA.
+
+Services:
+01 Werving & Selectie
+“Voor vaste functies waarbij zorgvuldige selectie het verschil maakt.”
+
+02 Detachering
+“Flexibele inzet van professionals met persoonlijke betrokkenheid.”
+
+03 Interim-oplossingen
+“Tijdelijke expertise voor projecten, veranderingen en organisatorische vraagstukken.”
+
+CTA:
+“Bespreek je personeelsvraag”
+
+IMAGE BREAK SECTION
+Keep the current image break but make it stronger.
+
+Use:
+- larger height
+- better crop
+- stronger overlay
+- text placed more editorial, not just left aligned
+- optional small label
+
+Text:
+“Achter elke functie zit een team. Achter elk cv zit een mens.”
+
+Add subtext:
+“Daarom kijken we verder dan beschikbaarheid en functietitels.”
+
+CANDIDATES / CLIENTS SECTION
+Make this section more distinctive and conversion-focused.
+
+Use two large contrasting panels:
+- Candidate panel: light/warm
+- Client panel: dark navy
+
+Make panels slightly overlapping or offset.
+
+Candidate title:
+“Jouw volgende stap, met persoonlijke begeleiding.”
+
+Candidate text:
+“We luisteren naar je verhaal, denken mee over je ambities en stellen je alleen voor bij kansen die echt passen.”
+
+Bullets:
+- Eerlijke communicatie
+- Persoonlijke begeleiding
+- Kansen die passen bij je ambitie
+- Ondersteuning tijdens het proces
+
+CTA:
+“Upload je cv”
+
+Client title:
+“De juiste professional, niet het snelste cv.”
+
+Client text:
+“We starten met een scherpe intake en kijken verder dan ervaring alleen. Zo verkleinen we de kans op mismatch.”
+
+Bullets:
+- Scherpe intake
+- Screening verder dan het cv
+- Aandacht voor team- en cultuurfit
+- Transparant proces
+
+CTA:
+“Plan een kennismaking”
+
+PROCESS SECTION
+Make “Hoe wij werken” visually more designed.
+
+Use:
+- vertical timeline
+- large numbers 01–05
+- subtle connecting line
+- alternating left/right text on desktop if possible
+- more spacing
+- less tiny text
+
+Title:
+“Hoe wij werken”
+
+Subtitle:
+“Een helder proces, zonder onnodige ruis.”
+
+Steps:
+01 Kennismaking
+“We starten met de context, verwachtingen en echte behoefte.”
+
+02 Diepgaande intake
+“We brengen functie, team, cultuur en succescriteria scherp in beeld.”
+
+03 Zorgvuldige screening
+“We beoordelen ervaring, motivatie en fit voordat we iemand voorstellen.”
+
+04 Begeleiding
+“We begeleiden kandidaat en opdrachtgever tijdens het proces.”
+
+05 Duurzame plaatsing
+“We blijven betrokken na de start voor een goede landing.”
+
+VACANCIES SECTION
+Make this boutique, not job-board-like.
+
+Use:
+- fewer but richer vacancy cards
+- better spacing
+- category badge
+- location
+- type
+- short intro sentence
+- arrow interaction
+- hover lift
+
+Intro:
+“Een selectie van actuele mogelijkheden. Staat jouw functie er niet tussen? Laat alsnog je gegevens achter.”
+
+CONTACT / FORM SECTION
+Make this section feel less like a default form.
+
+Use:
+- warm background
+- form card overlapping section
+- contact details as a side panel
+- tabs for candidate/client
+- better field styling
+- drag & drop upload
+- stronger submit button
+- confirmation state
+
+Title:
+“Op zoek naar de juiste professional — of jouw volgende stap?”
+
+Subtext:
+“We maken graag kennis.”
+
+Contact details:
+info@wedeploy.nl
++31 6 52345011
+Krijn Taconiskade 461
+1087 HW Amsterdam
+Netherlands
+
+Candidate form:
+- Naam
+- E-mail
+- Telefoonnummer
+- LinkedIn-profiel
+- CV upload
+- Bericht
+
+Client form:
+- Bedrijf
+- Contactpersoon
+- E-mail
+- Telefoonnummer
+- Type aanvraag
+- Omschrijving
+- Optioneel bestand uploaden
+
+SPAM PROTECTION
+Add proper spam protection placeholders:
+- Cloudflare Turnstile frontend placeholder
+- backend validation placeholder
+- honeypot hidden field
+- rate limiting placeholder
+
+Add clear comments for:
+CLOUDFLARE_TURNSTILE_SITE_KEY
+CLOUDFLARE_TURNSTILE_SECRET_KEY
+
+Do not rely only on frontend validation.
+
+FOOTER
+Make footer feel richer and less generic.
+
+Include:
+- Wedeploy short description
+- navigation
+- services
+- expertise areas
+- contact details
+- address
+- LinkedIn placeholder
+- privacy statement
+- terms placeholder
+
+Footer description:
+“Wedeploy is een recruitment- en detacheringspartner voor organisaties en professionals die kiezen voor kwaliteit, aandacht en duurzame matches.”
+
+MICRO-INTERACTIONS
+Add subtle premium interactions:
+- image hover zoom
+- card hover lift
+- CTA hover movement
+- fade-up on scroll
+- staggered card animation
+- soft transitions
+- no flashy effects
+
+MOBILE
+Ensure mobile remains excellent:
+- no awkward overlaps
+- text readable
+- images crop well
+- CTA buttons easy to tap
+- forms easy to complete
+- section shapes do not break layout
+
+FINAL CHECK
+Before finishing, verify:
+- the site no longer feels like an AI template
+- there is more visual rhythm
+- there are fewer repetitive card grids
+- there are overlapping and offset elements
+- typography is stronger
+- images are larger and more editorial
+- contact details and address are included
+- forms include uploads
+- spam protection placeholders are included
+- no fake testimonials/logos/numbers are used
+
+The final result should feel like a designed boutique recruitment brand: professional, human, slightly playful, premium and trustworthy.

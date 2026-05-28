@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Briefcase, User } from "lucide-react";
 
 const kandidaatItems = [
-  "We luisteren voordat we adviseren",
-  "Duidelijke en eerlijke communicatie",
+  "Eerlijke communicatie",
+  "Persoonlijke begeleiding",
   "Kansen die passen bij je ambitie",
-  "Begeleiding tijdens het hele proces",
+  "Ondersteuning tijdens het proces",
 ];
 
 const opdrachtgeverItems = [
-  "Scherpe intake van functie en organisatie",
+  "Scherpe intake",
   "Screening verder dan het cv",
   "Aandacht voor team- en cultuurfit",
-  "Transparante communicatie",
+  "Transparant proces",
 ];
 
 const sideVariants = {
@@ -39,16 +39,20 @@ export function SplitSection() {
             viewport={{ once: true }}
             className="relative bg-card rounded-2xl border border-border/50 p-10"
           >
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-7">
               <div className="w-9 h-9 rounded-xl bg-accent/10 flex items-center justify-center">
                 <User className="w-4 h-4 text-accent" />
               </div>
               <span className="text-[11px] font-bold tracking-[2px] uppercase text-accent">Voor kandidaten</span>
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-7 leading-snug">
-              Jouw volgende stap,<br />met persoonlijke begeleiding.
+            <h3 className="text-2xl font-bold text-primary mb-4 leading-snug">
+              Jouw volgende stap, met persoonlijke begeleiding.
             </h3>
-            <ul className="space-y-3.5 mb-6">
+            <p className="text-[14.5px] text-muted-foreground leading-relaxed mb-7">
+              We luisteren naar je verhaal, denken mee over je ambities en stellen je alleen voor
+              bij kansen die echt passen.
+            </p>
+            <ul className="space-y-3 mb-6">
               {kandidaatItems.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
@@ -97,16 +101,20 @@ export function SplitSection() {
               }}
             />
             <div className="relative">
-              <div className="flex items-center gap-3 mb-8">
+              <div className="flex items-center gap-3 mb-7">
                 <div className="w-9 h-9 rounded-xl bg-accent/20 flex items-center justify-center">
                   <Briefcase className="w-4 h-4 text-accent" />
                 </div>
                 <span className="text-[11px] font-bold tracking-[2px] uppercase text-accent">Voor opdrachtgevers</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-7 leading-snug">
-                De juiste professional,<br />niet het snelste cv.
+              <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
+                De juiste professional, niet het snelste cv.
               </h3>
-              <ul className="space-y-3.5 mb-9">
+              <p className="text-[14.5px] text-white/65 leading-relaxed mb-7">
+                We starten met een scherpe intake en kijken verder dan ervaring alleen.
+                Zo verkleinen we de kans op mismatch.
+              </p>
+              <ul className="space-y-3 mb-9">
                 {opdrachtgeverItems.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
