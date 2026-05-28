@@ -5,19 +5,19 @@ const diensten = [
   {
     num: "01",
     title: "Werving & Selectie",
-    desc: "Voor organisaties die zorgvuldig geselecteerde professionals zoeken voor vaste posities.",
+    desc: "Voor vaste functies waarbij zorgvuldige selectie het verschil maakt.",
     href: "#contact",
   },
   {
     num: "02",
     title: "Detachering",
-    desc: "Flexibele inzet van professionals met persoonlijke begeleiding en betrokkenheid.",
+    desc: "Flexibele inzet van professionals met persoonlijke betrokkenheid.",
     href: "#contact",
   },
   {
     num: "03",
-    title: "Interim Oplossingen",
-    desc: "Tijdelijke expertise voor projecten, transities en organisatieveranderingen.",
+    title: "Interim-oplossingen",
+    desc: "Tijdelijke expertise voor projecten, veranderingen en organisatorische vraagstukken.",
     href: "#contact",
   },
 ];
@@ -67,6 +67,24 @@ export function DienstenOverview() {
               </a>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-12 text-center"
+        >
+          <motion.a
+            href="#contact"
+            whileHover={{ y: -2, boxShadow: "0 10px 28px hsl(220 50% 18% / 0.15)" }}
+            whileTap={{ y: 0 }}
+            transition={{ duration: 0.2 }}
+            className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-8 py-[15px] text-[14px] font-bold"
+          >
+            Bespreek je personeelsvraag <ArrowRight className="w-4 h-4" />
+          </motion.a>
         </motion.div>
       </div>
     </section>

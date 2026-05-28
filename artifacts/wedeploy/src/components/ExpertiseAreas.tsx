@@ -3,21 +3,25 @@ import { motion } from "framer-motion";
 const areas = [
   {
     title: "Facility Management",
+    sentence: "Van facilitaire managers tot coördinatoren en servicespecialisten.",
     img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
     alt: "Modern faciliteitenbeheer en kantooromgeving",
   },
   {
     title: "Projectmanagement",
+    sentence: "Projectmanagers en programmamanagers voor complexe trajecten.",
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
     alt: "Professioneel team in projectoverleg",
   },
   {
     title: "Vastgoed & Property Management",
+    sentence: "Property managers, assetmanagers en vastgoedprofessionals.",
     img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
     alt: "Modern vastgoed en gebouwbeheer",
   },
   {
     title: "Technische & Engineering rollen",
+    sentence: "Technisch specialisten, engineers en installatieprofessionals.",
     img: "https://images.unsplash.com/photo-1581092921461-7031c12c4c1d?w=800&q=80",
     alt: "Technische professional aan het werk",
   },
@@ -42,9 +46,6 @@ export function ExpertiseAreas() {
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">
             Expertise in omgevingen<br className="hidden md:block" /> waar kwaliteit telt.
           </h2>
-          <p className="mt-4 text-[14px] text-muted-foreground max-w-lg">
-            Onze ervaring ligt in deze sectoren, terwijl we flexibel blijven voor andere specialistische posities.
-          </p>
         </div>
 
         <motion.div
@@ -58,7 +59,7 @@ export function ExpertiseAreas() {
             <motion.div
               key={area.title}
               variants={itemVariants}
-              className="group relative overflow-hidden rounded-2xl h-64 md:h-72 cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl h-64 md:h-72 cursor-default"
             >
               <img
                 src={area.img}
@@ -69,15 +70,23 @@ export function ExpertiseAreas() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(to top, hsl(220 50% 12% / 0.85) 0%, hsl(220 50% 12% / 0.25) 55%, transparent 100%)",
+                    "linear-gradient(to top, hsl(220 50% 12% / 0.88) 0%, hsl(220 50% 12% / 0.30) 55%, transparent 100%)",
                 }}
               />
               <div className="absolute bottom-0 left-0 p-7">
-                <h3 className="text-white text-xl font-bold leading-snug">{area.title}</h3>
+                <h3 className="text-white text-xl font-bold leading-snug mb-1">{area.title}</h3>
+                <p className="text-white/65 text-[13px] leading-snug opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                  {area.sentence}
+                </p>
               </div>
             </motion.div>
           ))}
         </motion.div>
+
+        <p className="mt-8 text-[13.5px] text-muted-foreground/70 text-center max-w-xl mx-auto leading-relaxed">
+          Onze ervaring ligt in deze vakgebieden, maar we denken ook graag mee over andere specialistische functies
+          waar kwaliteit en fit belangrijk zijn.
+        </p>
       </div>
     </section>
   );

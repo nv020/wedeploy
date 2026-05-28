@@ -4,8 +4,9 @@ import { Introductie } from "@/components/Introductie";
 import { USPSection } from "@/components/USPSection";
 import { ExpertiseAreas } from "@/components/ExpertiseAreas";
 import { DienstenOverview } from "@/components/DienstenOverview";
-import { HoeWijWerken } from "@/components/HoeWijWerken";
+import { ImageBreak } from "@/components/ImageBreak";
 import { SplitSection } from "@/components/SplitSection";
+import { HoeWijWerken } from "@/components/HoeWijWerken";
 import { VacaturePreview } from "@/components/VacaturePreview";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -20,8 +21,9 @@ export function Home() {
         <USPSection />
         <ExpertiseAreas />
         <DienstenOverview />
-        <HoeWijWerken />
+        <ImageBreak />
         <SplitSection />
+        <HoeWijWerken />
         <VacaturePreview />
         <ContactSection />
       </main>

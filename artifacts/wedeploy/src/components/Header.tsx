@@ -41,7 +41,7 @@ export function Header() {
             variant="default"
             className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 text-[13px] font-semibold px-6"
           >
-            <a href="#contact">Neem contact op</a>
+            <a href="#contact">Plan een gesprek</a>
           </Button>
         </div>
 
@@ -67,7 +67,7 @@ export function Header() {
             </a>
           ))}
           <Button asChild variant="default" className="w-full mt-2 rounded-full">
-            <a href="#contact" onClick={() => setIsOpen(false)}>Neem contact op</a>
+            <a href="#contact" onClick={() => setIsOpen(false)}>Plan een gesprek</a>
           </Button>
         </div>
       )}

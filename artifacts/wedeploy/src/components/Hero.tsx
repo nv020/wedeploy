@@ -34,23 +34,23 @@ export function Hero() {
               variants={fadeUp}
               className="text-5xl md:text-[3.6rem] font-extrabold leading-[1.07] text-primary tracking-tight mb-6"
             >
-              Geen cv-doorschuiver.<br />
-              Wél de juiste match.
+              Geen cv-doorschuivers.<br />
+              Mensen die écht passen.
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
-              className="text-[17px] leading-[1.7] text-muted-foreground mb-2.5 max-w-[440px]"
+              className="text-[17px] leading-[1.7] text-muted-foreground mb-2.5 max-w-[460px]"
             >
-              Wedeploy verbindt professionals en organisaties via zorgvuldige screening,
-              persoonlijke aandacht en langetermijndenken.
+              Wedeploy helpt organisaties en professionals vooruit met persoonlijke begeleiding,
+              zorgvuldige screening en matches voor de lange termijn.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-[13px] text-muted-foreground/60 italic mb-10"
             >
-              Gespecialiseerd in Facility Management, Projectmanagement, Vastgoed en Technische rollen.
+              Gespecialiseerd in Facility Management, Projectmanagement, Vastgoed en Technische functies.
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-9">
@@ -61,7 +61,7 @@ export function Hero() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-8 py-[15px] text-[14.5px] font-bold"
               >
-                Op zoek naar talent <span>→</span>
+                Ik zoek talent <span>→</span>
               </motion.a>
               <motion.a
                 href="#kandidaten"
@@ -75,7 +75,7 @@ export function Hero() {
             </motion.div>
 
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-2 text-[12px] text-muted-foreground/55 font-medium">
-              {["Persoonlijke aanpak", "Zorgvuldige screening", "Transparante communicatie"].map((item, i) => (
+              {["Persoonlijke aanpak", "Zorgvuldige screening", "Transparante communicatie", "Kwaliteit boven volume"].map((item, i) => (
                 <span key={item} className="flex items-center gap-2">
                   {i > 0 && <span className="text-border text-base leading-none">·</span>}
                   {item}

@@ -13,25 +13,42 @@ const navLinks = [
 const diensten = [
   "Werving & Selectie",
   "Detachering",
-  "Interim Oplossingen",
+  "Interim-oplossingen",
+];
+
+const expertises = [
+  "Facility Management",
+  "Projectmanagement",
+  "Vastgoed & Property",
+  "Technische rollen",
 ];
 
 export function Footer() {
   return (
     <footer className="bg-primary/95 text-white/70 py-16">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          {/* Brand */}
-          <div className="md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+          {/* Brand — spans 2 cols on lg */}
+          <div className="lg:col-span-2">
             <a href="#home" className="flex items-center font-extrabold text-[19px] tracking-tight leading-none mb-4">
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
-              Werving &amp; selectie en detachering met aandacht.<br />
-              Actief in Facility Management, Projectmanagement,
-              Vastgoed en Technische rollen.
+              Wedeploy is een recruitment- en detacheringspartner voor organisaties en professionals
+              die kiezen voor kwaliteit, aandacht en duurzame matches.
             </p>
+            <div className="mt-6">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[13px] text-white/55 hover:text-white transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           {/* Navigation */}
@@ -66,6 +83,19 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <h4 className="text-white font-semibold text-[11px] mt-8 mb-5 uppercase tracking-widest">Expertise</h4>
+            <ul className="space-y-3">
+              {expertises.map((e) => (
+                <li key={e}>
+                  <a
+                    href="#expertises"
+                    className="text-[13px] text-white/55 hover:text-white transition-colors duration-200"
+                  >
+                    {e}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Contact */}
@@ -82,20 +112,12 @@ export function Footer() {
                   +31 6 52345011
                 </a>
               </li>
-              <li>Nederland</li>
+              <li className="leading-relaxed pt-1">
+                Krijn Taconiskade 461<br />
+                1087 HW Amsterdam<br />
+                Nederland
+              </li>
             </ul>
-
-            <div className="mt-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[13px] text-white/55 hover:text-white transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-                LinkedIn
-              </a>
-            </div>
           </div>
         </div>
 
@@ -104,6 +126,7 @@ export function Footer() {
           <div className="flex gap-6">
             <a href="#privacy" className="hover:text-white/60 transition-colors">Privacybeleid</a>
             <a href="#cookies" className="hover:text-white/60 transition-colors">Cookiebeleid</a>
+            <a href="#terms" className="hover:text-white/60 transition-colors">Gebruiksvoorwaarden</a>
           </div>
         </div>
       </div>

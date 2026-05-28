@@ -4,27 +4,27 @@ const steps = [
   {
     number: "01",
     title: "Kennismaking",
-    desc: "Een open gesprek over uw situatie en verwachtingen — zonder verplichtingen.",
+    desc: "We starten met de context, verwachtingen en echte behoefte.",
   },
   {
     number: "02",
     title: "Diepgaande intake",
-    desc: "We leren de kandidaat of het bedrijf écht kennen: motivatie, cultuur en doelen.",
+    desc: "We brengen functie, team, cultuur en succescriteria scherp in beeld.",
   },
   {
     number: "03",
     title: "Zorgvuldige screening",
-    desc: "Alleen relevante kandidaten, met persoonlijke context — geen bulkprofielen.",
+    desc: "We beoordelen ervaring, motivatie en fit voordat we iemand voorstellen.",
   },
   {
     number: "04",
-    title: "Persoonlijke begeleiding",
-    desc: "Wij begeleiden beide partijen gedurende het gehele traject met heldere communicatie.",
+    title: "Begeleiding",
+    desc: "We begeleiden kandidaat en opdrachtgever tijdens het proces.",
   },
   {
     number: "05",
     title: "Duurzame plaatsing",
-    desc: "Na plaatsing blijven we betrokken voor een goede start en langdurig succes.",
+    desc: "We blijven betrokken na de start voor een goede landing.",
   },
 ];
 
@@ -45,12 +45,11 @@ export function HoeWijWerken() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Werkwijze</span>
-            <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight mb-6">
+            <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight mb-5">
               Hoe wij werken
             </h2>
             <p className="text-[15px] text-muted-foreground leading-relaxed max-w-sm">
-              Van eerste kennismaking tot duurzame plaatsing — wij begeleiden het volledige traject
-              met persoonlijke aandacht en transparante communicatie.
+              Een helder proces, zonder onnodige ruis.
             </p>
           </div>
 

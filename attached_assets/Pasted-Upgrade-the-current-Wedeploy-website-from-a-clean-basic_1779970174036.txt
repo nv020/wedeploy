@@ -1,0 +1,517 @@
+Upgrade the current Wedeploy website from a clean basic recruitment website into a premium, human, editorial-style recruitment brand website.
+
+The current direction is good, but the site still feels too generic, too repetitive and too much like a template. Keep the calm professional look, but make it more distinctive, more premium and more conversion-focused.
+
+Main goal:
+Make the website feel like a serious boutique recruitment and staffing partner that stands for quality, personal attention, careful screening, transparency and long-term matches.
+
+Core positioning:
+Wedeploy is not a CV-forwarding agency. Wedeploy helps organizations and professionals find matches that truly fit — not only on paper, but also in team, culture, ambition and expectations.
+
+Do not add fake testimonials, fake logos, fake client numbers or exaggerated claims. Wedeploy is starting, so the site must feel ambitious and credible without pretending to be bigger than it is.
+
+Contact details to use:
+Email: info@wedeploy.nl
+Phone: +31 6 52345011
+Address:
+Krijn Taconiskade 461
+1087 HW Amsterdam
+Netherlands
+
+Design direction:
+- Premium editorial recruitment website
+- Human and trustworthy
+- Calm but not boring
+- More visual rhythm and layout variation
+- Less repetitive card grids
+- More asymmetry
+- More large image moments
+- More warm professional photography
+- More brand personality
+- Stronger typography
+- Bigger readable body text
+- More breathing room
+- Better section contrast
+
+Visual style:
+Use:
+- dark navy
+- off-white
+- warm beige/sand
+- soft grey
+- subtle blue accent
+- large editorial images
+- premium spacing
+- soft shadows
+- elegant rounded corners
+- subtle hover states
+- subtle fade-up animations
+
+Avoid:
+- technical line animations
+- AI glow effects
+- abstract network graphics
+- too many identical cards
+- tiny grey body text
+- generic centered sections everywhere
+- cheesy stock photos
+- fake testimonials
+- fake client logos
+- mass job-board feeling
+
+Make the site feel closer to:
+- boutique consultancy
+- premium recruitment partner
+- modern staffing agency
+- human-first advisory partner
+
+STRUCTURE
+
+1. HEADER
+Keep the header clean and professional.
+Navigation:
+- Home
+- Services
+- Candidates
+- Clients
+- Our Process
+- Vacancies
+- Contact
+
+Right CTA:
+“Schedule a call”
+
+Make header sticky with subtle blur/background on scroll.
+
+2. HERO SECTION
+Make the hero much stronger and less generic.
+
+Layout:
+- Left: strong text
+- Right: large editorial image
+- Add subtle overlapping trust card on the image
+
+Hero headline:
+“No CV-forwarding. People who truly fit.”
+
+Alternative acceptable Dutch version if the site is Dutch:
+“Geen cv-doorschuivers. Mensen die écht passen.”
+
+Use the Dutch version if the rest of the site is Dutch.
+
+Hero subtext:
+“Wedeploy helps organizations and professionals move forward through personal guidance, careful screening and matches built for the long term.”
+
+Dutch version:
+“Wedeploy helpt organisaties en professionals vooruit met persoonlijke begeleiding, zorgvuldige screening en matches voor de lange termijn.”
+
+Small expertise line:
+“Specialized in Facility Management, Project Management, Real Estate and Technical roles.”
+
+Dutch:
+“Gespecialiseerd in Facility Management, Projectmanagement, Vastgoed en Technische functies.”
+
+Primary CTA:
+“I’m looking for talent”
+Dutch:
+“Ik zoek talent”
+
+Secondary CTA:
+“I’m a candidate”
+Dutch:
+“Ik ben kandidaat”
+
+Trust line under CTAs:
+“Personal approach · Careful screening · Transparent communication · Quality over volume”
+
+Dutch:
+“Persoonlijke aanpak · Zorgvuldige screening · Transparante communicatie · Kwaliteit boven volume”
+
+Hero image:
+Use a warm, professional editorial image of people in conversation in an office, project, real estate or management environment. Avoid overly cheerful stock photography.
+
+3. NEW EDITORIAL VISION SECTION
+Add a large premium editorial section directly after the hero.
+
+Do NOT make this a card grid.
+
+Layout:
+- left side: big statement
+- right side: thoughtful paragraph
+- use warm off-white or beige background
+
+Headline:
+“Good recruitment is not about speed. It is about fit.”
+
+Dutch:
+“Goede recruitment draait niet om snelheid. Het draait om de juiste fit.”
+
+Text:
+“Too often, candidates are forwarded before anyone truly understands the role, the team or the organization behind it. We believe better matches start with sharper questions, honest conversations and real attention to the person behind the CV.”
+
+Dutch:
+“Te vaak worden kandidaten voorgesteld voordat de functie, het team en de organisatie echt goed zijn begrepen. Wij geloven dat betere matches ontstaan door scherpere vragen, eerlijke gesprekken en echte aandacht voor de mens achter het cv.”
+
+Add a small supporting quote-style line:
+“Less volume. More relevance.”
+
+Dutch:
+“Minder volume. Meer relevantie.”
+
+4. WHY WEDEPLOY SECTION
+Replace repetitive small cards with a more varied layout.
+
+Title:
+“Recruitment as it should be.”
+
+Dutch:
+“Werving zoals het hoort.”
+
+Use 5 points, but with visual hierarchy:
+- one large featured card
+- four smaller cards around it
+
+Points:
+1. No CV forwarding
+Text:
+“We don’t send stacks of profiles. We only introduce people who genuinely fit the role and context.”
+Dutch:
+“Wij sturen geen stapels profielen. We stellen alleen mensen voor die echt passen bij de functie en context.”
+
+2. Personal screening
+Text:
+“We take time to understand experience, motivation, expectations and personality.”
+Dutch:
+“We nemen de tijd om ervaring, motivatie, verwachtingen en persoonlijkheid goed te begrijpen.”
+
+3. Team and culture fit
+Text:
+“A strong hire should work on paper, in the team and in the organization.”
+Dutch:
+“Een sterke match klopt niet alleen op papier, maar ook binnen het team en de organisatie.”
+
+4. Transparent process
+Text:
+“Clear communication for clients and candidates. No noise, no empty promises.”
+Dutch:
+“Heldere communicatie voor opdrachtgevers en kandidaten. Geen ruis, geen loze beloftes.”
+
+5. Guidance after placement
+Text:
+“We stay involved after the start to help the collaboration land properly.”
+Dutch:
+“We blijven betrokken na de start, zodat de samenwerking goed landt.”
+
+5. EXPERTISE SECTION
+Make this section more premium and visual.
+
+Title:
+“Expertise in environments where quality matters.”
+
+Dutch:
+“Expertise in omgevingen waar kwaliteit telt.”
+
+Use 4 large visual cards, not flat generic cards:
+- Facility Management
+- Project Management
+- Real Estate & Property Management
+- Technical & Engineering Roles
+
+Each card should include:
+- image background
+- dark subtle overlay
+- title
+- one short sentence
+
+Add supporting text:
+“Our experience lies in these sectors, while we remain open to other specialist roles where quality and fit matter.”
+
+Dutch:
+“Onze ervaring ligt in deze vakgebieden, maar we denken ook graag mee over andere specialistische functies waar kwaliteit en fit belangrijk zijn.”
+
+6. SERVICES SECTION
+Make this less repetitive.
+
+Instead of 3 equal cards only, create a horizontal premium service panel or alternating blocks.
+
+Services:
+1. Recruitment & Selection
+Dutch: Werving & Selectie
+Text:
+“For permanent positions where careful selection matters.”
+Dutch:
+“Voor vaste functies waarbij zorgvuldige selectie het verschil maakt.”
+
+2. Secondment / Detachering
+Dutch: Detachering
+Text:
+“Flexible deployment of professionals with personal involvement.”
+Dutch:
+“Flexibele inzet van professionals met persoonlijke betrokkenheid.”
+
+3. Interim Solutions
+Dutch: Interim-oplossingen
+Text:
+“Temporary expertise for projects, transitions and organizational challenges.”
+Dutch:
+“Tijdelijke expertise voor projecten, veranderingen en organisatorische vraagstukken.”
+
+Add CTA:
+“Discuss your hiring need”
+Dutch:
+“Bespreek je personeelsvraag”
+
+7. HUMAN IMAGE BREAK SECTION
+Add one large full-width or wide editorial image break after services.
+
+Overlay text:
+“Behind every role is a team. Behind every CV is a person.”
+
+Dutch:
+“Achter elke functie zit een team. Achter elk cv zit een mens.”
+
+This section should create emotional depth and break the repetitive layout.
+
+8. CANDIDATES / CLIENTS SECTION
+Improve the current split section.
+
+Make two large contrasting blocks:
+- Candidates block: light
+- Clients block: dark navy
+
+For candidates:
+Title:
+“Your next step, with personal guidance.”
+Dutch:
+“Jouw volgende stap, met persoonlijke begeleiding.”
+
+Bullets:
+- We listen before we advise
+- Clear and honest communication
+- Opportunities that fit your ambitions
+- Support throughout the process
+
+Dutch:
+- We luisteren voordat we adviseren
+- Duidelijke en eerlijke communicatie
+- Kansen die passen bij je ambitie
+- Begeleiding tijdens het hele proces
+
+CTA:
+“Upload your CV”
+Dutch:
+“Upload je cv”
+
+For clients:
+Title:
+“The right professional, not the fastest CV.”
+Dutch:
+“De juiste professional, niet het snelste cv.”
+
+Bullets:
+- Sharp intake of role and organization
+- Screening beyond the resume
+- Attention to team and culture fit
+- Transparent communication
+
+Dutch:
+- Scherpe intake van functie en organisatie
+- Screening verder dan het cv
+- Aandacht voor team- en cultuurfit
+- Transparante communicatie
+
+CTA:
+“Schedule an introduction”
+Dutch:
+“Plan een kennismaking”
+
+9. PROCESS SECTION
+Make “How we work” more visually distinctive.
+
+Use a premium vertical timeline with large numbers and better spacing.
+
+Title:
+“How we work”
+Dutch:
+“Hoe wij werken”
+
+Intro:
+“A clear process, without unnecessary noise.”
+Dutch:
+“Een helder proces, zonder onnodige ruis.”
+
+Steps:
+01 Introduction
+Dutch: Kennismaking
+Text: “We start with the context, expectations and real need.”
+Dutch: “We starten met de context, verwachtingen en echte behoefte.”
+
+02 In-depth intake
+Dutch: Diepgaande intake
+Text: “We define the role, team, culture and success criteria.”
+Dutch: “We brengen functie, team, cultuur en succescriteria scherp in beeld.”
+
+03 Careful screening
+Dutch: Zorgvuldige screening
+Text: “We assess experience, motivation and fit before introducing a candidate.”
+Dutch: “We beoordelen ervaring, motivatie en fit voordat we iemand voorstellen.”
+
+04 Guidance
+Dutch: Begeleiding
+Text: “We guide both candidate and client throughout the process.”
+Dutch: “We begeleiden kandidaat en opdrachtgever tijdens het proces.”
+
+05 Sustainable placement
+Dutch: Duurzame plaatsing
+Text: “We stay involved after the start to support a strong landing.”
+Dutch: “We blijven betrokken na de start voor een goede landing.”
+
+10. VACANCIES SECTION
+Keep it clean and boutique.
+
+Title:
+“Featured vacancies”
+Dutch:
+“Recente vacatures”
+
+Add short intro:
+“A small selection of current opportunities. Don’t see the right role? Send us your CV anyway.”
+
+Dutch:
+“Een selectie van actuele mogelijkheden. Staat jouw functie er niet tussen? Laat alsnog je gegevens achter.”
+
+Vacancy cards should be richer:
+- title
+- category
+- location
+- type
+- short one-sentence description
+- arrow/link
+
+Do not make it look like a huge job board.
+
+11. CONTACT / FORMS SECTION
+Make this section more premium and trustworthy.
+
+Title:
+“Looking for the right professional — or your next step?”
+Dutch:
+“Op zoek naar de juiste professional — of jouw volgende stap?”
+
+Subtext:
+“We’d love to get acquainted.”
+Dutch:
+“We maken graag kennis.”
+
+Show contact details clearly:
+info@wedeploy.nl
++31 6 52345011
+Krijn Taconiskade 461
+1087 HW Amsterdam
+Netherlands
+
+Forms:
+Create a tabbed form area:
+Tab 1: Candidate
+Tab 2: Client
+
+Candidate form fields:
+- Name
+- Email
+- Phone
+- LinkedIn profile
+- CV upload
+- Message
+
+Client form fields:
+- Company
+- Contact person
+- Email
+- Phone
+- Type of request
+- Description
+- Optional file upload
+
+Form design:
+- larger inputs
+- better spacing
+- drag and drop upload area
+- clean validation messages
+- strong submit button
+- confirmation state after submit
+
+SPAM PROTECTION:
+Add spam protection properly:
+- Cloudflare Turnstile integration placeholder
+- backend validation placeholder
+- honeypot hidden field
+- rate limiting placeholder
+- do not rely only on frontend validation
+
+Add clear code comments where keys should be added:
+CLOUDFLARE_TURNSTILE_SITE_KEY
+CLOUDFLARE_TURNSTILE_SECRET_KEY
+
+If backend is not implemented, create the frontend integration cleanly and clearly mark where backend verification must happen before production.
+
+12. FOOTER
+Make the footer richer and more premium.
+
+Include:
+- short Wedeploy description
+- navigation
+- services
+- expertise areas
+- contact details
+- address
+- LinkedIn placeholder
+- copyright
+- privacy statement
+- terms placeholder
+
+Footer copy:
+“Wedeploy is een recruitment- en detacheringspartner voor organisaties en professionals die kiezen voor kwaliteit, aandacht en duurzame matches.”
+
+Use Dutch copy if the site is Dutch.
+
+13. TYPOGRAPHY & CONTENT RULES
+Improve typography:
+- Increase body text size where it is too small
+- Improve line height
+- Avoid awkward 2-line breaks in headings
+- Use max-widths correctly
+- Make headings stronger and more editorial
+- Make paragraphs shorter but more meaningful
+- Avoid generic marketing fluff
+
+14. LAYOUT RULES
+Add more variation:
+- alternate light and warm sections
+- add one dark navy breakout section
+- use at least one large full-width image section
+- avoid using the same card layout three times in a row
+- create a stronger visual rhythm from top to bottom
+
+15. RESPONSIVE
+Ensure mobile looks premium:
+- hero stacks cleanly
+- images crop nicely
+- cards do not become too cramped
+- typography remains readable
+- forms are easy to use on mobile
+- CTA buttons are full-width where appropriate
+
+16. FINAL QUALITY CHECK
+Before finishing, check:
+- no fake testimonials
+- no fake logos
+- no exaggerated numbers
+- no generic AI visuals
+- no repeated identical section layouts
+- contact details are correct
+- address is included
+- forms include upload fields
+- spam protection placeholders are present
+- site feels premium, human and trustworthy
+
+The final result should feel like a serious boutique recruitment agency with a strong personal approach — not a generic staffing template.

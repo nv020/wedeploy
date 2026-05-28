@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, Upload, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Upload, ArrowRight } from "lucide-react";
 
 type Tab = "kandidaat" | "opdrachtgever";
 
@@ -27,11 +27,11 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight leading-[1.1] mb-5">
-            Op zoek naar de juiste professional —<br className="hidden md:block" /> of uw volgende stap?
+            Op zoek naar de juiste professional —<br className="hidden md:block" /> of jouw volgende stap?
           </h2>
-          <p className="text-[16px] text-muted-foreground mb-8">Wij maken graag kennis.</p>
+          <p className="text-[16px] text-muted-foreground mb-10">We maken graag kennis.</p>
 
-          <div className="flex items-center justify-center gap-8 flex-wrap">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-8 flex-wrap">
             <a
               href="mailto:info@wedeploy.nl"
               className="inline-flex items-center gap-2.5 text-[14px] font-medium text-primary hover:text-accent transition-colors duration-200"
@@ -50,6 +50,12 @@ export function ContactSection() {
               </div>
               +31 6 52345011
             </a>
+            <span className="inline-flex items-center gap-2.5 text-[14px] text-muted-foreground">
+              <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
+                <MapPin className="w-4 h-4 text-accent" />
+              </div>
+              Krijn Taconiskade 461, 1087 HW Amsterdam
+            </span>
           </div>
         </div>
 
@@ -63,11 +69,11 @@ export function ContactSection() {
                 onClick={() => setActiveTab(tab)}
                 className={`flex-1 py-4 text-[13.5px] font-semibold transition-all duration-200 ${
                   activeTab === tab
-                    ? "text-accent border-b-2 border-accent bg-accent/3"
+                    ? "text-accent border-b-2 border-accent bg-accent/[0.03]"
                     : "text-muted-foreground hover:text-primary"
                 }`}
               >
-                {tab === "kandidaat" ? "Voor kandidaten" : "Voor opdrachtgevers"}
+                {tab === "kandidaat" ? "Ik ben kandidaat" : "Ik zoek talent"}
               </button>
             ))}
           </div>
@@ -89,13 +95,25 @@ export function ContactSection() {
                         <ArrowRight className="w-6 h-6 text-accent" />
                       </div>
                       <h3 className="text-[18px] font-bold text-primary mb-2">Bericht ontvangen!</h3>
-                      <p className="text-muted-foreground text-[14px]">We nemen zo snel mogelijk contact met u op.</p>
+                      <p className="text-muted-foreground text-[14px]">We nemen zo snel mogelijk contact met je op.</p>
                     </div>
                   ) : (
                     <form
                       onSubmit={(e) => { e.preventDefault(); setKandSent(true); }}
                       className="flex flex-col gap-5"
                     >
+                      {/* Honeypot — hidden from humans, traps bots */}
+                      <input
+                        type="text"
+                        name="_gotcha"
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        autoComplete="off"
+                        style={{ display: "none" }}
+                      />
+                      {/* TODO: Add Cloudflare Turnstile widget here */}
+                      {/* Site key: CLOUDFLARE_TURNSTILE_SITE_KEY */}
+
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                           <label className={labelCls}>Naam *</label>
@@ -147,7 +165,7 @@ export function ContactSection() {
                           <span className="text-[13px] text-muted-foreground text-center px-4">
                             {kandFile
                               ? <span className="text-accent font-medium">{kandFile.name}</span>
-                              : <>Sleep uw cv hierheen of <span className="text-accent font-medium">klik om te uploaden</span></>
+                              : <>Sleep je cv hierheen of <span className="text-accent font-medium">klik om te uploaden</span></>
                             }
                           </span>
                           <span className="text-[11px] text-muted-foreground/50">PDF, DOC of DOCX</span>
@@ -158,7 +176,7 @@ export function ContactSection() {
                         <label className={labelCls}>Bericht</label>
                         <textarea
                           rows={3}
-                          placeholder="Vertel ons kort over uzelf en uw zoekopdracht..."
+                          placeholder="Vertel ons kort over jezelf en je zoekopdracht..."
                           className={`${inputCls} resize-none`}
                         />
                       </div>
@@ -172,6 +190,7 @@ export function ContactSection() {
                       >
                         Verstuur aanmelding
                       </motion.button>
+                      {/* TODO: Rate limiting — add backend validation before production */}
                     </form>
                   )}
                 </motion.div>
@@ -196,6 +215,18 @@ export function ContactSection() {
                       onSubmit={(e) => { e.preventDefault(); setOpdrSent(true); }}
                       className="flex flex-col gap-5"
                     >
+                      {/* Honeypot — hidden from humans, traps bots */}
+                      <input
+                        type="text"
+                        name="_gotcha"
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        autoComplete="off"
+                        style={{ display: "none" }}
+                      />
+                      {/* TODO: Add Cloudflare Turnstile widget here */}
+                      {/* Site key: CLOUDFLARE_TURNSTILE_SITE_KEY */}
+
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                           <label className={labelCls}>Bedrijf *</label>
@@ -218,11 +249,22 @@ export function ContactSection() {
                       </div>
 
                       <div>
-                        <label className={labelCls}>Omschrijving van uw vraag *</label>
+                        <label className={labelCls}>Type vraag</label>
+                        <select className={`${inputCls} cursor-pointer`}>
+                          <option value="">Selecteer een optie</option>
+                          <option value="werving">Werving & Selectie</option>
+                          <option value="detachering">Detachering</option>
+                          <option value="interim">Interim-oplossing</option>
+                          <option value="anders">Anders</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className={labelCls}>Omschrijving *</label>
                         <textarea
                           required
                           rows={4}
-                          placeholder="Beschrijf welk type professional u zoekt, de functie, sector en eventuele bijzonderheden..."
+                          placeholder="Beschrijf het type professional, de functie, sector en eventuele bijzonderheden..."
                           className={`${inputCls} resize-none`}
                         />
                       </div>
@@ -272,6 +314,7 @@ export function ContactSection() {
                       >
                         Plan een kennismaking
                       </motion.button>
+                      {/* TODO: Rate limiting — add backend validation before production */}
                     </form>
                   )}
                 </motion.div>

@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Briefcase, User } from "lucide-react";
 
 const kandidaatItems = [
-  "Persoonlijke begeleiding gedurende het hele traject",
-  "Transparante communicatie over kansen en proces",
-  "Kwalitatieve functies die aansluiten bij uw ambities",
-  "Langetermijnfocus — niet de snelste match, maar de beste",
+  "We luisteren voordat we adviseren",
+  "Duidelijke en eerlijke communicatie",
+  "Kansen die passen bij je ambitie",
+  "Begeleiding tijdens het hele proces",
 ];
 
 const opdrachtgeverItems = [
-  "Zorgvuldige matching op cultuur en competentie",
-  "Minder mismatch risico door diepgaande intake",
-  "Kwaliteit boven kwantiteit — geen bulk aan profielen",
-  "Betrokken partnerschap ook na plaatsing",
+  "Scherpe intake van functie en organisatie",
+  "Screening verder dan het cv",
+  "Aandacht voor team- en cultuurfit",
+  "Transparante communicatie",
 ];
 
 const sideVariants = {
@@ -46,7 +46,7 @@ export function SplitSection() {
               <span className="text-[11px] font-bold tracking-[2px] uppercase text-accent">Voor kandidaten</span>
             </div>
             <h3 className="text-2xl font-bold text-primary mb-7 leading-snug">
-              Jouw volgende stap,<br />persoonlijk begeleid.
+              Jouw volgende stap,<br />met persoonlijke begeleiding.
             </h3>
             <ul className="space-y-3.5 mb-6">
               {kandidaatItems.map((item) => (
@@ -67,7 +67,7 @@ export function SplitSection() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-6 py-3 text-[13.5px] font-semibold"
               >
-                Upload uw cv <ArrowRight className="w-4 h-4" />
+                Upload je cv <ArrowRight className="w-4 h-4" />
               </motion.a>
               <motion.a
                 href="#vacatures"
@@ -104,7 +104,7 @@ export function SplitSection() {
                 <span className="text-[11px] font-bold tracking-[2px] uppercase text-accent">Voor opdrachtgevers</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-7 leading-snug">
-                De juiste professional,<br />zorgvuldig geselecteerd.
+                De juiste professional,<br />niet het snelste cv.
               </h3>
               <ul className="space-y-3.5 mb-9">
                 {opdrachtgeverItems.map((item) => (
