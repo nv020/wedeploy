@@ -35,7 +35,7 @@ const opdrachtgeverItems = [
   },
   {
     label: "Duurzame nazorg inbegrepen",
-    detail: "Na de plaatsing blijven we betrokken. Zo voorkomen we dat een match toch nog strandstrand op details.",
+    detail: "Na de plaatsing blijven we betrokken. Zo borgen we dat een match ook op de lange termijn standhoudt.",
   },
 ];
 
@@ -50,14 +50,18 @@ export function SplitSection() {
       <span id="opdrachtgevers" className="sr-only" />
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-14">
-          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Onze aanpak</span>
+          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">De visie achter Wedeploy</span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight max-w-2xl">
             Hoe wij het anders doen.
           </h2>
           <p className="mt-4 text-[15.5px] text-muted-foreground leading-relaxed max-w-2xl">
-            Wedeploy is ontstaan uit frustratie. Traditionele bureaus schuiven CV's, incasseren hun fee en verdwijnen.
-            De kandidaat zit met vragen zonder antwoord. De opdrachtgever met een mismatch. Wij geloven dat het
-            fundamenteel anders kan — en dat bewijzen we elke dag.
+            Wedeploy is ontstaan vanuit een duidelijke ambitie: de standaard in recruitment en
+            detachering verhogen. In een dynamische markt zien we dat de behoefte aan échte
+            inhoudelijke diepgang groter is dan ooit. Wij geloven dat een succesvolle match verder
+            gaat dan het alleen delen van een profiel. Het vraagt om een partner die de taal van de
+            werkvloer spreekt, de complexiteit van een project overziet en investeert in een
+            duurzame relatie. Bij Wedeploy bouwen we aan partnerships voor de lange termijn —
+            voor kandidaten én voor opdrachtgevers.
           </p>
         </div>
 

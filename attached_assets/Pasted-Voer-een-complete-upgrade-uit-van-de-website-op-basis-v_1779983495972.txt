@@ -1,0 +1,27 @@
+Voer een complete upgrade uit van de website op basis van de lay-out in image_d79f3d.jpg. Hanteer hierbij strikt de rol van een premium designer en high-end copywriter. De toon moet proactief, positief en vol autoriteit zijn—vermijd negatieve claims, frustraties of letterlijke vergelijkingen met concurrenten. Pas de volgende onderdelen exact aan:
+
+1. TEXTUELE HERSTELWERKZAAMHEDEN (NUANCE & VISIE)
+- Vervang de tekst in het blok 'Expertise die verder gaat...' (of de rollensectie) waar nu vreemde claims staan. De nieuwe positionering is: "Gefocust op wat we doorgronden. Wij richten ons uitsluitend op de vakgebieden waar onze eigen expertise ligt. Dit garandeert een gesprek op inhoudelijk niveau, zowel voor de opdrachtgever als voor de professional."
+- Herschrijf de visiesectie ('Hoe wij het anders doen') volledig naar een inspirerend verhaal zonder de woorden 'frustratie' of ' bureaus dumpen'. Gebruik exact deze tekst:
+  "De visie achter wedeploy — wedeploy is ontstaan vanuit een duidelijke ambitie: de standaard in recruitment en detachering verhogen. In een dynamische markt zien we dat de behoefte aan échte inhoudelijke diepgang groter is dan ooit. Wij geloven dat een succesvolle match verder gaat dan het alleen delen van een profiel. Het vraagt om een partner die de taal van de werkvloer spreekt, de complexiteit van een project overziet en investeert in een duurzame relatie. Bij wedeploy bouwen we aan samenwerkingen die standhouden, gedreven door ruim twintig jaar ervaring in het vak."
+
+2. VISUELE BALANS IN HET GRID ('HOE WIJ HELPEN')
+- De verhouding tussen de tekst links en de foto rechts is momenteel scheef (de foto is veel te langgerekt).
+- Pas de layout van deze sectie aan: verander de afmetingen van de rechterafbeelding van een verticaal portrait-formaat naar een strak vierkant (1:1) of een liggend landscape-formaat. 
+- Zorg dat de drie minimalistische tekstpunten aan de linkerkant hierdoor qua hoogte perfect en rustig uitlijnen met de nieuwe fotoverhouding, zonder dat er onnodige witruimte ontstaat.
+
+3. OPTIMALISATIE CONTACTBLOK (LINKERZIJDE)
+- De kleine foto in het donkerblauwe contactvlak valt nu weg en oogt onprofessioneel. 
+- Richt de linkerzijde van dit blok opnieuw in: maak de foto ofwel volledig dekkend voor de linkerhelft van de kaart (card-image split), of kies voor een krachtig, puur typografisch vlak met royale padding.
+- Gebruik in dit donkerblauwe vlak de volgende tekst:
+  "Direct schakelen met een specialist — Bij wedeploy geloven we in korte lijnen en directe expertise. Geen omwegen, maar direct om tafel met een partner die uw sector begrijpt."
+- Zorg dat de contactgegevens (telefoon, e-mail, locatie) daaronder uiterst strak, minimalistisch en perfect uitgelijnd staan.
+
+4. FOOTER & MERKIDENTITEIT UPGRADE
+- Maak het 'wedeploy' logo in de footer circa 25% groter om meer merk-autoriteit uit te stralen.
+- Doorbeek de saaie structuur van de footer: verander de lay-out in een asymmetrisch grid waarbij de eerste kolom (met het logo en de introductietekst) breder is dan de kolommen met de navigatielinks aan de rechterzijde.
+
+5. AFBEELDINGEN-CHECK
+- Zorg ervoor dat alle geselecteerde afbeeldingen (inclusief de ontbrekende visuele referentie naar techniek en installaties in het expertise-grid) een authentieke, premium en realistische uitstraling hebben. Absoluut geen glimmende, onnatuurlijke of overduidelijke AI-gegenereerde stockfeestjes.
+
+Pas deze wijzigingen consistent toe over de gehele code, zorg voor een feilloze responsive werking en behoud het strakke donkerblauw/lichtblauwe kleurenpalet.

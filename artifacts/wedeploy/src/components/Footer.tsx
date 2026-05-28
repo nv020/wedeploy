@@ -27,10 +27,10 @@ export function Footer() {
   return (
     <footer className="bg-primary/95 text-white/70 py-16">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-          {/* Brand — spans 2 cols on lg */}
-          <div className="lg:col-span-2">
-            <a href="#home" className="flex items-center font-extrabold text-[19px] tracking-tight leading-none mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10 mb-12">
+          {/* Brand — spans 3 cols on lg for asymmetry */}
+          <div className="lg:col-span-3">
+            <a href="#home" className="flex items-center font-extrabold text-[24px] tracking-tight leading-none mb-5">
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
             </a>

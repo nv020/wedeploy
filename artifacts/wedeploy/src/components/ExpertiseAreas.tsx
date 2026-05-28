@@ -59,9 +59,9 @@ export function ExpertiseAreas() {
             Expertise die verder gaat<br className="hidden md:block" /> dan een LinkedIn-profiel.
           </h2>
           <p className="text-[15px] text-muted-foreground leading-relaxed max-w-xl">
-            Met ruim twee decennia aan ervaring binnen de top van facility- en vastgoedmanagement
-            begrijpen we de dynamiek van elke sector van binnenuit. We plaatsen geen kandidaten
-            in rollen waar we zelf nooit iets van hebben gehoord.
+            Gefocust op wat we doorgronden. Wij richten ons uitsluitend op de vakgebieden waar
+            onze eigen expertise ligt. Dit garandeert een gesprek op inhoudelijk niveau, zowel
+            voor de opdrachtgever als voor de professional.
           </p>
         </div>
 

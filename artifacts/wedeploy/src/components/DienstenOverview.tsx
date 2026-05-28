@@ -95,13 +95,13 @@ export function DienstenOverview() {
           >
             {/* Accent shape behind image */}
             <div
-              className="absolute bottom-[-16px] right-[-16px] w-[90%] h-[90%] rounded-2xl"
+              className="absolute bottom-[-14px] right-[-14px] w-[88%] h-[88%] rounded-2xl"
               style={{ background: "hsl(36 40% 88%)" }}
             />
-            <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-[0_20px_60px_hsl(220_50%_18%/0.10)]">
+            <div className="relative rounded-2xl overflow-hidden aspect-square shadow-[0_20px_60px_hsl(220_50%_18%/0.10)]">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80"
-                alt="Professional in gesprek bij een zakelijke afspraak"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
+                alt="Professionals in overleg bij een zakelijke afspraak"
                 className="w-full h-full object-cover object-center"
               />
             </div>
