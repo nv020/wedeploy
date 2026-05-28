@@ -19,7 +19,7 @@ const diensten = [
 const expertises = [
   "Facility Management",
   "Projectmanagement",
-  "Vastgoed & Property",
+  "Vastgoed- en Property Management",
   "Technische rollen",
 ];
 
@@ -40,7 +40,7 @@ export function Footer() {
             </p>
             <div className="mt-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/wedeploy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-[13px] text-white/55 hover:text-white transition-colors"
@@ -108,8 +108,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+31652345011" className="hover:text-white transition-colors">
-                  +31 6 52345011
+                <a href="tel:0852128668" className="hover:text-white transition-colors">
+                  085 212 8668
                 </a>
               </li>
               <li className="leading-relaxed pt-1">

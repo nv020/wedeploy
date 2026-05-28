@@ -145,9 +145,9 @@ export function ContactSection() {
             />
 
             <div className="relative flex-1 flex flex-col">
-              {/* Portrait — editorial, human, premium */}
-              <div className="flex flex-col items-start gap-2 mb-8">
-                <div className="w-[88px] h-[96px] rounded-[14px] overflow-hidden border border-white/[0.10]">
+              {/* Portrait — horizontal editorial composition */}
+              <div className="flex flex-row items-center gap-4 mb-8">
+                <div className="w-[88px] h-[96px] flex-shrink-0 rounded-[14px] overflow-hidden border border-white/[0.10]">
                   <img
                     src={nickyPhoto}
                     alt="Nicky — Wedeploy"
@@ -160,9 +160,9 @@ export function ContactSection() {
                     }}
                   />
                 </div>
-                <div className="flex flex-col gap-0.5">
-                  <span className="text-[12px] font-semibold tracking-[1px] text-white/50">Nicky</span>
-                  <span className="text-[10.5px] text-white/25 tracking-[0.3px]">Persoonlijk contact &amp; begeleiding</span>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[13px] font-semibold tracking-[0.5px] text-white/55">Nicky</span>
+                  <span className="text-[11px] text-white/28 leading-relaxed">Persoonlijk contact<br />&amp; begeleiding</span>
                 </div>
               </div>
 
@@ -207,13 +207,13 @@ export function ContactSection() {
                   </div>
                 </a>
 
-                <a href="tel:+31652345011" className="flex items-center gap-4 group">
+                <a href="tel:0852128668" className="flex items-center gap-4 group">
                   <div className="w-10 h-10 rounded-xl bg-white/[0.07] flex items-center justify-center flex-shrink-0 group-hover:bg-accent/25 transition-colors duration-250">
                     <Phone className="w-[17px] h-[17px] text-white/50 group-hover:text-white transition-colors duration-250" />
                   </div>
                   <div>
                     <p className="text-[10px] font-bold tracking-[2px] uppercase text-white/25 mb-1">Telefoon</p>
-                    <p className="text-[14px] text-white/80 font-medium group-hover:text-white transition-colors duration-200">+31 6 52345011</p>
+                    <p className="text-[14px] text-white/80 font-medium group-hover:text-white transition-colors duration-200">085 212 8668</p>
                   </div>
                 </a>
 

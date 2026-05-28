@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/wedeploy run build",
+  "outputDirectory": "artifacts/wedeploy/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
