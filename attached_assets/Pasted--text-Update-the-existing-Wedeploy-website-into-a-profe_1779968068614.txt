@@ -1,0 +1,328 @@
+```text
+Update the existing Wedeploy website into a professional, modern, clean and trustworthy recruitment & staffing website. The current version feels too technical and too much like a SaaS template. The new direction should feel more human, premium, calm and relationship-driven.
+
+Wedeploy is NOT a “CV forwarding agency”. The core positioning is:
+- personal recruitment
+- quality over quantity
+- careful screening
+- long-term matches
+- transparency
+- guidance for both clients and candidates
+
+The website should immediately communicate trust, professionalism and personal involvement.
+
+IMPORTANT:
+Do NOT make the website feel like:
+- a generic job board
+- a tech startup
+- an AI company
+- a mass staffing agency
+
+Instead, make it feel like:
+- a boutique recruitment partner
+- a premium consultancy-style staffing agency
+- modern but human
+- calm, professional and approachable
+
+The website should visually sit somewhere between:
+- Level.works (fresh and approachable)
+- Lakehouse (premium and calm)
+- YER (professional structure)
+
+But avoid copying any specific design.
+
+STYLE DIRECTION:
+- Premium minimalism
+- Warm editorial style
+- Lots of whitespace
+- Strong typography
+- Subtle animations only
+- Human photography
+- Soft shadows
+- Rounded corners
+- Calm premium color palette
+
+COLOR PALETTE:
+- Dark navy blue
+- Off-white
+- Light gray
+- Warm beige/sand accents
+- Very subtle gradients only
+
+AVOID:
+- glowing AI effects
+- technical line animations
+- abstract network visuals
+- overly corporate stock photos
+- fake testimonials
+- fake client logos
+- exaggerated claims
+- crowded layouts
+
+USE:
+- clean sections
+- elegant spacing
+- editorial layouts
+- subtle hover animations
+- warm professional imagery
+- calm UI patterns
+
+IMPORTANT BUSINESS POSITIONING:
+Wedeploy mainly specializes in:
+- Facility Management
+- Project Management
+- Real Estate / Property Management
+- Technical & Engineering roles
+
+However, do NOT position the company as “only” doing these sectors.
+
+Use wording like:
+“Our expertise lies in Facility Management, Project Management, Real Estate and Technical roles — while remaining open to other specialist positions.”
+
+CONTACT DETAILS:
+Email: info@wedeploy.nl
+Phone: +31 6 52345011
+
+NAVIGATION:
+- Home
+- Services
+- Candidates
+- Clients
+- Our Process
+- Contact
+
+HERO SECTION:
+Replace the current technical “W animation” completely.
+
+Use a large editorial-style hero image:
+- people in conversation
+- professional office/project environment
+- project management/facility/real estate atmosphere
+- natural light
+- warm professional feeling
+
+The image should feel premium and realistic, not cheesy stock photography.
+
+Structure:
+- Left side: text + CTA
+- Right side: large image
+
+HEADLINE:
+“No CV-shuffling. Just meaningful matches.”
+
+SUBTEXT:
+“Wedeploy connects professionals and organizations through careful screening, personal attention and long-term thinking.”
+
+Small supporting line:
+“Specialized in Facility Management, Project Management, Real Estate and Technical roles.”
+
+CTA BUTTONS:
+Primary:
+- “Looking for talent”
+
+Secondary:
+- “I’m a candidate”
+
+Add a subtle trust line underneath:
+“Personal approach · Careful screening · Transparent communication”
+
+SECTION 1 — INTRODUCTION:
+Title:
+“Recruitment with attention to the person behind the CV.”
+
+Text:
+“We believe a successful match goes beyond experience and availability. That’s why we focus on motivation, personality, team fit and long-term success — helping organizations find professionals who truly fit, and candidates find opportunities that genuinely match their ambitions.”
+
+SECTION 2 — WHY WEDEPLOY:
+Create premium cards or editorial blocks (NOT a busy icon grid).
+
+Cards:
+1.
+Title:
+“No CV forwarding”
+Text:
+“We don’t send stacks of profiles. Only candidates who truly fit both professionally and personally.”
+
+2.
+Title:
+“Personal screening”
+Text:
+“We take the time to understand candidates before presenting them.”
+
+3.
+Title:
+“Focus on team fit”
+Text:
+“A successful placement depends on collaboration, culture and expectations — not just a resume.”
+
+4.
+Title:
+“Transparent process”
+Text:
+“Clear communication for both clients and candidates throughout the process.”
+
+5.
+Title:
+“Ongoing involvement”
+Text:
+“We stay engaged before, during and after placement to ensure a strong start.”
+
+SECTION 3 — EXPERTISE AREAS:
+Create large visual cards with elegant photography.
+
+Title:
+“Expertise in environments where quality matters.”
+
+Cards:
+- Facility Management
+- Project Management
+- Real Estate & Property Management
+- Technical & Engineering Roles
+
+Small supporting text:
+“Our experience lies within these sectors, while remaining flexible for other specialist positions.”
+
+SECTION 4 — SERVICES:
+Create 3 premium service cards.
+
+1.
+“Recruitment & Selection”
+Text:
+“For organizations looking for carefully selected professionals for permanent positions.”
+
+2.
+“Secondment / Detachering”
+Text:
+“Flexible deployment of professionals with personal guidance and involvement.”
+
+3.
+“Interim Solutions”
+Text:
+“Temporary expertise for projects, transitions and organizational challenges.”
+
+SECTION 5 — FOR CANDIDATES / FOR CLIENTS:
+Create a split layout with 2 strong blocks.
+
+LEFT:
+FOR CANDIDATES
+Focus on:
+- personal guidance
+- transparent communication
+- quality opportunities
+- career growth
+- long-term fit
+
+CTA:
+“Upload your CV”
+
+RIGHT:
+FOR CLIENTS
+Focus on:
+- careful matching
+- reduced mismatch risk
+- quality-first recruitment
+- involved partnership
+- realistic communication
+
+CTA:
+“Schedule an introduction”
+
+SECTION 6 — PROCESS:
+Minimal elegant timeline section.
+
+Title:
+“How we work”
+
+Steps:
+1. Introduction
+2. In-depth intake
+3. Careful screening
+4. Personal guidance
+5. Sustainable placement
+
+Keep this section visually minimal and premium.
+
+SECTION 7 — VACANCIES:
+Include a clean vacancy overview section.
+
+IMPORTANT:
+Do NOT make this feel like a massive job board.
+
+Use:
+- elegant vacancy cards
+- limited amount of featured vacancies
+- calm layout
+- professional styling
+
+CTA:
+“View all vacancies”
+
+SECTION 8 — CONTACT / FINAL CTA:
+Large premium CTA section.
+
+Headline:
+“Looking for the right professional — or your next step?”
+
+Subtext:
+“We’d love to get acquainted.”
+
+Buttons:
+- “For clients”
+- “For candidates”
+
+CONTACT BLOCK:
+- info@wedeploy.nl
+- +31 6 52345011
+
+FORMS:
+Create two modern forms with elegant styling.
+
+1. Candidate form:
+Fields:
+- Name
+- Email
+- Phone number
+- LinkedIn profile
+- CV upload
+- Message
+
+2. Client form:
+Fields:
+- Company
+- Contact person
+- Email
+- Phone number
+- Description of request
+- Optional file upload
+
+Design requirements for forms:
+- clean
+- premium
+- drag & drop upload
+- subtle animations
+- mobile optimized
+
+FOOTER:
+Professional and calm.
+
+Include:
+- navigation
+- services
+- contact info
+- LinkedIn link placeholder
+- copyright
+
+TECHNICAL:
+- fully responsive
+- optimized for mobile
+- smooth scrolling
+- subtle transitions
+- no heavy animations
+- clean code structure
+- modern premium UI
+
+IMPORTANT:
+The website should feel trustworthy, human and premium.
+The goal is not to look like the biggest staffing agency.
+The goal is to look like the most careful and professional recruitment partner.
+```
