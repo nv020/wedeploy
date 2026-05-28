@@ -1,31 +1,93 @@
 import { motion } from "framer-motion";
 
+const cards = [
+  {
+    title: "Context boven keywords",
+    desc: "We kijken naar de opdracht, organisatiecultuur, fase van het project en het team — niet alleen naar het profiel.",
+    num: "01",
+  },
+  {
+    title: "Kwaliteit boven volume",
+    desc: "Geen stapels profielen, maar zorgvuldig geselecteerde professionals die we zelf al grondig hebben gesproken.",
+    num: "02",
+  },
+  {
+    title: "Relaties boven transacties",
+    desc: "We bouwen aan duurzame samenwerking met opdrachtgevers én professionals, ook na de plaatsing.",
+    num: "03",
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const stagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12 } },
+};
+
 export function Introductie() {
   return (
     <section
-      className="py-24 border-y border-border/30"
-      style={{ background: "hsl(213 30% 97%)" }}
+      className="py-28 border-y border-border/30"
+      style={{ background: "hsl(213 25% 97%)" }}
     >
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-center"
+          transition={{ duration: 0.7 }}
+          className="max-w-2xl mb-14"
         >
-          <div className="flex items-center justify-center gap-3 mb-10">
-            <div className="h-px w-10 bg-accent/40 rounded-full" />
-            <span className="text-[10px] font-bold tracking-[3px] uppercase text-accent/70">Onze overtuiging</span>
-            <div className="h-px w-10 bg-accent/40 rounded-full" />
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-8 bg-accent/40 rounded-full" />
+            <span className="text-[10px] font-bold tracking-[3px] uppercase text-accent/70">Onze visie</span>
           </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary leading-[1.1] tracking-tight mb-5">
+            Een goede match begint niet bij een cv.
+          </h2>
+          <p className="text-[15.5px] text-muted-foreground leading-relaxed">
+            Wij kijken verder dan functietitels en zoekwoorden. We willen begrijpen wat een
+            organisatie nodig heeft, welke professional past en waarom juist die combinatie werkt.
+          </p>
+        </motion.div>
 
-          <h2 className="text-[2rem] md:text-[2.8rem] font-bold text-primary leading-[1.15] tracking-tight">
-            Wij geloven niet in CV's schuiven.
-          </h2>
-          <h2 className="text-[2rem] md:text-[2.8rem] font-bold text-primary/40 leading-[1.15] tracking-tight mt-1">
-            Wij geloven in het bouwen van fundamenten.
-          </h2>
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-5"
+        >
+          {cards.map((card, i) => (
+            <motion.div
+              key={card.num}
+              variants={cardVariants}
+              className={`rounded-2xl p-9 flex flex-col gap-4 ${
+                i === 0
+                  ? "bg-primary text-white"
+                  : "bg-white border border-border/50"
+              }`}
+            >
+              <span className={`text-[10.5px] font-bold tracking-[2.5px] ${i === 0 ? "text-accent" : "text-accent/80"}`}>
+                {card.num}
+              </span>
+              <h3 className={`text-[17px] font-bold leading-snug ${i === 0 ? "text-white" : "text-primary"}`}>
+                {card.title}
+              </h3>
+              <p className={`text-[13.5px] leading-relaxed ${i === 0 ? "text-white/60" : "text-muted-foreground"}`}>
+                {card.desc}
+              </p>
+              {i === 0 && (
+                <div className="mt-auto pt-4">
+                  <div className="w-8 h-0.5 rounded-full bg-accent/40" />
+                </div>
+              )}
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

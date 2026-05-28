@@ -28,8 +28,12 @@ export function ContactSection() {
         <div className="mb-12">
           <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight leading-[1.1] max-w-2xl">
-            Op zoek naar de juiste professional — of jouw volgende stap?
+            Klaar voor een betere match?
           </h2>
+          <p className="mt-4 text-[15.5px] text-muted-foreground leading-relaxed max-w-xl">
+            Of u nu tijdelijke expertise zoekt of als professional toe bent aan een volgende stap:
+            wij denken graag met u mee.
+          </p>
         </div>
 
         {/* Panel layout */}
@@ -145,7 +149,7 @@ export function ContactSection() {
                       : "text-muted-foreground hover:text-primary"
                   }`}
                 >
-                  {tab === "kandidaat" ? "Ik ben kandidaat" : "Ik zoek talent"}
+                  {tab === "kandidaat" ? "Voor professionals" : "Voor opdrachtgevers"}
                 </button>
               ))}
             </div>

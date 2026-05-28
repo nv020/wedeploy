@@ -59,9 +59,9 @@ export function ExpertiseAreas() {
             Expertise die verder gaat<br className="hidden md:block" /> dan een LinkedIn-profiel.
           </h2>
           <p className="text-[15px] text-muted-foreground leading-relaxed max-w-xl">
-            Gefocust op wat we doorgronden. Wij richten ons uitsluitend op de vakgebieden waar
-            onze eigen expertise ligt. Dit garandeert een gesprek op inhoudelijk niveau, zowel
-            voor de opdrachtgever als voor de professional.
+            Binnen Facility Management, vastgoed en techniek draait succes vaak om context:
+            stakeholders, operatie, locaties, planning, budgetten en draagvlak. Wij begrijpen
+            die wereld en selecteren professionals die daarbinnen kunnen leveren.
           </p>
         </div>
 
@@ -106,10 +106,27 @@ export function ExpertiseAreas() {
           ))}
         </motion.div>
 
-        <p className="mt-8 text-[13px] text-muted-foreground/60 text-center max-w-xl mx-auto leading-relaxed">
-          Naast deze vier kerngebieden denken we ook graag mee over aangrenzende specialistische functies
-          waarbij kwaliteit en langetermijnfit bepalend zijn.
-        </p>
+        {/* Expertise tag cloud */}
+        <div className="mt-12 flex flex-wrap justify-center gap-2.5">
+          {[
+            "Facility Management",
+            "Vastgoed",
+            "Workplace",
+            "Huisvesting",
+            "Technische dienstverlening",
+            "Onderhoud & beheer",
+            "Projectmanagement",
+            "Operations",
+            "Interim management",
+          ].map((tag) => (
+            <span
+              key={tag}
+              className="text-[12px] font-semibold text-primary/65 border border-border/60 bg-white rounded-full px-4 py-1.5"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,437 @@
+```text
+Je bent een award-winning combinatie van:
+- senior UX designer
+- branding specialist
+- conversion copywriter
+- recruitment marketing expert
+- Webflow/Framer-level art director
+- B2B SaaS designer
+- boutique recruitment agency strategist
+
+Je opdracht:
+Transformeer de huidige Wedeploy website naar de beste startende recruitmentwebsite binnen Facility Management, Vastgoed en Techniek in Nederland.
+
+BELANGRIJK:
+De huidige website voelt nog te veel als:
+- een mooie template
+- AI-generated
+- generieke recruitmentsite
+- te leeg
+- te veilig
+- te corporate
+- te weinig menselijk
+
+Dat moet volledig verdwijnen.
+
+De nieuwe website moet voelen als:
+- premium boutique recruitment partner
+- senioriteit
+- vertrouwen
+- persoonlijk
+- strategisch
+- kwaliteit boven volume
+- menselijk
+- modern
+- high-end
+- geloofwaardig
+- specialistisch
+
+NIET:
+- cv schuiven
+- snelle sales recruiter
+- goedkope detachering
+- “join our team” vibe
+- generieke HR taal
+
+DOELGROEPEN:
+1. Organisaties die tijdelijke of vaste professionals zoeken
+2. Senior professionals/interimmers binnen:
+   - Facility Management
+   - Vastgoed
+   - Workplace
+   - Huisvesting
+   - Technische dienstverlening
+   - Onderhoud & beheer
+   - Projectmanagement
+
+DE WEBSITE MOET UITSTRALEN:
+“Deze mensen begrijpen onze wereld.”
+
+-----------------------------------
+GROOTSTE PROBLEMEN VAN DE HUIDIGE WEBSITE
+-----------------------------------
+
+1. Te veel lege ruimte zonder payoff
+Minimalisme werkt alleen als copy en visuals extreem sterk zijn.
+Nu voelt het alsof veel secties nog niet af zijn.
+
+2. Copy voelt generiek
+Veel tekst klinkt als standaard recruitmenttaal.
+Te weinig menselijkheid.
+Te weinig autoriteit.
+Te weinig onderscheidend vermogen.
+
+3. Geen duidelijke niche-authoriteit
+Nu zou dit ook een marketingbureau of HR startup kunnen zijn.
+Veel harder claimen:
+- Facility Management
+- Vastgoed
+- Technische projecten
+- Workplace
+- Interim expertise
+
+4. Foto’s zijn te stockachtig
+Vooral high-five beelden ogen goedkoop/generiek.
+Gebruik realistischer, premium en natuurlijk beeldmateriaal:
+- workplace
+- projectomgeving
+- vastgoed
+- technische context
+- meetings
+- professionele interactie
+GEEN cliché stockfoto’s.
+
+5. CTA’s zijn te zwak
+“Vertrouwelijk kennismaken” moet verdwijnen.
+Dat klinkt:
+- outplacement
+- ontslag
+- recruiterspam
+
+6. Te weinig bewijs
+Meer inhoudelijke geloofwaardigheid nodig:
+- type projecten
+- type rollen
+- expertisegebieden
+- context
+- manier van werken
+
+7. Alles heeft dezelfde visuele intensiteit
+Meer ritme nodig:
+- grotere statements
+- visuele contrasten
+- asymmetrische layouts
+- meer spanning
+- meer premium storytelling
+
+-----------------------------------
+DESIGN RICHTING
+-----------------------------------
+
+Behoud:
+- premium uitstraling
+- rust
+- navy/white/light grey palette
+- moderne typografie
+
+Verbeter:
+- meer ritme
+- meer visuele hiërarchie
+- minder repetitieve blokken
+- sterkere headings
+- betere spacing
+- mobiel perfect
+- meer premium details
+- meer editorial feeling
+- minder template vibe
+
+Website moet voelen alsof:
+- een high-end agency
+- een boutique consultancy
+- een premium recruitment partner
+
+samenkomen.
+
+Gebruik:
+- Bento grids
+- asymmetrische composities
+- subtiele gradients
+- zachte schaduwen
+- premium hover states
+- rustige micro-animaties
+- scroll reveal effecten
+- visuele storytelling
+
+MAAR:
+niet te druk.
+Niet startup-kinderachtig.
+Niet flashy.
+
+-----------------------------------
+HERO SECTION
+-----------------------------------
+
+Huidige hero verbeteren.
+
+Nieuwe headline:
+“Duurzame matches in Facility Management, Vastgoed & Techniek.”
+
+Subheadline:
+“We verbinden organisaties met professionals die niet alleen passen op papier, maar ook in de praktijk: bij het team, de opdracht en de fase waarin een organisatie zich bevindt.”
+
+CTA buttons:
+Primair:
+“Bespreek uw vraagstuk”
+
+Secundair:
+“Voor professionals”
+
+Onder de CTA:
+“Voor interim, project- en vaste rollen binnen Facility Management, Vastgoed en Techniek.”
+
+Hero visual:
+Gebruik GEEN high-five stockfoto.
+Gebruik:
+- moderne workplace setting
+- projectomgeving
+- overlegmoment
+- vastgoed/transformatie context
+- premium natuurlijke fotografie
+
+Voeg subtiele floating UI elementen toe:
+- “Facility Manager geplaatst”
+- “Projectleider Huisvesting”
+- “Interim opdracht ingevuld”
+Maar subtiel en premium.
+
+-----------------------------------
+SECTION: ONZE VISIE
+-----------------------------------
+
+Vervang:
+“Wij geloven niet in CV’s schuiven”
+
+Door:
+
+Headline:
+“Een goede match begint niet bij een cv.”
+
+Tekst:
+“Wij kijken verder dan functietitels en zoekwoorden. We willen begrijpen wat een organisatie nodig heeft, welke professional past en waarom juist die combinatie werkt.”
+
+Voeg 3 premium cards toe:
+
+1.
+Titel:
+“Context boven keywords”
+Tekst:
+“We kijken naar de opdracht, organisatiecultuur, fase van het project en het team.”
+
+2.
+Titel:
+“Kwaliteit boven volume”
+Tekst:
+“Geen stapels profielen, maar zorgvuldig geselecteerde professionals.”
+
+3.
+Titel:
+“Relaties boven transacties”
+Tekst:
+“We bouwen aan duurzame samenwerking met opdrachtgevers én professionals.”
+
+-----------------------------------
+SECTION: WERVING ZOALS HET HOORT
+-----------------------------------
+
+Maak deze sectie veel krachtiger.
+
+Headline:
+“Werving zoals het hoort.”
+
+Tekst:
+“Goed werven vraagt meer dan snelheid. Het vraagt inhoudelijke kennis, scherpe vragen en het lef om niet zomaar iedereen voor te stellen.”
+
+Voeg 3 horizontale expertiseblokken toe:
+- Interim professionals
+- Projectrollen
+- Vaste functies
+
+Maak dit visueel sterk.
+
+-----------------------------------
+SECTION: EXPERTISE
+-----------------------------------
+
+Headline:
+“Expertise die verder gaat dan een LinkedIn-profiel.”
+
+Tekst:
+“Binnen Facility Management, vastgoed en techniek draait succes vaak om context: stakeholders, operatie, locaties, planning, budgetten en draagvlak. Wij begrijpen die wereld en selecteren professionals die daarbinnen kunnen leveren.”
+
+Voeg expertise-tags toe:
+- Facility Management
+- Vastgoed
+- Workplace
+- Huisvesting
+- Technische dienstverlening
+- Onderhoud & beheer
+- Projectmanagement
+- Operations
+- Interim management
+
+-----------------------------------
+SECTION: HOE WIJ HELPEN
+-----------------------------------
+
+Maak dit GEEN lege sectie.
+
+Gebruik 2 grote premium kaarten:
+
+Kaart 1:
+“Voor opdrachtgevers”
+Tekst:
+“Wij helpen organisaties aan professionals die direct waarde toevoegen binnen Facility Management, vastgoed en technische projecten.”
+
+Bullets:
+- Interim capaciteit
+- Projectleiding
+- Specialistische rollen
+- Vaste invulling
+
+CTA:
+“Bespreek uw vraagstuk”
+
+Kaart 2:
+“Voor professionals”
+Tekst:
+“Wij verbinden ervaren professionals met opdrachten en functies die passen bij hun expertise, ambitie en manier van werken.”
+
+Bullets:
+- Interim opdrachten
+- Projectrollen
+- Detavast
+- Vaste functies
+
+CTA:
+“Bekijk mogelijkheden”
+
+-----------------------------------
+SECTION: HOE WIJ HET ANDERS DOEN
+-----------------------------------
+
+Gebruik één sterke premium afbeelding.
+Niet opnieuw generieke stock.
+
+Headline:
+“Hoe wij het anders doen.”
+
+Tekst:
+“Wij sturen niet lukraak cv’s door. We nemen eerst de tijd om de vraag achter de vraag te begrijpen. Pas daarna zoeken we naar professionals die inhoudelijk én persoonlijk passen.”
+
+Voeg 3 proof-points toe:
+- Gerichte selectie
+- Eerlijke afstemming
+- Begeleiding na de match
+
+-----------------------------------
+SECTION: HOE WIJ WERKEN
+-----------------------------------
+
+Maak visueel veel sterker.
+
+Gebruik een premium timeline:
+1. Intake
+2. Selectie
+3. Introductie
+4. Match & opvolging
+
+Iedere stap:
+- korte krachtige tekst
+- premium icoon
+- mooie lijnanimatie
+- desktop timeline
+- mobile cards
+
+-----------------------------------
+SECTION: ACTUELE ROLLEN
+-----------------------------------
+
+Laat dit NIET leeg lijken.
+
+Headline:
+“Actuele projecten & rollen”
+
+Tekst:
+“Wij werken aan opdrachten binnen Facility Management, vastgoed, workplace en techniek. Niet iedere rol wordt openbaar gepubliceerd.”
+
+Gebruik voorbeeldrollen:
+- Interim Facility Manager
+- Projectleider Huisvesting
+- Technisch Vastgoed Coördinator
+- Workplace Consultant
+
+Label:
+“Veelgevraagde rol”
+
+Geen lege placeholder-vibe.
+
+-----------------------------------
+FINAL CTA
+-----------------------------------
+
+Huidige CTA vervangen.
+
+Nieuwe headline:
+“Klaar voor een betere match?”
+
+Tekst:
+“Of u nu tijdelijke expertise zoekt of als professional toe bent aan een volgende stap: wij denken graag met u mee.”
+
+2 CTA’s:
+- Voor opdrachtgevers
+- Voor professionals
+
+-----------------------------------
+FOOTER
+-----------------------------------
+
+Professionele premium footer.
+
+Toevoegen:
+- Krijn Taconiskade 461
+- 1087 HW Amsterdam
+- duidelijke navigatie
+- expertisegebieden
+- social links
+- juridische links
+
+-----------------------------------
+COPYWRITING RICHTLIJNEN
+-----------------------------------
+
+Gebruik:
+- menselijk Nederlands
+- senior tone of voice
+- rustig vertrouwen
+- inhoudelijke autoriteit
+
+VERMIJD:
+- “dé specialist”
+- “uw betrouwbare partner”
+- “ontzorgen”
+- generieke HR taal
+- corporate jargon
+- cliché recruitmentzinnen
+
+Gebruik meer:
+- “We nemen de tijd om de vraag achter de vraag te begrijpen.”
+- “Geen stapels cv’s, maar gerichte introducties.”
+- “Professionals die passen bij de opdracht, het team en de fase van de organisatie.”
+
+-----------------------------------
+BELANGRIJKSTE DOEL
+-----------------------------------
+
+Na deze redesign moet de website aanvoelen als:
+- een serieus boutique recruitmentbureau
+- gespecialiseerd in Facility Management, Vastgoed en Techniek
+- premium
+- menselijk
+- geloofwaardig
+- onderscheidend
+- NIET AI-templateachtig
+
+Het moet een website worden waarbij zowel opdrachtgevers als professionals direct denken:
+
+“Deze partij begrijpt onze wereld.”
+```

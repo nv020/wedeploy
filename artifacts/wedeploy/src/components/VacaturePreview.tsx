@@ -3,28 +3,31 @@ import { MapPin, ArrowRight } from "lucide-react";
 
 const vacatures = [
   {
-    title: "Facility Manager",
+    title: "Interim Facility Manager",
     category: "Facility Management",
     location: "Amsterdam",
-    type: "Vast",
-    typeColor: "bg-accent/10 text-accent",
-    desc: "Zorgdragen voor de facilitaire organisatie van een groeiend bedrijf in Amsterdam.",
-  },
-  {
-    title: "Projectmanager Vastgoed",
-    category: "Vastgoed",
-    location: "Utrecht",
     type: "Interim",
-    typeColor: "bg-primary/10 text-primary",
-    desc: "Leiden van vastgoedprojecten in de commerciële sector vanuit Utrecht.",
+    typeColor: "bg-accent/10 text-accent",
+    popular: true,
+    desc: "Interimopdracht voor een ervaren facility manager bij een grote zakelijke dienstverlener in de regio Amsterdam.",
   },
   {
-    title: "Technisch Specialist",
-    category: "Engineering",
+    title: "Projectleider Huisvesting",
+    category: "Vastgoed / Workplace",
+    location: "Utrecht",
+    type: "Project",
+    typeColor: "bg-primary/10 text-primary",
+    popular: false,
+    desc: "Leidende rol in een huisvestingstraject voor een overheidsorganisatie in transitie. Complexe stakeholderdynamiek.",
+  },
+  {
+    title: "Technisch Vastgoed Coördinator",
+    category: "Technisch beheer",
     location: "Rotterdam",
-    type: "Detachering",
+    type: "Vast",
     typeColor: "bg-muted text-muted-foreground",
-    desc: "Technische expertise inzetten bij complexe installatie- en onderhoudsprojecten.",
+    popular: false,
+    desc: "Verantwoordelijk voor het technisch beheer en onderhoud van een omvangrijke commerciële vastgoedportefeuille.",
   },
 ];
 
@@ -46,19 +49,20 @@ export function VacaturePreview() {
           <div>
             <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Actueel</span>
             <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">
-              Actuele Projecten &amp; Rollen
+              Actuele projecten &amp; rollen
             </h2>
           </div>
           <a
-            href="#vacatures"
-            className="inline-flex items-center gap-2 text-[13.5px] font-semibold text-accent hover:gap-3 transition-all duration-200"
+            href="#contact"
+            className="inline-flex items-center gap-2 text-[13.5px] font-semibold text-accent hover:gap-3 transition-all duration-200 whitespace-nowrap"
           >
-            Bekijk alles <ArrowRight className="w-4 h-4" />
+            Neem contact op <ArrowRight className="w-4 h-4" />
           </a>
         </div>
 
         <p className="text-[14.5px] text-muted-foreground mb-12 max-w-xl leading-relaxed">
-          Een selectie van strategische posities en interim-vraagstukken die wij momenteel exclusief begeleiden.
+          Wij werken aan opdrachten binnen Facility Management, vastgoed, workplace en techniek.
+          Niet iedere rol wordt openbaar gepubliceerd.
         </p>
 
         <motion.div
@@ -71,7 +75,7 @@ export function VacaturePreview() {
           {vacatures.map((v) => (
             <motion.a
               key={v.title}
-              href="#vacatures"
+              href="#contact"
               variants={itemVariants}
               whileHover={{ y: -5, boxShadow: "0 16px 40px hsl(220 50% 18% / 0.08)" }}
               whileTap={{ y: -2 }}
@@ -79,10 +83,17 @@ export function VacaturePreview() {
               className="group flex flex-col bg-white rounded-2xl border border-border/50 p-9 cursor-pointer hover:border-accent/30 transition-colors duration-200"
             >
               <div className="flex items-start justify-between mb-5">
-                <span className={`text-[11px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full ${v.typeColor}`}>
-                  {v.type}
-                </span>
-                <ArrowRight className="w-4 h-4 text-muted-foreground/30 group-hover:text-accent group-hover:translate-x-1 transition-all duration-200" />
+                <div className="flex flex-col gap-2">
+                  <span className={`text-[11px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full self-start ${v.typeColor}`}>
+                    {v.type}
+                  </span>
+                  {v.popular && (
+                    <span className="text-[10.5px] font-semibold text-accent/80 px-3 py-1 rounded-full bg-accent/8 border border-accent/15 self-start">
+                      Veelgevraagde rol
+                    </span>
+                  )}
+                </div>
+                <ArrowRight className="w-4 h-4 text-muted-foreground/30 group-hover:text-accent group-hover:translate-x-1 transition-all duration-200 mt-1" />
               </div>
               <h3 className="text-[17px] font-bold text-primary leading-snug mb-2">{v.title}</h3>
               <p className="text-[13px] text-muted-foreground leading-relaxed flex-1">{v.desc}</p>
@@ -97,6 +108,11 @@ export function VacaturePreview() {
             </motion.a>
           ))}
         </motion.div>
+
+        <p className="mt-8 text-[13px] text-muted-foreground/60 text-center max-w-lg mx-auto leading-relaxed">
+          Heeft u een specifieke rol in gedachten? Neem contact op — veel opdrachten worden
+          discreet ingevuld en zijn niet openbaar gepubliceerd.
+        </p>
       </div>
     </section>
   );
