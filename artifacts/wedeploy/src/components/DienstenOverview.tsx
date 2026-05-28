@@ -3,19 +3,22 @@ import { ArrowRight } from "lucide-react";
 
 const diensten = [
   {
-    title: "Detachering & Detavast",
-    desc: "Flexibel starten, met ruimte om door te groeien. Zekerheid voor organisaties, bewegingsvrijheid voor professionals.",
-    href: "#diensten",
+    num: "01",
+    title: "Werving & Selectie",
+    desc: "Voor organisaties die zorgvuldig geselecteerde professionals zoeken voor vaste posities.",
+    href: "#contact",
   },
   {
-    title: "Recruitment",
-    desc: "De kandidaat die écht past — niet alleen op papier, maar op cultuur en ambitie.",
-    href: "#diensten",
+    num: "02",
+    title: "Detachering",
+    desc: "Flexibele inzet van professionals met persoonlijke begeleiding en betrokkenheid.",
+    href: "#contact",
   },
   {
-    title: "Interim",
-    desc: "Ervaren professionals, direct inzetbaar. Voor projecten, pieken of tijdelijke vervanging.",
-    href: "#diensten",
+    num: "03",
+    title: "Interim Oplossingen",
+    desc: "Tijdelijke expertise voor projecten, transities en organisatieveranderingen.",
+    href: "#contact",
   },
 ];
 
@@ -31,10 +34,10 @@ const itemVariants = {
 
 export function DienstenOverview() {
   return (
-    <section id="diensten" className="py-28 bg-card">
+    <section id="diensten" className="py-28 bg-card border-y border-border/40">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-14">
-          <span className="text-xs font-semibold tracking-widest uppercase text-accent">Onze diensten</span>
+          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Diensten</span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Hoe wij helpen</h2>
         </div>
 
@@ -49,18 +52,18 @@ export function DienstenOverview() {
             <motion.div
               key={d.title}
               variants={itemVariants}
-              whileHover={{ y: -5, boxShadow: "0 16px 40px hsl(0 0% 0% / 0.08)" }}
+              whileHover={{ y: -4, boxShadow: "0 16px 40px hsl(220 50% 18% / 0.07)" }}
               transition={{ duration: 0.2 }}
-              className="group relative flex flex-col bg-background rounded-2xl border border-border/60 p-9 hover:border-accent/30 transition-colors duration-300"
+              className="group flex flex-col bg-background rounded-2xl border border-border/50 p-9 hover:border-accent/25 transition-colors duration-300"
             >
-              <div className="w-2 h-2 rounded-full bg-accent mb-6 opacity-70" />
+              <span className="text-[11px] font-bold text-accent tracking-wider mb-6">{d.num}</span>
               <h3 className="text-xl font-bold text-primary mb-3 leading-snug">{d.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm flex-1">{d.desc}</p>
+              <p className="text-muted-foreground leading-relaxed text-[14px] flex-1">{d.desc}</p>
               <a
                 href={d.href}
-                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-accent group-hover:gap-3 transition-all duration-200"
+                className="mt-8 inline-flex items-center gap-2 text-[13px] font-semibold text-accent group-hover:gap-3 transition-all duration-200"
               >
-                Meer lezen <ArrowRight className="w-4 h-4" />
+                Meer informatie <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>
           ))}

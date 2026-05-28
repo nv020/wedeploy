@@ -5,35 +5,44 @@ const navLinks = [
   { label: "Diensten", href: "#diensten" },
   { label: "Kandidaten", href: "#kandidaten" },
   { label: "Opdrachtgevers", href: "#opdrachtgevers" },
+  { label: "Werkwijze", href: "#werkwijze" },
   { label: "Vacatures", href: "#vacatures" },
-  { label: "Over ons", href: "#over-ons" },
   { label: "Contact", href: "#contact" },
+];
+
+const diensten = [
+  "Werving & Selectie",
+  "Detachering",
+  "Interim Oplossingen",
 ];
 
 export function Footer() {
   return (
     <footer className="bg-primary/95 text-white/70 py-16">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <div>
-            <a href="#home" className="flex items-center gap-0.5 font-bold text-xl tracking-tight mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <a href="#home" className="flex items-center font-extrabold text-[19px] tracking-tight leading-none mb-4">
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-sm leading-relaxed text-white/50 max-w-xs">
-              Werving & selectie en detachering met aandacht.<br />
-              Actief in Facility Management, vastgoed en technische rollen.
+              Werving &amp; selectie en detachering met aandacht.<br />
+              Actief in Facility Management, Projectmanagement,
+              Vastgoed en Technische rollen.
             </p>
           </div>
 
+          {/* Navigation */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wide">Navigatie</h4>
+            <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Navigatie</h4>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+                    className="text-[13px] text-white/55 hover:text-white transition-colors duration-200"
                   >
                     {link.label}
                   </a>
@@ -42,26 +51,46 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Diensten */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wide">Contact</h4>
-            <ul className="space-y-3 text-sm text-white/60">
+            <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Diensten</h4>
+            <ul className="space-y-3">
+              {diensten.map((d) => (
+                <li key={d}>
+                  <a
+                    href="#diensten"
+                    className="text-[13px] text-white/55 hover:text-white transition-colors duration-200"
+                  >
+                    {d}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Contact</h4>
+            <ul className="space-y-3 text-[13px] text-white/55">
               <li>
                 <a href="mailto:info@wedeploy.nl" className="hover:text-white transition-colors">
                   info@wedeploy.nl
                 </a>
               </li>
               <li>
-                <a href="tel:+31200000000" className="hover:text-white transition-colors">
-                  +31 20 000 0000
+                <a href="tel:+31652345011" className="hover:text-white transition-colors">
+                  +31 6 52345011
                 </a>
               </li>
-              <li>Amsterdam, Nederland</li>
+              <li>Nederland</li>
             </ul>
 
             <div className="mt-6">
               <a
-                href="#linkedin"
-                className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[13px] text-white/55 hover:text-white transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
                 LinkedIn
@@ -70,11 +99,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/35">
           <p>&copy; {new Date().getFullYear()} Wedeploy. Alle rechten voorbehouden.</p>
           <div className="flex gap-6">
-            <a href="#privacy" className="hover:text-white/70 transition-colors">Privacybeleid</a>
-            <a href="#cookies" className="hover:text-white/70 transition-colors">Cookiebeleid</a>
+            <a href="#privacy" className="hover:text-white/60 transition-colors">Privacybeleid</a>
+            <a href="#cookies" className="hover:text-white/60 transition-colors">Cookiebeleid</a>
           </div>
         </div>
       </div>

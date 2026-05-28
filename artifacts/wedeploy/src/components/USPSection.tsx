@@ -1,47 +1,30 @@
 import { motion } from "framer-motion";
-import { Users, Target, Eye, Network, HeartHandshake } from "lucide-react";
 
 const usps = [
   {
-    icon: Users,
-    title: "De persoon, niet het cv",
-    desc: "Wij kijken voorbij papier en verbinden mensen die écht bij elkaar passen.",
-    accent: "hsl(205 85% 53%)",
-    colSpan: "md:col-span-2",
-    bg: "bg-white",
+    num: "01",
+    title: "Geen cv-doorsturen",
+    desc: "We sturen geen stapels profielen door. Alleen kandidaten die professioneel én persoonlijk écht passen.",
   },
   {
-    icon: Target,
-    title: "Minder mismatches",
-    desc: "Diepgaande intake vooraf. Zodat beide kanten precies weten waar ze aan toe zijn.",
-    accent: "hsl(220 50% 18%)",
-    colSpan: "md:col-span-1",
-    bg: "bg-background",
+    num: "02",
+    title: "Persoonlijke screening",
+    desc: "We nemen de tijd om kandidaten te leren kennen voordat we ze voorstellen.",
   },
   {
-    icon: Eye,
+    num: "03",
+    title: "Aandacht voor teamfit",
+    desc: "Samenwerking, cultuur en verwachtingen bepalen het succes — niet alleen een cv.",
+  },
+  {
+    num: "04",
     title: "Transparant proces",
-    desc: "Geen verrassingen. Je weet elke stap wat er speelt.",
-    accent: "hsl(205 85% 53%)",
-    colSpan: "md:col-span-1",
-    bg: "bg-background",
+    desc: "Heldere communicatie voor zowel opdrachtgevers als kandidaten gedurende het hele traject.",
   },
   {
-    icon: Network,
-    title: "Netwerkgedreven",
-    desc: "We posten niet en hopen. We zoeken actief in ons zorgvuldig opgebouwde netwerk.",
-    accent: "hsl(220 50% 18%)",
-    colSpan: "md:col-span-2",
-    bg: "bg-white",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Nazorg als standaard",
-    desc: "Na plaatsing blijven we betrokken. Niet als service — maar als manier van werken.",
-    accent: "hsl(205 85% 53%)",
-    colSpan: "md:col-span-3",
-    bg: "bg-primary",
-    dark: true,
+    num: "05",
+    title: "Blijvende betrokkenheid",
+    desc: "We blijven betrokken vóór, tijdens en na plaatsing voor een goede start.",
   },
 ];
 
@@ -51,7 +34,7 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
@@ -59,60 +42,33 @@ export function USPSection() {
   return (
     <section className="py-28 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-16">
-          <span className="text-xs font-semibold tracking-widest uppercase text-accent">Onze belofte</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Waarom Wedeploy?</h2>
+        <div className="mb-14">
+          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Waarom Wedeploy</span>
+          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">
+            Werving zoals het hoort.
+          </h2>
         </div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true, margin: "-60px" }}
         >
-          {usps.map((usp, idx) => {
-            const Icon = usp.icon;
-            return (
-              <motion.div
-                key={idx}
-                variants={itemVariants}
-                className={usp.colSpan}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div
-                  className={`h-full rounded-2xl p-8 border transition-all duration-300 ${
-                    usp.dark
-                      ? "bg-primary border-primary text-white"
-                      : `${usp.bg} border-border/50 hover:border-accent/40 hover:shadow-xl shadow-sm`
-                  }`}
-                >
-                  <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center mb-6"
-                    style={{
-                      background: usp.dark ? "rgba(255,255,255,0.1)" : `${usp.accent}18`,
-                    }}
-                  >
-                    <Icon
-                      className="w-5 h-5"
-                      style={{ color: usp.dark ? "hsl(205 85% 53%)" : usp.accent }}
-                    />
-                  </div>
-                  <h3
-                    className={`text-xl font-bold mb-3 leading-snug ${
-                      usp.dark ? "text-white" : "text-primary"
-                    }`}
-                  >
-                    {usp.title}
-                  </h3>
-                  <p className={`leading-relaxed text-sm ${usp.dark ? "text-white/70" : "text-muted-foreground"}`}>
-                    {usp.desc}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
+          {usps.map((usp) => (
+            <motion.div
+              key={usp.num}
+              variants={itemVariants}
+              whileHover={{ y: -4, boxShadow: "0 16px 40px hsl(220 50% 18% / 0.07)" }}
+              transition={{ duration: 0.2 }}
+              className="bg-white rounded-2xl border border-border/50 p-6 flex flex-col"
+            >
+              <span className="text-[11px] font-bold text-accent tracking-wider mb-4">{usp.num}</span>
+              <h3 className="text-[15px] font-bold text-primary mb-2.5 leading-snug">{usp.title}</h3>
+              <p className="text-[13px] text-muted-foreground leading-relaxed">{usp.desc}</p>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

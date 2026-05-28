@@ -1,13 +1,13 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { TrustIntro } from "@/components/TrustIntro";
+import { Introductie } from "@/components/Introductie";
 import { USPSection } from "@/components/USPSection";
+import { ExpertiseAreas } from "@/components/ExpertiseAreas";
 import { DienstenOverview } from "@/components/DienstenOverview";
 import { HoeWijWerken } from "@/components/HoeWijWerken";
 import { SplitSection } from "@/components/SplitSection";
 import { VacaturePreview } from "@/components/VacaturePreview";
-import { SocialProof } from "@/components/SocialProof";
-import { FinalCTA } from "@/components/FinalCTA";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
 export function Home() {
@@ -16,14 +16,14 @@ export function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <TrustIntro />
+        <Introductie />
         <USPSection />
+        <ExpertiseAreas />
         <DienstenOverview />
         <HoeWijWerken />
         <SplitSection />
         <VacaturePreview />
-        <SocialProof />
-        <FinalCTA />
+        <ContactSection />
       </main>
       <Footer />
     </div>
