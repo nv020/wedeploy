@@ -1,0 +1,155 @@
+Fix the WhatsApp / LinkedIn / social sharing preview for wedeploy.nl.
+
+Current issue:
+When https://www.wedeploy.nl/ is shared in WhatsApp, the preview only shows:
+- www.wedeploy.nl
+- the URL
+- no proper title
+- no description
+- no image
+
+This likely means the Open Graph metadata is missing, incomplete, not absolute, or only rendered client-side.
+
+IMPORTANT:
+Social crawlers like WhatsApp, LinkedIn and Facebook must be able to read the metadata directly from the initial HTML response. Do not rely on JavaScript-rendered meta tags.
+
+TASKS
+
+1. Add proper SEO and Open Graph metadata directly in the static HTML head, preferably in index.html or the correct root document that is served initially.
+
+Add/update:
+
+Page title:
+Wedeploy | Recruitment, Detachering & Interim
+
+Meta description:
+Persoonlijke recruitment en detachering voor Facility Management, Vastgoed, Techniek en Projectmanagement. Wedeploy staat voor zorgvuldige screening, transparante communicatie en duurzame matches.
+
+Canonical:
+https://www.wedeploy.nl/
+
+Open Graph:
+og:title:
+Wedeploy | Recruitment, Detachering & Interim
+
+og:description:
+Persoonlijke recruitment en detachering voor Facility Management, Vastgoed, Techniek en Projectmanagement. Geen cv-doorschuivers, maar duurzame matches.
+
+og:type:
+website
+
+og:url:
+https://www.wedeploy.nl/
+
+og:site_name:
+Wedeploy
+
+og:locale:
+nl_NL
+
+og:image:
+https://www.wedeploy.nl/og-image.jpg
+
+og:image:secure_url:
+https://www.wedeploy.nl/og-image.jpg
+
+og:image:type:
+image/jpeg
+
+og:image:width:
+1200
+
+og:image:height:
+630
+
+og:image:alt:
+Wedeploy recruitment en detachering voor Facility Management, Vastgoed en Techniek
+
+Twitter/X card:
+twitter:card:
+summary_large_image
+
+twitter:title:
+Wedeploy | Recruitment, Detachering & Interim
+
+twitter:description:
+Persoonlijke recruitment en detachering voor Facility Management, Vastgoed, Techniek en Projectmanagement.
+
+twitter:image:
+https://www.wedeploy.nl/og-image.jpg
+
+2. Create or add a proper Open Graph image.
+
+Create a 1200x630 image at:
+public/og-image.jpg
+
+The image should be branded and professional:
+- Wedeploy logo
+- dark navy / off-white styling
+- headline:
+  “Duurzame matches in Facility Management, Vastgoed & Techniek.”
+- optional small line:
+  “Recruitment · Detachering · Interim”
+- use a subtle background image or clean branded layout
+- not too busy
+- readable on WhatsApp and LinkedIn
+
+Make sure this file is publicly accessible at:
+https://www.wedeploy.nl/og-image.jpg
+
+3. Ensure all OG image URLs are absolute URLs.
+
+Do NOT use:
+"/og-image.jpg"
+
+Use:
+"https://www.wedeploy.nl/og-image.jpg"
+
+4. Add/update favicon and app icons if not already correct.
+
+Recommended:
+- favicon.ico
+- favicon-32x32.png
+- apple-touch-icon.png
+
+5. Add structured data JSON-LD in the head if not already present.
+
+Use Organization / ProfessionalService schema:
+
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Wedeploy",
+  "url": "https://www.wedeploy.nl/",
+  "email": "info@wedeploy.nl",
+  "telephone": "+31 85 212 8668",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Krijn Taconiskade 461",
+    "postalCode": "1087 HW",
+    "addressLocality": "Amsterdam",
+    "addressCountry": "NL"
+  },
+  "description": "Wedeploy is een recruitment- en detacheringspartner voor Facility Management, Vastgoed, Techniek en Projectmanagement.",
+  "areaServed": "Netherlands"
+}
+
+6. Make sure there are no duplicate or conflicting title/meta/OG tags.
+
+If React Helmet or another client-side SEO library is currently being used, keep it only if it does not conflict, but ensure the critical metadata is present in the initial HTML source.
+
+7. After implementation, verify manually:
+
+- View page source and confirm all meta tags are present in the initial HTML.
+- Open https://www.wedeploy.nl/og-image.jpg directly and confirm it loads.
+- Test with:
+  - Facebook Sharing Debugger
+  - LinkedIn Post Inspector
+  - OpenGraph.xyz
+  - WhatsApp by sending the URL again
+
+Note:
+WhatsApp may cache previews, so after fixing, test with:
+https://www.wedeploy.nl/?v=2
+
+or wait for cache refresh.

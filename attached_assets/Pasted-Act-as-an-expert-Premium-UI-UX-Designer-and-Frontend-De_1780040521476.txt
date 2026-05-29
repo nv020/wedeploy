@@ -1,0 +1,27 @@
+Act as an expert Premium UI/UX Designer and Frontend Developer. I want to completely overhaul the visual design of my current website (based on the provided structure) to eliminate the repetitive row/column layouts and give it a high-end, playful, yet professional "wow-factor" tailored to young professionals (20-30+).
+
+Please refactor the code according to these visual and structural guidelines:
+
+1. HERO SECTION REDESIGN:
+- Break the rigid 50/50 split. Make the main hero image larger and implement a subtle layout overlap where the headline slightly layers over the image container on desktop.
+- Give the hero image a premium organic shape using an asymmetric border-radius (blob-like) instead of a standard rectangle, and add a soft background gradient glow behind it.
+
+2. BENTO GRID FOR EXPERTISE & SERVICES:
+- Locate the "Expertise die verder gaat..." and "Hoe wij helpen" sections. They are currently repetitive multi-column grids.
+- Transform the 4 expertise blocks into a modern, asymmetric Bento Grid layout. Vary the card sizes (e.g., make the primary expertise card span 2 columns with a unique background, while others take up smaller grid cells).
+- Use glassmorphism styling for these cards: semi-transparent backgrounds, razor-thin borders, and soft, sophisticated depth shadows (`box-shadow`).
+- Add a subtle interactive hover state to these cards: a gentle lift (`translateY(-5px)`) and a slight scale up (`scale(1.01)`) with smooth transitions.
+
+3. ASYMMETRIC LAYOUTS & TIMELINE:
+- Alternate section backgrounds using ultra-clean off-whites and soft, modern beige/cream tones, but break the straight horizontal lines with subtle angle shifts or organic SVG wave dividers.
+- Redesign the "Hoe wij werken" timeline. Instead of a standard alternating vertical list, make it a modern 'card stacking' layout or implement a clean horizontal step-by-step layout with asymmetric numbers (e.g., large, low-opacity background numbers like '01', '02' shifting slightly out of the box boundaries).
+
+4. TEXT REFINEMENT & CLEANUP:
+- Audit the copy to remove redundancies between "Echte match", "Werving zoals het hoort", and transparency claims. Combine them into one powerful section.
+- Sharpen the headlines to be punchier for a younger audience (e.g., change "Expertise die verder gaat dan een LinkedIn-profiel" to something bolder like "Matches die je niet op LinkedIn vindt.").
+- Upgrade button micro-copy to be more action-oriented (e.g., change "Neem contact op" to "Laten we matchen").
+
+5. RESPONSIVENESS:
+- Ensure all asymmetric elements, overlapping blocks, and Bento grids gracefully collapse into a flawless, highly intuitive single-column layout on mobile screens.
+
+Apply these premium UI updates and copy refinements directly to the existing HTML/CSS or Tailwind structure.
