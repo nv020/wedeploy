@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { WaaromWedeploy } from "@/components/WaaromWedeploy";
 import { ExpertiseAreas } from "@/components/ExpertiseAreas";
 import { DienstenOverview } from "@/components/DienstenOverview";
-import { ImageBreak } from "@/components/ImageBreak";
 import { HoeWijWerken } from "@/components/HoeWijWerken";
 import { VacaturePreview } from "@/components/VacaturePreview";
 import { ContactSection } from "@/components/ContactSection";
@@ -37,7 +36,6 @@ export function Home() {
 
         <ExpertiseAreas />
         <DienstenOverview />
-        <ImageBreak />
 
         <AngleDivider from="hsl(36 28% 97%)" to="hsl(0 0% 100%)" />
         <HoeWijWerken />

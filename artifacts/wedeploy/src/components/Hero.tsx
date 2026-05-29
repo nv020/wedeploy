@@ -35,16 +35,16 @@ export function Hero() {
             variants={fadeUp}
             className="text-[2.75rem] md:text-[3.4rem] font-extrabold leading-[1.06] text-primary tracking-tight mb-6"
           >
-            Strategic talent voor projecten met impact.
+            De juiste professionals. De beste matches.
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="text-[16.5px] leading-[1.85] text-muted-foreground mb-9 max-w-[460px]"
           >
-            Wij verbinden interim professionals en strategisch talent aan
-            uitdagende rollen in Projectmanagement, Facility, Vastgoed en
-            Techniek. Zonder cv-shiften, gericht op een duurzame match.
+            Wij brengen rust en executiekracht in complexe trajecten binnen
+            projectmanagement, facility, vastgoed en techniek. Zonder
+            cv-shiften, gericht op resultaat.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-7">
