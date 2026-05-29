@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import imgPM from "@assets/expertise-projectmanagement.webp";
+import imgFM from "@assets/expertise-facility.webp";
+import imgVastgoed from "@assets/expertise-vastgoed.webp";
+import imgTechniek from "@assets/expertise-techniek.webp";
 
 const areas = [
   {
@@ -7,9 +11,7 @@ const areas = [
     num: "01",
     title: "Projectmanagement",
     sentence: "Projectmanagers en programmamanagers voor complexe, multidisciplinaire trajecten.",
-    img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80",
-    srcset: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&q=80 480w, https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80 900w",
-    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 67vw",
+    img: imgPM,
     alt: "Projectmanagement recruitment Wedeploy",
     span: "lg:col-span-2",
     height: "h-[360px] lg:h-[440px]",
@@ -22,9 +24,7 @@ const areas = [
     num: "02",
     title: "Facility Management",
     sentence: "Facilitair coördinatoren en managers op tactisch en strategisch niveau.",
-    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80",
-    srcset: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=360&q=80 360w, https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80 700w",
-    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
+    img: imgFM,
     alt: "Facility Management recruitment Wedeploy",
     span: "lg:col-span-1",
     height: "h-[360px] lg:h-[440px]",
@@ -37,9 +37,7 @@ const areas = [
     num: "03",
     title: "Vastgoed & Real Estate",
     sentence: "Asset-, property- en vastgoedmanagers voor commercieel en institutioneel vastgoed.",
-    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80",
-    srcset: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=360&q=80 360w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80 700w",
-    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
+    img: imgVastgoed,
     alt: "Vastgoed recruitment Wedeploy",
     span: "lg:col-span-1",
     height: "h-[300px] lg:h-[360px]",
@@ -52,9 +50,7 @@ const areas = [
     num: "04",
     title: "Techniek & Installaties",
     sentence: "Technische coördinatoren, projectleiders en engineers voor E&W installaties.",
-    img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
-    srcset: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=480&q=80 480w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80 900w",
-    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 67vw",
+    img: imgTechniek,
     alt: "Techniek installaties recruitment Wedeploy",
     span: "lg:col-span-2",
     height: "h-[300px] lg:h-[360px]",
@@ -114,8 +110,6 @@ export function ExpertiseAreas() {
               {/* Photo */}
               <img
                 src={area.img}
-                srcSet={area.srcset}
-                sizes={area.sizes}
                 alt={area.alt}
                 width={area.imgW}
                 height={area.imgH}

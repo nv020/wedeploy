@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Phone } from "lucide-react";
+import heroImg from "@assets/hero-professionals.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -153,9 +154,7 @@ export function Hero() {
               style={{ boxShadow: "0 32px 80px hsl(220 50% 18% / 0.40)" }}
             >
               <img
-                src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&dpr=1"
-                srcSet="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=480&dpr=1 480w, https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=900&dpr=1 900w"
-                sizes="420px"
+                src={heroImg}
                 alt="Twee professionals in gesprek bij Wedeploy recruitment en detachering"
                 title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
                 className="w-full h-full object-cover"

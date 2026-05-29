@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import imageBreakImg from "@assets/imagebreak-team.webp";
 
 export function ImageBreak() {
   return (
     <section className="relative h-[480px] md:h-[560px] overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1800&q=85"
+        src={imageBreakImg}
         alt="Professioneel team in gesprek rond een tafel"
         className="w-full h-full object-cover object-center"
         loading="lazy"
