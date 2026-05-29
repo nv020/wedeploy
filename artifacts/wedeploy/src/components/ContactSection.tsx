@@ -55,9 +55,9 @@ export function ContactSection() {
   const opdrFormRef = useRef<HTMLFormElement>(null);
 
   const inputCls =
-    "w-full rounded-xl border border-border bg-background px-4 py-3.5 text-[14.5px] text-foreground placeholder:text-muted-foreground/55 outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all duration-200";
+    "w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-[13.5px] text-foreground placeholder:text-muted-foreground/55 outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all duration-200";
 
-  const labelCls = "block text-[12.5px] font-semibold text-primary mb-2 tracking-wide";
+  const labelCls = "block text-[11.5px] font-semibold text-primary mb-1.5 tracking-wide";
 
   const handleKandSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -110,7 +110,7 @@ export function ContactSection() {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section header */}
-        <div className="mb-12">
+        <div className="mb-8">
           <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
             style={{ background: "hsl(205 85% 53% / 0.08)", borderColor: "hsl(205 85% 53% / 0.28)" }}>
             <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
@@ -134,7 +134,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 bg-primary relative overflow-hidden flex flex-col p-10 lg:p-14"
+            className="lg:col-span-2 bg-primary relative overflow-hidden flex flex-col p-7 lg:p-9"
           >
             <div
               className="absolute top-0 right-0 w-80 h-80 opacity-[0.07] -translate-y-1/3 translate-x-1/3 pointer-events-none"
@@ -151,7 +151,7 @@ export function ContactSection() {
             <div className="relative flex-1 flex flex-col">
               {/* Portrait — horizontal editorial composition */}
               <div className="flex flex-row items-center gap-4 mb-8">
-                <div className="w-[88px] h-[96px] flex-shrink-0 rounded-[14px] overflow-hidden border border-white/[0.10]">
+                <div className="w-[72px] h-[80px] flex-shrink-0 rounded-[12px] overflow-hidden border border-white/[0.10]">
                   <img
                     src={nickyPhoto}
                     alt="Nicky — Wedeploy"
@@ -176,15 +176,15 @@ export function ContactSection() {
               </div>
 
               <div className="flex-1">
-                <h3 className="text-[1.85rem] font-bold text-white leading-[1.18] mb-5 tracking-tight">
+                <h3 className="text-[1.45rem] font-bold text-white leading-[1.2] mb-4 tracking-tight">
                   Direct schakelen<br />met een specialist.
                 </h3>
-                <p className="text-[15px] text-white/55 leading-[1.8] mb-10 max-w-[290px]">
+                <p className="text-[13.5px] text-white/55 leading-[1.75] mb-8 max-w-[260px]">
                   Heb je een vraag, zoek je versterking of wil je vrijblijvend kennismaken? Laat je
                   gegevens achter, dan nemen we persoonlijk contact op.
                 </p>
 
-                <div className="w-10 h-0.5 rounded-full bg-accent/40 mb-10" />
+                <div className="w-8 h-0.5 rounded-full bg-accent/40 mb-7" />
 
                 <div className="space-y-3.5">
                   {[
@@ -194,13 +194,13 @@ export function ContactSection() {
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-accent mt-[7px] flex-shrink-0" />
-                      <span className="text-[13.5px] text-white/55 leading-relaxed">{item}</span>
+                      <span className="text-[12.5px] text-white/50 leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="flex flex-col gap-6 pt-10 border-t border-white/[0.08] mt-10">
+              <div className="flex flex-col gap-5 pt-7 border-t border-white/[0.08] mt-7">
                 <a href="mailto:info@wedeploy.nl" className="flex items-center gap-4 group">
                   <div className="w-10 h-10 rounded-xl bg-white/[0.07] flex items-center justify-center flex-shrink-0 group-hover:bg-accent/25 transition-colors duration-250">
                     <Mail className="w-[17px] h-[17px] text-white/50 group-hover:text-white transition-colors duration-250" />
@@ -242,7 +242,7 @@ export function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-3 bg-white"
+            className="lg:col-span-3 bg-white/80"
           >
             {/* Tabs */}
             <div className="flex border-b border-border/50">
@@ -250,7 +250,7 @@ export function ContactSection() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`flex-1 py-4 text-[13.5px] font-semibold transition-all duration-200 ${
+                  className={`flex-1 py-3 text-[12.5px] font-semibold transition-all duration-200 ${
                     activeTab === tab
                       ? "text-accent border-b-2 border-accent bg-accent/[0.02]"
                       : "text-muted-foreground hover:text-primary"
@@ -261,7 +261,7 @@ export function ContactSection() {
               ))}
             </div>
 
-            <div className="p-8 md:p-10">
+            <div className="p-6 md:p-7">
               <AnimatePresence mode="wait">
                 {activeTab === "kandidaat" ? (
                   <motion.div key="kandidaat"
@@ -278,7 +278,7 @@ export function ContactSection() {
                         </p>
                       </div>
                     ) : (
-                      <form ref={kandFormRef} onSubmit={handleKandSubmit} className="flex flex-col gap-5">
+                      <form ref={kandFormRef} onSubmit={handleKandSubmit} className="flex flex-col gap-4">
                         {/* Honeypot — must stay empty */}
                         <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
                         {/* TODO: Add Cloudflare Turnstile widget — set CLOUDFLARE_TURNSTILE_SITE_KEY in Replit Secrets */}
@@ -349,7 +349,7 @@ export function ContactSection() {
                         <motion.button type="submit" disabled={kandLoading}
                           whileHover={!kandLoading ? { y: -2, boxShadow: "0 10px 28px hsl(220 50% 18% / 0.18)" } : {}}
                           whileTap={!kandLoading ? { y: 0 } : {}} transition={{ duration: 0.2 }}
-                          className="w-full rounded-full bg-primary text-white py-4 text-[14.5px] font-bold mt-1 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity">
+                          className="w-full rounded-full bg-primary text-white py-3 text-[13.5px] font-bold mt-1 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity">
                           {kandLoading ? "Versturen..." : "Verstuur aanmelding"}
                         </motion.button>
                       </form>
@@ -370,7 +370,7 @@ export function ContactSection() {
                         </p>
                       </div>
                     ) : (
-                      <form ref={opdrFormRef} onSubmit={handleOpdrSubmit} className="flex flex-col gap-5">
+                      <form ref={opdrFormRef} onSubmit={handleOpdrSubmit} className="flex flex-col gap-4">
                         {/* Honeypot — must stay empty */}
                         <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
                         {/* TODO: Add Cloudflare Turnstile widget — set CLOUDFLARE_TURNSTILE_SITE_KEY in Replit Secrets */}
@@ -448,7 +448,7 @@ export function ContactSection() {
                         <motion.button type="submit" disabled={opdrLoading}
                           whileHover={!opdrLoading ? { y: -2, boxShadow: "0 10px 28px hsl(205 85% 53% / 0.3)" } : {}}
                           whileTap={!opdrLoading ? { y: 0 } : {}} transition={{ duration: 0.2 }}
-                          className="w-full rounded-full bg-accent text-white py-4 text-[14.5px] font-bold mt-1 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity">
+                          className="w-full rounded-full bg-accent text-white py-3 text-[13.5px] font-bold mt-1 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity">
                           {opdrLoading ? "Versturen..." : "Plan een kennismaking"}
                         </motion.button>
                       </form>
