@@ -33,7 +33,7 @@ export function WaaromWedeploy() {
   return (
     <section
       id="aanpak"
-      className="pt-10 pb-28 bg-background relative overflow-hidden"
+      className="pt-4 pb-28 bg-background relative overflow-hidden"
     >
       {/* Navigation anchors for header links */}
       <span id="kandidaten" className="sr-only" />

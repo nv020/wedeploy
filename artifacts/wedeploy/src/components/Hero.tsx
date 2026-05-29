@@ -18,13 +18,12 @@ export function Hero() {
       id="home"
       className="bg-primary overflow-hidden relative min-h-screen flex flex-col"
     >
-      {/* Full-bleed editorial image — absolutely positioned right 75% */}
+      {/* Full-bleed editorial image — absolutely positioned right */}
       <motion.div
         initial={{ opacity: 0, scale: 1.04 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.1, ease: [0.25, 0.1, 0.25, 1] }}
-        className="absolute top-0 right-0 h-full"
-        style={{ width: "75%" }}
+        className="absolute top-0 right-0 h-full w-[65%] md:w-[72%] lg:w-[75%]"
       >
         <img
           src={heroImg}
@@ -64,12 +63,12 @@ export function Hero() {
       />
 
       {/* Hero text content — overlaps image via z-index */}
-      <div className="flex-1 flex items-center relative z-10 px-6 md:px-12 lg:px-20 xl:px-28 pb-24 pt-8">
+      <div className="flex-1 flex items-center relative z-10 pl-6 pr-4 md:pl-16 lg:pl-24 xl:pl-36 pb-24 pt-8">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate="visible"
-          className="flex flex-col max-w-[580px]"
+          className="flex flex-col w-full max-w-[520px]"
         >
           {/* Eyebrow */}
           <motion.div variants={fadeUp} className="flex items-center gap-3 mb-7">
