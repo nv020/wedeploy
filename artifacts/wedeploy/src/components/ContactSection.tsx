@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Upload, CheckCircle2, AlertCircle } from "lucide-react";
-import nickyPhoto from "@assets/Nick_1779994992412.png";
+import nickyPhoto from "@assets/Nick_1779994992412.webp";
 
 /**
  * Contact form — submits to /api/contact on the API server.

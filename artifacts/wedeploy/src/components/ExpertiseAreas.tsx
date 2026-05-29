@@ -9,6 +9,7 @@ const areas = [
     alt: "Wedeploy recruitment voor Facility Management en kantooromgeving",
     span: "lg:col-span-2",
     height: "h-[300px] lg:h-[360px]",
+    imgW: 900, imgH: 600,
   },
   {
     id: "pm",
@@ -18,6 +19,7 @@ const areas = [
     alt: "Persoonlijke screening van kandidaten bij Wedeploy projectmanagement recruitment",
     span: "lg:col-span-1",
     height: "h-[300px] lg:h-[360px]",
+    imgW: 700, imgH: 467,
   },
   {
     id: "tech",
@@ -27,6 +29,7 @@ const areas = [
     alt: "Recruitment en detachering voor technische en vastgoedfuncties bij Wedeploy",
     span: "lg:col-span-1",
     height: "h-[280px] lg:h-[320px]",
+    imgW: 700, imgH: 467,
   },
   {
     id: "vastgoed",
@@ -36,6 +39,7 @@ const areas = [
     alt: "Vastgoed- en property management recruitment door Wedeploy",
     span: "lg:col-span-2",
     height: "h-[280px] lg:h-[320px]",
+    imgW: 900, imgH: 600,
   },
 ];
 
@@ -84,6 +88,8 @@ export function ExpertiseAreas() {
               <img
                 src={area.img}
                 alt={area.alt}
+                width={area.imgW}
+                height={area.imgH}
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
