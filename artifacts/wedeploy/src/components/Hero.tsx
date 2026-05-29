@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -9,14 +10,6 @@ const stagger = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.1 } },
 };
-
-const disciplines = ["Projectmanagement", "Facility", "Vastgoed", "Techniek"];
-
-const stats = [
-  { n: "100+", l: "Geplaatste professionals" },
-  { n: "98%", l: "Match-tevredenheid" },
-  { n: "<48u", l: "Eerste reactie" },
-];
 
 export function Hero() {
   return (
@@ -52,23 +45,6 @@ export function Hero() {
             animate="visible"
             className="flex flex-col"
           >
-            {/* Discipline pills */}
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-8">
-              {disciplines.map((d, i) => (
-                <span
-                  key={d}
-                  className={`text-[11px] px-4 py-1.5 rounded-full font-semibold ${
-                    i === 0
-                      ? "bg-accent text-white"
-                      : "text-white/65 border border-white/[0.15]"
-                  }`}
-                  style={i !== 0 ? { background: "rgba(255,255,255,0.07)" } : undefined}
-                >
-                  {d}
-                </span>
-              ))}
-            </motion.div>
-
             {/* Headline */}
             <motion.h1
               variants={fadeUp}
@@ -115,18 +91,47 @@ export function Hero() {
               </motion.a>
             </motion.div>
 
-            {/* Stats strip */}
+            {/* Contact details strip */}
             <motion.div
               variants={fadeUp}
-              className="flex gap-9 pt-7"
+              className="flex flex-wrap gap-6 pt-7"
               style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
             >
-              {stats.map(({ n, l }) => (
-                <div key={n}>
-                  <div className="text-[22px] font-bold text-white tracking-tight">{n}</div>
-                  <div className="text-[11px] mt-0.5" style={{ color: "rgba(255,255,255,0.4)" }}>{l}</div>
+              <a
+                href="tel:0852128668"
+                className="flex items-center gap-2.5 group"
+              >
+                <div
+                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(255,255,255,0.08)" }}
+                >
+                  <Phone className="w-3.5 h-3.5 text-accent" />
                 </div>
-              ))}
+                <span
+                  className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
+                  style={{ color: "rgba(255,255,255,0.60)" }}
+                >
+                  085 212 8668
+                </span>
+              </a>
+
+              <a
+                href="mailto:info@wedeploy.nl"
+                className="flex items-center gap-2.5 group"
+              >
+                <div
+                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(255,255,255,0.08)" }}
+                >
+                  <Mail className="w-3.5 h-3.5 text-accent" />
+                </div>
+                <span
+                  className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
+                  style={{ color: "rgba(255,255,255,0.60)" }}
+                >
+                  info@wedeploy.nl
+                </span>
+              </a>
             </motion.div>
           </motion.div>
 
