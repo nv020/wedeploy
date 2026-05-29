@@ -2,8 +2,12 @@
 type ModuleMap = Record<string, () => Promise<Record<string, unknown>>>;
 export const modules: ModuleMap = {
   "./components/mockups/agency-hero/BoldKinetic.tsx": () => import("../components/mockups/agency-hero/BoldKinetic.tsx"),
+  "./components/mockups/agency-hero/BoldKineticV2.tsx": () => import("../components/mockups/agency-hero/BoldKineticV2.tsx"),
+  "./components/mockups/agency-hero/CreamPremium.tsx": () => import("../components/mockups/agency-hero/CreamPremium.tsx"),
   "./components/mockups/agency-hero/DarkStudio.tsx": () => import("../components/mockups/agency-hero/DarkStudio.tsx"),
   "./components/mockups/agency-hero/EditorialLuxury.tsx": () => import("../components/mockups/agency-hero/EditorialLuxury.tsx"),
+  "./components/mockups/agency-hero/NavyBold.tsx": () => import("../components/mockups/agency-hero/NavyBold.tsx"),
+  "./components/mockups/agency-hero/SplitScreen.tsx": () => import("../components/mockups/agency-hero/SplitScreen.tsx"),
   "./components/mockups/wedeploy/VariantA.tsx": () => import("../components/mockups/wedeploy/VariantA.tsx"),
   "./components/mockups/wedeploy/VariantB.tsx": () => import("../components/mockups/wedeploy/VariantB.tsx"),
   "./components/mockups/wedeploy/VariantC.tsx": () => import("../components/mockups/wedeploy/VariantC.tsx")
