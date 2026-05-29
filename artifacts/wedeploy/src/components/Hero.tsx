@@ -16,176 +16,158 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="bg-primary overflow-hidden relative min-h-screen flex items-center"
+      className="bg-primary overflow-hidden relative min-h-screen flex flex-col"
     >
-      {/* Dot grid */}
+      {/* Full-bleed editorial image — absolutely positioned right 75% */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.04 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.1, ease: [0.25, 0.1, 0.25, 1] }}
+        className="absolute top-0 right-0 h-full"
+        style={{ width: "75%" }}
+      >
+        <img
+          src={heroImg}
+          alt="Twee professionals in gesprek bij Wedeploy recruitment en detachering"
+          title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: "center top" }}
+          loading="eager"
+        />
+        {/* Strong navy gradient masking left into text column */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to right, hsl(220 50% 18%) 0%, hsl(220 50% 18% / 0.94) 8%, hsl(220 50% 18% / 0.73) 28%, hsl(220 50% 18% / 0.33) 52%, transparent 74%)",
+          }}
+        />
+        {/* Top + bottom darkening */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to bottom, hsl(220 50% 18% / 0.50) 0%, transparent 35%, hsl(220 50% 18% / 0.30) 100%)",
+          }}
+        />
+      </motion.div>
+
+      {/* Dot grid — left portion */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute top-0 left-0 h-full pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(rgba(255,255,255,0.055) 1px, transparent 1px)",
+          width: "45%",
+          backgroundImage: "radial-gradient(rgba(255,255,255,0.038) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
-        }}
-      />
-      {/* Accent glow top-right */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          top: "-150px", right: "200px",
-          width: "500px", height: "500px", borderRadius: "50%",
-          background: "radial-gradient(circle, hsl(205 85% 53% / 0.18) 0%, transparent 70%)",
+          zIndex: 2,
         }}
       />
 
-      <div className="container mx-auto px-6 md:px-8 lg:px-16 py-24 lg:py-0 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
-
-          {/* ── Left: text ── */}
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            animate="visible"
-            className="flex flex-col"
-          >
-            {/* Headline */}
-            <motion.h1
-              variants={fadeUp}
-              className="font-bold text-white tracking-[-3px] leading-[0.95] mb-7"
-              style={{ fontSize: "clamp(44px, 5.8vw, 80px)" }}
+      {/* Hero text content — overlaps image via z-index */}
+      <div className="flex-1 flex items-center relative z-10 px-6 md:px-16 lg:px-20 pb-24 pt-8">
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col max-w-[580px]"
+        >
+          {/* Eyebrow */}
+          <motion.div variants={fadeUp} className="flex items-center gap-3 mb-7">
+            <div className="w-8 h-[2px] rounded-full bg-accent flex-shrink-0" />
+            <span
+              className="text-[10.5px] font-bold tracking-[2.5px] uppercase"
+              style={{ color: "hsl(205 85% 53%)" }}
             >
-              De juiste<br />
-              professionals<span className="text-accent">.</span><br />
-              De beste<br />
-              matches<span className="text-accent">.</span>
-            </motion.h1>
-
-            {/* Sub */}
-            <motion.p
-              variants={fadeUp}
-              className="text-[16px] leading-[1.82] mb-9 max-w-[440px]"
-              style={{ color: "rgba(255,255,255,0.58)" }}
-            >
-              Wij brengen rust en executiekracht in complexe trajecten binnen
-              projectmanagement, facility, vastgoed en techniek. Geen snelle
-              cv's, maar duurzame matches.
-            </motion.p>
-
-            {/* CTAs */}
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-9">
-              <motion.a
-                href="#contact"
-                whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(205 85% 53% / 0.35)" }}
-                whileTap={{ y: 0 }}
-                transition={{ duration: 0.18 }}
-                className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-8 py-4 text-[14px] font-bold"
-              >
-                Ik zoek versterking <span aria-hidden>→</span>
-              </motion.a>
-              <motion.a
-                href="#kandidaten"
-                whileHover={{ y: -2 }}
-                whileTap={{ y: 0 }}
-                transition={{ duration: 0.18 }}
-                className="inline-flex items-center gap-2 rounded-full text-white border border-white/20 px-8 py-4 text-[14px] font-semibold hover:border-white/40 transition-colors duration-200"
-                style={{ background: "rgba(255,255,255,0.06)" }}
-              >
-                Ik ben professional
-              </motion.a>
-            </motion.div>
-
-            {/* Contact details strip */}
-            <motion.div
-              variants={fadeUp}
-              className="flex flex-wrap gap-6 pt-7"
-              style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
-            >
-              <a
-                href="tel:0852128668"
-                className="flex items-center gap-2.5 group"
-              >
-                <div
-                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={{ background: "rgba(255,255,255,0.08)" }}
-                >
-                  <Phone className="w-3.5 h-3.5 text-accent" />
-                </div>
-                <span
-                  className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
-                  style={{ color: "rgba(255,255,255,0.60)" }}
-                >
-                  085 212 8668
-                </span>
-              </a>
-
-              <a
-                href="mailto:info@wedeploy.nl"
-                className="flex items-center gap-2.5 group"
-              >
-                <div
-                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={{ background: "rgba(255,255,255,0.08)" }}
-                >
-                  <Mail className="w-3.5 h-3.5 text-accent" />
-                </div>
-                <span
-                  className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
-                  style={{ color: "rgba(255,255,255,0.60)" }}
-                >
-                  info@wedeploy.nl
-                </span>
-              </a>
-            </motion.div>
+              Recruitment · Detachering
+            </span>
           </motion.div>
 
-          {/* ── Right: image in frame ── */}
-          <motion.div
-            initial={{ opacity: 0, x: 32 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
-            className="hidden lg:block relative h-[580px]"
+          {/* Four-line headline */}
+          <motion.h1
+            variants={fadeUp}
+            className="font-black text-white leading-[1.01] mb-8"
+            style={{ fontSize: "clamp(56px, 6vw, 86px)", letterSpacing: "-3.5px" }}
           >
-            {/* Accent offset frame */}
-            <div
-              className="absolute w-full h-full rounded-[14px] border"
-              style={{ top: "-14px", right: "-14px", borderColor: "hsl(205 85% 53% / 0.4)" }}
-            />
+            De juiste<br />
+            professionals<span className="text-accent">.</span><br />
+            De beste<br />
+            <span className="text-accent">matches.</span>
+          </motion.h1>
 
-            <div
-              className="h-full rounded-[14px] overflow-hidden relative"
-              style={{ boxShadow: "0 32px 80px hsl(220 50% 18% / 0.40)" }}
+          {/* Sub */}
+          <motion.p
+            variants={fadeUp}
+            className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
+            style={{ color: "rgba(255,255,255,0.50)" }}
+          >
+            Geen snelle cv's. Duurzame matches — binnen projectmanagement,
+            facility, vastgoed en techniek.
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-10">
+            <motion.a
+              href="#contact"
+              whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(205 85% 53% / 0.38)" }}
+              whileTap={{ y: 0 }}
+              transition={{ duration: 0.18 }}
+              className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-9 py-4 text-[14.5px] font-bold"
             >
-              <img
-                src={heroImg}
-                alt="Twee professionals in gesprek bij Wedeploy recruitment en detachering"
-                title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: "50% 20%" }}
-                loading="eager"
-              />
-              {/* Bottom gradient */}
+              Ik zoek versterking <span aria-hidden>→</span>
+            </motion.a>
+            <motion.a
+              href="#kandidaten"
+              whileHover={{ y: -2 }}
+              whileTap={{ y: 0 }}
+              transition={{ duration: 0.18 }}
+              className="inline-flex items-center gap-2 rounded-full text-white border border-white/20 px-8 py-4 text-[14px] font-semibold hover:border-white/40 transition-colors duration-200"
+              style={{ background: "rgba(255,255,255,0.07)" }}
+            >
+              Ik ben professional
+            </motion.a>
+          </motion.div>
+
+          {/* Contact details strip */}
+          <motion.div
+            variants={fadeUp}
+            className="flex flex-wrap gap-6 pt-7"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
+          >
+            <a href="tel:0852128668" className="flex items-center gap-2.5 group">
               <div
-                className="absolute inset-0 pointer-events-none"
-                style={{ background: "linear-gradient(to top, hsl(220 50% 12% / 0.82) 0%, transparent 55%)" }}
-              />
-              {/* Caption card */}
-              <div
-                className="absolute bottom-5 left-5 right-5 rounded-[10px] p-4 border border-white/[0.12]"
-                style={{ background: "hsl(220 50% 14% / 0.65)", backdropFilter: "blur(12px)" }}
+                className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                style={{ background: "rgba(255,255,255,0.08)" }}
               >
-                <div className="text-[10px] tracking-[2px] uppercase mb-1" style={{ color: "rgba(255,255,255,0.48)" }}>
-                  Persoonlijke screening
-                </div>
-                <div className="text-[13px] font-semibold text-white">
-                  Transparante communicatie · Duurzame match
-                </div>
+                <Phone className="w-3.5 h-3.5 text-accent" />
               </div>
-            </div>
-          </motion.div>
+              <span
+                className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
+                style={{ color: "rgba(255,255,255,0.60)" }}
+              >
+                085 212 8668
+              </span>
+            </a>
 
-        </div>
+            <a href="mailto:info@wedeploy.nl" className="flex items-center gap-2.5 group">
+              <div
+                className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                style={{ background: "rgba(255,255,255,0.08)" }}
+              >
+                <Mail className="w-3.5 h-3.5 text-accent" />
+              </div>
+              <span
+                className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
+                style={{ color: "rgba(255,255,255,0.60)" }}
+              >
+                info@wedeploy.nl
+              </span>
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
 
-      {/* Curved bottom edge — cream arch rises into navy hero */}
-      <div className="absolute bottom-0 left-0 right-0 leading-none pointer-events-none">
+      {/* Curved bottom edge — cream arch */}
+      <div className="absolute bottom-0 left-0 right-0 leading-none pointer-events-none" style={{ zIndex: 20 }}>
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="block w-full h-24 md:h-36">
           <ellipse cx="720" cy="120" rx="900" ry="120" fill="hsl(36 28% 97%)" />
         </svg>
