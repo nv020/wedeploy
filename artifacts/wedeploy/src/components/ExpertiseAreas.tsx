@@ -6,6 +6,8 @@ const areas = [
     title: "Projectmanagement",
     sentence: "Projectmanagers en programmamanagers voor complexe, multidisciplinaire trajecten in vastgoed, infra en facility.",
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80",
+    srcset: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&q=80 480w, https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80 900w",
+    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 67vw",
     alt: "Wedeploy recruitment en detachering voor projectmanagement en programmamanagement",
     span: "lg:col-span-2",
     height: "h-[300px] lg:h-[380px]",
@@ -16,6 +18,8 @@ const areas = [
     title: "Facility Management",
     sentence: "Van facilitaire managers en coördinatoren tot servicespecialisten op strategisch niveau.",
     img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80",
+    srcset: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=360&q=80 360w, https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80 700w",
+    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
     alt: "Wedeploy recruitment voor Facility Management en kantooromgeving",
     span: "lg:col-span-1",
     height: "h-[300px] lg:h-[380px]",
@@ -26,6 +30,8 @@ const areas = [
     title: "Vastgoed & Real Estate",
     sentence: "Property managers, asset managers en vastgoedprofessionals voor commercieel en institutioneel vastgoed.",
     img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80",
+    srcset: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=360&q=80 360w, https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80 700w",
+    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
     alt: "Vastgoed- en property management recruitment door Wedeploy",
     span: "lg:col-span-1",
     height: "h-[280px] lg:h-[320px]",
@@ -36,6 +42,8 @@ const areas = [
     title: "Techniek & Installaties",
     sentence: "Technisch specialisten, werktuigbouwkundigen, E&W-engineers en installatieprofessionals.",
     img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
+    srcset: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=480&q=80 480w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80 900w",
+    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 67vw",
     alt: "Recruitment en detachering voor technische en vastgoedfuncties bij Wedeploy",
     span: "lg:col-span-2",
     height: "h-[280px] lg:h-[320px]",
@@ -87,6 +95,8 @@ export function ExpertiseAreas() {
             >
               <img
                 src={area.img}
+                srcSet={area.srcset}
+                sizes={area.sizes}
                 alt={area.alt}
                 width={area.imgW}
                 height={area.imgH}

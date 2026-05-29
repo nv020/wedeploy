@@ -120,6 +120,8 @@ export function Hero() {
         >
           <img
             src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&dpr=1"
+            srcSet="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=480&h=640&dpr=1 480w, https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&dpr=1 900w"
+            sizes="54vw"
             alt="Twee professionals in gesprek bij Wedeploy recruitment en detachering"
             title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
             className="w-full h-full object-cover"
