@@ -33,7 +33,8 @@ export function Footer() {
           <div>
             <a
               href="#home"
-              className="inline-flex items-baseline text-[26px] font-extrabold tracking-tight leading-none mb-3"
+              className="inline-flex items-baseline text-[26px] font-extrabold leading-none mb-3"
+              style={{ letterSpacing: "-0.3px" }}
             >
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
@@ -59,7 +60,7 @@ export function Footer() {
               085 212 8668
             </a>
             <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.32)" }}>
-              Krijn Taconiskade 461 · Amsterdam
+              Krijn Taconiskade 461 · 1087 HW Amsterdam
             </p>
           </div>
         </div>

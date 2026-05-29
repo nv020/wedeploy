@@ -64,7 +64,7 @@ export function Hero() {
       />
 
       {/* Hero text content — overlaps image via z-index */}
-      <div className="flex-1 flex items-center relative z-10 px-6 md:px-16 lg:px-20 pb-24 pt-8">
+      <div className="flex-1 flex items-center relative z-10 px-6 md:px-12 lg:px-20 xl:px-28 pb-24 pt-8">
         <motion.div
           variants={stagger}
           initial="hidden"
