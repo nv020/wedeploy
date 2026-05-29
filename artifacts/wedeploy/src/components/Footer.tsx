@@ -25,7 +25,14 @@ const expertises = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white/70 py-16">
+    <footer className="bg-primary text-white/70 pt-20 pb-16 relative overflow-hidden">
+      {/* Curved top edge — cream arch dips down into navy footer */}
+      <div className="absolute top-0 left-0 right-0 leading-none pointer-events-none">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="block w-full h-16 md:h-20">
+          <ellipse cx="720" cy="0" rx="900" ry="80" fill="hsl(36 28% 97%)" />
+        </svg>
+      </div>
+
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10 mb-12">
           {/* Brand */}
