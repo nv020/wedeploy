@@ -64,7 +64,7 @@ export function FullPage() {
               matches<span style={{ color: ACCENT }}>.</span>
             </h1>
             <p style={{ fontSize: "16px", lineHeight: 1.8, color: "rgba(255,255,255,0.58)", maxWidth: "420px", marginBottom: "36px" }}>
-              Wij brengen rust en executiekracht in complexe trajecten. Zonder cv-shiften — gericht op resultaat en een duurzame match.
+              Wij brengen rust en executiekracht in complexe trajecten binnen projectmanagement, facility, vastgoed en techniek. Geen snelle cv's, maar duurzame matches.
             </p>
             <div style={{ display: "flex", gap: "12px", marginBottom: "44px" }}>
               <button style={{ background: ACCENT, color: "white", border: "none", padding: "15px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 700, cursor: "pointer" }}>Ik zoek versterking →</button>
