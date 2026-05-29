@@ -24,7 +24,6 @@ export function DienstenOverview() {
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Hoe wij helpen</h2>
         </div>
 
-        {/* items-stretch ensures both cards match height in the grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
 
           {/* Opdrachtgevers */}
@@ -33,7 +32,8 @@ export function DienstenOverview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.55 }}
-            className="bg-primary rounded-2xl p-10 lg:p-12 flex flex-col relative overflow-hidden"
+            whileHover={{ y: -5 }}
+            className="bg-primary rounded-2xl p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
           >
             <div
               className="absolute top-0 right-0 w-64 h-64 opacity-[0.08] -translate-y-1/4 translate-x-1/4 pointer-events-none rounded-full"
@@ -48,7 +48,6 @@ export function DienstenOverview() {
                 Wij helpen organisaties aan professionals die direct waarde toevoegen binnen
                 Facility Management, vastgoed en technische projecten.
               </p>
-              {/* flex-1 pushes CTA to bottom */}
               <ul className="space-y-3.5 flex-1 mb-10">
                 {opdrachtgeverBullets.map((item) => (
                   <li key={item} className="flex items-center gap-3">
@@ -64,7 +63,7 @@ export function DienstenOverview() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
               >
-                Bespreek uw vraagstuk <ArrowRight className="w-4 h-4" />
+                Laten we matchen <ArrowRight className="w-4 h-4" />
               </motion.a>
             </div>
           </motion.div>
@@ -75,7 +74,8 @@ export function DienstenOverview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.12 }}
-            className="bg-white border border-border/50 rounded-2xl p-10 lg:p-12 flex flex-col"
+            whileHover={{ y: -5 }}
+            className="bg-white border border-border/50 rounded-2xl p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
           >
             <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent/80 mb-6">Voor professionals</span>
             <h3 className="text-[1.55rem] font-bold text-primary leading-[1.2] mb-4">
@@ -85,7 +85,6 @@ export function DienstenOverview() {
               Wij verbinden ervaren professionals met opdrachten en functies die passen bij hun
               expertise, ambitie en manier van werken.
             </p>
-            {/* flex-1 pushes CTA to bottom */}
             <ul className="space-y-3.5 flex-1 mb-10">
               {professionalBullets.map((item) => (
                 <li key={item} className="flex items-center gap-3">
@@ -104,6 +103,7 @@ export function DienstenOverview() {
               Bekijk mogelijkheden <ArrowRight className="w-4 h-4" />
             </motion.a>
           </motion.div>
+
         </div>
       </div>
     </section>
