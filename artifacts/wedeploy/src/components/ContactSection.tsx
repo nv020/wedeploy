@@ -111,9 +111,13 @@ export function ContactSection() {
       <div className="container mx-auto px-4 md:px-6">
         {/* Section header */}
         <div className="mb-12">
-          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight leading-[1.1] max-w-2xl">
-            Klaar voor een betere match?
+          <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
+            style={{ background: "hsl(205 85% 53% / 0.08)", borderColor: "hsl(205 85% 53% / 0.28)" }}>
+            <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
+            <span className="text-[10.5px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary tracking-tight leading-[1.1] max-w-2xl">
+            Klaar voor een <span className="text-accent">duurzame</span> match?
           </h2>
           <p className="mt-4 text-[16px] text-muted-foreground leading-relaxed max-w-xl">
             Of u nu tijdelijke expertise zoekt of als professional toe bent aan een volgende stap:

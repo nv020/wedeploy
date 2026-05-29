@@ -17,21 +17,25 @@ const professionalBullets = [
 
 export function DienstenOverview() {
   return (
-    <section id="diensten" className="py-28 bg-card border-y border-border/40">
+    <section id="diensten" className="py-28 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-14">
-          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Diensten</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight">Hoe wij helpen</h2>
+          <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
+            style={{ background: "hsl(205 85% 53% / 0.08)", borderColor: "hsl(205 85% 53% / 0.28)" }}>
+            <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
+            <span className="text-[10.5px] font-bold tracking-[2.5px] uppercase text-accent">Diensten</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary tracking-tight">Hoe wij helpen</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
 
-          {/* Opdrachtgevers */}
+          {/* Opdrachtgevers — navy card */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55 }}
+            transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
             whileHover={{ y: -5 }}
             className="bg-primary rounded-2xl p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
           >
@@ -68,12 +72,12 @@ export function DienstenOverview() {
             </div>
           </motion.div>
 
-          {/* Professionals */}
+          {/* Professionals — white card */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55, delay: 0.12 }}
+            transition={{ duration: 0.55, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] }}
             whileHover={{ y: -5 }}
             className="bg-white border border-border/50 rounded-2xl p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
           >

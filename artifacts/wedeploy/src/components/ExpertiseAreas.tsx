@@ -53,7 +53,7 @@ const areas = [
 
 const fadeIn = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.25, 0.1, 0.25, 1] } },
 };
 
 const stagger = {
@@ -63,11 +63,15 @@ const stagger = {
 
 export function ExpertiseAreas() {
   return (
-    <section id="diensten-expertise" className="py-28 bg-background">
+    <section id="diensten-expertise" className="py-28 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-14">
-          <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Expertisegebieden</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight mb-4">
+          <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
+            style={{ background: "hsl(205 85% 53% / 0.08)", borderColor: "hsl(205 85% 53% / 0.28)" }}>
+            <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
+            <span className="text-[10.5px] font-bold tracking-[2.5px] uppercase text-accent">Expertisegebieden</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary tracking-tight mb-4">
             Expertise die verder gaat<br className="hidden md:block" /> dan een online profiel.
           </h2>
           <p className="text-[15px] text-muted-foreground leading-relaxed max-w-xl">
@@ -77,7 +81,6 @@ export function ExpertiseAreas() {
           </p>
         </div>
 
-        {/* Bento grid — FM + Vastgoed: col-span-2, PM + Techniek: col-span-1 */}
         <motion.div
           variants={stagger}
           initial="hidden"
@@ -104,7 +107,6 @@ export function ExpertiseAreas() {
                 loading="lazy"
               />
 
-              {/* Dark gradient base */}
               <div
                 className="absolute inset-0"
                 style={{
@@ -113,10 +115,8 @@ export function ExpertiseAreas() {
                 }}
               />
 
-              {/* Accent dot top-left */}
               <div className="absolute top-5 left-5 w-2 h-2 rounded-full bg-accent opacity-70" />
 
-              {/* Glassmorphism text panel */}
               <div className="absolute bottom-0 left-0 right-0 p-3">
                 <div
                   className="rounded-xl px-5 py-4 backdrop-blur-md border border-white/10"
@@ -137,7 +137,6 @@ export function ExpertiseAreas() {
           ))}
         </motion.div>
 
-        {/* Tag cloud */}
         <div className="mt-12 flex flex-wrap justify-center gap-2.5">
           {[
             "Facility Management",
@@ -152,7 +151,7 @@ export function ExpertiseAreas() {
           ].map((tag) => (
             <span
               key={tag}
-              className="text-[12px] font-semibold text-primary/65 border border-border/60 bg-white rounded-full px-4 py-1.5"
+              className="text-[12px] font-semibold text-primary/65 border border-border/60 bg-background rounded-full px-4 py-1.5"
             >
               {tag}
             </span>

@@ -25,10 +25,10 @@ const expertises = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary/95 text-white/70 py-16">
+    <footer className="bg-primary text-white/70 py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10 mb-12">
-          {/* Brand — spans 3 cols on lg for asymmetry */}
+          {/* Brand */}
           <div className="lg:col-span-3">
             <a href="#home" className="flex items-center font-extrabold text-[24px] tracking-tight leading-none mb-5">
               <span className="text-accent">WE</span>
@@ -68,16 +68,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Diensten */}
+          {/* Diensten & Expertise */}
           <div>
             <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Diensten</h4>
             <ul className="space-y-3">
               {diensten.map((d) => (
                 <li key={d}>
-                  <a
-                    href="#diensten"
-                    className="text-[13px] text-white/55 hover:text-white transition-colors duration-200"
-                  >
+                  <a href="#diensten" className="text-[13px] text-white/55 hover:text-white transition-colors duration-200">
                     {d}
                   </a>
                 </li>
@@ -87,10 +84,7 @@ export function Footer() {
             <ul className="space-y-3">
               {expertises.map((e) => (
                 <li key={e}>
-                  <a
-                    href="#expertises"
-                    className="text-[13px] text-white/55 hover:text-white transition-colors duration-200"
-                  >
+                  <a href="#diensten-expertise" className="text-[13px] text-white/55 hover:text-white transition-colors duration-200">
                     {e}
                   </a>
                 </li>

@@ -21,7 +21,7 @@ const pillars = [
 
 const cardVariants = {
   hidden: { opacity: 0, y: 18 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
 };
 
 const stagger = {
@@ -33,18 +33,9 @@ export function WaaromWedeploy() {
   return (
     <section
       id="aanpak"
-      className="py-28 border-y border-border/30 relative overflow-hidden"
-      style={{ background: "hsl(213 22% 97%)" }}
+      className="py-28 bg-background relative overflow-hidden"
     >
-      {/* Subtle background accent */}
-      <div
-        className="absolute top-0 right-0 w-[480px] h-[480px] pointer-events-none opacity-[0.035]"
-        style={{
-          background: "radial-gradient(circle at top right, hsl(205 85% 53%), transparent 70%)",
-        }}
-      />
-
-      {/* Navigation anchors preserved for header links */}
+      {/* Navigation anchors for header links */}
       <span id="kandidaten" className="sr-only" />
       <span id="opdrachtgevers" className="sr-only" />
 
@@ -56,18 +47,17 @@ export function WaaromWedeploy() {
             initial={{ opacity: 0, y: 22 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             className="lg:sticky lg:top-28"
           >
-            <div className="flex items-center gap-3 mb-7">
-              <div className="h-px w-8 bg-accent rounded-full" />
-              <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">
-                Onze aanpak
-              </span>
+            <div className="inline-flex items-center gap-2.5 mb-6 px-4 py-1.5 rounded-full border"
+              style={{ background: "hsl(205 85% 53% / 0.08)", borderColor: "hsl(205 85% 53% / 0.28)" }}>
+              <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
+              <span className="text-[10.5px] font-bold tracking-[2.5px] uppercase text-accent">Onze aanpak</span>
             </div>
 
             <h2 className="text-4xl md:text-[2.8rem] font-bold text-primary leading-[1.08] tracking-tight mb-6">
-              Een cv vertelt niet hoe iemand samenwerkt.
+              Een cv vertelt niet hoe<br />iemand <span className="text-accent">samenwerkt.</span>
             </h2>
 
             <p className="text-[16px] text-muted-foreground leading-[1.85] mb-4 max-w-[430px]">
@@ -102,46 +92,28 @@ export function WaaromWedeploy() {
             </div>
           </motion.div>
 
-          {/* Right — 3 pillar cards */}
+          {/* Right — 3 numbered white cards */}
           <motion.div
             variants={stagger}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 pt-2"
           >
-            {pillars.map((pillar, i) => (
+            {pillars.map((pillar) => (
               <motion.div
                 key={pillar.num}
                 variants={cardVariants}
-                className={`group rounded-2xl p-8 flex gap-6 items-start transition-all duration-300 hover:shadow-[0_8px_32px_hsl(220_50%_18%/0.07)] ${
-                  i === 0
-                    ? "bg-primary border border-transparent"
-                    : "bg-white border border-border/50 hover:border-accent/25"
-                }`}
+                className="group bg-white border border-border/50 rounded-2xl p-8 flex gap-6 items-start transition-all duration-300 hover:border-accent/30 hover:shadow-[0_8px_32px_hsl(220_50%_18%/0.07)]"
               >
-                <span
-                  className={`text-[11px] font-bold tracking-[2px] mt-1 flex-shrink-0 w-8 ${
-                    i === 0 ? "text-accent" : "text-accent/60"
-                  }`}
-                >
+                <span className="text-[12px] font-black tracking-[2px] text-accent mt-0.5 flex-shrink-0 w-8">
                   {pillar.num}
                 </span>
                 <div>
-                  <h3
-                    className={`text-[16.5px] font-bold mb-2 leading-snug ${
-                      i === 0
-                        ? "text-white"
-                        : "text-primary group-hover:text-accent transition-colors duration-200"
-                    }`}
-                  >
+                  <h3 className="text-[16.5px] font-bold text-primary mb-2 leading-snug group-hover:text-accent transition-colors duration-200">
                     {pillar.title}
                   </h3>
-                  <p
-                    className={`text-[14px] leading-relaxed ${
-                      i === 0 ? "text-white/60" : "text-muted-foreground"
-                    }`}
-                  >
+                  <p className="text-[14px] text-muted-foreground leading-relaxed">
                     {pillar.desc}
                   </p>
                 </div>
