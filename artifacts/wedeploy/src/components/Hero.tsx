@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="bg-primary overflow-hidden relative min-h-[92vh] flex items-center"
+      className="bg-primary overflow-hidden relative min-h-screen flex items-center"
     >
       {/* Dot grid */}
       <div
@@ -186,8 +186,8 @@ export function Hero() {
 
       {/* Curved bottom edge — cream arch rises into navy hero */}
       <div className="absolute bottom-0 left-0 right-0 leading-none pointer-events-none">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="block w-full h-16 md:h-20">
-          <ellipse cx="720" cy="80" rx="900" ry="80" fill="hsl(36 28% 97%)" />
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="block w-full h-24 md:h-36">
+          <ellipse cx="720" cy="120" rx="900" ry="120" fill="hsl(36 28% 97%)" />
         </svg>
       </div>
     </section>

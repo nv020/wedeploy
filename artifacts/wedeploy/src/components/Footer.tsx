@@ -1,135 +1,95 @@
-import { Linkedin } from "lucide-react";
-
 const navLinks = [
-  { label: "Home", href: "#home" },
   { label: "Diensten", href: "#diensten" },
-  { label: "Kandidaten", href: "#kandidaten" },
-  { label: "Opdrachtgevers", href: "#opdrachtgevers" },
+  { label: "Expertisegebieden", href: "#diensten-expertise" },
   { label: "Werkwijze", href: "#werkwijze" },
   { label: "Vacatures", href: "#vacatures" },
   { label: "Contact", href: "#contact" },
 ];
 
-const diensten = [
-  "Werving & Selectie",
-  "Detachering",
-  "Interim-oplossingen",
-];
-
-const expertises = [
-  "Facility Management",
-  "Projectmanagement",
-  "Vastgoed- en Property Management",
-  "Technische rollen",
-];
-
 export function Footer() {
   return (
-    <footer className="bg-primary text-white/70 pt-20 pb-16 relative overflow-hidden">
+    <footer className="bg-primary text-white relative overflow-hidden" style={{ paddingTop: "clamp(120px, 12vw, 192px)", paddingBottom: "64px" }}>
+
       {/* Curved top edge — cream arch dips down into navy footer */}
       <div className="absolute top-0 left-0 right-0 leading-none pointer-events-none">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="block w-full h-16 md:h-20">
-          <ellipse cx="720" cy="0" rx="900" ry="80" fill="hsl(36 28% 97%)" />
+        <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="block w-full h-32 md:h-48">
+          <ellipse cx="720" cy="0" rx="900" ry="160" fill="hsl(36 28% 97%)" />
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10 mb-12">
-          {/* Brand */}
-          <div className="lg:col-span-3">
-            <a href="#home" className="flex items-center font-extrabold text-[28px] tracking-tight leading-none mb-5">
+      {/* Dot grid accent */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.025]"
+        style={{
+          backgroundImage: "radial-gradient(rgba(255,255,255,1) 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+
+        {/* Top: wordmark + tagline */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 pb-16 border-b border-white/10">
+          <div>
+            <a
+              href="#home"
+              className="inline-flex items-baseline font-extrabold tracking-tight leading-none mb-4"
+              style={{ fontSize: "clamp(36px, 5vw, 56px)" }}
+            >
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
             </a>
-            <p className="text-sm leading-relaxed text-white/50 max-w-xs">
-              Wedeploy is een recruitment- en detacheringspartner voor organisaties en professionals
-              die kiezen voor kwaliteit, aandacht en duurzame matches.
+            <p className="text-[15px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.42)" }}>
+              Recruitment &amp; detachering voor<br />
+              Facility, Vastgoed, Projectmanagement<br />
+              en Techniek.
             </p>
-            <div className="mt-6">
+          </div>
+
+          {/* Contact block — right aligned */}
+          <div className="flex flex-col gap-2 md:text-right">
+            <a
+              href="mailto:info@wedeploy.nl"
+              className="text-[15px] font-semibold text-white/80 hover:text-white transition-colors duration-200"
+            >
+              info@wedeploy.nl
+            </a>
+            <a
+              href="tel:0852128668"
+              className="text-[15px] font-semibold text-white/80 hover:text-white transition-colors duration-200"
+            >
+              085 212 8668
+            </a>
+            <p className="text-[13px] mt-1" style={{ color: "rgba(255,255,255,0.35)" }}>
+              Krijn Taconiskade 461 · Amsterdam
+            </p>
+          </div>
+        </div>
+
+        {/* Bottom: nav + legal */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <nav className="flex flex-wrap gap-x-7 gap-y-2">
+            {navLinks.map((link) => (
               <a
-                href="https://www.linkedin.com/company/wedeploy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[13px] text-white/55 hover:text-white transition-colors"
+                key={link.label}
+                href={link.href}
+                className="text-[12.5px] transition-colors duration-200"
+                style={{ color: "rgba(255,255,255,0.42)" }}
+                onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.85)")}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.42)")}
               >
-                <Linkedin className="w-4 h-4" />
-                LinkedIn
+                {link.label}
               </a>
-            </div>
-          </div>
+            ))}
+          </nav>
 
-          {/* Navigation */}
-          <div>
-            <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Navigatie</h4>
-            <ul className="space-y-3">
-              {navLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-[13px] text-white/55 hover:text-white transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Diensten & Expertise */}
-          <div>
-            <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Diensten</h4>
-            <ul className="space-y-3">
-              {diensten.map((d) => (
-                <li key={d}>
-                  <a href="#diensten" className="text-[13px] text-white/55 hover:text-white transition-colors duration-200">
-                    {d}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <h4 className="text-white font-semibold text-[11px] mt-8 mb-5 uppercase tracking-widest">Expertise</h4>
-            <ul className="space-y-3">
-              {expertises.map((e) => (
-                <li key={e}>
-                  <a href="#diensten-expertise" className="text-[13px] text-white/55 hover:text-white transition-colors duration-200">
-                    {e}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-white font-semibold text-[11px] mb-5 uppercase tracking-widest">Contact</h4>
-            <ul className="space-y-3 text-[13px] text-white/55">
-              <li>
-                <a href="mailto:info@wedeploy.nl" className="hover:text-white transition-colors">
-                  info@wedeploy.nl
-                </a>
-              </li>
-              <li>
-                <a href="tel:0852128668" className="hover:text-white transition-colors">
-                  085 212 8668
-                </a>
-              </li>
-              <li className="leading-relaxed pt-1">
-                Krijn Taconiskade 461<br />
-                1087 HW Amsterdam<br />
-                Nederland
-              </li>
-            </ul>
+          <div className="flex items-center gap-5 text-[11.5px]" style={{ color: "rgba(255,255,255,0.28)" }}>
+            <span>&copy; {new Date().getFullYear()} Wedeploy</span>
+            <a href="#privacy" className="hover:text-white/55 transition-colors">Privacy</a>
+            <a href="#cookies" className="hover:text-white/55 transition-colors">Cookies</a>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/35">
-          <p>&copy; {new Date().getFullYear()} Wedeploy. Alle rechten voorbehouden.</p>
-          <div className="flex gap-6">
-            <a href="#privacy" className="hover:text-white/60 transition-colors">Privacybeleid</a>
-            <a href="#cookies" className="hover:text-white/60 transition-colors">Cookiebeleid</a>
-            <a href="#terms" className="hover:text-white/60 transition-colors">Gebruiksvoorwaarden</a>
-          </div>
-        </div>
       </div>
     </footer>
   );

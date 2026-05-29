@@ -1,41 +1,42 @@
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const steps = [
   {
     number: "01",
     title: "Intake gesprek",
-    desc: "Wij leren jouw organisatie, cultuur en de opdracht grondig kennen — de vraag achter de vraag.",
+    desc: "We leren jouw organisatie, cultuur en de opdracht grondig kennen.",
   },
   {
     number: "02",
     title: "Gerichte search",
-    desc: "Actieve aanpak: wij zoeken, benaderen en screenen geschikte kandidaten persoonlijk.",
+    desc: "Actieve aanpak: wij zoeken, benaderen en screenen persoonlijk.",
   },
   {
     number: "03",
     title: "Selectie & presentatie",
-    desc: "Één of twee kandidaten die écht passen — inclusief onze motivatie waarom.",
+    desc: "Één of twee kandidaten die écht passen, met onze motivatie.",
   },
   {
     number: "04",
     title: "Match & nazorg",
-    desc: "Na de start blijven wij betrokken voor een vliegende start en duurzame samenwerking.",
+    desc: "Na de start blijven wij betrokken voor een vliegende start.",
   },
 ];
 
 const stepVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.25, 0.1, 0.25, 1] } },
 };
 
 const containerVariants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.13 } },
+  visible: { transition: { staggerChildren: 0.1 } },
 };
 
 export function HoeWijWerken() {
   return (
-    <section id="werkwijze" className="py-28 bg-primary overflow-hidden relative">
+    <section id="werkwijze" className="py-20 bg-primary overflow-hidden relative">
       {/* Dot grid */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -47,7 +48,7 @@ export function HoeWijWerken() {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-12">
           <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
             style={{ background: "hsl(205 85% 53% / 0.12)", borderColor: "hsl(205 85% 53% / 0.3)" }}>
             <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
@@ -58,92 +59,84 @@ export function HoeWijWerken() {
           </h2>
         </div>
 
-        {/* ── Desktop: horizontal 4-step layout ── */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          className="hidden md:grid md:grid-cols-4 relative"
-        >
-          {/* Connecting line */}
-          <div
-            className="absolute left-[12.5%] right-[12.5%] h-px"
-            style={{
-              top: "40px",
-              background: "linear-gradient(to right, transparent, rgba(255,255,255,0.12) 20%, rgba(255,255,255,0.12) 80%, transparent)",
-            }}
-          />
-
-          {steps.map((step, i) => (
-            <motion.div
-              key={step.number}
-              variants={stepVariants}
-              className="relative px-5 flex flex-col items-center text-center"
-            >
-              {/* Ghost number */}
-              <div
-                className="absolute -top-8 left-0 right-0 text-center text-[130px] font-black leading-none select-none pointer-events-none"
-                style={{ color: "rgba(255,255,255,0.03)" }}
-              >
-                {step.number}
-              </div>
-
-              {/* Accent circle with ring glow */}
-              <div className="relative z-10 mb-8">
-                <div
-                  className="w-[52px] h-[52px] rounded-full flex items-center justify-center bg-accent"
-                  style={{
-                    boxShadow: i === 0
-                      ? "0 0 0 6px hsl(220 50% 18%), 0 0 0 8px hsl(205 85% 53% / 0.35), 0 8px 24px hsl(205 85% 53% / 0.30)"
-                      : "0 0 0 6px hsl(220 50% 18%), 0 0 0 7px rgba(255,255,255,0.08)",
-                  }}
-                >
-                  <span className="text-[13px] font-black text-white tabular-nums">
-                    {step.number}
-                  </span>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10 max-w-[200px]">
-                <h3 className="text-[16px] font-bold text-white mb-3 leading-snug">
-                  {step.title}
-                </h3>
-                <p className="text-[13px] leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
-                  {step.desc}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* ── Mobile: clean vertical layout ── */}
+        {/* Desktop: compact linked cards */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="md:hidden flex flex-col gap-4"
+          className="hidden md:grid md:grid-cols-4 gap-3"
         >
           {steps.map((step) => (
-            <motion.div
+            <motion.a
               key={step.number}
+              href="#contact"
               variants={stepVariants}
-              className="flex items-start gap-5 relative overflow-hidden rounded-2xl p-6 border"
-              style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(255,255,255,0.08)" }}
+              whileHover={{ y: -3 }}
+              transition={{ duration: 0.2 }}
+              className="group flex flex-col p-6 rounded-2xl border transition-all duration-250 cursor-pointer"
+              style={{
+                background: "rgba(255,255,255,0.04)",
+                borderColor: "rgba(255,255,255,0.08)",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.07)";
+                (e.currentTarget as HTMLElement).style.borderColor = "hsl(205 85% 53% / 0.35)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)";
+              }}
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-accent flex items-center justify-center mt-0.5">
-                <span className="text-[10px] font-bold text-white tabular-nums">{step.number}</span>
+              <div className="flex items-center justify-between mb-5">
+                <span className="text-[11px] font-black tracking-[2.5px] text-accent">{step.number}</span>
+                <ArrowRight
+                  className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200"
+                  style={{ color: "hsl(205 85% 53%)" }}
+                />
               </div>
-              <div>
-                <h3 className="text-[15px] font-bold text-white mb-1.5">{step.title}</h3>
-                <p className="text-[13px] leading-relaxed" style={{ color: "rgba(255,255,255,0.52)" }}>{step.desc}</p>
-              </div>
-            </motion.div>
+              <h3 className="text-[15px] font-bold text-white mb-2 leading-snug">{step.title}</h3>
+              <p className="text-[12.5px] leading-relaxed mt-auto" style={{ color: "rgba(255,255,255,0.50)" }}>
+                {step.desc}
+              </p>
+            </motion.a>
           ))}
         </motion.div>
 
+        {/* Mobile: compact vertical */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-40px" }}
+          className="md:hidden flex flex-col gap-3"
+        >
+          {steps.map((step) => (
+            <motion.a
+              key={step.number}
+              href="#contact"
+              variants={stepVariants}
+              className="flex items-start gap-4 rounded-xl p-5 border"
+              style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(255,255,255,0.08)" }}
+            >
+              <span className="text-[11px] font-black tracking-[2px] text-accent mt-0.5 w-6 flex-shrink-0">{step.number}</span>
+              <div>
+                <h3 className="text-[15px] font-bold text-white mb-1">{step.title}</h3>
+                <p className="text-[12.5px] leading-relaxed" style={{ color: "rgba(255,255,255,0.50)" }}>{step.desc}</p>
+              </div>
+            </motion.a>
+          ))}
+        </motion.div>
+
+        {/* CTA underneath */}
+        <div className="mt-10 text-center">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-8 py-3.5 text-[13.5px] font-bold hover:bg-accent/90 transition-colors duration-200"
+          >
+            Plan een gesprek <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
       </div>
     </section>
   );

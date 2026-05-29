@@ -107,7 +107,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-28 bg-background">
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section header */}
         <div className="mb-12">
@@ -116,17 +116,17 @@ export function ContactSection() {
             <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
             <span className="text-[10.5px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary tracking-tight leading-[1.1] max-w-2xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary tracking-tight leading-[1.1] max-w-2xl">
             Klaar voor een <span className="text-accent">duurzame</span> match?
           </h2>
-          <p className="mt-4 text-[16px] text-muted-foreground leading-relaxed max-w-xl">
+          <p className="mt-3 text-[15px] text-muted-foreground leading-relaxed max-w-lg">
             Of u nu tijdelijke expertise zoekt of als professional toe bent aan een volgende stap:
             wij denken graag met u mee.
           </p>
         </div>
 
         {/* Panel */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 rounded-3xl overflow-hidden shadow-[0_24px_80px_hsl(220_50%_18%/0.10)] border border-border/30">
+        <div className="grid grid-cols-1 lg:grid-cols-5 rounded-2xl overflow-hidden border border-border/30">
 
           {/* Left — typographic navy panel */}
           <motion.div
