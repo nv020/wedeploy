@@ -62,8 +62,9 @@ export function Hero() {
         }}
       />
 
-      {/* Hero text content — overlaps image via z-index */}
-      <div className="flex-1 flex items-center relative z-10 pl-6 pr-4 md:pl-16 lg:pl-24 xl:pl-36 pb-24 pt-8">
+      {/* Hero text content — overlaps image via z-index, aligned with container */}
+      <div className="flex-1 flex items-center relative z-10 pb-24 pt-8 w-full">
+        <div className="container mx-auto px-4 md:px-6 w-full">
         <motion.div
           variants={stagger}
           initial="hidden"
@@ -163,6 +164,7 @@ export function Hero() {
             </a>
           </motion.div>
         </motion.div>
+        </div>
       </div>
 
       {/* Curved bottom edge — cream arch */}

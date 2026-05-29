@@ -1,16 +1,15 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, AlertCircle } from "lucide-react";
+import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
 
 type Role = "opdrachtgever" | "kandidaat";
 
 const API_BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? "";
 
-async function submitForm(payload: Record<string, string>): Promise<void> {
+async function submitForm(data: FormData): Promise<void> {
   const res = await fetch(`${API_BASE}/api/contact`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
+    body: data,
   });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
@@ -28,21 +27,17 @@ export function ContactSection() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [cvFile, setCvFile] = useState<File | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
     setLoading(true);
     const fd = new FormData(e.currentTarget);
+    if (cvFile) fd.set("cv", cvFile);
     try {
-      await submitForm({
-        type: role,
-        _gotcha: fd.get("_gotcha") as string,
-        naam: fd.get("naam") as string,
-        email: fd.get("email") as string,
-        telefoon: fd.get("telefoon") as string,
-        bericht: fd.get("bericht") as string,
-      });
+      await submitForm(fd);
       setSent(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Versturen mislukt. Probeer het later opnieuw.");
@@ -51,11 +46,18 @@ export function ContactSection() {
     }
   };
 
+  const handleRoleSwitch = (r: Role) => {
+    setRole(r);
+    setSent(false);
+    setError(null);
+    setCvFile(null);
+  };
+
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
 
-        {/* Section header — centered */}
+        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -92,7 +94,7 @@ export function ContactSection() {
             <button
               key={opt.key}
               type="button"
-              onClick={() => { setRole(opt.key); setSent(false); setError(null); }}
+              onClick={() => handleRoleSwitch(opt.key)}
               className={`rounded-2xl px-7 py-4 text-left transition-all duration-200 ${
                 role === opt.key
                   ? "bg-primary text-white shadow-[0_8px_28px_hsl(220_50%_18%/0.20)]"
@@ -170,7 +172,7 @@ export function ContactSection() {
                   {/* Bericht */}
                   <div>
                     <label className={labelCls}>
-                      {role === "opdrachtgever" ? "Omschrijving" : "Bericht"}{" "}
+                      {role === "opdrachtgever" ? "Omschrijving" : "Motivatie"}{" "}
                       <span className="text-accent">*</span>
                     </label>
                     <textarea
@@ -185,6 +187,56 @@ export function ContactSection() {
                       className={`${inputCls} resize-none`}
                     />
                   </div>
+
+                  {/* CV upload — kandidaat only */}
+                  <AnimatePresence>
+                    {role === "kandidaat" && (
+                      <motion.div
+                        key="cv-upload"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.22 }}
+                        style={{ overflow: "hidden" }}
+                      >
+                        <label className={labelCls}>
+                          CV uploaden{" "}
+                          <span className="text-muted-foreground/50 font-normal">(optioneel · PDF, Word)</span>
+                        </label>
+                        <input
+                          ref={fileInputRef}
+                          type="file"
+                          accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                          className="hidden"
+                          onChange={(e) => setCvFile(e.target.files?.[0] ?? null)}
+                        />
+                        {cvFile ? (
+                          <div className="flex items-center gap-3 rounded-xl border border-accent/30 bg-accent/5 px-4 py-3">
+                            <Paperclip className="w-4 h-4 text-accent flex-shrink-0" />
+                            <span className="text-[13px] font-medium text-primary flex-1 truncate">{cvFile.name}</span>
+                            <button
+                              type="button"
+                              onClick={() => { setCvFile(null); if (fileInputRef.current) fileInputRef.current.value = ""; }}
+                              className="text-muted-foreground/50 hover:text-primary transition-colors"
+                            >
+                              <X className="w-4 h-4" />
+                            </button>
+                          </div>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={() => fileInputRef.current?.click()}
+                            className="w-full rounded-xl border-2 border-dashed border-border hover:border-accent/40 bg-background hover:bg-accent/3 transition-all duration-200 py-4 px-4 flex items-center justify-center gap-2.5 group"
+                          >
+                            <Paperclip className="w-4 h-4 text-muted-foreground/40 group-hover:text-accent transition-colors" />
+                            <span className="text-[13px] text-muted-foreground/50 group-hover:text-primary transition-colors">
+                              Klik om uw CV te uploaden
+                            </span>
+                          </button>
+                        )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
 
                   {/* Error */}
                   {error && (
@@ -215,30 +267,32 @@ export function ContactSection() {
           </div>
         </motion.div>
 
-        {/* Contact details strip */}
+        {/* Contact details strip — fixed width matching card, evenly spaced */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="flex flex-wrap justify-center gap-8 mt-10"
+          className="w-full max-w-[520px] mt-8"
         >
-          {[
-            { label: "Telefoon", value: "085 212 8668", href: "tel:0852128668" },
-            { label: "E-mail",   value: "info@wedeploy.nl", href: "mailto:info@wedeploy.nl" },
-            { label: "Adres",    value: "Krijn Taconiskade 461 · 1087 HW Amsterdam", href: null },
-          ].map(({ label, value, href }) => (
-            <div key={label} className="text-center">
-              <div className="text-[9.5px] font-bold tracking-[1.5px] uppercase text-muted-foreground/40 mb-1">{label}</div>
-              {href ? (
-                <a href={href} className="text-[13px] font-semibold text-primary hover:text-accent transition-colors duration-200">
-                  {value}
-                </a>
-              ) : (
-                <div className="text-[13px] font-semibold text-primary">{value}</div>
-              )}
-            </div>
-          ))}
+          <div className="grid grid-cols-3 divide-x divide-border/40">
+            {[
+              { label: "Telefoon", value: "085 212 8668",              href: "tel:0852128668" },
+              { label: "E-mail",   value: "info@wedeploy.nl",          href: "mailto:info@wedeploy.nl" },
+              { label: "Adres",    value: "Krijn Taconiskade 461",      href: null },
+            ].map(({ label, value, href }) => (
+              <div key={label} className="text-center px-4 first:pl-0 last:pr-0">
+                <div className="text-[9.5px] font-bold tracking-[1.5px] uppercase text-muted-foreground/40 mb-1">{label}</div>
+                {href ? (
+                  <a href={href} className="text-[12.5px] font-semibold text-primary hover:text-accent transition-colors duration-200 block">
+                    {value}
+                  </a>
+                ) : (
+                  <div className="text-[12.5px] font-semibold text-primary">{value}</div>
+                )}
+              </div>
+            ))}
+          </div>
         </motion.div>
 
       </div>
