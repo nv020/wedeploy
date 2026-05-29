@@ -35,15 +35,16 @@ export function Hero() {
             variants={fadeUp}
             className="text-[2.75rem] md:text-[3.4rem] font-extrabold leading-[1.06] text-primary tracking-tight mb-6"
           >
-            Duurzame matches in Facility Management, Vastgoed &amp; Techniek.
+            Strategic talent voor projecten met impact.
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
-            className="text-[16.5px] leading-[1.85] text-muted-foreground mb-9 max-w-[440px]"
+            className="text-[16.5px] leading-[1.85] text-muted-foreground mb-9 max-w-[460px]"
           >
-            Wedeploy verbindt organisaties en professionals met aandacht voor
-            kwaliteit, teamfit en duurzame samenwerking.
+            Wij verbinden interim professionals en strategisch talent aan
+            uitdagende rollen in Projectmanagement, Facility, Vastgoed en
+            Techniek. Zonder cv-shiften, gericht op een duurzame match.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-7">

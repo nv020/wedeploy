@@ -2,41 +2,41 @@ import { motion } from "framer-motion";
 
 const areas = [
   {
-    id: "fm",
-    title: "Facility Management",
-    sentence: "Van facilitaire managers en coördinatoren tot servicespecialisten op strategisch niveau.",
-    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80",
-    alt: "Wedeploy recruitment voor Facility Management en kantooromgeving",
+    id: "pm",
+    title: "Projectmanagement",
+    sentence: "Projectmanagers en programmamanagers voor complexe, multidisciplinaire trajecten in vastgoed, infra en facility.",
+    img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80",
+    alt: "Wedeploy recruitment en detachering voor projectmanagement en programmamanagement",
     span: "lg:col-span-2",
-    height: "h-[300px] lg:h-[360px]",
+    height: "h-[300px] lg:h-[380px]",
     imgW: 900, imgH: 600,
   },
   {
-    id: "pm",
-    title: "Projectmanagement",
-    sentence: "Projectmanagers en programmamanagers voor complexe trajecten in vastgoed en infra.",
-    img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80",
-    alt: "Persoonlijke screening van kandidaten bij Wedeploy projectmanagement recruitment",
+    id: "fm",
+    title: "Facility Management",
+    sentence: "Van facilitaire managers en coördinatoren tot servicespecialisten op strategisch niveau.",
+    img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80",
+    alt: "Wedeploy recruitment voor Facility Management en kantooromgeving",
     span: "lg:col-span-1",
-    height: "h-[300px] lg:h-[360px]",
+    height: "h-[300px] lg:h-[380px]",
+    imgW: 700, imgH: 467,
+  },
+  {
+    id: "vastgoed",
+    title: "Vastgoed & Real Estate",
+    sentence: "Property managers, asset managers en vastgoedprofessionals voor commercieel en institutioneel vastgoed.",
+    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80",
+    alt: "Vastgoed- en property management recruitment door Wedeploy",
+    span: "lg:col-span-1",
+    height: "h-[280px] lg:h-[320px]",
     imgW: 700, imgH: 467,
   },
   {
     id: "tech",
     title: "Techniek & Installaties",
     sentence: "Technisch specialisten, werktuigbouwkundigen, E&W-engineers en installatieprofessionals.",
-    img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80",
+    img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
     alt: "Recruitment en detachering voor technische en vastgoedfuncties bij Wedeploy",
-    span: "lg:col-span-1",
-    height: "h-[280px] lg:h-[320px]",
-    imgW: 700, imgH: 467,
-  },
-  {
-    id: "vastgoed",
-    title: "Vastgoed- en Property Management",
-    sentence: "Property managers, asset managers en vastgoedprofessionals voor commercieel en institutioneel vastgoed.",
-    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80",
-    alt: "Vastgoed- en property management recruitment door Wedeploy",
     span: "lg:col-span-2",
     height: "h-[280px] lg:h-[320px]",
     imgW: 900, imgH: 600,
@@ -60,11 +60,11 @@ export function ExpertiseAreas() {
         <div className="mb-14">
           <span className="text-[11px] font-bold tracking-[2.5px] uppercase text-accent">Expertisegebieden</span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-primary tracking-tight mb-4">
-            Matches die je niet<br className="hidden md:block" /> op LinkedIn vindt.
+            Expertise die verder gaat<br className="hidden md:block" /> dan een online profiel.
           </h2>
           <p className="text-[15px] text-muted-foreground leading-relaxed max-w-xl">
-            Binnen Facility Management, vastgoed en techniek draait succes om context:
-            stakeholders, operatie, locaties, budgetten en draagvlak. Wij begrijpen
+            Succes in Projectmanagement, Facility, Vastgoed en Techniek draait om context:
+            stakeholders, teamdynamiek, organisatiefase en draagvlak. Wij begrijpen
             die wereld en selecteren professionals die daarbinnen kunnen leveren.
           </p>
         </div>

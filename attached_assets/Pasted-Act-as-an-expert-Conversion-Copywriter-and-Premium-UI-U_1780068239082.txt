@@ -1,0 +1,24 @@
+Act as an expert Conversion Copywriter and Premium UI/UX Designer. I want to update the copy and design layout of my website (referencing the structure in image_d4cd1e.jpg) to make it broader, include Project Management seamlessly, and optimize the headlines for a modern professional demographic (20-30+).
+
+Please execute the following updates in the codebase:
+
+1. HERO COPY UPDATE (Broad yet Punchy):
+- Replace the sector-heavy headline "Duurzame matches in Facility Management, Vastgoed & Techniek." with a more overarching, high-impact headline.
+- Use: "Strategic talent voor projecten met impact." (or one of the strategic variants like "Bouw mee aan de projecten van morgen.").
+- Update the Hero subheadline to naturally weave in the core disciplines, ensuring Project Management is included. 
+- Use: "Wij verbinden interim professionals en strategisch talent aan uitdagende rollen in Projectmanagement, Facility, Vastgoed en Techniek. Zonder cv-shiften, gericht op een duurzame match."
+
+2. SECTION 3 COPY UPDATE (Moving past the LinkedIn cliché):
+- Locate the section currently titled "Matches die je niet op LinkedIn vindt."
+- Change this headline to a more accurate and sophisticated statement about depth.
+- Use: "Omdat een cv niet vertelt hoe iemand samenwerkt." or "Expertise die verder gaat dan een online profiel."
+- Ensure the underlying text flows naturally from this new heading, focusing on cultural fit and quality over volume.
+
+3. DISCIPLINE GRID / BENTO GRID UPDATE:
+- In the expertise overview section, ensure there are now 4 balanced pillars: 1) Projectmanagement, 2) Facility Management, 3) Vastgoed & Real Estate, 4) Techniek.
+- Implement the previously requested Bento Grid layout for these 4 pillars to ensure an asymmetric, premium look (breaking the repetitive standard grid blocks shown in image_d4cd1e.jpg). Make the "Projectmanagement" or "Strategic Matching" card visually distinct (e.g., spanning a wider grid area) to emphasize its overarching nature.
+
+4. DESIGN & REFINEMENT:
+- Maintain the premium, minimalist aesthetic. Ensure responsive typography scales beautifully on mobile and desktop, and keep all micro-interactions smooth.
+
+Review the layout and content sections to apply these text refinements and structural updates.
