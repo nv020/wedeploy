@@ -2,9 +2,6 @@
 type ModuleMap = Record<string, () => Promise<Record<string, unknown>>>;
 export const modules: ModuleMap = {
   "./components/mockups/agency-fullpage/FullPage.tsx": () => import("../components/mockups/agency-fullpage/FullPage.tsx"),
-  "./components/mockups/contact-form/VariantA.tsx": () => import("../components/mockups/contact-form/VariantA.tsx"),
-  "./components/mockups/contact-form/VariantB.tsx": () => import("../components/mockups/contact-form/VariantB.tsx"),
-  "./components/mockups/contact-form/VariantC.tsx": () => import("../components/mockups/contact-form/VariantC.tsx"),
   "./components/mockups/agency-hero/BoldKinetic.tsx": () => import("../components/mockups/agency-hero/BoldKinetic.tsx"),
   "./components/mockups/agency-hero/BoldKineticV2.tsx": () => import("../components/mockups/agency-hero/BoldKineticV2.tsx"),
   "./components/mockups/agency-hero/CreamPremium.tsx": () => import("../components/mockups/agency-hero/CreamPremium.tsx"),
@@ -12,6 +9,9 @@ export const modules: ModuleMap = {
   "./components/mockups/agency-hero/EditorialLuxury.tsx": () => import("../components/mockups/agency-hero/EditorialLuxury.tsx"),
   "./components/mockups/agency-hero/NavyBold.tsx": () => import("../components/mockups/agency-hero/NavyBold.tsx"),
   "./components/mockups/agency-hero/SplitScreen.tsx": () => import("../components/mockups/agency-hero/SplitScreen.tsx"),
+  "./components/mockups/contact-form/VariantA.tsx": () => import("../components/mockups/contact-form/VariantA.tsx"),
+  "./components/mockups/contact-form/VariantB.tsx": () => import("../components/mockups/contact-form/VariantB.tsx"),
+  "./components/mockups/contact-form/VariantC.tsx": () => import("../components/mockups/contact-form/VariantC.tsx"),
   "./components/mockups/hero-v2/VariantA.tsx": () => import("../components/mockups/hero-v2/VariantA.tsx"),
   "./components/mockups/hero-v2/VariantB.tsx": () => import("../components/mockups/hero-v2/VariantB.tsx"),
   "./components/mockups/hero-v2/VariantC.tsx": () => import("../components/mockups/hero-v2/VariantC.tsx"),
