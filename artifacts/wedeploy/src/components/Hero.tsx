@@ -100,8 +100,7 @@ export function Hero() {
             className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
             style={{ color: "rgba(255,255,255,0.50)" }}
           >
-            Geen snelle cv's. Duurzame matches — binnen projectmanagement,
-            facility, vastgoed en techniek.
+            Kwaliteit boven kwantiteit. Duurzame matches in projectmanagement, facility, vastgoed en techniek.
           </motion.p>
 
           {/* CTAs */}
