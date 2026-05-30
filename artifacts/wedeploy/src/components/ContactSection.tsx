@@ -151,6 +151,7 @@ export function ContactSection() {
                 >
                   {/* Honeypot */}
                   <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
+                  <input type="hidden" name="type" value={role} />
 
                   {/* Naam + Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
