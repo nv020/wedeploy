@@ -137,25 +137,11 @@ export function VariantG() {
             <div style={{ borderLeft: `3px solid ${ACCENT}`, paddingLeft: "16px" }}>
               <p style={{
                 fontSize: "14px", lineHeight: 1.72, color: `${NAVY}88`,
-                fontWeight: 500, margin: 0, fontStyle: "italic",
+                fontWeight: 500, margin: "0 0 14px 0", fontStyle: "italic",
               }}>
-                "Bij Wedeploy kijken we verder dan alleen een cv of online profiel. Het gaat om de juiste energie en de perfecte match op de werkvloer. Laten we kennismaken."
+                "Bij Wedeploy geloven we in de perfecte klik op de werkvloer, of je nu je team wilt versterken of klaar bent voor een nieuw project. Laat je gegevens achter, dan spreken we elkaar snel."
               </p>
-            </div>
-          </div>
-
-          {/* Navy CTA card */}
-          <div style={{
-            background: NAVY, borderRadius: "22px", padding: "28px",
-            boxShadow: `0 8px 32px ${NAVY}22`, position: "relative", overflow: "hidden",
-          }}>
-            {/* Dot-grid texture */}
-            <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px)", backgroundSize: "24px 24px", pointerEvents: "none" }} />
-            <div style={{ position: "relative", zIndex: 1 }}>
-              <p style={{ fontSize: "15px", fontWeight: 700, color: "white", lineHeight: 1.65, margin: "0 0 14px 0" }}>
-                Klaar voor de volgende stap? Laat je gegevens links achter. Binnen 24 uur hebben we contact en kijken we wat er mogelijk is.
-              </p>
-              <p style={{ fontSize: "15px", fontWeight: 800, color: ACCENT, margin: 0, letterSpacing: "-0.2px" }}>
+              <p style={{ fontSize: "14px", fontWeight: 800, color: ACCENT, margin: 0, letterSpacing: "-0.1px" }}>
                 ☕️ De koffie staat klaar.
               </p>
             </div>
