@@ -1,0 +1,9 @@
+{
+  "buildCommand": "vite build --config vite.config.ts",
+  "outputDirectory": "dist/public",
+  "functions": {
+    "api/contact.ts": {
+      "maxDuration": 10
+    }
+  }
+}
