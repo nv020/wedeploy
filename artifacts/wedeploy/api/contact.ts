@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import formidable from "formidable";
 
 export const config = {
@@ -17,6 +17,18 @@ function isRateLimited(ip: string): boolean {
   if (entry.count >= 5) return true;
   entry.count++;
   return false;
+}
+
+function createTransport() {
+  return nodemailer.createTransport({
+    host: "smtp.forwardemail.net",
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.SMTP_USER ?? "info@wedeploy.nl",
+      pass: process.env.SMTP_PASS,
+    },
+  });
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -52,15 +64,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ error: "Naam, e-mail en bericht zijn verplicht." });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  if (!process.env.SMTP_PASS) {
     return res.status(500).json({ error: "E-mail service niet geconfigureerd." });
   }
 
-  const resend = new Resend(apiKey);
   const isKandidaat = type === "kandidaat";
+  const from = `"WeDeploy" <${process.env.SMTP_USER ?? "info@wedeploy.nl"}>`;
   const to = process.env.CONTACT_TO ?? "info@wedeploy.nl";
-  const from = process.env.CONTACT_FROM ?? "WeDeploy <noreply@absent.app>";
   const now = new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" });
 
   const subject = isKandidaat
@@ -108,13 +118,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   </div>
 </div>`.trim();
 
+  const transport = createTransport();
+
   try {
-    await resend.emails.send({ from, to, replyTo: email, subject, html: notificationHtml });
-    resend.emails.send({ from, to: email, subject: "Wij hebben uw bericht ontvangen — WeDeploy", html: confirmationHtml })
-      .catch((e) => console.warn("[contact] confirmation failed:", e));
+    await transport.sendMail({ from, to, replyTo: email, subject, html: notificationHtml });
+
+    transport.sendMail({
+      from, to: email,
+      subject: "Wij hebben uw bericht ontvangen — WeDeploy",
+      html: confirmationHtml,
+    }).catch((e) => console.warn("[contact] confirmation failed:", e));
+
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error("[contact] send failed:", err);
-    return res.status(500).json({ error: "Versturen mislukt. Probeer het later opnieuw of stuur een e-mail naar info@wedeploy.nl." });
+    return res.status(500).json({
+      error: "Versturen mislukt. Probeer het later opnieuw of stuur een e-mail naar info@wedeploy.nl.",
+    });
   }
 }
