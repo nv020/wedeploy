@@ -12,6 +12,7 @@ export const modules: ModuleMap = {
   "./components/mockups/contact-form-v2/VariantD.tsx": () => import("../components/mockups/contact-form-v2/VariantD.tsx"),
   "./components/mockups/contact-form-v2/VariantE.tsx": () => import("../components/mockups/contact-form-v2/VariantE.tsx"),
   "./components/mockups/contact-form-v2/VariantF.tsx": () => import("../components/mockups/contact-form-v2/VariantF.tsx"),
+  "./components/mockups/contact-form-v2/VariantG.tsx": () => import("../components/mockups/contact-form-v2/VariantG.tsx"),
   "./components/mockups/contact-form/VariantA.tsx": () => import("../components/mockups/contact-form/VariantA.tsx"),
   "./components/mockups/contact-form/VariantB.tsx": () => import("../components/mockups/contact-form/VariantB.tsx"),
   "./components/mockups/contact-form/VariantC.tsx": () => import("../components/mockups/contact-form/VariantC.tsx"),
