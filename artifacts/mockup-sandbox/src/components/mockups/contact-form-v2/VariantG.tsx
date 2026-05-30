@@ -139,7 +139,7 @@ export function VariantG() {
                 fontSize: "14px", lineHeight: 1.72, color: `${NAVY}88`,
                 fontWeight: 500, margin: "0 0 14px 0", fontStyle: "italic",
               }}>
-                "Bij Wedeploy geloven we in de perfecte klik op de werkvloer, of je nu je team wilt versterken of klaar bent voor een nieuw project. Laat je gegevens achter, dan spreken we elkaar snel."
+                "De juiste professional op de juiste plek. Of het nu gaat om teamuitbreiding of jouw volgende project: laat je gegevens achter en we spreken elkaar snel."
               </p>
               <p style={{ fontSize: "14px", fontWeight: 800, color: ACCENT, margin: 0, letterSpacing: "-0.1px" }}>
                 ☕️ De koffie staat klaar.
