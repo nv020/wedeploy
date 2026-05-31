@@ -1,5 +1,10 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import nodemailer from "nodemailer";
+import formidable from "formidable";
+
+export const config = {
+  api: { bodyParser: false },
+};
 
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
@@ -17,11 +22,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { naam, email, bericht } = req.body as {
-      naam?: string;
-      email?: string;
-      bericht?: string;
-    };
+    const form = formidable({});
+    const [fields] = await form.parse(req);
+    const get = (k: string) => (fields[k]?.[0] ?? "").trim();
+
+    const naam = get("naam");
+    const email = get("email");
+    const bericht = get("bericht");
 
     if (!naam || !email || !bericht) {
       return res.status(400).json({ error: "Naam, e-mail en bericht zijn verplicht." });
