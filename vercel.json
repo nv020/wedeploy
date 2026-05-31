@@ -3,7 +3,13 @@
   "outputDirectory": "artifacts/wedeploy/dist/public",
   "installCommand": "pnpm install",
   "framework": null,
+  "functions": {
+    "artifacts/wedeploy/api/contact.ts": {
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
+    { "source": "/api/contact", "destination": "/artifacts/wedeploy/api/contact" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
