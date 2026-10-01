@@ -14,7 +14,7 @@ async function submitForm(data: FormData): Promise<void> {
   });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
-    throw new Error((body as { error?: string }).error ?? "Versturen mislukt.");
+    throw new Error((body as { error?: string }).error ?? (res.status === 413 ? "Het bestand is te groot. Upload een cv van maximaal 3 MB." : "Versturen mislukt."));
   }
 }
 
@@ -206,14 +206,24 @@ export function ContactSection() {
                       >
                         <label className={labelCls}>
                           CV uploaden{" "}
-                          <span className="text-primary/30 font-normal normal-case">(optioneel · PDF, Word)</span>
+                          <span className="text-primary/30 font-normal normal-case">(optioneel · PDF, Word · max. 3 MB)</span>
                         </label>
                         <input
                           ref={fileInputRef}
                           type="file"
                           accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                           className="hidden"
-                          onChange={(e) => setCvFile(e.target.files?.[0] ?? null)}
+                          onChange={(e) => {
+                            const file = e.target.files?.[0];
+                            setError(null);
+                            if (file && (file.size > 3 * 1024 * 1024 || !/\.(pdf|doc|docx)$/i.test(file.name))) {
+                              setError("Upload een PDF- of Word-bestand van maximaal 3 MB.");
+                              setCvFile(null);
+                              e.target.value = "";
+                              return;
+                            }
+                            setCvFile(file ?? null);
+                          }}
                         />
                         {cvFile ? (
                           <div className="flex items-center gap-3 rounded-xl border border-accent/30 bg-accent/5 px-4 py-3">
