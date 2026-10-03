@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone } from "lucide-react";
+
 import heroImg from "@assets/hero-professionals.webp";
 
 const fadeUp = {
@@ -114,7 +114,7 @@ export function Hero() {
               transition={{ duration: 0.18 }}
               className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-6 sm:px-9 py-4 text-[14.5px] font-bold"
             >
-              Ik zoek versterking <span aria-hidden>→</span>
+              Ik zoek versterking
             </motion.a>
             <motion.a
               href="/vacatures"
@@ -135,12 +135,7 @@ export function Hero() {
             style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
           >
             <a href="tel:0852128668" className="flex items-center gap-2.5 group">
-              <div
-                className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "rgba(255,255,255,0.08)" }}
-              >
-                <Phone className="w-3.5 h-3.5 text-accent" />
-              </div>
+
               <span
                 className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
                 style={{ color: "rgba(255,255,255,0.60)" }}
@@ -150,12 +145,7 @@ export function Hero() {
             </a>
 
             <a href="mailto:info@wedeploy.nl" className="flex items-center gap-2.5 group">
-              <div
-                className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ background: "rgba(255,255,255,0.08)" }}
-              >
-                <Mail className="w-3.5 h-3.5 text-accent" />
-              </div>
+
               <span
                 className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
                 style={{ color: "rgba(255,255,255,0.60)" }}

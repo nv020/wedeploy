@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+
 
 const opdrachtgeverBullets = [
   "Interim capaciteit",
@@ -55,7 +55,7 @@ export function DienstenOverview() {
               <ul className="space-y-3.5 flex-1 mb-10">
                 {opdrachtgeverBullets.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
+
                     <span className="text-[14.5px] text-white/75">{item}</span>
                   </li>
                 ))}
@@ -67,7 +67,7 @@ export function DienstenOverview() {
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
               >
-                Bekijk onze aanpak <ArrowRight className="w-4 h-4" />
+                Bekijk onze aanpak
               </motion.a>
             </div>
           </motion.div>
@@ -92,7 +92,7 @@ export function DienstenOverview() {
             <ul className="space-y-3.5 flex-1 mb-10">
               {professionalBullets.map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
+
                   <span className="text-[14.5px] text-muted-foreground">{item}</span>
                 </li>
               ))}
@@ -104,7 +104,7 @@ export function DienstenOverview() {
               transition={{ duration: 0.2 }}
               className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
             >
-              Bekijk mogelijkheden <ArrowRight className="w-4 h-4" />
+              Bekijk mogelijkheden
             </motion.a>
           </motion.div>
 

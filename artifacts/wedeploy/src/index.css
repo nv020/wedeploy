@@ -113,11 +113,11 @@
   --background: 36 28% 97%;
   --foreground: 220 50% 18%;
   --border: 36 18% 88%;
-  
+
   --card: 0 0% 100%;
   --card-foreground: 220 50% 18%;
   --card-border: 220 15% 90%;
-  
+
   --sidebar: 220 15% 97%;
   --sidebar-foreground: 220 50% 18%;
   --sidebar-border: 220 15% 90%;
@@ -126,29 +126,29 @@
   --sidebar-accent: 220 15% 90%;
   --sidebar-accent-foreground: 220 50% 18%;
   --sidebar-ring: 205 85% 53%;
-  
+
   --popover: 0 0% 100%;
   --popover-foreground: 220 50% 18%;
   --popover-border: 220 15% 90%;
-  
+
   --primary: 220 50% 18%;
   --primary-foreground: 0 0% 100%;
-  
+
   --secondary: 220 15% 90%;
   --secondary-foreground: 220 50% 18%;
-  
+
   --muted: 36 15% 91%;
   --muted-foreground: 220 20% 42%;
-  
+
   --accent: 205 85% 53%;
   --accent-foreground: 0 0% 100%;
-  
+
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
-  
+
   --input: 220 15% 90%;
   --ring: 205 85% 53%;
-  
+
   --chart-1: 205 85% 53%;
   --chart-2: 220 50% 18%;
   --chart-3: 180 30% 60%;
@@ -159,7 +159,7 @@
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
   --radius: .5rem;
-  
+
   --shadow-2xs: 0px 2px 0px 0px hsl(220 50% 18% / 0.05);
   --shadow-xs: 0px 2px 0px 0px hsl(220 50% 18% / 0.05);
   --shadow-sm: 0px 2px 0px 0px hsl(220 50% 18% / 0.05), 0px 1px 2px -1px hsl(220 50% 18% / 0.05);
@@ -190,11 +190,11 @@
   --background: 220 50% 10%;
   --foreground: 0 0% 98%;
   --border: 220 50% 20%;
-  
+
   --card: 220 50% 14%;
   --card-foreground: 0 0% 98%;
   --card-border: 220 50% 20%;
-  
+
   --sidebar: 220 50% 10%;
   --sidebar-foreground: 0 0% 98%;
   --sidebar-border: 220 50% 20%;
@@ -203,29 +203,29 @@
   --sidebar-accent: 220 50% 20%;
   --sidebar-accent-foreground: 0 0% 98%;
   --sidebar-ring: 205 85% 53%;
-  
+
   --popover: 220 50% 14%;
   --popover-foreground: 0 0% 98%;
   --popover-border: 220 50% 20%;
-  
+
   --primary: 205 85% 53%;
   --primary-foreground: 0 0% 100%;
-  
+
   --secondary: 220 50% 20%;
   --secondary-foreground: 0 0% 98%;
-  
+
   --muted: 220 50% 20%;
   --muted-foreground: 220 20% 70%;
-  
+
   --accent: 205 85% 53%;
   --accent-foreground: 0 0% 100%;
-  
+
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  
+
   --input: 220 50% 20%;
   --ring: 205 85% 53%;
-  
+
   --chart-1: 205 85% 53%;
   --chart-2: 220 50% 80%;
   --chart-3: 180 30% 60%;
@@ -285,7 +285,6 @@ input, textarea, select { font-size: 16px; }
 a[href^="mailto:"] { overflow-wrap: anywhere; }
 .page-intro::after { content: ""; position: absolute; right: 5%; bottom: 0; width: 80px; height: 7px; background: hsl(var(--accent)); transform: rotate(-5deg); }
 .editorial-item { padding: 1.5rem 0; border-top: 1px solid hsl(var(--border)); }
-.editorial-item h3::before { content: "↗"; color: hsl(var(--accent)); display: inline-block; margin-right: .65rem; }
 .professional-list { display: grid; gap: 0 3rem; }
 .professional-row { padding: 1.75rem 0; border-top: 1px solid hsl(var(--border)); }
 .professional-row h3 { font-size: clamp(1.3rem, 3vw, 1.7rem); }
@@ -308,3 +307,18 @@ a[href^="mailto:"] { overflow-wrap: anywhere; }
 @media (min-width: 768px) { .sector-role { grid-template-columns: 5rem minmax(0, 1fr); gap: 2rem; } .sector-candidate { padding: 3rem; } }
 
 .vacancy-preview .preview-heading .section-title { color: white; }
+
+/* Quiet typography and clear links, without decorative icons. */
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+main a:not([class*="rounded"]):not([class*="content-card"]) { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .3em; }
+main a:hover { text-decoration-thickness: 2px; }
+.page-intro::after { display: none; }
+@media (max-width: 767px) {
+  .page-title { font-size: clamp(1.65rem, 7.2vw, 2.8rem); line-height: 1.12; max-width: 100%; }
+  .section-title { font-size: clamp(1.6rem, 6.5vw, 2.2rem); }
+  .portrait-frame { max-width: 320px; }
+  main a[class*="rounded-full"] { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+
+main a, main button { text-wrap: balance; }

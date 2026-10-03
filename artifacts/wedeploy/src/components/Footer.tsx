@@ -4,15 +4,12 @@ const navLinks = [
   { label: "Voor professionals", href: "/vacatures" },
   { label: "Expertise & diensten", href: "/expertise-diensten" },
   { label: "Over ons", href: "/over-ons" },
-  { label: "Vastgoed recruitment", href: "/vastgoed-recruitment" },
-  { label: "Facility recruitment", href: "/facility-recruitment" },
-  { label: "Interim projectmanagement", href: "/interim-projectmanagement" },
   { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white relative overflow-hidden pt-12 md:pt-20 pb-10">
+    <footer className="bg-primary text-white relative overflow-hidden pt-10 md:pt-20 pb-8">
 
       {/* Dot grid */}
       <div
@@ -26,7 +23,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
 
         {/* Top: wordmark + contact */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-8 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6 pb-6 border-b border-white/10">
           <div>
             <a
               href="/"
@@ -37,9 +34,7 @@ export function Footer() {
               <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
-              Recruitment &amp; detachering voor<br />
-              Facility, Vastgoed, Projectmanagement<br />
-              en Techniek.
+              Recruitment voor vastgoed, facility en projecten.
             </p>
           </div>
 
@@ -64,7 +59,7 @@ export function Footer() {
 
         {/* Bottom: nav + legal */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-          <nav className="flex flex-wrap gap-x-6 gap-y-2">
+          <nav aria-label="Footer" className="hidden md:flex flex-wrap gap-x-6 gap-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.label}

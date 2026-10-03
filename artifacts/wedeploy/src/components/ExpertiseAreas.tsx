@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+
 import imgPM from "@assets/expertise-projectmanagement.webp";
 import imgFM from "@assets/expertise-facility.webp";
 import imgVastgoed from "@assets/expertise-vastgoed.webp";
@@ -129,14 +129,6 @@ export function ExpertiseAreas() {
                 >
                   {area.num}
                 </span>
-              </div>
-
-              {/* Arrow — top right, appears on hover */}
-              <div
-                className="absolute top-5 right-5 z-10 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-1 group-hover:translate-y-0"
-                style={{ background: area.accent }}
-              >
-                <ArrowUpRight className="w-4 h-4 text-white" />
               </div>
 
               {/* Ghost watermark number */}

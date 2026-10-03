@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
-const nickPhoto = "/nicky-verkooij.webp";
+
 
 import { resolveContactContext, switchContactRole, type ContactRole as Role } from "./contact-context";
 
@@ -298,11 +298,11 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                     transition={{ duration: 0.18 }}
                     className="w-full rounded-full bg-primary text-white py-4 text-[14px] font-bold disabled:opacity-60 disabled:cursor-not-allowed transition-opacity mt-1 tracking-[-0.2px]"
                   >
-                    {loading ? "Versturen..." : <>Verstuur bericht <span className="text-accent">→</span></>}
+                    {loading ? "Versturen..." : <>Verstuur bericht </>}
                   </motion.button>
 
                   <p className="text-center text-[11.5px] text-primary/25">
-                    Reactie binnen één werkdag · We gaan zorgvuldig om met jouw gegevens.
+                    We gaan zorgvuldig om met jouw gegevens.
                   </p>
                 </motion.form>
               )}
@@ -320,35 +320,15 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
             {/* White profile card */}
             <div className="bg-white rounded-[22px] p-8 shadow-[0_4px_24px_hsl(220_50%_18%/0.06)] border border-primary/5">
 
-              {/* Photo + name row */}
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-[76px] h-[76px] rounded-full overflow-hidden flex-shrink-0 border-[2.5px] border-accent shadow-[0_0_0_4px_hsl(205_85%_53%/0.12)]">
-                  <img
-                    src={nickPhoto}
-                    alt="Nicky van Wedeploy"
-                    className="w-full h-full object-cover"
-                    width="76" height="76"
-                    style={{ objectPosition: "50% 12%" }}
-                  />
-                </div>
-                <div>
-                  <div className="text-[17px] font-extrabold text-primary tracking-[-0.4px] leading-tight">Nicky</div>
-                  <div className="text-[10.5px] font-bold text-accent tracking-[1.2px] uppercase mt-1">Recruitment & Detachering</div>
-                  <div className="flex gap-1.5 mt-2">
-                    {["Recruitment", "Detachering"].map(tag => (
-                      <span key={tag} className="text-[10px] font-bold bg-accent/10 text-accent rounded-full px-2.5 py-0.5">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
+              <p className="eyebrow">Direct contact</p>
+              <h3 className="text-2xl font-bold text-primary mb-5">Korte lijnen.</h3>
               {/* Quote */}
               <div className="border-l-[3px] border-accent pl-4">
                 <p className="text-[14px] leading-[1.72] text-primary/55 font-medium italic mb-3.5">
-                  "De juiste professional op de juiste plek. Of het nu gaat om teamuitbreiding of jouw volgende project: laat je gegevens achter en we spreken elkaar snel."
+                  Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap.
                 </p>
                 <p className="text-[14px] font-extrabold text-accent tracking-[-0.1px]">
-                  ☕️ De koffie staat klaar.
+                  Een eerste gesprek is vrijblijvend.
                 </p>
               </div>
             </div>

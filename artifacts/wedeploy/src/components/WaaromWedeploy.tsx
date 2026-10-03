@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+
 
 const pillars = [
   {
@@ -78,7 +78,7 @@ export function WaaromWedeploy() {
                 transition={{ duration: 0.18 }}
                 className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-7 py-3.5 text-[13.5px] font-bold"
               >
-                Laten we matchen <ArrowRight className="w-4 h-4" />
+                Laten we matchen
               </motion.a>
               <motion.a
                 href="/vacatures"

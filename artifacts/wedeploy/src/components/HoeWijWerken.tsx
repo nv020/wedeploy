@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+
 
 const steps = [
   {
@@ -90,10 +90,7 @@ export function HoeWijWerken() {
             >
               <div className="flex items-center justify-between mb-5">
                 <span className="text-[11px] font-black tracking-[2.5px] text-accent">{step.number}</span>
-                <ArrowRight
-                  className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200"
-                  style={{ color: "hsl(205 85% 53%)" }}
-                />
+
               </div>
               <h3 className="text-[15px] font-bold text-white mb-2 leading-snug">{step.title}</h3>
               <p className="text-[12.5px] leading-relaxed mt-auto" style={{ color: "rgba(255,255,255,0.50)" }}>
@@ -134,7 +131,7 @@ export function HoeWijWerken() {
             href="#contact"
             className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-8 py-3.5 text-[13.5px] font-bold hover:bg-accent/90 transition-colors duration-200"
           >
-            Plan een gesprek <ArrowRight className="w-4 h-4" />
+            Plan een gesprek
           </a>
         </div>
       </div>

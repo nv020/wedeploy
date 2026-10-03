@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+
 
 export function FinalCTA() {
   return (
@@ -48,7 +48,7 @@ export function FinalCTA() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent text-white px-9 py-4 text-sm font-bold"
             >
               Plan een kennismaking
-              <ArrowRight className="w-4 h-4" />
+
             </motion.a>
             <motion.a
               href="#vacatures"
