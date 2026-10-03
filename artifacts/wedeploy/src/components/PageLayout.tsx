@@ -1,3 +1,7 @@
+import peopleBackdrop from "@assets/hero-professionals.webp";
+import propertyBackdrop from "@assets/expertise-vastgoed.webp";
+import facilityBackdrop from "@assets/expertise-facility.webp";
+import projectBackdrop from "@assets/expertise-projectmanagement.webp";
 import type { ReactNode } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
@@ -7,12 +11,16 @@ export function ActionLink({ href, children, secondary = false }: { href: string
 }
 type IntroVariant = "editorial" | "split" | "quiet" | "navy";
 export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary, variant = "editorial", image, imageAlt = "" }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string }; variant?: IntroVariant; image?: string; imageAlt?: string }) {
+  const subject = `${label} ${title}`.toLowerCase();
+  const backdrop = image ?? (subject.includes("vastgoed") ? propertyBackdrop : subject.includes("project") || subject.includes("interim") ? projectBackdrop : subject.includes("facility") || subject.includes("detachering") ? facilityBackdrop : peopleBackdrop);
   const actions = cta && <div className="intro-actions flex flex-wrap gap-x-6 gap-y-2 mt-7"><ActionLink href={ctaHref}>{cta}</ActionLink>{secondary && <ActionLink href={secondary.href} secondary>{secondary.label}</ActionLink>}</div>;
   return <div className={`page-shell page-${variant} min-h-screen bg-background`}><Header /><main id="main-content">
     <section className={`agency-intro intro-${variant}`}>
+      <div className="intro-backdrop" aria-hidden="true"><img src={backdrop} alt="" width="1200" height="800" fetchPriority="high" /></div>
+      <div className="intro-shade" aria-hidden="true" />
       <div className="container mx-auto px-4 md:px-6">
         <nav aria-label="Broodkruimel" className="intro-breadcrumb flex flex-wrap items-center gap-2 text-xs mb-8"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">{label}</span></nav>
-        {variant === "split" ? <div className="intro-split-grid"><div><p className="eyebrow">{label}</p><div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div><p className="intro-description mt-6">{intro}</p>{actions}</div>{image ? <div className="intro-photo"><img src={image} alt={imageAlt} width="800" height="600" fetchPriority="high" /></div> : <div className="intro-side-note" aria-hidden="true">Het werk.<br />De mensen.<br /><span>De verbinding.</span></div>}</div> : <><p className="eyebrow">{label}</p><div className="intro-editorial-grid"><div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div><div className="intro-copy"><p className="intro-description">{intro}</p>{actions}</div></div></>}
+        {variant === "split" ? <div className="intro-split-grid"><div><p className="eyebrow">{label}</p><div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div><p className="intro-description mt-6">{intro}</p>{actions}</div><div className="intro-image-space" aria-hidden="true" /></div> : <><p className="eyebrow">{label}</p><div className="intro-editorial-grid"><div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div><div className="intro-copy"><p className="intro-description">{intro}</p>{actions}</div></div></>}
       </div>
     </section>
     {children}
