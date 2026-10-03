@@ -7,6 +7,8 @@ import { VacancyDetail } from "@/pages/VacancyDetail";
 import { Home } from "@/pages/Home";
 import { Employers, Professionals, Vacancies, ExpertiseServices, About, Contact, Privacy } from "@/pages/CompanyPages";
 import { SectorPage } from "@/pages/SectorPages";
+import { AmsterdamServicePage } from "@/pages/AmsterdamServicePage";
+import { amsterdamPages } from "@/data/amsterdam";
 const queryClient = new QueryClient();
 function App({ ssrPath }: { ssrPath?: string }) {
   return <QueryClientProvider client={queryClient}><TooltipProvider><WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")} ssrPath={ssrPath}>
@@ -20,6 +22,7 @@ function App({ ssrPath }: { ssrPath?: string }) {
       <Route path="/vastgoed-recruitment">{() => <SectorPage sector="vastgoed" />}</Route>
       <Route path="/facility-recruitment">{() => <SectorPage sector="facility" />}</Route>
       <Route path="/interim-projectmanagement">{() => <SectorPage sector="projecten" />}</Route>
+      {amsterdamPages.map(page => <Route key={page.path} path={page.path}>{() => <AmsterdamServicePage slug={page.slug} audience={page.audience} />}</Route>)}
       <Route path="/over-ons" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />

@@ -1,3 +1,4 @@
+import { AmsterdamLinks } from "./AmsterdamServicePage";
 
 import { PageLayout, Section, ClosingCTA, ActionLink, FAQ } from "@/components/PageLayout";
 import { ContactSection } from "@/components/ContactSection";
@@ -28,6 +29,7 @@ export function Employers() {
       ["03", "Een helder voorstel", "Je ontvangt een voorstel voor de aanpak, vergoeding en afspraken. Ook exclusiviteit en terugkoppeling leggen we vast."],
       ["04", "Gericht aan de slag", "Na akkoord starten we de zoektocht. We spreken professionals en begeleiden de introducties en vervolggesprekken."],
     ].map(([n, title, text]) => <article key={n}><span className="text-accent font-bold text-4xl">{n}</span><h3 className="text-lg font-bold text-primary mt-3 mb-3">{title}</h3><p className="text-muted-foreground text-sm leading-relaxed">{text}</p></article>)}</div></Section>
+    <AmsterdamLinks audience="opdrachtgever" />
     <FAQ items={employerFAQ} /><ClosingCTA title="Wie zoek je?" text="Ook als het profiel nog niet helemaal duidelijk is. We denken graag mee over wie je nodig hebt." label="Neem contact op" href="/contact?type=opdrachtgever" />
   </PageLayout>;
 }
@@ -40,6 +42,7 @@ export function Professionals() {
 export function Vacancies() {
   return <PageLayout label="Vacatures & opdrachten" title="Wat wordt jouw volgende stap?" intro="Een vaste baan, een nieuwe interim opdracht of eerst eens kennismaken. Vertel ons waar je goed in bent en wat je zoekt. Dan kijken we samen naar passende mogelijkheden." cta="Stuur jouw cv" ctaHref="#inschrijven">
     <Section><VacancyCards /><div className="mt-10 grid md:grid-cols-2 gap-8"><div><h2 className="section-title">Jouw ervaring. Jouw volgende stap.</h2><p className="mt-5 text-muted-foreground leading-relaxed">We bemiddelen binnen vastgoed, Facility Management, projectmanagement, PMO en techniek. Van projectondersteuning tot leidinggevende en specialistische rollen.</p></div><div className="editorial-item"><h3 className="text-xl font-bold text-primary mb-3">Ook zonder vacature welkom.</h3><p className="text-muted-foreground leading-relaxed">Laat weten welke functie of opdracht je zoekt, in welke regio en voor hoeveel uur. Ook als je nu goed zit en alleen openstaat voor iets dat echt past.</p><a href="/expertise-diensten" className="text-accent font-bold inline-flex gap-2 mt-5 items-center">Bekijk onze vakgebieden </a></div></div></Section>
+    <AmsterdamLinks audience="kandidaat" />
     <div id="inschrijven"><ContactSection defaultRole="kandidaat" heading="Vertel ons wat je zoekt." context="Open inschrijving" /></div>
   </PageLayout>;
 }
@@ -48,6 +51,7 @@ export function ExpertiseServices() {
     <Section><p className="eyebrow">Onze vakgebieden</p><h2 className="section-title mb-8">Werk dat we begrijpen.</h2><div className="grid md:grid-cols-2 gap-5">{expertise.map(area => <article id={area.id} key={area.id} className="editorial-item"><h3 className="text-2xl font-bold text-primary mb-4">{area.title}</h3><p className="text-muted-foreground leading-relaxed">{area.description}</p><p className="text-sm leading-relaxed text-primary/80 border-t border-border mt-5 pt-5">{area.roles}</p></article>)}</div></Section>
     <Section><p className="eyebrow">Manieren van samenwerken</p><h2 className="section-title mb-8">Zo werken we samen.</h2><div className="grid md:grid-cols-2 gap-5">{services.map(service => <article id={service.id} className="editorial-item" key={service.id}><h3 className="text-2xl font-bold text-primary mb-4">{service.title}</h3><p className="text-muted-foreground leading-relaxed">{service.description}</p><p className="text-sm leading-relaxed text-primary/80 border-t border-border mt-5 pt-5">{service.audience}</p></article>)}</div></Section>
     <Section><p className="eyebrow">Meer over jouw vakgebied</p><div className="grid md:grid-cols-3 gap-6">{sectorPages.map(page => <a key={page.path} href={page.path} className="editorial-item text-primary font-bold inline-flex gap-3 items-center">{page.label}</a>)}</div></Section>
+    <AmsterdamLinks audience="opdrachtgever" /><AmsterdamLinks audience="kandidaat" />
     <ClosingCTA title="Wat past bij jouw situatie?" text="We bespreken de mogelijkheden en maken vooraf heldere afspraken over de samenwerking." />
   </PageLayout>;
 }
