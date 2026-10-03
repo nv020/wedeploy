@@ -1,9 +1,11 @@
 import { build } from 'vite';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 const root = import.meta.dirname;
 process.env.NODE_ENV = 'production';
+// A renamed landing page must not survive as stale HTML in repeated builds.
+await rm(path.join(root, 'dist/public'), { recursive: true, force: true });
 await build({ configFile: path.join(root, 'vite.config.ts') });
 await build({ configFile: path.join(root, 'vite.config.ts'), build: { ssr: path.join(root, 'src/entry-server.tsx'), outDir: path.join(root, 'dist/server'), emptyOutDir: true } });
 const { render, pages, siteUrl, vacancies, amsterdamServices, amsterdamPages } = await import(pathToFileURL(path.join(root, 'dist/server/entry-server.js')).href);

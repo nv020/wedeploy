@@ -34,7 +34,7 @@ export function Footer() {
               <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
-              Recruitment voor vastgoed, facility en projecten.
+              De juiste mensen voor jouw team of project.
             </p>
           </div>
 
@@ -51,15 +51,21 @@ export function Footer() {
             >
               085 212 8668
             </a>
-            <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.32)" }}>
+            <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.65)" }}>
               Krijn Taconiskade 461 · 1087 HW Amsterdam
             </p>
           </div>
         </div>
 
+        <details className="footer-landings border-b border-white/10 pb-5 mb-5">
+          <summary className="cursor-pointer text-xs font-semibold text-white/75">Vakgebieden & inzet</summary>
+          <nav aria-label="Vakgebieden en inzet" className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 text-xs text-white/70">
+            <a href="/interim-projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/interim-professionals">Interim professionals</a><a href="/zzp-opdrachten">Zzp-opdrachten</a><a href="/werving-selectie-amsterdam">Werving & selectie Amsterdam</a>
+          </nav>
+        </details>
         {/* Bottom: nav + legal */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-          <nav aria-label="Footer" className="hidden md:flex flex-wrap gap-x-6 gap-y-2">
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-5 gap-y-3 md:flex md:flex-wrap md:gap-x-6 md:gap-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -76,7 +82,7 @@ export function Footer() {
 
           <div className="flex items-center gap-4 text-[11px]" style={{ color: "rgba(255,255,255,0.60)" }}>
             <span>&copy; {new Date().getFullYear()} Wedeploy</span>
-            <a href="/privacy" className="hover:text-white/55 transition-colors">Privacy</a>
+            <a href="/privacy" className="hover:text-white/55 transition-colors">Privacy & cookies</a>
           </div>
         </div>
 

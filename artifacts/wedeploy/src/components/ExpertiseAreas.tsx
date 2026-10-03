@@ -38,7 +38,7 @@ const areas = [
     title: "Vastgoed & Real Estate",
     sentence: "Asset-, property- en vastgoedmanagers voor commercieel en institutioneel vastgoed.",
     img: imgVastgoed,
-    alt: "Vastgoed recruitment Wedeploy",
+    alt: "Vastgoed Wedeploy",
     span: "lg:col-span-1",
     height: "h-[300px] lg:h-[360px]",
     imgW: 700, imgH: 467,
@@ -72,7 +72,7 @@ const stagger = {
 
 export function ExpertiseAreas() {
   return (
-    <section id="diensten-expertise" className="py-28 bg-primary">
+    <section id="diensten-expertise" className="py-14 md:py-24 bg-primary">
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Section header */}
@@ -102,7 +102,7 @@ export function ExpertiseAreas() {
         >
           {areas.map((area) => (
             <motion.a
-              href={({ pm: "/interim-projectmanagement", fm: "/facility-recruitment", vastgoed: "/vastgoed-recruitment", tech: "/expertise-diensten#techniek" } as Record<string, string>)[area.id]}
+              href={({ pm: "/interim-projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/expertise-diensten#techniek" } as Record<string, string>)[area.id]}
               key={area.id}
               variants={cardVariant}
               className={`group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}

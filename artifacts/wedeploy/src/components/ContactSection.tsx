@@ -301,7 +301,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                     {loading ? "Versturen..." : <>Verstuur bericht </>}
                   </motion.button>
 
-                  <p className="text-center text-[11.5px] text-primary/25">
+                  <p className="text-center text-[11.5px] text-primary/60">
                     We gaan zorgvuldig om met jouw gegevens.
                   </p>
                 </motion.form>

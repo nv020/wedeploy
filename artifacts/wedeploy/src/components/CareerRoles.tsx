@@ -1,11 +1,11 @@
 const roles = [
+  { title: "Projectmanager vastgoed", text: "Breng vastgoedontwikkeling of herontwikkeling verder. Je verbindt planning, budget en betrokken partijen, van planvorming tot realisatie." },
+  { title: "PMO & projectondersteuning", text: "Breng overzicht in een projectteam. Je bewaakt acties en voortgang, organiseert afstemming en legt afspraken vast. Ook voor projectsecretarissen." },
   { title: "Facility manager", text: "Leid een facilitair team en organiseer dienstverlening die werkt. Voor professionals met ervaring in leveranciers, budgetten en de dagelijkse praktijk." },
   { title: "Facilitair coördinator", text: "Houd een locatie draaiend. Je stemt af met medewerkers en leveranciers, organiseert de dienstverlening en pakt praktische vragen op." },
   { title: "Vastgoedbeheerder", text: "Beheer gebouwen en onderhoud. Je houdt overzicht op de portefeuille, leveranciers en gebruikersvragen. Ook voor property managers." },
-  { title: "Projectmanager vastgoed", text: "Breng vastgoedontwikkeling of herontwikkeling verder. Je verbindt planning, budget en betrokken partijen, van planvorming tot realisatie." },
   { title: "Projectleider huisvesting", text: "Organiseer een renovatie, verhuizing of nieuwe werkplek. Je vertaalt gebruikerswensen naar een uitvoerbaar plan en begeleidt de uitvoering." },
-  { title: "PMO & projectondersteuning", text: "Breng overzicht in een projectteam. Je bewaakt acties en voortgang, organiseert afstemming en legt afspraken vast. Ook voor projectsecretarissen." },
-  { title: "Contractmanager facility", text: "Maak afspraken met dienstverleners en houd grip op kwaliteit en prestaties. Voor professionals met ervaring in facilitaire contracten en leveranciersregie." },
+  { title: "Contractmanager facilitaire diensten", text: "Maak afspraken met dienstverleners en houd grip op kwaliteit en prestaties. Voor professionals met ervaring in facilitaire contracten en leveranciersregie." },
   { title: "Technisch coördinator", text: "Organiseer onderhoud aan gebouwen en installaties. Je stemt werkzaamheden af en verbindt technische vragen met de uitvoering." },
 ];
 export function CareerRoles() {

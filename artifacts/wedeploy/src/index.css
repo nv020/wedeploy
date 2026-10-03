@@ -469,3 +469,30 @@ main a, main button { text-wrap: balance; }
 .page-shell .career-roles { margin-top: 2rem; }
 .page-shell .career-roles:first-child { margin-top: 0; }
 @media (min-width: 768px) { .page-shell .career-role-list { grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; } }
+
+/* Compact mobile reading and visible routes through expertise, services and landings. */
+.page-shell .service-detail { padding: 1.75rem 0; border-top: 1px solid hsl(var(--border)); scroll-margin-top: 90px; }
+.page-shell .service-detail-copy { display: grid; gap: 1.25rem; }
+.page-shell .landing-directory-links { display: grid; gap: 0; }
+.page-shell .landing-directory-links a { padding: .9rem 0; border-bottom: 1px solid hsl(var(--border)); }
+.page-shell .expertise-composition article { scroll-margin-top: 90px; }
+.page-shell .faq-item summary { text-wrap: balance; max-width: 100%; padding-right: .25rem; }
+@media (min-width: 768px) {
+  .page-shell .service-detail-copy { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .page-shell .service-detail { padding: 2.5rem 0; }
+  .page-shell .landing-directory-links { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+}
+@media (max-width: 767px) {
+  .page-shell .agency-section .grid { row-gap: 1.25rem; }
+  .page-shell .expertise-composition { gap: 0; }
+  .page-shell .expertise-composition .editorial-item { margin: 0; padding: 1.5rem 0; }
+  .page-shell .service-editorial-list .editorial-item { padding: 1.25rem 0; }
+  .page-shell .agency-section { padding: 2rem 0; }
+  .page-shell .faq-composition { gap: 1.25rem; }
+  .page-shell .faq-item summary { font-size: .95rem; }
+  .page-shell .agency-intro .intro-description { max-width: 36ch; }
+  .page-shell .agency-section p { max-width: none; }
+  footer nav a { line-height: 1.5; text-wrap: balance; }
+}
+
+@media (max-width: 767px) { footer nav[aria-label="Footer"] a { display: flex; align-items: center; min-height: 36px; } }

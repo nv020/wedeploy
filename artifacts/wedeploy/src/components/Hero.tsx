@@ -77,12 +77,11 @@ export function Hero() {
           <motion.div variants={fadeUp} className="flex items-center gap-3 mb-7">
             <div className="w-8 h-[2px] rounded-full bg-accent flex-shrink-0" />
             <span
-              className="flex flex-wrap gap-x-3 gap-y-1 text-[10.5px] font-bold tracking-[1.5px] uppercase"
+              className="text-[10px] md:text-[10.5px] font-bold tracking-[0.6px] md:tracking-[1px] uppercase whitespace-nowrap"
               style={{ color: "hsl(205 85% 53%)" }}
             >
-              <span className="whitespace-nowrap">Werving & selectie</span>
-              <span className="whitespace-nowrap">Detachering</span>
-              <span className="whitespace-nowrap">Interim & zzp</span>
+              <span className="md:hidden">Vast · Detachering · Interim & zzp</span>
+              <span className="hidden md:inline">Werving & selectie · Detachering · Interim & zzp</span>
             </span>
           </motion.div>
 
@@ -90,7 +89,7 @@ export function Hero() {
           <motion.h1
             variants={fadeUp}
             className="font-black text-white leading-[1.01] mb-8"
-            style={{ fontSize: "clamp(32px, 17cqw, 86px)", letterSpacing: "-0.06em" }}
+            style={{ fontSize: "clamp(30px, 15.5cqw, 80px)", letterSpacing: "-0.06em" }}
           >
             De juiste<br />
             professionals<span className="text-accent">.</span><br />
