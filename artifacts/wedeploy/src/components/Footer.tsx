@@ -4,6 +4,9 @@ const navLinks = [
   { label: "Voor professionals", href: "/vacatures" },
   { label: "Expertise & diensten", href: "/expertise-diensten" },
   { label: "Over ons", href: "/over-ons" },
+  { label: "Vastgoed recruitment", href: "/vastgoed-recruitment" },
+  { label: "Facility recruitment", href: "/facility-recruitment" },
+  { label: "Interim projectmanagement", href: "/interim-projectmanagement" },
   { label: "Contact", href: "/contact" },
 ];
 

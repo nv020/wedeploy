@@ -1,3 +1,4 @@
+import { sectorPages } from "./sectors";
 export const siteUrl = "https://www.wedeploy.nl";
 export const pages = [
   { path: "/", label: "Home", title: "Wedeploy | Recruitment voor vastgoed, facility & projecten", description: "Wedeploy helpt organisaties en professionals binnen vastgoed, Facility Management, projectmanagement en techniek. Werving & selectie, detachering en interim." },
@@ -9,6 +10,7 @@ export const pages = [
   { path: "/contact", label: "Contact", title: "Contact met Wedeploy | Bespreek jouw vraag", description: "Zoek je een professional of een volgende opdracht? Neem contact op met Nicky van Wedeploy. Bel 085 212 8668 of stuur een bericht met jouw vraag." },
   { path: "/privacy", label: "Privacy", title: "Privacyverklaring | Wedeploy", description: "Lees hoe Wedeploy omgaat met contactgegevens, sollicitaties en cv’s, en hoe je vragen over jouw persoonsgegevens kunt stellen." },
 ];
+pages.push(...sectorPages);
 export const navigation = pages.filter(page => ["/opdrachtgevers", "/professionals", "/vacatures", "/expertise-diensten", "/over-ons"].includes(page.path));
 
 export const professionalProfiles = [

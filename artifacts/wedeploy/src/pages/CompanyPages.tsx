@@ -3,6 +3,7 @@ import { PageLayout, Section, ClosingCTA, ActionLink, FAQ } from "@/components/P
 import { ContactSection } from "@/components/ContactSection";
 import { ProfessionalCards } from "@/components/ProfessionalCards";
 import { VacancyCards } from "@/components/VacancyCards";
+import { sectorPages } from "@/data/sectors";
 import { expertise, services } from "@/data/site";
 const nickPhoto = "/nicky-verkooij.webp";
 
@@ -41,6 +42,7 @@ export function ExpertiseServices() {
   return <PageLayout label="Expertise & diensten" title="De juiste mensen voor gebouwen, teams en projecten." intro="Wedeploy brengt opdrachtgevers en professionals bij elkaar binnen vier vakgebieden. Voor een vaste aanstelling, tijdelijke versterking of een specialistische opdracht." cta="Ik zoek versterking" ctaHref="/contact?type=opdrachtgever" secondary={{ label: "Ik zoek een volgende stap", href: "/vacatures#inschrijven" }}>
     <Section><p className="eyebrow">Onze vakgebieden</p><h2 className="section-title mb-8">Werk dat we begrijpen.</h2><div className="grid md:grid-cols-2 gap-5">{expertise.map(area => <article id={area.id} key={area.id} className="editorial-item"><h3 className="text-2xl font-bold text-primary mb-4">{area.title}</h3><p className="text-muted-foreground leading-relaxed">{area.description}</p><p className="text-sm leading-relaxed text-primary/80 border-t border-border mt-5 pt-5">{area.roles}</p></article>)}</div></Section>
     <Section><p className="eyebrow">Manieren van samenwerken</p><h2 className="section-title mb-8">Een passende vorm voor beide kanten.</h2><div className="grid md:grid-cols-2 gap-5">{services.map(service => <article id={service.id} className="editorial-item" key={service.id}><h3 className="text-2xl font-bold text-primary mb-4">{service.title}</h3><p className="text-muted-foreground leading-relaxed">{service.description}</p><p className="text-sm leading-relaxed text-primary/80 border-t border-border mt-5 pt-5">{service.audience}</p></article>)}</div></Section>
+    <Section><p className="eyebrow">Meer over jouw vakgebied</p><div className="grid md:grid-cols-3 gap-6">{sectorPages.map(page => <a key={page.path} href={page.path} className="editorial-item text-primary font-bold inline-flex gap-3 items-center">{page.label}<ArrowRight size={18} className="text-accent shrink-0" /></a>)}</div></Section>
     <ClosingCTA title="Wat past bij jouw situatie?" text="We bespreken de mogelijkheden en maken vooraf heldere afspraken over de samenwerking." />
   </PageLayout>;
 }
