@@ -325,7 +325,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                 <div className="w-[76px] h-[76px] rounded-full overflow-hidden flex-shrink-0 border-[2.5px] border-accent shadow-[0_0_0_4px_hsl(205_85%_53%/0.12)]">
                   <img
                     src={nickPhoto}
-                    alt="Nicky Verkooij van Wedeploy"
+                    alt="Nicky van Wedeploy"
                     className="w-full h-full object-cover"
                     width="76" height="76"
                     style={{ objectPosition: "50% 12%" }}
