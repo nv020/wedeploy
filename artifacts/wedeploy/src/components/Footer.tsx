@@ -34,7 +34,7 @@ export function Footer() {
               <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
-              De juiste mensen voor jouw team of project.
+              Vast of tijdelijk. Werving & selectie, detachering, interim en zzp.
             </p>
           </div>
 

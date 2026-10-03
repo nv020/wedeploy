@@ -309,9 +309,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                     {loading ? "Versturen..." : <>Verstuur bericht </>}
                   </motion.button>
 
-                  <p className="text-center text-[11.5px] text-primary/60">
-                    We gaan zorgvuldig om met jouw gegevens.
-                  </p>
+                  <p className="text-center text-sm text-primary/70">Liever bellen? <a href="tel:+31852128668" className="inline-flex items-center min-h-11 font-bold text-primary hover:text-accent">Bel ons direct</a></p>
                 </motion.form>
               )}
             </AnimatePresence>
