@@ -23,7 +23,7 @@ const inputCls =
 
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
-export function ContactSection({ defaultRole = "opdrachtgever", heading, context = "", readQuery = false, vacancyId = "", showProfile = false }: { defaultRole?: Role; heading?: string; context?: string; readQuery?: boolean; vacancyId?: string; showProfile?: boolean }) {
+export function ContactSection({ defaultRole = "opdrachtgever", heading, context = "", readQuery = false, vacancyId = "", showProfile = false, compact = false, lockRole = false, retainContext = false }: { defaultRole?: Role; heading?: string; context?: string; readQuery?: boolean; vacancyId?: string; showProfile?: boolean; compact?: boolean; lockRole?: boolean; retainContext?: boolean }) {
   const [role, setRole] = useState<Role>(defaultRole);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -67,7 +67,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
     if (r === role) return;
     const next = switchContactRole({ role, context: requestContext, vacancyId: activeVacancyId }, r);
     setRole(next.role);
-    setRequestContext(next.context);
+    setRequestContext(retainContext ? context : next.context);
     setActiveVacancyId(next.vacancyId);
     setSent(false);
     setError(null);
@@ -96,9 +96,9 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
               {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
             </h2>
           </div>
-          <div className="flex gap-9 md:gap-10">
+          {!compact && (<div className="flex gap-9 md:gap-10">
             {[
-              { label: "Reactie binnen", val: "24 uur" },
+              { label: "Contact", val: "Persoonlijk" },
               { label: "Vrijblijvend", val: "Altijd" },
             ].map(stat => (
               <div key={stat.label} className="text-center">
@@ -106,11 +106,11 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                 <div className="text-[10px] font-bold text-primary/40 tracking-[1px] uppercase mt-1">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div>)}
         </motion.div>
 
         {/* 2-column grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-7 items-start">
+        <div className={compact ? "max-w-3xl mx-auto" : "grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-7 items-start"}>
 
           {/* LEFT — Form card */}
           <motion.div
@@ -118,10 +118,10 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
-            className="bg-white rounded-[22px] p-5 sm:p-9 shadow-[0_4px_40px_hsl(220_50%_18%/0.07)] border border-primary/5"
+            className={compact ? "landing-form" : "bg-white rounded-[22px] p-5 sm:p-9 shadow-[0_4px_40px_hsl(220_50%_18%/0.07)] border border-primary/5"}
           >
             {/* Role toggle — pill bar */}
-            <div className="flex gap-1.5 mb-7 bg-background rounded-[14px] p-1.5">
+            {!lockRole && (<div className="flex gap-1.5 mb-7 bg-background rounded-[14px] p-1.5">
               {([
                 { key: "opdrachtgever", label: "Ik zoek versterking" },
                 { key: "kandidaat",     label: "Ik ben professional" },
@@ -141,7 +141,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                   {opt.label}
                 </button>
               ))}
-            </div>
+            </div>)}
 
             <AnimatePresence mode="wait">
               {sent ? (
@@ -157,7 +157,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                   </div>
                   <h3 className="text-[20px] font-bold text-primary mb-2">Bericht ontvangen</h3>
                   <p className="text-muted-foreground text-[15px] max-w-xs mx-auto leading-relaxed">
-                    We nemen binnen één werkdag persoonlijk contact met je op.
+                    Je bericht is ontvangen. We nemen contact met je op.
                   </p>
                 </motion.div>
               ) : (
@@ -310,7 +310,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
           </motion.div>
 
           {/* RIGHT — Profile column */}
-          <motion.div
+          {!compact && (<motion.div
             initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -353,7 +353,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                 </a>
               ))}
             </div>
-          </motion.div>
+          </motion.div>)}
 
         </div>
       </div>

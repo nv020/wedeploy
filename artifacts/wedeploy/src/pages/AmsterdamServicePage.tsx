@@ -1,12 +1,13 @@
+import { ContactSection } from "@/components/ContactSection";
 import { amsterdamServices, amsterdamPages } from "@/data/amsterdam";
-import { PageLayout, Section, ActionLink, FAQ, ClosingCTA } from "@/components/PageLayout";
+import { PageLayout, Section, ActionLink, FAQ } from "@/components/PageLayout";
 import NotFound from "./not-found";
 export function AmsterdamServicePage({ slug, audience }: { slug: string; audience: "opdrachtgever" | "kandidaat" }) {
   const service = amsterdamServices.find(item => item.slug === slug);
   const page = amsterdamPages.find(item => item.slug === slug && item.audience === audience);
   if (!service || !page) return <NotFound />;
   const isProfessional = audience === "kandidaat";
-  const contactHref = `/contact?type=${audience}&onderwerp=${encodeURIComponent(page.label)}`;
+  const contactHref = "#contact";
   const candidateSteps: Record<string, string[][]> = {
     "werving-selectie-amsterdam": [["Meer dan een functietitel", "Wat wil je doen in jouw volgende vaste baan? Vertel welke verantwoordelijkheden je zoekt, wat je wilt leren en welk team bij je past."], ["De voorwaarden bespreken", "We stemmen functie, uren en salariswensen met je af. Bij een passende vacature bespreken we een introductie bij de organisatie waar je rechtstreeks in dienst zou komen."]],
     "detachering-amsterdam": [["De opdracht begrijpen", "We bespreken wat de opdrachtgever nodig heeft, wie jouw aanspreekpunt wordt en hoe jouw ervaring aansluit op het team."], ["Weten waar je aan toe bent", "Vóór een mogelijke start bespreken we jouw arbeidsovereenkomst, arbeidsvoorwaarden en de afspraken over de inzet bij de opdrachtgever."]],
@@ -20,7 +21,7 @@ export function AmsterdamServicePage({ slug, audience }: { slug: string; audienc
     <Section><div className="grid md:grid-cols-2 gap-8 md:gap-16"><div><p className="eyebrow">Vanuit Amsterdam</p><h2 className="section-title">{isProfessional ? "Een haalbare werkplek." : "Ook de werkplek telt mee."}</h2></div><div className="space-y-4 text-muted-foreground leading-relaxed"><p>Wedeploy is gevestigd op IJburg in Amsterdam. Achter het bureau zit praktijkervaring met vastgoedbeheer, facilitaire teams en huisvestingsprojecten.</p><p>{isProfessional ? "Amsterdam is groter dan één werklocatie. Geef aan welke locaties voor jou bereikbaar zijn, hoeveel dagen je op locatie wilt werken en of je ook openstaat voor de omgeving. Dat nemen we mee in het gesprek." : "We bespreken de precieze werklocatie, benodigde aanwezigheid en mogelijkheden om hybride te werken. Zo krijgt een kandidaat vooraf een duidelijk beeld van de praktische kant van de functie of opdracht."}</p></div></div></Section>
     <FAQ items={isProfessional ? [{ question: "Kan ik mijn cv alvast insturen?", answer: "Ja. Vertel welke rol je zoekt, welke inzet bij je past en wanneer je beschikbaar bent. We bespreken jouw wensen en ervaring; een inschrijving is geen garantie op werk." }, { question: "Wordt mijn cv direct doorgestuurd?", answer: "Nee. We stemmen een mogelijke introductie eerst met je af. Een open inschrijving is een kennismaking en geen toezegging van een beschikbare functie of opdracht." }] : [service.faq[0], { question: "Wat gebeurt er na mijn aanvraag?", answer: "We nemen contact op om de inhoud, inzet en verwachtingen te bespreken. Daarna ontvang je een voorstel voor de aanpak en afspraken. We starten de zoektocht na akkoord." }]} />
     <Section><p className="eyebrow">Andere mogelijkheden in Amsterdam</p><nav aria-label="Diensten in Amsterdam" className="grid sm:grid-cols-2 gap-5">{amsterdamPages.filter(item => item.audience === audience && item.slug !== slug).map(item => <a key={item.path} href={item.path} className="text-primary font-bold">{amsterdamServices.find(service => service.slug === item.slug)?.serviceName}</a>)}</nav><p className="mt-8 text-sm text-muted-foreground">{isProfessional ? "Zoek je versterking voor jouw organisatie?" : "Zoek je zelf een functie of opdracht?"} <a href={amsterdamPages.find(item => item.slug === slug && item.audience !== audience)?.path ?? "/contact"} className="font-bold text-accent">{isProfessional ? "Voor opdrachtgevers" : "Voor professionals"}</a></p></Section>
-    <ClosingCTA title={isProfessional ? "Vertel ons wat je zoekt." : "Wat heeft jouw team nodig?"} text={isProfessional ? "Deel jouw ervaring, wensen en beschikbaarheid. We bespreken de mogelijkheden zonder een baan of opdracht te beloven." : "Een eerste gesprek is vrijblijvend. We bespreken jouw vraag en de mogelijkheden voordat we afspraken maken."} href={contactHref} label={isProfessional ? "Stuur jouw cv" : "Neem contact op"} />
+    <ContactSection compact lockRole defaultRole={audience} context={page.label} heading={isProfessional ? "Deel jouw ervaring." : "Bespreek jouw vraag."} />
   </PageLayout>;
 }
 
