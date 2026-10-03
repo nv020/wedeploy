@@ -54,6 +54,7 @@ export function Footer() {
             <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.65)" }}>
               Krijn Taconiskade 461 · 1087 HW Amsterdam
             </p>
+            <p className="text-[12px]" style={{ color: "rgba(255,255,255,0.65)" }}>KvK 42072275</p>
           </div>
         </div>
 

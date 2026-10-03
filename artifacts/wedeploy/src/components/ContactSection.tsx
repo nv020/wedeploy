@@ -32,12 +32,14 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [requestContext, setRequestContext] = useState(context);
   const [activeVacancyId, setActiveVacancyId] = useState(vacancyId);
+  const [activeVacancyTitle, setActiveVacancyTitle] = useState(vacancyId ? context : "");
   useEffect(() => {
     const syncContext = () => {
       const resolved = resolveContactContext(readQuery ? window.location.search : "", { role: defaultRole, context, vacancyId });
       setRole(resolved.role);
       setRequestContext(resolved.context);
       setActiveVacancyId(resolved.vacancyId);
+      setActiveVacancyTitle(resolved.vacancyId ? resolved.context : "");
       setSent(false);
       setError(null);
       setCvFile(null);
@@ -69,6 +71,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
     setRole(next.role);
     setRequestContext(retainContext ? context : next.context);
     setActiveVacancyId(next.vacancyId);
+    setActiveVacancyTitle("");
     setSent(false);
     setError(null);
     setCvFile(null);
@@ -173,10 +176,8 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                   {/* Honeypot */}
                   <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
                   <input type="hidden" name="type" value={role} />
-                  <input type="hidden" name="onderwerp" value={requestContext} />
                   <input type="hidden" name="vacatureId" value={activeVacancyId} />
-                  <input type="hidden" name="functie" value={activeVacancyId ? requestContext : ""} />
-                  {requestContext && <p className="rounded-xl bg-accent/10 px-4 py-3 text-sm text-primary"><strong>{activeVacancyId ? "Sollicitatie:" : requestContext === "Open inschrijving" ? "" : role === "opdrachtgever" ? "Jouw aanvraag:" : "Jouw interesse:"}</strong> {requestContext}</p>}
+                  <input type="hidden" name="functie" value={activeVacancyTitle} />
 
                   {/* Naam + Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -197,6 +198,13 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                       <span className="text-primary/30 font-normal normal-case">(optioneel)</span>
                     </label>
                     <input id="contact-telefoon" type="tel" name="telefoon" placeholder="+31 6 ..." className={inputCls} />
+                  </div>
+
+                  <div>
+                    <label htmlFor="contact-onderwerp" className={labelCls}>
+                      Onderwerp{" "}<span className="text-primary/30 font-normal normal-case">(optioneel)</span>
+                    </label>
+                    <input id="contact-onderwerp" type="text" name="onderwerp" maxLength={200} value={requestContext} onChange={(e) => setRequestContext(e.target.value)} placeholder={role === "opdrachtgever" ? "Bijvoorbeeld een functie of samenwerking" : "Bijvoorbeeld een functie of opdracht"} className={inputCls} />
                   </div>
 
                   {/* Bericht */}
