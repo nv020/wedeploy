@@ -23,7 +23,7 @@ const inputCls =
 
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
-export function ContactSection({ defaultRole = "opdrachtgever", heading, context = "", readQuery = false, vacancyId = "" }: { defaultRole?: Role; heading?: string; context?: string; readQuery?: boolean; vacancyId?: string }) {
+export function ContactSection({ defaultRole = "opdrachtgever", heading, context = "", readQuery = false, vacancyId = "", showProfile = false }: { defaultRole?: Role; heading?: string; context?: string; readQuery?: boolean; vacancyId?: string; showProfile?: boolean }) {
   const [role, setRole] = useState<Role>(defaultRole);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -318,17 +318,21 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
             className="flex flex-col gap-4"
           >
             {/* White profile card */}
-            <div className="bg-white rounded-[22px] p-8 shadow-[0_4px_24px_hsl(220_50%_18%/0.06)] border border-primary/5">
+            <div className="bg-white rounded-[22px] p-5 sm:p-8 shadow-[0_4px_24px_hsl(220_50%_18%/0.06)] border border-primary/5">
 
-              <p className="eyebrow">Direct contact</p>
-              <h3 className="text-2xl font-bold text-primary mb-5">Korte lijnen.</h3>
+              {showProfile ? (
+                <div className="flex items-center gap-4 mb-6">
+                  <img src="/nicky-verkooij.webp" alt="Nicky, consultant bij Wedeploy" width="76" height="76" loading="lazy" className="w-[76px] h-[76px] shrink-0 rounded-full object-cover border-2 border-accent" style={{ objectPosition: "50% 12%" }} />
+                  <div><h3 className="text-xl font-extrabold text-primary">Nicky</h3><p className="text-sm text-muted-foreground mt-1">Consultant</p></div>
+                </div>
+              ) : <><p className="eyebrow">Direct contact</p><h3 className="text-2xl font-bold text-primary mb-5">Korte lijnen.</h3></>}
               {/* Quote */}
               <div className="border-l-[3px] border-accent pl-4">
                 <p className="text-[14px] leading-[1.72] text-primary/55 font-medium italic mb-3.5">
-                  Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap.
+                  {showProfile ? "Een professional nodig of toe aan een nieuwe opdracht? Laat je gegevens achter, dan spreken we elkaar." : "Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap."}
                 </p>
                 <p className="text-[14px] font-extrabold text-accent tracking-[-0.1px]">
-                  Een eerste gesprek is vrijblijvend.
+                  {showProfile ? "De koffie staat klaar." : "Een eerste gesprek is vrijblijvend."}
                 </p>
               </div>
             </div>

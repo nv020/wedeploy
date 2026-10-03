@@ -21,7 +21,7 @@ export function Home() {
         <HoeWijWerken />
         <ProfessionalPreview />
         <VacaturePreview />
-        <ContactSection />
+        <ContactSection showProfile />
       </main>
       <Footer />
     </div>
