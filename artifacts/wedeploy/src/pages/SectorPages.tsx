@@ -17,10 +17,10 @@ const content = {
   },
   facility: {
     label: "Facility Management", title: "Facility Management.",
-    intro: "Een facility manager, facilitair coördinator of contractmanager nodig? We zoeken versterking voor jouw dienstverlening, vast of tijdelijk.",
+    intro: "Van facilitaire regie tot workplace management en hospitality. We zoeken professionals voor een goed georganiseerde werkomgeving en gastvrije dienstverlening. Vast of tijdelijk.",
     heading: "Grip op kwaliteit.",
     paragraphs: ["Een gebouw, de dienstverlening en de mensen die er werken. We bespreken waar de facilitaire organisatie versterking nodig heeft en welke verantwoordelijkheden daarbij horen.", "Onze praktijkervaring met facilitaire teams en dienstverlening helpt om de inhoud te begrijpen: leveranciersregie, contractbeheer of een verandering van de werkomgeving."],
-    roles: [["Facility manager", "Voor leiding aan een facilitair team, samenhang in de dienstverlening en grip op leveranciers, budgetten en kwaliteit."], ["Facilitair coördinator & workplace manager", "Voor de dagelijkse organisatie op locatie. Iemand die praktische vragen oppakt, afstemt en zorgt dat afspraken worden uitgevoerd."], ["Contractmanager facilitaire diensten", "Voor heldere afspraken met dienstverleners, inzicht in prestaties en een samenwerking die ook in de praktijk werkt."]],
+    roles: [["Facility manager", "Voor leiding aan een facilitair team, samenhang in de dienstverlening en grip op leveranciers, budgetten en kwaliteit."], ["Workplace manager", "Voor een werkomgeving die aansluit op hoe mensen werken. Verbindt werkplekken, gebruikerswensen, bezetting en facilitaire dienstverlening."], ["Hospitality & ontvangst", "Voor een gastvrije ontvangst en goede service op locatie. Van hospitality managers tot receptie en frontoffice."], ["Facilitair coördinator", "Voor de dagelijkse organisatie op locatie. Pakt praktische vragen op, stemt af met leveranciers en bewaakt afspraken."], ["Contractmanager facilitaire diensten", "Voor heldere afspraken met dienstverleners, inzicht in prestaties en een samenwerking die ook in de praktijk werkt."]],
     question: "Tijdelijke of vaste versterking?",
     answer: "Bij uitval, verandering of een afgebakende verbeteropdracht kan een interim facility manager helpen. Zoek je een collega voor de lange termijn, dan bespreken we werving & selectie of detavast. Eerst de behoefte, dan de inzetvorm.",
     candidate: "Werk jij in dit vakgebied?", candidateText: "Of je nu een locatie coördineert of een facilitair team leidt: vertel ons waar je energie van krijgt. We bespreken jouw ervaring, ambities en praktische wensen.",
@@ -28,7 +28,7 @@ const content = {
   },
   projecten: {
     label: "Interim projectmanagement", title: "Regie op jouw project.",
-    intro: "Huisvesting, renovatie of verhuizing. We zoeken interim projectmanagers, projectleiders en PMO-professionals die jouw project verder brengen.",
+    intro: "Een vastgoedproject, nieuwe huisvesting of verandering in jouw organisatie. We zoeken interim projectmanagers, projectleiders en PMO-professionals voor regie en ondersteuning.",
     heading: "Welke regie is nodig?",
     paragraphs: ["Heeft jouw project leiding, coördinatie of ondersteuning nodig? We kijken naar de fase, de complexiteit en het werk dat moet gebeuren.", "We bespreken het resultaat, de beslisruimte en de samenwerking met jouw team. Daarna zoeken we naar passende projectervaring en beschikbaarheid."],
     roles: [["Interim projectmanager", "Voor regie op planning, budget en samenwerking. Van de eerste projectafspraken tot uitvoering en overdracht."], ["Projectleider huisvesting & verhuizing", "Voor het vertalen van gebruikerswensen naar een werkbaar plan en het organiseren van verbouwing, verhuizing of ingebruikname."], ["PMO & ondersteuning", "Voor PMO’ers en projectsecretarissen: voortgang, acties, verslaglegging, documentatie en afstemming binnen het projectteam."]],

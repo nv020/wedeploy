@@ -10,7 +10,7 @@ const areas = [
     id: "pm",
     num: "01",
     title: "Projectmanagement",
-    sentence: "Projectmanagers en programmamanagers voor complexe, multidisciplinaire trajecten.",
+    sentence: "Projectmanagers, projectleiders en PMO’ers voor regie en ondersteuning.",
     img: imgPM,
     alt: "Projectmanagement recruitment Wedeploy",
     span: "lg:col-span-2",
@@ -23,7 +23,7 @@ const areas = [
     id: "fm",
     num: "02",
     title: "Facility Management",
-    sentence: "Facilitair coördinatoren en managers op tactisch en strategisch niveau.",
+    sentence: "Professionals voor facilitaire regie, workplace management en hospitality.",
     img: imgFM,
     alt: "Facility Management recruitment Wedeploy",
     span: "lg:col-span-1",
@@ -88,7 +88,7 @@ export function ExpertiseAreas() {
             </h2>
           </div>
           <p className="text-[15px] leading-relaxed max-w-xs md:text-right" style={{ color: "rgba(255,255,255,0.50)" }}>
-            Wij begrijpen de sectoren en selecteren professionals die daarbinnen kunnen leveren.
+            Van projectmanagement en vastgoed tot management en administratieve ondersteuning. We kijken naar het werk én de mensen.
           </p>
         </div>
 

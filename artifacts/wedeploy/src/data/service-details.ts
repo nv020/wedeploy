@@ -26,7 +26,9 @@ export const serviceDetails: Record<string, { employer: string; professional: st
 };
 export const expertiseDetails: Record<string, { text: string; path?: string }> = {
   projectmanagement: { text: "We kijken naar de fase van het project, het gewenste resultaat en de ruimte om beslissingen te nemen. Zo maken we onderscheid tussen projectleiding, coördinatie en PMO-ondersteuning.", path: "/interim-projectmanagement" },
-  facility: { text: "Van een locatie die elke dag moet draaien tot een organisatie die haar dienstverlening verandert. We bespreken het team, de leveranciers en de verantwoordelijkheden om het juiste profiel te bepalen.", path: "/facility-management" },
+  facility: { text: "Workplace management richt zich op een werkomgeving die het werk ondersteunt. Hospitality draait om ontvangst, service en de ervaring van medewerkers en bezoekers. We bespreken welke verantwoordelijkheid jouw team mist en wie daarbij past.", path: "/facility-management" },
   vastgoed: { text: "Een beheerportefeuille vraagt om andere ervaring dan een ontwikkel- of huisvestingsproject. We bespreken de gebouwen, gebruikers en opgave voordat we professionals benaderen.", path: "/vastgoed" },
+  management: { text: "We bespreken de teamsamenstelling, beslisruimte en het resultaat dat je van de manager verwacht. Zo zoeken we naar relevante leidinggevende ervaring voor een vaste positie of tijdelijke opdracht." },
+  ondersteuning: { text: "Van nauwkeurige administratie tot agenda’s, overleggen en documentatie. We maken de taken concreet en bespreken welke systemen, zelfstandigheid en samenwerking nodig zijn." },
   techniek: { text: "We brengen de installaties, onderhoudsvraag en werkomgeving in kaart. Het profiel kan uitvoerend, coördinerend of projectgericht zijn, afhankelijk van de technische opgave." },
 };
