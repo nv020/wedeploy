@@ -98,7 +98,7 @@ export function DienstenOverview() {
               ))}
             </ul>
             <motion.a
-              href="#kandidaten"
+              href="#contact"
               whileHover={{ y: -2, boxShadow: "0 8px 24px hsl(220 50% 18% / 0.10)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.2 }}

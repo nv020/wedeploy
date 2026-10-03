@@ -115,7 +115,7 @@ export function Hero() {
               Ik zoek versterking <span aria-hidden>→</span>
             </motion.a>
             <motion.a
-              href="#kandidaten"
+              href="#contact"
               whileHover={{ y: -2 }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}
