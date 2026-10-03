@@ -4,7 +4,7 @@ import heroImg from "@assets/hero-professionals.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 const stagger = {
@@ -20,9 +20,9 @@ export function Hero() {
     >
       {/* Full-bleed editorial image — absolutely positioned right */}
       <motion.div
-        initial={{ opacity: 0, scale: 1.04 }}
+        initial={false}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.1, ease: [0.25, 0.1, 0.25, 1] }}
+        transition={{ duration: 1.1, ease: [0.25, 0.1, 0.25, 1] as const }}
         className="absolute top-0 right-0 h-full w-[65%] md:w-[72%] lg:w-[75%]"
       >
         <img
@@ -32,6 +32,8 @@ export function Hero() {
           className="w-full h-full object-cover"
           style={{ objectPosition: "center top" }}
           loading="eager"
+          fetchPriority="high"
+          width="1200" height="800"
         />
         {/* Strong navy gradient masking left into text column */}
         <div
@@ -67,7 +69,7 @@ export function Hero() {
         <div className="container mx-auto px-4 md:px-6 w-full">
         <motion.div
           variants={stagger}
-          initial="hidden"
+          initial={false}
           animate="visible"
           className="flex flex-col w-full max-w-[520px]"
         >
@@ -100,13 +102,13 @@ export function Hero() {
             className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
             style={{ color: "rgba(255,255,255,0.50)" }}
           >
-            Kwaliteit boven kwantiteit. Duurzame matches in projectmanagement, facility, vastgoed en techniek.
+            Werving & selectie, detachering en interim voor vastgoed, facility, projectmanagement en techniek. Persoonlijk contact, met kennis van het werk.
           </motion.p>
 
           {/* CTAs */}
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-10">
             <motion.a
-              href="#contact"
+              href="/opdrachtgevers"
               whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(205 85% 53% / 0.38)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}
@@ -115,7 +117,7 @@ export function Hero() {
               Ik zoek versterking <span aria-hidden>→</span>
             </motion.a>
             <motion.a
-              href="#contact"
+              href="/vacatures"
               whileHover={{ y: -2 }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}

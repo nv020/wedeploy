@@ -32,10 +32,10 @@ export function DienstenOverview() {
 
           {/* Opdrachtgevers — navy card */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] as const }}
             whileHover={{ y: -5 }}
             className="bg-primary rounded-2xl p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
           >
@@ -61,23 +61,23 @@ export function DienstenOverview() {
                 ))}
               </ul>
               <motion.a
-                href="#contact"
+                href="/opdrachtgevers"
                 whileHover={{ y: -2, boxShadow: "0 8px 30px hsl(205 85% 53% / 0.4)" }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
               >
-                Laten we matchen <ArrowRight className="w-4 h-4" />
+                Bekijk onze aanpak <ArrowRight className="w-4 h-4" />
               </motion.a>
             </div>
           </motion.div>
 
           {/* Professionals — white card */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.55, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] as const }}
             whileHover={{ y: -5 }}
             className="bg-white border border-border/50 rounded-2xl p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
           >
@@ -98,7 +98,7 @@ export function DienstenOverview() {
               ))}
             </ul>
             <motion.a
-              href="#contact"
+              href="/vacatures"
               whileHover={{ y: -2, boxShadow: "0 8px 24px hsl(220 50% 18% / 0.10)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.2 }}

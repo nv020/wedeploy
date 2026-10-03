@@ -1,7 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
-import nickPhoto from "@assets/Nick_1780149335945.png";
+const nickPhoto = "/nicky-verkooij.webp";
 
 type Role = "opdrachtgever" | "kandidaat";
 
@@ -23,13 +23,21 @@ const inputCls =
 
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
-export function ContactSection() {
-  const [role, setRole] = useState<Role>("opdrachtgever");
+export function ContactSection({ defaultRole = "opdrachtgever", heading, context = "", readQuery = false, vacancyId = "" }: { defaultRole?: Role; heading?: string; context?: string; readQuery?: boolean; vacancyId?: string }) {
+  const [role, setRole] = useState<Role>(defaultRole);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [cvFile, setCvFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [requestContext, setRequestContext] = useState(context);
+  useEffect(() => {
+    if (!readQuery) return;
+    const query = new URLSearchParams(window.location.search);
+    if (query.get("type") === "kandidaat") setRole("kandidaat");
+    const requested = query.get("profiel") ?? query.get("onderwerp") ?? "";
+    setRequestContext(requested.slice(0, 200));
+  }, [readQuery]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -60,10 +68,10 @@ export function ContactSection() {
 
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-12"
         >
           <div>
@@ -73,8 +81,7 @@ export function ContactSection() {
               <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
             </div>
             <h2 className="text-[2.4rem] md:text-[2.8rem] font-extrabold text-primary tracking-[-2px] leading-[1.06]">
-              Klaar voor een{" "}
-              <span className="text-accent">duurzame</span> match?
+              {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
             </h2>
           </div>
           <div className="flex gap-9 md:gap-10">
@@ -95,10 +102,10 @@ export function ContactSection() {
 
           {/* LEFT — Form card */}
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
             className="bg-white rounded-[22px] p-9 shadow-[0_4px_40px_hsl(220_50%_18%/0.07)] border border-primary/5"
           >
             {/* Role toggle — pill bar */}
@@ -126,7 +133,7 @@ export function ContactSection() {
               {sent ? (
                 <motion.div
                   key="success"
-                  initial={{ opacity: 0, scale: 0.96 }}
+                  initial={false}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
                   className="text-center py-12"
@@ -136,13 +143,13 @@ export function ContactSection() {
                   </div>
                   <h3 className="text-[20px] font-bold text-primary mb-2">Bericht ontvangen</h3>
                   <p className="text-muted-foreground text-[15px] max-w-xs mx-auto leading-relaxed">
-                    We nemen binnen één werkdag persoonlijk contact met u op.
+                    We nemen binnen één werkdag persoonlijk contact met je op.
                   </p>
                 </motion.div>
               ) : (
                 <motion.form
                   key={role}
-                  initial={{ opacity: 0, y: 6 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -6 }}
                   transition={{ duration: 0.2 }}
@@ -152,42 +159,46 @@ export function ContactSection() {
                   {/* Honeypot */}
                   <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
                   <input type="hidden" name="type" value={role} />
+                  <input type="hidden" name="onderwerp" value={requestContext} />
+                  <input type="hidden" name="vacatureId" value={vacancyId} />
+                  {requestContext && <p className="rounded-xl bg-accent/10 px-4 py-3 text-sm text-primary"><strong>Je reactie gaat over:</strong> {requestContext}</p>}
 
                   {/* Naam + Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className={labelCls}>Naam <span className="text-accent">*</span></label>
-                      <input required type="text" name="naam" placeholder="Volledige naam" className={inputCls} />
+                      <label htmlFor="contact-naam" className={labelCls}>Naam <span className="text-accent">*</span></label>
+                      <input required id="contact-naam" type="text" name="naam" placeholder="Volledige naam" className={inputCls} />
                     </div>
                     <div>
-                      <label className={labelCls}>E-mail <span className="text-accent">*</span></label>
-                      <input required type="email" name="email" placeholder="uw@email.nl" className={inputCls} />
+                      <label htmlFor="contact-email" className={labelCls}>E-mail <span className="text-accent">*</span></label>
+                      <input required id="contact-email" type="email" name="email" placeholder="jouw@email.nl" className={inputCls} />
                     </div>
                   </div>
 
                   {/* Telefoon */}
                   <div>
-                    <label className={labelCls}>
+                    <label htmlFor="contact-telefoon" className={labelCls}>
                       Telefoon{" "}
                       <span className="text-primary/30 font-normal normal-case">(optioneel)</span>
                     </label>
-                    <input type="tel" name="telefoon" placeholder="+31 6 ..." className={inputCls} />
+                    <input id="contact-telefoon" type="tel" name="telefoon" placeholder="+31 6 ..." className={inputCls} />
                   </div>
 
                   {/* Bericht */}
                   <div>
-                    <label className={labelCls}>
+                    <label htmlFor="contact-bericht" className={labelCls}>
                       {role === "opdrachtgever" ? "Omschrijving" : "Motivatie"}{" "}
                       <span className="text-accent">*</span>
                     </label>
                     <textarea
                       required
                       rows={4}
+                      id="contact-bericht"
                       name="bericht"
                       placeholder={
                         role === "opdrachtgever"
-                          ? "Beschrijf het type professional, de functie en eventuele bijzonderheden..."
-                          : "Vertel ons kort over uzelf, uw achtergrond en waarnaar u op zoek bent..."
+                          ? "Vertel welke professional je zoekt en wat diegene moet doen..."
+                          : "Vertel kort over jouw ervaring, gewenste functie of opdracht, regio en beschikbaarheid..."
                       }
                       className={`${inputCls} resize-none`}
                     />
@@ -198,18 +209,19 @@ export function ContactSection() {
                     {role === "kandidaat" && (
                       <motion.div
                         key="cv-upload"
-                        initial={{ opacity: 0, height: 0 }}
+                        initial={false}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.22 }}
                         style={{ overflow: "hidden" }}
                       >
-                        <label className={labelCls}>
+                        <label htmlFor="contact-cv" className={labelCls}>
                           CV uploaden{" "}
                           <span className="text-primary/30 font-normal normal-case">(optioneel · PDF, Word · max. 3 MB)</span>
                         </label>
                         <input
                           ref={fileInputRef}
+                          id="contact-cv"
                           type="file"
                           accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                           className="hidden"
@@ -261,6 +273,7 @@ export function ContactSection() {
                     </div>
                   )}
 
+                  <p className="text-xs leading-relaxed text-muted-foreground">We gebruiken jouw gegevens om deze reactie te behandelen. Lees onze <a href="/privacy" className="underline">privacyverklaring</a>.</p>
                   {/* Submit */}
                   <motion.button
                     type="submit"
@@ -274,7 +287,7 @@ export function ContactSection() {
                   </motion.button>
 
                   <p className="text-center text-[11.5px] text-primary/25">
-                    Reactie binnen 24 uur · Volledig vertrouwelijk
+                    Reactie binnen één werkdag · We gaan zorgvuldig om met jouw gegevens.
                   </p>
                 </motion.form>
               )}
@@ -283,10 +296,10 @@ export function ContactSection() {
 
           {/* RIGHT — Profile column */}
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.18, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.6, delay: 0.18, ease: [0.25, 0.1, 0.25, 1] as const }}
             className="flex flex-col gap-4"
           >
             {/* White profile card */}
@@ -297,8 +310,9 @@ export function ContactSection() {
                 <div className="w-[76px] h-[76px] rounded-full overflow-hidden flex-shrink-0 border-[2.5px] border-accent shadow-[0_0_0_4px_hsl(205_85%_53%/0.12)]">
                   <img
                     src={nickPhoto}
-                    alt="Nicky"
+                    alt="Nicky Verkooij van WeDeploy"
                     className="w-full h-full object-cover"
+                    width="76" height="76"
                     style={{ objectPosition: "50% 12%" }}
                   />
                 </div>

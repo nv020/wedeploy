@@ -62,7 +62,7 @@ const areas = [
 
 const cardVariant = {
   hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 const stagger = {
@@ -95,16 +95,17 @@ export function ExpertiseAreas() {
         {/* Editorial bento grid */}
         <motion.div
           variants={stagger}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"
         >
           {areas.map((area) => (
-            <motion.div
+            <motion.a
+              href={`/expertise-diensten#${({ pm: "projectmanagement", fm: "facility", vastgoed: "vastgoed", tech: "techniek" } as Record<string, string>)[area.id]}`}
               key={area.id}
               variants={cardVariant}
-              className={`group relative overflow-hidden cursor-default ${area.span} ${area.height}`}
+              className={`group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}
               style={{ borderRadius: "16px" }}
             >
               {/* Photo */}
@@ -164,7 +165,7 @@ export function ExpertiseAreas() {
                 className="absolute bottom-0 left-0 h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out z-20"
                 style={{ background: area.accent }}
               />
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
 

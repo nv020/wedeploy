@@ -26,7 +26,7 @@ const steps = [
 
 const stepVariants = {
   hidden: { opacity: 0, y: 16 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 const containerVariants = {
@@ -62,7 +62,7 @@ export function HoeWijWerken() {
         {/* Desktop: compact linked cards */}
         <motion.div
           variants={containerVariants}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
           className="hidden md:grid md:grid-cols-4 gap-3"
@@ -106,7 +106,7 @@ export function HoeWijWerken() {
         {/* Mobile: compact vertical */}
         <motion.div
           variants={containerVariants}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-40px" }}
           className="md:hidden flex flex-col gap-3"

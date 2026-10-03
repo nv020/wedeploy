@@ -1,9 +1,10 @@
 const navLinks = [
-  { label: "Diensten", href: "#diensten" },
-  { label: "Expertisegebieden", href: "#diensten-expertise" },
-  { label: "Werkwijze", href: "#werkwijze" },
-  { label: "Vacatures", href: "#vacatures" },
-  { label: "Contact", href: "#contact" },
+  { label: "Opdrachtgevers", href: "/opdrachtgevers" },
+  { label: "Professionals", href: "/professionals" },
+  { label: "Vacatures", href: "/vacatures" },
+  { label: "Expertise & diensten", href: "/expertise-diensten" },
+  { label: "Over ons", href: "/over-ons" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
@@ -32,7 +33,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14 pb-14 border-b border-white/10">
           <div>
             <a
-              href="#home"
+              href="/"
               className="inline-flex items-baseline text-[26px] font-extrabold leading-none mb-3"
               style={{ letterSpacing: "-0.3px" }}
             >
@@ -84,8 +85,7 @@ export function Footer() {
 
           <div className="flex items-center gap-4 text-[11px]" style={{ color: "rgba(255,255,255,0.28)" }}>
             <span>&copy; {new Date().getFullYear()} Wedeploy</span>
-            <a href="#privacy" className="hover:text-white/55 transition-colors">Privacy</a>
-            <a href="#cookies" className="hover:text-white/55 transition-colors">Cookies</a>
+            <a href="/privacy" className="hover:text-white/55 transition-colors">Privacy</a>
           </div>
         </div>
 

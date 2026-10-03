@@ -9,8 +9,8 @@ const pillars = [
   },
   {
     num: "02",
-    title: "Context boven keywords",
-    desc: "We kijken naar de opdracht, het team en de organisatiefase — niet alleen naar een functietitel of beschikbaarheid.",
+    title: "Het werk en het team",
+    desc: "We kijken naar de opdracht, het team en wat iemand moet bereiken. Ervaring én samenwerking tellen mee.",
   },
   {
     num: "03",
@@ -21,7 +21,7 @@ const pillars = [
 
 const cardVariants = {
   hidden: { opacity: 0, y: 18 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 const stagger = {
@@ -44,10 +44,10 @@ export function WaaromWedeploy() {
 
           {/* Left — editorial text */}
           <motion.div
-            initial={{ opacity: 0, y: 22 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const }}
             className="lg:sticky lg:top-28"
           >
             <div className="inline-flex items-center gap-2.5 mb-6 px-4 py-1.5 rounded-full border"
@@ -81,13 +81,13 @@ export function WaaromWedeploy() {
                 Laten we matchen <ArrowRight className="w-4 h-4" />
               </motion.a>
               <motion.a
-                href="#vacatures"
+                href="/vacatures"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.18 }}
                 className="inline-flex items-center gap-2 rounded-full border border-border text-muted-foreground px-7 py-3.5 text-[13.5px] font-semibold hover:border-primary/40 hover:text-primary transition-colors duration-200"
               >
-                Bekijk openstaande rollen
+                Bekijk jouw mogelijkheden
               </motion.a>
             </div>
           </motion.div>
@@ -95,7 +95,7 @@ export function WaaromWedeploy() {
           {/* Right — 3 numbered white cards */}
           <motion.div
             variants={stagger}
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
             className="flex flex-col gap-4 pt-2"

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.wedeploy.nl/</loc></url>
+  <url><loc>https://www.wedeploy.nl/opdrachtgevers</loc></url>
+  <url><loc>https://www.wedeploy.nl/professionals</loc></url>
+  <url><loc>https://www.wedeploy.nl/vacatures</loc></url>
+  <url><loc>https://www.wedeploy.nl/expertise-diensten</loc></url>
+  <url><loc>https://www.wedeploy.nl/over-ons</loc></url>
+  <url><loc>https://www.wedeploy.nl/contact</loc></url>
+  <url><loc>https://www.wedeploy.nl/privacy</loc></url>
 </urlset>
