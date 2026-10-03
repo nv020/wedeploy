@@ -1,33 +1,29 @@
 import type { ReactNode } from "react";
-
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-
 export const buttonClass = "inline-flex items-center justify-center gap-2 max-w-full rounded-full bg-accent px-6 py-3.5 text-sm font-bold text-white hover:bg-accent/90 transition-colors";
 export function ActionLink({ href, children, secondary = false }: { href: string; children: ReactNode; secondary?: boolean }) {
-  return <a href={href} className={secondary ? "inline-flex items-center gap-2 rounded-full border border-current/25 px-6 py-3.5 text-sm font-semibold hover:bg-white/10 transition-colors" : buttonClass}>{children}</a>;
+  return <a href={href} className={secondary ? "secondary-action inline-flex items-center py-3 text-sm font-semibold" : buttonClass}>{children}</a>;
 }
-export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string } }) {
-  return <div className="min-h-screen bg-background"><Header /><main id="main-content">
-    <section className="page-intro bg-primary text-white relative overflow-hidden py-12 md:py-24">
-      <div className="absolute right-0 top-0 w-80 h-80 rounded-full bg-accent/10 blur-3xl pointer-events-none" />
-      <div className="container mx-auto px-4 md:px-6 relative">
-        <nav aria-label="Broodkruimel" className="flex items-center gap-2 text-xs text-white/60 mb-9"><a href="/" className="hover:text-white">Home</a><span aria-hidden="true" className="text-white/30">/</span><span aria-current="page">{label}</span></nav>
-        <p className="text-accent uppercase text-xs font-bold tracking-[2px] mb-5">{label}</p>
-        <h1 className="page-title max-w-4xl font-extrabold leading-[1.1] tracking-tight">{title}</h1>
-        <p className="max-w-2xl text-base md:text-lg text-white/75 leading-relaxed mt-6">{intro}</p>
-        {cta && <div className="flex flex-wrap gap-3 mt-8"><ActionLink href={ctaHref}>{cta}</ActionLink>{secondary && <ActionLink href={secondary.href} secondary>{secondary.label}</ActionLink>}</div>}
+type IntroVariant = "editorial" | "split" | "quiet" | "navy";
+export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary, variant = "editorial", image, imageAlt = "" }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string }; variant?: IntroVariant; image?: string; imageAlt?: string }) {
+  const actions = cta && <div className="intro-actions flex flex-wrap gap-x-6 gap-y-2 mt-7"><ActionLink href={ctaHref}>{cta}</ActionLink>{secondary && <ActionLink href={secondary.href} secondary>{secondary.label}</ActionLink>}</div>;
+  return <div className={`page-shell page-${variant} min-h-screen bg-background`}><Header /><main id="main-content">
+    <section className={`agency-intro intro-${variant}`}>
+      <div className="container mx-auto px-4 md:px-6">
+        <nav aria-label="Broodkruimel" className="intro-breadcrumb flex flex-wrap items-center gap-2 text-xs mb-8"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">{label}</span></nav>
+        {variant === "split" ? <div className="intro-split-grid"><div><p className="eyebrow">{label}</p><div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div><p className="intro-description mt-6">{intro}</p>{actions}</div>{image ? <div className="intro-photo"><img src={image} alt={imageAlt} width="800" height="600" fetchPriority="high" /></div> : <div className="intro-side-note" aria-hidden="true">Het werk.<br />De mensen.<br /><span>De verbinding.</span></div>}</div> : <><p className="eyebrow">{label}</p><div className="intro-editorial-grid"><div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div><div className="intro-copy"><p className="intro-description">{intro}</p>{actions}</div></div></>}
       </div>
     </section>
     {children}
   </main><Footer /></div>;
 }
-export function Section({ children, id, navy = false }: { children: ReactNode; id?: string; navy?: boolean }) {
-  return <section id={id} className={`py-12 md:py-20 ${navy ? "bg-primary text-white" : ""}`}><div className="container mx-auto px-4 md:px-6">{children}</div></section>;
+export function Section({ children, id, navy = false, tone = "plain" }: { children: ReactNode; id?: string; navy?: boolean; tone?: "plain" | "white" | "wash" }) {
+  return <section id={id} className={`agency-section ${navy ? "section-navy" : `section-${tone}`}`}><div className="container mx-auto px-4 md:px-6">{children}</div></section>;
 }
 export function ClosingCTA({ title = "Even kennismaken?", text = "Vertel ons wat je zoekt. Dan bespreken we hoe Wedeploy kan helpen.", label = "Bespreek jouw vraag", href = "/contact" }: { title?: string; text?: string; label?: string; href?: string }) {
-  return <section className="closing-cta"><div className="container mx-auto px-4 md:px-6"><div className="flex flex-col md:flex-row md:items-center justify-between gap-7"><div><h2 className="text-3xl md:text-4xl font-bold tracking-tight">{title}</h2><p className="mt-4 text-muted-foreground max-w-xl leading-relaxed">{text}</p></div><div className="shrink-0"><ActionLink href={href}>{label}</ActionLink></div></div></div></section>;
+  return <section className="agency-closing"><div className="container mx-auto px-4 md:px-6"><p className="eyebrow">Laten we praten</p><div className="closing-composition"><h2>{title}</h2><div><p className="text-muted-foreground leading-relaxed mb-6">{text}</p><ActionLink href={href}>{label}</ActionLink></div></div></div></section>;
 }
 export function FAQ({ items }: { items: { question: string; answer: string }[] }) {
-  return <Section><div className="max-w-3xl mx-auto"><h2 className="text-3xl font-bold text-primary mb-7">Goed om te weten</h2><div className="divide-y divide-border">{items.map(item => <details key={item.question} className="py-5 group"><summary className="cursor-pointer font-bold text-primary leading-relaxed">{item.question}</summary><p className="pt-3 text-muted-foreground leading-relaxed">{item.answer}</p></details>)}</div></div></Section>;
+  return <Section tone="white"><div className="faq-composition"><div><p className="eyebrow">Goed om te weten</p><h2 className="faq-title">Nog vragen?</h2></div><div className="divide-y divide-border">{items.map(item => <details key={item.question} className="py-5 group"><summary className="cursor-pointer font-bold text-primary leading-relaxed">{item.question}</summary><p className="pt-3 text-muted-foreground leading-relaxed">{item.answer}</p></details>)}</div></div></Section>;
 }

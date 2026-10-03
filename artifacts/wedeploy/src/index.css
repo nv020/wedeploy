@@ -322,3 +322,79 @@ main a:hover { text-decoration-thickness: 2px; }
 }
 
 main a, main button { text-wrap: balance; }
+
+/* Page compositions: typography carries the layout, rather than repeated panels. */
+.agency-intro { padding: 2rem 0 3.5rem; color: hsl(var(--primary)); }
+.intro-breadcrumb { color: hsl(var(--muted-foreground)); }
+.agency-intro .page-title { font-weight: 800; letter-spacing: -.055em; line-height: 1.06; max-width: 100%; }
+.intro-description { font-size: 1rem; line-height: 1.8; max-width: 38rem; color: hsl(var(--muted-foreground)); }
+.intro-editorial-grid, .intro-split-grid { display: grid; gap: 2rem; }
+.intro-editorial { border-bottom: 1px solid hsl(var(--border)); }
+.intro-editorial .page-title { font-size: clamp(2rem, 6.8vw, 5.6rem); }
+.intro-navy { background: hsl(var(--primary)); color: white; }
+.intro-navy .intro-description, .intro-navy .intro-breadcrumb { color: hsl(0 0% 100% / .75); }
+.intro-navy .page-title { font-size: clamp(2rem, 6.5vw, 5.2rem); }
+.intro-quiet { padding-bottom: 2rem; }
+.intro-quiet .page-title { font-size: clamp(1.9rem, 4vw, 3.8rem); }
+.intro-quiet .intro-copy { max-width: 45rem; }
+.intro-split .page-title { font-size: clamp(2rem, 4.8vw, 4.2rem); }
+.intro-photo { overflow: hidden; border-radius: 1rem 4rem 1rem 1rem; aspect-ratio: 4/3; }
+.intro-photo img { width: 100%; height: 100%; object-fit: cover; }
+.intro-side-note { border-top: 2px solid hsl(var(--accent)); padding-top: 1.5rem; font-size: clamp(1.8rem, 3vw, 3rem); font-weight: 800; line-height: 1.2; letter-spacing: -.045em; }
+.intro-side-note span { color: hsl(var(--accent)); }
+.secondary-action { text-decoration: underline !important; text-underline-offset: .35em; }
+.agency-section { padding: 3rem 0; }
+.section-white { background: white; }
+.section-wash { background: hsl(var(--accent) / .055); }
+.section-navy { background: hsl(var(--primary)); color: white; }
+.service-editorial-list { display: grid; gap: 0 3rem; }
+.service-editorial-list .editorial-item { padding: 1.75rem 0; }
+.expertise-composition { display: grid; gap: 1rem 4rem; }
+.expertise-composition .editorial-item { padding: 1.75rem 0; }
+.professional-list { display: block; }
+.professional-row { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 1rem; padding: 2rem 0; }
+.profile-index { font-size: 1.5rem; font-weight: 800; color: hsl(var(--accent)); letter-spacing: -.05em; }
+.professional-row h3 { font-size: clamp(1.3rem, 3vw, 2.1rem); }
+.professional-row:nth-child(even) { padding-left: 0; border-left: 0; }
+.profile-copy { max-width: 45rem; }
+.profile-copy > p { max-width: 38rem; }
+.faq-composition, .closing-composition { display: grid; gap: 2rem; }
+.faq-title { font-size: clamp(2rem, 4vw, 3.8rem); font-weight: 800; color: hsl(var(--primary)); letter-spacing: -.05em; }
+.agency-closing { padding: 3.5rem 0; background: hsl(var(--background)); color: hsl(var(--primary)); border-top: 1px solid hsl(var(--border)); }
+.closing-composition h2 { font-size: clamp(2rem, 5vw, 4.5rem); line-height: 1.08; font-weight: 800; letter-spacing: -.055em; }
+.sector-statement { display: grid; gap: 2rem; color: hsl(var(--primary)); }
+.candidate-story { display: grid; gap: 2rem; }
+@media (min-width: 768px) {
+  .agency-intro { padding: 3rem 0 5rem; }
+  .intro-editorial-grid { grid-template-columns: 1.3fr .7fr; align-items: end; gap: 4rem; }
+  .intro-navy .intro-editorial-grid { grid-template-columns: 1.1fr .9fr; align-items: center; }
+  .intro-split-grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 4rem; }
+  .intro-photo { aspect-ratio: 4/5; }
+  .intro-quiet .intro-editorial-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .intro-side-note { margin-left: 2rem; }
+  .agency-section { padding: 4.5rem 0; }
+  .service-editorial-list { grid-template-columns: 1fr 1fr; }
+  .service-editorial-list .editorial-item:nth-child(even) { margin-top: 3rem; }
+  .expertise-composition { grid-template-columns: 1.15fr .85fr; }
+  .expertise-composition .editorial-item:nth-child(even) { margin-top: 3rem; }
+  .professional-row { grid-template-columns: 5rem minmax(0, 1fr); gap: 2rem; padding: 2.5rem 0; }
+  .profile-index { font-size: 3.5rem; }
+  .professional-row:nth-child(even) .profile-copy { margin-left: 3rem; }
+  .faq-composition { grid-template-columns: .7fr 1.3fr; gap: 5rem; }
+  .closing-composition { grid-template-columns: 1.2fr .8fr; align-items: center; gap: 5rem; }
+  .agency-closing { padding: 5rem 0; }
+  .sector-statement { grid-template-columns: 1fr; max-width: 52rem; margin-left: auto; margin-right: auto; }
+  .sector-statement > h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
+  .candidate-story { grid-template-columns: 1fr; max-width: 56rem; margin: auto; }
+  .candidate-story > div:last-child { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+}
+@media (max-width: 767px) {
+  .intro-side-note { display: none; }
+  .intro-photo { max-height: 280px; }
+  .intro-split .intro-actions { margin-bottom: .5rem; }
+}
+
+.intro-title-wrap { container-type: inline-size; min-width: 0; }
+.agency-intro .page-title { font-size: clamp(1.65rem, 10cqw, 5.6rem); }
+.intro-quiet .page-title { font-size: clamp(1.8rem, 7cqw, 3.8rem); }
+.intro-photo { background: hsl(var(--muted)); }
