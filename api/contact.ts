@@ -71,7 +71,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const onderwerp = get("onderwerp").replace(/[\r\n]/g, " ").slice(0, 200);
     const type = get("type") === "kandidaat" ? "Professional" : "Opdrachtgever";
     const { error } = await new Resend(apiKey).emails.send({
-      from: "WeDeploy <no-reply@wedeploy.nl>",
+      from: "Wedeploy <no-reply@wedeploy.nl>",
       to: "info@wedeploy.nl",
       replyTo: email,
       subject: functie ? `Nieuwe reactie — ${functie}` : onderwerp ? `Nieuwe aanvraag — ${onderwerp}` : `Nieuwe aanvraag — ${type}`,

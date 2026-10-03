@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
 const nickPhoto = "/nicky-verkooij.webp";
 
-type Role = "opdrachtgever" | "kandidaat";
+import { resolveContactContext, switchContactRole, type ContactRole as Role } from "./contact-context";
 
 const API_BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? "";
 
@@ -19,7 +19,7 @@ async function submitForm(data: FormData): Promise<void> {
 }
 
 const inputCls =
-  "w-full rounded-[10px] border border-primary/10 bg-[#FEFDF9] px-3.5 py-2.5 text-[13.5px] text-primary placeholder:text-primary/30 outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all duration-200";
+  "w-full rounded-[10px] border border-primary/10 bg-[#FEFDF9] px-3.5 py-2.5 text-base text-primary placeholder:text-primary/30 outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all duration-200";
 
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
@@ -31,13 +31,21 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
   const [cvFile, setCvFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [requestContext, setRequestContext] = useState(context);
+  const [activeVacancyId, setActiveVacancyId] = useState(vacancyId);
   useEffect(() => {
-    if (!readQuery) return;
-    const query = new URLSearchParams(window.location.search);
-    if (query.get("type") === "kandidaat") setRole("kandidaat");
-    const requested = query.get("profiel") ?? query.get("onderwerp") ?? "";
-    setRequestContext(requested.slice(0, 200));
-  }, [readQuery]);
+    const syncContext = () => {
+      const resolved = resolveContactContext(readQuery ? window.location.search : "", { role: defaultRole, context, vacancyId });
+      setRole(resolved.role);
+      setRequestContext(resolved.context);
+      setActiveVacancyId(resolved.vacancyId);
+      setSent(false);
+      setError(null);
+      setCvFile(null);
+    };
+    syncContext();
+    window.addEventListener("popstate", syncContext);
+    return () => window.removeEventListener("popstate", syncContext);
+  }, [readQuery, context, defaultRole, vacancyId]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -56,14 +64,18 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
   };
 
   const handleRoleSwitch = (r: Role) => {
-    setRole(r);
+    if (r === role) return;
+    const next = switchContactRole({ role, context: requestContext, vacancyId: activeVacancyId }, r);
+    setRole(next.role);
+    setRequestContext(next.context);
+    setActiveVacancyId(next.vacancyId);
     setSent(false);
     setError(null);
     setCvFile(null);
   };
 
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Section header */}
@@ -80,7 +92,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
               <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
               <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
             </div>
-            <h2 className="text-[2.4rem] md:text-[2.8rem] font-extrabold text-primary tracking-[-2px] leading-[1.06]">
+            <h2 className="text-[clamp(1.85rem,6vw,2.8rem)] font-extrabold text-primary tracking-tight leading-[1.06]">
               {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
             </h2>
           </div>
@@ -106,7 +118,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
-            className="bg-white rounded-[22px] p-9 shadow-[0_4px_40px_hsl(220_50%_18%/0.07)] border border-primary/5"
+            className="bg-white rounded-[22px] p-5 sm:p-9 shadow-[0_4px_40px_hsl(220_50%_18%/0.07)] border border-primary/5"
           >
             {/* Role toggle — pill bar */}
             <div className="flex gap-1.5 mb-7 bg-background rounded-[14px] p-1.5">
@@ -118,6 +130,8 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                   key={opt.key}
                   type="button"
                   onClick={() => handleRoleSwitch(opt.key)}
+                  aria-pressed={role === opt.key}
+                  disabled={loading}
                   className={`flex-1 rounded-[10px] py-3 text-[12.5px] font-bold transition-all duration-200 ${
                     role === opt.key
                       ? "bg-primary text-white shadow-sm"
@@ -160,8 +174,9 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                   <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
                   <input type="hidden" name="type" value={role} />
                   <input type="hidden" name="onderwerp" value={requestContext} />
-                  <input type="hidden" name="vacatureId" value={vacancyId} />
-                  {requestContext && <p className="rounded-xl bg-accent/10 px-4 py-3 text-sm text-primary"><strong>Je reactie gaat over:</strong> {requestContext}</p>}
+                  <input type="hidden" name="vacatureId" value={activeVacancyId} />
+                  <input type="hidden" name="functie" value={activeVacancyId ? requestContext : ""} />
+                  {requestContext && <p className="rounded-xl bg-accent/10 px-4 py-3 text-sm text-primary"><strong>{activeVacancyId ? "Sollicitatie:" : requestContext === "Open inschrijving" ? "" : role === "opdrachtgever" ? "Jouw aanvraag:" : "Jouw interesse:"}</strong> {requestContext}</p>}
 
                   {/* Naam + Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -257,7 +272,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                           >
                             <Paperclip className="w-4 h-4 text-primary/30 group-hover:text-accent transition-colors" />
                             <span className="text-[13px] text-primary/30 group-hover:text-primary transition-colors">
-                              Klik om uw CV te uploaden
+                              Kies jouw cv
                             </span>
                           </button>
                         )}
@@ -310,7 +325,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                 <div className="w-[76px] h-[76px] rounded-full overflow-hidden flex-shrink-0 border-[2.5px] border-accent shadow-[0_0_0_4px_hsl(205_85%_53%/0.12)]">
                   <img
                     src={nickPhoto}
-                    alt="Nicky Verkooij van WeDeploy"
+                    alt="Nicky Verkooij van Wedeploy"
                     className="w-full h-full object-cover"
                     width="76" height="76"
                     style={{ objectPosition: "50% 12%" }}
@@ -339,7 +354,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
             </div>
 
             {/* Contact pills */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 { label: "E-mail",    val: "info@wedeploy.nl",  href: "mailto:info@wedeploy.nl" },
                 { label: "Telefoon",  val: "085 212 8668",      href: "tel:0852128668" },

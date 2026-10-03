@@ -37,7 +37,7 @@ export function DienstenOverview() {
             viewport={{ once: true }}
             transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] as const }}
             whileHover={{ y: -5 }}
-            className="bg-primary rounded-2xl p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
+            className="bg-primary rounded-[2rem_.5rem_2rem_.5rem] p-6 sm:p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
           >
             <div
               className="absolute top-0 right-0 w-64 h-64 opacity-[0.08] -translate-y-1/4 translate-x-1/4 pointer-events-none rounded-full"
@@ -79,7 +79,7 @@ export function DienstenOverview() {
             viewport={{ once: true }}
             transition={{ duration: 0.55, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] as const }}
             whileHover={{ y: -5 }}
-            className="bg-white border border-border/50 rounded-2xl p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
+            className="bg-accent/5 border border-accent/15 rounded-[.5rem_2rem_.5rem_2rem] p-6 sm:p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
           >
             <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent/80 mb-6">Voor professionals</span>
             <h3 className="text-[1.55rem] font-bold text-primary leading-[1.2] mb-4">

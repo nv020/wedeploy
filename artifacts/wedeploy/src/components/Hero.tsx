@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="bg-primary overflow-hidden relative min-h-screen flex flex-col"
+      className="bg-primary overflow-hidden relative min-h-[calc(100svh-68px)] flex flex-col"
     >
       {/* Full-bleed editorial image — absolutely positioned right */}
       <motion.div
@@ -65,7 +65,7 @@ export function Hero() {
       />
 
       {/* Hero text content — overlaps image via z-index, aligned with container */}
-      <div className="flex-1 flex items-center relative z-10 pb-24 pt-8 w-full">
+      <div className="flex-1 flex items-center relative z-10 pb-12 md:pb-24 pt-10 w-full">
         <div className="container mx-auto px-4 md:px-6 w-full">
         <motion.div
           variants={stagger}
@@ -88,7 +88,7 @@ export function Hero() {
           <motion.h1
             variants={fadeUp}
             className="font-black text-white leading-[1.01] mb-8"
-            style={{ fontSize: "clamp(56px, 6vw, 86px)", letterSpacing: "-3.5px" }}
+            style={{ fontSize: "clamp(34px, 7.8vw, 86px)", letterSpacing: "-0.045em" }}
           >
             De juiste<br />
             professionals<span className="text-accent">.</span><br />
@@ -112,7 +112,7 @@ export function Hero() {
               whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(205 85% 53% / 0.38)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}
-              className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-9 py-4 text-[14.5px] font-bold"
+              className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-6 sm:px-9 py-4 text-[14.5px] font-bold"
             >
               Ik zoek versterking <span aria-hidden>→</span>
             </motion.a>
@@ -121,7 +121,7 @@ export function Hero() {
               whileHover={{ y: -2 }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}
-              className="inline-flex items-center gap-2 rounded-full text-white border border-white/20 px-8 py-4 text-[14px] font-semibold hover:border-white/40 transition-colors duration-200"
+              className="inline-flex items-center gap-2 rounded-full text-white border border-white/20 px-6 sm:px-8 py-4 text-[14px] font-semibold hover:border-white/40 transition-colors duration-200"
               style={{ background: "rgba(255,255,255,0.07)" }}
             >
               Ik ben professional
@@ -169,7 +169,7 @@ export function Hero() {
       </div>
 
       {/* Curved bottom edge — cream arch */}
-      <div className="absolute bottom-0 left-0 right-0 leading-none pointer-events-none" style={{ zIndex: 20 }}>
+      <div className="hidden md:block absolute bottom-0 left-0 right-0 leading-none pointer-events-none" style={{ zIndex: 20 }}>
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="block w-full h-24 md:h-36">
           <ellipse cx="720" cy="120" rx="900" ry="120" fill="hsl(36 28% 97%)" />
         </svg>

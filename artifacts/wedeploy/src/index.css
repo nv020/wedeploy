@@ -276,3 +276,29 @@ html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 .skip-link:focus { transform: translateY(0); }
 :focus-visible { outline: 3px solid hsl(var(--accent)); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+
+/* Editorial rhythm, with small screens as the starting point. */
+.page-title { font-size: clamp(2rem, 6vw, 4.25rem); text-wrap: balance; }
+h1, h2, h3 { text-wrap: balance; overflow-wrap: normal; word-break: normal; hyphens: none; }
+main, .grid > *, .flex > * { min-width: 0; }
+input, textarea, select { font-size: 16px; }
+a[href^="mailto:"] { overflow-wrap: anywhere; }
+.page-intro::after { content: ""; position: absolute; right: 5%; bottom: 0; width: 80px; height: 7px; background: hsl(var(--accent)); transform: rotate(-5deg); }
+.editorial-item { padding: 1.5rem 0; border-top: 1px solid hsl(var(--border)); }
+.editorial-item h3::before { content: "↗"; color: hsl(var(--accent)); display: inline-block; margin-right: .65rem; }
+.professional-list { display: grid; gap: 0 3rem; }
+.professional-row { padding: 1.75rem 0; border-top: 1px solid hsl(var(--border)); }
+.professional-row h3 { font-size: clamp(1.3rem, 3vw, 1.7rem); }
+.professional-row a { width: fit-content; }
+.closing-cta { background: hsl(var(--accent) / .07); color: hsl(var(--primary)); padding: 3rem 0; border-top: 2px solid hsl(var(--accent) / .3); }
+.portrait-frame { border-radius: 3rem .75rem 3rem .75rem; background: hsl(var(--accent) / .08); }
+@media (min-width: 768px) {
+  .professional-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .professional-row:nth-child(even) { padding-left: 2rem; border-left: 1px solid hsl(var(--border)); }
+  .closing-cta { padding: 4.5rem 0; margin: 0 2rem 3rem; border-radius: 2rem .5rem 2rem .5rem; }
+}
+@media (max-width: 380px) {
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  .page-title { font-size: 1.9rem; }
+  .eyebrow { letter-spacing: .08em; }
+}

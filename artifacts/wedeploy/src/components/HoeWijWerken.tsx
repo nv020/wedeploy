@@ -116,8 +116,8 @@ export function HoeWijWerken() {
               key={step.number}
               href="#contact"
               variants={stepVariants}
-              className="flex items-start gap-4 rounded-xl p-5 border"
-              style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(255,255,255,0.08)" }}
+              className="flex items-start gap-4 py-5 border-t"
+              style={{ borderColor: "rgba(255,255,255,0.08)" }}
             >
               <span className="text-[11px] font-black tracking-[2px] text-accent mt-0.5 w-6 flex-shrink-0">{step.number}</span>
               <div>

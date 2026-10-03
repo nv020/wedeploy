@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Opdrachtgevers", href: "/opdrachtgevers" },
-  { label: "Professionals", href: "/professionals" },
-  { label: "Vacatures", href: "/vacatures" },
+  { label: "Voor opdrachtgevers", href: "/opdrachtgevers" },
+  { label: "Ons netwerk", href: "/professionals" },
+  { label: "Voor professionals", href: "/vacatures" },
   { label: "Expertise & diensten", href: "/expertise-diensten" },
   { label: "Over ons", href: "/over-ons" },
 ];
@@ -16,8 +16,8 @@ export function Header() {
     <><a href="#main-content" className="skip-link">Naar de inhoud</a><header className="sticky top-0 z-50 w-full bg-primary">
       <div className="container mx-auto px-4 md:px-6 h-[68px] flex items-center justify-between">
         <a href="/" className="flex items-center font-extrabold text-[26px] leading-none" style={{ letterSpacing: "-0.3px" }}>
-          <span className="text-accent">WE</span>
-          <span className="text-white">DEPLOY</span>
+          <span className="text-accent">We</span>
+          <span className="text-white">deploy</span>
         </a>
 
         <nav className="hidden xl:flex items-center gap-7 text-[13px] font-medium">

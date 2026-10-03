@@ -57,7 +57,7 @@ export function WaaromWedeploy() {
             </div>
 
             <h2 className="text-4xl md:text-[2.8rem] font-bold text-primary leading-[1.08] tracking-tight mb-6">
-              Een cv vertelt niet hoe<br />iemand <span className="text-accent">samenwerkt.</span>
+              Een cv vertelt niet hoe iemand <span className="text-accent">samenwerkt.</span>
             </h2>
 
             <p className="text-[16px] text-muted-foreground leading-[1.85] mb-4 max-w-[430px]">
@@ -104,7 +104,7 @@ export function WaaromWedeploy() {
               <motion.div
                 key={pillar.num}
                 variants={cardVariants}
-                className="group bg-white border border-border/50 rounded-2xl p-8 flex gap-6 items-start transition-all duration-300 hover:border-accent/30 hover:shadow-[0_8px_32px_hsl(220_50%_18%/0.07)]"
+                className="group border-t border-border py-6 flex gap-4 items-start"
               >
                 <span className="text-[12px] font-black tracking-[2px] text-accent mt-0.5 flex-shrink-0 w-8">
                   {pillar.num}
