@@ -103,11 +103,11 @@ export function Header() {
           <p className="text-sm text-muted-foreground mb-4">Waarmee kunnen we je helpen?</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
           <a
-            href="tel:+31852128668"
+            href="/contact"
             onClick={() => setIsOpen(false)}
             className="inline-flex items-center justify-center rounded-full bg-accent text-white px-5 py-3 text-sm font-bold hover:bg-accent/90"
           >
-            Neem contact op
+            Contact opnemen
           </a>
           <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Bel 085 212 8668</a>
           </div>
