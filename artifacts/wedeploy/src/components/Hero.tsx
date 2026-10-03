@@ -84,13 +84,13 @@ export function Hero() {
             </span>
           </motion.div>
 
-          {/* Four-line headline */}
+          {/* Short, intentional headline lines */}
           <motion.h1
             variants={fadeUp}
             className="font-black text-white leading-[1.01] mb-8"
             style={{ fontSize: "clamp(32px, 5.5vw, 72px)", letterSpacing: "-0.045em" }}
           >
-            Recruitment voor <span className="text-accent">vastgoed en facility.</span>
+            <span className="block">De juiste</span><span className="block">professionals.</span><span className="block text-accent">De beste matches.</span>
           </motion.h1>
 
           {/* Sub */}
@@ -99,7 +99,7 @@ export function Hero() {
             className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
             style={{ color: "rgba(255,255,255,0.75)" }}
           >
-            Werving & selectie, detachering en interim. Vanuit ervaring met vastgoedbeheer, facilitaire teams en huisvestingsprojecten.
+            Werving & selectie, detachering en interim. Sterk in vastgoed, facility en projecten. Ook voor andere functies denken we graag mee.
           </motion.p>
 
           {/* CTAs */}

@@ -399,43 +399,49 @@ main a, main button { text-wrap: balance; }
 .intro-quiet .page-title { font-size: clamp(1.8rem, 7cqw, 3.8rem); }
 .intro-photo { background: hsl(var(--muted)); }
 
-/* Non-home heroes: clean type, separate photography, and a blue contact treatment. */
-.page-shell .agency-intro { position: relative; isolation: isolate; overflow: hidden; background: hsl(var(--primary)); color: white; border: 0; padding: 2rem 0 3rem; }
-.page-shell .agency-intro > .container { position: relative; z-index: 2; }
-.page-shell .agency-intro .page-title { color: inherit; font-size: clamp(2rem, 10cqw, 5.2rem); }
-.page-shell .agency-intro .intro-description, .page-shell .agency-intro .intro-breadcrumb { color: hsl(0 0% 100% / .8); }
-.page-shell .agency-intro .eyebrow { color: hsl(0 0% 100% / .8); }
+/* Brand-led heroes for non-home pages: hierarchy, space and restrained colour. */
+.page-shell .agency-intro { position: relative; isolation: isolate; overflow: hidden; background: hsl(var(--primary)); color: white; border: 0; padding: 1.75rem 0 3.5rem; }
+.page-shell .agency-intro > .container { position: relative; z-index: 1; }
+.page-shell .agency-intro .page-title { color: inherit; font-size: clamp(2rem, 10cqw, 5.5rem); line-height: 1.04; letter-spacing: -.05em; }
+.page-shell .agency-intro .intro-description, .page-shell .agency-intro .intro-breadcrumb { color: hsl(0 0% 100% / .82); }
+.page-shell .agency-intro .eyebrow { color: hsl(0 0% 100% / .8); margin-bottom: 1rem; }
 .page-shell .agency-intro .secondary-action { color: inherit; }
-.page-shell .intro-description { line-height: 1.65; max-width: 34rem; }
-.page-shell .intro-editorial .intro-copy { border-top: 1px solid currentColor; padding-top: 1.25rem; }
+.page-shell .intro-description { line-height: 1.65; max-width: 32rem; }
+.page-shell .intro-editorial-grid { display: grid; gap: 1.5rem; }
+.page-shell .intro-copy { border: 0; padding: 0; }
+.page-shell .hero-paper, .page-shell .hero-type.intro-quiet { background: hsl(var(--background)); color: hsl(var(--primary)); border-bottom: 3px solid hsl(var(--accent)); }
 .page-shell .hero-type.intro-editorial { background: hsl(var(--accent) / .12); color: hsl(var(--primary)); }
-.page-shell .hero-type.intro-quiet { background: hsl(var(--background)); color: hsl(var(--primary)); border-bottom: 1px solid hsl(var(--border)); }
-.page-shell .hero-type.intro-editorial .intro-description, .page-shell .hero-type.intro-editorial .intro-breadcrumb, .page-shell .hero-type.intro-quiet .intro-description, .page-shell .hero-type.intro-quiet .intro-breadcrumb { color: hsl(var(--primary) / .75); }
-.page-shell .hero-type.intro-editorial .eyebrow, .page-shell .hero-type.intro-quiet .eyebrow { color: hsl(var(--accent)); }
-.page-shell .hero-graphic { background: hsl(var(--accent)); color: white; }
+.page-shell .hero-paper .intro-description, .page-shell .hero-paper .intro-breadcrumb, .page-shell .hero-type.intro-editorial .intro-description, .page-shell .hero-type.intro-editorial .intro-breadcrumb, .page-shell .hero-type.intro-quiet .intro-description, .page-shell .hero-type.intro-quiet .intro-breadcrumb { color: hsl(var(--primary) / .76); }
+.page-shell .hero-paper .eyebrow, .page-shell .hero-type.intro-editorial .eyebrow, .page-shell .hero-type.intro-quiet .eyebrow { color: hsl(var(--accent)); }
+.page-shell .hero-graphic { background: hsl(var(--accent)); color: hsl(var(--primary)); }
+.page-shell .hero-graphic .intro-description, .page-shell .hero-graphic .intro-breadcrumb, .page-shell .hero-graphic .eyebrow { color: hsl(var(--primary)); }
 .page-shell .hero-graphic .intro-actions a:not(.secondary-action) { background: hsl(var(--primary)); }
-.page-shell .intro-photo-panel { height: 200px; margin-top: 2rem; overflow: hidden; }
-.page-shell .intro-photo-panel img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.page-shell .hero-photo { display: flex; flex-direction: column; padding-bottom: 0; }
-.page-shell .hero-photo > .container { order: -1; }
-.page-shell .intro-image-space { display: none; }
+.page-shell .hero-line { background: linear-gradient(120deg, hsl(var(--primary)) 62%, hsl(var(--accent) / .22)), hsl(var(--primary)); }
+.page-shell .hero-line .intro-title-wrap { border-left: 3px solid hsl(var(--accent)); padding-left: 1rem; }
 .page-shell h1, .page-shell h2, .page-shell h3 { text-wrap: balance; hyphens: none; overflow-wrap: normal; }
 .page-shell p { text-wrap: pretty; }
 .page-shell .intro-title-wrap, .page-shell .agency-section .grid > div { min-width: 0; }
 .page-shell .vacancy-empty { padding: 0 0 2rem; border-bottom: 1px solid hsl(var(--border)); }
 @media (min-width: 768px) {
-  .page-shell .agency-intro { padding: 2.5rem 0 4rem; }
-  .page-shell .hero-photo { display: block; min-height: 480px; }
-  .page-shell .intro-photo-panel { position: absolute; inset: 0 0 0 59%; height: auto; margin: 0; }
-  .page-shell .hero-photo .intro-split-grid, .page-shell .hero-photo .intro-editorial-grid { grid-template-columns: 1fr; width: 50%; gap: 1.5rem; }
-  .page-shell .hero-photo .intro-breadcrumb { max-width: 50%; }
+  .page-shell .agency-intro { padding: 2rem 0 5rem; }
+  .page-shell .intro-breadcrumb { margin-bottom: 3.5rem; }
+  .page-shell .intro-editorial-grid { grid-template-columns: 1.2fr .8fr; align-items: end; gap: clamp(2rem, 6vw, 6rem); }
+  .page-shell .intro-split .intro-editorial-grid { grid-template-columns: 1.1fr .9fr; align-items: center; }
+  .page-shell .intro-split .intro-copy { border-left: 1px solid hsl(0 0% 100% / .25); padding-left: 2.5rem; }
+  .page-shell .intro-navy .intro-editorial-grid { grid-template-columns: 1fr; max-width: 58rem; gap: 2rem; }
+  .page-shell .intro-navy .intro-copy { margin-left: 20%; max-width: 36rem; }
+  .page-shell .intro-quiet { padding-bottom: 3.5rem; }
+  .page-shell .intro-quiet .intro-editorial-grid { grid-template-columns: 1fr; max-width: 50rem; }
   .page-shell .intro-quiet .page-title { font-size: clamp(2rem, 6cqw, 3.8rem); }
+  .page-shell .hero-paper .intro-copy { border-top: 1px solid hsl(var(--primary) / .2); padding-top: 1.5rem; }
 }
 @media (max-width: 767px) {
   .page-shell .agency-intro .page-title { font-size: clamp(1.85rem, 9.4cqw, 3.4rem); line-height: 1.08; }
-  .page-shell .intro-breadcrumb { margin-bottom: 1.5rem; }
+  .page-shell .intro-breadcrumb { margin-bottom: 1.75rem; }
   .page-shell .intro-description { font-size: 1rem; }
-  .page-shell .intro-editorial-grid, .page-shell .intro-split-grid { gap: 1.5rem; }
+  .page-shell .intro-navy { padding-bottom: 4rem; }
+  .page-shell .intro-navy .intro-copy { border-top: 1px solid hsl(0 0% 100% / .25); padding-top: 1.5rem; }
+  .page-shell .intro-quiet { padding-bottom: 2.5rem; }
   .page-shell .agency-section { padding: 2.5rem 0; }
   .page-shell .section-title, .page-shell .sector-statement h2, .page-shell .closing-composition h2 { font-size: clamp(1.7rem, 7vw, 2.5rem); line-height: 1.14; }
   .page-shell .agency-section p { max-width: 38ch; }
@@ -447,6 +453,7 @@ main a, main button { text-wrap: balance; }
 .page-shell .section-wash { background: hsl(var(--accent) / .11); }
 .page-shell .agency-section + .agency-section { border-top: 1px solid hsl(var(--primary) / .06); }
 .page-shell .agency-intro + .agency-section { background: hsl(var(--background)) !important; }
+.page-shell .hero-paper + .agency-section, .page-shell .hero-type.intro-quiet + .agency-section { background: white !important; }
 
 .page-shell .landing-form { padding: 1.75rem 0; border-top: 2px solid hsl(var(--accent)); }
 .page-shell #contact { background: white; border-top: 1px solid hsl(var(--border)); }
@@ -456,3 +463,9 @@ main a, main button { text-wrap: balance; }
   .page-shell .sector-role h2, .page-shell .professional-row h3, .page-shell .editorial-item h3 { font-size: clamp(1.15rem, 5.2vw, 1.5rem); line-height: 1.25; }
   .page-shell .agency-intro .eyebrow { letter-spacing: .12em; line-height: 1.6; }
 }
+
+.page-shell .career-role-list { display: grid; gap: 1.75rem; }
+.page-shell .career-role-list .editorial-item { padding-top: 1.5rem; border-top: 1px solid hsl(var(--border)); }
+.page-shell .career-roles { margin-top: 2rem; }
+.page-shell .career-roles:first-child { margin-top: 0; }
+@media (min-width: 768px) { .page-shell .career-role-list { grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; } }
