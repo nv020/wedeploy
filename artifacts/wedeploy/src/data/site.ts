@@ -2,7 +2,7 @@ import { amsterdamPages } from "./amsterdam";
 import { sectorPages } from "./sectors";
 export const siteUrl = "https://www.wedeploy.nl";
 export const pages = [
-  { path: "/", label: "Home", title: "Wedeploy | Werving & selectie, detachering & interim", description: "Wedeploy helpt met werving & selectie, detachering en interim. Expertise in vastgoed, facility en projecten, en ruimte voor andere recruitmentvragen." },
+  { path: "/", label: "Home", title: "Wedeploy | Werving & selectie, detachering & interim", description: "Wedeploy verbindt organisaties en professionals voor vaste functies en tijdelijke opdrachten. Werving & selectie, detachering, interim en zzp-bemiddeling." },
   { path: "/opdrachtgevers", label: "Opdrachtgevers", title: "Werving & selectie, detachering en interim | Wedeploy", description: "Een vaste vacature of tijdelijke versterking? Wedeploy zoekt gericht naar professionals in vastgoed, facility en projecten. Bespreek jouw personeelsvraag." },
   { path: "/professionals", label: "Beschikbare professionals", title: "Professionals in vastgoed, facility & projecten | Wedeploy", description: "Ontdek het netwerk van Wedeploy: projectmanagers, vastgoedbeheerders, facility managers en projectondersteuners. Vraag naar een professional voor jouw opdracht." },
   { path: "/vacatures", label: "Vacatures & opdrachten", title: "Vacatures en interim opdrachten | Cv insturen | Wedeploy", description: "Op zoek naar een functie of interim opdracht in vastgoed, facility, projectmanagement of techniek? Stuur jouw cv en vertel Wedeploy wat je zoekt." },

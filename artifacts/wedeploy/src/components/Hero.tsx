@@ -71,16 +71,18 @@ export function Hero() {
           variants={stagger}
           initial={false}
           animate="visible"
-          className="flex flex-col w-full max-w-[520px]"
+          className="flex flex-col w-full max-w-[520px] [container-type:inline-size]"
         >
           {/* Eyebrow */}
           <motion.div variants={fadeUp} className="flex items-center gap-3 mb-7">
             <div className="w-8 h-[2px] rounded-full bg-accent flex-shrink-0" />
             <span
-              className="text-[10.5px] font-bold tracking-[2.5px] uppercase"
+              className="flex flex-wrap gap-x-3 gap-y-1 text-[10.5px] font-bold tracking-[1.5px] uppercase"
               style={{ color: "hsl(205 85% 53%)" }}
             >
-              Recruitment · Detachering
+              <span className="whitespace-nowrap">Werving & selectie</span>
+              <span className="whitespace-nowrap">Detachering</span>
+              <span className="whitespace-nowrap">Interim & zzp</span>
             </span>
           </motion.div>
 
@@ -88,9 +90,12 @@ export function Hero() {
           <motion.h1
             variants={fadeUp}
             className="font-black text-white leading-[1.01] mb-8"
-            style={{ fontSize: "clamp(32px, 5.5vw, 72px)", letterSpacing: "-0.045em" }}
+            style={{ fontSize: "clamp(32px, 17cqw, 86px)", letterSpacing: "-0.06em" }}
           >
-            <span className="block">De juiste</span><span className="block">professionals.</span><span className="block text-accent">De beste matches.</span>
+            De juiste<br />
+            professionals<span className="text-accent">.</span><br />
+            De beste<br />
+            <span className="text-accent">matches.</span>
           </motion.h1>
 
           {/* Sub */}
@@ -99,7 +104,7 @@ export function Hero() {
             className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
             style={{ color: "rgba(255,255,255,0.75)" }}
           >
-            Werving & selectie, detachering en interim. Sterk in vastgoed, facility en projecten. Ook voor andere functies denken we graag mee.
+            Kwaliteit boven kwantiteit. We verbinden organisaties en professionals voor vaste functies en tijdelijke opdrachten.
           </motion.p>
 
           {/* CTAs */}
