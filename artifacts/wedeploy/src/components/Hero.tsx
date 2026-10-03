@@ -88,21 +88,18 @@ export function Hero() {
           <motion.h1
             variants={fadeUp}
             className="font-black text-white leading-[1.01] mb-8"
-            style={{ fontSize: "clamp(34px, 7.8vw, 86px)", letterSpacing: "-0.045em" }}
+            style={{ fontSize: "clamp(32px, 5.5vw, 72px)", letterSpacing: "-0.045em" }}
           >
-            De juiste<br />
-            professionals<span className="text-accent">.</span><br />
-            De beste<br />
-            <span className="text-accent">matches.</span>
+            Recruitment voor <span className="text-accent">vastgoed en facility.</span>
           </motion.h1>
 
           {/* Sub */}
           <motion.p
             variants={fadeUp}
             className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
-            style={{ color: "rgba(255,255,255,0.50)" }}
+            style={{ color: "rgba(255,255,255,0.75)" }}
           >
-            Werving & selectie, detachering en interim voor vastgoed, facility, projectmanagement en techniek. Persoonlijk contact, met kennis van het werk.
+            Werving & selectie, detachering en interim. Vanuit ervaring met vastgoedbeheer, facilitaire teams en huisvestingsprojecten.
           </motion.p>
 
           {/* CTAs */}

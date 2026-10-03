@@ -2,8 +2,6 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { WaaromWedeploy } from "@/components/WaaromWedeploy";
 import { ExpertiseAreas } from "@/components/ExpertiseAreas";
-import { DienstenOverview } from "@/components/DienstenOverview";
-import { HoeWijWerken } from "@/components/HoeWijWerken";
 import { VacaturePreview } from "@/components/VacaturePreview";
 import { ContactSection } from "@/components/ContactSection";
 import { ProfessionalPreview } from "@/components/ProfessionalCards";
@@ -17,8 +15,6 @@ export function Home() {
         <Hero />
         <WaaromWedeploy />
         <ExpertiseAreas />
-        <DienstenOverview />
-        <HoeWijWerken />
         <ProfessionalPreview />
         <VacaturePreview />
         <ContactSection showProfile />
