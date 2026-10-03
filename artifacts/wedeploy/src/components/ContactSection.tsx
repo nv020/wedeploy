@@ -23,7 +23,7 @@ const inputCls =
 
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
-export function ContactSection({ defaultRole = "opdrachtgever", heading, context = "", readQuery = false, vacancyId = "", showProfile = false, compact = false, lockRole = false, retainContext = false }: { defaultRole?: Role; heading?: string; context?: string; readQuery?: boolean; vacancyId?: string; showProfile?: boolean; compact?: boolean; lockRole?: boolean; retainContext?: boolean }) {
+export function ContactSection({ defaultRole = "opdrachtgever", heading, description, context = "", readQuery = false, vacancyId = "", showProfile = false, compact = false, lockRole = false, retainContext = false }: { defaultRole?: Role; heading?: string; description?: string; context?: string; readQuery?: boolean; vacancyId?: string; showProfile?: boolean; compact?: boolean; lockRole?: boolean; retainContext?: boolean }) {
   const [role, setRole] = useState<Role>(defaultRole);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -98,6 +98,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
             <h2 className="text-[clamp(1.85rem,6vw,2.8rem)] font-extrabold text-primary tracking-tight leading-[1.06]">
               {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
             </h2>
+            {description && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{description}</p>}
           </div>
           {!compact && (<div className="flex gap-9 md:gap-10">
             {[
@@ -309,7 +310,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, context
                     {loading ? "Versturen..." : <>Verstuur bericht </>}
                   </motion.button>
 
-                  <p className="text-center text-sm text-primary/70">Liever bellen? <a href="tel:+31852128668" className="inline-flex items-center min-h-11 font-bold text-primary hover:text-accent">Bel ons direct</a></p>
+                  <p className="text-center text-sm text-primary/70">Liever bellen? <a href="tel:+31852128668" className="inline-flex items-center min-h-11 font-bold text-primary hover:text-accent">085 212 8668</a></p>
                 </motion.form>
               )}
             </AnimatePresence>

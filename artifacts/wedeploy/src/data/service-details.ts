@@ -3,7 +3,7 @@ export const serviceDetails: Record<string, { employer: string; professional: st
     employer: "Voor een functie binnen jouw eigen organisatie. We bespreken verantwoordelijkheden, team en voorwaarden, zoeken gericht en spreken kandidaten vooraf. Je ontvangt een toelichting op hun ervaring en motivatie. Daarna begeleiden we de kennismaking en selectie.",
     professional: "Je komt rechtstreeks bij de opdrachtgever in dienst. We bespreken wat jij zoekt en lichten de functie en organisatie toe. Een introductie gebeurt na afstemming met jou.",
     agreements: "Zoekprofiel, aanpak, vergoeding en terugkoppeling. Ook een exclusieve zoekopdracht is mogelijk.",
-    employerPath: "/werving-selectie-amsterdam", candidatePath: "/vaste-banen-amsterdam",
+    employerPath: "/contact?type=opdrachtgever&onderwerp=Werving%20en%20selectie", candidatePath: "/vacatures?type=kandidaat&onderwerp=Vaste%20functie#inschrijven",
   },
   interim: {
     employer: "Voor tijdelijke leiding, een project of specialistische kennis. We brengen het resultaat, de verantwoordelijkheden en de looptijd in kaart. Vervolgens zoeken we een zelfstandige professional met passende ervaring en beschikbaarheid.",
@@ -15,13 +15,13 @@ export const serviceDetails: Record<string, { employer: string; professional: st
     employer: "Voor versterking van jouw team gedurende een afgesproken periode. De professional is in dienst bij Wedeploy en werkt in jouw organisatie. We bespreken de taken, benodigde ervaring en begeleiding en houden tijdens de inzet contact.",
     professional: "Je werkt in loondienst via Wedeploy bij een opdrachtgever. Vooraf bespreken we de opdracht, arbeidsvoorwaarden, werklocatie en begeleiding, zodat je weet waar je aan begint.",
     agreements: "Uren, looptijd, tarief, arbeidsvoorwaarden en begeleiding. De afspraken staan vóór de start vast.",
-    employerPath: "/detachering-amsterdam", candidatePath: "/werken-via-detachering-amsterdam",
+    employerPath: "/contact?type=opdrachtgever&onderwerp=Detachering", candidatePath: "/vacatures?type=kandidaat&onderwerp=Detachering#inschrijven",
   },
   detavast: {
     employer: "Voor een collega die je op termijn zelf in dienst wilt nemen. De professional begint via Wedeploy. Vanaf het eerste gesprek kijken we naar de vaste functie, het team en de voorwaarden voor een mogelijke overstap.",
     professional: "Je begint in loondienst via Wedeploy, met een vaste baan bij de opdrachtgever als doel. We bespreken beide fases: de start en de beoogde overstap. Die overstap is geen automatische garantie.",
     agreements: "Startperiode, arbeidsvoorwaarden, evaluatie en voorwaarden voor de overstap. Geen verrassingen achteraf.",
-    employerPath: "/detavast-amsterdam", candidatePath: "/werken-via-detavast-amsterdam",
+    employerPath: "/contact?type=opdrachtgever&onderwerp=Detavast", candidatePath: "/vacatures?type=kandidaat&onderwerp=Detavast#inschrijven",
   },
 };
 export const expertiseDetails: Record<string, { text: string; path?: string }> = {

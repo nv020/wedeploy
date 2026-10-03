@@ -100,18 +100,17 @@ export function Header() {
           ))}
           </nav>
           <div className="mt-auto pt-4 pb-2">
-          <p className="text-sm text-muted-foreground mb-4">Een professional nodig of een volgende stap?</p>
-          <div className="flex flex-col gap-3">
+          <p className="text-sm text-muted-foreground mb-4">Waarmee kunnen we je helpen?</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
           <a
             href="tel:+31852128668"
             onClick={() => setIsOpen(false)}
-            className="w-full inline-flex items-center justify-center rounded-full bg-accent text-white px-6 py-4 text-[15px] font-bold hover:bg-accent/90"
+            className="inline-flex items-center justify-center rounded-full bg-accent text-white px-5 py-3 text-sm font-bold hover:bg-accent/90"
           >
-            Bel ons direct
+            Neem contact op
           </a>
-          <a href="/contact" onClick={() => setIsOpen(false)} className="w-full inline-flex items-center justify-center rounded-full bg-primary text-white px-6 py-4 text-[15px] font-bold hover:bg-primary/90">Neem contact op</a>
+          <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Bel 085 212 8668</a>
           </div>
-          <a href="mailto:info@wedeploy.nl" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 mt-3 text-sm font-medium text-primary/70">info@wedeploy.nl</a>
           </div>
           </div>
         </div>

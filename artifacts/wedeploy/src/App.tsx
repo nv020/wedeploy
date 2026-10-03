@@ -9,6 +9,7 @@ import { Employers, Professionals, Vacancies, ExpertiseServices, About, Contact,
 import { FlexibleWorkPage } from "@/pages/FlexibleWorkPages";
 import { SectorPage } from "@/pages/SectorPages";
 import { AmsterdamServicePage } from "@/pages/AmsterdamServicePage";
+import { FAQPage } from "@/pages/FAQPage";
 import { amsterdamPages } from "@/data/amsterdam";
 const queryClient = new QueryClient();
 function App({ ssrPath }: { ssrPath?: string }) {
@@ -29,6 +30,7 @@ function App({ ssrPath }: { ssrPath?: string }) {
       <Route path="/over-ons" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/veelgestelde-vragen" component={FAQPage} />
       <Route component={NotFound} />
     </Switch>
   </WouterRouter><Toaster /></TooltipProvider></QueryClientProvider>;

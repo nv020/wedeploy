@@ -1,6 +1,6 @@
 const roles = [
   { title: "Projectmanager", text: "Leid een project van vraag tot resultaat. Je verbindt planning, budget en mensen, bij huisvesting, vastgoed of een verandering binnen de organisatie." },
-  { title: "Projectmanager vastgoed", text: "Breng vastgoedontwikkeling of herontwikkeling verder. Je verbindt planning, budget en betrokken partijen, van planvorming tot realisatie." },
+  { title: "Vastgoedprojectmanager", text: "Leid vastgoedontwikkeling of herontwikkeling. Je verbindt planvorming, ontwerp en uitvoering en houdt overzicht op planning, budget en betrokken partijen." },
   { title: "PMO & projectondersteuning", text: "Breng overzicht in een projectteam. Je bewaakt acties en voortgang, organiseert afstemming en legt afspraken vast. Ook voor projectsecretarissen." },
   { title: "Facility manager", text: "Leid een facilitair team en organiseer dienstverlening die werkt. Voor professionals met ervaring in leveranciers, budgetten en de dagelijkse praktijk." },
   { title: "Facilitair coördinator", text: "Houd een locatie draaiend. Je stemt af met medewerkers en leveranciers, organiseert de dienstverlening en pakt praktische vragen op." },
@@ -17,7 +17,7 @@ export function CareerRoles() {
   return <div className="career-roles">
     <p className="eyebrow">Doorlopende kennismaking</p>
     <h2 className="section-title">Welke rol past bij jou?</h2>
-    <p className="text-muted-foreground leading-relaxed mt-4 max-w-2xl">Voor deze functies maken we graag kennis. Vast werk of een interim opdracht: deel jouw ervaring en wensen, ook zonder een actuele vacature.</p>
+    <p className="text-muted-foreground leading-relaxed mt-4 max-w-2xl">Dit zijn voorbeelden van functies waarvoor we graag kennismaken; het zijn geen openstaande vacatures. Zoek je vast werk of een opdracht? Vertel wat voor rol je zoekt en wanneer je beschikbaar bent.</p>
     <div className="career-role-list mt-8">{roles.map(role => <article className="editorial-item" key={role.title}>
       <h3 className="text-xl font-bold text-primary">{role.title}</h3>
       <p className="text-muted-foreground leading-relaxed mt-3">{role.text}</p>

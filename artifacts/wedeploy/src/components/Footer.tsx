@@ -61,7 +61,7 @@ export function Footer() {
         <details className="footer-landings border-b border-white/10 pb-5 mb-5">
           <summary className="cursor-pointer text-xs font-semibold text-white/75">Vakgebieden & inzet</summary>
           <nav aria-label="Vakgebieden en inzet" className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 text-xs text-white/70">
-            <a href="/interim-projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/interim-professionals">Interim professionals</a><a href="/zzp-opdrachten">Zzp-opdrachten</a><a href="/werving-selectie-amsterdam">Werving & selectie Amsterdam</a>
+            <a href="/interim-projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/expertise-diensten#facility">Workplace & hospitality</a><a href="/interim-professionals">Interim professionals</a><a href="/zzp-opdrachten">Zzp-opdrachten</a>
           </nav>
         </details>
         {/* Bottom: nav + legal */}
@@ -81,9 +81,10 @@ export function Footer() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4 text-[11px]" style={{ color: "rgba(255,255,255,0.60)" }}>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px]" style={{ color: "rgba(255,255,255,0.60)" }}>
             <span>&copy; {new Date().getFullYear()} Wedeploy</span>
             <a href="/privacy" className="hover:text-white/55 transition-colors">Privacy & cookies</a>
+            <a href="/veelgestelde-vragen" className="hover:text-white/55 transition-colors">Veelgestelde vragen</a>
           </div>
         </div>
 
