@@ -33,8 +33,8 @@ export function Footer() {
               className="inline-flex items-baseline text-[26px] font-extrabold leading-none mb-3"
               style={{ letterSpacing: "-0.3px" }}
             >
-              <span className="text-accent">We</span>
-              <span className="text-white">deploy</span>
+              <span className="text-accent">WE</span>
+              <span className="text-white">DEPLOY</span>
             </a>
             <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
               Recruitment &amp; detachering voor<br />
