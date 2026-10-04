@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const imgPM = "/images/project-overleg.webp";
 import imgFM from "@assets/expertise-facility.webp";
 import imgVastgoed from "@assets/expertise-vastgoed.webp";
-const imgTechniek = "/images/technisch-onderhoud.webp";
+const imgTechniek = "/images/technisch-beheer-modern.webp";
 
 const areas = [
   {
@@ -51,7 +51,7 @@ const areas = [
     title: "Gebouwgebonden techniek",
     sentence: "Technische coördinatoren, projectleiders en engineers voor E&W installaties.",
     img: imgTechniek,
-    alt: "Onderhoud aan een elektrische installatie",
+    alt: "Verlichting en ventilatie in een modern kantoorinterieur",
     span: "lg:col-span-2",
     height: "h-[300px] lg:h-[360px]",
     imgW: 1100, imgH: 734,

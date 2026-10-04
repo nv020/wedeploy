@@ -553,8 +553,11 @@ main a, main button { text-wrap: balance; }
 .page-shell .text-link-list { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; }
 .page-shell .landing-directory-links { display: grid; gap: 0 2rem; }
 .page-shell .landing-directory-links a { padding-block: .9rem; border-top: 1px solid hsl(var(--border)); }
-.page-shell .about-composition { display: grid; gap: 2rem; align-items: start; }
-.page-shell .about-portrait { margin: 0; width: min(100%, 260px); aspect-ratio: 4 / 5; overflow: hidden; border-radius: .3rem; }
+.page-shell .about-composition { display: grid; gap: 2rem; align-items: center; }
+.page-shell .about-portrait { margin: 0; width: min(100%, 220px); justify-self: start; }
+.page-shell .about-portrait-image { aspect-ratio: 4 / 5; overflow: hidden; border-radius: .4rem; }
+.page-shell .about-portrait figcaption { margin-top: .8rem; font-size: .9rem; font-weight: 600; }
+.page-shell .about-portrait figcaption span { display: block; font-size: .8rem; font-weight: 400; color: hsl(var(--muted-foreground)); }
 .page-shell .about-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
 .page-shell .about-story { max-width: 68ch; }
 .page-shell .about-story p + p { margin-top: 1rem; }
@@ -593,8 +596,8 @@ main a, main button { text-wrap: balance; }
   .page-shell .service-detail { grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); column-gap: var(--page-gap); padding-block: 2rem; }
   .page-shell .situation-list article { grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); column-gap: var(--page-gap); }
   .page-shell .role-directory h3, .page-shell .service-editorial-list h3 { min-height: 2.8em; }
-  .page-shell .about-composition { grid-template-columns: minmax(230px, .55fr) minmax(0, 1.45fr); gap: var(--page-gap); }
-  .page-shell .about-portrait { width: 100%; max-width: 310px; }
+  .page-shell .about-composition { grid-template-columns: minmax(0, 1.45fr) minmax(220px, .55fr); gap: var(--page-gap); }
+  .page-shell .about-portrait { width: 100%; max-width: 270px; justify-self: end; }
   .faq-composition { grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: var(--page-gap, var(--layout-gap)); }
   .page-shell .closing-composition { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: var(--page-gap); }
   .page-shell .closing-actions { justify-content: flex-end; }
