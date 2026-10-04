@@ -94,7 +94,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
             <h2 className="text-[clamp(1.85rem,6vw,2.8rem)] font-extrabold text-primary tracking-tight leading-[1.06]">
               {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
             </h2>
-            {description && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{description}</p>}
+            {(role === "kandidaat" || description) && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{role === "kandidaat" ? "Laat jouw cv achter. We nemen contact met je op om een persoonlijke intake te plannen. We willen weten wie je bent, wat je kunt en wat je zoekt." : description}</p>}
           </div>
 
         </motion.div>
@@ -147,7 +147,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                   </div>
                   <h3 className="text-[20px] font-bold text-primary mb-2">Bericht ontvangen</h3>
                   <p className="text-muted-foreground text-[15px] max-w-xs mx-auto leading-relaxed">
-                    Je bericht is ontvangen. We nemen contact met je op.
+                    {role === "kandidaat" ? "Bedankt voor je reactie. We nemen contact met je op om een persoonlijke intake te plannen." : "Je bericht is ontvangen. We nemen contact met je op."}
                   </p>
                 </motion.div>
               ) : (

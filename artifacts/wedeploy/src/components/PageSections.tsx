@@ -1,6 +1,12 @@
 import type { ReactNode } from "react";
 import { ActionLink, Section } from "./PageLayout";
 
+export function DirectoryItem({ title, description, href, label }: {
+  title: string; description: string; href: string; label: string;
+}) {
+  return <article className="directory-item"><h3>{title}</h3><p>{description}</p><a className="directory-action" href={href}>{label}<span className="sr-only">: {title}</span></a></article>;
+}
+
 type SectionTone = "plain" | "white" | "wash";
 
 /** Shared section compositions: page content varies, layout stays central. */

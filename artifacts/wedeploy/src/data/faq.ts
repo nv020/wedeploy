@@ -23,12 +23,12 @@ export const faqGroups = [
   {
     title: "Voor professionals",
     items: [
-      { question: "Kan ik mijn cv sturen zonder vacature?", answer: "Ja. Vertel wat voor functie of opdracht je zoekt, waar je wilt werken en wanneer je beschikbaar bent. We nemen contact op als we je ervaring verder willen bespreken of een passende mogelijkheid zien." },
+      { question: "Kan ik mijn cv sturen zonder vacature?", answer: "Ja. Laat jouw cv achter en vertel kort welk werk je zoekt. We nemen contact met je op om een persoonlijke intake te plannen, ook als er nog geen passende vacature openstaat." },
       { question: "Kan mijn profiel anoniem op de website staan?", answer: "Dat bespreken we samen. We plaatsen alleen een met jou afgestemde beschrijving, zonder naam, foto of cv. Ook jouw beschikbaarheid en de informatie die we delen spreken we vooraf af." },
       { question: "Wordt mijn cv met opdrachtgevers gedeeld?", answer: "We bespreken een mogelijke functie of opdracht eerst met jou. Je cv of herkenbare profiel delen we pas met jouw toestemming." },
       { question: "Wie is mijn werkgever bij detachering?", answer: "Bij detachering ben je in dienst bij Wedeploy en werk je voor een afgesproken periode bij een opdrachtgever. De arbeidsvoorwaarden en opdracht bespreken we voordat je beslist." },
       { question: "Kan ik als zzp’er reageren op een opdracht?", answer: "Dat hangt af van de opdracht en de manier waarop het werk wordt ingericht. We bespreken de werkzaamheden en voorwaarden eerst. Niet elke tijdelijke functie is geschikt voor zelfstandige inzet." },
-      { question: "Wat gebeurt er na mijn cv-inzending?", answer: "We bekijken je reactie en gebruiken je gegevens om te beoordelen of jouw profiel aansluit op een functie of opdracht. Als een kennismaking of introductie passend lijkt, bespreken we dat eerst met jou." },
+      { question: "Wat gebeurt er na mijn cv-inzending?", answer: "We nemen contact met je op om een persoonlijke intake te plannen. We bespreken jouw ervaring, motivatie en wensen, zodat we de persoon achter het cv leren kennen. Daarna kijken we samen naar mogelijkheden. We stellen je alleen voor met jouw toestemming." },
     ],
   },
 ];
