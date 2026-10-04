@@ -114,3 +114,12 @@ test('GET is rejected', async () => {
   assert.equal(response.status, 405);
   assert.equal(response.headers.get('allow'), 'POST');
 });
+
+test('anonymous profile requests preserve context in the email', async () => {
+  const body = form();
+  body.set('type', 'opdrachtgever');
+  body.set('onderwerp', 'Projectmanager vastgoedontwikkeling');
+  assert.equal((await submit(body)).status, 200);
+  assert.match(delivered.at(-1).subject, /Projectmanager vastgoedontwikkeling/);
+  assert.match(delivered.at(-1).text, /Onderwerp \/ profiel: Projectmanager vastgoedontwikkeling/);
+});

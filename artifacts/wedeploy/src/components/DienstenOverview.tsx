@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+
 
 const opdrachtgeverBullets = [
   "Interim capaciteit",
@@ -32,12 +32,12 @@ export function DienstenOverview() {
 
           {/* Opdrachtgevers — navy card */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] as const }}
             whileHover={{ y: -5 }}
-            className="bg-primary rounded-2xl p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
+            className="bg-primary rounded-[2rem_.5rem_2rem_.5rem] p-6 sm:p-10 lg:p-12 flex flex-col relative overflow-hidden cursor-default shadow-[0_4px_24px_hsl(220_50%_18%/0.10)] hover:shadow-[0_16px_48px_hsl(220_50%_18%/0.22)] transition-shadow duration-300"
           >
             <div
               className="absolute top-0 right-0 w-64 h-64 opacity-[0.08] -translate-y-1/4 translate-x-1/4 pointer-events-none rounded-full"
@@ -55,31 +55,31 @@ export function DienstenOverview() {
               <ul className="space-y-3.5 flex-1 mb-10">
                 {opdrachtgeverBullets.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
+
                     <span className="text-[14.5px] text-white/75">{item}</span>
                   </li>
                 ))}
               </ul>
               <motion.a
-                href="#contact"
+                href="/opdrachtgevers"
                 whileHover={{ y: -2, boxShadow: "0 8px 30px hsl(205 85% 53% / 0.4)" }}
                 whileTap={{ y: 0 }}
                 transition={{ duration: 0.2 }}
                 className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
               >
-                Laten we matchen <ArrowRight className="w-4 h-4" />
+                Bekijk onze aanpak
               </motion.a>
             </div>
           </motion.div>
 
           {/* Professionals — white card */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.55, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.55, delay: 0.12, ease: [0.25, 0.1, 0.25, 1] as const }}
             whileHover={{ y: -5 }}
-            className="bg-white border border-border/50 rounded-2xl p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
+            className="bg-accent/5 border border-accent/15 rounded-[.5rem_2rem_.5rem_2rem] p-6 sm:p-10 lg:p-12 flex flex-col cursor-default shadow-[0_4px_16px_hsl(220_50%_18%/0.05)] hover:shadow-[0_16px_40px_hsl(220_50%_18%/0.09)] hover:border-accent/25 transition-all duration-300"
           >
             <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent/80 mb-6">Voor professionals</span>
             <h3 className="text-[1.55rem] font-bold text-primary leading-[1.2] mb-4">
@@ -92,19 +92,19 @@ export function DienstenOverview() {
             <ul className="space-y-3.5 flex-1 mb-10">
               {professionalBullets.map((item) => (
                 <li key={item} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />
+
                   <span className="text-[14.5px] text-muted-foreground">{item}</span>
                 </li>
               ))}
             </ul>
             <motion.a
-              href="#contact"
+              href="/vacatures"
               whileHover={{ y: -2, boxShadow: "0 8px 24px hsl(220 50% 18% / 0.10)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.2 }}
               className="inline-flex items-center gap-2 rounded-full bg-primary text-white px-7 py-3.5 text-[13.5px] font-bold self-start mt-auto"
             >
-              Bekijk mogelijkheden <ArrowRight className="w-4 h-4" />
+              Bekijk mogelijkheden
             </motion.a>
           </motion.div>
 

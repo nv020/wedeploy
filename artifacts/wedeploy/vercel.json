@@ -1,9 +1,10 @@
 {
-  "buildCommand": "vite build --config vite.config.ts",
+  "buildCommand": "node build.mjs",
   "outputDirectory": "dist/public",
   "functions": {
     "api/contact.ts": {
       "maxDuration": 10
     }
-  }
+  },
+  "cleanUrls": true
 }

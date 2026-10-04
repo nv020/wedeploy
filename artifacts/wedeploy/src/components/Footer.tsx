@@ -1,21 +1,15 @@
 const navLinks = [
-  { label: "Diensten", href: "#diensten" },
-  { label: "Expertisegebieden", href: "#diensten-expertise" },
-  { label: "Werkwijze", href: "#werkwijze" },
-  { label: "Vacatures", href: "#vacatures" },
-  { label: "Contact", href: "#contact" },
+  { label: "Voor opdrachtgevers", href: "/opdrachtgevers" },
+  { label: "Ons netwerk", href: "/professionals" },
+  { label: "Voor professionals", href: "/vacatures" },
+  { label: "Expertise & diensten", href: "/expertise-diensten" },
+  { label: "Over ons", href: "/over-ons" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white relative overflow-hidden pt-44 md:pt-56 pb-16">
-
-      {/* Curved top edge */}
-      <div className="absolute top-0 left-0 right-0 leading-none pointer-events-none">
-        <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="block w-full h-36 md:h-52">
-          <ellipse cx="720" cy="0" rx="900" ry="160" fill="hsl(36 28% 97%)" />
-        </svg>
-      </div>
+    <footer className="bg-primary text-white relative overflow-hidden pt-10 md:pt-20 pb-8">
 
       {/* Dot grid */}
       <div
@@ -29,20 +23,18 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
 
         {/* Top: wordmark + contact */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14 pb-14 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6 pb-6 border-b border-white/10">
           <div>
             <a
-              href="#home"
+              href="/"
               className="inline-flex items-baseline text-[26px] font-extrabold leading-none mb-3"
               style={{ letterSpacing: "-0.3px" }}
             >
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
             </a>
-            <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.42)" }}>
-              Recruitment &amp; detachering voor<br />
-              Facility, Vastgoed, Projectmanagement<br />
-              en Techniek.
+            <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
+              De juiste mensen voor jouw team, project of volgende stap.
             </p>
           </div>
 
@@ -59,33 +51,40 @@ export function Footer() {
             >
               085 212 8668
             </a>
-            <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.32)" }}>
+            <p className="text-[12px] mt-1" style={{ color: "rgba(255,255,255,0.65)" }}>
               Krijn Taconiskade 461 · 1087 HW Amsterdam
             </p>
+            <p className="text-[12px]" style={{ color: "rgba(255,255,255,0.65)" }}>KvK 42072275</p>
           </div>
         </div>
 
+        <details className="footer-landings border-b border-white/10 pb-5 mb-5">
+          <summary className="cursor-pointer text-xs font-semibold text-white/75">Vakgebieden & inzet</summary>
+          <nav aria-label="Vakgebieden en inzet" className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 text-xs text-white/70">
+            <a href="/interim-projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/expertise-diensten#facility">Workplace & hospitality</a><a href="/interim-professionals">Interim professionals</a><a href="/zzp-opdrachten">Zzp-opdrachten</a>
+          </nav>
+        </details>
         {/* Bottom: nav + legal */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-          <nav className="flex flex-wrap gap-x-6 gap-y-2">
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-5 gap-y-3 md:flex md:flex-wrap md:gap-x-6 md:gap-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 className="text-[12px] transition-colors duration-200"
-                style={{ color: "rgba(255,255,255,0.40)" }}
+                style={{ color: "rgba(255,255,255,0.70)" }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.80)")}
-                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.40)")}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.70)")}
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          <div className="flex items-center gap-4 text-[11px]" style={{ color: "rgba(255,255,255,0.28)" }}>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px]" style={{ color: "rgba(255,255,255,0.60)" }}>
             <span>&copy; {new Date().getFullYear()} Wedeploy</span>
-            <a href="#privacy" className="hover:text-white/55 transition-colors">Privacy</a>
-            <a href="#cookies" className="hover:text-white/55 transition-colors">Cookies</a>
+            <a href="/privacy" className="hover:text-white/55 transition-colors">Privacy & cookies</a>
+            <a href="/veelgestelde-vragen" className="hover:text-white/55 transition-colors">Veelgestelde vragen</a>
           </div>
         </div>
 

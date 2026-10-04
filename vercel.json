@@ -8,5 +8,18 @@
       "source": "/api/(.*)",
       "destination": "/api/$1"
     }
+  ],
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/facility-recruitment",
+      "destination": "/facility-management",
+      "permanent": true
+    },
+    {
+      "source": "/vastgoed-recruitment",
+      "destination": "/vastgoed",
+      "permanent": true
+    }
   ]
 }

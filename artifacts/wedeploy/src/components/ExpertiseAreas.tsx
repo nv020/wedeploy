@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+
 import imgPM from "@assets/expertise-projectmanagement.webp";
 import imgFM from "@assets/expertise-facility.webp";
 import imgVastgoed from "@assets/expertise-vastgoed.webp";
@@ -10,7 +10,7 @@ const areas = [
     id: "pm",
     num: "01",
     title: "Projectmanagement",
-    sentence: "Projectmanagers en programmamanagers voor complexe, multidisciplinaire trajecten.",
+    sentence: "Projectmanagers, projectleiders en PMO’ers voor regie en ondersteuning.",
     img: imgPM,
     alt: "Projectmanagement recruitment Wedeploy",
     span: "lg:col-span-2",
@@ -23,7 +23,7 @@ const areas = [
     id: "fm",
     num: "02",
     title: "Facility Management",
-    sentence: "Facilitair coördinatoren en managers op tactisch en strategisch niveau.",
+    sentence: "Professionals voor facilitaire regie, workplace management en hospitality.",
     img: imgFM,
     alt: "Facility Management recruitment Wedeploy",
     span: "lg:col-span-1",
@@ -38,7 +38,7 @@ const areas = [
     title: "Vastgoed & Real Estate",
     sentence: "Asset-, property- en vastgoedmanagers voor commercieel en institutioneel vastgoed.",
     img: imgVastgoed,
-    alt: "Vastgoed recruitment Wedeploy",
+    alt: "Vastgoed Wedeploy",
     span: "lg:col-span-1",
     height: "h-[300px] lg:h-[360px]",
     imgW: 700, imgH: 467,
@@ -62,7 +62,7 @@ const areas = [
 
 const cardVariant = {
   hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
 const stagger = {
@@ -72,7 +72,7 @@ const stagger = {
 
 export function ExpertiseAreas() {
   return (
-    <section id="diensten-expertise" className="py-28 bg-primary">
+    <section id="diensten-expertise" className="py-14 md:py-24 bg-primary">
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Section header */}
@@ -88,23 +88,24 @@ export function ExpertiseAreas() {
             </h2>
           </div>
           <p className="text-[15px] leading-relaxed max-w-xs md:text-right" style={{ color: "rgba(255,255,255,0.50)" }}>
-            Wij begrijpen de sectoren en selecteren professionals die daarbinnen kunnen leveren.
+            Van projectmanagement en vastgoed tot management en administratieve ondersteuning. We kijken naar het werk én de mensen.
           </p>
         </div>
 
         {/* Editorial bento grid */}
         <motion.div
           variants={stagger}
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"
         >
           {areas.map((area) => (
-            <motion.div
+            <motion.a
+              href={({ pm: "/interim-projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/expertise-diensten#techniek" } as Record<string, string>)[area.id]}
               key={area.id}
               variants={cardVariant}
-              className={`group relative overflow-hidden cursor-default ${area.span} ${area.height}`}
+              className={`group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}
               style={{ borderRadius: "16px" }}
             >
               {/* Photo */}
@@ -128,14 +129,6 @@ export function ExpertiseAreas() {
                 >
                   {area.num}
                 </span>
-              </div>
-
-              {/* Arrow — top right, appears on hover */}
-              <div
-                className="absolute top-5 right-5 z-10 w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-1 group-hover:translate-y-0"
-                style={{ background: area.accent }}
-              >
-                <ArrowUpRight className="w-4 h-4 text-white" />
               </div>
 
               {/* Ghost watermark number */}
@@ -164,7 +157,7 @@ export function ExpertiseAreas() {
                 className="absolute bottom-0 left-0 h-[3px] w-0 group-hover:w-full transition-all duration-500 ease-out z-20"
                 style={{ background: area.accent }}
               />
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
 

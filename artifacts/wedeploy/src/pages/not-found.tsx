@@ -1,21 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle } from "lucide-react";
-
+import { useEffect } from "react";
 export default function NotFound() {
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <Card className="w-full max-w-md mx-4">
-        <CardContent className="pt-6">
-          <div className="flex mb-4 gap-2">
-            <AlertCircle className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl font-bold text-gray-900">404 Page Not Found</h1>
-          </div>
-
-          <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
-          </p>
-        </CardContent>
-      </Card>
-    </div>
-  );
+  useEffect(() => {
+    document.title = "Pagina niet gevonden | Wedeploy";
+    document.querySelector('meta[name="robots"]')?.setAttribute("content", "noindex, follow");
+  }, []);
+  return <main className="min-h-screen bg-background flex items-center justify-center px-5" id="main-content"><div className="content-card max-w-lg"><p className="eyebrow">404</p><h1 className="section-title">Pagina niet gevonden.</h1><p className="text-muted-foreground mt-5">Deze pagina bestaat niet of is verplaatst.</p><a href="/" className="inline-block text-accent font-bold mt-6">Terug naar Wedeploy</a></div></main>;
 }
