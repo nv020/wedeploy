@@ -5,6 +5,8 @@ import { ExpertiseAreas } from "@/components/ExpertiseAreas";
 import { VacaturePreview } from "@/components/VacaturePreview";
 import { ContactSection } from "@/components/ContactSection";
 import { ProfessionalPreview } from "@/components/ProfessionalCards";
+import { FAQ } from "@/components/PageLayout";
+import { homeFAQ } from "@/data/page-faqs";
 import { Footer } from "@/components/Footer";
 
 export function Home() {
@@ -17,6 +19,7 @@ export function Home() {
         <ExpertiseAreas />
         <ProfessionalPreview />
         <VacaturePreview />
+        <FAQ items={homeFAQ} />
         <ContactSection showProfile />
       </main>
       <Footer />

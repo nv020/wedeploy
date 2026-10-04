@@ -25,7 +25,7 @@ export const vakgebieden = {
     candidateIntro: "Wil je projecten leiden, coördineren of ondersteunen? Ontdek de rollen in projectmanagement en PMO en bespreek met ons welke vaste functie of tijdelijke opdracht bij jouw ervaring past.",
     candidateHeading: "Jouw rol in het projectteam.",
     candidateParagraphs: [
-      "Projectmanagement is geen enkele functie. Misschien neem je graag verantwoordelijkheid voor een heel project, of ligt jouw kracht juist in planning, voortgang en het organiseren van de samenwerking. We bespreken wat je nu doet, welk werk je wilt blijven doen en welke stap je zoekt.",
+      "Binnen projectteams kun je leidinggeven, coördineren of ondersteunen. Misschien draag je graag verantwoordelijkheid voor een heel project, of ligt jouw kracht juist in planning, voortgang en het organiseren van de samenwerking. We bespreken wat je nu doet, welk werk je wilt blijven doen en welke stap je zoekt.",
       "Voor een goede kennismaking horen we graag over het soort projecten waaraan je hebt gewerkt. Wat was jouw verantwoordelijkheid, met welke partijen werkte je samen en wat heb je opgeleverd? Je hoeft geen uitgebreid verhaal te schrijven: je cv en een korte toelichting zijn een goed begin.",
       "Onze focus ligt onder meer op vastgoed, huisvesting en facilitaire projecten. Ook PMO, projectsecretariaat en ondersteunende functies horen daarbij. De benodigde ervaring verschilt per rol. We kijken naar de inhoud van het werk en de ruimte die een organisatie biedt om verder te groeien."
     ],
@@ -87,9 +87,9 @@ export const vakgebieden = {
       ["Projectleider huisvesting", "Organiseert een verbouwing, verhuizing of nieuwe werkomgeving. Vertaalt gebruikerswensen naar een werkbaar plan en bewaakt de afstemming met uitvoering en dagelijkse dienstverlening."],
       ["Technisch vastgoedbeheerder", "Richt zich op onderhoud, gebouwkwaliteit en installaties. Houdt zicht op werkzaamheden, leveranciers en de opvolging van technische vragen binnen de portefeuille."]
     ],
-    searchHeading: "De portefeuille en de opgave als vertrekpunt.",
+    searchHeading: "Gericht zoeken voor jouw portefeuille",
     searchText: "We bespreken wat er nu ligt en wat iemand na de eerste periode zelfstandig moet kunnen dragen. Vervolgens kijken we naar vergelijkbare gebouwen, projecten en verantwoordelijkheden. Bij een voorstel geven we een toelichting op de relevante ervaring, motivatie en praktische afspraken over inzet en locatie.",
-    candidateIntro: "Zoek je werk in vastgoedbeheer, property management of huisvesting? Ontdek de rollen waarvoor we kennismaken en bespreek een vaste functie of tijdelijke opdracht die aansluit op jouw ervaring.",
+    candidateIntro: "Zoek je werk in vastgoedbeheer, property management of huisvesting? We bemiddelen voor vaste functies en tijdelijke opdrachten. Bespreek met ons welke rol en organisatie bij jouw ervaring passen.",
     candidateHeading: "Welke kant van vastgoed past bij jou?",
     candidateParagraphs: [
       "Vastgoed biedt werk in beheer, onderhoud en projecten. Misschien ligt jouw kracht in het dagelijks organiseren van een portefeuille. Of werk je liever aan een renovatie, verhuizing of realisatieproject. We bespreken welke verantwoordelijkheid je zoekt en welke ervaring je wilt inzetten.",
@@ -103,7 +103,7 @@ export const vakgebieden = {
     path: "/technisch-beheer", candidatePath: "/vacatures", label: "Gebouwgebonden techniek & technisch beheer",
     description: "Technisch beheerders, coördinatoren en monteurs voor gebouwen en installaties. Wedeploy zoekt voor onderhoud, beheer en technische projecten.",
     intro: "Voor onderhoud, storingen en technische projecten aan gebouwen zoek je mensen met passende vakkennis. We bemiddelen voor technisch beheer, coördinatie en gebouwgebonden installaties.",
-    heading: "De installatie en het werk bepalen het profiel.",
+    heading: "Passende vakkennis voor jouw gebouw",
     paragraphs: [
       "Technisch werk aan gebouwen kan uitvoerend, coördinerend of projectgericht zijn. Een monteur die storingen oplost heeft andere ervaring nodig dan een beheerder die onderhoudspartijen aanstuurt. We bespreken daarom de werkzaamheden, de installaties en de verantwoordelijkheid voordat we gaan zoeken.",
       "Gaat het om elektrotechniek, werktuigbouwkundige installaties of een combinatie? Werkt de professional zelfstandig op locatie of samen met een onderhoudsteam? Ook veiligheid, relevante opleiding en de benodigde aanwijzingen of certificaten horen bij het profiel. De concrete eisen stemmen we af met de opdrachtgever.",
@@ -120,7 +120,7 @@ export const vakgebieden = {
       ["Monteur gebouwgebonden installaties", "Voert onderhoud uit en onderzoekt storingen. De vereiste opleiding, discipline en veiligheidskennis verschillen per installatie en werkzaamheden."],
       ["Projectleider installaties", "Organiseert technische werkzaamheden binnen een project. Bewaakt planning, kwaliteit en afstemming tussen de betrokken disciplines en uitvoerende partijen."]
     ],
-    searchHeading: "Vakkennis én een passende werkomgeving.",
+    searchHeading: "Technische ervaring die aansluit",
     searchText: "We maken de technische eisen concreet en bespreken hoe het werk op locatie is georganiseerd. Daarna zoeken we naar relevante installatie- en onderhoudservaring. Bij een introductie bespreken we ook zelfstandigheid, samenwerking en praktische afspraken, zodat de verwachtingen over het werk helder zijn.",
     candidateIntro: "Werk je in technisch beheer, onderhoud of gebouwgebonden installaties? Deel jouw ervaring en bespreek welke functie of opdracht bij je past.",
     candidateHeading: "Jouw technische ervaring in de praktijk.", candidateParagraphs: [], candidateFit: "",

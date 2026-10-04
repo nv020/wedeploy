@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import imgPM from "@assets/expertise-projectmanagement.webp";
+const imgPM = "/images/project-overleg.webp";
 import imgFM from "@assets/expertise-facility.webp";
 import imgVastgoed from "@assets/expertise-vastgoed.webp";
-import imgTechniek from "@assets/expertise-techniek.webp";
+const imgTechniek = "/images/technisch-onderhoud.webp";
 
 const areas = [
   {
@@ -12,10 +12,10 @@ const areas = [
     title: "Projectmanagement",
     sentence: "Projectmanagers, projectleiders en PMO’ers voor regie en ondersteuning.",
     img: imgPM,
-    alt: "Projectmanagement recruitment Wedeploy",
+    alt: "Overleg aan de hand van bouwtekeningen",
     span: "lg:col-span-2",
     height: "h-[360px] lg:h-[440px]",
-    imgW: 900, imgH: 600,
+    imgW: 1100, imgH: 619,
     gradient: "linear-gradient(135deg, hsl(220 50% 10% / 0.95) 0%, hsl(220 50% 14% / 0.40) 55%, transparent 100%)",
     accent: "#22A4E8",
   },
@@ -25,7 +25,7 @@ const areas = [
     title: "Facility Management",
     sentence: "Professionals voor facilitaire regie, workplace management en hospitality.",
     img: imgFM,
-    alt: "Facility Management recruitment Wedeploy",
+    alt: "Een lichte kantooromgeving",
     span: "lg:col-span-1",
     height: "h-[360px] lg:h-[440px]",
     imgW: 700, imgH: 467,
@@ -38,7 +38,7 @@ const areas = [
     title: "Vastgoed & Real Estate",
     sentence: "Asset-, property- en vastgoedmanagers voor commercieel en institutioneel vastgoed.",
     img: imgVastgoed,
-    alt: "Vastgoed Wedeploy",
+    alt: "Kantoorgebouwen",
     span: "lg:col-span-1",
     height: "h-[300px] lg:h-[360px]",
     imgW: 700, imgH: 467,
@@ -51,10 +51,10 @@ const areas = [
     title: "Gebouwgebonden techniek",
     sentence: "Technische coördinatoren, projectleiders en engineers voor E&W installaties.",
     img: imgTechniek,
-    alt: "Techniek installaties recruitment Wedeploy",
+    alt: "Onderhoud aan een elektrische installatie",
     span: "lg:col-span-2",
     height: "h-[300px] lg:h-[360px]",
-    imgW: 900, imgH: 600,
+    imgW: 1100, imgH: 734,
     gradient: "linear-gradient(to right, hsl(220 50% 8% / 0.96) 0%, hsl(220 50% 12% / 0.50) 45%, transparent 100%)",
     accent: "#22A4E8",
   },
@@ -80,7 +80,7 @@ export function ExpertiseAreas() {
           <div>
             <p className="eyebrow">Expertisegebieden</p>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.08]">
-              Expertise die verder gaat<br className="hidden md:block" /> dan een online profiel.
+              Onze vakgebieden
             </h2>
           </div>
           <p className="text-[15px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.50)" }}>
@@ -122,7 +122,7 @@ export function ExpertiseAreas() {
                   {area.title}
                 </h3>
                 <p
-                  className="text-[13px] leading-relaxed max-w-[340px] transition-all duration-300"
+                  className="text-[15px] leading-relaxed max-w-[340px] transition-all duration-300"
                   style={{ color: "rgba(255,255,255,0.65)" }}
                 >
                   {area.sentence}
