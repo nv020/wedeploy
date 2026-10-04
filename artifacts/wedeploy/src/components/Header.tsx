@@ -100,7 +100,25 @@ export function Header() {
             </a>
           ))}
           </nav>
-          <div className="mt-auto pt-4 pb-2">
+          <nav aria-label="Vakgebieden" className="pt-2">
+            <p className="text-xs font-medium text-muted-foreground mb-2">Ontdek onze vakgebieden</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-1">
+              {[
+                { label: "Projectmanagement", href: "/interim-projectmanagement" },
+                { label: "Facility Management", href: "/facility-management" },
+                { label: "Vastgoed", href: "/vastgoed" },
+              ].map((item) => (
+                <a key={item.href} href={item.href} onClick={() => setIsOpen(false)} aria-current={location === item.href ? "page" : undefined} className={`inline-flex items-center min-h-11 text-sm font-semibold hover:text-accent ${location === item.href ? "text-accent" : "text-primary"}`}>
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </nav>
+          <nav aria-label="Snel regelen" className="flex flex-wrap gap-x-5 gap-y-1">
+            <a href="/vacatures?type=kandidaat#contact" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Laat je cv achter</a>
+            <a href="/veelgestelde-vragen" onClick={() => setIsOpen(false)} aria-current={location === "/veelgestelde-vragen" ? "page" : undefined} className={`inline-flex items-center min-h-11 text-sm font-semibold hover:text-accent ${location === "/veelgestelde-vragen" ? "text-accent" : "text-primary"}`}>Veelgestelde vragen</a>
+          </nav>
+          <div className="pt-2 pb-2">
           <p className="text-sm text-muted-foreground mb-4">Waarmee kunnen we je helpen?</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
           <a
@@ -112,6 +130,7 @@ export function Header() {
           </a>
           <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Bel 085 212 8668</a>
           </div>
+          <p className="mt-5 text-xs text-muted-foreground">Vanuit Amsterdam. Door heel Nederland.</p>
           </div>
           </div>
         </div>
