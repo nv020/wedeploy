@@ -20,7 +20,8 @@ export function Header() {
     if (!isOpen) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    menuRef.current?.querySelector<HTMLAnchorElement>("a")?.focus();
+    const activeLink = menuRef.current?.querySelector<HTMLAnchorElement>('a[aria-current="page"]');
+    (activeLink ?? menuRef.current?.querySelector<HTMLAnchorElement>("a"))?.focus();
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setIsOpen(false);
       if (event.key !== "Tab") return;
