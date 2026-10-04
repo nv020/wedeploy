@@ -76,7 +76,7 @@ export function ExpertiseAreas() {
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Section header */}
-        <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div className="expertise-heading mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
               style={{ background: "hsl(205 85% 53% / 0.12)", borderColor: "hsl(205 85% 53% / 0.3)" }}>
@@ -87,7 +87,7 @@ export function ExpertiseAreas() {
               Expertise die verder gaat<br className="hidden md:block" /> dan een online profiel.
             </h2>
           </div>
-          <p className="text-[15px] leading-relaxed max-w-xs md:text-right" style={{ color: "rgba(255,255,255,0.50)" }}>
+          <p className="text-[15px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.50)" }}>
             Van projectmanagement en vastgoed tot management en administratieve ondersteuning. We kijken naar het werk én de mensen.
           </p>
         </div>
@@ -105,8 +105,7 @@ export function ExpertiseAreas() {
               href={({ pm: "/interim-projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/techniek-installaties" } as Record<string, string>)[area.id]}
               key={area.id}
               variants={cardVariant}
-              className={`group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}
-              style={{ borderRadius: "16px" }}
+              className={`expertise-card rounded-2xl group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}
             >
               {/* Photo */}
               <img

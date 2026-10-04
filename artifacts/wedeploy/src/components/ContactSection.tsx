@@ -87,7 +87,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
-          className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-12"
+          className={`contact-heading mb-8 md:mb-10 ${compact ? "max-w-3xl mx-auto" : ""}`}
         >
           <div>
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border"
@@ -100,21 +100,11 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
             </h2>
             {description && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{description}</p>}
           </div>
-          {!compact && (<div className="flex gap-9 md:gap-10">
-            {[
-              { label: "Contact", val: "Persoonlijk" },
-              { label: "Vrijblijvend", val: "Altijd" },
-            ].map(stat => (
-              <div key={stat.label} className="text-center">
-                <div className="text-[1.75rem] font-black text-accent tracking-tight leading-none">{stat.val}</div>
-                <div className="text-[10px] font-bold text-primary/40 tracking-[1px] uppercase mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </div>)}
+
         </motion.div>
 
         {/* 2-column grid */}
-        <div className={compact ? "max-w-3xl mx-auto" : "grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-7 items-start"}>
+        <div className={compact ? "max-w-3xl mx-auto" : "contact-composition grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-7 items-start"}>
 
           {/* LEFT — Form card */}
           <motion.div

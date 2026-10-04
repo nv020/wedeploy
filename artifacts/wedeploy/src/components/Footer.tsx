@@ -25,7 +25,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
 
         {/* Top: wordmark + contact */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6 pb-6 border-b border-white/10">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6 pb-6 border-b border-white/10">
           <div>
             <BrandLogo className="mb-4" />
             <p className="text-sm font-bold leading-relaxed text-white max-w-xs mb-2">
@@ -45,7 +45,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-1.5 md:text-right">
+          <div className="flex flex-col gap-1.5 md:text-left">
             <a
               href="mailto:info@wedeploy.nl"
               className="text-[14px] font-semibold text-white/75 hover:text-white transition-colors duration-200"
