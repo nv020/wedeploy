@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLocation } from "wouter";
+import { sectorPages } from "@/data/sectors";
 
 const navItems = [
   { label: "Voor opdrachtgevers", href: "/opdrachtgevers" },
@@ -86,7 +87,7 @@ export function Header() {
 
       {isOpen && (
         <div ref={menuRef} id="mobile-menu" className="mobile-menu xl:hidden fixed top-[68px] inset-x-0 bg-background text-primary overflow-y-auto overscroll-contain">
-          <div className="mobile-menu-inner flex flex-col gap-6 px-5 sm:px-8 py-6 mx-auto max-w-3xl">
+          <div className="mobile-menu-inner flex flex-col gap-0 px-5 sm:px-8 pt-5 mx-auto max-w-3xl" style={{ paddingBottom: 0 }}>
           <nav aria-label="Mobiele navigatie" className="flex flex-col gap-1">
           {navItems.map((item) => (
             <a
@@ -100,37 +101,30 @@ export function Header() {
             </a>
           ))}
           </nav>
-          <nav aria-label="Vakgebieden" className="pt-2">
-            <p className="text-xs font-medium text-muted-foreground mb-2">Ontdek onze vakgebieden</p>
-            <div className="flex flex-wrap gap-x-5 gap-y-1">
+          <nav aria-label="Vakgebieden" className="mt-7 mb-6">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground mb-3">Vakgebieden</p>
+            <div className="grid grid-cols-2 gap-x-5 gap-y-1">
               {[
-                { label: "Projectmanagement", href: "/interim-projectmanagement" },
-                { label: "Facility Management", href: "/facility-management" },
-                { label: "Vastgoed", href: "/vastgoed" },
-              ].map((item) => (
-                <a key={item.href} href={item.href} onClick={() => setIsOpen(false)} aria-current={location === item.href ? "page" : undefined} className={`inline-flex items-center min-h-11 text-sm font-semibold hover:text-accent ${location === item.href ? "text-accent" : "text-primary"}`}>
-                  {item.label}
+                { path: "/interim-projectmanagement", label: "Projectmanagement & PMO" },
+                ...sectorPages.filter((item) => item.path !== "/interim-projectmanagement"),
+              ].map((item, index) => (
+                <a key={item.path} href={item.path} onClick={() => setIsOpen(false)} aria-current={location === item.path ? "page" : undefined} className={`flex items-center min-h-11 py-2 text-[14px] leading-snug font-medium hover:text-accent ${index === 0 ? "col-span-2 text-[16px] font-semibold" : ""} ${location === item.path ? "text-accent" : "text-primary"}`}>
+                  <span className="[text-wrap:balance]">{item.label}</span>
                 </a>
               ))}
             </div>
           </nav>
-          <nav aria-label="Snel regelen" className="flex flex-wrap gap-x-5 gap-y-1">
-            <a href="/vacatures?type=kandidaat#contact" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Laat je cv achter</a>
-            <a href="/veelgestelde-vragen" onClick={() => setIsOpen(false)} aria-current={location === "/veelgestelde-vragen" ? "page" : undefined} className={`inline-flex items-center min-h-11 text-sm font-semibold hover:text-accent ${location === "/veelgestelde-vragen" ? "text-accent" : "text-primary"}`}>Veelgestelde vragen</a>
-          </nav>
-          <div className="pt-2 pb-2">
-          <p className="text-sm text-muted-foreground mb-4">Waarmee kunnen we je helpen?</p>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-          <a
-            href="/contact"
-            onClick={() => setIsOpen(false)}
-            className="inline-flex items-center justify-center rounded-full bg-accent text-white px-5 py-3 text-sm font-bold hover:bg-accent/90"
-          >
-            Contact opnemen
-          </a>
-          <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Bel 085 212 8668</a>
-          </div>
-          <p className="mt-5 text-xs text-muted-foreground">Vanuit Amsterdam. Door heel Nederland.</p>
+          <div className="bg-primary text-white -mx-5 sm:-mx-8 px-5 sm:px-8 py-6 mt-1 flex-1" style={{ paddingBottom: "max(1.5rem, env(safe-area-inset-bottom))" }}>
+            <p className="text-[11px] uppercase tracking-[0.16em] text-white/55 mb-3">Contact</p>
+            <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-[26px] font-semibold tracking-tight text-white hover:text-accent">085 212 8668</a>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-1 mt-1">
+              <a href="mailto:info@wedeploy.nl" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm text-white/75 hover:text-white">info@wedeploy.nl</a>
+              <a href="/contact" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-accent hover:text-white">Stuur een bericht</a>
+            </div>
+            <nav aria-label="Snel regelen" className="flex flex-wrap items-center gap-x-6 gap-y-1 mt-4">
+              <a href="/vacatures?type=kandidaat#contact" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center rounded-full bg-accent text-white px-4 min-h-11 text-sm font-semibold hover:bg-accent/90">Stuur je cv</a>
+              <a href="/veelgestelde-vragen" onClick={() => setIsOpen(false)} aria-current={location === "/veelgestelde-vragen" ? "page" : undefined} className={`inline-flex items-center min-h-11 text-[13px] hover:text-white ${location === "/veelgestelde-vragen" ? "text-accent" : "text-white/70"}`}>Veelgestelde vragen</a>
+            </nav>
           </div>
           </div>
         </div>
