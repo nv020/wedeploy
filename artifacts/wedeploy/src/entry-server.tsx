@@ -3,5 +3,6 @@ import App from "./App";
 export { pages, siteUrl, vacancies } from "./data/site";
 export function render(path: string) { return renderToString(<App ssrPath={path} />); }
 
-export { amsterdamServices, amsterdamPages } from "./data/amsterdam";
+export { diensten } from "./data/diensten";
+export { publicVacancies } from "./data/opportunities";
 export { faqItems } from "./data/faq";

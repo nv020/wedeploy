@@ -158,7 +158,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                   exit={{ opacity: 0, y: -6 }}
                   transition={{ duration: 0.2 }}
                   onSubmit={handleSubmit}
-                  className="contact-aside flex flex-col gap-4"
+                  className="contact-form flex flex-col gap-4"
                 >
                   {/* Honeypot */}
                   <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
@@ -291,12 +291,12 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                     whileHover={!loading ? { y: -2, boxShadow: "0 10px 32px hsl(220 50% 18% / 0.28)" } : {}}
                     whileTap={!loading ? { y: 0 } : {}}
                     transition={{ duration: 0.18 }}
-                    className="w-full rounded-full bg-primary text-white py-4 text-[14px] font-bold disabled:opacity-60 disabled:cursor-not-allowed transition-opacity mt-1 tracking-[-0.2px]"
+                    className="self-start inline-flex items-center justify-center min-h-12 rounded-full bg-primary text-white px-7 py-3 text-[14px] font-bold disabled:opacity-60 disabled:cursor-not-allowed transition-opacity mt-1 tracking-[-0.2px]"
                   >
-                    {loading ? "Versturen..." : <>Verstuur bericht </>}
+                    {loading ? "Versturen..." : role === "kandidaat" ? "Verstuur mijn reactie" : "Verstuur bericht"}
                   </motion.button>
 
-                  <p className="text-center text-sm text-primary/70">Liever bellen? <a href="tel:+31852128668" className="inline-flex items-center min-h-11 font-bold text-primary hover:text-accent">085 212 8668</a></p>
+                  <p className="text-left text-sm text-primary/70">Liever bellen? <a href="tel:+31852128668" className="inline-flex items-center min-h-11 font-bold text-primary hover:text-accent">085 212 8668</a></p>
                 </motion.form>
               )}
             </AnimatePresence>

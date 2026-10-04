@@ -20,6 +20,76 @@
       "source": "/vastgoed-recruitment",
       "destination": "/vastgoed",
       "permanent": true
+    },
+    {
+      "source": "/interim-projectmanagement",
+      "destination": "/projectmanagement",
+      "permanent": true
+    },
+    {
+      "source": "/workplace-hospitality",
+      "destination": "/facility-management",
+      "permanent": true
+    },
+    {
+      "source": "/management-leiding",
+      "destination": "/expertise-diensten#andere-functies",
+      "permanent": true
+    },
+    {
+      "source": "/administratie-support",
+      "destination": "/expertise-diensten#andere-functies",
+      "permanent": true
+    },
+    {
+      "source": "/techniek-installaties",
+      "destination": "/technisch-beheer",
+      "permanent": true
+    },
+    {
+      "source": "/interim-professionals",
+      "destination": "/interim-zzp",
+      "permanent": true
+    },
+    {
+      "source": "/werving-selectie-amsterdam",
+      "destination": "/werving-selectie",
+      "permanent": true
+    },
+    {
+      "source": "/detachering-amsterdam",
+      "destination": "/detachering",
+      "permanent": true
+    },
+    {
+      "source": "/interim-amsterdam",
+      "destination": "/interim-zzp",
+      "permanent": true
+    },
+    {
+      "source": "/detavast-amsterdam",
+      "destination": "/detachering#detavast",
+      "permanent": true
+    },
+    {
+      "source": "/vaste-banen-amsterdam",
+      "destination": "/vacatures",
+      "permanent": true
+    },
+    {
+      "source": "/werken-via-detachering-amsterdam",
+      "destination": "/detachering#voor-professionals",
+      "permanent": true
+    },
+    {
+      "source": "/interim-opdrachten-amsterdam",
+      "destination": "/zzp-opdrachten",
+      "permanent": true
+    },
+    {
+      "source": "/werken-via-detavast-amsterdam",
+      "destination": "/detachering#detavast",
+      "permanent": true
     }
   ]
 }

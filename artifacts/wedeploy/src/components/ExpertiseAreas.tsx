@@ -48,7 +48,7 @@ const areas = [
   {
     id: "tech",
     num: "04",
-    title: "Techniek & Installaties",
+    title: "Gebouwgebonden techniek",
     sentence: "Technische coördinatoren, projectleiders en engineers voor E&W installaties.",
     img: imgTechniek,
     alt: "Techniek installaties recruitment Wedeploy",
@@ -98,7 +98,7 @@ export function ExpertiseAreas() {
         >
           {areas.map((area) => (
             <motion.a
-              href={({ pm: "/interim-projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/techniek-installaties" } as Record<string, string>)[area.id]}
+              href={({ pm: "/projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/technisch-beheer" } as Record<string, string>)[area.id]}
               key={area.id}
               variants={cardVariant}
               className={`expertise-card rounded-2xl group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}

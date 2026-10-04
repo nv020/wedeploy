@@ -1,9 +1,1 @@
-export const sectorPages = [
-  { path: "/vastgoed", label: "Vastgoed", title: "Vastgoed & huisvesting | Recruitment en detachering | Wedeploy", description: "Een projectmanager vastgoed, property manager of vastgoedbeheerder nodig? Wedeploy helpt met werving & selectie, detachering en interim." },
-  { path: "/facility-management", label: "Facility Management", title: "Facility Management, Workplace & Hospitality | Wedeploy", description: "Professionals voor Facility Management, workplace management en hospitality. Werving & selectie, detachering, interim en zzp via Wedeploy." },
-  { path: "/interim-projectmanagement", label: "Interim projectmanagement", title: "Interim projectmanagement | Vastgoed, huisvesting en PMO | Wedeploy", description: "Een interim projectmanager, projectleider huisvesting of PMO’er nodig? Wedeploy zoekt professionals voor vastgoedprojecten, verhuizingen en projectondersteuning." },
-  { path: "/workplace-hospitality", label: "Workplace & hospitality", title: "Workplace management en hospitality | Wedeploy", description: "Werving voor workplace management, hospitality, frontoffice en ontvangst. Bespreek vaste en tijdelijke versterking met Wedeploy." },
-  { path: "/management-leiding", label: "Management & leiding", title: "Management en leidinggevende functies | Wedeploy", description: "Een teamleider, afdelingsmanager of tijdelijk manager nodig? Wedeploy zoekt gericht naar leidinggevenden voor vaste en tijdelijke functies." },
-  { path: "/administratie-support", label: "Administratie & support", title: "Administratieve functies en support | Wedeploy", description: "Administratief medewerker, office manager of projectassistent gezocht? Wedeploy helpt bij vaste en tijdelijke ondersteuning." },
-  { path: "/techniek-installaties", label: "Techniek & installaties", title: "Technisch beheer en installaties | Wedeploy", description: "Technisch beheerder, coördinator of projectleider installaties nodig? Bespreek jouw vraag voor gebouwgebonden techniek met Wedeploy." },
-];
+export { sectorPages } from "./vakgebieden";
