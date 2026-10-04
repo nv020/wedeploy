@@ -20,8 +20,8 @@ export function Header() {
     if (!isOpen) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    const activeLink = menuRef.current?.querySelector<HTMLAnchorElement>('a[aria-current="page"]');
-    (activeLink ?? menuRef.current?.querySelector<HTMLAnchorElement>("a"))?.focus();
+    // Keep focus on the menu trigger when opened by touch. The links remain
+    // in normal tab order, avoiding a misleading focus ring on the first item.
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setIsOpen(false);
       if (event.key !== "Tab") return;
