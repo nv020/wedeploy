@@ -87,30 +87,29 @@ export function Header() {
       {isOpen && (
         <div ref={menuRef} id="mobile-menu" className="mobile-menu xl:hidden fixed top-[68px] inset-x-0 bg-background text-primary overflow-y-auto overscroll-contain">
           <div className="mobile-menu-inner flex flex-col px-5 sm:px-8 pt-5 mx-auto max-w-3xl">
-          <nav aria-label="Mobiele navigatie" className="flex flex-col gap-1">
+          <nav aria-label="Mobiele navigatie"><ul className="mobile-nav-list">
           {navItems.map((item) => (
+            <li key={item.href}>
             <a
-              key={item.label}
               href={item.href}
               aria-current={location === item.href ? "page" : undefined}
-              className={`mobile-nav-link block py-3 text-[clamp(21px,5.8vw,30px)] leading-tight font-bold tracking-tight transition-colors ${location === item.href ? "text-accent" : "text-primary hover:text-accent"}`}
+              className={`mobile-nav-link block py-3 text-[clamp(21px,5.8vw,26px)] leading-tight font-semibold tracking-tight transition-colors ${location === item.href ? "text-accent" : "text-primary hover:text-accent"}`}
               onClick={() => setIsOpen(false)}
             >
               {item.label}
             </a>
+            </li>
           ))}
-          </nav>
+          </ul></nav>
           <div className="mobile-menu-contact mt-8 pb-2">
-            <div className="relative inline-block pr-20">
-              <p className="text-[23px] leading-tight font-semibold tracking-tight">Even kennismaken?</p>
-              <svg className="absolute right-1 top-1 w-14 h-16 text-accent" viewBox="0 0 60 70" fill="none" aria-hidden="true">
-                <path d="M7 5C38 1 51 13 44 27C38 39 22 33 27 23C32 12 54 26 49 43C45 55 31 60 13 59M13 59L23 51M13 59L24 65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+            <div className="flex items-center gap-4">
+              <img src="/nicky-verkooij.webp" alt="Nicky, consultant bij Wedeploy" width="64" height="64" className="w-16 h-16 shrink-0 rounded-full object-cover" style={{ objectPosition: "50% 12%" }} />
+              <div>
+                <p className="text-[19px] leading-tight font-semibold tracking-tight">Even kennismaken?</p>
+                <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-medium text-primary hover:text-accent">Bel 085 212 8668</a>
+              </div>
             </div>
-            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-              <a href="/contact" onClick={() => setIsOpen(false)} className="mobile-contact-button inline-flex items-center justify-center rounded-full bg-accent text-white px-6 min-h-12 text-sm font-bold hover:bg-accent/90">Neem contact op</a>
-              <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-semibold text-primary hover:text-accent">Bel 085 212 8668</a>
-            </div>
+            <a href="/contact" onClick={() => setIsOpen(false)} className="mobile-contact-button mt-4 inline-flex items-center justify-center rounded-full bg-accent text-white px-6 min-h-12 text-sm font-bold hover:bg-accent/90">Neem contact op</a>
           </div>
           <nav aria-label="Snel regelen" className="flex flex-wrap items-center gap-x-6 gap-y-1 mt-6 pb-2">
             <a href="/vacatures?type=kandidaat#contact" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-[13px] font-medium text-muted-foreground hover:text-primary">Laat je cv achter</a>
