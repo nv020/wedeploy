@@ -551,3 +551,17 @@ main a, main button { text-wrap: balance; }
 .page-shell .faq-topics { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; padding-bottom: 1.5rem; }
 .page-shell .faq-topic { padding: 2rem 0; scroll-margin-top: 90px; border-top: 1px solid hsl(var(--border)); }
 @media (min-width: 768px) { .page-shell .faq-topic { padding: 3rem 0; } }
+
+/* Mobile navigation: one playful contact gesture, with quiet utility links. */
+.mobile-contact-button { transform: rotate(-2deg); }
+@media (max-height: 640px) {
+  .mobile-menu-inner { padding-top: .75rem; }
+  .mobile-nav-link { padding-top: .55rem; padding-bottom: .55rem; }
+  .mobile-menu-contact { margin-top: 1.25rem; }
+}
+@media (max-height: 560px) {
+  .mobile-nav-link { font-size: 20px; padding-top: .4rem; padding-bottom: .4rem; }
+  .mobile-menu-contact { margin-top: 1rem; }
+  .mobile-menu-contact p { font-size: 21px; }
+  .mobile-menu nav[aria-label="Snel regelen"] { margin-top: .5rem; }
+}
