@@ -1,3 +1,5 @@
+import { BrandLogo } from "@/components/BrandLogo";
+
 const navLinks = [
   { label: "Voor opdrachtgevers", href: "/opdrachtgevers" },
   { label: "Ons netwerk", href: "/professionals" },
@@ -25,14 +27,7 @@ export function Footer() {
         {/* Top: wordmark + contact */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6 pb-6 border-b border-white/10">
           <div>
-            <a
-              href="/"
-              className="inline-flex items-baseline text-[26px] font-extrabold leading-none mb-3"
-              style={{ letterSpacing: "-0.3px" }}
-            >
-              <span className="text-accent">WE</span>
-              <span className="text-white">DEPLOY</span>
-            </a>
+            <BrandLogo className="mb-4" />
             <p className="text-sm font-bold leading-relaxed text-white max-w-xs mb-2">
               De juiste professionals. De beste matches.
             </p>
