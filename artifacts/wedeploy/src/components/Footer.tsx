@@ -33,8 +33,11 @@ export function Footer() {
               <span className="text-accent">WE</span>
               <span className="text-white">DEPLOY</span>
             </a>
+            <p className="text-sm font-bold leading-relaxed text-white max-w-xs mb-2">
+              De juiste professionals. De beste matches.
+            </p>
             <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
-              We zoeken mensen die teams en projecten vooruithelpen.
+              Kwaliteit boven kwantiteit. Voor vaste functies en tijdelijke opdrachten.
             </p>
           </div>
 
