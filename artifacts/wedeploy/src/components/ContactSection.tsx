@@ -336,10 +336,10 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
               {/* Quote */}
               <div className="border-l-[3px] border-accent pl-4">
                 <p className="text-[14px] leading-[1.72] text-primary/55 font-medium italic mb-3.5">
-                  {showProfile ? "Een professional nodig of toe aan een nieuwe opdracht? Laat je gegevens achter, dan spreken we elkaar." : "Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap."}
+                  {showProfile ? "Een professional nodig of toe aan een nieuwe opdracht? Laat je gegevens achter. We nemen contact met je op om jouw vraag of wensen te bespreken." : "Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap."}
                 </p>
                 <p className="text-[14px] font-extrabold text-accent tracking-[-0.1px]">
-                  {showProfile ? "De koffie staat klaar." : "Een eerste gesprek is vrijblijvend."}
+                  {showProfile ? "Je krijgt persoonlijk antwoord." : "Een eerste gesprek is vrijblijvend."}
                 </p>
               </div>
             </div>

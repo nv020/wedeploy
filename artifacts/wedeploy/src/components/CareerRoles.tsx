@@ -5,7 +5,7 @@ const roles = [
   { title: "Facility manager", text: "Leid een facilitair team en organiseer dienstverlening die werkt. Voor professionals met ervaring in leveranciers, budgetten en de dagelijkse praktijk." },
   { title: "Facilitair coördinator", text: "Houd een locatie draaiend. Je stemt af met medewerkers en leveranciers, organiseert de dienstverlening en pakt praktische vragen op." },
   { title: "Workplace manager", text: "Organiseer een werkomgeving die past bij de mensen die er werken. Je verbindt gebruikerswensen, werkplekken en facilitaire dienstverlening." },
-  { title: "Hospitality & ontvangst", text: "Zorg voor een gastvrije ontvangst en goede service. We maken kennis met hospitality managers, receptiemedewerkers en frontoffice-professionals." },
+  { title: "Hospitality", text: "Zorg voor een gastvrije ontvangst en goede service op locatie. We maken kennis met hospitality managers, receptiemedewerkers en frontoffice-professionals." },
   { title: "Administratie & support", text: "Ondersteun een team met overzicht en nauwkeurigheid. Voor administratief medewerkers, office managers, managementassistenten en projectassistenten." },
   { title: "Management & leiding", text: "Geef richting aan een team of afdeling. Deel jouw ervaring als teamleider, operations manager of interim manager en vertel welke opgave bij je past." },
   { title: "Vastgoedbeheerder", text: "Beheer gebouwen en onderhoud. Je houdt overzicht op de portefeuille, leveranciers en gebruikersvragen. Ook voor property managers." },
