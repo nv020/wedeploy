@@ -107,13 +107,13 @@ export function Hero() {
           </motion.p>
 
           {/* CTAs */}
-          <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-10">
+          <motion.div variants={fadeUp} className="hero-home-actions flex flex-nowrap gap-2 sm:gap-3 mb-10">
             <motion.a
               href="/opdrachtgevers"
               whileHover={{ y: -2, boxShadow: "0 14px 36px hsl(205 85% 53% / 0.38)" }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}
-              className="inline-flex items-center gap-2 rounded-full bg-accent text-white px-6 sm:px-9 py-4 text-[14.5px] font-bold"
+              className="inline-flex min-w-0 flex-1 items-center justify-center gap-2 rounded-full bg-accent text-white px-4 sm:px-9 py-4 text-[14.5px] font-bold"
             >
               Ik zoek versterking
             </motion.a>
@@ -122,7 +122,7 @@ export function Hero() {
               whileHover={{ y: -2 }}
               whileTap={{ y: 0 }}
               transition={{ duration: 0.18 }}
-              className="inline-flex items-center gap-2 rounded-full text-white border border-white/20 px-6 sm:px-8 py-4 text-[14px] font-semibold hover:border-white/40 transition-colors duration-200"
+              className="inline-flex min-w-0 flex-1 items-center justify-center gap-2 rounded-full text-white border border-white/20 px-4 sm:px-8 py-4 text-[14px] font-semibold hover:border-white/40 transition-colors duration-200"
               style={{ background: "rgba(255,255,255,0.07)" }}
             >
               Ik ben professional

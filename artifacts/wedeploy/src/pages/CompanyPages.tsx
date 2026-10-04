@@ -60,7 +60,7 @@ export function About() {
   </PageLayout>;
 }
 export function Contact() {
-  return <PageLayout variant="quiet" hero="graphic" label="Contact" title="Laten we praten." intro="Een professional nodig of toe aan een volgende stap? Neem rechtstreeks contact op met ons. Een eerste gesprek is vrijblijvend.">
+  return <PageLayout variant="quiet" hero="contact" label="Contact" title="Laten we praten." intro="Een professional nodig of toe aan een volgende stap? Neem rechtstreeks contact op met ons. Een eerste gesprek is vrijblijvend.">
     <Section><div className="grid md:grid-cols-2 gap-6 md:gap-12"><div><p className="eyebrow">Samenwerken</p><h2 className="section-title">Ook voor bureaus.</h2></div><div><p className="text-muted-foreground leading-relaxed">Ben je een bureau of dienstverlener en zoek je aanvullende expertise? We bespreken graag hoe we elkaar kunnen versterken met ons netwerk en een gerichte zoektocht.</p><a href="/contact?type=opdrachtgever&onderwerp=Samenwerking%20tussen%20bureaus#contact" className="inline-flex mt-5 text-accent font-bold">Bespreek een samenwerking</a></div></div></Section>
     <Section><div className="flex flex-wrap gap-5"><a href="tel:+31852128668" className="inline-flex items-center font-bold text-lg text-primary">085 212 8668</a><a href="mailto:info@wedeploy.nl" className="inline-flex items-center font-bold text-lg text-primary">info@wedeploy.nl</a></div></Section><ContactSection compact heading="Stuur jouw bericht." description="Vertel kort waarover je contact wilt opnemen. We lezen je bericht en nemen contact met je op om de vraag of mogelijkheden te bespreken." readQuery />
   </PageLayout>;

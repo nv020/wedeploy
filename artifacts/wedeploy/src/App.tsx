@@ -24,6 +24,10 @@ function App({ ssrPath }: { ssrPath?: string }) {
       <Route path="/vastgoed">{() => <SectorPage sector="vastgoed" />}</Route>
       <Route path="/facility-management">{() => <SectorPage sector="facility" />}</Route>
       <Route path="/interim-projectmanagement">{() => <SectorPage sector="projecten" />}</Route>
+      <Route path="/workplace-hospitality">{() => <SectorPage sector="workplace" />}</Route>
+      <Route path="/management-leiding">{() => <SectorPage sector="management" />}</Route>
+      <Route path="/administratie-support">{() => <SectorPage sector="support" />}</Route>
+      <Route path="/techniek-installaties">{() => <SectorPage sector="techniek" />}</Route>
       {amsterdamPages.map(page => <Route key={page.path} path={page.path}>{() => <AmsterdamServicePage slug={page.slug} audience={page.audience} />}</Route>)}
       <Route path="/zzp-opdrachten">{() => <FlexibleWorkPage candidate />}</Route>
       <Route path="/interim-professionals">{() => <FlexibleWorkPage />}</Route>

@@ -102,7 +102,7 @@ export function ExpertiseAreas() {
         >
           {areas.map((area) => (
             <motion.a
-              href={({ pm: "/interim-projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/expertise-diensten#techniek" } as Record<string, string>)[area.id]}
+              href={({ pm: "/interim-projectmanagement", fm: "/facility-management", vastgoed: "/vastgoed", tech: "/techniek-installaties" } as Record<string, string>)[area.id]}
               key={area.id}
               variants={cardVariant}
               className={`group relative overflow-hidden cursor-pointer ${area.span} ${area.height}`}

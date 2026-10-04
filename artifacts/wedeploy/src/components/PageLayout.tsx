@@ -6,7 +6,7 @@ export function ActionLink({ href, children, secondary = false }: { href: string
   return <a href={href} className={secondary ? "secondary-action inline-flex items-center py-3 text-sm font-semibold" : buttonClass}>{children}</a>;
 }
 type IntroVariant = "editorial" | "split" | "quiet" | "navy";
-export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary, variant = "editorial", hero = "type" }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string }; variant?: IntroVariant; hero?: "type" | "graphic" | "paper" | "line" }) {
+export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary, variant = "editorial", hero = "type" }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string }; variant?: IntroVariant; hero?: "type" | "graphic" | "paper" | "line" | "contact" }) {
   const actions = cta && <div className="intro-actions flex flex-wrap gap-x-6 gap-y-2 mt-7"><ActionLink href={ctaHref}>{cta}</ActionLink>{secondary && <ActionLink href={secondary.href} secondary>{secondary.label}</ActionLink>}</div>;
   return <div className={`page-shell page-${variant} min-h-screen bg-background`}><Header /><main id="main-content">
     <section className={`agency-intro intro-${variant} hero-${hero}`}>
