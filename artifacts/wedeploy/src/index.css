@@ -418,6 +418,9 @@ main a, main button { text-wrap: balance; }
 .page-shell .hero-contact .secondary-action { color: hsl(var(--primary)); }
 .page-shell .hero-graphic .intro-actions a:not(.secondary-action) { background: hsl(var(--accent)); }
 .page-shell .hero-line .intro-title-wrap { border-left: 3px solid hsl(var(--accent)); padding-left: 1rem; }
+.page-shell .drawn-arrow { position: relative; display: inline-block; width: 1.15rem; height: .8rem; flex: 0 0 1.15rem; margin-left: .2rem; transform: rotate(-5deg); }
+.page-shell .drawn-arrow::before { content: ""; position: absolute; left: 0; right: .15rem; top: .4rem; border-top: 1.5px solid currentColor; transform: rotate(-2deg); }
+.page-shell .drawn-arrow::after { content: ""; position: absolute; right: .08rem; top: .18rem; width: .42rem; height: .42rem; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(42deg); }
 .page-shell h1, .page-shell h2, .page-shell h3 { text-wrap: balance; hyphens: none; overflow-wrap: normal; }
 .page-shell p { text-wrap: pretty; }
 .page-shell .intro-title-wrap, .page-shell .agency-section .grid > div { min-width: 0; }
