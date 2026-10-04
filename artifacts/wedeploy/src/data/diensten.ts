@@ -10,12 +10,12 @@ export const diensten = {
     ],
     steps: [
       ['Samen het profiel bepalen', 'We bespreken werkzaamheden, team, ervaring, locatie, uren en arbeidsvoorwaarden. Daarna leggen we het zoekprofiel, de aanpak en de vergoeding vast. We starten na jouw akkoord.'],
-      ['Zoeken en persoonlijk spreken', 'We benaderen professionals en bespreken hun ervaring, motivatie en wensen. Bij een introductie ontvang je een toelichting op de aansluiting en de punten die nog aandacht vragen.'],
+      ['Zoeken en persoonlijk spreken', 'We benaderen professionals en spreken hen in een persoonlijke intake over ervaring, motivatie en wensen. Bij een introductie ontvang je het cv met een toelichting op de aansluiting en de punten die nog aandacht vragen.'],
       ['Kennismaking en selectie begeleiden', 'We stemmen gesprekken af, verzamelen terugkoppeling en bespreken vervolgstappen. Ook voorwaarden en de gewenste start horen bij de afstemming. De kandidaat komt rechtstreeks bij jouw organisatie in dienst.']
     ],
     decisionTitle: 'Exclusief zoeken met één aanspreekpunt.',
     decision: 'Bij een exclusieve zoekopdracht geef je Wedeploy de regie over de werving voor een afgesproken periode. We spreken af hoe we de markt benaderen, hoe vaak je een update krijgt en wat er gebeurt als het profiel moet worden aangepast. Zo blijven de benadering van kandidaten en de terugkoppeling overzichtelijk.',
-    agreements: 'Je ontvangt vooraf een voorstel met de vergoeding, de momenten waarop deze verschuldigd is en de voorwaarden van de samenwerking. Exclusiviteit is een afspraak die we samen maken. We publiceren geen standaardtarief of resultaatbelofte die voor iedere functie zou gelden.',
+    agreements: 'Je ontvangt vooraf een voorstel met de vergoeding, de momenten waarop deze verschuldigd is en de voorwaarden van de samenwerking. Ook de duur van de exclusieve zoektocht en de terugkoppeling leggen we vast. Zo weet je welke inzet je van ons kunt verwachten en wanneer we samen de voortgang bespreken.',
     candidateTitle: 'Een vaste baan via Wedeploy.',
     candidate: 'Bij werving & selectie ga je rechtstreeks bij de opdrachtgever in dienst. Wij bespreken de functie, de organisatie en jouw wensen met je. Je beslist zelf of je interesse hebt en of we je mogen introduceren. Je kunt ook je cv achterlaten zonder op een concrete vacature te reageren.',
     faq: [{ question: 'Voor welke functies zoeken jullie?', answer: 'Onze focus ligt op projectmanagement en PMO, Facility Management, vastgoed en huisvesting. Ook management, ondersteuning en gebouwgebonden techniek kunnen onderdeel van een aanvraag zijn. Een andere vraag bespreken we graag.' }, { question: 'Hoe lang duurt een zoektocht?', answer: 'Dat hangt af van het profiel, de arbeidsvoorwaarden en de reacties uit de markt. We spreken terugkoppeling af en bespreken wat we tegenkomen. We beloven geen vaste doorlooptijd voordat we de vraag kennen.' }]
