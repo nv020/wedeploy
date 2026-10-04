@@ -325,7 +325,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                   {showProfile ? "Een professional nodig of toe aan een nieuwe opdracht? Laat je gegevens achter. We nemen contact met je op om jouw vraag of wensen te bespreken." : "Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap."}
                 </p>
                 <p className="text-[14px] font-extrabold text-accent tracking-[-0.1px]">
-                  {showProfile ? "Je krijgt persoonlijk antwoord." : "Een eerste gesprek is vrijblijvend."}
+                  {showProfile ? "Je krijgt persoonlijk antwoord." : "Neem vrijblijvend contact op."}
                 </p>
               </div>
             </div>
