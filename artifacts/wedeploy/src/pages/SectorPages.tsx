@@ -3,6 +3,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { PageLayout, Section, ActionLink, FAQ } from "@/components/PageLayout";
 
 import { sectorPages } from "@/data/sectors";
+import { EditorialSection, NumberedSection, StatementSection } from "@/components/PageSections";
 const content = {
   vastgoed: {
     label: "Vastgoed", title: "Vastgoed.",
@@ -83,12 +84,12 @@ export function SectorPage({ sector }: { sector: keyof typeof content }) {
   const employerHref = "#contact";
   const candidateHref = `?type=kandidaat&onderwerp=${encodeURIComponent(page.label)}#contact`;
   return <PageLayout variant={sector === "vastgoed" ? "split" : sector === "projecten" ? "navy" : "editorial"} hero={sector === "vastgoed" ? "line" : "type"} label={page.label} title={page.title} intro={page.intro} cta="Bespreek jouw vraag" ctaHref={employerHref} secondary={{ label: "Ik zoek werk", href: "#voor-professionals" }}>
-    <Section><div className="grid md:grid-cols-[.85fr_1.15fr] gap-8 md:gap-16"><div><p className="eyebrow">De inhoud eerst</p><h2 className="section-title">{page.heading}</h2></div><div className="space-y-5 text-muted-foreground leading-relaxed">{page.paragraphs.map(text => <p key={text}>{text}</p>)}<a href="/over-ons" className="inline-flex items-center gap-2 text-accent font-bold">Onze aanpak </a></div></div></Section>
-    <Section tone="white"><p className="eyebrow">Rollen waarvoor we zoeken</p><div className="sector-roles">{page.roles.map(([title, text], i) => <article key={title} className="sector-role"><span className="text-3xl font-bold text-accent" aria-hidden="true">0{i + 1}</span><div><h2 className="text-xl md:text-2xl font-bold text-primary">{title}</h2><p className="mt-3 text-muted-foreground leading-relaxed max-w-2xl">{text}</p></div></article>)}</div><a href="/professionals" className="inline-flex items-center gap-2 text-accent font-bold mt-7">Bekijk ons netwerk </a></Section>
-    <Section tone="wash"><div className="sector-statement"><h2 className="text-3xl md:text-4xl font-bold tracking-tight">{page.question}</h2><div><p className="text-muted-foreground leading-relaxed">{page.answer}</p><a href="/expertise-diensten" className="inline-flex items-center gap-2 font-bold text-accent mt-6">Onze diensten </a></div></div></Section>
-    <Section id="voor-professionals"><div className="sector-candidate"><p className="eyebrow">Voor professionals</p><h2 className="section-title">{page.candidate}</h2><p className="mt-5 mb-7 text-muted-foreground leading-relaxed max-w-2xl">{page.candidateText}</p><div className="flex flex-wrap gap-5 items-center"><ActionLink href={candidateHref}>Stuur jouw cv</ActionLink><a href="/vacatures" className="font-bold text-accent inline-flex gap-2 items-center">Vacatures & opdrachten </a></div></div></Section>
+    <EditorialSection eyebrow="De inhoud eerst" title={page.heading} offset>{page.paragraphs.map(text => <p key={text}>{text}</p>)}<a href="/over-ons" className="text-accent font-bold">Onze aanpak</a></EditorialSection>
+    <NumberedSection eyebrow="Rollen waarvoor we zoeken" title="Welke expertise ontbreekt?" items={page.roles.map(([title, text]) => ({ title, body: <p>{text}</p> }))}><a href="/professionals" className="font-bold text-accent">Bekijk ons netwerk</a></NumberedSection>
+    <StatementSection eyebrow="De passende inzet" title={page.question} dark><p>{page.answer}</p><a href="/expertise-diensten" className="statement-link">Onze diensten</a></StatementSection>
+    <div id="voor-professionals"><EditorialSection eyebrow="Voor professionals" title={page.candidate}><p>{page.candidateText}</p><div className="flex flex-wrap gap-5 items-center"><ActionLink href={candidateHref} arrow>Stuur jouw cv</ActionLink><a href="/vacatures" className="font-bold text-accent">Vacatures & opdrachten</a></div></EditorialSection></div>
     <FAQ items={page.faqs} />
-    <Section><p className="eyebrow">Ook interessant</p><nav aria-label="Andere vakgebieden" className="flex flex-col sm:flex-row flex-wrap gap-5">{sectorPages.filter(item => item.path !== sectorPages.find(link => link.label === page.label)?.path).map(item => <a key={item.path} href={item.path} className="text-primary font-bold inline-flex gap-2 items-center">{item.label}</a>)}</nav></Section>
+    <Section><p className="eyebrow">Ook interessant</p><nav aria-label="Andere vakgebieden" className="flex flex-col sm:flex-row flex-wrap gap-5">{sectorPages.filter(item => item.label !== page.label).map(item => <a key={item.path} href={item.path} className="text-primary font-bold inline-flex gap-2 items-center">{item.label}</a>)}</nav></Section>
     <ContactSection compact retainContext readQuery context={page.label} heading="Bespreek jouw vraag." />
   </PageLayout>;
 }
