@@ -90,11 +90,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
           className={`contact-heading mb-8 md:mb-10 ${compact ? "max-w-3xl mx-auto" : ""}`}
         >
           <div>
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border"
-              style={{ background: "hsl(205 85% 53% / 0.08)", borderColor: "hsl(205 85% 53% / 0.28)" }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
-              <span className="text-[10px] font-bold tracking-[2.5px] uppercase text-accent">Contact</span>
-            </div>
+            <p className="eyebrow">Contact</p>
             <h2 className="text-[clamp(1.85rem,6vw,2.8rem)] font-extrabold text-primary tracking-tight leading-[1.06]">
               {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
             </h2>
@@ -162,7 +158,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                   exit={{ opacity: 0, y: -6 }}
                   transition={{ duration: 0.2 }}
                   onSubmit={handleSubmit}
-                  className="flex flex-col gap-4"
+                  className="contact-aside flex flex-col gap-4"
                 >
                   {/* Honeypot */}
                   <input type="text" name="_gotcha" tabIndex={-1} aria-hidden="true" autoComplete="off" style={{ display: "none" }} />
@@ -312,10 +308,10 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.18, ease: [0.25, 0.1, 0.25, 1] as const }}
-            className="flex flex-col gap-4"
+            className="contact-aside flex flex-col gap-4"
           >
             {/* White profile card */}
-            <div className="bg-white rounded-[22px] p-5 sm:p-8 shadow-[0_4px_24px_hsl(220_50%_18%/0.06)] border border-primary/5">
+            <div className="contact-note">
 
               {showProfile ? (
                 <div className="flex items-center gap-4 mb-6">
@@ -343,7 +339,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                 <a
                   key={item.label}
                   href={item.href}
-                  className="bg-white rounded-[14px] p-4 border border-primary/5 shadow-[0_2px_12px_hsl(220_50%_18%/0.04)] hover:border-accent/30 hover:shadow-[0_4px_20px_hsl(205_85%_53%/0.10)] transition-all duration-200 block"
+                  className="contact-direct-link block"
                 >
                   <div className="text-[9.5px] font-bold text-primary/35 tracking-[1.2px] uppercase mb-1">{item.label}</div>
                   <div className="text-[12.5px] font-bold text-primary">{item.val}</div>

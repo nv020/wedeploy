@@ -78,11 +78,7 @@ export function ExpertiseAreas() {
         {/* Section header */}
         <div className="expertise-heading mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <div className="inline-flex items-center gap-2.5 mb-5 px-4 py-1.5 rounded-full border"
-              style={{ background: "hsl(205 85% 53% / 0.12)", borderColor: "hsl(205 85% 53% / 0.3)" }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
-              <span className="text-[10.5px] font-bold tracking-[2.5px] uppercase text-accent">Expertisegebieden</span>
-            </div>
+            <p className="eyebrow">Expertisegebieden</p>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.08]">
               Expertise die verder gaat<br className="hidden md:block" /> dan een online profiel.
             </h2>
@@ -119,24 +115,6 @@ export function ExpertiseAreas() {
 
               {/* Gradient overlay — directional per card */}
               <div className="absolute inset-0" style={{ background: area.gradient }} />
-
-              {/* Top-left number */}
-              <div className="absolute top-5 left-6 z-10">
-                <span
-                  className="text-[11px] font-black tracking-[3px]"
-                  style={{ color: area.accent }}
-                >
-                  {area.num}
-                </span>
-              </div>
-
-              {/* Ghost watermark number */}
-              <div
-                className="absolute bottom-0 right-4 text-[120px] font-black leading-none select-none pointer-events-none opacity-[0.06] group-hover:opacity-[0.09] transition-opacity duration-500"
-                style={{ color: "white" }}
-              >
-                {area.num}
-              </div>
 
               {/* Text — bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-6 z-10">

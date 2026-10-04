@@ -12,7 +12,6 @@ export function PageLayout({ label, title, intro, children, cta, ctaHref = "/con
     <section className={`agency-intro intro-${variant} hero-${hero}`}>
       <div className="container mx-auto px-4 md:px-6">
         <nav aria-label="Broodkruimel" className="intro-breadcrumb flex flex-wrap items-center gap-2 text-xs mb-8"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">{label}</span></nav>
-        <p className="eyebrow">{label}</p>
         <div className="intro-editorial-grid">
           <div className="intro-title-wrap"><h1 className="page-title">{title}</h1></div>
           <div className="intro-copy"><p className="intro-description">{intro}</p>{actions}</div>

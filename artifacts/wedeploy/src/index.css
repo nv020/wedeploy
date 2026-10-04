@@ -628,3 +628,52 @@ main a, main button { text-wrap: balance; }
 @media (min-width: 1440px) {
   .page-shell .service-detail-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2rem; }
 }
+
+/* Restrained editorial finish. Open compositions instead of extra panels;
+   this shared layer also serves sector and Amsterdam landing pages. */
+.eyebrow { font-weight: 650; letter-spacing: .09em; }
+.page-shell .agency-intro .intro-breadcrumb { margin-bottom: 2.5rem; }
+.page-shell .intro-split .intro-copy { border-left: 0; padding-left: 0; }
+.page-shell .hero-paper .intro-copy { border-top: 0; padding-top: 0; }
+.page-shell .hero-line .intro-title-wrap { border-left: 0; padding-left: 0; }
+.page-shell .intro-title-wrap::before {
+  content: ""; display: block; width: 2rem; height: 2px;
+  margin-bottom: 1.5rem; background: hsl(var(--accent));
+}
+.professional-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 2.5rem; }
+.professional-row { display: block; padding: 1.75rem 0; }
+.professional-row h3 { font-size: clamp(1.25rem, 2vw, 1.65rem); line-height: 1.25; }
+.professional-row:nth-child(even) .profile-copy { margin: 0; }
+.professional-row .profile-copy { max-width: none; }
+.professional-row .profile-copy > p:first-child { font-size: .68rem; letter-spacing: .06em; font-weight: 600; }
+.professional-row a { display: inline-flex; }
+.expertise-card { border-radius: .6rem; text-decoration: none; }
+.contact-aside { padding-block: .75rem; }
+.contact-note { padding: 1rem 0 1.5rem; }
+.contact-note .border-l-\[3px\] { border-left: 0; padding-left: 0; }
+.contact-note p.italic { font-style: normal; color: hsl(var(--primary) / .75); }
+.contact-direct-link { padding: 1rem 0; border-top: 1px solid hsl(var(--primary) / .15); }
+.contact-direct-link:hover { border-color: hsl(var(--accent)); }
+.contact-direct-link > div:last-child { font-size: .9rem; }
+.open-application { display: grid; gap: 1.5rem; padding-top: 2rem; border-top: 1px solid hsl(0 0% 100% / .25); }
+.open-application h3 { font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 700; line-height: 1.25; max-width: 28ch; }
+.open-application p:not(.eyebrow) { max-width: 54ch; margin-top: 1rem; color: hsl(0 0% 100% / .8); }
+.open-application > a { justify-self: start; align-self: end; }
+.page-shell .service-editorial-list .editorial-item:nth-child(even),
+.page-shell .expertise-composition .editorial-item:nth-child(even) { margin-top: 0; }
+.page-shell .faq-item summary { font-weight: 600; }
+.page-shell .statement-composition h2,
+.page-shell .closing-composition h2 { letter-spacing: -.04em; }
+@media (min-width: 768px) {
+  .professional-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--layout-gap); }
+  .professional-row { padding-block: 2rem; }
+  .contact-aside { padding-left: 1rem; }
+  .open-application { grid-template-columns: minmax(0, 1fr) auto; column-gap: var(--layout-gap); padding-top: 2.5rem; }
+  .page-shell .agency-intro .intro-breadcrumb { margin-bottom: 3rem; }
+  .page-shell .numbered-steps .numbered-list > li { padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .network-preview .professional-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .network-preview .professional-row h3 { font-size: 1.4rem; }
+  .contact-aside { padding-left: 1.5rem; }
+}
