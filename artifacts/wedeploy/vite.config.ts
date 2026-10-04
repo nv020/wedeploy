@@ -2,6 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import { readFileSync } from "node:fs";
+import { isVacancyPublic, isProfessionalPublic, validateOpportunities, type Vacancy, type AvailableProfessional } from "./src/data/publication";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -22,6 +24,22 @@ const basePath = process.env.BASE_PATH ?? "/";
 export default defineConfig({
   base: basePath,
   plugins: [
+    {
+      name: "approved-public-opportunities",
+      enforce: "pre",
+      load(id: string) {
+        const file = path.resolve(import.meta.dirname, "src/content/opportunities.json");
+        if (id.split("?")[0] !== file) return null;
+        this.addWatchFile(file);
+        const catalog = JSON.parse(readFileSync(file, "utf8")) as { vacancies: Vacancy[]; professionals: AvailableProfessional[] };
+        validateOpportunities(catalog.vacancies, catalog.professionals);
+        // Exclude private drafts before bundling, rather than just hiding them in the UI.
+        return JSON.stringify({
+          vacancies: catalog.vacancies.filter(job => isVacancyPublic(job)),
+          professionals: catalog.professionals.filter(profile => isProfessionalPublic(profile)),
+        });
+      },
+    },
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),

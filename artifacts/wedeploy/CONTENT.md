@@ -26,6 +26,8 @@ Velden: reference, status, approvedForPublication, title, sector, summary, exper
 - `reviewBy` is de volgende controle-/vervaldatum. Gebruik bij voorkeur een korte termijn, bijvoorbeeld twee tot vier weken. Een verlopen profiel verdwijnt uit de actuele selectie; na nieuwe bevestiging kunnen deze datums worden bijgewerkt.
 - Op de netwerkpagina staan de profielreferentie, inzet, regio, ervaring en bevestigingsdatum. De contactaanvraag neemt referentie en titel mee. Er is geen aparte openbare profielpagina nodig.
 
+De build verwijdert concepten, toekomstige publicaties en niet-goedgekeurde of verlopen profielen uit de openbare bundel. Bewaar ook in deze bron uitsluitend geanonimiseerde profielbeschrijvingen; persoonlijke dossiers horen in de interne administratie. Een geplande publicatiedatum vereist een nieuwe publicatie van de site op of na die datum.
+
 De bron begint leeg: zonder bevestigde publicatiegegevens publiceren we geen fictieve kandidaten of vacatures. Vakgebiedpagina’s blijven ondertussen inhoudelijk bruikbaar en open inschrijven blijft mogelijk.
 
 ## Inhoudelijke pagina’s
