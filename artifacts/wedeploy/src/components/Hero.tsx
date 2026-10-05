@@ -91,7 +91,7 @@ export function Hero() {
             className="text-[16.5px] leading-[1.78] mb-10 max-w-[420px]"
             style={{ color: "rgba(255,255,255,0.75)" }}
           >
-            Kwaliteit boven kwantiteit. We verbinden organisaties en professionals voor vaste functies en tijdelijke opdrachten.
+            We verbinden organisaties en professionals voor vaste functies en tijdelijke opdrachten.
           </motion.p>
 
           {/* CTAs */}

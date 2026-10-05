@@ -32,7 +32,7 @@ export function Footer() {
               De juiste professionals. De beste matches.
             </p>
             <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
-              Kwaliteit boven kwantiteit. Voor vaste functies en tijdelijke opdrachten.
+              We kijken verder dan het cv. Voor vaste functies en tijdelijke opdrachten.
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-5">
               <a href="/contact" className="action-arrow inline-flex items-center justify-center min-h-11 px-4 rounded-full bg-accent text-white text-[13px] font-semibold hover:bg-accent/90">Neem contact op</a>

@@ -661,3 +661,19 @@ main a, main button { text-wrap: balance; }
 .available-profile .profile-facts dd { overflow-wrap: break-word; }
 .available-profile > a { align-self: flex-start; }
 @media (min-width: 1100px) { .role-directory.available-directory { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+
+/* Clear, quiet profile cards; shared between home and network. */
+.role-directory.available-directory { gap: 1.25rem; align-items: stretch; }
+.role-directory.available-directory > .available-profile { display: flex; flex-direction: column; padding: 1.5rem; border: 1px solid hsl(var(--primary) / .15); border-radius: .75rem; background: #fff; box-shadow: 0 3px 14px hsl(var(--primary) / .035); }
+.role-directory.available-directory .profile-facts { grid-template-columns: 1fr; gap: .8rem; padding-block: 1.1rem; border-block: 1px solid hsl(var(--primary) / .1); }
+.role-directory.available-directory .profile-summary { flex: 1; margin-top: 1rem; }
+.role-directory.available-directory > .available-profile > a { margin-top: 1.25rem; font-size: .875rem; }
+.network-question { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; padding: 1.5rem; margin-top: 2rem; border-radius: .75rem; background: hsl(var(--primary) / .045); }
+.network-question > div { flex: 1 1 22rem; max-width: 62ch; }
+.network-question h3 { color: hsl(var(--primary)); font-size: 1.2rem; font-weight: 700; }
+.network-question p { margin-top: .6rem; color: hsl(var(--muted-foreground)); line-height: 1.75; }
+.network-question > a { flex-shrink: 0; align-self: center; }
+@media (min-width: 768px) {
+  .role-directory.available-directory h3 { min-height: 2.8em; }
+  .role-directory.available-directory .profile-labels { min-height: 5rem; align-content: flex-start; }
+}
