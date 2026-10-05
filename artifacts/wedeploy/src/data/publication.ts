@@ -9,7 +9,7 @@ export type Vacancy = {
 export type AvailableProfessional = {
   reference: string; status: 'draft' | 'available' | 'soon' | 'unavailable'; approvedForPublication: boolean;
   title: string; sector: SectorKey; summary: string; experience: string[];
-  availableFrom: string; hours: string; region: string; contract: string;
+  availableFrom: string; availabilityLabel?: string; labels?: string[]; hours: string; region: string; contract: string;
   confirmedAt: string; reviewBy: string;
 };
 const validDate = (value: string) => /^\d{4}-\d{2}-\d{2}(?:T.+)?$/.test(value) && Number.isFinite(Date.parse(value));

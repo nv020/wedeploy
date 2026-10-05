@@ -651,3 +651,13 @@ main a, main button { text-wrap: balance; }
   .home-shell #home .action-arrow { gap: .35rem; padding-inline: .4rem; font-size: .75rem; white-space: nowrap; }
   .home-shell #home .action-arrow::after { flex-basis: .75rem; width: .75rem; }
 }
+
+/* Shared anonymous professional overview, on home and network pages. */
+.profile-labels { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1rem; list-style: none; padding: 0; }
+.profile-labels li { padding: .3rem .6rem; border-radius: .3rem; background: hsl(var(--primary) / .055); color: hsl(var(--primary)); font-size: .75rem; line-height: 1.5; }
+.profile-labels li:first-child { background: hsl(var(--accent) / .12); font-weight: 600; }
+.page-shell .role-directory .available-profile p { flex: initial; }
+.available-profile .profile-facts { margin-bottom: .5rem; }
+.available-profile .profile-facts dd { overflow-wrap: break-word; }
+.available-profile > a { align-self: flex-start; }
+@media (min-width: 1100px) { .role-directory.available-directory { grid-template-columns: repeat(3,minmax(0,1fr)); } }

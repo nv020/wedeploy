@@ -1,4 +1,80 @@
 {
   "vacancies": [],
-  "professionals": []
+  "professionals": [
+    {
+      "approvedForPublication": true,
+      "confirmedAt": "2026-10-05",
+      "reviewBy": "2026-11-02",
+      "reference": "WD-P001",
+      "status": "available",
+      "title": "Projectleider & procesverbeteraar",
+      "sector": "projecten",
+      "contract": "Vaste functie",
+      "labels": [
+        "Projectmanagement",
+        "Procesverbetering",
+        "Implementatie"
+      ],
+      "availableFrom": "2026-10-05",
+      "availabilityLabel": "Per direct",
+      "hours": "24 uur, opbouw naar 36 uur",
+      "region": "Amsterdam / Zaanstreek",
+      "summary": "Hbo-opgeleide technisch bedrijfskundige met circa zeven jaar ervaring in projecten, procesverbetering en informatievoorziening. Brengt structuur, verbindt betrokkenen en vertaalt knelpunten naar praktische verbeteringen.",
+      "experience": [
+        "Projecten en implementaties begeleiden",
+        "Processen analyseren en verbeteringen doorvoeren",
+        "Praktisch, analytisch en gericht op samenwerking"
+      ]
+    },
+    {
+      "approvedForPublication": true,
+      "confirmedAt": "2026-10-05",
+      "reviewBy": "2026-11-02",
+      "reference": "WD-P002",
+      "status": "soon",
+      "title": "Projectleider & procesadviseur",
+      "sector": "projecten",
+      "contract": "Zzp",
+      "labels": [
+        "Procesverbetering",
+        "Projectleiding",
+        "Verandering"
+      ],
+      "availableFrom": "2027-01-01",
+      "availabilityLabel": "Vanaf januari 2027",
+      "hours": "Fulltime",
+      "region": "Midden-Nederland",
+      "summary": "Projectleider en procesadviseur met acht jaar ervaring. Combineert een analytische aanpak met oog voor mensen. Brengt structuur in complexe vraagstukken en helpt teams om verbeteringen daadwerkelijk door te voeren.",
+      "experience": [
+        "Procesoptimalisatie en Lean-implementaties",
+        "Verandertrajecten en nieuwe werkwijzen",
+        "Kostenbesparingen en efficiëntere bedrijfsvoering"
+      ]
+    },
+    {
+      "approvedForPublication": true,
+      "confirmedAt": "2026-10-05",
+      "reviewBy": "2026-11-02",
+      "reference": "WD-P003",
+      "status": "soon",
+      "title": "Technisch specialist middenspanning",
+      "sector": "techniek",
+      "contract": "Zzp",
+      "labels": [
+        "Middenspanning",
+        "Elektrische veiligheid",
+        "Projectrealisatie"
+      ],
+      "availableFrom": "2027-03-01",
+      "availabilityLabel": "Vanaf 1 maart 2027",
+      "hours": "24–32 uur per week",
+      "region": "Midden-Nederland",
+      "summary": "Senior elektrotechnisch professional met ruime ervaring in laag- en middenspanning, installatieverantwoordelijkheid en assetmanagement. Verbindt technische kennis met de uitvoering en ondersteunt projectteams bij veilige, praktische oplossingen.",
+      "experience": [
+        "Hbo Engineering en post-hbo Onderhouds- en Assetmanagement",
+        "Elektrische veiligheid en implementatie van NEN 3140",
+        "Technisch advies en begeleiding van realisatieprojecten"
+      ]
+    }
+  ]
 }

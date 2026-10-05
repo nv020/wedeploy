@@ -17,18 +17,18 @@ Een record heeft de velden uit `src/data/publication.ts`: slug (URL), reference,
 
 ## Beschikbare professionals
 
-Velden: reference, status, approvedForPublication, title, sector, summary, experience, availableFrom, hours, region, contract, confirmedAt en reviewBy.
+Velden: reference, status, approvedForPublication, title, sector, summary, experience, availableFrom, availabilityLabel (optioneel), labels (optioneel), hours, region, contract, confirmedAt en reviewBy.
 
 - `status`: draft, available, soon of unavailable.
 - Publiceer uitsluitend een met de professional afgestemde, geanonimiseerde beschrijving; geen cv, naam, foto of contactgegevens in deze bron.
-- `availableFrom` is de eerst mogelijke startdatum, bijvoorbeeld januari volgend jaar.
+- `availableFrom` is de eerst mogelijke startdatum, bijvoorbeeld januari volgend jaar. Met `availabilityLabel` kan de weergave dezelfde precisie houden als de bevestiging, bijvoorbeeld ‘Vanaf januari 2027’ of ‘Per direct’. `labels` bevat korte expertisegebieden.
 - `confirmedAt` is de datum waarop beschikbaarheid daadwerkelijk is bevestigd.
 - `reviewBy` is de volgende controle-/vervaldatum. Gebruik bij voorkeur een korte termijn, bijvoorbeeld twee tot vier weken. Een verlopen profiel verdwijnt uit de actuele selectie; na nieuwe bevestiging kunnen deze datums worden bijgewerkt.
 - Op de netwerkpagina staan de profielreferentie, inzet, regio, ervaring en bevestigingsdatum. De contactaanvraag neemt referentie en titel mee. Er is geen aparte openbare profielpagina nodig.
 
 De build verwijdert concepten, toekomstige publicaties en niet-goedgekeurde of verlopen profielen uit de openbare bundel. Bewaar ook in deze bron uitsluitend geanonimiseerde profielbeschrijvingen; persoonlijke dossiers horen in de interne administratie. Een geplande publicatiedatum vereist een nieuwe publicatie van de site op of na die datum.
 
-De bron begint leeg: zonder bevestigde publicatiegegevens publiceren we geen fictieve kandidaten of vacatures. Vakgebiedpagina’s blijven ondertussen inhoudelijk bruikbaar en open inschrijven blijft mogelijk.
+Publiceer alleen echte, bevestigde profielen en vacatures. Voor profielen staat een controletermijn van maximaal vier weken ingesteld; controleer beschikbaarheid vóór `reviewBy` en publiceer een nieuwe bevestiging of zet het profiel op `unavailable`. Vakgebiedpagina’s blijven ondertussen inhoudelijk bruikbaar en open inschrijven blijft mogelijk.
 
 ## Inhoudelijke pagina’s
 
