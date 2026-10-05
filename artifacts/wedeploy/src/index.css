@@ -492,7 +492,7 @@ main a, main button { text-wrap: balance; }
   --page-h2: clamp(1.45rem, 2.4vw, 2rem);
   --page-h3: clamp(1.05rem, 1.3vw, 1.2rem);
   --page-space: clamp(2.75rem, 5vw, 4.75rem);
-  --page-gap: clamp(1.5rem, 4vw, 3.5rem);
+  --page-gap: clamp(1.25rem, 2.5vw, 2rem);
 }
 .page-shell main { font-size: 1rem; line-height: 1.75; }
 .page-shell main h1, .page-shell main h2, .page-shell main h3 { font-family: var(--app-font-sans); font-weight: 650; line-height: 1.25; letter-spacing: -.025em; text-wrap: balance; }
@@ -610,8 +610,8 @@ main a, main button { text-wrap: balance; }
   .page-shell .about-composition { grid-template-columns: minmax(0, 1.45fr) minmax(220px, .55fr); gap: var(--page-gap); }
   .page-shell .about-portrait { width: 100%; max-width: 270px; justify-self: end; }
   .faq-composition { grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: var(--page-gap, var(--layout-gap)); }
-  .page-shell .closing-composition { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: var(--page-gap); }
-  .page-shell .closing-actions { justify-content: flex-end; }
+  .page-shell .closing-composition { grid-template-columns: minmax(0, 60ch) auto; justify-content: start; gap: 2rem; }
+  .page-shell .closing-actions { justify-content: flex-start; }
   .page-shell .landing-directory-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (min-width: 1024px) {
@@ -632,3 +632,22 @@ main a, main button { text-wrap: balance; }
 .home-shell .network-preview .profile-copy h3 { min-height: 2.6em; }
 .home-shell .network-preview .profile-copy > p:not(:first-child) { flex: 1; }
 .home-shell .expertise-heading > p { color: rgba(255,255,255,.78) !important; max-width: 48ch; font-size: 1rem; }
+
+/* A single, restrained directional cue for action links and submit buttons. */
+.action-arrow { display: inline-flex; align-items: center; gap: .5rem; }
+.action-arrow::after, .contact-form button[type="submit"]::after {
+  content: ""; display: inline-block; flex: 0 0 1rem; width: 1rem; height: .85rem; background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 16'%3E%3Cpath d='M2 8h15M11 2l6 6-6 6' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 16'%3E%3Cpath d='M2 8h15M11 2l6 6-6 6' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.home-shell .preview-heading, .home-shell .network-preview > .container > div:first-child { justify-content: flex-start; gap: 1.5rem 2rem; }
+.page-shell .closing-actions { align-content: start; }
+@media (min-width: 768px) {
+  .home-shell .practice-intro { grid-template-columns: minmax(0, 380px) minmax(0, 680px); column-gap: 2rem; }
+  .home-shell .open-application { grid-template-columns: minmax(0, 680px) auto; justify-content: start; column-gap: 2rem; }
+}
+.home-shell .practice-intro p:not(.eyebrow) { font-size: 1rem; line-height: 1.8; }
+@media (max-width: 399px) {
+  .home-shell #home .action-arrow { gap: .35rem; padding-inline: .4rem; font-size: .75rem; white-space: nowrap; }
+  .home-shell #home .action-arrow::after { flex-basis: .75rem; width: .75rem; }
+}

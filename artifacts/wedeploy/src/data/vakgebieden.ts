@@ -3,9 +3,9 @@ export const vakgebieden = {
     path: "/projectmanagement", candidatePath: "/werken-in-projectmanagement", label: "Projectmanagement & PMO",
     description: "Projectmanagers, projectleiders en PMO-professionals voor vaste functies en tijdelijke opdrachten. Wedeploy zoekt gericht vanuit de inhoud van het project.",
     intro: "Een project opstarten, de uitvoering aansturen of overzicht terugbrengen in een projectteam. We zoeken projectmanagers, projectleiders en PMO-professionals voor vaste functies en tijdelijke opdrachten.",
-    heading: "Het project bepaalt wie je nodig hebt.",
+    heading: "De ervaring die jouw project nodig heeft",
     paragraphs: [
-      "Een projectmanager voor een huisvestingsproject heeft andere ervaring nodig dan een projectsecretaris die een technisch projectteam ondersteunt. Daarom beginnen we bij het werk: wat moet er worden opgeleverd, in welke fase zit het project en waar ontbreekt nu capaciteit of ervaring?",
+      "Een project vraagt om mensen die overzicht houden, verantwoordelijkheid nemen en prettig samenwerken met de betrokken partijen. Welke ervaring nodig is, verschilt per rol: van een projectmanager voor huisvesting tot een projectsecretaris in een technisch team. Daarom beginnen we bij het werk: wat moet er worden opgeleverd, in welke fase zit het project en waar ontbreekt nu capaciteit of ervaring?",
       "We bespreken de planning, het budget, de betrokken partijen en de ruimte om besluiten te nemen. Ook de samenwerking met de opdrachtgever, adviseurs en uitvoerende teams hoort daarbij. Zo zoeken we naar relevante ervaring, in plaats van alleen naar dezelfde functietitel op een cv.",
       "Onze praktijkervaring ligt onder meer bij vastgoed, huisvesting en facilitaire veranderingen. Denk aan een renovatie, verhuizing of nieuwe werkomgeving. Ook voor projectmanagement in een andere omgeving denken we mee. We bespreken vooraf wat de opdracht vraagt en of we de juiste zoektocht kunnen uitvoeren."
     ],
@@ -23,9 +23,9 @@ export const vakgebieden = {
     searchHeading: "Van projectopgave naar zoekprofiel.",
     searchText: "We vragen naar het resultaat, de projectfase en de verantwoordelijkheden. Vervolgens bespreken we welke projecten iemand al moet hebben gedaan, met wie de professional samenwerkt en wat de gewenste start en inzet zijn. Bij een introductie lichten we toe welke ervaring aansluit en welke punten nog besproken moeten worden.",
     candidateIntro: "Wil je projecten leiden, coördineren of ondersteunen? Ontdek de rollen in projectmanagement en PMO en bespreek met ons welke vaste functie of tijdelijke opdracht bij jouw ervaring past.",
-    candidateHeading: "Jouw rol in het projectteam.",
+    candidateHeading: "Een projectrol die bij jouw ervaring past",
     candidateParagraphs: [
-      "Binnen projectteams kun je leidinggeven, coördineren of ondersteunen. Misschien draag je graag verantwoordelijkheid voor een heel project, of ligt jouw kracht juist in planning, voortgang en het organiseren van de samenwerking. We bespreken wat je nu doet, welk werk je wilt blijven doen en welke stap je zoekt.",
+      "Een volgende projectrol moet aansluiten op jouw ervaring én op wat je wilt bereiken. We bespreken niet alleen de functietitel, maar ook het project, jouw verantwoordelijkheid en het team. Misschien draag je graag verantwoordelijkheid voor een heel project, of ligt jouw kracht juist in planning, voortgang en het organiseren van de samenwerking. We bespreken wat je nu doet, welk werk je wilt blijven doen en welke stap je zoekt.",
       "Voor een goede kennismaking horen we graag over het soort projecten waaraan je hebt gewerkt. Wat was jouw verantwoordelijkheid, met welke partijen werkte je samen en wat heb je opgeleverd? Je hoeft geen uitgebreid verhaal te schrijven: je cv en een korte toelichting zijn een goed begin.",
       "Onze focus ligt onder meer op vastgoed, huisvesting en facilitaire projecten. Ook PMO, projectsecretariaat en ondersteunende functies horen daarbij. De benodigde ervaring verschilt per rol. We kijken naar de inhoud van het werk en de ruimte die een organisatie biedt om verder te groeien."
     ],
@@ -36,9 +36,9 @@ export const vakgebieden = {
     path: "/facility-management", candidatePath: "/werken-in-facility-management", label: "Facility Management",
     description: "Werving, detachering en interim voor Facility Management, workplace en hospitality. Van facilitaire regie en contractmanagement tot coördinatie en dienstverlening.",
     intro: "Een facilitair team versterken, leveranciers beter aansturen of de dienstverlening opnieuw organiseren. We zoeken professionals voor Facility Management, workplace en hospitality. Voor vast werk en tijdelijke inzet.",
-    heading: "Goede dienstverlening begint bij de juiste rol.",
+    heading: "Mensen die jouw dienstverlening versterken",
     paragraphs: [
-      "Facility Management brengt gebouwen, dienstverlening en de mensen die er werken bij elkaar. Een vacature kan daardoor over heel verschillende taken gaan: de dagelijkse organisatie op een locatie, regie op leveranciers of de leiding over een facilitair team. We maken eerst duidelijk waar de verantwoordelijkheid ligt.",
+      "Goede facilitaire dienstverlening vraagt om mensen die weten wat gebruikers nodig hebben en hoe je het werk organiseert. Onze praktijkervaring helpt om verantwoordelijkheden, leveranciersregie en de samenwerking op locatie concreet te maken. Een vacature kan daardoor over heel verschillende taken gaan: de dagelijkse organisatie op een locatie, regie op leveranciers of de leiding over een facilitair team. We maken eerst duidelijk waar de verantwoordelijkheid ligt.",
       "We bespreken de locaties, gebruikers, dienstverlening en contracten. Wie voert het werk uit? Welke taken zijn uitbesteed? En waar loopt de organisatie tegenaan? Die vragen helpen bepalen of je een manager, coördinator of inhoudelijk specialist nodig hebt.",
       "Workplace management en hospitality horen daar nadrukkelijk bij. Workplace gaat over het organiseren van een werkomgeving die aansluit op het gebruik. Hospitality richt zich op ontvangst, service en de ervaring van medewerkers en bezoekers. We kijken naar de samenhang én naar de specifieke ervaring die een functie vraagt."
     ],
@@ -57,9 +57,9 @@ export const vakgebieden = {
     searchHeading: "We vragen door over de praktijk.",
     searchText: "Onze ervaring met facilitaire organisaties helpt om de vraag achter een vacature te begrijpen. We bespreken teamomvang, locaties, leveranciers en beslisruimte. Daarna zoeken en spreken we professionals over vergelijkbare verantwoordelijkheden, hun aanpak en de samenwerking met gebruikers en collega’s.",
     candidateIntro: "Van facilitaire coördinatie tot workplace management en hospitality. Ontdek welke rollen bij jouw ervaring passen en bespreek een vaste functie of tijdelijke opdracht met Wedeploy.",
-    candidateHeading: "Wat voor dienstverlening past bij jou?",
+    candidateHeading: "Jouw volgende stap in Facility Management",
     candidateParagraphs: [
-      "Werk je graag dicht op de dagelijkse praktijk of neem je liever verantwoordelijkheid voor een team, contracten en de inrichting van de dienstverlening? Binnen Facility Management bestaan veel verschillende rollen. We bespreken welke taken je energie geven en wat je in een volgende functie wilt oppakken.",
+      "Welke werkomgeving geeft jou energie en welke verantwoordelijkheid wil je nemen? We bespreken jouw ervaring en ambities, en kijken naar functies in coördinatie, management, workplace en hospitality. Binnen Facility Management bestaan veel verschillende rollen. We bespreken welke taken je energie geven en wat je in een volgende functie wilt oppakken.",
       "De werkomgeving maakt verschil. Eén kantoorlocatie vraagt iets anders dan een portefeuille met meerdere gebouwen. Ook de samenwerking met gebruikers, leveranciers en eigen medewerkers verschilt per organisatie. Daarom bespreken we de omgeving en het team voordat je beslist of je interesse hebt.",
       "Workplace management, hospitality en frontoffice zijn onderdeel van dit vakgebied. Een gastvrije ontvangst, goede werkplekservices en duidelijke facilitaire afspraken versterken elkaar. Je hoeft voor een kennismaking niet op een concrete vacature te wachten: geef aan welke rol en werkomgeving jij zoekt."
     ],
@@ -70,9 +70,9 @@ export const vakgebieden = {
     path: "/vastgoed", candidatePath: "/werken-in-vastgoed", label: "Vastgoed & huisvesting",
     description: "Professionals voor vastgoedbeheer, property management en huisvestingsprojecten. Wedeploy helpt met werving & selectie, detachering en interim.",
     intro: "Van het dagelijks beheren van gebouwen tot een renovatie, verhuizing of vastgoedproject. We zoeken mensen die passen bij jouw portefeuille, gebruikers en opgave. Voor vaste functies en tijdelijke opdrachten.",
-    heading: "Beheer en projecten vragen verschillende ervaring.",
+    heading: "De juiste ervaring voor jouw portefeuille",
     paragraphs: [
-      "Een vastgoedbeheerder houdt de dagelijkse operatie en het onderhoud bij elkaar. Een projectmanager werkt toe naar een afgebakend resultaat, zoals een renovatie of nieuwe huisvesting. Beide werken met gebouwen en betrokken partijen, maar hun verantwoordelijkheden verschillen. Dat onderscheid maken we in het zoekprofiel.",
+      "Je zoekt iemand die jouw gebouwen, gebruikers en belangen begrijpt. Vanuit onze ervaring met vastgoedbeheer en huisvesting maken we duidelijk welke kennis en verantwoordelijkheid de functie vraagt. Een vastgoedbeheerder houdt de dagelijkse operatie en het onderhoud bij elkaar. Een projectmanager werkt toe naar een afgebakend resultaat, zoals een renovatie of nieuwe huisvesting. Beide werken met gebouwen en betrokken partijen, maar hun verantwoordelijkheden verschillen. Dat onderscheid maken we in het zoekprofiel.",
       "We bespreken het type vastgoed, de omvang van de portefeuille en de rol van de gebruikers. Ook de samenwerking met eigenaren, huurders, leveranciers, adviseurs en interne afdelingen hoort daarbij. Zo ontstaat een beeld van de omgeving waarin de professional moet kunnen werken.",
       "Onze praktijkervaring ligt bij vastgoedbeheer en huisvesting, met aandacht voor de dagelijkse organisatie én veranderingen aan gebouwen. Voor ontwikkel- en realisatieprojecten kijken we specifiek naar de projectfase en de ervaring die daarin nodig is. Een functietitel alleen is daarvoor onvoldoende."
     ],
@@ -90,9 +90,9 @@ export const vakgebieden = {
     searchHeading: "Gericht zoeken voor jouw portefeuille",
     searchText: "We bespreken wat er nu ligt en wat iemand na de eerste periode zelfstandig moet kunnen dragen. Vervolgens kijken we naar vergelijkbare gebouwen, projecten en verantwoordelijkheden. Bij een voorstel geven we een toelichting op de relevante ervaring, motivatie en praktische afspraken over inzet en locatie.",
     candidateIntro: "Zoek je werk in vastgoedbeheer, property management of huisvesting? We bemiddelen voor vaste functies en tijdelijke opdrachten. Bespreek met ons welke rol en organisatie bij jouw ervaring passen.",
-    candidateHeading: "Welke kant van vastgoed past bij jou?",
+    candidateHeading: "Verder in vastgoed en huisvesting",
     candidateParagraphs: [
-      "Vastgoed biedt werk in beheer, onderhoud en projecten. Misschien ligt jouw kracht in het dagelijks organiseren van een portefeuille. Of werk je liever aan een renovatie, verhuizing of realisatieproject. We bespreken welke verantwoordelijkheid je zoekt en welke ervaring je wilt inzetten.",
+      "Jouw ervaring met gebouwen, portefeuilles en projecten verdient een inhoudelijke kennismaking. We bespreken welk werk je goed ligt, waar je naartoe wilt en welke organisatie daarbij kan passen. Misschien ligt jouw kracht in het dagelijks organiseren van een portefeuille. Of werk je liever aan een renovatie, verhuizing of realisatieproject. We bespreken welke verantwoordelijkheid je zoekt en welke ervaring je wilt inzetten.",
       "Voor een kennismaking horen we graag over het type gebouwen of projecten waarmee je hebt gewerkt en wat jouw eigen rol was. Bijvoorbeeld de afstemming met gebruikers, het aansturen van leveranciers of het bewaken van planning en budget. Zo kunnen we jouw ervaring inhoudelijk bespreken.",
       "Ook de organisatie achter het vastgoed telt mee. De belangen, werkwijze en beslisruimte kunnen per werkgever of opdrachtgever verschillen. Bij een concrete mogelijkheid bespreken we de portefeuille of het project, het team en de verwachtingen voordat we je voorstellen."
     ],
@@ -103,9 +103,9 @@ export const vakgebieden = {
     path: "/technisch-beheer", candidatePath: "/vacatures", label: "Gebouwgebonden techniek & technisch beheer",
     description: "Technisch beheerders, coördinatoren en monteurs voor gebouwen en installaties. Wedeploy zoekt voor onderhoud, beheer en technische projecten.",
     intro: "Voor onderhoud, storingen en technische projecten aan gebouwen zoek je mensen met passende vakkennis. We bemiddelen voor technisch beheer, coördinatie en gebouwgebonden installaties.",
-    heading: "Passende vakkennis voor jouw gebouw",
+    heading: "Vakkennis die aansluit op jouw gebouwen",
     paragraphs: [
-      "Technisch werk aan gebouwen kan uitvoerend, coördinerend of projectgericht zijn. Een monteur die storingen oplost heeft andere ervaring nodig dan een beheerder die onderhoudspartijen aanstuurt. We bespreken daarom de werkzaamheden, de installaties en de verantwoordelijkheid voordat we gaan zoeken.",
+      "Voor betrouwbaar onderhoud en technische projecten heb je mensen nodig met de juiste vakkennis voor jouw installaties. We maken opleiding, praktijkervaring en verantwoordelijkheid concreet, zodat duidelijk is waarop we selecteren. Een monteur die storingen oplost heeft andere ervaring nodig dan een beheerder die onderhoudspartijen aanstuurt. We bespreken daarom de werkzaamheden, de installaties en de verantwoordelijkheid voordat we gaan zoeken.",
       "Gaat het om elektrotechniek, werktuigbouwkundige installaties of een combinatie? Werkt de professional zelfstandig op locatie of samen met een onderhoudsteam? Ook veiligheid, relevante opleiding en de benodigde aanwijzingen of certificaten horen bij het profiel. De concrete eisen stemmen we af met de opdrachtgever.",
       "Onze invalshoek is de gebouwde omgeving: gebouwen, onderhoud en de samenwerking tussen techniek, vastgoed en Facility Management. Voor andere technische specialismen bespreken we eerst of de vraag aansluit op ons netwerk en de zoektocht die we kunnen uitvoeren."
     ],

@@ -2,9 +2,9 @@ export const diensten = {
   werving: {
     path: '/werving-selectie', label: 'Werving & selectie', title: 'Werving & selectie',
     intro: 'Je zoekt iemand die bij jouw organisatie in dienst komt. Wedeploy helpt het profiel scherp te maken, benadert professionals en begeleidt de kennismaking en selectie. Met duidelijke afspraken over de zoektocht.',
-    heading: 'De functie achter de vacature.',
+    heading: 'Gericht zoeken naar jouw nieuwe collega',
     paragraphs: [
-      'Een goede zoektocht begint met begrijpen wat iemand moet doen. Welke verantwoordelijkheid krijgt de nieuwe collega? Wat vraagt het team en welke ervaring is direct nodig? We bespreken ook de werkomgeving, de arbeidsvoorwaarden en wat de functie aantrekkelijk maakt voor een kandidaat.',
+      'Een nieuwe collega moet het werk aankunnen én passen binnen het team. Daarom maken we samen het zoekprofiel scherp voordat we de markt benaderen. Welke verantwoordelijkheid krijgt de nieuwe collega? Wat vraagt het team en welke ervaring is direct nodig? We bespreken ook de werkomgeving, de arbeidsvoorwaarden en wat de functie aantrekkelijk maakt voor een kandidaat.',
       'Dat gesprek helpt om noodzakelijke eisen te onderscheiden van wensen. Een lange lijst met eisen maakt een profiel niet vanzelf beter. We kijken naar wat iemand zelfstandig moet kunnen, wat binnen de organisatie te leren is en waar je ruimte hebt om een goede kandidaat te laten groeien.',
       'Daarna zoeken we in ons netwerk en benaderen we professionals die inhoudelijk aansluiten. Niet iedereen die interessant is, zoekt actief een andere baan. We bespreken daarom ook motivatie, verwachtingen en de redenen om een overstap te overwegen.'
     ],
@@ -23,9 +23,9 @@ export const diensten = {
   detachering: {
     path: '/detachering', label: 'Detachering', title: 'Detachering & detavast',
     intro: 'Extra capaciteit, tijdelijke vervanging of een collega die eerst via Wedeploy start. Bij detachering werkt de professional binnen jouw organisatie en is diegene in dienst bij Wedeploy.',
-    heading: 'Het werk en de samenwerking eerst.',
+    heading: 'Tijdelijke versterking die past bij het werk',
     paragraphs: [
-      'Een tijdelijke behoefte kan ontstaan door uitval, een project, extra werk of een vacature die nog niet is ingevuld. We bespreken welke taken moeten worden opgepakt en hoe de professional onderdeel wordt van het team. De duur van de inzet is belangrijk, maar bepaalt niet op zichzelf welk profiel past.',
+      'Wanneer werk blijft liggen, wil je weten wie het kan oppakken. We zoeken passende versterking voor uitval, projecten, extra capaciteit of een vacature die nog niet is ingevuld. We bespreken welke taken moeten worden opgepakt en hoe de professional onderdeel wordt van het team. De duur van de inzet is belangrijk, maar bepaalt niet op zichzelf welk profiel past.',
       'We kijken naar de benodigde ervaring, de dagelijkse aansturing en de werkplek. Moet iemand zelfstandig een team leiden, de operatie ondersteunen of een specialistisch onderdeel uitvoeren? Ook de uren, gewenste start en begeleiding nemen we mee in de zoektocht.',
       'De professional is bij detachering in dienst bij Wedeploy en werkt bij de opdrachtgever. Voor de start leggen we de afspraken over de inzet vast. Tijdens de samenwerking houden we contact met beide partijen over het werk, de verwachtingen en eventuele veranderingen.'
     ],
@@ -44,9 +44,9 @@ export const diensten = {
   interim: {
     path: '/interim-zzp', label: 'Interim & zzp-bemiddeling', title: 'Interim & zzp-bemiddeling',
     intro: 'Tijdelijke leiding, projectervaring of specialistische kennis nodig? We zoeken een professional die past bij de opgave. Bij zelfstandige inzet bespreken we de opdracht en voorwaarden met opdrachtgever en zzp’er.',
-    heading: 'Wat moet de opdracht opleveren?',
+    heading: 'Ervaring voor de opgave die nu voorligt',
     paragraphs: [
-      'Een interim-vraag begint bij wat er moet gebeuren. Een project overnemen, de dienstverlening verbeteren of tijdelijk verantwoordelijkheid dragen voor een team: de situatie bepaalt welke ervaring je nodig hebt. We vragen naar het resultaat, de projectfase en de ruimte om beslissingen te nemen.',
+      'Een interim professional moet relevante ervaring meebrengen voor het werk dat nu voorligt. We maken de opgave concreet, zodat je een introductie krijgt die op de inhoud is onderbouwd. Een project overnemen, de dienstverlening verbeteren of tijdelijk verantwoordelijkheid dragen voor een team: de situatie bepaalt welke ervaring je nodig hebt. We vragen naar het resultaat, de projectfase en de ruimte om beslissingen te nemen.',
       'Daarnaast bespreken we de looptijd, de benodigde inzet en de samenwerking met de organisatie. Wat is al geregeld, welke informatie is beschikbaar en wie zijn de betrokken partijen? Daarmee maken we de opdracht concreet voordat we professionals benaderen.',
       'Interim beschrijft tijdelijke inzet; zzp beschrijft zelfstandig ondernemerschap. Dat is niet hetzelfde. Een tijdelijke vraag kan ook beter passen bij detachering. We bespreken de werkzaamheden en de manier waarop het werk wordt ingericht voordat we een inzetvorm uitwerken.'
     ],

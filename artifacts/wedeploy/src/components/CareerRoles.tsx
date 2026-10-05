@@ -21,7 +21,7 @@ export function CareerRoles() {
     <div className="career-role-list mt-8">{roles.map(role => <article className="editorial-item" key={role.title}>
       <h3 className="text-xl font-bold text-primary">{role.title}</h3>
       <p className="text-muted-foreground leading-relaxed mt-3">{role.text}</p>
-      <a href={`/vacatures?type=kandidaat&onderwerp=${encodeURIComponent(`Open inschrijving: ${role.title}`)}#inschrijven`} className="inline-flex text-accent text-sm font-bold mt-5">Stuur jouw cv voor deze rol</a>
+      <a href={`/vacatures?type=kandidaat&onderwerp=${encodeURIComponent(`Open inschrijving: ${role.title}`)}#inschrijven`} className="action-arrow inline-flex text-accent text-sm font-bold mt-5">Stuur jouw cv voor deze rol</a>
     </article>)}</div>
   </div>;
 }

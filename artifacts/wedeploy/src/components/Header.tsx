@@ -63,7 +63,7 @@ export function Header() {
         <div className="hidden xl:block">
           <a
             href="/contact"
-            className="inline-flex items-center rounded-full bg-accent text-white px-6 py-2.5 text-[13px] font-bold hover:bg-accent/90 transition-colors duration-200"
+            className="action-arrow inline-flex items-center rounded-full bg-accent text-white px-6 py-2.5 text-[13px] font-bold hover:bg-accent/90 transition-colors duration-200"
           >
             Plan een gesprek
           </a>
@@ -107,7 +107,7 @@ export function Header() {
                 <a href="tel:+31852128668" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-sm font-medium text-primary hover:text-accent">Bel 085 212 8668</a>
               </div>
             </div>
-            <a href="/contact" onClick={() => setIsOpen(false)} className="mobile-contact-button mt-4 inline-flex items-center justify-center rounded-full bg-accent text-white px-6 min-h-12 text-sm font-bold hover:bg-accent/90">Neem contact op</a>
+            <a href="/contact" onClick={() => setIsOpen(false)} className="action-arrow mobile-contact-button mt-4 inline-flex items-center justify-center rounded-full bg-accent text-white px-6 min-h-12 text-sm font-bold hover:bg-accent/90">Neem contact op</a>
           </div>
           <nav aria-label="Snel regelen" className="flex flex-wrap items-center gap-x-6 gap-y-1 mt-6 pb-2">
             <a href="/vacatures?type=kandidaat#contact" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-[13px] font-medium text-muted-foreground hover:text-primary">Laat je cv achter</a>

@@ -30,3 +30,5 @@ Illustrative stock images, not portraits of Wedeploy employees or clients. Unspl
 - `professional-vastgoed.webp`: https://images.unsplash.com/photo-1460317442991-0ec209397118
 
 The lounge image is now on Expertise & diensten, not Contact. About uses the real consultant portrait at its closing invitation. FAQ and privacy remain image-free utility pages.
+
+Expertise & diensten subsequently received its own image: `expertise-overzicht.webp`, https://images.unsplash.com/photo-1487958449943-2429e8be8625. The lounge image is no longer displayed in a page hero.
