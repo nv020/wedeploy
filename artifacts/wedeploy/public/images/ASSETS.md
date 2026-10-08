@@ -32,3 +32,13 @@ Illustrative stock images, not portraits of Wedeploy employees or clients. Unspl
 The lounge image is now on Expertise & diensten, not Contact. About uses the real consultant portrait at its closing invitation. FAQ and privacy remain image-free utility pages.
 
 Expertise & diensten subsequently received its own image: `expertise-overzicht.webp`, https://images.unsplash.com/photo-1487958449943-2429e8be8625. The lounge image is no longer displayed in a page hero.
+
+
+## Knowledge articles (8 October 2026)
+Free stock photographs under the Unsplash License, downloaded as optimized WebP files. Illustrative work environments, not Wedeploy premises or clients.
+- kennis-detavast.webp: https://unsplash.com/photos/wlHBYkK2y4k — Deliberate Directions; https://images.unsplash.com/photo-1746021375306-9dec0f637732
+- kennis-inzetvormen.webp: https://unsplash.com/photos/teZLTlnKNdo — Gul Fatima; https://images.unsplash.com/photo-1744095407215-66e40734e23a
+- kennis-werken-detachering.webp: https://unsplash.com/photos/6i3J5ULpIR0 — Deliberate Directions; https://images.unsplash.com/photo-1746021375246-7dc8ab0583f0
+- kennis-zzper-worden.webp: https://unsplash.com/photos/QfQW294I8sQ — Cht Gsml; https://images.unsplash.com/photo-1762831063004-bbd3ea38ba3a
+- kennis-interim-inhuren.webp: https://unsplash.com/photos/7ja5zM7PBu8 — Cabri Caldwell; https://images.unsplash.com/photo-1783099779469-5b02ae272c09
+The knowledge index uses the previously downloaded contact-lounge.webp, no longer used on another page hero.

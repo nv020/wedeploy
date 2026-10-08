@@ -1,3 +1,4 @@
+import { knowledgePages } from "./knowledge";
 import { candidateSectorPages } from "./vakgebieden";
 import { servicePages } from "./diensten";
 import { publicVacancies } from "./opportunities";
@@ -16,7 +17,7 @@ export const pages = [
   { path: "/privacy", label: "Privacy", title: "Privacyverklaring | Wedeploy", description: "Lees hoe Wedeploy omgaat met contactgegevens, sollicitaties en cv’s, en hoe je vragen over jouw persoonsgegevens kunt stellen." },
   { path: "/veelgestelde-vragen", label: "Veelgestelde vragen", title: "Veelgestelde vragen over werving & selectie en detachering | Wedeploy", description: "Lees hoe werving & selectie, detachering, interim en zzp-bemiddeling via Wedeploy werken. Voor opdrachtgevers en professionals." },
 ];
-pages.push(...sectorPages, ...candidateSectorPages, ...servicePages,
+pages.push(...knowledgePages, ...sectorPages, ...candidateSectorPages, ...servicePages,
   { path: "/zzp-opdrachten", label: "Zzp-opdrachten", title: "Zzp-opdrachten | Projectmanagement & meer | Wedeploy", description: "Zelfstandig professional? Deel jouw beschikbaarheid voor opdrachten in projectmanagement, PMO, vastgoed, Facility Management, workplace of hospitality." },
 );
 export const navigation = pages.filter(page => ["/opdrachtgevers", "/professionals", "/vacatures", "/expertise-diensten", "/over-ons"].includes(page.path));

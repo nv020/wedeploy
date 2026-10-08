@@ -10,6 +10,7 @@ import { FlexibleWorkPage } from "@/pages/FlexibleWorkPages";
 import { SectorPage } from "@/pages/SectorPages";
 import { ServicePage } from "@/pages/ServicePages";
 import { FAQPage } from "@/pages/FAQPage";
+import { KnowledgeIndex, KnowledgeArticlePage } from "@/pages/KnowledgePages";
 const queryClient = new QueryClient();
 function App({ ssrPath }: { ssrPath?: string }) {
   return <QueryClientProvider client={queryClient}><TooltipProvider><WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")} ssrPath={ssrPath}>
@@ -35,6 +36,8 @@ function App({ ssrPath }: { ssrPath?: string }) {
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/veelgestelde-vragen" component={FAQPage} />
+      <Route path="/kennisbank" component={KnowledgeIndex} />
+      <Route path="/kennisbank/:slug">{params => <KnowledgeArticlePage slug={params.slug} />}</Route>
       <Route component={NotFound} />
     </Switch>
   </WouterRouter><Toaster /></TooltipProvider></QueryClientProvider>;

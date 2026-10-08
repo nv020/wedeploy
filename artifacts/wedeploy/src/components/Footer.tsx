@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Expertise & diensten", href: "/expertise-diensten" },
   { label: "Over ons", href: "/over-ons" },
   { label: "Contact", href: "/contact" },
+  { label: "Kennisbank", href: "/kennisbank" },
 ];
 
 export function Footer() {

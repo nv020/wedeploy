@@ -6,3 +6,5 @@ export function render(path: string) { return renderToString(<App ssrPath={path}
 export { diensten } from "./data/diensten";
 export { publicVacancies } from "./data/opportunities";
 export { faqItems } from "./data/faq";
+
+export { knowledgeArticles } from "./data/knowledge";

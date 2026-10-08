@@ -48,7 +48,7 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-6 h-[68px] flex items-center justify-between">
         <BrandLogo />
 
-        <nav className="hidden xl:flex items-center gap-7 text-[13px] font-medium">
+        <nav className="hidden xl:flex items-center gap-5 text-[13px] font-medium">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -58,6 +58,7 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <a href="/kennisbank" className="text-white/55 hover:text-white transition-colors duration-150">Kennisbank</a>
         </nav>
 
         <div className="hidden xl:block">
@@ -111,6 +112,7 @@ export function Header() {
           </div>
           <nav aria-label="Snel regelen" className="flex flex-wrap items-center gap-x-6 gap-y-1 mt-6 pb-2">
             <a href="/vacatures?type=kandidaat#contact" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-[13px] font-medium text-muted-foreground hover:text-primary">Laat je cv achter</a>
+            <a href="/kennisbank" onClick={() => setIsOpen(false)} className="inline-flex items-center min-h-11 text-[13px] font-medium text-muted-foreground hover:text-primary">Kennisbank</a>
             <a href="/veelgestelde-vragen" onClick={() => setIsOpen(false)} aria-current={location === "/veelgestelde-vragen" ? "page" : undefined} className={`inline-flex items-center min-h-11 text-[13px] font-medium hover:text-primary ${location === "/veelgestelde-vragen" ? "text-accent" : "text-muted-foreground"}`}>Veelgestelde vragen</a>
           </nav>
           </div>
