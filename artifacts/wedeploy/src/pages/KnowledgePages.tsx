@@ -5,7 +5,7 @@ import NotFound from '@/pages/not-found';
 const date = (value: string) => new Intl.DateTimeFormat('nl-NL', { dateStyle: 'long', timeZone: 'Europe/Amsterdam' }).format(new Date(value));
 
 export function KnowledgeIndex() {
-  return <div className="knowledge-shell"><PageLayout label="Kennisbank" title="Goed om te weten" intro="Heldere uitleg over werk, personeel en zelfstandig ondernemen. Voor jouw volgende stap als professional of een goede keuze voor jouw organisatie." photo={{ src: '/images/contact-lounge.webp', alt: 'Een lichte ruimte voor een gesprek', width: 1100, height: 733 }}>
+  return <div className="knowledge-shell"><PageLayout label="Kennisbank" title="Goed om te weten" intro="Heldere uitleg over werk, personeel en zelfstandig ondernemen. Voor jouw volgende stap als professional of een goede keuze voor jouw organisatie." photo={{ src: '/images/kennis-overzicht-v2.webp', alt: 'Samen informatie bekijken op een laptop', width: 1100, height: 800 }}>
     <Section tone="white"><div className="knowledge-index-heading"><h2>Werk en samenwerking, uitgelegd.</h2><p>Van detavast tot zelfstandig werken. Kies de vraag die bij jouw situatie past.</p></div>
       <div className="knowledge-index-list">{knowledgeArticles.map(article => <article key={article.slug}>
         <img src={article.image.src} alt="" width={1100} height={800} loading="lazy" decoding="async" />

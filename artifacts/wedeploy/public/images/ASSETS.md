@@ -42,3 +42,13 @@ Free stock photographs under the Unsplash License, downloaded as optimized WebP 
 - kennis-zzper-worden.webp: https://unsplash.com/photos/QfQW294I8sQ — Cht Gsml; https://images.unsplash.com/photo-1762831063004-bbd3ea38ba3a
 - kennis-interim-inhuren.webp: https://unsplash.com/photos/7ja5zM7PBu8 — Cabri Caldwell; https://images.unsplash.com/photo-1783099779469-5b02ae272c09
 The knowledge index uses the previously downloaded contact-lounge.webp, no longer used on another page hero.
+
+
+## Knowledge imagery revision (8 October 2026)
+The article and index templates now use these six distinct, subject-specific stock images. None is reused by another site page hero. All are illustrative; depicted people are not Wedeploy employees or candidates. Downloaded from Unsplash and optimized locally to 1100 × 800 WebP; Unsplash License: https://unsplash.com/license.
+- `kennis-detavast-v2.webp`: https://images.unsplash.com/photo-1450101499163-c8848c66ca85
+- `kennis-inzetvormen-v2.webp`: https://images.unsplash.com/photo-1517245386807-bb43f82c33c4
+- `kennis-werken-detachering-v2.webp`: https://images.unsplash.com/photo-1521737711867-e3b97375f902
+- `kennis-zzper-worden-v2.webp`: https://images.unsplash.com/photo-1434030216411-0b793f4b4173
+- `kennis-interim-inhuren-v2.webp`: https://images.unsplash.com/photo-1551836022-d5d88e9218df
+- `kennis-overzicht-v2.webp`: https://images.unsplash.com/photo-1516321318423-f06f85e504b3

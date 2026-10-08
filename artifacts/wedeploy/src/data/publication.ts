@@ -8,7 +8,8 @@ export type Vacancy = {
 };
 export type AvailableProfessional = {
   reference: string; status: 'draft' | 'available' | 'soon' | 'unavailable'; approvedForPublication: boolean;
-  title: string; sector: SectorKey; summary: string; experience: string[];
+  title: string; sector: SectorKey; summary: string; preview?: string; experience: string[];
+  engagementTypes?: ('loondienst' | 'zzp')[];
   availableFrom: string; availabilityLabel?: string; labels?: string[]; hours: string; region: string; contract: string;
   confirmedAt: string; reviewBy: string;
 };
@@ -50,6 +51,8 @@ export function validateOpportunities(jobs: Vacancy[], profiles: AvailableProfes
     if (profile.approvedForPublication && ['available','soon'].includes(profile.status)) {
       for (const field of ['title','sector','summary','hours','region','contract'] as const) if (!profile[field]?.trim()) throw new Error(`Profile ${profile.reference}: missing ${field}`);
       if (![profile.availableFrom,profile.confirmedAt,profile.reviewBy].every(validDate) || Date.parse(profile.reviewBy) <= Date.parse(profile.confirmedAt)) throw new Error(`Profile ${profile.reference}: invalid availability dates`);
+      if (profile.preview !== undefined && !profile.preview.trim()) throw new Error(`Profile ${profile.reference}: empty preview`);
+      if (profile.engagementTypes !== undefined && (!profile.engagementTypes.length || profile.engagementTypes.some(type => !['loondienst','zzp'].includes(type)))) throw new Error(`Profile ${profile.reference}: invalid engagement type`);
       if (!profile.experience?.length || profile.experience.some(item => !item.trim())) throw new Error(`Profile ${profile.reference}: missing experience`);
       if (!['projecten','facility','vastgoed','techniek'].includes(profile.sector)) throw new Error(`Profile ${profile.reference}: invalid category`);
     }

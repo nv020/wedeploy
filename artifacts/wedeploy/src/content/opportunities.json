@@ -24,6 +24,10 @@
         "Projecten en implementaties begeleiden",
         "Processen analyseren en verbeteringen doorvoeren",
         "Praktisch, analytisch en gericht op samenwerking"
+      ],
+      "preview": "Technisch bedrijfskundige met circa zeven jaar ervaring. Combineert projectleiding met praktische procesverbetering.",
+      "engagementTypes": [
+        "loondienst"
       ]
     },
     {
@@ -49,6 +53,10 @@
         "Procesoptimalisatie en Lean-implementaties",
         "Verandertrajecten en nieuwe werkwijzen",
         "Kostenbesparingen en efficiëntere bedrijfsvoering"
+      ],
+      "preview": "Projectleider en procesadviseur met acht jaar ervaring. Helpt organisaties processen te verbeteren en veranderingen door te voeren.",
+      "engagementTypes": [
+        "zzp"
       ]
     },
     {
@@ -74,6 +82,10 @@
         "Hbo Engineering en post-hbo Onderhouds- en Assetmanagement",
         "Elektrische veiligheid en implementatie van NEN 3140",
         "Technisch advies en begeleiding van realisatieprojecten"
+      ],
+      "preview": "Installatieverantwoordelijke met ervaring in laag- en middenspanning. Combineert elektrische veiligheid met technische projectrealisatie.",
+      "engagementTypes": [
+        "zzp"
       ]
     },
     {
@@ -99,6 +111,11 @@
         "Hbo Facility Management",
         "Leidinggeven aan teams en ondersteunende afdelingen",
         "Organisatieverandering en verbetering van dienstverlening"
+      ],
+      "preview": "Senior manager met ruim twintig jaar ervaring. Geeft leiding aan bedrijfsvoering, facilitair en huisvesting en begeleidt organisatieverandering.",
+      "engagementTypes": [
+        "loondienst",
+        "zzp"
       ]
     }
   ]
