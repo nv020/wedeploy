@@ -800,20 +800,26 @@ main a, main button { text-wrap: balance; }
 .function-shell p, .function-task-composition li { color: hsl(var(--muted-foreground)); line-height: 1.75; font-size: 1rem; }
 .function-shell p + p { margin-top: 1rem; }
 .function-shell .function-kicker { color: hsl(var(--accent)); font-size: .75rem; font-weight: 600; margin-bottom: .7rem; letter-spacing: .03em; }
-.function-reading { max-width: 46rem; margin-inline: auto; }
+.function-reading { max-width: 54rem; margin-inline: 0; }
 .function-reading section + section { margin-top: 2.25rem; }
 .function-reading h2 { margin-bottom: 1rem; }
 .function-reading section, .function-index-group, #werkzaamheden, #via-wedeploy { scroll-margin-top: 6.5rem; }
 .function-section-nav, .function-group-nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1.5rem; }
 .function-section-nav a, .function-group-nav a { min-height: 2.75rem; display: inline-flex; align-items: center; color: hsl(var(--primary)); font-size: .875rem; font-weight: 550; text-decoration: underline; text-underline-offset: .3em; text-decoration-color: hsl(var(--primary) / .25); }
-.function-task-composition { display: grid; gap: 1.5rem; max-width: 65rem; margin-inline: auto; }
-.function-task-composition header p:last-child { margin-top: .8rem; max-width: 34ch; }
+.function-task-composition { max-width: 54rem; margin-inline: 0; }
+.function-task-composition header p:last-child { margin-top: .8rem; }
+.function-task-composition > ul { margin-top: 1.25rem; }
 .function-task-composition ul { list-style: none; border-top: 1px solid hsl(var(--primary) / .15); }
 .function-task-composition li { padding-block: 1rem; border-bottom: 1px solid hsl(var(--primary) / .15); }
+.function-practice { border-left: 3px solid hsl(var(--accent)); padding: 1.25rem; margin-top: 2rem; background: hsl(var(--primary) / .025); }
+.function-practice h3 { margin-bottom: .8rem; }
+.function-selection-title { margin-top: 1.5rem; margin-bottom: .75rem; }
+.function-selection { padding-left: 1.2rem; list-style: disc; display: grid; gap: .65rem; color: hsl(var(--muted-foreground)); line-height: 1.75; font-size: 1rem; }
+.function-reading > section > p, .function-practice > p:last-child, .function-task-composition header p:last-child { max-width: 72ch; }
 .function-inline-link { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .875rem; font-weight: 600; color: hsl(var(--accent)); margin-top: .8rem; }
 .function-audience-heading { max-width: 48rem; margin-bottom: 1.75rem; }
 .function-audience-heading p { margin-top: .8rem; }
-.function-audience-grid { display: grid; gap: 2rem; }
+.function-audience-grid { display: grid; gap: 2rem; max-width: 65rem; }
 .function-audience-grid article { min-width: 0; border-top: 1px solid hsl(var(--primary) / .18); padding-top: 1.5rem; }
 .function-audience-grid h3 { font-size: 1.2rem; margin-bottom: .9rem; }
 .function-audience-grid .page-action { margin-top: 1.25rem; }
@@ -828,6 +834,8 @@ main a, main button { text-wrap: balance; }
 .function-shell .function-sources h2 { font-size: 1rem; }
 .function-sources li a { font-size: .85rem; font-weight: 400; text-decoration: underline; text-underline-offset: .2em; }
 .function-shell .page-faq summary { text-wrap: balance; }
+.function-shell .faq-composition { grid-template-columns: minmax(0,1fr); gap: 1.25rem; max-width: 54rem; margin-inline: 0; }
+.function-shell .faq-title { max-width: none; }
 .function-index-intro { max-width: 50rem; }
 .function-index-intro p { margin-top: 1rem; }
 .function-index-group header { max-width: 48rem; margin-bottom: 1.5rem; }
@@ -850,9 +858,6 @@ main a, main button { text-wrap: balance; }
 @media (min-width: 768px) {
   .function-index-list, .function-related ul { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .function-audience-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: clamp(2rem, 4vw, 3.5rem); }
-}
-@media (min-width: 1024px) {
-  .function-task-composition { grid-template-columns: minmax(0, .7fr) minmax(0, 1fr); gap: 3rem; }
 }
 
 /* The shared footer keeps a useful centre column, with a quiet mobile disclosure. */

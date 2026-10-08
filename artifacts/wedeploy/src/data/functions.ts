@@ -12,6 +12,7 @@ type Link = { label: string; href: string };
 export type FunctionContent = {
   slug: string; title: string; intro: string; definition: string[]; tasks: string[];
   environment: string; background: string; employer: string; candidate: string;
+  practice: { title: string; text: string }; difference: { title: string; text: string }; selection: string[];
   faq: { question: string; answer: string }[]; related: string[]; sources?: Link[];
 };
 export type FunctionPage = FunctionContent & { group: FunctionGroupKey; image: PageImage; updated: string; heading: string; path: string };

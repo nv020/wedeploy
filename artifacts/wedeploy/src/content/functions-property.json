@@ -1,51 +1,200 @@
 [
   {
-    "slug":"vastgoedmanager", "title":"Vastgoedmanager",
-    "intro":"Een vastgoedmanager houdt overzicht op een gebouw of portefeuille. Die verbindt gebruik, kosten, onderhoud en keuzes voor de toekomst van het vastgoed.",
-    "definition":["Een vastgoedmanager zorgt dat vastgoed aansluit bij de doelen van de eigenaar of organisatie. Dat kan gaan om kantoren, onderwijsgebouwen, zorglocaties of ander maatschappelijk en commercieel vastgoed. Het werk verbindt beheer met de vraag wat de portefeuille op langere termijn nodig heeft.","De verantwoordelijkheid verschilt per organisatie. Een vastgoedmanager kan een beheerteam aansturen, investeringen voorbereiden of veel samenwerken met huurders en gebruikers. Bij een organisatie die eigen gebouwen gebruikt ligt de nadruk anders dan bij een belegger met verhuurd vastgoed."],
-    "tasks":["De prestaties, kosten en behoeften van een vastgoedportefeuille volgen.","Onderhoud, investeringen en prioriteiten met betrokkenen afstemmen.","Beheerders, adviseurs of leveranciers aansturen.","Vastgoedkeuzes voorbereiden voor directie of eigenaar.","Samenwerken met gebruikers, huurders en facilitaire teams."],
-    "environment":"Vastgoedmanagers werken bij eigenaren, gebruikersorganisaties, overheden en vastgoedbedrijven. Een kleine portefeuille vraagt vaak een brede, praktische aanpak. Bij grotere organisaties zijn assetmanagement, technisch beheer en property management vaker afzonderlijk georganiseerd.",
-    "background":"Een hbo- of wo-achtergrond in vastgoed, bouwkunde, Facility Management of bedrijfskunde kan aansluiten. Relevant zijn ervaring met een vergelijkbare portefeuille, financiële keuzes en de samenwerking tussen beheer en gebruik. Voor een managementrol telt ook ervaring met leidinggeven en het organiseren van verantwoordelijkheden.",
-    "employer":"Beschrijf het soort gebouwen en het doel van de functie. Zoek je regie op beheer, leiding aan een team of iemand die keuzes voor de portefeuille voorbereidt? De omvang, staat en gebruikers van het vastgoed maken het gewenste profiel concreet.",
-    "candidate":"We bespreken welke portefeuilles en verantwoordelijkheden je hebt gehad. Wil je dichter op beheer blijven of juist meer met investeringen, huisvesting en beleid werken? Dat helpt om een passende volgende rol te vinden.",
-    "faq":[{"question":"Vastgoedmanager of assetmanager?","answer":"Een vastgoedmanager kan een brede beheer- en managementrol hebben. Een assetmanager kijkt vaak nadrukkelijker naar de prestaties en langetermijnkeuzes van de portefeuille. Het onderscheid verschilt per organisatie."},{"question":"Gaat deze functie alleen over commercieel vastgoed?","answer":"Nee. Ook zorg, onderwijs, overheid en organisaties met eigen huisvesting hebben vastgoedmanagement nodig. De doelen en gebruikers bepalen welke ervaring belangrijk is."}],
-    "related":["assetmanager-vastgoed","vastgoedbeheerder","huisvestingsmanager"]
+    "slug": "vastgoedmanager",
+    "title": "Vastgoedmanager",
+    "intro": "Een vastgoedmanager verbindt het beheer van gebouwen met de doelen van de eigenaar. Gebruik, onderhoud, kosten en keuzes voor de portefeuille komen in deze rol samen.",
+    "definition": [
+      "Een vastgoedmanager zorgt dat vastgoed aansluit bij de doelen van de eigenaar of organisatie. Dat kan gaan om kantoren, onderwijsgebouwen, zorglocaties of ander maatschappelijk en commercieel vastgoed. Het werk verbindt beheer met de vraag wat de portefeuille op langere termijn nodig heeft.",
+      "De verantwoordelijkheid verschilt per organisatie. Een vastgoedmanager kan een beheerteam aansturen, investeringen voorbereiden of veel samenwerken met huurders en gebruikers. Bij een organisatie die eigen gebouwen gebruikt ligt de nadruk anders dan bij een belegger met verhuurd vastgoed."
+    ],
+    "tasks": [
+      "De prestaties, kosten en behoeften van een vastgoedportefeuille volgen.",
+      "Onderhoud, investeringen en prioriteiten met betrokkenen afstemmen.",
+      "Beheerders, adviseurs of leveranciers aansturen.",
+      "Vastgoedkeuzes voorbereiden voor directie of eigenaar.",
+      "Samenwerken met gebruikers, huurders en facilitaire teams."
+    ],
+    "environment": "Vastgoedmanagers werken bij eigenaren, gebruikersorganisaties, overheden en vastgoedbedrijven. Een kleine portefeuille vraagt vaak een brede, praktische aanpak. Bij grotere organisaties zijn assetmanagement, technisch beheer en property management vaker afzonderlijk georganiseerd.",
+    "background": "Een hbo- of wo-achtergrond in vastgoed, bouwkunde, Facility Management of bedrijfskunde kan aansluiten. Relevant zijn ervaring met een vergelijkbare portefeuille, financiële keuzes en de samenwerking tussen beheer en gebruik. Voor een managementrol telt ook ervaring met leidinggeven en het organiseren van verantwoordelijkheden.",
+    "employer": "Een vastgoedmanager nodig voor jouw gebouwen of portefeuille? We zoeken iemand die het type vastgoed begrijpt en beheer, investeringen en gebruikersbelangen bij elkaar kan brengen.",
+    "candidate": "Van maatschappelijk vastgoed tot commerciële portefeuilles: we bespreken de omgeving die bij je past en de verantwoordelijkheid die je zoekt in beheer, beleid of investeringen.",
+    "faq": [
+      {
+        "question": "Werkt een vastgoedmanager voor een eigenaar of gebruiker?",
+        "answer": "Beide komen voor. Bij een belegger kunnen verhuur en rendement zwaar wegen. Bij een organisatie met eigen huisvesting gaat het ook om continuïteit, gebruik en de behoefte van de organisatie. Dat verschil beïnvloedt het profiel."
+      },
+      {
+        "question": "Gaat deze functie alleen over commercieel vastgoed?",
+        "answer": "Nee. Ook zorg, onderwijs, overheid en organisaties met eigen huisvesting hebben vastgoedmanagement nodig. De doelen en gebruikers bepalen welke ervaring belangrijk is."
+      }
+    ],
+    "related": [
+      "assetmanager-vastgoed",
+      "vastgoedbeheerder",
+      "huisvestingsmanager"
+    ],
+    "practice": {
+      "title": "Beheer verbinden met de toekomst van een portefeuille",
+      "text": "Een organisatie gebruikt meerdere gebouwen, waarvan een deel niet meer aansluit op de behoefte. De vastgoedmanager brengt onderhoud, kosten, gebruik en toekomstige plannen bij elkaar. Vervolgens worden keuzes voorbereid: blijven gebruiken, aanpassen, anders verhuren of afstoten. Daarbij werken beheer, financiën en gebruikers samen. De uitkomst moet passen bij de doelen van de eigenaar en bij wat technisch en organisatorisch haalbaar is."
+    },
+    "difference": {
+      "title": "Vastgoedmanager, beheerder of assetmanager?",
+      "text": "Een vastgoedmanager kan leidinggeven aan beheer en verantwoordelijk zijn voor een bredere portefeuille. Een vastgoedbeheerder zit doorgaans dichter op het dagelijks beheer. Een assetmanager richt zich sterker op waarde, risico’s en investeringskeuzes. Bij eigen huisvesting kan de vastgoedmanager ook veel samenwerken met een huisvestingsmanager."
+    },
+    "selection": [
+      "Ervaring met het betreffende type vastgoed en de doelen van de eigenaar.",
+      "Beheer, kosten en investeringsvragen in samenhang kunnen beoordelen.",
+      "Samenwerken met gebruikers, huurders, beheerpartners en andere afdelingen."
+    ]
   },
   {
-    "slug":"vastgoedbeheerder", "title":"Vastgoedbeheerder",
-    "intro":"Een vastgoedbeheerder organiseert het dagelijks beheer van gebouwen. Van onderhoud en meldingen tot de afstemming met leveranciers, huurders en gebruikers.",
-    "definition":["Een vastgoedbeheerder zorgt dat vragen over gebouwen worden opgepakt en afspraken worden nagekomen. Wie voert het onderhoud uit, wat heeft prioriteit en welke informatie moet de eigenaar krijgen? De beheerder houdt de dagelijkse werkzaamheden en terugkoppeling bij elkaar.","De functie kan technisch, administratief of breed zijn. Ook property manager wordt als titel gebruikt. Bij verhuurd vastgoed zijn huurders en servicekosten vaak belangrijk. Bij eigen huisvesting ligt de nadruk eerder op gebruikers, onderhoud en de samenwerking met Facility Management."],
-    "tasks":["Meldingen en onderhoudsvragen beoordelen en laten opvolgen.","Leveranciers aansturen en werkzaamheden controleren.","Overleggen met huurders, gebruikers of de eigenaar.","Beheerinformatie, kosten en afspraken bijhouden.","Input geven voor onderhoudsplannen en verbeteringen aan gebouwen."],
-    "environment":"Vastgoedbeheerders werken bij beheerders, eigenaren en organisaties met een eigen portefeuille. Het type vastgoed maakt veel verschil: kantoren, maatschappelijk vastgoed of woningen kennen andere gebruikersvragen en processen. De rol kan één complex of meerdere locaties omvatten.",
-    "background":"Een vastgoedkundige, bouwkundige of facilitaire achtergrond kan passen. Voor technisch beheer is voldoende bouw- en installatiekennis belangrijk. Bij breder property management kunnen ook financiële en administratieve taken horen. Organiseren, afspraken opvolgen en duidelijk communiceren zijn in beide gevallen nodig.",
-    "employer":"Omschrijf welk beheer je wilt laten uitvoeren en wat bij andere collega’s ligt. Hoeveel gebouwen, meldingen en leveranciers zijn er? Zoek je iemand die vooral regie voert of ook inspecties en begrotingen maakt? Dat bepaalt de praktische en technische eisen.",
-    "candidate":"Vertel welk vastgoed je hebt beheerd en hoe jouw taken waren verdeeld. We bespreken ook de balans die je zoekt tussen locatiebezoek, leverancierscontact en administratief werk, naast jouw wensen voor uren en regio.",
-    "faq":[{"question":"Is property manager hetzelfde?","answer":"Vaak is er veel overlap. Property management kan daarnaast nadruk leggen op huurders, financiële afspraken en verhuurd vastgoed. Kijk naar het pakket van technisch, administratief en commercieel beheer."},{"question":"Moet een beheerder zelf onderhoud uitvoeren?","answer":"Meestal organiseert en bewaakt een beheerder het onderhoud. Of er ook uitvoerende taken bij horen, hangt af van de functie. Dat onderscheid maken we vooraf duidelijk."}],
-    "related":["technisch-beheerder","vastgoedmanager","contractmanager"]
+    "slug": "vastgoedbeheerder",
+    "title": "Vastgoedbeheerder",
+    "intro": "Een vastgoedbeheerder organiseert het dagelijks beheer van gebouwen. Van onderhoud en meldingen tot de afstemming met leveranciers, huurders en gebruikers.",
+    "definition": [
+      "Een vastgoedbeheerder zorgt dat vragen over gebouwen worden opgepakt en afspraken worden nagekomen. Wie voert het onderhoud uit, wat heeft prioriteit en welke informatie moet de eigenaar krijgen? De beheerder houdt de dagelijkse werkzaamheden en terugkoppeling bij elkaar.",
+      "De functie kan technisch, administratief of breed zijn. Ook property manager wordt als titel gebruikt. Bij verhuurd vastgoed zijn huurders en servicekosten vaak belangrijk. Bij eigen huisvesting ligt de nadruk eerder op gebruikers, onderhoud en de samenwerking met Facility Management."
+    ],
+    "tasks": [
+      "Meldingen en onderhoudsvragen beoordelen en laten opvolgen.",
+      "Leveranciers aansturen en werkzaamheden controleren.",
+      "Overleggen met huurders, gebruikers of de eigenaar.",
+      "Beheerinformatie, kosten en afspraken bijhouden.",
+      "Input geven voor onderhoudsplannen en verbeteringen aan gebouwen."
+    ],
+    "environment": "Vastgoedbeheerders werken bij beheerders, eigenaren en organisaties met een eigen portefeuille. Het type vastgoed maakt veel verschil: kantoren, maatschappelijk vastgoed of woningen kennen andere gebruikersvragen en processen. De rol kan één complex of meerdere locaties omvatten.",
+    "background": "Een vastgoedkundige, bouwkundige of facilitaire achtergrond kan passen. Voor technisch beheer is voldoende bouw- en installatiekennis belangrijk. Bij breder property management kunnen ook financiële en administratieve taken horen. Organiseren, afspraken opvolgen en duidelijk communiceren zijn in beide gevallen nodig.",
+    "employer": "Zoek je versterking voor het dagelijks vastgoedbeheer? We zoeken een beheerder die past bij jouw gebouwen, beheerorganisatie en de combinatie van techniek, administratie en contact met gebruikers.",
+    "candidate": "Meer locatiebezoek, een andere portefeuille of juist verdieping in technisch beheer? We bespreken jouw ervaring en de balans in werkzaamheden die je in een volgende functie zoekt.",
+    "faq": [
+      {
+        "question": "Hoort huuradministratie bij vastgoedbeheer?",
+        "answer": "Dat kan bij verhuurd vastgoed, maar is niet altijd onderdeel van de functie. Sommige beheerders richten zich vooral op onderhoud en gebruikerscontact. Bij anderen horen ook huurders, servicekosten en administratief beheer in het pakket."
+      },
+      {
+        "question": "Moet een beheerder zelf onderhoud uitvoeren?",
+        "answer": "Meestal organiseert en bewaakt een beheerder het onderhoud. Of er ook uitvoerende taken bij horen, hangt af van de functie. Dat onderscheid maken we vooraf duidelijk."
+      }
+    ],
+    "related": [
+      "technisch-beheerder",
+      "vastgoedmanager",
+      "contractmanager"
+    ],
+    "practice": {
+      "title": "Dagelijks beheer met oog voor terugkerende problemen",
+      "text": "Een huurder meldt regelmatig een probleem in hetzelfde gebouw. De vastgoedbeheerder organiseert de opvolging, controleert de afspraken met de onderhoudspartij en informeert de huurder. Tegelijk wordt onderzocht of een structurele oplossing nodig is. Ook administratie en kosten horen daarbij: werkzaamheden moeten terug te vinden zijn en uitgaven moeten kunnen worden verantwoord aan de eigenaar."
+    },
+    "difference": {
+      "title": "Technisch, administratief of breed vastgoedbeheer",
+      "text": "Vastgoedbeheer kan huuradministratie en servicekosten omvatten, maar ook onderhoud en leveranciersregie. Een technisch beheerder heeft een nadrukkelijker bouwkundige of installatietechnische focus. Een vastgoedmanager overziet vaak de portefeuille of het beheerteam. Het soort vastgoed en de taakverdeling bepalen de benodigde ervaring."
+    },
+    "selection": [
+      "Ervaring met het vastgoedtype en het gevraagde technische of administratieve beheer.",
+      "Meldingen, onderhoudspartijen en terugkoppeling zorgvuldig organiseren.",
+      "Kosten, afspraken en gebouwinformatie overzichtelijk bijhouden."
+    ]
   },
   {
-    "slug":"assetmanager-vastgoed", "title":"Assetmanager vastgoed",
-    "intro":"Een assetmanager vastgoed kijkt naar de prestaties en toekomst van gebouwen. Die onderbouwt keuzes over gebruik, investeringen en de samenstelling van een portefeuille.",
-    "definition":["Een assetmanager vastgoed vertaalt de doelen van een organisatie of eigenaar naar keuzes voor het vastgoed. Welke gebouwen passen nog, waar zijn investeringen nodig en wat betekenen de kosten en risico’s? De rol kijkt verder dan dagelijkse meldingen en onderhoud.","Bij een belegger kan financieel rendement een belangrijke afweging zijn. Bij maatschappelijk vastgoed tellen ook dienstverlening, bereikbaarheid en de behoeften van de organisatie mee. Goede besluiten vragen daarom zowel financiële informatie als inzicht in het gebouw en het gebruik."],
-    "tasks":["Prestaties, kosten en risico’s van gebouwen analyseren.","Scenario’s en plannen voor de portefeuille uitwerken.","Investeringen en onderhoudskeuzes beoordelen.","Advies geven over behouden, aanpassen of afstoten van vastgoed.","Afstemmen met beheer, financiën, huisvesting en de eigenaar."],
-    "environment":"Assetmanagers werken bij vastgoedorganisaties, gemeenten en organisaties met grotere portefeuilles. De verhouding tussen financiën, techniek en gebruikers verschilt per werkgever. Binnen Wedeploy gaat het om vastgoed en huisvesting, niet om financieel vermogensbeheer van aandelen of fondsen.",
-    "background":"Een opleiding in vastgoed, bouwkunde, bedrijfskunde of economie kan passen. Belangrijk zijn analytisch vermogen en ervaring met vastgoedbeslissingen. Je moet informatie over kosten, gebouwen en organisatiebehoeften kunnen combineren en je advies begrijpelijk kunnen onderbouwen.",
-    "employer":"Benoem welke keuzes de assetmanager moet voorbereiden en welke gegevens al beschikbaar zijn. Gaat het om één object of een portefeuille? Maak ook duidelijk welke kennis van het type vastgoed en welke samenwerking met beheer en financiën nodig zijn.",
-    "candidate":"We horen graag welke vastgoedanalyses en besluiten je hebt begeleid. Ook bespreken we of je een commerciële of maatschappelijke omgeving zoekt en hoeveel verantwoordelijkheid je wilt hebben voor de uitvoering van plannen.",
-    "faq":[{"question":"Wat is het verschil met vastgoedbeheer?","answer":"Vastgoedbeheer richt zich vooral op het dagelijks functioneren van gebouwen. Assetmanagement kijkt naar prestaties en keuzes voor de langere termijn. De rollen werken nauw samen."},{"question":"Is rendement altijd financieel?","answer":"Nee. Bij maatschappelijk vastgoed spelen ook gebruik, dienstverlening en organisatiedoelen een rol. Welke uitkomsten belangrijk zijn, hangt af van de eigenaar en portefeuille."}],
-    "related":["vastgoedmanager","vastgoedbeheerder","huisvestingsmanager"],
-    "sources":[{"label":"RICS: strategisch assetmanagement van vastgoed","href":"https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/real-estate-standards/strategic-public-sector-property-asset-management-3rd-edition"}]
+    "slug": "assetmanager-vastgoed",
+    "title": "Assetmanager vastgoed",
+    "intro": "Een assetmanager vastgoed onderbouwt keuzes over gebouwen en investeringen. De functie richt zich op waarde, risico’s, gebruik en de toekomst van de portefeuille.",
+    "definition": [
+      "Een assetmanager vastgoed vertaalt de doelen van een organisatie of eigenaar naar keuzes voor het vastgoed. Welke gebouwen passen nog, waar zijn investeringen nodig en wat betekenen de kosten en risico’s? De rol kijkt verder dan dagelijkse meldingen en onderhoud.",
+      "Bij een belegger kan financieel rendement een belangrijke afweging zijn. Bij maatschappelijk vastgoed tellen ook dienstverlening, bereikbaarheid en de behoeften van de organisatie mee. Goede besluiten vragen daarom zowel financiële informatie als inzicht in het gebouw en het gebruik."
+    ],
+    "tasks": [
+      "Prestaties, kosten en risico’s van gebouwen analyseren.",
+      "Scenario’s en plannen voor de portefeuille uitwerken.",
+      "Investeringen en onderhoudskeuzes beoordelen.",
+      "Advies geven over behouden, aanpassen of afstoten van vastgoed.",
+      "Afstemmen met beheer, financiën, huisvesting en de eigenaar."
+    ],
+    "environment": "Assetmanagers werken bij vastgoedorganisaties, gemeenten en organisaties met grotere portefeuilles. De verhouding tussen financiën, techniek en gebruikers verschilt per werkgever. Binnen Wedeploy gaat het om vastgoed en huisvesting, niet om financieel vermogensbeheer van aandelen of fondsen.",
+    "background": "Een opleiding in vastgoed, bouwkunde, bedrijfskunde of economie kan passen. Belangrijk zijn analytisch vermogen en ervaring met vastgoedbeslissingen. Je moet informatie over kosten, gebouwen en organisatiebehoeften kunnen combineren en je advies begrijpelijk kunnen onderbouwen.",
+    "employer": "Moet je keuzes maken over gebruik, investeringen of de toekomst van vastgoed? We zoeken een assetmanager met passende portefeuille-ervaring en de analytische basis om die keuzes te onderbouwen.",
+    "candidate": "Je zoekt een rol waarin vastgoedinhoud en financiële afwegingen samenkomen. We bespreken het type portefeuille, de beslisruimte en de commerciële of maatschappelijke omgeving die bij je past.",
+    "faq": [
+      {
+        "question": "Met welke informatie werkt een assetmanager?",
+        "answer": "Bijvoorbeeld kosten, inkomsten, onderhoud, gebruik, risico’s en toekomstige ruimtebehoefte. Welke gegevens het zwaarst wegen, hangt af van de eigenaar en het type vastgoed. De analyse moet aansluiten op het besluit dat nodig is."
+      },
+      {
+        "question": "Is rendement altijd financieel?",
+        "answer": "Nee. Bij maatschappelijk vastgoed spelen ook gebruik, dienstverlening en organisatiedoelen een rol. Welke uitkomsten belangrijk zijn, hangt af van de eigenaar en portefeuille."
+      }
+    ],
+    "related": [
+      "vastgoedmanager",
+      "vastgoedbeheerder",
+      "huisvestingsmanager"
+    ],
+    "sources": [
+      {
+        "label": "RICS: strategisch assetmanagement van vastgoed",
+        "href": "https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/real-estate-standards/strategic-public-sector-property-asset-management-3rd-edition"
+      }
+    ],
+    "practice": {
+      "title": "Onderbouwde keuzes voor gebouwen en investeringen",
+      "text": "Voor een gebouw is een grote investering nodig, terwijl het toekomstige gebruik onzeker is. De assetmanager vergelijkt mogelijkheden op kosten, risico’s, waarde en aansluiting op de portefeuille. Daarvoor zijn gegevens van beheer, financiën en gebruikers nodig. Een onderhoudsbesluit wordt zo onderdeel van een bredere keuze. Bij maatschappelijk vastgoed tellen naast financiële afwegingen ook de dienstverlening en publieke doelen mee."
+    },
+    "difference": {
+      "title": "Assetmanagement kijkt verder dan het dagelijks beheer",
+      "text": "Een vastgoedbeheerder organiseert de dagelijkse exploitatie en het onderhoud. Een assetmanager bepaalt of bereidt de richting per object of portefeuille voor. Een vastgoedmanager kan beide gebieden verbinden en leidinggeven aan de uitvoering. Hoe strategisch de assetmanager werkt, verschilt per organisatie."
+    },
+    "selection": [
+      "Financiële en vastgoedinhoudelijke analyses kunnen combineren.",
+      "Ervaring met het type portefeuille en relevante investeringsafwegingen.",
+      "Scenario’s helder uitleggen en besluiten onderbouwen met betrouwbare gegevens."
+    ]
   },
   {
-    "slug":"huisvestingsmanager", "title":"Huisvestingsmanager",
-    "intro":"Een huisvestingsmanager zorgt dat gebouwen en ruimtes aansluiten bij de organisatie. Van ruimtebehoefte en huisvestingsplannen tot verhuizing en inrichting.",
-    "definition":["Een huisvestingsmanager vertaalt de plannen van een organisatie naar passende huisvesting. Zijn er andere ruimtes nodig, verandert het aantal medewerkers of moet een locatie worden aangepast? De rol brengt gebruikerswensen, mogelijkheden van gebouwen en kosten bij elkaar.","De functie kan strategisch of projectgericht zijn. Een huisvestingsmanager kan een meerjarenplan maken, maar ook opdrachtgever zijn voor renovatie of verhuizing. De samenwerking met vastgoed, Facility Management en de gebruikers is belangrijk om plannen uitvoerbaar te maken."],
-    "tasks":["Ruimtebehoefte en wensen van gebruikers onderzoeken.","Huisvestingsplannen, scenario’s en budgetten voorbereiden.","Verbouwings- of verhuisprojecten afstemmen en begeleiden.","Samenwerken met vastgoed, adviseurs en facilitaire teams.","De overgang naar een nieuwe of aangepaste omgeving organiseren."],
-    "environment":"Huisvestingsmanagers werken bij onderwijs, zorg, overheid en andere organisaties met eigen of gehuurde gebouwen. Soms gaat het om één kantoor, soms om een netwerk van locaties. De gevolgen voor dagelijks gebruik, dienstverlening en toekomstige groei staan centraal.",
-    "background":"Facility Management, bouwkunde, vastgoed of een bedrijfskundige opleiding kan aansluiten. Ervaring met huisvestingsprojecten, gebruikers en begrotingen is belangrijk. Je moet belangen kunnen afwegen en een voorstel kunnen maken dat zowel organisatorisch als praktisch haalbaar is.",
-    "employer":"Beschrijf of de vraag draait om beleid, een concrete verhuizing of leiding aan meerdere projecten. Benoem de locaties, gebruikers en projectfase. Ook de rolverdeling met vastgoedbeheer en projectleiding bepaalt welke ervaring de professional nodig heeft.",
-    "candidate":"In de intake bespreken we de huisvestingsvragen die je hebt opgepakt en jouw rol bij gebruikers, plannen en uitvoering. Zoek je een strategische verantwoordelijkheid of juist een project dat je van voorbereiding tot oplevering begeleidt?",
-    "faq":[{"question":"Is een huisvestingsmanager een projectmanager?","answer":"Niet altijd. Een huisvestingsmanager kan verantwoordelijk zijn voor de huisvestingsvraag en de keuze voor projecten. Een projectmanager organiseert de realisatie van een afgesproken project. Soms zijn die rollen gecombineerd."},{"question":"Hoort workplace management erbij?","answer":"Er is een duidelijke verbinding. Huisvesting gaat over gebouwen en ruimte; workplace management legt vaak meer nadruk op het dagelijks gebruik, services en de ervaring van medewerkers."}],
-    "related":["workplace-manager","projectmanager","vastgoedmanager"]
+    "slug": "huisvestingsmanager",
+    "title": "Huisvestingsmanager",
+    "intro": "Een huisvestingsmanager zorgt dat gebouwen en ruimtes aansluiten bij de organisatie. Van ruimtebehoefte en huisvestingsplannen tot verhuizing en inrichting.",
+    "definition": [
+      "Een huisvestingsmanager vertaalt de plannen van een organisatie naar passende huisvesting. Zijn er andere ruimtes nodig, verandert het aantal medewerkers of moet een locatie worden aangepast? De rol brengt gebruikerswensen, mogelijkheden van gebouwen en kosten bij elkaar.",
+      "De functie kan strategisch of projectgericht zijn. Een huisvestingsmanager kan een meerjarenplan maken, maar ook opdrachtgever zijn voor renovatie of verhuizing. De samenwerking met vastgoed, Facility Management en de gebruikers is belangrijk om plannen uitvoerbaar te maken."
+    ],
+    "tasks": [
+      "Ruimtebehoefte en wensen van gebruikers onderzoeken.",
+      "Huisvestingsplannen, scenario’s en budgetten voorbereiden.",
+      "Verbouwings- of verhuisprojecten afstemmen en begeleiden.",
+      "Samenwerken met vastgoed, adviseurs en facilitaire teams.",
+      "De overgang naar een nieuwe of aangepaste omgeving organiseren."
+    ],
+    "environment": "Huisvestingsmanagers werken bij onderwijs, zorg, overheid en andere organisaties met eigen of gehuurde gebouwen. Soms gaat het om één kantoor, soms om een netwerk van locaties. De gevolgen voor dagelijks gebruik, dienstverlening en toekomstige groei staan centraal.",
+    "background": "Facility Management, bouwkunde, vastgoed of een bedrijfskundige opleiding kan aansluiten. Ervaring met huisvestingsprojecten, gebruikers en begrotingen is belangrijk. Je moet belangen kunnen afwegen en een voorstel kunnen maken dat zowel organisatorisch als praktisch haalbaar is.",
+    "employer": "Verandert jouw ruimtebehoefte of staat een verhuizing of renovatie op de agenda? We zoeken een huisvestingsmanager die wensen, gebouwen en financiële mogelijkheden kan verbinden.",
+    "candidate": "Wil je werken aan huisvestingsbeleid of juist een concrete locatieverandering? We bespreken jouw ervaring met gebruikers, plannen en uitvoering, en de volgende stap die daarbij past.",
+    "faq": [
+      {
+        "question": "Hoort een verhuizing bij huisvestingsmanagement?",
+        "answer": "Ja, een verhuizing kan voortkomen uit een huisvestingsplan. De manager kan de behoefte en besluitvorming begeleiden of optreden als interne opdrachtgever. De dagelijkse uitvoering ligt soms bij een aparte projectmanager."
+      },
+      {
+        "question": "Hoort workplace management erbij?",
+        "answer": "Er is een duidelijke verbinding. Huisvesting gaat over gebouwen en ruimte; workplace management legt vaak meer nadruk op het dagelijks gebruik, services en de ervaring van medewerkers."
+      }
+    ],
+    "related": [
+      "workplace-manager",
+      "projectmanager",
+      "vastgoedmanager"
+    ],
+    "practice": {
+      "title": "Ruimtebehoefte vertalen naar een uitvoerbaar plan",
+      "text": "Een organisatie wil locaties samenbrengen, maar verschillende afdelingen hebben andere ruimtebehoeften. De huisvestingsmanager verzamelt die wensen, maakt de uitgangspunten duidelijk en onderzoekt welke gebouwen geschikt zijn. Kosten, bereikbaarheid, planning en gevolgen voor gebruikers worden meegewogen. Het plan vormt vervolgens de basis voor besluitvorming en voor projecten zoals aanpassing, renovatie of verhuizing."
+    },
+    "difference": {
+      "title": "Huisvesting, workplace en projectmanagement",
+      "text": "Huisvestingsmanagement richt zich op passende ruimte en plannen voor het gebruik daarvan. Een workplace manager kijkt sterker naar het dagelijks gebruik en de ervaring van werkplekken. Een projectmanager kan de uitvoering van een verhuizing of verbouwing organiseren. De huisvestingsmanager is daarbij soms de interne opdrachtgever."
+    },
+    "selection": [
+      "Gebruikersbehoeften vertalen naar ruimte-eisen en huisvestingsplannen.",
+      "Kosten, locaties en uitvoerbaarheid in samenhang beoordelen.",
+      "Ervaring met de samenwerking tussen gebruikers, vastgoed en projectteams."
+    ]
   }
 ]

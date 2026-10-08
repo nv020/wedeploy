@@ -16,7 +16,9 @@ test('all roles have substantive unique content, valid references and their own 
   for (const role of roles) {
     assert.match(role.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(role.definition.length >= 2 && role.tasks.length >= 5 && role.faq.length >= 2);
-    assert.ok([role.intro, ...role.definition, ...role.tasks, role.environment, role.background, role.employer, role.candidate, ...role.faq.map(item => item.question + ' ' + item.answer)].join(' ').split(/\s+/).length >= 300);
+    assert.ok(role.practice.title && role.practice.text && role.difference.title && role.difference.text);
+    assert.equal(role.selection.length, 3);
+    assert.equal(new Set(role.selection).size, 3);
     assert.ok(role.related.every(slug => slug !== role.slug && roles.some(item => item.slug === slug)));
     assert.ok(photos.some(photo => photo.slug === role.slug));
   }
@@ -38,7 +40,7 @@ test('every function has complete initial HTML, canonical metadata, breadcrumbs 
     const path = `/functies/${role.slug}`;
     const html = read(`./dist/public${path}/index.html`);
     assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
-    for (const text of [...role.definition, ...role.tasks, role.environment, role.background]) assert.ok(html.includes(escape(text)), `${role.slug}: missing full copy`);
+    for (const text of [...role.definition, ...role.tasks, role.environment, role.background, role.practice.text, role.difference.text, ...role.selection]) assert.ok(html.includes(escape(text)), `${role.slug}: missing full copy`);
     assert.ok(html.includes(`<link rel="canonical" href="https://www.wedeploy.nl${path}"`));
     assert.ok(html.includes('type=opdrachtgever&amp;onderwerp='));
     assert.ok(html.includes('type=kandidaat&amp;onderwerp='));

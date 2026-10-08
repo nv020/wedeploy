@@ -1,75 +1,296 @@
 [
   {
-    "slug":"facilitair-manager", "title":"Facilitair manager",
-    "intro":"Een facilitair manager organiseert de diensten en voorzieningen die mensen nodig hebben om goed te werken. Van leveranciers en budgetten tot het facilitaire team.",
-    "definition":["Een facilitair manager, ook facility manager genoemd, zorgt voor een werkbare en prettige omgeving. De functie verbindt de behoeften van de organisatie met de dienstverlening in en rondom het gebouw. Denk aan schoonmaak, beveiliging, catering, werkplekken en onderhoud.","Niet iedere facilitair manager heeft hetzelfde pakket. Bij een kleine organisatie organiseert iemand veel zelf. Bij een grotere organisatie ligt de nadruk op teamleiding, contracten en keuzes voor meerdere locaties. Duidelijk maken wat bij de functie hoort is daarom belangrijker dan de titel alleen."],
-    "tasks":["Het facilitaire team en de dagelijkse dienstverlening aansturen.","Budgetten, contracten en prestaties van leveranciers bewaken.","Gebruikerswensen vertalen naar diensten en voorzieningen.","Verbeteringen, verhuizingen of andere veranderingen begeleiden.","Afstemmen met vastgoed, techniek, inkoop en andere afdelingen."],
-    "environment":"Facility managers werken bij kantoren, onderwijsinstellingen, zorgorganisaties, overheden en dienstverleners. Soms beheren zij één locatie, soms een portefeuille. De samenstelling van het team en uitbestede diensten bepaalt hoeveel operationele of strategische verantwoordelijkheid de rol heeft.",
-    "background":"Een opleiding Facility Management komt vaak voor, naast andere relevante hbo-achtergronden. Ervaring met dienstverlening, budgetten en leveranciers is belangrijk. Voor een leidinggevende functie telt ook hoe iemand teams aanstuurt en keuzes uitlegt aan gebruikers en management.",
-    "employer":"Beschrijf welke diensten en locaties onder de functie vallen. Zoek je iemand voor de dagelijkse organisatie, een andere leveranciersaanpak of leiding aan een verandering? We bespreken ook teamomvang, budget en de ruimte om besluiten te nemen.",
-    "candidate":"In een intake bespreken we jouw ervaring met locaties, teams en dienstverlening. Ook willen we weten waar je energie van krijgt: de operatie, het verbeteren van diensten of juist een bredere managementrol.",
-    "faq":[{"question":"Is facility manager hetzelfde?","answer":"Ja, facility manager en facilitair manager worden doorgaans voor dezelfde functie gebruikt. Het takenpakket kan per organisatie sterk verschillen."},{"question":"Wat is het verschil met een coördinator?","answer":"Een facilitair coördinator zit meestal dichter op de dagelijkse uitvoering. Een manager draagt vaker verantwoordelijkheid voor team, budget en de richting van de dienstverlening."}],
-    "related":["facilitair-coordinator","workplace-manager","contractmanager"],
-    "sources":[{"label":"IFMA: wat is Facility Management?","href":"https://www.ifma.org/about/what-is-fm/"}]
+    "slug": "facilitair-manager",
+    "title": "Facilitair manager",
+    "intro": "Een facilitair manager organiseert de diensten, voorzieningen en mensen achter een goed werkende omgeving. De functie combineert teamleiding, leveranciersregie en verantwoordelijkheid voor budgetten.",
+    "definition": [
+      "Een facilitair manager, ook facility manager genoemd, zorgt voor een werkbare en prettige omgeving. De functie verbindt de behoeften van de organisatie met de dienstverlening in en rondom het gebouw. Denk aan schoonmaak, beveiliging, catering, werkplekken en onderhoud.",
+      "Niet iedere facilitair manager heeft hetzelfde pakket. Bij een kleine organisatie organiseert iemand veel zelf. Bij een grotere organisatie ligt de nadruk op teamleiding, contracten en keuzes voor meerdere locaties. De omvang van de locaties, het team en het dienstenpakket bepaalt welke ervaring nodig is."
+    ],
+    "tasks": [
+      "Het facilitaire team en de dagelijkse dienstverlening aansturen.",
+      "Budgetten, contracten en prestaties van leveranciers bewaken.",
+      "Gebruikerswensen vertalen naar diensten en voorzieningen.",
+      "Verbeteringen, verhuizingen of andere veranderingen begeleiden.",
+      "Afstemmen met vastgoed, techniek, inkoop en andere afdelingen."
+    ],
+    "environment": "Facility managers werken bij kantoren, onderwijsinstellingen, zorgorganisaties, overheden en dienstverleners. Soms beheren zij één locatie, soms een portefeuille. De samenstelling van het team en uitbestede diensten bepaalt hoeveel operationele of strategische verantwoordelijkheid de rol heeft.",
+    "background": "Een opleiding Facility Management komt vaak voor, naast andere relevante hbo-achtergronden. Ervaring met dienstverlening, budgetten en leveranciers is belangrijk. Voor een leidinggevende functie telt ook hoe iemand teams aanstuurt en keuzes uitlegt aan gebruikers en management.",
+    "employer": "Een facilitair manager nodig? De dagelijkse aansturing, leveranciersregie en veranderopgaven vragen elk om andere ervaring. We zoeken iemand die het dienstenpakket begrijpt en past bij de mensen en werkomgeving van jouw organisatie.",
+    "candidate": "Of je nu de operatie wilt aansturen of een bredere managementrol zoekt: jouw volgende stap moet aansluiten bij jouw ervaring én ambities. We maken graag kennis met de persoon achter het cv.",
+    "faq": [
+      {
+        "question": "Wat zijn hard en soft services?",
+        "answer": "Hard services hebben betrekking op het gebouw en installaties, zoals technisch onderhoud. Soft services zijn bijvoorbeeld schoonmaak, catering, beveiliging en ontvangst. Welke diensten onder de facilitair manager vallen, verschilt per organisatie."
+      },
+      {
+        "question": "Wat is het verschil met een coördinator?",
+        "answer": "Een facilitair coördinator zit meestal dichter op de dagelijkse uitvoering. Een manager draagt vaker verantwoordelijkheid voor team, budget en de richting van de dienstverlening."
+      }
+    ],
+    "related": [
+      "facilitair-coordinator",
+      "workplace-manager",
+      "contractmanager"
+    ],
+    "sources": [
+      {
+        "label": "IFMA: wat is Facility Management?",
+        "href": "https://www.ifma.org/about/what-is-fm/"
+      }
+    ],
+    "practice": {
+      "title": "Van losse diensten naar een goed georganiseerde werkomgeving",
+      "text": "Een organisatie groeit, terwijl de facilitaire dienstverlening nog op de oude bezetting is ingericht. Vergaderruimtes zijn steeds vol, meldingen blijven liggen en leveranciers werken langs elkaar heen. De facilitair manager onderzoekt wat gebruikers nodig hebben, bespreekt de capaciteit met het team en maakt afspraken met de dienstverleners. Het gaat daarbij om de balans tussen kwaliteit, kosten en uitvoerbaarheid. Goede dienstverlening hoeft niet overal hetzelfde te zijn: een zorglocatie vraagt andere keuzes dan een kantoor."
+    },
+    "difference": {
+      "title": "Facilitair manager, workplace manager of technisch beheerder?",
+      "text": "De facilitair manager overziet het dienstenpakket, de mensen en het budget. Een workplace manager kijkt vooral naar het gebruik en de ervaring van de werkomgeving. Een technisch beheerder richt zich op de staat van gebouwen en installaties. Deze rollen werken vaak samen; bij kleinere organisaties kunnen verantwoordelijkheden gecombineerd zijn."
+    },
+    "selection": [
+      "Ervaring met het soort locaties en dienstverlening dat de organisatie nodig heeft.",
+      "Leidinggeven aan een eigen team, leveranciers aansturen of een combinatie van beide.",
+      "Verantwoordelijkheid voor budget, contracten en verbetering van de dienstverlening."
+    ]
   },
   {
-    "slug":"facilitair-coordinator", "title":"Facilitair coördinator",
-    "intro":"Een facilitair coördinator regelt de dagelijkse dienstverlening op locatie. Die houdt meldingen, leveranciers en praktische afspraken bij elkaar.",
-    "definition":["Een facilitair coördinator zorgt dat facilitaire vragen worden opgepakt. Een werkplek is niet klaar, een leverancier heeft informatie nodig of een vergaderruimte moet worden aangepast. De coördinator bepaalt wat eerst moet gebeuren en zorgt voor de opvolging.","Het is een praktische rol met veel contact. Je werkt samen met medewerkers, dienstverleners en de facility manager. Bij meerdere locaties kan planning zwaarder wegen; in een kleiner kantoor voert de coördinator soms ook zelf werkzaamheden uit."],
-    "tasks":["Meldingen en verzoeken beoordelen, uitzetten en opvolgen.","Werkzaamheden van facilitaire leveranciers afstemmen.","Controleren of diensten en voorzieningen volgens afspraak worden geleverd.","Kleine aanpassingen, verhuizingen en bestellingen organiseren.","Gebruikers informeren en terugkerende problemen signaleren."],
-    "environment":"Deze functie komt voor op kantoren, campussen, zorglocaties en andere gebouwen met dagelijkse dienstverlening. Het werk kan bestaan uit één locatie of een groep locaties. Bereikbaarheid op locatie en het contact met gebruikers spelen vaak een grote rol.",
-    "background":"Een facilitaire mbo- of hbo-opleiding kan passen. Ook ervaring in dienstverlening of gebouwbeheer kan een goede basis zijn. Je moet kunnen organiseren, schakelen tussen vragen en duidelijk communiceren. Voor sommige functies is kennis van een facilitair meldingssysteem gewenst.",
-    "employer":"Benoem welke diensten de coördinator moet organiseren en wat die zelf uitvoert. Zijn er veel meldingen, verschillende leveranciers of vaste rondes op locatie? We maken de zelfstandigheid en samenwerking met de manager concreet, zodat het profiel op de praktijk aansluit.",
-    "candidate":"Vertel wat je op een werkdag organiseert en welke diensten je kent. We bespreken of je meer verantwoordelijkheid, een andere locatie of een stap richting management zoekt. Jouw aanpak en servicegerichtheid horen bij dat gesprek.",
-    "faq":[{"question":"Moet een coördinator technisch zijn?","answer":"Niet altijd. Basiskennis van gebouwen helpt, maar bij een technische functie kunnen andere eisen gelden. We onderscheiden facilitaire dienstverlening van technisch onderhoud."},{"question":"Kan ik doorgroeien naar facility manager?","answer":"Dat kan, afhankelijk van jouw ervaring en de nieuwe functie. Teamleiding, budgetten en leveranciersregie vragen vaak andere verantwoordelijkheden dan dagelijkse coördinatie."}],
-    "related":["facilitair-manager","office-manager","technisch-coordinator"]
+    "slug": "facilitair-coordinator",
+    "title": "Facilitair coördinator",
+    "intro": "Een facilitair coördinator organiseert de dagelijkse dienstverlening op locatie. Van meldingen en leveranciers tot werkplekken, bestellingen en kleine verhuizingen.",
+    "definition": [
+      "Een facilitair coördinator zorgt dat facilitaire vragen worden opgepakt. Een werkplek is niet klaar, een leverancier heeft informatie nodig of een vergaderruimte moet worden aangepast. De coördinator bepaalt wat eerst moet gebeuren en zorgt voor de opvolging.",
+      "Het is een praktische rol met veel contact. Je werkt samen met medewerkers, dienstverleners en de facility manager. Bij meerdere locaties kan planning zwaarder wegen; in een kleiner kantoor voert de coördinator soms ook zelf werkzaamheden uit."
+    ],
+    "tasks": [
+      "Meldingen en verzoeken beoordelen, uitzetten en opvolgen.",
+      "Werkzaamheden van facilitaire leveranciers afstemmen.",
+      "Controleren of diensten en voorzieningen volgens afspraak worden geleverd.",
+      "Kleine aanpassingen, verhuizingen en bestellingen organiseren.",
+      "Gebruikers informeren en terugkerende problemen signaleren."
+    ],
+    "environment": "Deze functie komt voor op kantoren, campussen, zorglocaties en andere gebouwen met dagelijkse dienstverlening. Het werk kan bestaan uit één locatie of een groep locaties. Bereikbaarheid op locatie en het contact met gebruikers spelen vaak een grote rol.",
+    "background": "Een facilitaire mbo- of hbo-opleiding kan passen. Ook ervaring in dienstverlening of gebouwbeheer kan een goede basis zijn. Je moet kunnen organiseren, schakelen tussen vragen en duidelijk communiceren. Voor sommige functies is kennis van een facilitair meldingssysteem gewenst.",
+    "employer": "Zoek je iemand die de facilitaire dienstverlening op locatie organiseert? We helpen een coördinator te vinden die overzicht houdt, problemen opvolgt en prettig samenwerkt met gebruikers en leveranciers.",
+    "candidate": "Een andere locatie, meer zelfstandigheid of een stap richting facility management? We bespreken welk takenpakket bij je past en waar jij je verder in wilt ontwikkelen.",
+    "faq": [
+      {
+        "question": "Wat is een FMIS?",
+        "answer": "Een Facilitair Management Informatie Systeem ondersteunt bijvoorbeeld meldingen, ruimtes, reserveringen en onderhoud. Een coördinator kan ermee werken om verzoeken te registreren en op te volgen. Niet iedere organisatie gebruikt hetzelfde systeem."
+      },
+      {
+        "question": "Kan ik doorgroeien naar facility manager?",
+        "answer": "Dat kan, afhankelijk van jouw ervaring en de nieuwe functie. Teamleiding, budgetten en leveranciersregie vragen vaak andere verantwoordelijkheden dan dagelijkse coördinatie."
+      }
+    ],
+    "related": [
+      "facilitair-manager",
+      "office-manager",
+      "technisch-coordinator"
+    ],
+    "practice": {
+      "title": "Overzicht houden wanneer er veel tegelijk speelt",
+      "text": "Op een locatie komt een nieuwe afdeling werken. Werkplekken moeten klaarstaan, toegangspassen geregeld zijn en schoonmaak en catering moeten weten wat er verandert. De facilitair coördinator brengt de werkzaamheden bij elkaar en controleert of alles op tijd is uitgevoerd. Ook de gewone meldingen gaan door. Het vak vraagt daarom om prioriteiten stellen, terugkoppeling geven en doorvragen wanneer een probleem steeds terugkomt."
+    },
+    "difference": {
+      "title": "Coördinatie is iets anders dan beheer of management",
+      "text": "De coördinator organiseert vooral de dagelijkse uitvoering. De facilitair manager bepaalt vaker het beleid, budget en de richting van het team. Een technisch coördinator heeft juist meer technische werkzaamheden in het pakket. Kijk daarom naar de taken en zelfstandigheid, niet alleen naar de titel."
+    },
+    "selection": [
+      "Zelfstandig meldingen, leveranciers en dagelijkse werkzaamheden organiseren.",
+      "Duidelijk communiceren met gebruikers en uitvoerende partijen.",
+      "Ervaring met de betreffende locatie en eventueel een facilitair informatiesysteem."
+    ]
   },
   {
-    "slug":"workplace-manager", "title":"Workplace manager",
-    "intro":"Een workplace manager richt zich op de werkomgeving en hoe mensen die gebruiken. Die verbindt werkplekken, facilitaire services en de behoeften van medewerkers.",
-    "definition":["Een workplace manager organiseert een werkomgeving die aansluit bij het werk van de organisatie. Hoe worden kantoorruimtes gebruikt, welke voorzieningen zijn nodig en wat merken medewerkers van de dienstverlening? De rol kijkt naar de samenhang tussen ruimte, gebruik en service.","Dat kan gaan om een ander werkplekconcept, hybride werken of het aanpassen van een kantoor. De workplace manager stemt af met Facility Management, huisvesting, HR en ICT. De technische systemen zijn een onderdeel van de samenwerking, niet automatisch de eigen expertise."],
-    "tasks":["Gebruikerswensen en het gebruik van werkplekken onderzoeken.","Werkplekservices en afspraken over de werkomgeving organiseren.","Aanpassingen in inrichting of bezetting begeleiden.","Samenwerken met facilitaire leveranciers en interne afdelingen.","Feedback gebruiken om de werkomgeving te verbeteren."],
-    "environment":"Workplace managers werken vaak binnen kantoororganisaties met veranderend werkplekgebruik. Bij een internationale of grotere werkgever kan de functie meerdere locaties omvatten. Soms ligt de nadruk op de dagelijkse ervaring; soms op huisvestingsverandering en het ontwikkelen van nieuwe afspraken.",
-    "background":"Facility Management, huisvesting of een bedrijfskundige achtergrond kan goed aansluiten. Ervaring met gebruikers, dienstverlening en werkplekprojecten is belangrijk. Je moet informatie kunnen vertalen naar praktische keuzes en kunnen uitleggen waarom een verandering nodig is.",
-    "employer":"Maak duidelijk of je iemand zoekt voor dagelijkse werkplekservices of voor een verandering van de werkomgeving. Welke locaties, gebruikersgroepen en projecten horen erbij? Ook de verdeling van verantwoordelijkheden met vastgoed en Facility Management helpt om gericht te zoeken.",
-    "candidate":"We bespreken welke werkplekservices of veranderingen je hebt georganiseerd. Wil je dichter bij medewerkers werken of juist grotere huisvestingsvragen oppakken? In de intake kijken we naar jouw ervaring én de richting die je zoekt.",
-    "faq":[{"question":"Workplace of Facility Management?","answer":"Workplace management legt vaak meer nadruk op het gebruik en de ervaring van de werkomgeving. Facility Management kan een breder dienstenpakket omvatten. Bij sommige organisaties zijn beide rollen gecombineerd."},{"question":"Hoort hybride werken bij deze rol?","answer":"Dat kan. Denk aan bezetting, reserveren en de inrichting van verschillende werkplekken. Het beleid en de systemen worden doorgaans samen met andere afdelingen georganiseerd."}],
-    "related":["facilitair-manager","huisvestingsmanager","hospitality-manager"]
+    "slug": "workplace-manager",
+    "title": "Workplace manager",
+    "intro": "Een workplace manager zorgt dat de werkomgeving aansluit op de manier waarop mensen werken. De functie verbindt ruimtegebruik, werkplekken en facilitaire dienstverlening.",
+    "definition": [
+      "Een workplace manager organiseert een werkomgeving die aansluit bij het werk van de organisatie. Hoe worden kantoorruimtes gebruikt, welke voorzieningen zijn nodig en wat merken medewerkers van de dienstverlening? De rol kijkt naar de samenhang tussen ruimte, gebruik en service.",
+      "Dat kan gaan om een ander werkplekconcept, hybride werken of het aanpassen van een kantoor. De workplace manager stemt af met Facility Management, huisvesting, HR en ICT. Bij de keuze van systemen en technische voorzieningen werkt de workplace manager samen met de betreffende specialisten."
+    ],
+    "tasks": [
+      "Gebruikerswensen en het gebruik van werkplekken onderzoeken.",
+      "Werkplekservices en afspraken over de werkomgeving organiseren.",
+      "Aanpassingen in inrichting of bezetting begeleiden.",
+      "Samenwerken met facilitaire leveranciers en interne afdelingen.",
+      "Feedback gebruiken om de werkomgeving te verbeteren."
+    ],
+    "environment": "Workplace managers werken vaak binnen kantoororganisaties met veranderend werkplekgebruik. Bij een internationale of grotere werkgever kan de functie meerdere locaties omvatten. Soms ligt de nadruk op de dagelijkse ervaring; soms op huisvestingsverandering en het ontwikkelen van nieuwe afspraken.",
+    "background": "Facility Management, huisvesting of een bedrijfskundige achtergrond kan goed aansluiten. Ervaring met gebruikers, dienstverlening en werkplekprojecten is belangrijk. Je moet informatie kunnen vertalen naar praktische keuzes en kunnen uitleggen waarom een verandering nodig is.",
+    "employer": "Een werkomgeving verbeteren vraagt om iemand die naar de ruimte én de medewerkers kijkt. We zoeken een workplace manager met ervaring die aansluit op jouw locaties, dienstverlening en gewenste verandering.",
+    "candidate": "Werk jij graag aan een betere werkomgeving? We bespreken jouw ervaring met werkplekken en gebruikers, en de rol die je wilt spelen bij dagelijkse dienstverlening of verandering.",
+    "faq": [
+      {
+        "question": "Moet deze functie altijd op kantoor worden uitgevoerd?",
+        "answer": "Contact met gebruikers en inzicht in de locatie zijn belangrijk. Een deel van de analyse en voorbereiding kan soms op afstand. De combinatie hangt af van de locaties, het team en de werkzaamheden."
+      },
+      {
+        "question": "Hoort hybride werken bij deze rol?",
+        "answer": "Dat kan. Denk aan bezetting, reserveren en de inrichting van verschillende werkplekken. Het beleid en de systemen worden doorgaans samen met andere afdelingen georganiseerd."
+      }
+    ],
+    "related": [
+      "facilitair-manager",
+      "huisvestingsmanager",
+      "hospitality-manager"
+    ],
+    "practice": {
+      "title": "Een kantoor laten aansluiten op de manier van werken",
+      "text": "Op dinsdag is het kantoor vol en op vrijdag staan veel werkplekken leeg. Tegelijk missen medewerkers rustige ruimtes en plekken om samen te werken. Een workplace manager combineert gegevens over het gebruik met gesprekken met medewerkers. Vervolgens worden inrichting, voorzieningen en werkafspraken op elkaar afgestemd. De oplossing hoeft geen grote verbouwing te zijn: soms helpen een andere verdeling van ruimtes, betere service of duidelijkere afspraken over het gebruik."
+    },
+    "difference": {
+      "title": "De verbinding tussen werkplek en dienstverlening",
+      "text": "Workplace management richt zich op hoe mensen de werkomgeving gebruiken en ervaren. Een huisvestingsmanager kijkt vaker naar de ruimtebehoefte en huisvestingsplannen op langere termijn. Facility management omvat daarnaast het bredere pakket aan diensten en voorzieningen. De grens verschilt per organisatie."
+    },
+    "selection": [
+      "Ervaring met gebruikerswensen, werkplekconcepten en het gebruik van ruimtes.",
+      "Veranderingen kunnen organiseren samen met facility management, HR en huisvesting.",
+      "Praktische afwegingen maken tussen gebruik, service, kosten en beschikbare ruimte."
+    ]
   },
   {
-    "slug":"hospitality-manager", "title":"Hospitality manager",
-    "intro":"Een hospitality manager geeft richting aan gastvrijheid en service binnen een organisatie. Van het ontvangstteam tot de afspraken die bezoekers en medewerkers dagelijks merken.",
-    "definition":["Een hospitality manager organiseert hoe mensen worden ontvangen en geholpen. Het gaat om meer dan een vriendelijke begroeting: ook bezetting, bereikbaarheid, dienstverlening en de opvolging van vragen moeten kloppen. De manager zorgt dat het team weet wat goede service op die locatie betekent.","Binnen onze scope gaat hospitality vooral over werkomgevingen, publieke gebouwen en facilitaire dienstverlening. Receptie, frontoffice, vergaderservice en bezoekersbegeleiding kunnen onderdeel zijn. Het precieze pakket verschilt van een hotel- of horecamanagementfunctie."],
-    "tasks":["Het ontvangst- of serviceteam begeleiden en aansturen.","Bezetting, roosters en continuïteit van de service organiseren.","Werkafspraken voor ontvangst, vragen en klachten vastleggen.","Afstemmen met beveiliging, catering en Facility Management.","Feedback bespreken en medewerkers helpen hun service te verbeteren."],
-    "environment":"Hospitality managers werken op kantoren, campussen, publieke locaties en bij facilitaire dienstverleners. Bij sommige organisaties is er een eigen team; bij andere stuurt de manager een externe dienstverlener aan. Dat verschil bepaalt de dagelijkse leiding en contractverantwoordelijkheid.",
-    "background":"Ervaring met gastvrijheid, dienstverlening en teamleiding is een logische basis. Een hospitality- of facilitaire opleiding kan aansluiten. Belangrijk zijn aandacht voor mensen, duidelijkheid in afspraken en het kunnen oplossen van problemen zonder de dienstverlening uit het oog te verliezen.",
-    "employer":"Beschrijf welke diensten en doelgroepen bij de functie horen. Zoek je een leidinggevende voor een team of iemand die gastvrijheid binnen meerdere diensten opnieuw organiseert? Benoem ook openingstijden, leveranciers en de verwachte ervaring met leidinggeven.",
-    "candidate":"In de intake bespreken we jouw ervaring met teams, locaties en gasten. Ook willen we weten of je een operationele leidinggevende rol zoekt of meer verantwoordelijkheid voor de inrichting van hospitality en service.",
-    "faq":[{"question":"Gaat dit alleen over hotels?","answer":"Nee. Bij Wedeploy gaat hospitality vooral over ontvangst en service binnen werkomgevingen en facilitaire organisaties. Een hotelmanagementfunctie heeft vaak een ander takenpakket."},{"question":"Moet een hospitality manager leidinggeven?","answer":"Meestal wel aan een team of dienstverlener. Sommige functies richten zich meer op serviceconcepten en kwaliteit. We maken die verantwoordelijkheid vooraf duidelijk."}],
-    "related":["hospitality-medewerker","workplace-manager","facilitair-manager"]
+    "slug": "hospitality-manager",
+    "title": "Hospitality manager",
+    "intro": "Een hospitality manager organiseert gastvrijheid en service binnen een organisatie. De functie combineert leiding aan een team met aandacht voor ontvangst, bezetting en dienstverlening.",
+    "definition": [
+      "Een hospitality manager organiseert hoe mensen worden ontvangen en geholpen. Het gaat om meer dan een vriendelijke begroeting: ook bezetting, bereikbaarheid, dienstverlening en de opvolging van vragen moeten kloppen. De manager zorgt dat het team weet wat goede service op die locatie betekent.",
+      "Bij Wedeploy richten we ons binnen hospitality op werkomgevingen, publieke gebouwen en facilitaire dienstverlening. Receptie, frontoffice, vergaderservice en bezoekersbegeleiding kunnen onderdeel zijn. Het precieze pakket verschilt van een hotel- of horecamanagementfunctie."
+    ],
+    "tasks": [
+      "Het ontvangst- of serviceteam begeleiden en aansturen.",
+      "Bezetting, roosters en continuïteit van de service organiseren.",
+      "Werkafspraken voor ontvangst, vragen en klachten vastleggen.",
+      "Afstemmen met beveiliging, catering en Facility Management.",
+      "Feedback bespreken en medewerkers helpen hun service te verbeteren."
+    ],
+    "environment": "Hospitality managers werken op kantoren, campussen, publieke locaties en bij facilitaire dienstverleners. Bij sommige organisaties is er een eigen team; bij andere stuurt de manager een externe dienstverlener aan. Dat verschil bepaalt de dagelijkse leiding en contractverantwoordelijkheid.",
+    "background": "Ervaring met gastvrijheid, dienstverlening en teamleiding is een logische basis. Een hospitality- of facilitaire opleiding kan aansluiten. Belangrijk zijn aandacht voor mensen, duidelijkheid in afspraken en het kunnen oplossen van problemen zonder de dienstverlening uit het oog te verliezen.",
+    "employer": "Een hospitality manager nodig voor jouw locatie of serviceteam? We zoeken iemand die gastvrijheid vertaalt naar een goed georganiseerde dienstverlening en medewerkers daarin meeneemt.",
+    "candidate": "Je wilt een team laten groeien en gastvrijheid goed organiseren. We bespreken welk soort locatie, team en verantwoordelijkheid aansluit op jouw ervaring en ambities.",
+    "faq": [
+      {
+        "question": "Stuurt de manager altijd een eigen team aan?",
+        "answer": "Nee. Het kan gaan om een eigen ontvangstteam of een externe dienstverlener. Bij een eigen team ligt de nadruk ook op personeelsbegeleiding; bij uitbestede diensten zijn leveranciersafspraken en kwaliteit belangrijke onderdelen."
+      },
+      {
+        "question": "Moet een hospitality manager leidinggeven?",
+        "answer": "Meestal wel aan een team of dienstverlener. Sommige functies richten zich meer op serviceconcepten en kwaliteit. We maken die verantwoordelijkheid vooraf duidelijk."
+      }
+    ],
+    "related": [
+      "hospitality-medewerker",
+      "workplace-manager",
+      "facilitair-manager"
+    ],
+    "practice": {
+      "title": "Gastvrijheid organiseren, ook achter de schermen",
+      "text": "Een ontvangstteam werkt op meerdere locaties, maar bezoekers krijgen overal een andere service. De hospitality manager maakt samen met het team duidelijk wat de organisatie wil bieden. Daar horen roosters, werkafspraken, training en afstemming met beveiliging en catering bij. Aandacht voor het team is net zo belangrijk als aandacht voor de gasten. Medewerkers moeten kunnen inschatten wanneer ze zelf handelen en wanneer ze hulp inschakelen."
+    },
+    "difference": {
+      "title": "Een leidinggevende rol binnen hospitality",
+      "text": "Een hospitality medewerker verzorgt ontvangst en service op de werkvloer. De manager organiseert het team en bewaakt de dienstverlening. Een facilitair manager heeft doorgaans een breder pakket, zoals schoonmaak, onderhoud en huisvesting. Bij Wedeploy gaat deze functie vooral over hospitality in werkomgevingen en facilitaire dienstverlening."
+    },
+    "selection": [
+      "Leidinggeven aan een ontvangstteam of aansturen van een hospitality-dienstverlener.",
+      "Bezetting en service afstemmen op openingstijden en bezoekersstromen.",
+      "Medewerkers begeleiden en de kwaliteit van de dienstverlening verbeteren."
+    ]
   },
   {
-    "slug":"hospitality-medewerker", "title":"Hospitality medewerker",
-    "intro":"Een hospitality medewerker ontvangt mensen en helpt hen op weg. Met aandacht voor bezoekers, medewerkers en de praktische service op locatie.",
-    "definition":["Een hospitality medewerker maakt het eerste contact met een organisatie prettig en duidelijk. Je ontvangt bezoekers, beantwoordt vragen en zorgt dat mensen weten waar ze moeten zijn. Ook achter de schermen regel je praktische zaken die een bezoek of werkdag soepel laten verlopen.","De titel kan verschillende functies omvatten. Bij receptie ligt de nadruk op ontvangst en telefonie. Bij een bredere host- of frontofficerol horen bijvoorbeeld vergaderservice, rondes door het gebouw of het organiseren van bezoekersvoorzieningen. Het is belangrijk die taken apart te benoemen."],
-    "tasks":["Bezoekers ontvangen en aanmelden volgens de afspraken op locatie.","Telefoon, e-mail of vragen aan de balie beantwoorden.","Vergaderruimtes en bezoekersvoorzieningen voorbereiden.","Afstemmen met collega’s, beveiliging en facilitaire medewerkers.","Bijzonderheden en verzoeken vastleggen en doorgeven."],
-    "environment":"Hospitality medewerkers werken bij kantoren, onderwijsinstellingen en andere locaties met bezoekers en dagelijkse service. Het werk is meestal op locatie. Openingstijden en bezetting verschillen; avond- of weekendwerk is alleen aan de orde als de specifieke functie dat vraagt.",
-    "background":"Servicegerichtheid, helder communiceren en betrouwbaarheid zijn belangrijk. Ervaring bij een receptie, in hospitality of in andere dienstverlening kan aansluiten. De taalvereisten, systemen en eventuele administratieve taken verschillen per werkomgeving. Niet iedere functie vraagt dezelfde opleiding.",
-    "employer":"Geef aan wie de medewerker ontvangt en welke taken naast ontvangst nodig zijn. Benoem openingstijden, gewenste talen, werkplek en de mate van zelfstandigheid. Zo zoeken we naar iemand die bij de service en het karakter van de locatie past.",
-    "candidate":"Vertel welke service je graag verleent en in welke omgeving je wilt werken. We bespreken taken, werktijden en de samenwerking op locatie, zodat een volgende functie past bij jouw wensen en ervaring.",
-    "faq":[{"question":"Is dit hetzelfde als receptionist?","answer":"Er is overlap. Een hospitality rol kan breder zijn dan receptie en telefonie, bijvoorbeeld met vergaderservice en ondersteuning op de werkvloer. Het takenpakket bepaalt het verschil."},{"question":"Zijn de werktijden altijd overdag?","answer":"Nee, dat verschilt per locatie. We bespreken de openingstijden en het rooster bij een concrete functie, zodat je vooraf weet welke beschikbaarheid wordt gevraagd."}],
-    "related":["hospitality-manager","office-manager","facilitair-coordinator"]
+    "slug": "hospitality-medewerker",
+    "title": "Hospitality medewerker",
+    "intro": "Een hospitality medewerker ontvangt mensen en helpt hen op weg. Met aandacht voor bezoekers, medewerkers en de praktische service op locatie.",
+    "definition": [
+      "Een hospitality medewerker maakt het eerste contact met een organisatie prettig en duidelijk. Je ontvangt bezoekers, beantwoordt vragen en zorgt dat mensen weten waar ze moeten zijn. Ook achter de schermen regel je praktische zaken die een bezoek of werkdag soepel laten verlopen.",
+      "De titel kan verschillende functies omvatten. Bij receptie ligt de nadruk op ontvangst en telefonie. Bij een bredere host- of frontofficerol horen bijvoorbeeld vergaderservice, rondes door het gebouw of het organiseren van bezoekersvoorzieningen. De locatie en het dienstenpakket bepalen hoe breed de functie is."
+    ],
+    "tasks": [
+      "Bezoekers ontvangen en aanmelden volgens de afspraken op locatie.",
+      "Telefoon, e-mail of vragen aan de balie beantwoorden.",
+      "Vergaderruimtes en bezoekersvoorzieningen voorbereiden.",
+      "Afstemmen met collega’s, beveiliging en facilitaire medewerkers.",
+      "Bijzonderheden en verzoeken vastleggen en doorgeven."
+    ],
+    "environment": "Hospitality medewerkers werken bij kantoren, onderwijsinstellingen en andere locaties met bezoekers en dagelijkse service. Het werk is meestal op locatie. Openingstijden en bezetting verschillen; avond- of weekendwerk is alleen aan de orde als de specifieke functie dat vraagt.",
+    "background": "Servicegerichtheid, helder communiceren en betrouwbaarheid zijn belangrijk. Ervaring bij een receptie, in hospitality of in andere dienstverlening kan aansluiten. De taalvereisten, systemen en eventuele administratieve taken verschillen per werkomgeving. Niet iedere functie vraagt dezelfde opleiding.",
+    "employer": "Goede ontvangst begint bij iemand die past bij jouw organisatie. We zoeken een hospitality medewerker die servicegericht is, zorgvuldig werkt en zich thuis voelt op de locatie.",
+    "candidate": "Werk je graag met mensen en houd je van een afwisselende werkdag? We bespreken de locatie, service en werktijden die bij jou passen, naast jouw ervaring met ontvangst en dienstverlening.",
+    "faq": [
+      {
+        "question": "Moet ik meerdere talen spreken?",
+        "answer": "Dat hangt af van de bezoekers en medewerkers op de locatie. Bij een internationale kantooromgeving kan Engels nodig zijn. Andere functies vragen vooral goede beheersing van het Nederlands. De eisen horen bij de specifieke vacature."
+      },
+      {
+        "question": "Zijn de werktijden altijd overdag?",
+        "answer": "Nee, dat verschilt per locatie. We bespreken de openingstijden en het rooster bij een concrete functie, zodat je vooraf weet welke beschikbaarheid wordt gevraagd."
+      }
+    ],
+    "related": [
+      "hospitality-manager",
+      "office-manager",
+      "facilitair-coordinator"
+    ],
+    "practice": {
+      "title": "Een warm welkom en een goed geregeld bezoek",
+      "text": "Een bezoeker meldt zich voor een afspraak, terwijl de telefoon gaat en een vergaderruimte nog moet worden klaargezet. De hospitality medewerker blijft rustig, ontvangt de bezoeker en organiseert de rest in de juiste volgorde. Daarbij horen ook afspraken over toegang en privacy. Gastvrijheid betekent niet dat alles zomaar kan: je helpt mensen op een vriendelijke manier binnen de regels van de locatie."
+    },
+    "difference": {
+      "title": "Host, receptionist of hospitality medewerker?",
+      "text": "Deze titels overlappen. Een receptionist richt zich vaak op balie, telefonie en bezoekersregistratie. Een host of hospitality medewerker kan ook vergaderservice en andere voorzieningen verzorgen. De concrete werkzaamheden, werktijden en locatie zeggen meer dan de functietitel."
+    },
+    "selection": [
+      "Vriendelijk en duidelijk communiceren met verschillende bezoekers en medewerkers.",
+      "Meerdere vragen tegelijk kunnen afhandelen zonder het overzicht te verliezen.",
+      "Beschikbaarheid op de benodigde tijden en passende taalvaardigheid voor de locatie."
+    ]
   },
   {
-    "slug":"contractmanager", "title":"Contractmanager",
-    "intro":"Een contractmanager zorgt dat afspraken met leveranciers ook in de praktijk werken. Met aandacht voor prestaties, kosten, samenwerking en verbeteringen.",
-    "definition":["Een contractmanager volgt de uitvoering van een contract. Wat is afgesproken, wat wordt geleverd en waar moet worden bijgestuurd? Binnen Facility Management en vastgoed gaat het bijvoorbeeld om schoonmaak, beveiliging, onderhoud of andere diensten voor gebouwen.","De rol draait om de verbinding tussen papier en praktijk. Een prestatieoverzicht zegt niet alles over wat gebruikers ervaren. De contractmanager bespreekt beide met de leverancier en de interne organisatie. Contractmanagement is daarmee meer dan alleen administratief contractbeheer."],
-    "tasks":["Afspraken, looptijden en verplichtingen overzichtelijk houden.","Prestaties en rapportages van leveranciers beoordelen.","Contractoverleggen voeren en verbeterafspraken opvolgen.","Wijzigingen, kosten en afwijkingen afstemmen met betrokkenen.","Input leveren voor verlenging, evaluatie of een nieuwe inkoopronde."],
-    "environment":"Contractmanagers werken bij opdrachtgevers en bij dienstverleners. Binnen onze vakgebieden ligt de nadruk op facilitaire en technische diensten, onderhoud en vastgoed. Het aantal contracten, hun omvang en de aansluiting met inkoop bepalen hoe breed de rol is.",
-    "background":"Een facilitaire, technische, bedrijfskundige of inkoopachtergrond kan passen. Ervaring met leveranciers, dienstverlening en financiële afspraken is belangrijk. Je moet kritisch kunnen lezen, helder overleggen en verbeteringen concreet maken. Specifieke contractkennis hangt af van het type dienst.",
-    "employer":"Maak duidelijk welke contracten iemand beheert en of de nadruk op prestaties, administratie of commerciële afspraken ligt. Benoem de belangrijkste knelpunten en de samenwerking met inkoop en gebruikers. Voor technisch onderhoud is andere ervaring nodig dan voor een breed facilitair dienstenpakket.",
-    "candidate":"We bespreken welke diensten en contracten je kent, aan welke kant van het contract je hebt gewerkt en welke verantwoordelijkheid je zoekt. Ook jouw manier van omgaan met leveranciers en interne belangen komt aan bod.",
-    "faq":[{"question":"Contractmanager of contractbeheerder?","answer":"Contractbeheer gaat vaak over registratie, documenten en looptijden. Contractmanagement richt zich daarnaast op prestaties, samenwerking en bijsturing. In kleinere organisaties kan één persoon beide doen."},{"question":"Is een contractmanager ook inkoper?","answer":"Niet automatisch. Inkoop richt zich op het selecteren en contracteren van leveranciers. Contractmanagement volgt vooral de uitvoering, al werken de rollen vaak nauw samen."}],
-    "related":["facilitair-manager","technisch-beheerder","vastgoedbeheerder"]
+    "slug": "contractmanager",
+    "title": "Contractmanager",
+    "intro": "Een contractmanager zorgt dat afspraken met leveranciers ook in de praktijk werken. Met aandacht voor prestaties, kosten, samenwerking en verbeteringen.",
+    "definition": [
+      "Een contractmanager volgt de uitvoering van een contract. Wat is afgesproken, wat wordt geleverd en waar moet worden bijgestuurd? Binnen Facility Management en vastgoed gaat het bijvoorbeeld om schoonmaak, beveiliging, onderhoud of andere diensten voor gebouwen.",
+      "De rol draait om de verbinding tussen papier en praktijk. Een prestatieoverzicht zegt niet alles over wat gebruikers ervaren. De contractmanager bespreekt beide met de leverancier en de interne organisatie. Contractmanagement is daarmee meer dan alleen administratief contractbeheer."
+    ],
+    "tasks": [
+      "Afspraken, looptijden en verplichtingen overzichtelijk houden.",
+      "Prestaties en rapportages van leveranciers beoordelen.",
+      "Contractoverleggen voeren en verbeterafspraken opvolgen.",
+      "Wijzigingen, kosten en afwijkingen afstemmen met betrokkenen.",
+      "Input leveren voor verlenging, evaluatie of een nieuwe inkoopronde."
+    ],
+    "environment": "Contractmanagers werken bij opdrachtgevers en bij dienstverleners. Binnen onze vakgebieden ligt de nadruk op facilitaire en technische diensten, onderhoud en vastgoed. Het aantal contracten, hun omvang en de aansluiting met inkoop bepalen hoe breed de rol is.",
+    "background": "Een facilitaire, technische, bedrijfskundige of inkoopachtergrond kan passen. Ervaring met leveranciers, dienstverlening en financiële afspraken is belangrijk. Je moet kritisch kunnen lezen, helder overleggen en verbeteringen concreet maken. Specifieke contractkennis hangt af van het type dienst.",
+    "employer": "Heb je meer grip nodig op leveranciers en contractprestaties? We zoeken een contractmanager die jouw dienstverlening begrijpt en afspraken kan vertalen naar aantoonbare opvolging in de praktijk.",
+    "candidate": "Of je nu aan opdrachtgever- of leverancierszijde werkt: we bespreken welke contracten bij jouw ervaring passen en waar je meer verantwoordelijkheid of verdieping zoekt.",
+    "faq": [
+      {
+        "question": "Welke contracten vallen onder deze functie?",
+        "answer": "Binnen onze vakgebieden kan het gaan om schoonmaak, beveiliging, catering, onderhoud en andere facilitaire of technische diensten. Contracten verschillen in omvang en inhoud. Ervaring met het betreffende dienstenpakket is daarom belangrijk."
+      },
+      {
+        "question": "Is een contractmanager ook inkoper?",
+        "answer": "Niet automatisch. Inkoop richt zich op het selecteren en contracteren van leveranciers. Contractmanagement volgt vooral de uitvoering, al werken de rollen vaak nauw samen."
+      }
+    ],
+    "related": [
+      "facilitair-manager",
+      "technisch-beheerder",
+      "vastgoedbeheerder"
+    ],
+    "practice": {
+      "title": "Afspraken toetsen aan de dagelijkse dienstverlening",
+      "text": "Een onderhoudsleverancier rapporteert dat werkzaamheden op tijd zijn uitgevoerd, maar gebruikers blijven dezelfde storingen melden. De contractmanager onderzoekt wat de rapportage precies meet en bespreekt de terugkerende problemen met beheer en de leverancier. Daarna volgen concrete verbeterafspraken en controle op de uitvoering. Goede contractsturing vraagt dus om kennis van de dienst, betrouwbare informatie en een zakelijke relatie waarin partijen elkaar kunnen aanspreken."
+    },
+    "difference": {
+      "title": "Contractmanagement, contractbeheer en inkoop",
+      "text": "Contractbeheer houdt documenten, looptijden en afspraken op orde. Contractmanagement gaat ook over prestaties, kosten, risico’s en samenwerking tijdens de uitvoering. Inkoop richt zich op het selecteren en contracteren van leveranciers. De functies sluiten op elkaar aan, maar vragen niet altijd dezelfde ervaring."
+    },
+    "selection": [
+      "Kennis van de diensten en contracten die beheerd moeten worden.",
+      "Prestaties, financiële afspraken en wijzigingen kunnen beoordelen.",
+      "Ervaring met leveranciersoverleg en het opvolgen van verbeterafspraken."
+    ]
   }
 ]

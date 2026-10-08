@@ -1,87 +1,344 @@
 [
   {
-    "slug": "projectmanager", "title": "Projectmanager",
+    "slug": "projectmanager",
+    "title": "Projectmanager",
     "intro": "Een projectmanager brengt mensen, planning en budget bij elkaar om een afgesproken resultaat te bereiken. Van een huisvestingsproject tot een verandering binnen de organisatie.",
-    "definition": ["Een projectmanager is verantwoordelijk voor de samenhang van een project. Wat moet er worden opgeleverd, welke keuzes zijn nodig en wie moet daarbij betrokken zijn? De projectmanager maakt de opdracht uitvoerbaar en houdt zicht op het resultaat, de kosten en de risico’s.", "Het werk bestaat voor een groot deel uit afstemmen en besluiten voorbereiden. Denk aan gebruikers, directie, adviseurs en uitvoerende partijen die verschillende belangen hebben. Een goed plan helpt, maar de projectmanager moet ook bijsturen wanneer omstandigheden veranderen."],
-    "tasks": ["Het doel, de afbakening en het gewenste resultaat vastleggen.", "Een planning en begroting maken en de voortgang bewaken.", "Het projectteam en externe partijen aansturen.", "Risico’s, wijzigingen en knelpunten bespreken met de opdrachtgever.", "Besluiten voorbereiden en de overdracht naar beheer organiseren."],
+    "definition": [
+      "Een projectmanager is verantwoordelijk voor de samenhang van een project. Wat moet er worden opgeleverd, welke keuzes zijn nodig en wie moet daarbij betrokken zijn? De projectmanager maakt de opdracht uitvoerbaar en houdt zicht op het resultaat, de kosten en de risico’s.",
+      "Het werk bestaat voor een groot deel uit afstemmen en besluiten voorbereiden. Denk aan gebruikers, directie, adviseurs en uitvoerende partijen die verschillende belangen hebben. Een goed plan helpt, maar de projectmanager moet ook bijsturen wanneer omstandigheden veranderen."
+    ],
+    "tasks": [
+      "Het doel, de afbakening en het gewenste resultaat vastleggen.",
+      "Een planning en begroting maken en de voortgang bewaken.",
+      "Het projectteam en externe partijen aansturen.",
+      "Risico’s, wijzigingen en knelpunten bespreken met de opdrachtgever.",
+      "Besluiten voorbereiden en de overdracht naar beheer organiseren."
+    ],
     "environment": "Projectmanagers werken bij onder meer vastgoedorganisaties, overheden, onderwijsinstellingen en facilitaire afdelingen. Bij Wedeploy ligt de aansluiting vooral bij vastgoed, huisvesting, dienstverlening en organisatieverandering. Een renovatie vraagt andere ervaring dan het verbeteren van een werkproces.",
     "background": "Een hbo- of wo-achtergrond komt vaak voor, bijvoorbeeld in bouwkunde, Facility Management of bedrijfskunde. De opleiding is niet het hele profiel: ervaring met vergelijkbare projecten, besluitvorming en budgetverantwoordelijkheid is minstens zo relevant. Een projectmanagementmethode kan helpen, maar is niet voor iedere functie een harde eis.",
-    "employer": "Maak vooraf duidelijk hoe groot het project is en welke beslisruimte de projectmanager krijgt. Gaat het om de hele opdracht of om een onderdeel? Benoem ook de fase, beschikbare capaciteit en belangrijkste knelpunten. Daarmee zoeken we gericht naar passende projectervaring.",
-    "candidate": "Vertel welke projecten je hebt geleid, wat jouw verantwoordelijkheid was en welke omgeving je nu zoekt. We bespreken ook jouw manier van samenwerken en de stap die je wilt maken, in een persoonlijke intake.",
-    "faq": [{"question":"Projectmanager of projectleider?","answer":"De titels worden soms door elkaar gebruikt. Een projectmanager heeft vaak bredere verantwoordelijkheid voor budget, belangen en resultaat. Een projectleider zit meestal dichter op de uitvoering. Het echte takenpakket is doorslaggevend."},{"question":"Kan een projectmanager tijdelijk werken?","answer":"Ja, bijvoorbeeld voor een afgebakend project of vervanging. Tijdelijk werk kan via detachering of interim. Of zelfstandige inzet past, hangt af van hoe de opdracht is ingericht."}],
-    "related": ["projectleider", "pmo", "huisvestingsmanager"]
+    "employer": "Een project vraagt meer dan een goede planning. We zoeken een projectmanager met passende vakkennis, ervaring met de opgave en een manier van samenwerken die aansluit op jouw organisatie.",
+    "candidate": "Welke projecten passen bij jouw ervaring en wat wil je in een volgende rol bereiken? We bespreken de inhoud, verantwoordelijkheid en werkomgeving voordat we je aan een organisatie voorstellen.",
+    "faq": [
+      {
+        "question": "Is een projectmanagementcertificaat verplicht?",
+        "answer": "Niet voor iedere functie. Een opdrachtgever kan ervaring met een bepaalde aanpak of een certificaat vragen. Eerdere projecten, vakkennis en het niveau van verantwoordelijkheid blijven belangrijk bij de beoordeling van een profiel."
+      },
+      {
+        "question": "Kan een projectmanager tijdelijk werken?",
+        "answer": "Ja, bijvoorbeeld voor een afgebakend project of vervanging. Dat kan via detachering of als zelfstandige opdracht, afhankelijk van de inrichting van het werk en de samenwerking."
+      }
+    ],
+    "related": [
+      "projectleider",
+      "pmo",
+      "huisvestingsmanager"
+    ],
+    "practice": {
+      "title": "Een project bestuurbaar houden als de situatie verandert",
+      "text": "Een huisvestingsproject moet op een vaste datum worden opgeleverd. Tijdens de voorbereiding veranderen de gebruikerswensen en blijkt een onderdeel duurder dan begroot. De projectmanager maakt de gevolgen zichtbaar en legt keuzes voor aan de opdrachtgever: aanpassen, extra middelen inzetten of de planning veranderen. Vervolgens worden de besluiten verwerkt in de aanpak. Juist wanneer belangen botsen, zijn overzicht, duidelijke afspraken en een realistische planning belangrijk."
+    },
+    "difference": {
+      "title": "Projectmanager, projectleider of PMO’er?",
+      "text": "Projectmanager en projectleider worden soms voor dezelfde rol gebruikt. Een projectmanager heeft vaak een bredere verantwoordelijkheid voor het resultaat, budget en overleg met de opdrachtgever. Een PMO’er ondersteunt de beheersing en organisatie van het project. De precieze verdeling moet vooraf duidelijk zijn."
+    },
+    "selection": [
+      "Eerder projecten uitgevoerd met vergelijkbare complexiteit en betrokken partijen.",
+      "Verantwoordelijkheid gedragen voor planning, budget, risico’s en resultaat.",
+      "Besluiten kunnen voorbereiden en verschillende belangen bij elkaar brengen."
+    ]
   },
   {
-    "slug": "projectleider", "title": "Projectleider",
-    "intro": "Een projectleider organiseert de uitvoering van een project. Die houdt de planning in beweging, stemt werkzaamheden af en zorgt dat afspraken worden opgevolgd.",
-    "definition": ["Een projectleider maakt van een opdracht een werkbare uitvoering. Welke activiteiten moeten gebeuren, in welke volgorde en met welke mensen? De rol vraagt overzicht én aandacht voor wat er dagelijks speelt. Problemen moeten op tijd bij de juiste betrokkenen terechtkomen.", "Binnen vastgoed en Facility Management kan het gaan om een verbouwing, verhuizing of vervanging van voorzieningen. Ook een procesverbetering kan een project zijn. De inhoud verschilt, maar afstemming, voortgang en een goede afronding blijven belangrijk."],
-    "tasks": ["De opdracht vertalen naar activiteiten, planning en afspraken.", "Werkzaamheden van collega’s en uitvoerende partijen afstemmen.", "Voortgang, kwaliteit en kosten van het project volgen.", "Knelpunten oplossen of voorleggen aan de opdrachtgever.", "Oplevering, nazorg en overdracht voorbereiden."],
+    "slug": "projectleider",
+    "title": "Projectleider",
+    "intro": "Een projectleider begeleidt de uitvoering van een project. De functie vraagt inhoudelijke kennis, overzicht op de planning en goede afstemming met het team en uitvoerende partijen.",
+    "definition": [
+      "Een projectleider maakt van een opdracht een werkbare uitvoering. Welke activiteiten moeten gebeuren, in welke volgorde en met welke mensen? De rol vraagt overzicht én aandacht voor wat er dagelijks speelt. Problemen moeten op tijd bij de juiste betrokkenen terechtkomen.",
+      "Binnen vastgoed en Facility Management kan het gaan om een verbouwing, verhuizing of vervanging van voorzieningen. Ook een procesverbetering kan een project zijn. De inhoud verschilt, maar afstemming, voortgang en een goede afronding blijven belangrijk."
+    ],
+    "tasks": [
+      "De opdracht vertalen naar activiteiten, planning en afspraken.",
+      "Werkzaamheden van collega’s en uitvoerende partijen afstemmen.",
+      "Voortgang, kwaliteit en kosten van het project volgen.",
+      "Knelpunten oplossen of voorleggen aan de opdrachtgever.",
+      "Oplevering, nazorg en overdracht voorbereiden."
+    ],
     "environment": "Een projectleider kan werken vanuit een eigenaar, gebruiker, dienstverlener of projectorganisatie. Op een bouw- of installatietechnisch project is vakkennis belangrijk. Bij een verandering in dienstverlening ligt de nadruk meer op processen, gebruikers en de invoering van nieuwe afspraken.",
     "background": "Werkgevers vragen vaak hbo-werk- en denkniveau en ervaring met het soort project. Soms groeit iemand vanuit techniek, beheer of coördinatie door naar projectleiding. Belangrijk is dat je kunt organiseren, helder communiceert en verantwoordelijkheid neemt voor de uitvoering zonder alles zelf te doen.",
-    "employer": "Beschrijf wat er moet worden opgeleverd en welke inhoudelijke kennis nodig is. Maak duidelijk of de projectleider zelf vakinhoudelijke keuzes maakt of vooral de uitvoering organiseert. Ook de relatie met een eventuele projectmanager hoort bij het zoekprofiel.",
-    "candidate": "We horen graag welke projecten je hebt afgerond en welke onderdelen jij zelfstandig droeg. Wil je grotere projecten, meer inhoudelijke diepgang of juist een andere sector? Dat bespreken we voordat we een functie voorstellen.",
-    "faq": [{"question":"Moet een projectleider technisch zijn?","answer":"Dat hangt af van het project. Bij installaties of bouw kan technische ervaring nodig zijn. Voor een verandering in dienstverlening of processen kan een andere achtergrond beter passen."},{"question":"Is dit een leidinggevende functie?","answer":"Je stuurt de uitvoering aan, maar bent niet altijd de formele leidinggevende van het projectteam. Daarom zijn duidelijke afspraken over taken en bevoegdheden belangrijk."}],
-    "related": ["projectmanager", "projectcoordinator", "technisch-coordinator"]
+    "employer": "Zoek je iemand die een project van voorbereiding tot uitvoering begeleidt? We zoeken een projectleider met de juiste inhoudelijke basis en ervaring met jouw werkveld en betrokken partijen.",
+    "candidate": "Wil je een project inhoudelijk begeleiden en dicht op de uitvoering zitten? We bespreken jouw vakgebied, eerdere projecten en de verantwoordelijkheid die je in een volgende rol zoekt.",
+    "faq": [
+      {
+        "question": "Moet een projectleider zelf de inhoudelijk specialist zijn?",
+        "answer": "De projectleider moet het werk voldoende begrijpen om de uitvoering te begeleiden en de juiste vragen te stellen. Voor specialistische onderdelen kan die samenwerken met adviseurs en uitvoerders. Hoeveel eigen vakkennis nodig is, hangt af van het project."
+      },
+      {
+        "question": "Is dit een leidinggevende functie?",
+        "answer": "Je stuurt de uitvoering aan, maar bent niet altijd de formele leidinggevende van het projectteam. Daarom zijn duidelijke afspraken over taken en bevoegdheden belangrijk."
+      }
+    ],
+    "related": [
+      "projectmanager",
+      "projectcoordinator",
+      "technisch-coordinator"
+    ],
+    "practice": {
+      "title": "Van voorbereiding naar uitvoering",
+      "text": "Bij een renovatie moeten gebruikers, adviseurs en uitvoerders weten welke werkzaamheden wanneer plaatsvinden. De projectleider stemt de planning af, controleert de voorbereiding en bespreekt afwijkingen zodra die ontstaan. Ook kwaliteit en opleverpunten moeten worden gevolgd. De rol vraagt genoeg inhoudelijke kennis om de juiste vragen te stellen, zonder alle specialismen zelf te hoeven uitvoeren."
+    },
+    "difference": {
+      "title": "De titel verschilt, de verantwoordelijkheid moet duidelijk zijn",
+      "text": "Een projectleider zit vaak dicht op de uitvoering en inhoud. Een projectmanager kan daarnaast verantwoordelijk zijn voor het bredere budget, de besluitvorming en meerdere onderdelen. In andere organisaties betekenen de titels hetzelfde. Een projectcoördinator organiseert vooral de afstemming en ondersteuning."
+    },
+    "selection": [
+      "Inhoudelijke ervaring met het soort project en de uitvoerende partijen.",
+      "Werkzaamheden kunnen plannen, afstemmen en controleren.",
+      "Weten welke besluiten zelfstandig genomen kunnen worden en wanneer afstemming nodig is."
+    ]
   },
   {
-    "slug": "projectcoordinator", "title": "Projectcoördinator",
-    "intro": "Een projectcoördinator houdt de dagelijkse activiteiten van een project bij elkaar. Met overzicht op acties, planning en de afstemming tussen betrokkenen.",
-    "definition": ["Een projectcoördinator zorgt dat de organisatie van een project loopt. De rol zit tussen het plan en de dagelijkse uitvoering: overleggen voorbereiden, afspraken opvolgen en informatie verzamelen. Daardoor kunnen projectleden verder zonder steeds zelf alles uit te zoeken.", "De verantwoordelijkheid verschilt per organisatie. Soms ligt de nadruk op ondersteuning, soms coördineert iemand zelfstandig een deelproject. Een projectcoördinator is dus niet automatisch een junior projectmanager. De inhoud en beslisruimte bepalen het niveau."],
-    "tasks": ["Activiteiten en afhankelijkheden in de planning bijhouden.", "Projectoverleggen voorbereiden en acties opvolgen.", "Informatie ophalen bij teamleden en externe partijen.", "Documenten, wijzigingen en afspraken organiseren.", "Vertragingen signaleren en bespreken met de projectleider."],
+    "slug": "projectcoordinator",
+    "title": "Projectcoördinator",
+    "intro": "Een projectcoördinator organiseert de dagelijkse afstemming binnen een project. Planning, acties en informatie moeten op elkaar aansluiten, zodat het team verder kan.",
+    "definition": [
+      "Een projectcoördinator zorgt dat de organisatie van een project loopt. De rol zit tussen het plan en de dagelijkse uitvoering: overleggen voorbereiden, afspraken opvolgen en informatie verzamelen. Daardoor kunnen projectleden verder zonder steeds zelf alles uit te zoeken.",
+      "De verantwoordelijkheid verschilt per organisatie. Soms ligt de nadruk op ondersteuning, soms coördineert iemand zelfstandig een deelproject. Een projectcoördinator is dus niet automatisch een junior projectmanager. De inhoud en beslisruimte bepalen het niveau."
+    ],
+    "tasks": [
+      "Activiteiten en afhankelijkheden in de planning bijhouden.",
+      "Projectoverleggen voorbereiden en acties opvolgen.",
+      "Informatie ophalen bij teamleden en externe partijen.",
+      "Documenten, wijzigingen en afspraken organiseren.",
+      "Vertragingen signaleren en bespreken met de projectleider."
+    ],
     "environment": "Deze rol komt voor in huisvestingsprojecten, vastgoedbeheer en veranderingen in dienstverlening. Een coördinator werkt vaak naast een projectleider of projectmanager. Bij meerdere locaties of uitvoerende partijen wordt praktische afstemming een belangrijk onderdeel van het werk.",
     "background": "Een mbo- of hbo-achtergrond kan passen, afhankelijk van het takenpakket. Ervaring met plannen, projectadministratie en samenwerken telt zwaar mee. Je moet hoofd- en bijzaken kunnen onderscheiden, afspraken durven najagen en duidelijk vastleggen wat er nodig is om verder te kunnen.",
-    "employer": "Bepaal of je vooral ondersteuning zoekt of iemand die ook zelfstandig werkpakketten coördineert. Geef aan hoe groot het team is, welke systemen worden gebruikt en hoeveel inhoudelijke kennis nodig is. Zo voorkom je dat de titel een ander beeld geeft dan het werk.",
-    "candidate": "Vertel welke activiteiten jij organiseert en hoeveel verantwoordelijkheid je wilt dragen. We bespreken of je verder wilt in coördinatie, projectondersteuning of projectleiding en welke werkomgeving daarbij past.",
-    "faq": [{"question":"Wat is het verschil met PMO?","answer":"Een projectcoördinator richt zich vaak op dagelijkse afstemming en uitvoering. PMO kan daarnaast nadruk leggen op rapportages, projectbeheersing en ondersteuning van meerdere projecten. De rollen kunnen overlappen."},{"question":"Kan dit een volgende stap vanuit ondersteuning zijn?","answer":"Ja, als je al ervaring hebt met plannen, afspraken opvolgen en projectteams ondersteunen. De stap hangt af van de zelfstandigheid en inhoud die de nieuwe functie vraagt."}],
-    "related": ["projectleider", "pmo", "projectsecretaris"]
+    "employer": "Een projectcoördinator brengt structuur in de dagelijkse samenwerking. We zoeken iemand die past bij de zelfstandigheid, projectinhoud en ondersteuning die jouw team nodig heeft.",
+    "candidate": "Je houdt overzicht en krijgt zaken voor elkaar. We bespreken of je een ondersteunende rol zoekt, zelfstandig onderdelen wilt organiseren of verder wilt groeien richting projectleiding.",
+    "faq": [
+      {
+        "question": "Geef je als projectcoördinator leiding aan het team?",
+        "answer": "Je organiseert vaak werkzaamheden en volgt afspraken op, maar bent niet automatisch de leidinggevende van de teamleden. Het takenpakket moet duidelijk maken welke besluiten je zelf neemt en wanneer je afstemt met de projectleiding."
+      },
+      {
+        "question": "Kan dit een volgende stap vanuit ondersteuning zijn?",
+        "answer": "Ja, als je al ervaring hebt met plannen, afspraken opvolgen en projectteams ondersteunen. De stap hangt af van de zelfstandigheid en inhoud die de nieuwe functie vraagt."
+      }
+    ],
+    "related": [
+      "projectleider",
+      "pmo",
+      "projectsecretaris"
+    ],
+    "practice": {
+      "title": "Zorgen dat afspraken ook worden uitgevoerd",
+      "text": "Een projectteam werkt aan verschillende onderdelen die op elkaar moeten aansluiten. De projectcoördinator houdt de planning bij, verzamelt informatie en controleert of acties op tijd zijn afgerond. Wanneer een onderdeel vertraagt, bespreekt die de gevolgen met de projectleider en betrokken collega’s. Het draait om actief organiseren en opvolgen, niet alleen om een overzicht bijwerken."
+    },
+    "difference": {
+      "title": "Een coördinator is niet automatisch een junior projectmanager",
+      "text": "Sommige projectcoördinatoren ondersteunen een team; anderen organiseren zelfstandig een werkpakket of deelproject. Een PMO’er legt vaak meer nadruk op informatie en beheersing. Een projectleider draagt doorgaans meer verantwoordelijkheid voor de inhoud en uitvoering. De beslisruimte bepaalt het niveau van de functie."
+    },
+    "selection": [
+      "Planning, acties en onderlinge afhankelijkheden kunnen volgen.",
+      "Collega’s en externe partijen aanspreken op afspraken.",
+      "De benodigde systemen en projectadministratie zorgvuldig gebruiken."
+    ]
   },
   {
-    "slug": "pmo", "title": "PMO’er",
+    "slug": "pmo",
+    "title": "PMO’er",
     "intro": "Een PMO’er helpt een projectteam grip te houden op voortgang, informatie en afspraken. De rol kan variëren van projectondersteuning tot projectbeheersing.",
-    "definition": ["PMO staat meestal voor Project Management Office; in de praktijk wordt PMO’er gebruikt voor een professional binnen projectondersteuning of projectbeheersing. Die verzamelt informatie en zorgt dat projectleiding en team weten wat de stand van zaken is.", "Het gaat verder dan alleen overleggen inplannen. Een PMO’er kan ook financiële overzichten, wijzigingen en risico’s bijhouden. Bij een groot programma ondersteunt het PMO meerdere projecten. Bij een kleiner team liggen administratie, coördinatie en voortgangsbewaking vaak bij één persoon."],
-    "tasks": ["Voortgangsinformatie verzamelen en rapportages voorbereiden.", "Acties, besluiten en deadlines vastleggen en opvolgen.", "Projectdocumenten en versies overzichtelijk beheren.", "Budgetoverzichten, wijzigingen of risico’s bijhouden waar dat bij de rol hoort.", "Projectmanagers ondersteunen bij planning en verantwoording."],
+    "definition": [
+      "PMO staat meestal voor Project Management Office; in de praktijk wordt PMO’er gebruikt voor een professional binnen projectondersteuning of projectbeheersing. Die verzamelt informatie en zorgt dat projectleiding en team weten wat de stand van zaken is.",
+      "Het gaat verder dan alleen overleggen inplannen. Een PMO’er kan ook financiële overzichten, wijzigingen en risico’s bijhouden. Bij een groot programma ondersteunt het PMO meerdere projecten. Bij een kleiner team liggen administratie, coördinatie en voortgangsbewaking vaak bij één persoon."
+    ],
+    "tasks": [
+      "Voortgangsinformatie verzamelen en rapportages voorbereiden.",
+      "Acties, besluiten en deadlines vastleggen en opvolgen.",
+      "Projectdocumenten en versies overzichtelijk beheren.",
+      "Budgetoverzichten, wijzigingen of risico’s bijhouden waar dat bij de rol hoort.",
+      "Projectmanagers ondersteunen bij planning en verantwoording."
+    ],
     "environment": "PMO-professionals werken in projectteams, programma’s en ondersteunende afdelingen. Binnen onze vakgebieden gaat het bijvoorbeeld om huisvesting, vastgoed en infrastructurele of organisatorische projecten. De gebruikte systemen en de omvang van het team verschillen per opdrachtgever.",
     "background": "Nauwkeurigheid, overzicht en initiatief zijn belangrijk. Werkgevers vragen vaak mbo- of hbo-niveau en ervaring met projectadministratie, Excel of planningssoftware. Voor een zwaardere PMO-rol kan ervaring met financiën, contracten of risico’s nodig zijn. Een junior ondersteuningsrol vraagt een ander profiel dan senior projectbeheersing.",
-    "employer": "Maak de nadruk van de functie duidelijk: administratief ondersteunen, coördineren of projectbeheersing. Benoem welke overzichten de PMO’er zelfstandig moet verzorgen en met wie die samenwerkt. Dat helpt om een passend niveau te vinden.",
-    "candidate": "In de intake bespreken we wat je nu ondersteunt en waar je sterker in wilt worden. Wil je meer met processen, financiën of juist dagelijkse coördinatie werken? Dat is belangrijker dan alleen de functietitel PMO.",
-    "faq": [{"question":"Is PMO alleen administratief werk?","answer":"Nee. Administratie kan onderdeel zijn, maar ook planning, rapportage, financiële overzichten en projectbeheersing. Kijk daarom altijd naar de werkzaamheden en verantwoordelijkheden."},{"question":"Wat betekent senior PMO?","answer":"Vaak meer zelfstandigheid en verantwoordelijkheid voor projectinformatie of beheersing. Er is geen vast takenpakket voor die titel; we bespreken wat de organisatie daadwerkelijk verwacht."}],
-    "related": ["projectsecretaris", "projectcoordinator", "projectmanager"],
-    "sources": [{"label":"PMI: Project Management Offices", "href":"https://www.pmi.org/learning/project-management-offices/"}]
+    "employer": "Zoek je ondersteuning voor jouw project of programma? We maken het onderscheid tussen administratieve ondersteuning, coördinatie en projectbeheersing duidelijk en zoeken een PMO’er op het juiste niveau.",
+    "candidate": "PMO-functies verschillen sterk. We bespreken of jouw kracht ligt in organiseren, processen, planning of financiën, en welke inhoud en ontwikkelmogelijkheden je in een volgende functie zoekt.",
+    "faq": [
+      {
+        "question": "Welke systemen gebruikt een PMO’er?",
+        "answer": "Dat verschilt per organisatie. Denk aan spreadsheets, planningssoftware en systemen voor documenten, financiën of contracten. De relevante systeemkennis hangt af van de taken; zorgvuldig werken en informatie kunnen controleren blijven de basis."
+      },
+      {
+        "question": "Wat betekent senior PMO?",
+        "answer": "Vaak meer zelfstandigheid en verantwoordelijkheid voor projectinformatie of beheersing. Er is geen vast takenpakket voor die titel; we bespreken wat de organisatie daadwerkelijk verwacht."
+      }
+    ],
+    "related": [
+      "projectsecretaris",
+      "projectcoordinator",
+      "projectmanager"
+    ],
+    "sources": [
+      {
+        "label": "PMI: Project Management Offices",
+        "href": "https://www.pmi.org/learning/project-management-offices/"
+      }
+    ],
+    "practice": {
+      "title": "Informatie verzamelen die helpt bij beslissingen",
+      "text": "Een programma bestaat uit meerdere projecten, elk met een eigen planning en budget. De PMO’er verzamelt voortgangsinformatie, controleert verschillen en zorgt dat het overzicht actueel blijft. Een gemiste mijlpaal of ontbrekende goedkeuring moet zichtbaar worden voordat die een groter probleem oplevert. De projectmanager kan daardoor met betere informatie bijsturen. Afhankelijk van de functie ondersteunt de PMO’er ook contracten, wijzigingen, risico’s of financiële rapportages."
+    },
+    "difference": {
+      "title": "PMO, projectondersteuning en projectbeheersing",
+      "text": "PMO is de afkorting van Project Management Office en kan een team of afdeling aanduiden. Met PMO’er bedoelt men vaak een medewerker binnen die ondersteuning. Een administratieve PMO-rol verschilt van een rol met planning, financiën of risicobeheersing. Senioriteit en takenpakket moeten dus apart worden beoordeeld."
+    },
+    "selection": [
+      "De juiste ervaring met projectadministratie, planning of financiële beheersing.",
+      "Informatie controleren, afwijkingen signaleren en ontbrekende gegevens opvolgen.",
+      "Zelfstandig samenwerken met projectleiding, teamleden en andere ondersteuners."
+    ]
   },
   {
-    "slug": "projectsecretaris", "title": "Projectsecretaris",
-    "intro": "Een projectsecretaris organiseert informatie, overleg en besluitvorming rondom een project. Die zorgt dat afspraken terug te vinden zijn en acties worden opgevolgd.",
-    "definition": ["Een projectsecretaris ondersteunt de samenwerking binnen een project of programma. Niet alleen door een vergadering te plannen, maar ook door te zorgen dat stukken klaarstaan, besluiten helder zijn en verantwoordelijken weten wat er van hen wordt verwacht.", "De rol vraagt gevoel voor de inhoud en de verhoudingen. Zeker in een bestuurlijke omgeving is het belangrijk wie een besluit neemt, welke informatie daarvoor nodig is en welke afspraken moeten worden vastgelegd. De projectsecretaris helpt die lijn te bewaken."],
-    "tasks": ["Overleggen, agenda’s en vergaderstukken voorbereiden.", "Besluiten en acties zorgvuldig vastleggen.", "Actiehouders benaderen en de opvolging bewaken.", "Projectdossiers en correspondentie op orde houden.", "Informatie verzamelen voor rapportages en besluitvorming."],
+    "slug": "projectsecretaris",
+    "title": "Projectsecretaris",
+    "intro": "Een projectsecretaris bereidt overleg en besluitvorming binnen een project voor. De functie verbindt inhoudelijke informatie met heldere besluiten, acties en opvolging.",
+    "definition": [
+      "Een projectsecretaris ondersteunt de samenwerking binnen een project of programma. Niet alleen door een vergadering te plannen, maar ook door te zorgen dat stukken klaarstaan, besluiten helder zijn en verantwoordelijken weten wat er van hen wordt verwacht.",
+      "De rol vraagt gevoel voor de inhoud en de verhoudingen. Zeker in een bestuurlijke omgeving is het belangrijk wie een besluit neemt, welke informatie daarvoor nodig is en welke afspraken moeten worden vastgelegd. De projectsecretaris helpt die lijn te bewaken."
+    ],
+    "tasks": [
+      "Overleggen, agenda’s en vergaderstukken voorbereiden.",
+      "Besluiten en acties zorgvuldig vastleggen.",
+      "Actiehouders benaderen en de opvolging bewaken.",
+      "Projectdossiers en correspondentie op orde houden.",
+      "Informatie verzamelen voor rapportages en besluitvorming."
+    ],
     "environment": "Projectsecretarissen werken onder meer bij overheden, onderwijsinstellingen en grotere projectorganisaties. De samenwerking is vaak met een projectmanager, programmamanager en inhoudelijke specialisten. Bij vastgoed- of huisvestingsprojecten spelen ook gebruikers en externe adviseurs een rol.",
     "background": "Sterk Nederlands, nauwkeurigheid en organisatietalent zijn belangrijke uitgangspunten. Een administratieve, secretariële of bedrijfskundige achtergrond kan passen. Het gevraagde niveau hangt af van de complexiteit van het project en de mate waarin je zelfstandig stukken opstelt en belangen herkent.",
-    "employer": "Geef aan of de rol vooral secretarieel is of ook voorbereiding van besluitvorming en rapportage omvat. Benoem het aantal overlegstructuren, de bestuurlijke context en eventuele ervaring met document- of projectsystemen. Daarmee wordt het onderscheid met algemene ondersteuning duidelijk.",
-    "candidate": "We bespreken welke overleggen en dossiers je hebt ondersteund en hoe zelfstandig je daarin werkte. Ook kijken we of je juist inhoudelijker wilt bijdragen of energie haalt uit het organiseren van een projectteam.",
-    "faq": [{"question":"Projectsecretaris of managementassistent?","answer":"Een projectsecretaris werkt rond een project of programma, met bijbehorende acties en besluiten. Een managementassistent ondersteunt vooral een manager of managementteam. Er kan overlap zijn in organiseren en verslaglegging."},{"question":"Moet ik de projectinhoud al kennen?","answer":"Dat verschilt. Soms is specifieke vakkennis nodig; soms zijn ervaring met projecten, zorgvuldig schrijven en het snel begrijpen van een nieuwe omgeving voldoende."}],
-    "related": ["pmo", "projectcoordinator", "managementassistent"]
+    "employer": "Een projectsecretaris nodig die de inhoud en besluitvorming helpt organiseren? We zoeken iemand die zorgvuldig werkt en past bij de complexiteit en bestuurlijke omgeving van jouw project.",
+    "candidate": "Werk je graag op het snijvlak van inhoud en organisatie? We bespreken het soort projecten, overleggen en verantwoordelijkheden waarin jouw ervaring het beste tot zijn recht komt.",
+    "faq": [
+      {
+        "question": "Moet een projectsecretaris ook adviseren?",
+        "answer": "Sommige functies omvatten alleen voorbereiding en verslaglegging. Andere vragen ook om meedenken over besluitstukken, procedures en projectinformatie. Die inhoudelijke verantwoordelijkheid bepaalt mede het niveau en de benodigde ervaring."
+      },
+      {
+        "question": "Moet ik de projectinhoud al kennen?",
+        "answer": "Dat verschilt. Soms is specifieke vakkennis nodig; soms zijn ervaring met projecten, zorgvuldig schrijven en het snel begrijpen van een nieuwe omgeving voldoende."
+      }
+    ],
+    "related": [
+      "pmo",
+      "projectcoordinator",
+      "managementassistent"
+    ],
+    "practice": {
+      "title": "Besluitvorming zorgvuldig voorbereiden en vastleggen",
+      "text": "Een stuurgroep moet besluiten over een wijziging in een project. De projectsecretaris zorgt dat de benodigde stukken beschikbaar zijn, controleert of de vraag duidelijk is en bereidt de agenda voor met de projectleiding. Na het overleg worden besluiten en acties vastgelegd en opgevolgd. In een bestuurlijke omgeving telt daarbij ook wie bevoegd is te besluiten en welke afstemming vooraf nodig is."
+    },
+    "difference": {
+      "title": "Meer dan vergaderen en notuleren",
+      "text": "Een projectsecretaris ondersteunt de inhoudelijke voorbereiding en besluitvorming binnen een project. Een managementassistent ondersteunt vaker een leidinggevende of managementteam. Een PMO’er kan daarnaast planning, financiën en projectinformatie verzorgen. In kleinere teams komen deze taken soms bij één persoon samen."
+    },
+    "selection": [
+      "Ervaring met overleggen, besluitstukken en het vastleggen van acties.",
+      "Gevoel voor bestuurlijke verhoudingen en vertrouwelijke informatie.",
+      "Voldoende inhoudelijke betrokkenheid om ontbrekende informatie te herkennen."
+    ]
   },
   {
-    "slug": "procesadviseur", "title": "Procesadviseur",
+    "slug": "procesadviseur",
+    "title": "Procesadviseur",
     "intro": "Een procesadviseur onderzoekt hoe werk is georganiseerd en helpt het te verbeteren. Van een onduidelijke overdracht tot een proces dat te veel tijd kost.",
-    "definition": ["Een procesadviseur brengt in kaart hoe een proces werkelijk verloopt. Waar ontstaan vertragingen, dubbel werk of fouten? De adviseur spreekt betrokkenen, kijkt naar informatie en maakt duidelijk welke veranderingen kunnen helpen.", "Een verbetering is pas bruikbaar als mensen ermee kunnen werken. Daarom hoort de invoering vaak bij de rol: nieuwe afspraken testen, verantwoordelijkheden verduidelijken en volgen of de aanpassing het gewenste effect heeft. Alleen een processchema maken is meestal niet genoeg."],
-    "tasks": ["Huidige werkprocessen onderzoeken en beschrijven.", "Knelpunten en oorzaken bespreken met medewerkers.", "Een werkbare verbetering uitwerken en onderbouwen.", "De invoering begeleiden en nieuwe afspraken vastleggen.", "Resultaten volgen en de aanpak waar nodig aanpassen."],
+    "definition": [
+      "Een procesadviseur brengt in kaart hoe een proces werkelijk verloopt. Waar ontstaan vertragingen, dubbel werk of fouten? De adviseur spreekt betrokkenen, kijkt naar informatie en maakt duidelijk welke veranderingen kunnen helpen.",
+      "Een verbetering is pas bruikbaar als mensen ermee kunnen werken. Daarom hoort de invoering vaak bij de rol: nieuwe afspraken testen, verantwoordelijkheden verduidelijken en volgen of de aanpassing het gewenste effect heeft. Alleen een processchema maken is meestal niet genoeg."
+    ],
+    "tasks": [
+      "Huidige werkprocessen onderzoeken en beschrijven.",
+      "Knelpunten en oorzaken bespreken met medewerkers.",
+      "Een werkbare verbetering uitwerken en onderbouwen.",
+      "De invoering begeleiden en nieuwe afspraken vastleggen.",
+      "Resultaten volgen en de aanpak waar nodig aanpassen."
+    ],
     "environment": "Procesadviseurs werken in dienstverlening, bedrijfsvoering en projectorganisaties. Denk aan meldingsprocessen, onderhoudsplanning, aanvragen of de overdracht tussen teams. De rol kan verbonden zijn aan een afdeling of aan een tijdelijke verbeteropdracht.",
     "background": "Een achtergrond in bedrijfskunde, technische bedrijfskunde of een relevant werkproces komt vaak voor. Je moet kunnen analyseren én samenwerken met de mensen die het werk uitvoeren. Lean-ervaring kan nuttig zijn, maar een certificaat vervangt geen ervaring met het werkelijk invoeren van verbeteringen.",
-    "employer": "Omschrijf welk probleem moet worden opgelost en welke gegevens beschikbaar zijn. Is de vraag analyseren en adviseren, of ook invoeren en begeleiden? Maak ook duidelijk wie besluiten kan nemen en hoeveel ruimte het team heeft voor verandering.",
-    "candidate": "Vertel welke processen je hebt verbeterd en wat jouw bijdrage was in de invoering. We kijken naar je analytische aanpak, samenwerking en de omgeving waarin je jouw ervaring wilt inzetten.",
-    "faq": [{"question":"Wat is het verschil met een projectmanager?","answer":"Een procesadviseur richt zich op hoe het werk verloopt en hoe dat beter kan. Een projectmanager organiseert een afgebakend resultaat. Een procesverbetering kan wel als project worden uitgevoerd."},{"question":"Is Lean altijd nodig?","answer":"Nee. Sommige opdrachten vragen daar specifiek om. Bij andere zijn proceskennis, analyse en ervaring met invoering belangrijker. We bespreken welke aanpak de organisatie gebruikt."}],
-    "related": ["verandermanager", "projectleider", "manager-bedrijfsvoering"]
+    "employer": "Heb je terugkerende knelpunten, onduidelijke overdrachten of veel dubbel werk? We zoeken een procesadviseur die de oorzaken onderzoekt en verbeteringen helpt invoeren die in de praktijk werken.",
+    "candidate": "Je wilt processen begrijpelijker en beter uitvoerbaar maken. We bespreken jouw ervaring met analyse en invoering, en of je vooral wilt adviseren of ook de verandering wilt begeleiden.",
+    "faq": [
+      {
+        "question": "Voert een procesadviseur verbeteringen ook zelf in?",
+        "answer": "Dat kan, maar hoort niet bij iedere opdracht. Soms eindigt de rol bij analyse en advies; soms begeleidt de adviseur ook een test, invoering en evaluatie. Een duidelijke opdracht maakt die verantwoordelijkheid zichtbaar."
+      },
+      {
+        "question": "Is Lean altijd nodig?",
+        "answer": "Nee. Sommige opdrachten vragen daar specifiek om. Bij andere zijn proceskennis, analyse en ervaring met invoering belangrijker. We bespreken welke aanpak de organisatie gebruikt."
+      }
+    ],
+    "related": [
+      "verandermanager",
+      "projectleider",
+      "manager-bedrijfsvoering"
+    ],
+    "practice": {
+      "title": "Een terugkerend knelpunt echt oplossen",
+      "text": "Aanvragen gaan door verschillende afdelingen, maar blijven steeds op hetzelfde punt liggen. De procesadviseur volgt een aantal aanvragen, spreekt de betrokken medewerkers en onderzoekt waar informatie of verantwoordelijkheid ontbreekt. Daarna wordt een aangepaste werkwijze getest. Door ook de invoering en uitkomsten te volgen, wordt duidelijk of de verbetering werkt en wat nog moet worden aangepast."
+    },
+    "difference": {
+      "title": "Procesadvies of verandermanagement?",
+      "text": "Een procesadviseur onderzoekt en verbetert de manier waarop werkzaamheden verlopen. Een verandermanager kijkt vaak breder naar de organisatie, gedrag en samenwerking die nodig zijn voor verandering. Een projectmanager organiseert een afgebakende opgave. Deze rollen kunnen elkaar ondersteunen, maar hebben een andere nadruk."
+    },
+    "selection": [
+      "Werkprocessen analyseren met gegevens én informatie van medewerkers.",
+      "Oorzaken onderscheiden van symptomen en uitvoerbare verbeteringen voorstellen.",
+      "Ervaring met testen, invoeren en volgen van een aangepaste werkwijze."
+    ]
   },
   {
-    "slug": "verandermanager", "title": "Verandermanager",
+    "slug": "verandermanager",
+    "title": "Verandermanager",
     "intro": "Een verandermanager begeleidt veranderingen in de organisatie en de manier van werken. Met aandacht voor richting, uitvoering en de mensen die ermee te maken krijgen.",
-    "definition": ["Een verandermanager helpt een organisatie van de huidige situatie naar een nieuwe manier van werken. Bijvoorbeeld na een herinrichting van afdelingen, een andere dienstverlening of een nieuwe samenwerking. De rol verbindt de reden voor verandering met wat teams dagelijks moeten doen.", "Daarbij gaat het niet alleen om communicatie. Er moeten keuzes worden gemaakt over verantwoordelijkheden, samenwerking en invoering. De verandermanager helpt leidinggevenden en medewerkers om die keuzes uit te voeren en bespreekt waar de verandering vastloopt."],
-    "tasks": ["De aanleiding, gevolgen en gewenste uitkomst van de verandering verduidelijken.", "Een aanpak en haalbare volgorde voor de invoering maken.", "Leidinggevenden en teams betrekken bij nieuwe afspraken.", "Communicatie, training en praktische begeleiding organiseren.", "Volgen wat werkt en knelpunten in de verandering bespreken."],
+    "definition": [
+      "Een verandermanager helpt een organisatie van de huidige situatie naar een nieuwe manier van werken. Bijvoorbeeld na een herinrichting van afdelingen, een andere dienstverlening of een nieuwe samenwerking. De rol verbindt de reden voor verandering met wat teams dagelijks moeten doen.",
+      "Daarbij gaat het niet alleen om communicatie. Er moeten keuzes worden gemaakt over verantwoordelijkheden, samenwerking en invoering. De verandermanager helpt leidinggevenden en medewerkers om die keuzes uit te voeren en bespreekt waar de verandering vastloopt."
+    ],
+    "tasks": [
+      "De aanleiding, gevolgen en gewenste uitkomst van de verandering verduidelijken.",
+      "Een aanpak en haalbare volgorde voor de invoering maken.",
+      "Leidinggevenden en teams betrekken bij nieuwe afspraken.",
+      "Communicatie, training en praktische begeleiding organiseren.",
+      "Volgen wat werkt en knelpunten in de verandering bespreken."
+    ],
     "environment": "Verandermanagers werken vaak tijdelijk bij organisaties die een andere inrichting of dienstverlening nodig hebben. Dat kan spelen binnen bedrijfsvoering, Facility Management of een publieke organisatie. Soms is er een aparte projectmanager; soms combineert één professional beide verantwoordelijkheden.",
     "background": "Ervaring met organisatieverandering en het begeleiden van teams is belangrijk. Een bedrijfskundige of organisatiekundige achtergrond kan passen. De professional moet niet alleen een aanpak kunnen beschrijven, maar ook lastige gesprekken voeren, keuzes helpen maken en omgaan met verschillende belangen.",
-    "employer": "Leg uit waarom de verandering nodig is en hoe ver de besluitvorming al is. Zoek je een adviseur, begeleider of tijdelijke leidinggevende? Benoem wie eigenaar is van de verandering en welke besluiten nog openstaan. Dat bepaalt de ervaring en bevoegdheden die nodig zijn.",
-    "candidate": "We bespreken welke veranderingen je hebt begeleid en hoe jouw rol was ingericht. Ook kijken we naar de organisatiecultuur, het draagvlak en de verantwoordelijkheid die je in een volgende opdracht wilt dragen.",
-    "faq": [{"question":"Verandermanager of interim manager?","answer":"Een verandermanager heeft een veranderopgave. Een interim manager neemt tijdelijk een managementrol over. Die kan óók een veranderopgave hebben; de verantwoordelijkheden maken het verschil."},{"question":"Wanneer begint veranderbegeleiding?","answer":"Bij voorkeur zodra duidelijk is dat een verandering mensen, processen of samenwerking raakt. De precieze start hangt af van de besluitvorming en de hulp die de organisatie nodig heeft."}],
-    "related": ["procesadviseur", "manager-bedrijfsvoering", "projectmanager"]
+    "employer": "Een reorganisatie, andere dienstverlening of nieuwe samenwerking vraagt om passende begeleiding. We zoeken een verandermanager met ervaring die aansluit op de opgave, organisatiecultuur en benodigde bevoegdheden.",
+    "candidate": "Niet iedere veranderopdracht past bij dezelfde professional. We bespreken jouw aanpak, eerdere veranderingen en de ruimte die je nodig hebt om een opdracht goed uit te voeren.",
+    "faq": [
+      {
+        "question": "Heeft een verandermanager altijd beslissingsbevoegdheid?",
+        "answer": "Nee. Een begeleidende of adviserende rol is anders dan tijdelijk leidinggeven. Vooraf moet duidelijk zijn wie besluiten neemt, wie eigenaar is van de verandering en welke ruimte de verandermanager krijgt."
+      },
+      {
+        "question": "Wanneer begint veranderbegeleiding?",
+        "answer": "Bij voorkeur zodra duidelijk is dat een verandering mensen, processen of samenwerking raakt. De precieze start hangt af van de besluitvorming en de hulp die de organisatie nodig heeft."
+      }
+    ],
+    "related": [
+      "procesadviseur",
+      "manager-bedrijfsvoering",
+      "projectmanager"
+    ],
+    "practice": {
+      "title": "Een nieuwe werkwijze laten landen in de organisatie",
+      "text": "Twee afdelingen gaan samen, maar houden elk hun eigen afspraken en prioriteiten. De verandermanager maakt met leidinggevenden duidelijk wat er moet veranderen en betrekt de medewerkers bij de uitwerking. Rollen, overleg en werkprocessen worden opnieuw afgestemd. Tijdens de invoering wordt gekeken waar de samenwerking nog vastloopt. Draagvlak vraagt om luisteren én duidelijkheid over besluiten, verwachtingen en de ruimte om mee te denken."
+    },
+    "difference": {
+      "title": "Verandering begeleiden of tijdelijk leidinggeven",
+      "text": "Een verandermanager kan adviseren en begeleiden, maar ook een tijdelijke leidinggevende rol hebben. Dat is niet vanzelfsprekend. Een procesadviseur richt zich vaker op concrete werkprocessen; een projectmanager op planning en resultaat van een afgebakend project. Mandaat en verantwoordelijkheden bepalen welk profiel nodig is."
+    },
+    "selection": [
+      "Ervaring met een vergelijkbare verandering en organisatieomgeving.",
+      "Leidinggevenden en medewerkers betrekken zonder onduidelijkheid over besluiten.",
+      "Een haalbare aanpak maken en volgen of de nieuwe werkwijze wordt toegepast."
+    ]
   }
 ]

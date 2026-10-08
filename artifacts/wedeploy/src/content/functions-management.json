@@ -1,14 +1,50 @@
 [
   {
-    "slug":"manager-bedrijfsvoering", "title":"Manager bedrijfsvoering",
-    "intro":"Een manager bedrijfsvoering brengt ondersteunende afdelingen en dienstverlening bij elkaar. Die organiseert mensen, middelen en processen rond wat de organisatie nodig heeft.",
-    "definition":["Een manager bedrijfsvoering geeft leiding aan de ondersteuning van een organisatie. Denk aan facilitaire diensten, huisvesting, administratie en andere ondersteunende teams. Het precieze pakket verschilt: niet iedere manager bedrijfsvoering is verantwoordelijk voor dezelfde afdelingen.","De rol vraagt overzicht over de samenhang. Een verandering in huisvesting kan ook gevolgen hebben voor budgetten, personeel en werkprocessen. De manager maakt prioriteiten duidelijk, stemt af met andere leidinggevenden en helpt teams hun dienstverlening goed te organiseren."],
-    "tasks":["Ondersteunende teams en hun dienstverlening aansturen.","Prioriteiten, budgetten en de inzet van mensen afstemmen.","Samenwerking en overdracht tussen afdelingen verbeteren.","Management informeren over prestaties, knelpunten en keuzes.","Veranderingen in de organisatie van de ondersteuning begeleiden."],
-    "environment":"Managers bedrijfsvoering werken bij zorg, onderwijs, overheden en andere organisaties met meerdere ondersteunende diensten. Een vaste rol vraagt continuïteit en teamontwikkeling. Een tijdelijke managementopdracht kan daarnaast gericht zijn op vervanging, herinrichting of verbetering van de dienstverlening.",
-    "background":"Een hbo- of wo-achtergrond in bedrijfskunde, Facility Management of een relevant vakgebied kan passen. Belangrijk is ervaring met leidinggeven aan verschillende disciplines. De manager moet niet overal zelf de specialist zijn, maar wel keuzes kunnen maken en verantwoordelijkheden duidelijk organiseren.",
-    "employer":"Benoem welke afdelingen onder de functie vallen en wat er moet veranderen of worden voortgezet. Hoe groot zijn de teams en welke beslisruimte is er? Een vervangingsopdracht vraagt een ander profiel dan het samenbrengen van diensten na een reorganisatie.",
-    "candidate":"We bespreken welke teams je hebt geleid en hoe jouw rol was verdeeld tussen dagelijkse leiding en verandering. Ook de organisatiecultuur, maatschappelijke context en ruimte om te verbeteren zijn belangrijk voor een passende volgende stap.",
-    "faq":[{"question":"Is bedrijfsvoering hetzelfde als Facility Management?","answer":"Niet altijd. Facility Management kan onderdeel zijn van bedrijfsvoering, naast bijvoorbeeld administratie, HR of financiën. Welke afdelingen onder de rol vallen moet duidelijk zijn."},{"question":"Kan deze rol een interim opdracht zijn?","answer":"Ja, bijvoorbeeld bij vervanging of een verandering in de organisatie. We bespreken het doel, de bevoegdheden, de periode en de passende contractvorm voordat een zoektocht start."}],
-    "related":["facilitair-manager","verandermanager","procesadviseur"]
+    "slug": "manager-bedrijfsvoering",
+    "title": "Manager bedrijfsvoering",
+    "intro": "Een manager bedrijfsvoering brengt ondersteunende afdelingen en dienstverlening bij elkaar. De functie verbindt mensen, middelen en werkprocessen met de doelen van de organisatie.",
+    "definition": [
+      "Een manager bedrijfsvoering geeft leiding aan de ondersteuning van een organisatie. Denk aan facilitaire diensten, huisvesting, administratie en andere ondersteunende teams. Het precieze pakket verschilt: niet iedere manager bedrijfsvoering is verantwoordelijk voor dezelfde afdelingen.",
+      "De rol vraagt overzicht over de samenhang. Een verandering in huisvesting kan ook gevolgen hebben voor budgetten, personeel en werkprocessen. De manager maakt prioriteiten duidelijk, stemt af met andere leidinggevenden en helpt teams hun dienstverlening goed te organiseren."
+    ],
+    "tasks": [
+      "Ondersteunende teams en hun dienstverlening aansturen.",
+      "Prioriteiten, budgetten en de inzet van mensen afstemmen.",
+      "Samenwerking en overdracht tussen afdelingen verbeteren.",
+      "Management informeren over prestaties, knelpunten en keuzes.",
+      "Veranderingen in de organisatie van de ondersteuning begeleiden."
+    ],
+    "environment": "Managers bedrijfsvoering werken bij zorg, onderwijs, overheden en andere organisaties met meerdere ondersteunende diensten. Een vaste rol vraagt continuïteit en teamontwikkeling. Een tijdelijke managementopdracht kan daarnaast gericht zijn op vervanging, herinrichting of verbetering van de dienstverlening.",
+    "background": "Een hbo- of wo-achtergrond in bedrijfskunde, Facility Management of een relevant vakgebied kan passen. Belangrijk is ervaring met leidinggeven aan verschillende disciplines. De manager moet niet overal zelf de specialist zijn, maar wel keuzes kunnen maken en verantwoordelijkheden duidelijk organiseren.",
+    "employer": "Zoek je een manager die ondersteunende teams verbindt en richting geeft? We zoeken iemand met relevante leidinggevende ervaring en een aanpak die past bij jouw organisatie en opgave.",
+    "candidate": "Een brede leidinggevende rol vraagt een goede aansluiting op de organisatie. We bespreken jouw ervaring, het dienstenpakket en de balans tussen dagelijkse leiding en verandering die je zoekt.",
+    "faq": [
+      {
+        "question": "Moet de manager alle disciplines zelf beheersen?",
+        "answer": "De manager moet de samenhang, kosten en risico’s kunnen beoordelen. Voor specialistische inhoud werkt die samen met deskundigen. Ervaring met leidinggeven aan de betreffende teams blijft belangrijk."
+      },
+      {
+        "question": "Kan deze rol een interim opdracht zijn?",
+        "answer": "Ja, bijvoorbeeld bij vervanging of een verandering in de organisatie. We bespreken het doel, de bevoegdheden, de periode en de passende contractvorm voordat een zoektocht start."
+      }
+    ],
+    "related": [
+      "facilitair-manager",
+      "verandermanager",
+      "procesadviseur"
+    ],
+    "practice": {
+      "title": "Ondersteunende afdelingen als geheel laten functioneren",
+      "text": "Een organisatie wil betere samenwerking tussen huisvesting, facilitaire diensten en administratie. De manager bedrijfsvoering maakt verantwoordelijkheden en prioriteiten duidelijk en stemt de inzet van mensen en middelen af. Een verandering bij de ene afdeling kan gevolgen hebben voor de andere. Daarom moet de manager niet alleen de eigen teams aansturen, maar ook het gesprek voeren met de directie en de afdelingen die van de ondersteuning gebruikmaken."
+    },
+    "difference": {
+      "title": "Een brede managementrol met een wisselend dienstenpakket",
+      "text": "Facility management kan onderdeel zijn van bedrijfsvoering, naast bijvoorbeeld financiën, HR en administratie. Een manager bedrijfsvoering is niet automatisch verantwoordelijk voor al deze disciplines. Een interim manager kan tijdelijk dezelfde leidinggevende rol vervullen; een verandermanager heeft niet altijd die lijnverantwoordelijkheid."
+    },
+    "selection": [
+      "Ervaring met leidinggeven aan de disciplines die onder de functie vallen.",
+      "Budgetten, prioriteiten en samenwerking op organisatieniveau kunnen afstemmen.",
+      "Een passende aanpak voor continuïteit, teamontwikkeling of een veranderopgave."
+    ]
   }
 ]

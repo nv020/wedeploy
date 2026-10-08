@@ -16,12 +16,12 @@
     ],
     "environment": "Technisch beheerders werken bij vastgoedeigenaren, gebruikersorganisaties en technische dienstverleners. De functie kan één gebouw of meerdere locaties omvatten. Er is vaak contact met gebruikers, een vastgoed- of facility manager en verschillende onderhoudspartijen.",
     "background": "Een bouwkundige of installatietechnische mbo- of hbo-achtergrond kan passen. Relevante gebouw- en onderhoudservaring is belangrijk. Je moet werkzaamheden kunnen beoordelen, risico’s herkennen en afspraken helder vastleggen. Specifieke bevoegdheden hangen af van de installaties en taken.",
-    "employer": "Benoem welke gebouwen en technische disciplines onder de rol vallen. Moet iemand vooral onderhoud organiseren of ook zelf inspecteren en storingen beoordelen? Ook de staat van het onderhoud, leveranciers en beschikbare gebouwinformatie bepalen het profiel.",
-    "candidate": "Vertel welke installaties en gebouwen je kent en hoe jouw rol in onderhoud was ingericht. We bespreken de combinatie van techniek, leveranciersregie en locatiebezoek die je in een volgende functie zoekt.",
+    "employer": "Heb je versterking nodig voor onderhoud en technisch beheer? We zoeken iemand met passende gebouwkennis en ervaring met de combinatie van inspecties, planning en leveranciersregie die jouw organisatie vraagt.",
+    "candidate": "Werk je graag met gebouwen en techniek, met aandacht voor beheer en onderhoud? We bespreken jouw disciplines, verantwoordelijkheden en de verhouding tussen locatiebezoek en regie die bij je past.",
     "faq": [
       {
-        "question": "Beheerder of monteur?",
-        "answer": "Een technisch beheerder organiseert en beoordeelt vaak het onderhoud. Een monteur voert technische werkzaamheden uit. In sommige functies is er overlap, maar de verantwoordelijkheden moeten duidelijk zijn."
+        "question": "Wat is een MJOP?",
+        "answer": "Een meerjarenonderhoudsplan brengt verwachte onderhoudswerkzaamheden en kosten voor meerdere jaren in beeld. Het ondersteunt de planning en begroting. Inspecties en actuele gebouwinformatie zijn nodig om het plan bruikbaar te houden."
       },
       {
         "question": "Gaat dit ook over ICT-beheer?",
@@ -32,6 +32,19 @@
       "technisch-coordinator",
       "vastgoedbeheerder",
       "installatieverantwoordelijke"
+    ],
+    "practice": {
+      "title": "Onderhoud plannen in plaats van alleen storingen oplossen",
+      "text": "In een gebouw keren storingen steeds terug, maar informatie over eerder onderhoud is verspreid. De technisch beheerder verzamelt inspecties, onderhoudsgegevens en meldingen en bespreekt de toestand met specialisten. Vervolgens worden prioriteiten en kosten inzichtelijk gemaakt. Niet alles hoeft tegelijk vervangen te worden: een meerjarenonderhoudsplan helpt om werkzaamheden te plannen en keuzes uit te leggen aan de eigenaar of gebruikers."
+    },
+    "difference": {
+      "title": "Technisch beheer is niet hetzelfde als onderhoud uitvoeren",
+      "text": "Een technisch beheerder organiseert en beoordeelt onderhoud. Een monteur voert technische werkzaamheden uit. Een technisch coördinator stemt de dagelijkse uitvoering af. Bouwkundige en installatietechnische kennis kunnen beide nodig zijn, maar niet iedere beheerder is op alle disciplines specialist."
+    },
+    "selection": [
+      "Ervaring met de gebouwen en technische disciplines in de portefeuille.",
+      "Onderhoudsinformatie beoordelen en prioriteiten kunnen onderbouwen.",
+      "Regie voeren op leveranciers, inspecties en geplande werkzaamheden."
     ]
   },
   {
@@ -51,12 +64,12 @@
     ],
     "environment": "Technisch coördinatoren werken bij onderhoudsorganisaties, vastgoedeigenaren en facilitaire afdelingen. De dagelijkse contacten zijn vaak met monteurs, leveranciers en locatieverantwoordelijken. Bij geplande onderbrekingen is goede afstemming met het gebruik van het gebouw belangrijk.",
     "background": "Een technische mbo- of hbo-achtergrond en ervaring met onderhoud of werkvoorbereiding kunnen aansluiten. Je moet technische informatie begrijpen en tegelijkertijd goed kunnen plannen. De gevraagde discipline, bijvoorbeeld elektrotechniek of werktuigbouwkundige installaties, hangt af van het werk.",
-    "employer": "Maak duidelijk welke werkzaamheden iemand coördineert en of daar inhoudelijke beslissingen bij horen. Benoem het aantal locaties, betrokken partijen en de verbinding met werkvoorbereiding en beheer. Zo vinden we iemand die past bij de dagelijkse organisatie.",
-    "candidate": "We bespreken welke technische werkzaamheden je hebt georganiseerd en hoeveel zelfstandigheid je zoekt. Wil je vooral plannen, vaker op locatie zijn of doorgroeien naar beheer of projectleiding? Dat nemen we mee in jouw profiel.",
+    "employer": "Onderhoud en aanpassingen vragen om goede technische afstemming. We zoeken een coördinator die past bij jouw installaties, locaties en de zelfstandigheid die nodig is in de uitvoering.",
+    "candidate": "Je brengt techniek, planning en mensen bij elkaar. We bespreken welke werkzaamheden je wilt organiseren en of je verder wilt in coördinatie, werkvoorbereiding, beheer of projectleiding.",
     "faq": [
       {
-        "question": "Is dit hetzelfde als werkvoorbereider?",
-        "answer": "Er kan overlap zijn. Werkvoorbereiding richt zich vaak op wat nodig is om een klus uit te voeren. Coördinatie omvat daarnaast afstemming, planning en het volgen van de uitvoering."
+        "question": "Werk je op één locatie of meerdere?",
+        "answer": "Beide zijn mogelijk. Op één grote locatie ligt de nadruk vaak op dagelijkse afstemming. Bij meerdere gebouwen zijn planning, reizen en het organiseren van verschillende uitvoerders belangrijk. Dat hoort duidelijk in de vacature te staan."
       },
       {
         "question": "Moet ik zelf storingen oplossen?",
@@ -67,6 +80,19 @@
       "technisch-beheerder",
       "monteur-elektrotechniek",
       "projectleider"
+    ],
+    "practice": {
+      "title": "Technische werkzaamheden organiseren zonder de operatie te verstoren",
+      "text": "In een gebouw moet onderhoud worden uitgevoerd terwijl medewerkers en bezoekers aanwezig zijn. De technisch coördinator stemt toegang, planning, uitvoerders en communicatie af. Als werkzaamheden uitlopen, worden betrokkenen geïnformeerd en vervolgstappen geregeld. Ook na de uitvoering is opvolging nodig: wat is afgerond, welke punten staan open en welke informatie moet worden overgedragen aan beheer?"
+    },
+    "difference": {
+      "title": "De verbinding tussen beheer en uitvoering",
+      "text": "Een technisch coördinator organiseert de uitvoering. Een technisch beheerder kijkt vaker naar de toestand van gebouwen en de onderhoudsaanpak op langere termijn. Een werkvoorbereider maakt werkzaamheden uitvoeringsklaar. In sommige functies worden deze taken gecombineerd, waardoor de vereiste technische kennis verschilt."
+    },
+    "selection": [
+      "Technische werkzaamheden plannen en afstemmen met uitvoerende partijen.",
+      "De gevolgen voor gebruikers en de dagelijkse operatie kunnen inschatten.",
+      "Werkafspraken, voortgang en overdracht zorgvuldig bewaken."
     ]
   },
   {
@@ -86,8 +112,8 @@
     ],
     "environment": "Installatieverantwoordelijken werken bij organisaties met elektrische installaties en bij technische dienstverleners. De complexiteit kan uiteenlopen van gebouwen tot grotere laag- of middenspanningsinstallaties. Ervaring moet aansluiten bij het specifieke installatiegebied en de organisatie van het werk.",
     "background": "Elektrotechnische kennis, ervaring en actuele veiligheidskennis zijn belangrijk. Een opleiding of cursus alleen maakt iemand niet automatisch geschikt of aangewezen als IV. Ook de installatie, werkomstandigheden en daadwerkelijke bevoegdheden tellen mee. De verantwoordelijke organisatie moet die geschiktheid beoordelen en afspraken vastleggen.",
-    "employer": "Omschrijf het spanningsniveau, de installaties en de verantwoordelijkheden die moeten worden ingevuld. Zoek je tijdelijke versterking, advies of een formeel aangewezen IV? Maak duidelijk hoe de aanwijzing, bevoegdheden en samenwerking binnen jouw organisatie zijn geregeld.",
-    "candidate": "We bespreken jouw installatie-ervaring, eerdere aanwijzingen en het gebied waarin je zelfstandig verantwoordelijkheid kunt dragen. Ook jouw beschikbaarheid en de gewenste verhouding tussen beheer, advies en projecten horen bij de intake.",
+    "employer": "Een installatieverantwoordelijke nodig? We zoeken een professional met relevante installatie-ervaring. De aanwijzing, bevoegdheden en afbakening van de verantwoordelijkheid moeten binnen de veiligheidsorganisatie zorgvuldig worden geregeld.",
+    "candidate": "We bespreken jouw ervaring, eerdere aanwijzingen en het type installaties waarvoor je deskundig bent. Ook de verantwoordelijkheden en omstandigheden van een mogelijke opdracht moeten goed aansluiten.",
     "faq": [
       {
         "question": "Maakt een NEN-cursus iemand automatisch IV?",
@@ -116,6 +142,19 @@
         "label": "NEN: hoogspanningsinstallaties en NEN 3840",
         "href": "https://www.nen.nl/elektrotechniek/werkvoorschriften/hoogspanningsinstallaties"
       }
+    ],
+    "practice": {
+      "title": "Elektrische veiligheid organiseren binnen duidelijke verantwoordelijkheden",
+      "text": "Een organisatie breidt een elektrische installatie uit en werkt met meerdere onderhoudspartijen. De installatieverantwoordelijke beoordeelt binnen de eigen verantwoordelijkheid wat de wijziging betekent voor het beheer, de risico’s en de afspraken over gebruik en onderhoud. Actuele informatie over de installatie en heldere bevoegdheden zijn daarbij belangrijk. Het gaat om een verantwoordelijke rol binnen de veiligheidsorganisatie, niet alleen om een functiebenaming op een cv."
+    },
+    "difference": {
+      "title": "Installatieverantwoordelijke en werkverantwoordelijke",
+      "text": "De installatieverantwoordelijke richt zich op de veilige staat en het beheer van de installatie. De werkverantwoordelijke richt zich op de veilige uitvoering van werkzaamheden. Rollen kunnen onder voorwaarden worden gecombineerd, maar vereisen elk passende bevoegdheden en deskundigheid. Een opleiding alleen betekent niet dat iemand automatisch voor een installatie is aangewezen."
+    },
+    "selection": [
+      "Deskundigheid en ervaring passend bij de installatie en het spanningsniveau.",
+      "Een duidelijke aanwijzing, afbakening en voldoende bevoegdheden voor de rol.",
+      "Ervaring met de samenwerking tussen beheer, werkverantwoordelijken en uitvoerende partijen."
     ]
   },
   {
@@ -135,8 +174,8 @@
     ],
     "environment": "Deze monteurs werken bij onderhoudsbedrijven, facilitaire organisaties en werkgevers met eigen gebouwen. Het werk is grotendeels op locatie. Bereikbaarheidsdiensten, meerdere werklocaties of bijzondere werktijden kunnen voorkomen, maar zijn geen vaste eigenschap van iedere functie.",
     "background": "Werkgevers vragen vaak een relevante mbo-opleiding elektrotechniek en passende praktijkervaring. Veiligheidskennis en bevoegdheden moeten aansluiten bij het werk. Een cursus alleen bepaalt niet welke werkzaamheden je zelfstandig mag uitvoeren. De organisatie moet de taken en aanwijzing passend regelen.",
-    "employer": "Benoem welke installaties de monteur onderhoudt en hoeveel zelfstandig storingsonderzoek nodig is. Maak werklocaties, diensten en beschikbare begeleiding duidelijk. Bij specialistische systemen bespreken we de vereiste ervaring apart, zodat we geen te algemeen monteursprofiel gebruiken.",
-    "candidate": "Vertel welke installaties je onderhoudt en welke storingen je zelfstandig oplost. We bespreken ook locaties, diensten, opleiding en de stap die je zoekt: meer techniek, een andere omgeving of meer coördinatie.",
+    "employer": "Zoek je een monteur voor gebouwgebonden elektrotechniek? We letten op praktische installatie-ervaring, zelfstandigheid en de afspraken waaronder het werk veilig moet worden uitgevoerd.",
+    "candidate": "Meer onderhoud, afwisselende locaties of juist een vaste werkomgeving? We bespreken jouw technische ervaring, opleiding en wensen voor werktijden en ontwikkeling.",
     "faq": [
       {
         "question": "Moet ik storingsdiensten draaien?",
@@ -157,6 +196,19 @@
         "label": "NEN: veilig werken en aanwijzing bij laagspanning",
         "href": "https://www.nen.nl/elektrotechniek/werkvoorschriften/laagspanninginstallaties"
       }
+    ],
+    "practice": {
+      "title": "Storingen onderzoeken en het werk zorgvuldig afronden",
+      "text": "Een storing onderbreekt het gebruik van een deel van een gebouw. De monteur onderzoekt het probleem volgens de geldende werk- en veiligheidsafspraken en stemt de aanpak af wanneer dat nodig is. Na herstel wordt het uitgevoerde werk vastgelegd en worden eventuele vervolgpunten doorgegeven. Naast storingen kan de werkdag bestaan uit gepland onderhoud of het aanpassen van elektrische voorzieningen."
+    },
+    "difference": {
+      "title": "Gebouwgebonden elektrotechniek heeft een eigen werkterrein",
+      "text": "Dit werk draait om elektrische voorzieningen in gebouwen. Industriële productie-installaties, railinfrastructuur of specialistische hoogspanningssystemen vragen andere ervaring. Een technisch coördinator organiseert de werkzaamheden; een installatieverantwoordelijke heeft een andere verantwoordelijkheid voor de installatie en de veiligheidsorganisatie."
+    },
+    "selection": [
+      "Relevante elektrotechnische opleiding en ervaring met de betreffende installaties.",
+      "Storingen kunnen onderzoeken op het gevraagde niveau van zelfstandigheid.",
+      "Werken binnen passende aanwijzingen, veiligheidsafspraken en begeleiding."
     ]
   }
 ]
