@@ -11,7 +11,7 @@ export function KnowledgeIndex() {
         <img src={article.image.src} alt="" width={1100} height={800} loading="lazy" decoding="async" />
         <div><p className="knowledge-audience">{article.audience}</p><h3>{article.title}</h3><p>{article.description}</p><a className="action-arrow" href={`/kennisbank/${article.slug}`}>Lees de uitleg<span className="sr-only">: {article.title}</span></a></div>
       </article>)}</div>
-    </Section><ClosingCTA title="Wat wil je bespreken?" text="Een vraag over jouw volgende stap of over versterking van jouw team? We denken graag met je mee." />
+    </Section><section className="function-related"><div className="container mx-auto px-4 md:px-6"><div className="function-related-heading"><h2>Meer over het werk zelf</h2><a className="action-arrow" href="/functies">Bekijk alle functies</a></div><p>Wat doet een facilitair manager, PMO’er of projectmanager? Lees over de werkzaamheden en de ervaring die erbij past.</p><ul><li><a className="action-arrow" href="/functies/facilitair-manager">Facilitair manager</a></li><li><a className="action-arrow" href="/functies/pmo">PMO’er</a></li><li><a className="action-arrow" href="/functies/projectmanager">Projectmanager</a></li></ul></div></section><ClosingCTA title="Wat wil je bespreken?" text="Een vraag over jouw volgende stap of over versterking van jouw team? We denken graag met je mee." />
   </PageLayout></div>;
 }
 

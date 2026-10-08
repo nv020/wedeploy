@@ -10,6 +10,17 @@ const navLinks = [
   { label: "Kennisbank", href: "/kennisbank" },
 ];
 
+const functionLinks = [
+  { title: "Facilitair manager", href: "/functies/facilitair-manager" },
+  { title: "Projectmanager", href: "/functies/projectmanager" },
+  { title: "PMO’er", href: "/functies/pmo" },
+  { title: "Vastgoedbeheerder", href: "/functies/vastgoedbeheerder" },
+  { title: "Manager bedrijfsvoering", href: "/functies/manager-bedrijfsvoering" },
+];
+function FunctionLinks() {
+  return <><ul className="footer-function-links">{functionLinks.map(link => <li key={link.href}><a href={link.href}>{link.title}</a></li>)}</ul><a className="action-arrow footer-all-functions" href="/functies">Bekijk alle functies</a></>;
+}
+
 export function Footer() {
   return (
     <footer className="bg-primary text-white relative overflow-hidden pt-10 md:pt-20 pb-8">
@@ -25,15 +36,12 @@ export function Footer() {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
 
-        {/* Top: wordmark + contact */}
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6 pb-6 border-b border-white/10">
+        {/* Shared three-column footer; function links collapse on mobile. */}
+        <div className="footer-top mb-6 pb-6 border-b border-white/10">
           <div>
             <BrandLogo className="mb-4" />
             <p className="text-sm font-bold leading-relaxed text-white max-w-xs mb-2">
               De juiste professionals. De beste matches.
-            </p>
-            <p className="text-[13.5px] leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.70)" }}>
-              We kijken verder dan het cv. Voor vaste functies en tijdelijke opdrachten.
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-5">
               <a href="/contact" className="action-arrow inline-flex items-center justify-center min-h-11 px-4 rounded-full bg-accent text-white text-[13px] font-semibold hover:bg-accent/90">Neem contact op</a>
@@ -46,7 +54,12 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-1.5 md:text-left">
+          <div className="footer-functions">
+            <nav className="footer-functions-desktop" aria-label="Functies in de footer"><h2>Functies uitgelegd</h2><FunctionLinks /></nav>
+            <details className="footer-functions-mobile"><summary>Functies uitgelegd</summary><nav aria-label="Functies in de footer"><FunctionLinks /></nav></details>
+          </div>
+          <div className="footer-contact flex flex-col gap-1.5 md:text-left">
+            <h2>Contact</h2>
             <a
               href="mailto:info@wedeploy.nl"
               className="text-[14px] font-semibold text-white/75 hover:text-white transition-colors duration-200"
@@ -69,7 +82,7 @@ export function Footer() {
         <details className="footer-landings border-b border-white/10 pb-5 mb-5">
           <summary className="cursor-pointer text-xs font-semibold text-white/75">Vakgebieden & inzet</summary>
           <nav aria-label="Vakgebieden en inzet" className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 text-xs text-white/70">
-            <a href="/projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/technisch-beheer">Gebouwgebonden techniek</a><a href="/werving-selectie">Werving & selectie</a><a href="/detachering">Detachering & detavast</a><a href="/interim-zzp">Interim & zzp-bemiddeling</a><a href="/zzp-opdrachten">Zzp-opdrachten</a>
+            <a href="/functies">Functies uitgelegd</a><a href="/projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/technisch-beheer">Gebouwgebonden techniek</a><a href="/werving-selectie">Werving & selectie</a><a href="/detachering">Detachering & detavast</a><a href="/interim-zzp">Interim & zzp-bemiddeling</a><a href="/zzp-opdrachten">Zzp-opdrachten</a>
           </nav>
         </details>
         {/* Bottom: nav + legal */}

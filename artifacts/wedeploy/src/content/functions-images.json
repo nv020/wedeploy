@@ -1,0 +1,191 @@
+[
+  {
+    "slug": "projectmanager",
+    "src": "/images/functie-projectmanager.webp",
+    "alt": "Team bespreekt een project aan een vergadertafel",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "projectleider",
+    "src": "/images/functie-projectleider.webp",
+    "alt": "Presentatie en projectoverleg in een lichte vergaderruimte",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "projectcoordinator",
+    "src": "/images/functie-projectcoordinator.webp",
+    "alt": "Collega’s stemmen werkzaamheden af aan een gezamenlijke werktafel",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "pmo",
+    "src": "/images/functie-pmo.webp",
+    "alt": "Laptop met een overzicht van cijfers en grafieken",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "projectsecretaris",
+    "src": "/images/functie-projectsecretaris.webp",
+    "alt": "Medewerker maakt aantekeningen naast een laptop",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "procesadviseur",
+    "src": "/images/functie-procesadviseur.webp",
+    "alt": "Team brengt een proces in kaart met notities op een wand",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "verandermanager",
+    "src": "/images/functie-verandermanager.webp",
+    "alt": "Medewerker licht een aanpak toe tijdens een teamoverleg",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "facilitair-manager",
+    "src": "/images/functie-facilitair-manager.webp",
+    "alt": "Medewerkers aan het werk in een lichte kantooromgeving",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "facilitair-coordinator",
+    "src": "/images/functie-facilitair-coordinator.webp",
+    "alt": "Collega’s overleggen in een gezamenlijke kantoorruimte",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "workplace-manager",
+    "src": "/images/functie-workplace-manager.webp",
+    "alt": "Vergaderruimte met daglicht, stoelen en hanglampen",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "hospitality-manager",
+    "src": "/images/functie-hospitality-manager.webp",
+    "alt": "Gastvrije serviceomgeving met zitplaatsen en een bar",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "hospitality-medewerker",
+    "src": "/images/functie-hospitality-medewerker.webp",
+    "alt": "Bezoeker gebruikt een digitale ontvangstzuil bij een balie",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "contractmanager",
+    "src": "/images/functie-contractmanager.webp",
+    "alt": "Vergadertafel in een rustige kantooromgeving",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "vastgoedmanager",
+    "src": "/images/functie-vastgoedmanager.webp",
+    "alt": "Moderne glazen kantoorgebouwen",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "vastgoedbeheerder",
+    "src": "/images/functie-vastgoedbeheerder.webp",
+    "alt": "Gevels van zakelijke kantoorgebouwen",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "assetmanager-vastgoed",
+    "src": "/images/functie-assetmanager-vastgoed.webp",
+    "alt": "Moderne gebouwen met gebogen gevels",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "huisvestingsmanager",
+    "src": "/images/functie-huisvestingsmanager.webp",
+    "alt": "Lichte kantoorverdieping met glazen scheidingswanden",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "technisch-beheerder",
+    "src": "/images/functie-technisch-beheerder.webp",
+    "alt": "Schakelkast met bekabeling en componenten voor gebouwautomatisering",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "technisch-coordinator",
+    "src": "/images/functie-technisch-coordinator.webp",
+    "alt": "Medewerker werkt aan technische tekeningen op een werktafel",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "installatieverantwoordelijke",
+    "src": "/images/functie-installatieverantwoordelijke.webp",
+    "alt": "Moderne elektrische verdeelkast met automaten en bekabeling",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "monteur-elektrotechniek",
+    "src": "/images/functie-monteur-elektrotechniek.webp",
+    "alt": "Monteur werkt met geïsoleerd gereedschap aan een elektrische schakelkast",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "managementassistent",
+    "src": "/images/functie-managementassistent.webp",
+    "alt": "Medewerker maakt aantekeningen tijdens een bijeenkomst",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "office-manager",
+    "src": "/images/functie-office-manager.webp",
+    "alt": "Lichte kantoorwerkplek met beeldscherm, planten en daglicht",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "administratief-medewerker",
+    "src": "/images/functie-administratief-medewerker.webp",
+    "alt": "Medewerker verwerkt informatie op een laptop",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "financieel-medewerker",
+    "src": "/images/functie-financieel-medewerker.webp",
+    "alt": "Rekenmachine en pen op een rustige werktafel",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "manager-bedrijfsvoering",
+    "src": "/images/functie-manager-bedrijfsvoering.webp",
+    "alt": "Collega’s bespreken werkzaamheden aan een tafel",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "slug": "overzicht",
+    "src": "/images/functie-overzicht.webp",
+    "alt": "Collega’s bespreken werkzaamheden aan een tafel met laptops",
+    "width": 1100,
+    "height": 800
+  }
+]

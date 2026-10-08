@@ -8,3 +8,5 @@ export { publicVacancies } from "./data/opportunities";
 export { faqItems } from "./data/faq";
 
 export { knowledgeArticles } from "./data/knowledge";
+
+export { functionPages } from "./data/functions";
