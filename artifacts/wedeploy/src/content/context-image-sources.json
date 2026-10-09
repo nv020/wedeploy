@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-09",
+  "method": "Built-in OpenAI image generation",
+  "usage": "Illustrative editorial website imagery; does not depict actual Wedeploy premises, staff or clients.",
+  "sharedPrompt": "Use case: photorealistic-natural. Asset type: one individual website editorial hero photograph, landscape 4:3. Create a single realistic photograph, NOT a collage. [scene] Style: restrained contemporary Dutch business editorial photography, natural daylight, neutral warm grey and subtle navy palette, realistic diverse adults, comfortable negative space, uncomplicated composition, subjects near center so mobile crops retain them. Avoid artificial shiny skin, theatrical smiles, oversaturated colors, luxury, icons, overlays, text, letters, logos and watermarks. This is an illustrative website photo, not an actual company or identifiable real person.",
+  "images": [
+    {
+      "slug": "over-ons",
+      "path": "artifacts/wedeploy/public/images/context-over-ons-v2.webp",
+      "scene": "A quiet small contemporary recruitment consultancy office in Amsterdam, empty, two neatly arranged desks, a small round meeting table, daylight, warm wood and muted navy details, realistic not luxurious. No people.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "technisch-beheer",
+      "path": "artifacts/wedeploy/public/images/context-technisch-beheer-v2.webp",
+      "scene": "A clean contemporary commercial building plant room, modern air handling unit, neatly organized ventilation ducts and building-services pipework; one facility technician in a navy work shirt reviews readings on a tablet, equipment intact with guards closed. Calm technically plausible setting, no construction rubble, no rusty old installation.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "verandermanager",
+      "path": "artifacts/wedeploy/public/images/context-verandermanager-v2.webp",
+      "scene": "An experienced female executive in her early 50s leading a strategic change discussion with three department heads in a refined modern office meeting room. Candid, attentive and serious, naturally gesturing toward a simple planning board with only abstract unlabeled rectangles. No sticky-note startup workshop.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "facilitair-manager",
+      "path": "artifacts/wedeploy/public/images/context-facilitair-manager-v2.webp",
+      "scene": "An experienced male facilities director around 50 in a navy blazer and open collar reviewing a site-service plan with a female department manager around 45 at a meeting table, glazed modern corporate office and workspaces visible behind them. Leadership and service strategy, no maintenance tools, no generic laptop crowd.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "workplace-manager",
+      "path": "artifacts/wedeploy/public/images/context-workplace-manager-v2.webp",
+      "scene": "A workplace operations manager around 40 in smart casual navy clothing walks through a modern occupied office with a colleague holding a tablet, discussing the meeting-room and shared-workspace setup. Balanced focus on people and functioning workplace, not an empty room or HR interview.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "hospitality-medewerker",
+      "path": "artifacts/wedeploy/public/images/context-hospitality-medewerker-v2.webp",
+      "scene": "A professional receptionist at a clean contemporary corporate reception desk welcoming a visitor, discretely pointing to a visitor badge while exchanging a natural greeting. Warm and competent, minimal office lobby, no hotel branding, no medical clinic, no masks.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "contractmanager",
+      "path": "artifacts/wedeploy/public/images/context-contractmanager-v2.webp",
+      "scene": "Two experienced procurement and contract-management professionals reviewing a supplier agreement and a simple performance report at a calm modern meeting table. Focused negotiation and document review, pen, neatly ordered documents, no handshake or pretend signing celebration, no legible document text.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "hospitality-manager",
+      "path": "artifacts/wedeploy/public/images/context-hospitality-manager-v2.webp",
+      "scene": "An experienced corporate hospitality manager around 45 in a navy blazer briefing a reception team lead at a contemporary office lobby reception desk before the workday. Calm professional service leadership, meeting rooms and a modest visitor lounge in background. Not a hotel, restaurant or bar.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "facilitair-coordinator",
+      "path": "artifacts/wedeploy/public/images/context-facilitair-coordinator-v2.webp",
+      "scene": "A facilities coordinator in smart casual attire reviews a daily service schedule on a tablet with a building-services technician in navy workwear and a soft-services supervisor in neat work attire, in a clean modern office service area. Subtle visible ventilation and a neatly parked compact cleaning trolley provide hard and soft services context. Natural restrained composition, no construction site.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "office-manager",
+      "path": "artifacts/wedeploy/public/images/context-office-manager-v2.webp",
+      "scene": "An office manager around 40 organizes office administration at a clean modern desk, reviewing a folder of documents beside a laptop, calendar and neatly organized files. Backoffice coordination and attentive practical work, wider view with daylight, no receptionist counter, no empty decorative desk.",
+      "width": 1100,
+      "height": 800
+    },
+    {
+      "slug": "manager-bedrijfsvoering",
+      "path": "artifacts/wedeploy/public/images/context-manager-bedrijfsvoering-v2.webp",
+      "scene": "An experienced director of business operations around 50 leads an attentive operational review with three heads of supporting departments around 40 to 55 in a modern modest meeting room, reviewing a compact report and planning. Calm candid leadership, broad organisational responsibility, no motivational pose, no generic young startup team.",
+      "width": 1100,
+      "height": 800
+    }
+  ]
+}

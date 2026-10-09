@@ -43,50 +43,50 @@
   },
   {
     "slug": "verandermanager",
-    "src": "/images/functie-verandermanager.webp",
-    "alt": "Medewerker licht een aanpak toe tijdens een teamoverleg",
+    "src": "/images/context-verandermanager-v2.webp",
+    "alt": "Een ervaren manager leidt een overleg met afdelingshoofden",
     "width": 1100,
     "height": 800
   },
   {
     "slug": "facilitair-manager",
-    "src": "/images/functie-facilitair-manager.webp",
-    "alt": "Medewerkers aan het werk in een lichte kantooromgeving",
+    "src": "/images/context-facilitair-manager-v2.webp",
+    "alt": "Twee managers bespreken een plan voor facilitaire dienstverlening",
     "width": 1100,
     "height": 800
   },
   {
     "slug": "facilitair-coordinator",
-    "src": "/images/functie-facilitair-coordinator.webp",
-    "alt": "Collega’s overleggen in een gezamenlijke kantoorruimte",
+    "src": "/images/context-facilitair-coordinator-v2.webp",
+    "alt": "Een coördinator bespreekt de planning met technische en facilitaire medewerkers",
     "width": 1100,
     "height": 800
   },
   {
     "slug": "workplace-manager",
-    "src": "/images/functie-workplace-manager.webp",
-    "alt": "Vergaderruimte met stoelen, hanglampen en grote ramen",
+    "src": "/images/context-workplace-manager-v2.webp",
+    "alt": "Twee collega’s bekijken met een tablet de inrichting van een kantoor",
     "width": 1100,
     "height": 800
   },
   {
     "slug": "hospitality-manager",
-    "src": "/images/functie-hospitality-manager.webp",
-    "alt": "Gastvrije serviceomgeving met zitplaatsen en een bar",
+    "src": "/images/context-hospitality-manager-v2.webp",
+    "alt": "Een manager overlegt met een medewerker bij een kantoorontvangst",
     "width": 1100,
     "height": 800
   },
   {
     "slug": "hospitality-medewerker",
-    "src": "/images/functie-hospitality-medewerker.webp",
-    "alt": "Een bezoeker gebruikt een digitaal scherm bij de ontvangst",
+    "src": "/images/context-hospitality-medewerker-v2.webp",
+    "alt": "Een receptioniste verwelkomt een bezoeker bij een kantoorbalie",
     "width": 1100,
     "height": 800
   },
   {
     "slug": "contractmanager",
-    "src": "/images/functie-contractmanager.webp",
-    "alt": "Vergadertafel in een rustige kantooromgeving",
+    "src": "/images/context-contractmanager-v2.webp",
+    "alt": "Twee professionals bespreken documenten en leveranciersafspraken",
     "width": 1100,
     "height": 800
   },
@@ -155,8 +155,8 @@
   },
   {
     "slug": "office-manager",
-    "src": "/images/functie-office-manager.webp",
-    "alt": "Lichte kantoorwerkplek met beeldscherm, planten en daglicht",
+    "src": "/images/context-office-manager-v2.webp",
+    "alt": "Een medewerker bekijkt documenten en organiseert de kantooradministratie",
     "width": 1100,
     "height": 800
   },
@@ -176,8 +176,8 @@
   },
   {
     "slug": "manager-bedrijfsvoering",
-    "src": "/images/functie-manager-bedrijfsvoering.webp",
-    "alt": "Collega’s bespreken werkzaamheden aan een tafel",
+    "src": "/images/context-manager-bedrijfsvoering-v2.webp",
+    "alt": "Een manager bespreekt de bedrijfsvoering met afdelingshoofden",
     "width": 1100,
     "height": 800
   },

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const imgPM = "/images/project-overleg.webp";
 import imgFM from "@assets/expertise-facility.webp";
 import imgVastgoed from "@assets/expertise-vastgoed.webp";
-const imgTechniek = "/images/technisch-beheer-modern.webp";
+const imgTechniek = "/images/context-technisch-beheer-v2.webp";
 
 const areas = [
   {
@@ -51,10 +51,10 @@ const areas = [
     title: "Gebouwgebonden techniek",
     sentence: "Technische coördinatoren, projectleiders en engineers voor E&W installaties.",
     img: imgTechniek,
-    alt: "Verlichting en ventilatie in een modern kantoorinterieur",
+    alt: "Een technicus bekijkt een tablet bij een luchtbehandelingsinstallatie",
     span: "lg:col-span-2",
     height: "h-[300px] lg:h-[360px]",
-    imgW: 1100, imgH: 734,
+    imgW: 1100, imgH: 800,
     gradient: "linear-gradient(to right, hsl(220 50% 8% / 0.96) 0%, hsl(220 50% 12% / 0.50) 45%, transparent 100%)",
     accent: "#22A4E8",
   },
