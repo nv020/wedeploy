@@ -23,7 +23,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     slug: 'wat-is-detavast', label: 'Wat is detavast?', title: 'Wat is detavast?',
     description: 'Detavast uitgelegd: eerst werken via detachering, met uitzicht op een baan bij de opdrachtgever. Lees hoe de start, afspraken en overstap werken.',
     intro: 'Beginnen via detachering, met uitzicht op een baan bij de opdrachtgever. Detavast biedt ruimte om elkaar in de praktijk te leren kennen. Dit wil je vooraf weten.',
-    audience: 'Voor beide', image: photo('detavast', 'Afspraken vastleggen voor een volgende stap in werk'), updated: '2026-10-08',
+    audience: 'Voor beide', image: photo('detavast', 'Een persoon schrijft op een document aan een tafel'), updated: '2026-10-08',
     sections: [
       { id: 'betekenis', title: 'Eerst detachering, daarna mogelijk in dienst', paragraphs: [
         'Bij detavast begint een professional via een detacheringsbureau bij een organisatie. De bedoeling is om later rechtstreeks bij die organisatie in dienst te komen. In de eerste periode leren de professional en het team elkaar kennen: past het werk, hoe verloopt de samenwerking en is er van beide kanten interesse in een langer dienstverband?',
@@ -62,7 +62,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     slug: 'detachering-interim-werving-selectie', label: 'Inzetvormen vergelijken', title: 'Detachering, interim of werving & selectie?',
     description: 'Een vaste collega of tijdelijke versterking? Vergelijk werving & selectie, detachering, interim en detavast en bepaal wat past bij jouw personeelsvraag.',
     intro: 'Je zoekt iemand voor jouw team of project. Maar welke samenwerking past daarbij? De belangrijkste verschillen, met voorbeelden uit de praktijk.',
-    audience: 'Voor opdrachtgevers', image: photo('inzetvormen', 'Overleg over de inzet van professionals'), updated: '2026-10-08',
+    audience: 'Voor opdrachtgevers', image: photo('inzetvormen', 'Mensen in gesprek aan een tafel met een laptop'), updated: '2026-10-08',
     sections: [
       { id: 'vertrekpunt', title: 'Begin bij het werk dat moet gebeuren', paragraphs: [
         'Zoek je een collega voor de langere termijn, iemand die tijdelijk een team leidt of extra capaciteit tijdens een project? Die vraag helpt om de juiste route te kiezen. Kijk ook naar de gewenste start, de duur en de manier waarop iemand binnen jouw organisatie gaat werken.',
@@ -101,7 +101,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     slug: 'werken-via-detachering', label: 'Werken via detachering', title: 'Werken via detachering: wat betekent dat voor jou?',
     description: 'Hoe werkt een baan via detachering? Lees over je werkgever, de opdracht, arbeidsvoorwaarden en wat je vóór de start wilt bespreken.',
     intro: 'Je hebt een dienstverband bij een detacheringsbureau en werkt bij een opdrachtgever. Wat betekent dat voor jouw dagelijkse werk en waar let je op vóór de start?',
-    audience: 'Voor professionals', image: photo('werken-detachering', 'Professionals die samen aan een opdracht werken'), updated: '2026-10-08',
+    audience: 'Voor professionals', image: photo('werken-detachering', 'Een groep mensen overlegt met laptops aan een tafel'), updated: '2026-10-08',
     sections: [
       { id: 'werkgever', title: 'Je werkgever en je werkplek zijn verschillend', paragraphs: [
         'Bij detachering heb je een arbeidsovereenkomst met het bureau. Dat is jouw werkgever. Je voert het werk uit binnen de organisatie van een opdrachtgever, bijvoorbeeld als projectcoördinator, facility manager of technisch specialist.',
@@ -140,7 +140,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     slug: 'zzper-worden', label: 'Zzp’er worden', title: 'Zzp’er worden: wat moet je regelen?',
     description: 'Van loondienst naar zelfstandig werken? Lees de praktische checklist, voordelen en aandachtspunten voor jouw start als zzp’er en het vinden van opdrachten.',
     intro: 'Zelfstandig aan de slag als projectmanager, facility manager of specialist? Bereid de overstap goed voor. Vakervaring is belangrijk, maar ondernemen vraagt ook om andere keuzes.',
-    audience: 'Voor professionals', image: photo('zzper-worden', 'Een zelfstandig professional die plannen en administratie voorbereidt'), updated: '2026-10-08',
+    audience: 'Voor professionals', image: photo('zzper-worden', 'Een persoon maakt aantekeningen naast een laptop en een kop koffie'), updated: '2026-10-08',
     sections: [
       { id: 'keuze', title: 'Past zelfstandig werken bij jou?', paragraphs: [
         'Als zzp’er bied je jouw kennis en diensten aan vanuit een eigen onderneming. Je zoekt opdrachten, maakt afspraken en draagt ondernemersrisico. Je hebt meer invloed op welke opdrachten je aanneemt, maar ook verantwoordelijkheid voor zaken die een werkgever anders voor je regelt.',
@@ -186,7 +186,7 @@ export const knowledgeArticles: KnowledgeArticle[] = [
     slug: 'interim-professional-inhuren', label: 'Interim professional inhuren', title: 'Een interim professional inhuren: waar begin je?',
     description: 'Tijdelijke expertise nodig? Bereid de inhuur van een interim professional voor met een duidelijke opdracht, passende ervaring en heldere afspraken.',
     intro: 'Een project dat aandacht vraagt, tijdelijke leiding of kennis die jouw team mist. Een gerichte zoektocht begint met een duidelijke opdracht. Deze stappen helpen daarbij.',
-    audience: 'Voor opdrachtgevers', image: photo('interim-inhuren', 'Twee professionals die een opdracht bespreken'), updated: '2026-10-08',
+    audience: 'Voor opdrachtgevers', image: photo('interim-inhuren', 'Twee mensen in gesprek met een laptop aan tafel'), updated: '2026-10-08',
     sections: [
       { id: 'vraag', title: 'Maak duidelijk waarom je iemand nodig hebt', paragraphs: [
         'Wat moet er veranderen, opgelost of opgevangen worden? Beschrijf eerst de aanleiding. Gaat het om vervanging, een project of het verbeteren van een werkwijze? Dat maakt duidelijk of je vooral capaciteit, leiding of specialistische ervaring zoekt.',

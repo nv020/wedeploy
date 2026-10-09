@@ -65,7 +65,7 @@
   {
     "slug": "workplace-manager",
     "src": "/images/functie-workplace-manager.webp",
-    "alt": "Vergaderruimte met daglicht, stoelen en hanglampen",
+    "alt": "Vergaderruimte met stoelen, hanglampen en grote ramen",
     "width": 1100,
     "height": 800
   },
@@ -79,7 +79,7 @@
   {
     "slug": "hospitality-medewerker",
     "src": "/images/functie-hospitality-medewerker.webp",
-    "alt": "Bezoeker gebruikt een digitale ontvangstzuil bij een balie",
+    "alt": "Een bezoeker gebruikt een digitaal scherm bij de ontvangst",
     "width": 1100,
     "height": 800
   },
@@ -121,7 +121,7 @@
   {
     "slug": "technisch-beheerder",
     "src": "/images/functie-technisch-beheerder.webp",
-    "alt": "Schakelkast met bekabeling en componenten voor gebouwautomatisering",
+    "alt": "Netwerkkast met patchpanelen en aangesloten kabels",
     "width": 1100,
     "height": 800
   },
@@ -184,7 +184,7 @@
   {
     "slug": "overzicht",
     "src": "/images/functie-overzicht.webp",
-    "alt": "Collega’s bespreken werkzaamheden aan een tafel met laptops",
+    "alt": "Een persoon werkt met twee laptops aan een bureau",
     "width": 1100,
     "height": 800
   }

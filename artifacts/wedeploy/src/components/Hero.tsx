@@ -27,8 +27,7 @@ export function Hero() {
       >
         <img
           src={heroImg}
-          alt="Twee professionals in gesprek bij Wedeploy recruitment en detachering"
-          title="Wedeploy — persoonlijke begeleiding van kandidaten en opdrachtgevers"
+          alt="Twee mensen in gesprek aan een tafel met een laptop"
           className="w-full h-full object-cover"
           style={{ objectPosition: "center top" }}
           loading="eager"
