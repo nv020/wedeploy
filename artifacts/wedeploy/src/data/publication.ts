@@ -1,4 +1,5 @@
 export type SectorKey = 'projecten' | 'facility' | 'vastgoed' | 'techniek';
+export type ProfessionalSectorKey = SectorKey | 'hr';
 export type Vacancy = {
   slug: string; reference: string; status: 'draft' | 'open' | 'closed'; approvedForPublication: boolean;
   title: string; sector: SectorKey; location: string; hours: string; contract: string;
@@ -8,7 +9,7 @@ export type Vacancy = {
 };
 export type AvailableProfessional = {
   reference: string; status: 'draft' | 'available' | 'soon' | 'unavailable'; approvedForPublication: boolean;
-  title: string; sector: SectorKey; summary: string; preview?: string; experience: string[];
+  title: string; sector: ProfessionalSectorKey; summary: string; preview?: string; experience: string[]; language?: 'nl' | 'en';
   engagementTypes?: ('loondienst' | 'zzp')[];
   availableFrom: string; availabilityLabel?: string; labels?: string[]; hours: string; region: string; contract: string;
   confirmedAt: string; reviewBy: string;
@@ -54,7 +55,8 @@ export function validateOpportunities(jobs: Vacancy[], profiles: AvailableProfes
       if (profile.preview !== undefined && !profile.preview.trim()) throw new Error(`Profile ${profile.reference}: empty preview`);
       if (profile.engagementTypes !== undefined && (!profile.engagementTypes.length || profile.engagementTypes.some(type => !['loondienst','zzp'].includes(type)))) throw new Error(`Profile ${profile.reference}: invalid engagement type`);
       if (!profile.experience?.length || profile.experience.some(item => !item.trim())) throw new Error(`Profile ${profile.reference}: missing experience`);
-      if (!['projecten','facility','vastgoed','techniek'].includes(profile.sector)) throw new Error(`Profile ${profile.reference}: invalid category`);
+      if (!['projecten','facility','vastgoed','techniek','hr'].includes(profile.sector)) throw new Error(`Profile ${profile.reference}: invalid category`);
+      if (profile.language !== undefined && !['nl','en'].includes(profile.language)) throw new Error(`Profile ${profile.reference}: invalid language`);
     }
   }
 }

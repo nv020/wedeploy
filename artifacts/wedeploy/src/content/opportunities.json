@@ -3,6 +3,32 @@
   "professionals": [
     {
       "approvedForPublication": true,
+      "confirmedAt": "2026-10-09",
+      "reviewBy": "2026-11-06",
+      "reference": "WD-P005",
+      "status": "soon",
+      "language": "en",
+      "title": "Talent Acquisition & Recruitment Specialist",
+      "sector": "hr",
+      "contract": "Permanent / freelance",
+      "labels": ["Tech & business hiring", "International recruitment", "HR Operations"],
+      "engagementTypes": ["loondienst", "zzp"],
+      "availableFrom": "2027-01-01",
+      "availabilityLabel": "January 2027 preferred",
+      "hours": "By agreement",
+      "region": "Amsterdam region · hybrid / remote",
+      "preview": "Talent Acquisition specialist with 6+ years of experience in agency recruitment and international businesses. Combines tech and business hiring with hands-on HR Operations experience.",
+      "summary": "A hands-on Talent Acquisition professional who combines targeted sourcing with full-cycle recruitment for technical and business roles. Works closely with hiring managers to define requirements, assess candidates and guide the process from first contact to interviews, offers and onboarding. Her experience spans recruitment agencies, start-ups and scale-ups, including both growing teams and high-volume hiring projects. She has recruited across software development, design, commercial and finance roles. Beyond recruitment, she brings practical experience in employment contracts, leave administration, onboarding, offboarding and immigration processes for international employees. Recruitment is her main focus; she is also open to broader HR Operations roles. A January 2027 start is preferred; an earlier start may be possible by agreement.",
+      "experience": [
+        "More than six years of recruitment experience, including technical and business hiring",
+        "Direct sourcing through LinkedIn Recruiter, referrals and targeted outreach",
+        "Hiring manager collaboration and competency-based interviewing",
+        "International recruitment, relocation and employee onboarding",
+        "Professional working English · Native Turkish · Basic Dutch"
+      ]
+    },
+    {
+      "approvedForPublication": true,
       "confirmedAt": "2026-10-05",
       "reviewBy": "2026-11-02",
       "reference": "WD-P001",

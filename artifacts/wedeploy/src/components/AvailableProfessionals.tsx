@@ -3,7 +3,7 @@ import { availableProfessionals } from '@/data/opportunities';
 import { isProfessionalPublic } from '@/data/publication';
 import { matchingProfessionals, sectorLabels } from '@/data/profileOverview';
 
-const formatDate = (date: string) => new Intl.DateTimeFormat('nl-NL', { dateStyle: 'long', timeZone: 'Europe/Amsterdam' }).format(new Date(date));
+const formatDate = (date: string, language = 'nl') => new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : 'nl-NL', { dateStyle: 'long', timeZone: 'Europe/Amsterdam' }).format(new Date(date));
 
 export function AvailableProfessionals({ limit }: { limit?: number }) {
   const id = useId();
@@ -34,22 +34,22 @@ export function AvailableProfessionals({ limit }: { limit?: number }) {
       <p role="status" aria-live="polite">{matches.length} {matches.length === 1 ? 'professional' : 'professionals'}</p>
     </div>}
     <div className="role-directory available-directory" id={id + '-profiles'}>
-      {profiles.map(profile => <article key={profile.reference} className="available-profile" hidden={!shown.has(profile.reference)}>
+      {profiles.map(profile => <article key={profile.reference} lang={profile.language ?? 'nl'} className="available-profile" hidden={!shown.has(profile.reference)}>
         <h3>{profile.title}</h3>
-        <ul className="profile-labels" aria-label="Contractvorm en expertise"><li>{profile.contract}</li>{profile.labels?.map(label => <li key={label}>{label}</li>)}</ul>
+        <ul className="profile-labels" aria-label={profile.language === 'en' ? 'Engagement and expertise' : 'Contractvorm en expertise'}><li>{profile.contract}</li>{profile.labels?.map(label => <li key={label}>{label}</li>)}</ul>
         <dl className="profile-facts">
-          <div><dt>Beschikbaarheid</dt><dd>{profile.availabilityLabel ?? formatDate(profile.availableFrom)}</dd></div>
-          <div><dt>Inzet</dt><dd>{profile.hours}</dd></div>
-          <div><dt>Regio</dt><dd>{profile.region}</dd></div>
+          <div><dt>{profile.language === 'en' ? 'Availability' : 'Beschikbaarheid'}</dt><dd>{profile.availabilityLabel ?? formatDate(profile.availableFrom, profile.language)}</dd></div>
+          <div><dt>{profile.language === 'en' ? 'Hours' : 'Inzet'}</dt><dd>{profile.hours}</dd></div>
+          <div><dt>{profile.language === 'en' ? 'Location' : 'Regio'}</dt><dd>{profile.region}</dd></div>
         </dl>
         <p className="profile-preview">{profile.preview ?? profile.summary.split(/(?<=\.)\s+/).slice(0, 2).join(' ')}</p>
         <details className="profile-details">
-          <summary className="profile-toggle action-arrow"><span className="profile-toggle-closed">Bekijk profiel</span><span className="profile-toggle-open">Sluit profiel</span><span className="sr-only">: {profile.title}</span></summary>
+          <summary className="profile-toggle action-arrow"><span className="profile-toggle-closed">{profile.language === 'en' ? 'View profile' : 'Bekijk profiel'}</span><span className="profile-toggle-open">{profile.language === 'en' ? 'Close profile' : 'Sluit profiel'}</span><span className="sr-only">: {profile.title}</span></summary>
           <div className="profile-details-body">
             <p>{profile.summary}</p>
             <ul>{profile.experience.map(item => <li key={item}>{item}</li>)}</ul>
-            <p className="profile-updated">Bijgewerkt op <time dateTime={profile.confirmedAt}>{formatDate(profile.confirmedAt)}</time>.</p>
-            <a className="action-arrow profile-request" href={`/contact?type=opdrachtgever&profiel=${encodeURIComponent(`${profile.reference} — ${profile.title}`)}#contact`}>Vraag het volledige profiel op<span className="sr-only">: {profile.title}</span></a>
+            <p className="profile-updated">{profile.language === 'en' ? 'Updated on ' : 'Bijgewerkt op '}<time dateTime={profile.confirmedAt}>{formatDate(profile.confirmedAt, profile.language)}</time>.</p>
+            <a className="action-arrow profile-request" href={`/contact?type=opdrachtgever&profiel=${encodeURIComponent(`${profile.reference} — ${profile.title}`)}#contact`}>{profile.language === 'en' ? 'Request the full profile' : 'Vraag het volledige profiel op'}<span className="sr-only">: {profile.title}</span></a>
           </div>
         </details>
       </article>)}
