@@ -61,4 +61,9 @@ export const diensten = {
   }
 } as const;
 export type DienstKey = keyof typeof diensten;
-export const servicePages = Object.values(diensten).map(service => ({path: service.path, label: service.label, title: `${service.label} | Wedeploy`, description: service.intro}));
+const serviceDescriptions: Record<string, string> = {
+  '/werving-selectie': 'Een vaste collega nodig? Wedeploy zoekt professionals, voert persoonlijke intakes en begeleidt de selectie. Bespreek jouw vacature en onze aanpak.',
+  '/detachering': 'Tijdelijke versterking via detachering, of een start met uitzicht op vast werk via detavast. Lees hoe het werkt voor organisaties en professionals.',
+  '/interim-zzp': 'Een interim professional of zzp’er nodig? Wedeploy zoekt passende ervaring voor tijdelijke opdrachten. Bespreek de opdracht of deel jouw beschikbaarheid.',
+};
+export const servicePages = Object.values(diensten).map(service => ({path: service.path, label: service.label, title: `${service.label} | Wedeploy`, description: serviceDescriptions[service.path]}));

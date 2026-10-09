@@ -590,7 +590,7 @@ main a, main button { text-wrap: balance; }
 .faq-item:first-child { border-top: 1px solid hsl(var(--border)); }
 .faq-item summary { list-style: none; display: flex; justify-content: space-between; align-items: start; gap: 1.5rem; cursor: pointer; color: hsl(var(--primary)); font-size: 1rem; font-weight: 550; line-height: 1.55; }
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after { content: '+'; font-size: 1.25rem; font-weight: 400; line-height: 1.2; color: hsl(var(--accent)); }
+.faq-item summary::after { flex: 0 0 auto; content: '+'; font-size: 1.25rem; font-weight: 400; line-height: 1.2; color: hsl(var(--accent)); }
 .faq-item[open] summary::after { content: '−'; }
 .faq-item > p { color: hsl(var(--muted-foreground)); line-height: 1.75; margin-top: .85rem; max-width: 68ch; }
 .faq-more { display: inline-flex; min-height: 44px; align-items: center; margin-top: .75rem; color: hsl(var(--accent)); font-size: .9rem; font-weight: 600; }
@@ -628,7 +628,7 @@ main a, main button { text-wrap: balance; }
 /* Lower homepage sections follow the same reading scale; the hero stays intact. */
 .home-preview-actions { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem 2rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid hsl(var(--primary) / .12); }
 .home-preview-more { min-height: 2.75rem; font-size: .95rem; font-weight: 650; color: hsl(var(--accent)); }
-.home-preview-actions p { font-size: .85rem; line-height: 1.7; color: hsl(var(--muted-foreground)); }
+.home-preview-actions p { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .6rem; min-width: 0; font-size: .85rem; line-height: 1.7; color: hsl(var(--muted-foreground)); }
 .home-preview-actions p a { min-height: 2.75rem; font-weight: 550; color: hsl(var(--primary)); }
 .vacancy-preview .home-preview-actions { border-color: rgb(255 255 255 / .18); }
 .vacancy-preview .home-preview-actions p { color: rgb(255 255 255 / .7); }
@@ -903,4 +903,17 @@ main a, main button { text-wrap: balance; }
   .footer-contact { order: 3; }
   .footer-functions-desktop { display: block; }
   .footer-functions-mobile { display: none; }
+}
+
+/* Compact mobile prompts and comfortable reading space across shared templates. */
+.home-preview-prompt { white-space: nowrap; }
+.home-preview-actions > a, .home-preview-actions p a { max-width: 100%; }
+@media (max-width: 767px) {
+  .faq-item summary { gap: .75rem; }
+  .role-directory.available-directory .profile-facts > div { grid-template-columns: 5.75rem minmax(0, 1fr); gap: .4rem; }
+  .contact-direct a, .contact-strip a { overflow-wrap: anywhere; }
+}
+@media (max-width: 380px) {
+  .page-shell .closing-composition.closing-with-portrait { grid-template-columns: 72px minmax(0, 1fr); gap: 1rem; }
+  .page-shell .closing-portrait { width: 72px; height: 72px; }
 }

@@ -121,5 +121,5 @@ export const vakgebieden = {
   }
 } as const;
 export type VakgebiedKey = keyof typeof vakgebieden;
-export const sectorPages = Object.values(vakgebieden).map(area => ({ path: area.path, label: area.label, title: `${area.label} | Werving, detachering & interim | Wedeploy`, description: area.description }));
+export const sectorPages = Object.values(vakgebieden).map(area => ({ path: area.path, label: area.label, title: `${area.path === "/technisch-beheer" ? "Technisch beheer" : area.label} | Werving, detachering & interim | Wedeploy`, description: area.description }));
 export const candidateSectorPages = (['projecten', 'facility', 'vastgoed'] as const).map(key => ({ path: vakgebieden[key].candidatePath, label: `Werken in ${key === 'projecten' ? 'projectmanagement & PMO' : key === 'facility' ? 'Facility Management' : 'vastgoed'}`, title: `Werken in ${key === 'projecten' ? 'projectmanagement & PMO' : key === 'facility' ? 'Facility Management' : 'vastgoed'} | Wedeploy`, description: vakgebieden[key].candidateIntro }));
