@@ -626,6 +626,23 @@ main a, main button { text-wrap: balance; }
 .page-shell .agency-section > .container > h2 + .role-directory { margin-top: 1.75rem; }
 
 /* Lower homepage sections follow the same reading scale; the hero stays intact. */
+.home-preview-actions { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem 2rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid hsl(var(--primary) / .12); }
+.home-preview-more { min-height: 2.75rem; font-size: .95rem; font-weight: 650; color: hsl(var(--accent)); }
+.home-preview-actions p { font-size: .85rem; line-height: 1.7; color: hsl(var(--muted-foreground)); }
+.home-preview-actions p a { min-height: 2.75rem; font-weight: 550; color: hsl(var(--primary)); }
+.vacancy-preview .home-preview-actions { border-color: rgb(255 255 255 / .18); }
+.vacancy-preview .home-preview-actions p { color: rgb(255 255 255 / .7); }
+.vacancy-preview .home-preview-actions p a { color: white; }
+.home-swipe-hint { display: none; }
+.home-profile-track:focus-visible { outline: 2px solid hsl(var(--accent)); outline-offset: 4px; }
+@media (max-width: 767px) {
+  .home-profile-track { overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; padding-bottom: .75rem; }
+  .home-profile-track .available-directory, .home-profile-track .professional-list { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc(100% - 2rem); gap: 1rem; align-items: start; }
+  .home-profile-track .available-directory > article, .home-profile-track .professional-list > article { scroll-snap-align: start; }
+  .home-profile-track .professional-row { display: block; padding: 1.25rem; border: 1px solid hsl(var(--primary) / .15); border-radius: .75rem; }
+  .home-swipe-hint { display: block; margin-top: .5rem; font-size: .75rem; color: hsl(var(--muted-foreground)); }
+  .home-preview-actions { flex-direction: column; align-items: flex-start; gap: .5rem; }
+}
 .home-shell main > section:not(#home) h2 { font-size: clamp(1.65rem, 2.6vw, 2.15rem); font-weight: 650; line-height: 1.25; text-wrap: balance; }
 .home-shell .network-preview .profile-copy { display: flex; flex-direction: column; height: 100%; }
 .home-shell .network-preview .profile-copy > p:first-child { text-transform: none; letter-spacing: 0; font-weight: 500; }
