@@ -6,6 +6,7 @@ import { publicVacancies } from "./opportunities";
 export { vacancies } from "./opportunities";
 export type { Vacancy } from "./publication";
 import { sectorPages } from "./sectors";
+import { searchCopy } from "./search-copy";
 export const siteUrl = "https://www.wedeploy.nl";
 export const pages = [
   { path: "/", label: "Home", title: "Wedeploy | Werving & selectie, detachering & interim", description: "Wedeploy verbindt organisaties en professionals voor vaste functies en tijdelijke opdrachten. Werving & selectie, detachering, interim en zzp-bemiddeling." },
@@ -48,3 +49,5 @@ export const services = [
 ];
 // Closed vacancies retain an informative page, without a live application form.
 for (const job of publicVacancies) pages.push({ path: `/vacatures/${job.slug}`, label: job.title, title: `${job.title} in ${job.location} | Wedeploy`, description: job.intro });
+// One source for generated HTML, social previews and WebPage schema.
+for (const page of pages) Object.assign(page, searchCopy[page.path] ?? {});
