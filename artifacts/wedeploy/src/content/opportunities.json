@@ -3,6 +3,35 @@
   "professionals": [
     {
       "approvedForPublication": true,
+      "confirmedAt": "2026-10-20",
+      "reviewBy": "2026-11-17",
+      "reference": "WD-P006",
+      "status": "soon",
+      "title": "Civiel ingenieur | Kostenramingen & aanbestedingen",
+      "sector": "techniek",
+      "contract": "Vaste functie",
+      "labels": [
+        "Civiele techniek",
+        "Kostenramingen",
+        "Aanbestedingen"
+      ],
+      "engagementTypes": ["loondienst"],
+      "availableFrom": "2026-10-20",
+      "availabilityLabel": "Op korte termijn",
+      "hours": "Fulltime",
+      "region": "Randstad · woonregio Amsterdam",
+      "preview": "Civiel ingenieur met ruim 13 jaar ervaring in infrastructuurprojecten. Sterk in kostenramingen, hoeveelhedenstaten en de voorbereiding van aanbestedingen.",
+      "summary": "Civiel ingenieur met ruim dertien jaar ervaring in de voorbereiding en kostenbeheersing van bouw- en infrastructuurprojecten. Werkte ruim negen jaar aan opdrachtgeverszijde bij een grote gemeentelijke organisatie in Turkije, aan wegenbouw, bruggen, drainage en grondwerken. Stelt kostenramingen, hoeveelhedenstaten en technische specificaties op en heeft ervaring met aanbestedingsdocumenten, offertebeoordeling en ontwerpcontrole. Zoekt een vaste functie in de Randstad waarin zij haar ervaring kan inzetten en verder ontwikkelen. Verdiept zich in de Nederlandse RAW-systematiek en werkt actief aan haar Nederlands.",
+      "experience": [
+        "Bachelor Civiele Techniek",
+        "Kostenramingen, hoeveelhedenstaten en eenheidsprijsanalyses",
+        "Technische specificaties, aanbestedingsdocumenten en offertebeoordeling",
+        "Ervaring met AutoCAD en MS Project",
+        "Nederlands B1, schrijven B2 · Engels B1"
+      ]
+    },
+    {
+      "approvedForPublication": true,
       "confirmedAt": "2026-10-09",
       "reviewBy": "2026-11-06",
       "reference": "WD-P005",
