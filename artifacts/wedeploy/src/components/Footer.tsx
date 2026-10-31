@@ -82,7 +82,7 @@ export function Footer() {
         <details className="footer-landings border-b border-white/10 pb-5 mb-5">
           <summary className="cursor-pointer text-xs font-semibold text-white/75">Vakgebieden & inzet</summary>
           <nav aria-label="Vakgebieden en inzet" className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 text-xs text-white/70">
-            <a href="/functies">Functies uitgelegd</a><a href="/projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/technisch-beheer">Gebouwgebonden techniek</a><a href="/werving-selectie">Werving & selectie</a><a href="/detachering">Detachering & detavast</a><a href="/interim-zzp">Interim & zzp-bemiddeling</a><a href="/zzp-opdrachten">Zzp-opdrachten</a>
+            <a href="/functies">Functies uitgelegd</a><a href="/projectmanagement">Projectmanagement & PMO</a><a href="/facility-management">Facility Management</a><a href="/vastgoed">Vastgoed & huisvesting</a><a href="/technisch-beheer">Gebouwgebonden techniek</a><a href="/werving-selectie">Werving & selectie</a><a href="/detachering">Detachering & detavast</a><a href="/interim-zzp">Interim & zzp-bemiddeling</a><a href="/zzp-opdrachten">Zzp-opdrachten</a><a href="/werving-selectie-projectmanagement">Werving projectmanagement & PMO</a><a href="/werving-selectie-facility-management">Werving Facility Management</a><a href="/werving-selectie-vastgoed">Werving vastgoed</a><a href="/werving-selectie-amsterdam">Werving & selectie Amsterdam</a>
           </nav>
         </details>
         {/* Bottom: nav + legal */}

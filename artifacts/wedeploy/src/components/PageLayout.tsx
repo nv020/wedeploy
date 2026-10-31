@@ -10,9 +10,9 @@ export function ActionLink({ href, children, secondary = false }: { href: string
   return <a href={href} className={secondary ? `${href.startsWith("tel:") || href.startsWith("mailto:") ? "" : "action-arrow "}secondary-action inline-flex items-center py-3 text-sm font-semibold` : buttonClass}>{children}</a>;
 }
 type IntroVariant = "editorial" | "split" | "quiet" | "navy";
-export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary, variant = "editorial", hero = "type", photo: customPhoto, breadcrumbs = [] }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string }; photo?: PageImage; breadcrumbs?: { label: string; href: string }[]; variant?: IntroVariant; hero?: "type" | "graphic" | "paper" | "line" | "contact" }) {
+export function PageLayout({ label, title, intro, children, cta, ctaHref = "/contact", secondary, variant = "editorial", hero = "type", photo: customPhoto, breadcrumbs = [], className = "" }: { label: string; title: string; intro: string; children: ReactNode; cta?: string; ctaHref?: string; secondary?: { label: string; href: string }; photo?: PageImage; breadcrumbs?: { label: string; href: string }[]; variant?: IntroVariant; hero?: "type" | "graphic" | "paper" | "line" | "contact"; className?: string }) {
   const photo = customPhoto ?? pageImages[label];
-  return <div className={`page-shell page-${variant} min-h-screen bg-background`}><Header /><main id="main-content">
+  return <div className={`page-shell page-${variant} min-h-screen bg-background ${className}`}><Header /><main id="main-content">
     <section className={`agency-intro hero-${hero}${photo ? " hero-with-image" : ""}`}>
       <div className="container mx-auto px-4 md:px-6">
         <nav aria-label="Broodkruimel" className="intro-breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>{breadcrumbs.map(crumb => <span key={crumb.href}><a href={crumb.href}>{crumb.label}</a><span aria-hidden="true">/</span></span>)}<span aria-current="page">{label}</span></nav>

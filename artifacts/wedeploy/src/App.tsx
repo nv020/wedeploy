@@ -12,6 +12,8 @@ import { ServicePage } from "@/pages/ServicePages";
 import { FAQPage } from "@/pages/FAQPage";
 import { KnowledgeIndex, KnowledgeArticlePage } from "@/pages/KnowledgePages";
 import { FunctionIndex, FunctionDetail } from "@/pages/FunctionPages";
+import { HiringPage } from "@/pages/HiringPage";
+import { hiringPages } from "@/data/hiring";
 const queryClient = new QueryClient();
 function App({ ssrPath }: { ssrPath?: string }) {
   return <QueryClientProvider client={queryClient}><TooltipProvider><WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")} ssrPath={ssrPath}>
@@ -30,6 +32,7 @@ function App({ ssrPath }: { ssrPath?: string }) {
       <Route path="/werken-in-facility-management">{() => <SectorPage sector="facility" candidate />}</Route>
       <Route path="/werken-in-vastgoed">{() => <SectorPage sector="vastgoed" candidate />}</Route>
       <Route path="/werving-selectie">{() => <ServicePage serviceKey="werving" />}</Route>
+      {hiringPages.map(page => <Route key={page.slug} path={'/' + page.slug}>{() => <HiringPage slug={page.slug} />}</Route>)}
       <Route path="/detachering">{() => <ServicePage serviceKey="detachering" />}</Route>
       <Route path="/interim-zzp">{() => <ServicePage serviceKey="interim" />}</Route>
       <Route path="/zzp-opdrachten">{() => <FlexibleWorkPage candidate />}</Route>

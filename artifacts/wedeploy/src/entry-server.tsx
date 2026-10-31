@@ -10,3 +10,4 @@ export { faqItems } from "./data/faq";
 export { knowledgeArticles } from "./data/knowledge";
 
 export { functionPages } from "./data/functions";
+export { hiringPages } from "./data/hiring";

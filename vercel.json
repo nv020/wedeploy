@@ -52,11 +52,6 @@
       "permanent": true
     },
     {
-      "source": "/werving-selectie-amsterdam",
-      "destination": "/werving-selectie",
-      "permanent": true
-    },
-    {
       "source": "/detachering-amsterdam",
       "destination": "/detachering",
       "permanent": true

@@ -2,17 +2,20 @@ import { useEffect, useId, useState } from 'react';
 import { availableProfessionals } from '@/data/opportunities';
 import { isProfessionalPublic } from '@/data/publication';
 import { matchingProfessionals, sectorLabels } from '@/data/profileOverview';
+import type { ProfessionalSectorKey } from '@/data/publication';
 
 const formatDate = (date: string, language = 'nl') => new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : 'nl-NL', { dateStyle: 'long', timeZone: 'Europe/Amsterdam' }).format(new Date(date));
 
-export function AvailableProfessionals({ limit }: { limit?: number }) {
+export function AvailableProfessionals({ limit, sectorFilter, engagementFilter }: { limit?: number; sectorFilter?: ProfessionalSectorKey; engagementFilter?: 'loondienst' | 'zzp' }) {
   const id = useId();
   const [interactive, setInteractive] = useState(false);
   const [sector, setSector] = useState('');
   const [engagement, setEngagement] = useState('');
   const [visibleCount, setVisibleCount] = useState(6);
   useEffect(() => { setInteractive(true); }, []);
-  const profiles = availableProfessionals.filter(profile => isProfessionalPublic(profile)).slice(0, limit);
+  const profiles = availableProfessionals.filter(profile => isProfessionalPublic(profile)
+    && (!sectorFilter || profile.sector === sectorFilter)
+    && (!engagementFilter || profile.engagementTypes?.includes(engagementFilter))).slice(0, limit);
   const overview = limit === undefined;
   const matches = matchingProfessionals(profiles, sector, engagement);
   // All public content is rendered in the initial HTML. JavaScript only changes visibility.

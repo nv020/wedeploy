@@ -17,7 +17,8 @@ export const faqGroups = [
       { question: "Hoe vraag ik een beschikbare professional aan?", answer: "Gebruik de contactknop bij het profiel of vertel welke rol je zoekt. We bespreken jouw vraag en stemmen een kennismaking af met de professional." },
       { question: "Hoe start een zoekopdracht?", answer: "Een eerste omschrijving is genoeg: wat moet iemand doen, voor welk team, waar en wanneer? Samen werken we de taken, ervaring, uren en voorwaarden uit tot een duidelijk profiel." },
       { question: "Hoe werkt exclusief zoeken?", answer: "Bij exclusief zoeken geef je Wedeploy de regie over de werving. We spreken af hoe lang de zoekopdracht loopt, hoe we kandidaten benaderen en wanneer je terugkoppeling krijgt. Ook de vergoeding en overige voorwaarden leggen we vooraf vast." },
-      { question: "Wat kost recruitment of detachering?", answer: "De vergoeding hangt af van de functie, inzetvorm en gemaakte afspraken. Je ontvangt vooraf een voorstel; we starten pas na akkoord." },
+      { question: "Wat kost recruitment of detachering?", answer: "De vergoeding hangt af van de functie, inzetvorm en de afgesproken aanpak. Je ontvangt vooraf een voorstel met de kosten, betaalmomenten en voorwaarden. We starten na jouw akkoord." },
+      { question: "Moeten we exclusief samenwerken?", answer: "Dat is geen automatische voorwaarde. Bij een exclusieve zoekopdracht verzorgt Wedeploy voor een afgesproken periode de werving. We leggen de aanpak, contacten en voortgang vooraf vast. Samen bespreken we wat bij de vacature past." },
     ],
   },
   {

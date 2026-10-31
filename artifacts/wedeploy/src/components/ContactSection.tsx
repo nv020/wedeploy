@@ -5,6 +5,7 @@ import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
 
 import { resolveContactContext, switchContactRole, type ContactRole as Role } from "./contact-context";
 import { contactPerson } from "@/data/contact-person";
+import { trackContactSubmission } from "@/lib/lead-events";
 import { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, TALENTPOOL_OPTIONAL_NOTE } from "../../../../shared/talentpool-consent";
 
 const API_BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? "";
@@ -63,6 +64,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
     try {
       await submitForm(fd);
       setSent(true);
+      trackContactSubmission(role);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Versturen mislukt. Probeer het later opnieuw.");
     } finally {

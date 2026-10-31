@@ -1,11 +1,11 @@
 export const diensten = {
   werving: {
     path: '/werving-selectie', label: 'Werving & selectie', title: 'Werving & selectie',
-    intro: 'Je zoekt iemand die bij jouw organisatie in dienst komt. Wedeploy helpt het profiel scherp te maken, benadert professionals en begeleidt de kennismaking en selectie. Met duidelijke afspraken over de zoektocht.',
-    heading: 'Een nieuwe collega die past',
+    intro: 'Een vaste collega vinden voor jouw organisatie? Wedeploy werft en selecteert vanuit ervaring in projectmanagement, Facility Management en vastgoed. We maken de functie concreet en benaderen passende professionals.',
+    heading: 'Werving vanuit ervaring aan opdrachtgeverszijde.',
     paragraphs: [
-      'Een vaste collega moet passen bij de functie én bij de organisatie. We zoeken in ons netwerk en benaderen ook professionals die niet actief op zoek zijn.',
-      'We kijken verder dan ervaring op papier. In een persoonlijke intake bespreken we motivatie, ambities en wat iemand zoekt in een volgende baan.'
+      'Onze achtergrond ligt in het aansturen van teams, vastgoedbeheer, dienstverlening en projecten. Daardoor weten we welke vragen achter een vacature kunnen liggen: waar ontbreekt ervaring, wat moet de nieuwe collega oppakken en hoe werkt het team samen?',
+      'We helpen als je gericht wilt zoeken, weinig passende reacties krijgt of de werving wilt uitbesteden. We benaderen ook mensen die niet actief solliciteren. Iedere kandidaat spreken we persoonlijk over ervaring, motivatie en verwachtingen voordat we een mogelijke introductie bespreken.'
     ],
     steps: [
       ['Het zoekprofiel', 'We bespreken werkzaamheden, team, ervaring, locatie, uren en arbeidsvoorwaarden. Daarna leggen we het zoekprofiel, de aanpak en de vergoeding vast. We starten na jouw akkoord.'],
@@ -13,11 +13,11 @@ export const diensten = {
       ['Selectie en start', 'We stemmen gesprekken af, verzamelen terugkoppeling en bespreken vervolgstappen. Ook voorwaarden en de gewenste start horen bij de afstemming. De kandidaat komt rechtstreeks bij jouw organisatie in dienst.']
     ],
     decisionTitle: 'Exclusief zoeken met één aanspreekpunt.',
-    decision: 'Bij een exclusieve zoekopdracht geef je Wedeploy de regie over de werving voor een afgesproken periode. We spreken af hoe we de markt benaderen, hoe vaak je een update krijgt en wat er gebeurt als het profiel moet worden aangepast. Zo blijven de benadering van kandidaten en de terugkoppeling overzichtelijk.',
-    agreements: 'Je ontvangt vooraf een voorstel met de vergoeding, de momenten waarop deze verschuldigd is en de voorwaarden van de samenwerking. Ook de duur van de exclusieve zoektocht en de terugkoppeling leggen we vast. Zo weet je welke inzet je van ons kunt verwachten en wanneer we samen de voortgang bespreken.',
+    decision: 'Bij een exclusieve zoekopdracht verzorgt Wedeploy voor een afgesproken periode de werving voor jouw vacature. Eén aanspreekpunt houdt de benadering van kandidaten, de gesprekken en de voortgang bij elkaar.',
+    agreements: 'We spreken vooraf de duur, de aanpak en de verdeling van contacten af. Reacties uit de markt bespreken we samen: sluiten de functie en voorwaarden aan, of is bijstelling nodig? Ook zonder exclusiviteit kun je een aanvraag voorleggen; we bespreken welke samenwerking passend is.',
     candidateTitle: 'Een vaste baan via Wedeploy.',
     candidate: 'Bij werving & selectie ga je rechtstreeks bij de opdrachtgever in dienst. Wij bespreken de functie, de organisatie en jouw wensen met je. Je beslist zelf of je interesse hebt en of we je mogen introduceren. Je kunt ook je cv achterlaten zonder op een concrete vacature te reageren.',
-    faq: [{ question: 'Voor welke functies zoeken jullie?', answer: 'Onze focus ligt op projectmanagement en PMO, Facility Management, vastgoed en huisvesting. Ook management, ondersteuning en gebouwgebonden techniek kunnen onderdeel van een aanvraag zijn. Een andere vraag bespreken we graag.' }, { question: 'Hoe lang duurt een zoektocht?', answer: 'Dat hangt af van het profiel, de arbeidsvoorwaarden en de reacties uit de markt. We spreken terugkoppeling af en bespreken wat we tegenkomen. We beloven geen vaste doorlooptijd voordat we de vraag kennen.' }]
+    faq: [{ question: 'Voor welke functies zoeken jullie?', answer: 'Onze kern ligt in projectmanagement en PMO, Facility Management en vastgoed. We zoeken onder meer managers, projectleiders, coördinatoren en ondersteunende professionals. Een andere functie bespreken we graag.' }, { question: 'Wat kost werving en selectie?', answer: 'De vergoeding hangt af van de functie en de afgesproken aanpak. Vooraf ontvang je een voorstel met de kosten, betaalmomenten en voorwaarden. We starten na jouw akkoord.' }, { question: 'Moet ik exclusief met Wedeploy werken?', answer: 'Dat is geen automatische voorwaarde. Bij een exclusieve zoekopdracht spreken we een periode en aanpak af waarin Wedeploy de werving verzorgt. We bespreken vooraf welke samenwerking bij jouw vacature past.' }, { question: 'Hoe lang duurt een zoektocht?', answer: 'Dat hangt af van de functie, arbeidsvoorwaarden en beschikbaarheid van kandidaten. Bij de start bespreken we een planning. Tijdens de zoektocht bespreken we de reacties en de voortgang, zodat je weet waar we staan.' }]
   },
   detachering: {
     path: '/detachering', label: 'Detachering', title: 'Detachering & detavast',

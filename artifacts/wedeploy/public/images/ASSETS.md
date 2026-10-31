@@ -1,5 +1,10 @@
 # Work environment photography
 
+## Werving en selectie landing pages (31 October 2026)
+
+- `werving-amsterdam.webp`: https://images.unsplash.com/photo-1606836591695-4d58a73eba1e — meeting in a glass-walled office, Unsplash License, downloaded at 1100 × 800 WebP. Illustrative workplace, not Wedeploy premises or a client.
+- The three specialist pages use the existing, no-longer-displayed `functie-facilitair-manager.webp`, `functie-contractmanager.webp` and `technisch-beheer-modern.webp`. Their source and license are documented below. These sources are not used by other current page heroes.
+
 These illustrative stock photographs show work environments, not Wedeploy staff or clients.
 
 - `project-overleg.webp`: https://images.unsplash.com/photo-1503387762-592deb58ef4e — architectural plans and project discussion.
