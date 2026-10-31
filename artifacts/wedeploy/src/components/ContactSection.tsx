@@ -4,6 +4,7 @@ import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
 
 
 import { resolveContactContext, switchContactRole, type ContactRole as Role } from "./contact-context";
+import { contactPerson } from "@/data/contact-person";
 
 const API_BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? "";
 
@@ -92,9 +93,9 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
           <div>
             <p className="eyebrow">Contact</p>
             <h2 className="text-[clamp(1.85rem,6vw,2.8rem)] font-extrabold text-primary tracking-tight leading-[1.06]">
-              {heading ?? <>Klaar voor een <span className="text-accent">goede</span> samenwerking?</>}
+              {heading ?? "Laten we kennismaken."}
             </h2>
-            {(role === "kandidaat" || description) && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{role === "kandidaat" ? "Laat jouw cv achter. We nemen contact met je op om een persoonlijke intake te plannen. We willen weten wie je bent, wat je kunt en wat je zoekt." : description}</p>}
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{description ?? (role === "kandidaat" ? "Laat jouw cv achter. In een persoonlijke intake bespreken we jouw ervaring, wensen en volgende stap." : "Een vacature, tijdelijke versterking of een samenwerking bespreken? Vertel ons waar je naar zoekt.")}</p>
           </div>
 
         </motion.div>
@@ -315,18 +316,13 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
 
               {showProfile ? (
                 <div className="flex items-center gap-4 mb-6">
-                  <img src="/nicky-verkooij.webp" alt="Nicky, consultant bij Wedeploy" width="76" height="76" loading="lazy" className="w-[76px] h-[76px] shrink-0 rounded-full object-cover border-2 border-accent" style={{ objectPosition: "50% 12%" }} />
-                  <div><h3 className="text-xl font-extrabold text-primary">Nicky</h3><p className="text-sm text-muted-foreground mt-1">Consultant</p></div>
+                  <img src={contactPerson.src} alt={contactPerson.alt} width="76" height="76" loading="lazy" className="w-[76px] h-[76px] shrink-0 rounded-full object-cover" style={{ objectPosition: "50% 12%" }} />
+                  <div><h3 className="text-lg font-semibold text-primary">{contactPerson.name}</h3><p className="text-sm text-muted-foreground mt-1">{contactPerson.role}</p></div>
                 </div>
               ) : <><p className="eyebrow">Direct contact</p><h3 className="text-2xl font-bold text-primary mb-5">Korte lijnen.</h3></>}
-              {/* Quote */}
-              <div className="border-l-[3px] border-accent pl-4">
-                <p className="text-[14px] leading-[1.72] text-primary/55 font-medium italic mb-3.5">
-                  {showProfile ? "Een professional nodig of toe aan een nieuwe opdracht? Laat je gegevens achter. We nemen contact met je op om jouw vraag of wensen te bespreken." : "Vertel wat je zoekt. We bespreken de mogelijkheden en maken duidelijke afspraken over de volgende stap."}
-                </p>
-                <p className="text-[14px] font-extrabold text-accent tracking-[-0.1px]">
-                  {showProfile ? "Je krijgt persoonlijk antwoord." : "Neem vrijblijvend contact op."}
-                </p>
+              <div className="contact-invitation">
+                <p>{role === "kandidaat" ? "We horen graag wat je zoekt in een volgende functie of opdracht. Een cv is een begin; in een gesprek leren we je kennen." : "Vertel welke versterking jouw organisatie nodig heeft. Samen bespreken we de functie, het team en een passende aanpak."}</p>
+                <a href="tel:+31852128668" className="contact-call">Bel ons: 085 212 8668</a>
               </div>
             </div>
 
