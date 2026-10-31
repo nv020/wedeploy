@@ -2,7 +2,7 @@ const { test, before, after } = require('node:test');
 const assert = require('node:assert/strict');
 const http = require('node:http');
 const handler = require('../.contact-test-build/api/contact.js').default;
-const { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, talentpoolExpiry } = require('../.contact-test-build/shared/talentpool-consent.js');
+const { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, TALENTPOOL_OPTIONAL_NOTE, PRIVACY_POLICY_URL, talentpoolExpiry, talentpoolPolicy } = require('../.contact-test-build/shared/talentpool-consent.js');
 
 const realFetch = global.fetch;
 const delivered = [];
@@ -139,6 +139,8 @@ test('optional unchecked consent accepts the submission without future matching 
   assert.equal(record.retentionMonths, null);
   assert.equal(record.expiresAt, null);
   assert.equal(record.consentText, TALENTPOOL_CONSENT_TEXT);
+  assert.equal(record.supportingText, TALENTPOOL_OPTIONAL_NOTE);
+  assert.equal(record.privacyPolicyUrl, PRIVACY_POLICY_URL);
   assert.equal((await response.json()).receiptId, record.recordId);
   assert.match(delivered.at(-1).text, /Niet gegeven; alleen de huidige reactie behandelen/);
 });
@@ -202,4 +204,17 @@ test('legacy forms do not invent shown consent text; employer fields cannot gran
 test('twelve calendar months clamps leap day rather than extending into March', () => {
   assert.equal(talentpoolExpiry('2024-02-29T10:15:00.000Z'), '2025-02-28T10:15:00.000Z');
   assert.equal(talentpoolExpiry('2026-10-31T10:15:00.000Z'), '2027-10-31T10:15:00.000Z');
+});
+
+test('previously displayed version retains its own exact wording in consent evidence', async () => {
+  const body = form();
+  body.set('talentpoolConsent', 'yes');
+  body.set('talentpoolConsentVersion', '2026-10-31.v1');
+  assert.equal((await submit(body)).status, 200);
+  const record = receipt(delivered.at(-1));
+  assert.equal(record.choice, 'granted');
+  assert.equal(record.consentVersion, '2026-10-31.v1');
+  assert.equal(record.consentText, talentpoolPolicy('2026-10-31.v1').text);
+  assert.notEqual(record.consentText, TALENTPOOL_CONSENT_TEXT);
+  assert.equal(talentpoolPolicy('__proto__'), undefined);
 });

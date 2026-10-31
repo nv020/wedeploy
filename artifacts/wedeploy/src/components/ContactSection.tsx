@@ -289,9 +289,9 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                     </div>
                   )}
 
-                  <p className="text-xs leading-relaxed text-muted-foreground">We gebruiken jouw gegevens om deze reactie te behandelen. Lees onze <a href="/privacy" className="underline">privacyverklaring</a>.</p>
+                  <p className="text-xs leading-relaxed text-muted-foreground">We verwerken je gegevens volgens onze <a href="/privacy" className="underline">privacyverklaring</a>.</p>
                   {role === "kandidaat" && <fieldset className="talentpool-consent" disabled={loading}>
-                    <legend>Kandidatenbestand <span>(optioneel)</span></legend>
+                    <legend className="sr-only">Bewaren voor toekomstige mogelijkheden (optioneel)</legend>
                     <input type="hidden" name="talentpoolConsentVersion" value={TALENTPOOL_CONSENT_VERSION} />
                     <label><input type="checkbox" name="talentpoolConsent" value="yes" checked={talentpoolConsent} onChange={event => setTalentpoolConsent(event.target.checked)} aria-describedby="talentpool-consent-note" /><span>{TALENTPOOL_CONSENT_TEXT}</span></label>
                     <p id="talentpool-consent-note">{TALENTPOOL_OPTIONAL_NOTE}</p>

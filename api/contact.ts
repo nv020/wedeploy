@@ -4,7 +4,7 @@ import formidable, { type File } from "formidable";
 import { readFile, rm } from "node:fs/promises";
 import { basename, extname } from "node:path";
 import { randomUUID } from "node:crypto";
-import { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, TALENTPOOL_RETENTION_MONTHS, talentpoolExpiry } from "../shared/talentpool-consent";
+import { TALENTPOOL_RETENTION_MONTHS, PRIVACY_POLICY_URL, talentpoolExpiry, talentpoolPolicy } from "../shared/talentpool-consent";
 
 export const config = { api: { bodyParser: false } };
 
@@ -54,16 +54,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const isCandidate = get("type") === "kandidaat";
     const consentValue = get("talentpoolConsent");
     const submittedVersion = get("talentpoolConsentVersion");
+    const policy = talentpoolPolicy(submittedVersion);
     if (isCandidate && ((fields.talentpoolConsent?.length ?? 0) > 1 || (fields.talentpoolConsentVersion?.length ?? 0) > 1 || !["", "yes", "no"].includes(consentValue))) {
       return res.status(400).json({ error: "De toestemmingskeuze is ongeldig. Kies opnieuw of je toestemming wilt geven." });
     }
     const consentGranted = isCandidate && consentValue === "yes";
-    if (consentGranted && submittedVersion !== TALENTPOOL_CONSENT_VERSION) {
+    if (consentGranted && !policy) {
       return res.status(400).json({ error: "De toestemmingstekst is bijgewerkt. Vernieuw de pagina en maak jouw keuze opnieuw." });
     }
     const receivedAt = new Date().toISOString();
     const sourcePath = get("sourcePath");
-    const knownWording = submittedVersion === TALENTPOOL_CONSENT_VERSION;
     const consentRecord = isCandidate ? {
       recordId: randomUUID(),
       receivedAt,
@@ -74,8 +74,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       purpose: "future_functions_and_assignments",
       choice: consentGranted ? "granted" : "not_granted",
       // Old cached forms without a version do not prove that wording was shown.
-      consentVersion: knownWording ? TALENTPOOL_CONSENT_VERSION : null,
-      consentText: knownWording ? TALENTPOOL_CONSENT_TEXT : null,
+      consentVersion: policy ? submittedVersion : null,
+      consentText: policy?.text ?? null,
+      supportingText: policy?.note ?? null,
+      privacyPolicyUrl: PRIVACY_POLICY_URL,
       retentionMonths: consentGranted ? TALENTPOOL_RETENTION_MONTHS : null,
       expiresAt: consentGranted ? talentpoolExpiry(receivedAt) : null,
     } : null;
@@ -127,6 +129,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           `Pagina: ${consentRecord.sourcePath ?? "Niet meegestuurd"}`,
           `Tekstversie: ${consentRecord.consentVersion ?? "Onbekend (bijvoorbeeld een ouder formulier)"}`,
           ...(consentRecord.consentText ? [`Toestemmingstekst: ${consentRecord.consentText}`] : []),
+          ...(consentRecord.supportingText ? [`Toelichting: ${consentRecord.supportingText}`] : []),
+          `Privacyverklaring: ${consentRecord.privacyPolicyUrl}`,
           ...(consentRecord.expiresAt ? [`Toestemming geldig tot (UTC): ${consentRecord.expiresAt}`] : []),
           "De registratie is ook als JSON-bijlage toegevoegd. Verlenging en verwijdering worden niet automatisch door dit formulier uitgevoerd.",
         ] : []),

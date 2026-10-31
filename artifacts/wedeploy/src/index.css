@@ -952,12 +952,10 @@ main a, main button { text-wrap: balance; }
 .network-follow { display: inline-flex; align-items: center; min-height: 44px; margin-top: 1rem; color: hsl(var(--accent)); font-size: .875rem; font-weight: 600; }
 .contact-invitation p { color: hsl(var(--muted-foreground)); font-size: .95rem; line-height: 1.8; max-width: 44ch; }
 .contact-call { display: inline-flex; align-items: center; min-height: 44px; margin-top: 1rem; color: hsl(var(--primary)); font-size: .95rem; font-weight: 600; }
-.talentpool-consent { min-width: 0; margin-top: .25rem; border-top: 1px solid hsl(var(--primary) / .12); padding-top: 1rem; }
-.talentpool-consent legend { float: left; width: 100%; padding: 0; margin-bottom: .75rem; color: hsl(var(--primary)); font-size: .875rem; font-weight: 600; }
-.talentpool-consent legend span { color: hsl(var(--muted-foreground)); font-weight: 400; }
-.talentpool-consent label { clear: both; display: grid; grid-template-columns: 1.125rem minmax(0, 1fr); align-items: start; gap: .75rem; cursor: pointer; color: hsl(var(--primary)); font-size: .875rem; line-height: 1.7; }
+.talentpool-consent { min-width: 0; border-top: 1px solid hsl(var(--primary) / .12); padding-top: .75rem; }
+.talentpool-consent label { display: grid; grid-template-columns: 1.125rem minmax(0, 1fr); align-items: start; gap: .75rem; cursor: pointer; color: hsl(var(--primary)); font-size: .875rem; font-weight: 400; line-height: 1.7; }
 .talentpool-consent input[type="checkbox"] { width: 1.125rem; height: 1.125rem; margin-top: .2rem; accent-color: hsl(var(--primary)); }
-.talentpool-consent > p { clear: both; margin: .65rem 0 0 1.875rem; color: hsl(var(--muted-foreground)); font-size: .8rem; line-height: 1.65; }
+.talentpool-consent > p { margin: .35rem 0 0 1.875rem; color: hsl(var(--muted-foreground)); font-size: .8rem; line-height: 1.65; }
 .page-shell .closing-composition.closing-with-portrait { grid-template-columns: 72px minmax(0, 1fr); align-items: start; gap: 1.25rem; }
 .page-shell .closing-portrait { width: 72px; height: auto; }
 .page-shell .closing-portrait > div { aspect-ratio: 1; border-radius: 50%; }
