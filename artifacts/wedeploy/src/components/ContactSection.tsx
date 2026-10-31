@@ -5,6 +5,7 @@ import { CheckCircle2, AlertCircle, Paperclip, X } from "lucide-react";
 
 import { resolveContactContext, switchContactRole, type ContactRole as Role } from "./contact-context";
 import { contactPerson } from "@/data/contact-person";
+import { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, TALENTPOOL_OPTIONAL_NOTE } from "../../../../shared/talentpool-consent";
 
 const API_BASE = (import.meta.env.VITE_API_URL as string | undefined) ?? "";
 
@@ -30,6 +31,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [cvFile, setCvFile] = useState<File | null>(null);
+  const [talentpoolConsent, setTalentpoolConsent] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [requestContext, setRequestContext] = useState(context);
   const [activeVacancyId, setActiveVacancyId] = useState(vacancyId);
@@ -44,6 +46,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
       setSent(false);
       setError(null);
       setCvFile(null);
+      setTalentpoolConsent(false);
     };
     syncContext();
     window.addEventListener("popstate", syncContext);
@@ -55,6 +58,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
     setError(null);
     setLoading(true);
     const fd = new FormData(e.currentTarget);
+    fd.set("sourcePath", window.location.pathname);
     if (cvFile) fd.set("cv", cvFile);
     try {
       await submitForm(fd);
@@ -76,6 +80,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
     setSent(false);
     setError(null);
     setCvFile(null);
+    setTalentpoolConsent(false);
   };
 
   return (
@@ -285,6 +290,12 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                   )}
 
                   <p className="text-xs leading-relaxed text-muted-foreground">We gebruiken jouw gegevens om deze reactie te behandelen. Lees onze <a href="/privacy" className="underline">privacyverklaring</a>.</p>
+                  {role === "kandidaat" && <fieldset className="talentpool-consent" disabled={loading}>
+                    <legend>Kandidatenbestand <span>(optioneel)</span></legend>
+                    <input type="hidden" name="talentpoolConsentVersion" value={TALENTPOOL_CONSENT_VERSION} />
+                    <label><input type="checkbox" name="talentpoolConsent" value="yes" checked={talentpoolConsent} onChange={event => setTalentpoolConsent(event.target.checked)} aria-describedby="talentpool-consent-note" /><span>{TALENTPOOL_CONSENT_TEXT}</span></label>
+                    <p id="talentpool-consent-note">{TALENTPOOL_OPTIONAL_NOTE}</p>
+                  </fieldset>}
                   {/* Submit */}
                   <motion.button
                     type="submit"

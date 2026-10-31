@@ -1,7 +1,8 @@
 const { test, before, after } = require('node:test');
 const assert = require('node:assert/strict');
 const http = require('node:http');
-const handler = require('../.contact-test-build/contact.js').default;
+const handler = require('../.contact-test-build/api/contact.js').default;
+const { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, talentpoolExpiry } = require('../.contact-test-build/shared/talentpool-consent.js');
 
 const realFetch = global.fetch;
 const delivered = [];
@@ -73,7 +74,8 @@ test('Word attachments and requests without a CV are accepted', async () => {
     assert.equal(delivered.at(-1).attachments[0].filename, name);
   }
   assert.equal((await submit(form())).status, 200);
-  assert.deepEqual(delivered.at(-1).attachments, []);
+  assert.equal(delivered.at(-1).attachments.length, 1);
+  assert.match(delivered.at(-1).attachments[0].filename, /^kandidatenbestand-.*\.json$/);
 });
 
 test('unsupported, oversized and multiple files never trigger delivery', async () => {
@@ -122,4 +124,82 @@ test('anonymous profile requests preserve context in the email', async () => {
   assert.equal((await submit(body)).status, 200);
   assert.match(delivered.at(-1).subject, /Projectmanager vastgoedontwikkeling/);
   assert.match(delivered.at(-1).text, /Onderwerp \/ profiel: Projectmanager vastgoedontwikkeling/);
+  assert.deepEqual(delivered.at(-1).attachments, []);
+});
+
+const receipt = email => JSON.parse(Buffer.from(email.attachments.find(file => file.filename.startsWith('kandidatenbestand-')).content, 'base64').toString('utf8'));
+
+test('optional unchecked consent accepts the submission without future matching permission', async () => {
+  const body = form();
+  body.set('talentpoolConsentVersion', TALENTPOOL_CONSENT_VERSION);
+  const response = await submit(body);
+  assert.equal(response.status, 200);
+  const record = receipt(delivered.at(-1));
+  assert.equal(record.choice, 'not_granted');
+  assert.equal(record.retentionMonths, null);
+  assert.equal(record.expiresAt, null);
+  assert.equal(record.consentText, TALENTPOOL_CONSENT_TEXT);
+  assert.equal((await response.json()).receiptId, record.recordId);
+  assert.match(delivered.at(-1).text, /Niet gegeven; alleen de huidige reactie behandelen/);
+});
+
+test('consent records exact wording, server time and expiry while preserving CV bytes', async () => {
+  const body = form();
+  const bytes = Buffer.from('%PDF-1.4\nconsent test cv\n');
+  body.set('cv', new Blob([bytes], { type: 'application/pdf' }), 'candidate.pdf');
+  body.set('talentpoolConsent', 'yes');
+  body.set('talentpoolConsentVersion', TALENTPOOL_CONSENT_VERSION);
+  body.set('sourcePath', '/vacatures');
+  body.set('receivedAt', '2000-01-01T00:00:00.000Z');
+  body.set('expiresAt', '2099-01-01T00:00:00.000Z');
+  const before = Date.now();
+  assert.equal((await submit(body)).status, 200);
+  const email = delivered.at(-1);
+  const record = receipt(email);
+  assert.equal(record.choice, 'granted');
+  assert.equal(record.consentVersion, TALENTPOOL_CONSENT_VERSION);
+  assert.equal(record.consentText, TALENTPOOL_CONSENT_TEXT);
+  assert.equal(record.retentionMonths, 12);
+  assert.equal(record.sourcePath, '/vacatures');
+  assert.equal(record.email, 'kandidaat@example.com');
+  assert.ok(Date.parse(record.receivedAt) >= before && Date.parse(record.receivedAt) <= Date.now());
+  assert.equal(record.expiresAt, talentpoolExpiry(record.receivedAt));
+  assert.equal(email.attachments.length, 2);
+  assert.equal(email.attachments[0].filename, 'candidate.pdf');
+  assert.deepEqual(Buffer.from(email.attachments[0].content, 'base64'), bytes);
+  assert.match(email.text, /Toestemming: Ja, twaalf maanden/);
+});
+
+test('unknown wording, unexpected choices and duplicate consent fields never record consent', async () => {
+  for (const kind of ['missing-version', 'old-version', 'invalid-choice', 'duplicate-choice', 'duplicate-version']) {
+    const body = form();
+    body.set('talentpoolConsent', 'yes');
+    if (kind !== 'missing-version') body.set('talentpoolConsentVersion', kind === 'old-version' ? 'old-version' : TALENTPOOL_CONSENT_VERSION);
+    if (kind === 'invalid-choice') body.set('talentpoolConsent', 'maybe');
+    if (kind === 'duplicate-choice') body.append('talentpoolConsent', 'no');
+    if (kind === 'duplicate-version') body.append('talentpoolConsentVersion', 'old-version');
+    const count = delivered.length;
+    assert.equal((await submit(body)).status, 400, kind);
+    assert.equal(delivered.length, count);
+  }
+});
+
+test('legacy forms do not invent shown consent text; employer fields cannot grant candidate consent', async () => {
+  assert.equal((await submit(form())).status, 200);
+  const record = receipt(delivered.at(-1));
+  assert.equal(record.choice, 'not_granted');
+  assert.equal(record.consentVersion, null);
+  assert.equal(record.consentText, null);
+  const body = form();
+  body.set('type', 'opdrachtgever');
+  body.set('talentpoolConsent', 'yes');
+  body.set('talentpoolConsentVersion', TALENTPOOL_CONSENT_VERSION);
+  assert.equal((await submit(body)).status, 200);
+  assert.deepEqual(delivered.at(-1).attachments, []);
+  assert.doesNotMatch(delivered.at(-1).text, /Toestemming: Ja/);
+});
+
+test('twelve calendar months clamps leap day rather than extending into March', () => {
+  assert.equal(talentpoolExpiry('2024-02-29T10:15:00.000Z'), '2025-02-28T10:15:00.000Z');
+  assert.equal(talentpoolExpiry('2026-10-31T10:15:00.000Z'), '2027-10-31T10:15:00.000Z');
 });

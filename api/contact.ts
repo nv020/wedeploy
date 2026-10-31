@@ -3,6 +3,8 @@ import { Resend } from "resend";
 import formidable, { type File } from "formidable";
 import { readFile, rm } from "node:fs/promises";
 import { basename, extname } from "node:path";
+import { randomUUID } from "node:crypto";
+import { TALENTPOOL_CONSENT_TEXT, TALENTPOOL_CONSENT_VERSION, TALENTPOOL_RETENTION_MONTHS, talentpoolExpiry } from "../shared/talentpool-consent";
 
 export const config = { api: { bodyParser: false } };
 
@@ -26,7 +28,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       maxFiles: 1,
       maxFileSize: MAX_CV_BYTES,
       maxTotalFileSize: MAX_CV_BYTES,
-      maxFields: 12,
+      maxFields: 16,
       maxFieldsSize: 32 * 1024,
       allowEmptyFiles: false,
     });
@@ -49,6 +51,35 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: "Upload uw bestand via het cv-veld." });
     }
 
+    const isCandidate = get("type") === "kandidaat";
+    const consentValue = get("talentpoolConsent");
+    const submittedVersion = get("talentpoolConsentVersion");
+    if (isCandidate && ((fields.talentpoolConsent?.length ?? 0) > 1 || (fields.talentpoolConsentVersion?.length ?? 0) > 1 || !["", "yes", "no"].includes(consentValue))) {
+      return res.status(400).json({ error: "De toestemmingskeuze is ongeldig. Kies opnieuw of je toestemming wilt geven." });
+    }
+    const consentGranted = isCandidate && consentValue === "yes";
+    if (consentGranted && submittedVersion !== TALENTPOOL_CONSENT_VERSION) {
+      return res.status(400).json({ error: "De toestemmingstekst is bijgewerkt. Vernieuw de pagina en maak jouw keuze opnieuw." });
+    }
+    const receivedAt = new Date().toISOString();
+    const sourcePath = get("sourcePath");
+    const knownWording = submittedVersion === TALENTPOOL_CONSENT_VERSION;
+    const consentRecord = isCandidate ? {
+      recordId: randomUUID(),
+      receivedAt,
+      source: "wedeploy.nl/contact-form",
+      sourcePath: /^\/(?!\/)[a-zA-Z0-9/_-]*$/.test(sourcePath) && sourcePath.length <= 300 ? sourcePath : null,
+      name: naam,
+      email,
+      purpose: "future_functions_and_assignments",
+      choice: consentGranted ? "granted" : "not_granted",
+      // Old cached forms without a version do not prove that wording was shown.
+      consentVersion: knownWording ? TALENTPOOL_CONSENT_VERSION : null,
+      consentText: knownWording ? TALENTPOOL_CONSENT_TEXT : null,
+      retentionMonths: consentGranted ? TALENTPOOL_RETENTION_MONTHS : null,
+      expiresAt: consentGranted ? talentpoolExpiry(receivedAt) : null,
+    } : null;
+
     const cv = files.cv?.[0];
     const attachments = [];
     if (cv) {
@@ -60,6 +91,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
       attachments.push({ filename, content: await readFile(cv.filepath), contentType });
     }
+    if (consentRecord) attachments.push({
+      filename: `kandidatenbestand-${consentRecord.recordId}.json`,
+      content: Buffer.from(JSON.stringify(consentRecord, null, 2), "utf8"),
+      contentType: "application/json",
+    });
 
     const apiKey = process.env.RESEND_API_KEY_WEDEPLOY;
     if (!apiKey) {
@@ -83,6 +119,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         ...(onderwerp ? [`Onderwerp / profiel: ${onderwerp}`] : []),
         ...(referentie ? [`Vacaturereferentie: ${referentie}`] : []),
         `CV: ${cv ? attachments[0].filename : "Niet meegestuurd"}`,
+        ...(consentRecord ? [
+          "", "Kandidatenbestand voor toekomstige mogelijkheden:",
+          `Toestemming: ${consentGranted ? "Ja, twaalf maanden" : "Niet gegeven; alleen de huidige reactie behandelen"}`,
+          `Ontvangen op (UTC): ${consentRecord.receivedAt}`,
+          `Registratie: ${consentRecord.recordId}`,
+          `Pagina: ${consentRecord.sourcePath ?? "Niet meegestuurd"}`,
+          `Tekstversie: ${consentRecord.consentVersion ?? "Onbekend (bijvoorbeeld een ouder formulier)"}`,
+          ...(consentRecord.consentText ? [`Toestemmingstekst: ${consentRecord.consentText}`] : []),
+          ...(consentRecord.expiresAt ? [`Toestemming geldig tot (UTC): ${consentRecord.expiresAt}`] : []),
+          "De registratie is ook als JSON-bijlage toegevoegd. Verlenging en verwijdering worden niet automatisch door dit formulier uitgevoerd.",
+        ] : []),
         "", "Bericht:", bericht,
       ].join("\n"),
       attachments,
@@ -91,7 +138,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       console.error("[contact] Resend error:", error.name);
       return res.status(500).json({ error: "Mail verzenden mislukt. Probeer het later opnieuw." });
     }
-    return res.status(200).json({ success: true });
+    return res.status(200).json({ success: true, ...(consentRecord ? { receiptId: consentRecord.recordId } : {}) });
   } catch (err) {
     const uploadError = err as { code?: number };
     if (uploadError.code && uploadError.code >= 1000 && uploadError.code < 2000) {
