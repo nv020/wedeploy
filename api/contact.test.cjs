@@ -142,7 +142,13 @@ test('optional unchecked consent accepts the submission without future matching 
   assert.equal(record.supportingText, TALENTPOOL_OPTIONAL_NOTE);
   assert.equal(record.privacyPolicyUrl, PRIVACY_POLICY_URL);
   assert.equal((await response.json()).receiptId, record.recordId);
-  assert.match(delivered.at(-1).text, /Niet gegeven; alleen de huidige reactie behandelen/);
+  const mail = delivered.at(-1).text;
+  assert.match(mail, /Kandidatenpool: GEEN TOESTEMMING/);
+  assert.match(mail, /vraag apart toestemming voor opname/);
+  assert.ok(!mail.includes(TALENTPOOL_CONSENT_TEXT), 'offered consent wording must not read like granted consent');
+  assert.doesNotMatch(mail, /Geldig tot \(UTC\):/);
+  assert.ok(mail.indexOf('Kandidatenpool:') < mail.indexOf('Bericht:'));
+  assert.ok(mail.indexOf('Registratiegegevens') > mail.indexOf('Bericht:'));
 });
 
 test('consent records exact wording, server time and expiry while preserving CV bytes', async () => {
@@ -169,7 +175,9 @@ test('consent records exact wording, server time and expiry while preserving CV 
   assert.equal(email.attachments.length, 2);
   assert.equal(email.attachments[0].filename, 'candidate.pdf');
   assert.deepEqual(Buffer.from(email.attachments[0].content, 'base64'), bytes);
-  assert.match(email.text, /Toestemming: Ja, twaalf maanden/);
+  assert.match(email.text, /Kandidatenpool: TOESTEMMING GEGEVEN/);
+  assert.ok(email.text.includes(`Geldig tot (UTC): ${record.expiresAt}`));
+  assert.doesNotMatch(email.text, /Kandidatenpool: GEEN TOESTEMMING/);
 });
 
 test('unknown wording, unexpected choices and duplicate consent fields never record consent', async () => {
@@ -198,7 +206,7 @@ test('legacy forms do not invent shown consent text; employer fields cannot gran
   body.set('talentpoolConsentVersion', TALENTPOOL_CONSENT_VERSION);
   assert.equal((await submit(body)).status, 200);
   assert.deepEqual(delivered.at(-1).attachments, []);
-  assert.doesNotMatch(delivered.at(-1).text, /Toestemming: Ja/);
+  assert.doesNotMatch(delivered.at(-1).text, /Kandidatenpool:|Registratiegegevens/);
 });
 
 test('twelve calendar months clamps leap day rather than extending into March', () => {

@@ -122,19 +122,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         ...(referentie ? [`Vacaturereferentie: ${referentie}`] : []),
         `CV: ${cv ? attachments[0].filename : "Niet meegestuurd"}`,
         ...(consentRecord ? [
-          "", "Kandidatenbestand voor toekomstige mogelijkheden:",
-          `Toestemming: ${consentGranted ? "Ja, twaalf maanden" : "Niet gegeven; alleen de huidige reactie behandelen"}`,
+          "", `Kandidatenpool: ${consentGranted ? "TOESTEMMING GEGEVEN" : "GEEN TOESTEMMING"}`,
+          consentGranted
+            ? "De kandidaat heeft toestemming gegeven voor 12 maanden bewaren en benaderen voor passende functies en opdrachten."
+            : "Geen toestemming geregistreerd voor 12 maanden bewaren. Behandel deze reactie en plan een kennismaking; vraag apart toestemming voor opname in de kandidatenpool.",
+          ...(consentRecord.expiresAt ? [`Geldig tot (UTC): ${consentRecord.expiresAt}`] : []),
+        ] : []),
+        "", "Bericht:", bericht,
+        ...(consentRecord ? [
+          "", "--- Registratiegegevens ---",
           `Ontvangen op (UTC): ${consentRecord.receivedAt}`,
           `Registratie: ${consentRecord.recordId}`,
           `Pagina: ${consentRecord.sourcePath ?? "Niet meegestuurd"}`,
           `Tekstversie: ${consentRecord.consentVersion ?? "Onbekend (bijvoorbeeld een ouder formulier)"}`,
-          ...(consentRecord.consentText ? [`Toestemmingstekst: ${consentRecord.consentText}`] : []),
-          ...(consentRecord.supportingText ? [`Toelichting: ${consentRecord.supportingText}`] : []),
           `Privacyverklaring: ${consentRecord.privacyPolicyUrl}`,
-          ...(consentRecord.expiresAt ? [`Toestemming geldig tot (UTC): ${consentRecord.expiresAt}`] : []),
-          "De registratie is ook als JSON-bijlage toegevoegd. Verlenging en verwijdering worden niet automatisch door dit formulier uitgevoerd.",
+          "De getoonde keuzetekst en de vastgelegde uitkomst staan ook in de JSON-bijlage. Bewaking van de bewaartermijn gebeurt niet automatisch via dit formulier.",
         ] : []),
-        "", "Bericht:", bericht,
       ].join("\n"),
       attachments,
     });
