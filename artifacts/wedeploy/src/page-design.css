@@ -1,0 +1,130 @@
+/* Interior pages: one type scale and distinct compositions by purpose. */
+.page-shell {
+  --design-ink: hsl(var(--primary));
+  --design-wash: #eaf3fb;
+  --design-rule: hsl(var(--primary) / .16);
+  --design-blue: #1375b5;
+  --page-space: clamp(2.5rem, 4.8vw, 4.75rem);
+}
+.page-shell main h2 { text-wrap: balance; }
+.page-shell .intro-breadcrumb > span { min-width: 0; overflow-wrap: anywhere; }
+.page-shell :where(h1, h2, h3, summary, a) { overflow-wrap: break-word; }
+.page-shell .agency-intro:not(.hero-contact) .intro-actions .page-action { background: #83caff; color: var(--design-ink); }
+.page-shell .intro-actions .page-action:hover { box-shadow: 0 0 0 2px currentColor inset; }
+.page-shell .intro-actions .secondary-action { border-bottom: 0; min-height: 44px; padding-block: .45rem; }
+.page-shell .intro-actions .secondary-action:hover { text-decoration: underline !important; text-underline-offset: .24em; }
+.page-shell:not(.recruit-page) .agency-intro { padding-bottom: clamp(2.25rem, 5vw, 4.75rem); }
+.page-shell:not(.recruit-page) .intro-content .page-title { font-size: clamp(1.9rem, 4.05vw, 3.9rem); line-height: 1.08; letter-spacing: -.047em; margin-bottom: .95rem; }
+.page-shell:not(.recruit-page) .intro-description { line-height: 1.65; }
+.page-shell:not(.recruit-page) .intro-actions { margin-top: 1.3rem; gap: .35rem 1.2rem; }
+.page-shell:not(.recruit-page) .hero-media { border-radius: .35rem; }
+.page-shell.composition-feature:not(.recruit-page) .hero-media { border-radius: .35rem 2.25rem .35rem .35rem; }
+.page-shell.composition-directory .agency-intro { background: var(--design-wash); color: var(--design-ink); }
+.page-shell.composition-directory .agency-intro .intro-actions .page-action,
+.page-shell .hero-contact .intro-actions .page-action { background: var(--design-ink); color: white; }
+.page-shell.recruit-facility .agency-intro .intro-actions .page-action,
+.page-shell.recruit-property .agency-intro .intro-actions .page-action { background: var(--design-ink); color: white; }
+.page-shell.composition-directory .hero-media { border-radius: .35rem .35rem 2.25rem .35rem; }
+.page-shell.composition-reading:not(.recruit-page) .agency-intro,
+.page-shell.composition-direct:not(.recruit-page) .agency-intro { padding-bottom: clamp(2rem, 4vw, 3.5rem); }
+.page-shell.composition-reading:not(.recruit-page) .intro-content .page-title { max-width: 24ch; font-size: clamp(1.85rem, 3.5vw, 3.25rem); }
+.page-shell.composition-reading .hero-media { aspect-ratio: 2 / 1; }
+.page-shell.composition-direct .intro-content .page-title { max-width: 22ch; }
+
+/* A few distinct reading rhythms, with no fixed-height headings on editorial lists. */
+.page-shell .editorial-composition > header,
+.page-shell .statement-composition > header,
+.page-shell .numbered-composition > header { min-width: 0; }
+.page-shell .editorial-body { gap: .8rem; }
+.page-shell .editorial-composition > header .eyebrow,
+.page-shell .numbered-composition > header .eyebrow { color: var(--design-blue); }
+.page-shell .role-directory:not(.available-directory) h3,
+.page-shell .service-editorial-list h3 { min-height: 0; }
+.page-shell .role-directory:not(.available-directory) p { margin-top: .4rem; }
+.page-shell .role-directory:not(.available-directory) > article,
+.page-shell .role-directory:not(.available-directory) > a { padding-block: 1.15rem; }
+.page-shell .directory-action { margin-top: .6rem; min-height: 44px; }
+.page-shell .function-practice { background: var(--design-wash); border: 0; border-inline-start: 3px solid #3da5eb; padding: clamp(1.1rem, 3vw, 2rem); }
+.page-shell .function-practice h3 { color: var(--design-ink); }
+.page-shell .function-practice .function-kicker { color: var(--design-blue); }
+.page-shell .function-audience-grid article { min-width: 0; }
+.page-shell .function-index-list li { padding-block: clamp(.95rem, 2vw, 1.4rem); }
+.page-shell .knowledge-index-list article img { border-radius: .25rem; }
+.page-shell .knowledge-index-list article h3 { margin-top: .3rem; }
+
+/* Keep contextual links visible and indexable in one shorter section. */
+.page-shell .next-reading { padding-block: clamp(1.65rem, 3.5vw, 3rem); border-block: 1px solid var(--design-rule); }
+.next-reading-layout, .next-reading-groups { display: grid; gap: 1.35rem; }
+.next-reading-groups > div { min-width: 0; }
+.page-shell .next-reading h2 { font-size: clamp(1.35rem, 2.4vw, 1.8rem); }
+.page-shell .next-reading h3 { font-size: .78rem; letter-spacing: .035em; color: var(--design-blue); margin-bottom: .35rem; }
+.next-reading-groups ul { list-style: none; margin: 0; padding: 0; }
+.next-reading-groups a { min-height: 44px; max-width: 100%; padding-block: .25rem; line-height: 1.42; color: var(--design-ink); font-size: .95rem; }
+.next-reading-groups a:hover { text-decoration: underline; text-underline-offset: .22em; }
+.next-reading-groups .next-reading-more { color: var(--design-blue); font-size: .84rem; margin-top: .3rem; }
+.page-shell .page-faq { padding-block: clamp(2.25rem, 4.25vw, 4rem); }
+.page-shell .faq-item summary { text-wrap: pretty; gap: .8rem; }
+
+/* A short next step; keep the portrait on the About page. */
+.page-shell .agency-closing { background: var(--design-wash); padding-block: clamp(1.7rem, 3.7vw, 3.5rem); }
+.page-shell .closing-composition:not(.closing-with-portrait) {
+  border-inline-start: 3px solid #3da5eb;
+  padding-inline-start: clamp(1rem, 2.3vw, 2rem);
+  gap: .95rem 2rem;
+}
+.page-shell .closing-composition h2 { margin-bottom: .45rem; }
+.page-shell .closing-actions { gap: .45rem 1rem; }
+.page-shell .closing-actions .page-action { background: var(--design-ink); color: white; }
+.page-shell .closing-actions .secondary-action { min-height: 44px; border-bottom: 0; }
+.page-shell .closing-actions .secondary-action:hover { text-decoration: underline !important; text-underline-offset: .24em; }
+.page-shell .contact-form button[type="submit"] { width: fit-content; max-width: 100%; }
+
+@media (max-width: 767px) {
+  .page-shell .intro-breadcrumb { margin-bottom: 1.15rem; }
+  .page-shell:not(.recruit-page) .intro-editorial-grid { gap: 1.3rem; }
+  .page-shell:not(.recruit-page) .hero-media { aspect-ratio: 1.95; max-height: 16rem; }
+  .page-shell .faq-composition { gap: .9rem; }
+  .page-shell .next-reading-groups > div + div { border-top: 1px solid var(--design-rule); padding-top: .9rem; }
+}
+@media (min-width: 768px) {
+  .page-shell.composition-directory .hero-with-image .intro-editorial-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); }
+  .page-shell.composition-directory .hero-media { aspect-ratio: 1.75; max-height: 325px; }
+  .page-shell.composition-reading .hero-with-image .intro-editorial-grid,
+  .page-shell.composition-direct .hero-with-image .intro-editorial-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); }
+  .page-shell.composition-direct .hero-media { aspect-ratio: 1.8; max-height: 285px; }
+  .page-shell.composition-feature.page-split:not(.recruit-page) .hero-with-image .intro-editorial-grid { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(2rem, 5vw, 5rem); }
+  .page-shell.composition-feature.page-split:not(.recruit-page) .hero-with-image .hero-media { grid-column: 1; grid-row: 1; border-radius: 2.25rem .35rem .35rem .35rem; }
+  .page-shell.composition-feature.page-split:not(.recruit-page) .hero-with-image .intro-content { grid-column: 2; grid-row: 1; }
+  .page-shell .editorial-offset { grid-template-columns: minmax(0, .58fr) minmax(0, 1fr); }
+  .page-shell .next-reading-layout,
+  .page-shell .page-faq .faq-composition { grid-template-columns: minmax(0, .52fr) minmax(0, 1.48fr); gap: var(--page-gap); }
+  .next-reading-groups:has(> div + div) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--page-gap); }
+  .page-shell .closing-composition:not(.closing-with-portrait) { grid-template-columns: minmax(0, 55ch) minmax(0, auto); }
+  .knowledge-shell .knowledge-reading-grid { justify-content: start; }
+}
+@media (min-width: 1024px) {
+  .page-shell .function-task-composition { max-width: none; display: grid; grid-template-columns: minmax(0, .55fr) minmax(0, 1fr); gap: 1.2rem var(--page-gap); align-items: start; }
+  .page-shell .function-task-composition > header { grid-column: 1; grid-row: 1; }
+  .page-shell .function-task-composition > ul { grid-column: 2; grid-row: 1 / span 2; margin-top: 0; }
+  .page-shell .function-task-composition > aside { grid-column: 1; grid-row: 2; margin-top: 0; }
+}
+
+/* Directories read as a single list instead of a wall of tiles. */
+.page-shell .role-directory:has(> .directory-item) { grid-template-columns: minmax(0, 1fr); }
+.page-shell .role-directory > .directory-item {
+  display: grid;
+  align-items: baseline;
+  gap: .25rem var(--page-gap);
+}
+.page-shell .role-directory > .directory-item p { margin: 0; line-height: 1.65; }
+.page-shell .role-directory > .directory-item .directory-action { margin: 0; color: var(--design-blue); }
+.page-shell .directory-item:focus-within { border-top-color: var(--design-blue); }
+.page-shell .statement-composition > header { padding-inline-start: clamp(.9rem, 2vw, 1.6rem); border-inline-start: 3px solid #3da5eb; }
+@media (min-width: 768px) {
+  .page-shell .role-directory > .directory-item { grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); }
+  .page-shell .role-directory > .directory-item .directory-action { grid-column: 2; justify-self: start; }
+}
+@media (min-width: 1120px) {
+  .page-shell .role-directory > .directory-item { grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr) minmax(0, .65fr); }
+  .page-shell .role-directory > .directory-item .directory-action { grid-column: auto; }
+}
