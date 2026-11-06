@@ -172,6 +172,35 @@
         "loondienst",
         "zzp"
       ]
+    },
+    {
+      "approvedForPublication": true,
+      "confirmedAt": "2026-11-06",
+      "reviewBy": "2026-12-06",
+      "reference": "WD-P007",
+      "status": "available",
+      "title": "Pentester | Netwerkbeveiliging",
+      "sector": "cybersecurity",
+      "contract": "Voorkeur: vaste functie",
+      "labels": [
+        "Pentesting",
+        "IT-infrastructuur",
+        "Risicorapportage"
+      ],
+      "availableFrom": "2026-11-06",
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "Randstad · hybride",
+      "summary": "Pentester met ervaring in geautoriseerde beveiligingstests van netwerken en IT-infrastructuur. Brengt kwetsbaarheden in kaart en vertaalt technische bevindingen naar risico’s en verbeterpunten. Zoekt een vaste functie waarin technische beveiligingstests centraal staan.",
+      "experience": [
+        "Beveiligingstests van netwerken en IT-infrastructuur",
+        "Analyse van kwetsbaarheden",
+        "Rapportage en advies over verbetermaatregelen"
+      ],
+      "preview": "Pentester met ervaring in het testen van netwerken en IT-infrastructuur. Vertaalt bevindingen naar concrete verbeterpunten.",
+      "engagementTypes": [
+        "loondienst"
+      ]
     }
   ]
 }

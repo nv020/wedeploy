@@ -6,6 +6,7 @@ export const sectorLabels: Record<ProfessionalSectorKey, string> = {
   vastgoed: 'Vastgoed & huisvesting',
   techniek: 'Techniek',
   hr: 'HR & recruitment',
+  cybersecurity: 'Cybersecurity',
 };
 
 export function matchingProfessionals(profiles: AvailableProfessional[], sector: string, engagement: string) {
