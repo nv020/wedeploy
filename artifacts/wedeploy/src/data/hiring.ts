@@ -1,11 +1,11 @@
 import type { PageImage } from './page-images';
-import type { ProfessionalSectorKey } from './publication';
+import type { SectorKey } from './publication';
 
 type HiringPage = {
   slug: string; label: string; title: string; description: string; intro: string;
   heading: string; paragraphs: string[]; image: PageImage;
   situations: [string, string][]; roles: { title: string; text: string; href: string }[];
-  selectionTitle: string; selection: string[]; sector?: ProfessionalSectorKey;
+  selectionTitle: string; selection: string[]; sector?: SectorKey;
   contextTitle: string; context: string; areaPath?: string;
   faq: { question: string; answer: string }[];
 };

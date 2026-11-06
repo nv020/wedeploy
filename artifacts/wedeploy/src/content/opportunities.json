@@ -3,8 +3,6 @@
   "professionals": [
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-10-20",
-      "reviewBy": "2026-11-17",
       "reference": "WD-P006",
       "status": "soon",
       "title": "Civiel ingenieur | Kostenramingen & aanbestedingen",
@@ -15,51 +13,50 @@
         "Kostenramingen",
         "Aanbestedingen"
       ],
-      "engagementTypes": ["loondienst"],
-      "availableFrom": "2026-10-20",
-      "availabilityLabel": "Op korte termijn",
-      "hours": "Fulltime",
-      "region": "Randstad · woonregio Amsterdam",
-      "preview": "Civiel ingenieur met ruim 13 jaar ervaring in infrastructuurprojecten. Sterk in kostenramingen, hoeveelhedenstaten en de voorbereiding van aanbestedingen.",
-      "summary": "Civiel ingenieur met ruim dertien jaar ervaring in de voorbereiding en kostenbeheersing van bouw- en infrastructuurprojecten. Werkte ruim negen jaar aan opdrachtgeverszijde bij een grote gemeentelijke organisatie in Turkije, aan wegenbouw, bruggen, drainage en grondwerken. Stelt kostenramingen, hoeveelhedenstaten en technische specificaties op en heeft ervaring met aanbestedingsdocumenten, offertebeoordeling en ontwerpcontrole. Zoekt een vaste functie in de Randstad waarin zij haar ervaring kan inzetten en verder ontwikkelen. Verdiept zich in de Nederlandse RAW-systematiek en werkt actief aan haar Nederlands.",
+      "engagementTypes": [
+        "loondienst"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg",
+      "preview": "Civiel ingenieur met ervaring in kostenramingen en aanbestedingen voor infrastructuur.",
+      "summary": "Civiel ingenieur met ervaring in kostenramingen, hoeveelhedenstaten en technische documentatie. Ondersteunt de voorbereiding van aanbestedingen en beoordeelt offertes en ontwerpen.",
       "experience": [
-        "Bachelor Civiele Techniek",
-        "Kostenramingen, hoeveelhedenstaten en eenheidsprijsanalyses",
-        "Technische specificaties, aanbestedingsdocumenten en offertebeoordeling",
-        "Ervaring met AutoCAD en MS Project",
-        "Nederlands B1, schrijven B2 · Engels B1"
+        "Kostenramingen en hoeveelhedenstaten",
+        "Technische specificaties en aanbestedingsdocumentatie",
+        "Offertebeoordeling en ontwerpcontrole"
       ]
     },
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-10-09",
-      "reviewBy": "2026-11-06",
       "reference": "WD-P005",
       "status": "soon",
       "language": "en",
       "title": "Talent Acquisition & Recruitment Specialist",
       "sector": "hr",
       "contract": "Permanent / freelance",
-      "labels": ["Tech & business hiring", "International recruitment", "HR Operations"],
-      "engagementTypes": ["loondienst", "zzp"],
-      "availableFrom": "2027-01-01",
-      "availabilityLabel": "January 2027 preferred",
+      "labels": [
+        "Tech & business hiring",
+        "International recruitment",
+        "HR Operations"
+      ],
+      "engagementTypes": [
+        "loondienst",
+        "zzp"
+      ],
+      "availabilityLabel": "By agreement",
       "hours": "By agreement",
-      "region": "Amsterdam region · hybrid / remote",
-      "preview": "Talent Acquisition specialist with 6+ years of experience in agency recruitment and international businesses. Combines tech and business hiring with hands-on HR Operations experience.",
-      "summary": "A hands-on Talent Acquisition professional who combines targeted sourcing with full-cycle recruitment for technical and business roles. Works closely with hiring managers to define requirements, assess candidates and guide the process from first contact to interviews, offers and onboarding. Her experience spans recruitment agencies, start-ups and scale-ups, including both growing teams and high-volume hiring projects. She has recruited across software development, design, commercial and finance roles. Beyond recruitment, she brings practical experience in employment contracts, leave administration, onboarding, offboarding and immigration processes for international employees. Recruitment is her main focus; she is also open to broader HR Operations roles. A January 2027 start is preferred; an earlier start may be possible by agreement.",
+      "region": "By agreement",
+      "preview": "Talent acquisition specialist with experience in technical and commercial hiring.",
+      "summary": "Talent acquisition professional with experience in technical and commercial recruitment. Partners with hiring managers to define roles, identify candidates and guide the selection process.",
       "experience": [
-        "More than six years of recruitment experience, including technical and business hiring",
-        "Direct sourcing through LinkedIn Recruiter, referrals and targeted outreach",
-        "Hiring manager collaboration and competency-based interviewing",
-        "International recruitment, relocation and employee onboarding",
-        "Professional working English · Native Turkish · Basic Dutch"
+        "Technical and commercial recruitment",
+        "Direct sourcing and candidate interviews",
+        "Hiring manager collaboration"
       ]
     },
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-10-05",
-      "reviewBy": "2026-11-02",
       "reference": "WD-P001",
       "status": "available",
       "title": "Projectleider & procesverbeteraar",
@@ -70,10 +67,9 @@
         "Procesverbetering",
         "Implementatie"
       ],
-      "availableFrom": "2026-10-05",
-      "availabilityLabel": "Per direct",
-      "hours": "24 uur, opbouw naar 36 uur",
-      "region": "Amsterdam / Zaanstreek",
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg",
       "summary": "Hbo-opgeleide technisch bedrijfskundige met circa zeven jaar ervaring in projecten, procesverbetering en informatievoorziening. Heeft onder meer informatieprojecten aangestuurd, werkprocessen verbeterd en ICT-vraagstukken bij bouw- en verhuisprojecten begeleid. Analyseert knelpunten, brengt betrokkenen samen en helpt nieuwe werkwijzen in de praktijk te brengen. Zoekt een vaste functie waarin projectleiding en praktische verbetering samenkomen.",
       "experience": [
         "Projecten en implementaties begeleiden",
@@ -87,8 +83,6 @@
     },
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-10-05",
-      "reviewBy": "2026-11-02",
       "reference": "WD-P002",
       "status": "soon",
       "title": "Projectleider & procesadviseur",
@@ -99,10 +93,9 @@
         "Projectleiding",
         "Verandering"
       ],
-      "availableFrom": "2027-01-01",
-      "availabilityLabel": "Vanaf januari 2027",
-      "hours": "Fulltime",
-      "region": "Midden-Nederland",
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg",
       "summary": "Projectleider en procesadviseur met acht jaar ervaring in complexe organisaties. Werkt aan procesoptimalisatie, Lean-implementaties en verandering binnen teams. Brengt overzicht in vraagstukken, maakt verbeterpunten concreet en betrekt mensen bij een nieuwe aanpak. Combineert analyse met uitvoering en aandacht voor samenwerking. Beschikbaar voor opdrachten waarin processen slimmer worden ingericht en nieuwe werkwijzen worden ingevoerd.",
       "experience": [
         "Procesoptimalisatie en Lean-implementaties",
@@ -116,8 +109,6 @@
     },
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-10-05",
-      "reviewBy": "2026-11-02",
       "reference": "WD-P003",
       "status": "soon",
       "title": "Installatieverantwoordelijke (IV)",
@@ -128,10 +119,9 @@
         "Elektrische veiligheid",
         "Projectrealisatie"
       ],
-      "availableFrom": "2027-03-01",
-      "availabilityLabel": "Vanaf 1 maart 2027",
-      "hours": "24–32 uur per week",
-      "region": "Midden-Nederland",
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg",
       "summary": "Installatieverantwoordelijke met ruime ervaring in laag- en middenspanning en technisch onderhoud. Heeft een achtergrond in Engineering en Onderhouds- en Assetmanagement. Begeleidt technische teams en werkt aan elektrische veiligheid, waaronder de implementatie van NEN 3140. Zoekt een opdracht met technische diepgang, bij voorkeur in middenspanning, waarin advies en projectrealisatie samenkomen.",
       "experience": [
         "Hbo Engineering en post-hbo Onderhouds- en Assetmanagement",
@@ -145,8 +135,6 @@
     },
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-10-08",
-      "reviewBy": "2026-11-05",
       "reference": "WD-P004",
       "status": "available",
       "title": "Senior manager bedrijfsvoering",
@@ -157,10 +145,9 @@
         "Organisatieverandering",
         "Facilitair & huisvesting"
       ],
-      "availableFrom": "2026-10-08",
-      "availabilityLabel": "Per direct",
-      "hours": "32–40 uur per week",
-      "region": "Noord-Holland",
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg",
       "summary": "Senior manager met ruim twintig jaar ervaring in bedrijfsvoering, vastgoed en facilitaire dienstverlening. Heeft verschillende ondersteunende afdelingen aangestuurd en dienstverlening voor meerdere locaties samengebracht. Werkt rustig en betrokken, geeft teams vertrouwen en neemt mensen mee in veranderingen. Zoekt een leidinggevende rol waarin hij de organisatie en dienstverlening kan verbeteren, bij voorkeur binnen zorg, onderwijs of overheid.",
       "experience": [
         "Hbo Facility Management",
@@ -175,8 +162,6 @@
     },
     {
       "approvedForPublication": true,
-      "confirmedAt": "2026-11-06",
-      "reviewBy": "2026-12-06",
       "reference": "WD-P007",
       "status": "available",
       "title": "Pentester | Netwerkbeveiliging",
@@ -187,10 +172,9 @@
         "IT-infrastructuur",
         "Risicorapportage"
       ],
-      "availableFrom": "2026-11-06",
       "availabilityLabel": "In overleg",
       "hours": "In overleg",
-      "region": "Randstad · hybride",
+      "region": "In overleg",
       "summary": "Pentester met ervaring in geautoriseerde beveiligingstests van netwerken en IT-infrastructuur. Brengt kwetsbaarheden in kaart en vertaalt technische bevindingen naar risico’s en verbeterpunten. Zoekt een vaste functie waarin technische beveiligingstests centraal staan.",
       "experience": [
         "Beveiligingstests van netwerken en IT-infrastructuur",
@@ -201,6 +185,263 @@
       "engagementTypes": [
         "loondienst"
       ]
+    },
+    {
+      "reference": "WD-P008",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Implementatieprojectmanager",
+      "sector": "projecten",
+      "contract": "Vast / interim",
+      "labels": [
+        "Implementatie",
+        "Verandering",
+        "Projectmanagement"
+      ],
+      "summary": "Projectmanager met ervaring in implementaties en verandertrajecten. Stemt planning, besluitvorming en uitvoering af met betrokken teams.",
+      "experience": [
+        "Implementaties begeleiden",
+        "Afstemming met stakeholders",
+        "Voortgang en besluitvorming"
+      ],
+      "engagementTypes": [
+        "loondienst"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P009",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Freelance PMO-specialist",
+      "sector": "projecten",
+      "contract": "Zzp",
+      "labels": [
+        "PMO",
+        "Projectondersteuning",
+        "Remote"
+      ],
+      "summary": "Ondersteunt projectteams met planning, rapportages en voorbereiding van overleg. Zoekt opdrachten die op afstand kunnen worden uitgevoerd.",
+      "experience": [
+        "Projectplanning en rapportage",
+        "Acties en besluiten bewaken",
+        "Ondersteuning van projectteams"
+      ],
+      "engagementTypes": [
+        "zzp"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "Remote"
+    },
+    {
+      "reference": "WD-P010",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Digitaal projectmanager",
+      "sector": "projecten",
+      "contract": "In overleg",
+      "labels": [
+        "Digitale projecten",
+        "UX",
+        "CRM"
+      ],
+      "summary": "Begeleidt digitale projecten op het snijvlak van gebruikerservaring, techniek en uitvoering. Stemt prioriteiten af met specialisten en interne opdrachtgevers.",
+      "experience": [
+        "Digitale projectuitvoering",
+        "Samenwerking met UX- en developmentteams",
+        "CRM-projecten"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P011",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Projectcoördinator | Kwaliteit & processen",
+      "sector": "projecten",
+      "contract": "In overleg",
+      "labels": [
+        "Projectcoördinatie",
+        "Kwaliteit",
+        "Procesverbetering"
+      ],
+      "summary": "Combineert projectondersteuning met ervaring in kwaliteitsbewaking en procesverbetering. Helpt teams afspraken om te zetten in uitvoerbare acties.",
+      "experience": [
+        "Projectondersteuning",
+        "Kwaliteitsbewaking",
+        "Verbeteracties opvolgen"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P012",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Procesregisseur sociaal domein",
+      "sector": "projecten",
+      "contract": "In overleg",
+      "labels": [
+        "Procesregie",
+        "Samenwerking",
+        "Sociaal domein"
+      ],
+      "summary": "Brengt betrokken organisaties samen rond vraagstukken in het sociaal domein. Verduidelijkt verantwoordelijkheden en helpt afspraken vertalen naar uitvoering.",
+      "experience": [
+        "Procesregie",
+        "Samenwerking tussen organisaties",
+        "Van beleid naar uitvoering"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P013",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Interim verander- en afdelingsmanager",
+      "sector": "projecten",
+      "contract": "Zzp",
+      "labels": [
+        "Verandermanagement",
+        "Teamleiding",
+        "Lean"
+      ],
+      "summary": "Interim manager voor teams en afdelingen die hun werkwijze moeten veranderen. Verbindt leidinggeven met procesverbetering en de uitvoering van veranderingen.",
+      "experience": [
+        "Team- en afdelingsleiding",
+        "Verandertrajecten",
+        "Procesverbetering"
+      ],
+      "engagementTypes": [
+        "zzp"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P014",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Facilitair manager | Workplace & hospitality",
+      "sector": "facility",
+      "contract": "Voorkeur: vaste functie",
+      "labels": [
+        "Facilitaire dienstverlening",
+        "Workplace",
+        "Hospitality"
+      ],
+      "summary": "Facilitair manager met ervaring in dienstverlening, werkomgevingen en hospitality. Organiseert de dagelijkse uitvoering en stemt af met teams, gebruikers en leveranciers.",
+      "experience": [
+        "Facilitaire dienstverlening aansturen",
+        "Werkplekken en hospitality",
+        "Samenwerking met leveranciers"
+      ],
+      "engagementTypes": [
+        "loondienst"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P015",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Interim vastgoedontwikkelaar",
+      "sector": "vastgoed",
+      "contract": "Interim",
+      "labels": [
+        "Vastgoedontwikkeling",
+        "Projectontwikkeling",
+        "Haalbaarheid"
+      ],
+      "summary": "Vastgoedontwikkelaar met ervaring in woningbouw en ontwikkeltrajecten. Begeleidt projecten van concept en haalbaarheid tot ontwerp en afstemming met uitvoerende partijen.",
+      "experience": [
+        "Concept en haalbaarheid",
+        "Ontwerp- en bouwcoördinatie",
+        "Afstemming met projectpartners"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P016",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Contractmanager | Inkoop & leveranciers",
+      "sector": "inkoop",
+      "contract": "In overleg",
+      "labels": [
+        "Contractmanagement",
+        "Inkoop",
+        "Leveranciersregie"
+      ],
+      "summary": "Contractmanager met ervaring in het beheren van overeenkomsten en het bewaken van leveranciersafspraken. Werkt samen met inkoop, interne gebruikers en contractpartners.",
+      "experience": [
+        "Contractbeheer",
+        "Leveranciersprestaties bewaken",
+        "Samenwerking met inkoop"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P017",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Business IT-consultant",
+      "sector": "it",
+      "contract": "In overleg",
+      "labels": [
+        "IT-servicemanagement",
+        "Procesanalyse",
+        "Functioneel beheer"
+      ],
+      "summary": "Werkt op het snijvlak van organisatie en IT. Analyseert gebruikersvragen en werkprocessen, vertaalt die naar verbeteringen en stemt de uitvoering af met IT-teams.",
+      "experience": [
+        "IT-serviceprocessen",
+        "Businessanalyse",
+        "Functioneel beheer"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
+    },
+    {
+      "reference": "WD-P018",
+      "status": "available",
+      "approvedForPublication": true,
+      "title": "Senior Privacy Officer",
+      "sector": "privacy",
+      "contract": "Vaste functie",
+      "labels": [
+        "Privacybeleid",
+        "Gegevensbescherming",
+        "Governance"
+      ],
+      "summary": "Adviseert organisaties over gegevensbescherming en helpt privacybeleid toepasbaar te maken in de praktijk. Heeft ervaring met risicobeoordeling en coördinatie van privacywerkzaamheden.",
+      "experience": [
+        "Privacybeleid en governance",
+        "Risicobeoordeling en audits",
+        "Advisering en coördinatie"
+      ],
+      "engagementTypes": [
+        "loondienst"
+      ],
+      "availabilityLabel": "In overleg",
+      "hours": "In overleg",
+      "region": "In overleg"
     }
   ]
 }

@@ -1,5 +1,5 @@
 export type SectorKey = 'projecten' | 'facility' | 'vastgoed' | 'techniek';
-export type ProfessionalSectorKey = SectorKey | 'hr' | 'cybersecurity';
+export type ProfessionalSectorKey = SectorKey | 'hr' | 'cybersecurity' | 'inkoop' | 'it' | 'privacy';
 export type Vacancy = {
   slug: string; reference: string; status: 'draft' | 'open' | 'closed'; approvedForPublication: boolean;
   title: string; sector: SectorKey; location: string; hours: string; contract: string;
@@ -11,8 +11,7 @@ export type AvailableProfessional = {
   reference: string; status: 'draft' | 'available' | 'soon' | 'unavailable'; approvedForPublication: boolean;
   title: string; sector: ProfessionalSectorKey; summary: string; preview?: string; experience: string[]; language?: 'nl' | 'en';
   engagementTypes?: ('loondienst' | 'zzp')[];
-  availableFrom: string; availabilityLabel?: string; labels?: string[]; hours: string; region: string; contract: string;
-  confirmedAt: string; reviewBy: string;
+  availabilityLabel?: string; labels?: string[]; hours: string; region: string; contract: string;
 };
 const validDate = (value: string) => /^\d{4}-\d{2}-\d{2}(?:T.+)?$/.test(value) && Number.isFinite(Date.parse(value));
 export function isVacancyPublic(job: Vacancy, now = Date.now()) {
@@ -21,10 +20,8 @@ export function isVacancyPublic(job: Vacancy, now = Date.now()) {
 export function isVacancyOpen(job: Vacancy, now = Date.now()) {
   return isVacancyPublic(job, now) && job.status === 'open' && validDate(job.deadline) && Date.parse(job.deadline) > now;
 }
-export function isProfessionalPublic(profile: AvailableProfessional, now = Date.now()) {
-  return profile.approvedForPublication === true && ['available', 'soon'].includes(profile.status)
-    && validDate(profile.availableFrom) && validDate(profile.confirmedAt) && Date.parse(profile.confirmedAt) <= now
-    && validDate(profile.reviewBy) && Date.parse(profile.reviewBy) > now;
+export function isProfessionalPublic(profile: AvailableProfessional) {
+  return profile.approvedForPublication === true && ['available', 'soon'].includes(profile.status);
 }
 export function validateOpportunities(jobs: Vacancy[], profiles: AvailableProfessional[]) {
   const seen = new Set<string>();
@@ -51,11 +48,10 @@ export function validateOpportunities(jobs: Vacancy[], profiles: AvailableProfes
     if (!['draft','available','soon','unavailable'].includes(profile.status)) throw new Error(`Profile ${profile.reference}: invalid status`);
     if (profile.approvedForPublication && ['available','soon'].includes(profile.status)) {
       for (const field of ['title','sector','summary','hours','region','contract'] as const) if (!profile[field]?.trim()) throw new Error(`Profile ${profile.reference}: missing ${field}`);
-      if (![profile.availableFrom,profile.confirmedAt,profile.reviewBy].every(validDate) || Date.parse(profile.reviewBy) <= Date.parse(profile.confirmedAt)) throw new Error(`Profile ${profile.reference}: invalid availability dates`);
       if (profile.preview !== undefined && !profile.preview.trim()) throw new Error(`Profile ${profile.reference}: empty preview`);
       if (profile.engagementTypes !== undefined && (!profile.engagementTypes.length || profile.engagementTypes.some(type => !['loondienst','zzp'].includes(type)))) throw new Error(`Profile ${profile.reference}: invalid engagement type`);
       if (!profile.experience?.length || profile.experience.some(item => !item.trim())) throw new Error(`Profile ${profile.reference}: missing experience`);
-      if (!['projecten','facility','vastgoed','techniek','hr','cybersecurity'].includes(profile.sector)) throw new Error(`Profile ${profile.reference}: invalid category`);
+      if (!['projecten','facility','vastgoed','techniek','hr','cybersecurity','inkoop','it','privacy'].includes(profile.sector)) throw new Error(`Profile ${profile.reference}: invalid category`);
       if (profile.language !== undefined && !['nl','en'].includes(profile.language)) throw new Error(`Profile ${profile.reference}: invalid language`);
     }
   }

@@ -4,7 +4,6 @@ import { isProfessionalPublic } from '@/data/publication';
 import { matchingProfessionals, sectorLabels } from '@/data/profileOverview';
 import type { ProfessionalSectorKey } from '@/data/publication';
 
-const formatDate = (date: string, language = 'nl') => new Intl.DateTimeFormat(language === 'en' ? 'en-GB' : 'nl-NL', { dateStyle: 'long', timeZone: 'Europe/Amsterdam' }).format(new Date(date));
 
 type SearchRole = { id: string; title: string; area: string; description: string };
 
@@ -13,7 +12,7 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
   const [interactive, setInteractive] = useState(false);
   const [sector, setSector] = useState('');
   const [engagement, setEngagement] = useState('');
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(9);
   useEffect(() => { setInteractive(true); }, []);
   const profiles = availableProfessionals.filter(profile => isProfessionalPublic(profile)
     && (!sectorFilter || profile.sector === sectorFilter)
@@ -30,10 +29,10 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
   return <div className="professional-overview">
     {overview && <div className="profile-controls">
       <div className="profile-filters">
-        <label htmlFor={id + '-sector'}>Vakgebied<select id={id + '-sector'} disabled={!interactive} value={sector} onChange={event => { setSector(event.target.value); setVisibleCount(6); }}>
+        <label htmlFor={id + '-sector'}>Vakgebied<select id={id + '-sector'} disabled={!interactive} value={sector} onChange={event => { setSector(event.target.value); setVisibleCount(9); }}>
           <option value="">Alle vakgebieden</option>{sectors.map(value => <option key={value} value={value}>{sectorLabels[value]}</option>)}
         </select></label>
-        <label htmlFor={id + '-engagement'}>Inzet<select id={id + '-engagement'} disabled={!interactive} value={engagement} onChange={event => { setEngagement(event.target.value); setVisibleCount(6); }}>
+        <label htmlFor={id + '-engagement'}>Inzet<select id={id + '-engagement'} disabled={!interactive} value={engagement} onChange={event => { setEngagement(event.target.value); setVisibleCount(9); }}>
           <option value="">Alle vormen</option><option value="loondienst">Loondienst</option><option value="zzp">Zzp / interim</option>
         </select></label>
       </div>
@@ -44,7 +43,7 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
         <h3>{profile.title}</h3>
         <ul className="profile-labels" aria-label={profile.language === 'en' ? 'Engagement and expertise' : 'Contractvorm en expertise'}><li>{profile.contract}</li>{profile.labels?.map(label => <li key={label}>{label}</li>)}</ul>
         <dl className="profile-facts">
-          <div><dt>{profile.language === 'en' ? 'Availability' : 'Beschikbaarheid'}</dt><dd>{profile.availabilityLabel ?? formatDate(profile.availableFrom, profile.language)}</dd></div>
+          <div><dt>{profile.language === 'en' ? 'Availability' : 'Beschikbaarheid'}</dt><dd>{profile.availabilityLabel ?? (profile.language === 'en' ? 'By agreement' : 'In overleg')}</dd></div>
           <div><dt>{profile.language === 'en' ? 'Hours' : 'Inzet'}</dt><dd>{profile.hours}</dd></div>
           <div><dt>{profile.language === 'en' ? 'Location' : 'Regio'}</dt><dd>{profile.region}</dd></div>
         </dl>
@@ -54,7 +53,6 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
           <div className="profile-details-body">
             <p>{profile.summary}</p>
             <ul>{profile.experience.map(item => <li key={item}>{item}</li>)}</ul>
-            <p className="profile-updated">{profile.language === 'en' ? 'Updated on ' : 'Bijgewerkt op '}<time dateTime={profile.confirmedAt}>{formatDate(profile.confirmedAt, profile.language)}</time>.</p>
             <a className="action-arrow profile-request" href={`/contact?type=opdrachtgever&profiel=${encodeURIComponent(`${profile.reference} — ${profile.title}`)}#contact`}>{profile.language === 'en' ? 'Request the full profile' : 'Vraag het volledige profiel op'}<span className="sr-only">: {profile.title}</span></a>
           </div>
         </details>
@@ -67,7 +65,7 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
         <a className="action-arrow profile-toggle" href={`/contact?type=opdrachtgever&onderwerp=${encodeURIComponent(role.title)}#contact`}>Bespreek deze rol</a>
       </article>)}
     </div>
-    {overview && !matches.length && <div className="profile-empty"><p>Geen profiel gevonden met deze combinatie. Vertel ons wie je zoekt; we kijken ook in ons bredere netwerk.</p><button type="button" className="profile-reset" onClick={() => { setSector(''); setEngagement(''); setVisibleCount(6); }}>Wis filters</button><a className="action-arrow" href="/contact?type=opdrachtgever#contact">Neem contact op</a></div>}
-    {overview && interactive && matches.length > visibleCount && <div className="profile-more"><p>{Math.min(visibleCount, matches.length)} van {matches.length} professionals</p><button type="button" className="agency-button" aria-controls={id + '-profiles'} onClick={() => setVisibleCount(count => count + 6)}>Toon meer</button></div>}
+    {overview && !matches.length && <div className="profile-empty"><p>Geen profiel gevonden met deze combinatie. Vertel ons wie je zoekt; we kijken ook in ons bredere netwerk.</p><button type="button" className="profile-reset" onClick={() => { setSector(''); setEngagement(''); setVisibleCount(9); }}>Wis filters</button><a className="action-arrow" href="/contact?type=opdrachtgever#contact">Neem contact op</a></div>}
+    {overview && interactive && matches.length > visibleCount && <div className="profile-more"><p>{Math.min(visibleCount, matches.length)} van {matches.length} professionals</p><button type="button" className="agency-button" aria-controls={id + '-profiles'} onClick={() => setVisibleCount(count => count + 9)}>Toon meer</button></div>}
   </div>;
 }
