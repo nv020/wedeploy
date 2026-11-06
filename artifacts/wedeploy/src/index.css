@@ -1019,3 +1019,73 @@ main a, main button { text-wrap: balance; }
   .page-shell .closing-portrait { width: 80px; }
   .page-shell .closing-with-portrait .closing-actions { grid-column: auto; max-width: 16rem; }
 }
+
+/* Recruitment pages: a shared visual language, different compositions per audience. */
+.recruit-page { --recruit-ink: #172641; --recruit-rule: #d6dce4; }
+.recruit-page .agency-intro { padding-bottom: clamp(2.5rem, 6vw, 6rem); }
+.recruit-page .intro-content .page-title { font-size: clamp(2.2rem, 5.5vw, 5.3rem); letter-spacing: -.065em; line-height: 1.02; max-width: 15ch; overflow-wrap: anywhere; }
+.recruit-page .agency-intro .hero-media { border-radius: 1rem; max-height: none; }
+.recruit-main .agency-intro .hero-media { border-radius: .5rem 5rem .5rem .5rem; }
+.recruit-facility .agency-intro { background: #eaf3f5; color: var(--recruit-ink); }
+.recruit-facility .agency-intro .hero-media { border-radius: 5rem .5rem .5rem .5rem; }
+.recruit-property .agency-intro { background: #f0eee7; color: var(--recruit-ink); }
+.recruit-property .agency-intro .hero-media { border-radius: 0; }
+.recruit-projects .agency-intro { background: radial-gradient(circle at 10% 90%, #22456b, var(--recruit-ink) 60%); }
+.recruit-projects .agency-intro .hero-media { border-radius: .5rem; }
+.recruit-city .agency-intro { background: #203653; }
+.recruit-city .agency-intro .hero-media { border-radius: .5rem .5rem 4rem .5rem; }
+.recruit-page main h2 { line-height: 1.1; letter-spacing: -.04em; text-wrap: balance; }
+.recruit-number { color: #4075a5; font-size: .8rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.recruit-arrow { width: 1.1rem; height: .9rem; color: #256598; align-self: center; }
+.recruit-split { display: grid; gap: 1.4rem 3rem; }
+.recruit-copy { display: grid; gap: 1rem; max-width: 66ch; line-height: 1.75; }
+.recruit-copy a { width: fit-content; font-weight: 650; }
+.recruit-roles header { margin-bottom: 1.5rem; }
+.recruit-roles ul, .recruit-directory ul { list-style: none; padding: 0; margin: 0; }
+.recruit-roles li { border-top: 1px solid var(--recruit-rule); }
+.recruit-roles li:last-child { border-bottom: 1px solid var(--recruit-rule); }
+.recruit-roles a { min-height: 4rem; display: grid; align-items: baseline; grid-template-columns: 1.75rem minmax(0,1fr) auto; gap: .5rem; padding: 1rem .2rem; }
+.recruit-roles strong { display: block; font-size: clamp(1.05rem, 2vw, 1.5rem); letter-spacing: -.025em; hyphens: auto; overflow-wrap: anywhere; }
+.recruit-roles a span span { display: block; color: hsl(var(--muted-foreground)); font-size: .9rem; line-height: 1.6; margin-top: .25rem; }
+.recruit-roles a:hover strong, .recruit-directory a:hover strong { text-decoration: underline; text-underline-offset: .24em; }
+.recruit-selection ul { margin: 0; padding: 0; list-style: none; }
+.recruit-selection li { border-top: 1px solid var(--recruit-rule); padding: .9rem 0; }
+.recruit-selection li::before { content: ""; display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; background: #4075a5; margin-right: .65em; vertical-align: .1em; }
+.recruit-situations > div > div { display: grid; gap: 1.5rem; margin-top: 1.75rem; }
+.recruit-situations article { border-top: 2px solid #8ab8dd; padding-top: 1rem; }
+.recruit-situations h3, .recruit-process h3 { margin-block: .5rem; }
+.recruit-situations article p, .recruit-process li p, .recruit-candidate p { line-height: 1.7; }
+.recruit-directory nav { margin-top: 1.75rem; }
+.recruit-directory ul { display: grid; gap: .75rem; }
+.recruit-directory a { display: grid; grid-template-columns: 1fr auto; align-content: start; gap: .45rem .75rem; min-height: 9.5rem; padding: 1.2rem; background: #eaf3f5; border-radius: .65rem; }
+.recruit-directory li:nth-child(2) a { background: #e7eef8; }
+.recruit-directory li:nth-child(3) a { background: #f0eee7; }
+.recruit-directory li:nth-child(4) a { background: #eef0f4; }
+.recruit-directory strong { grid-column: 1; font-size: clamp(1.2rem, 2.6vw, 2.25rem); line-height: 1.1; letter-spacing: -.04em; }
+.recruit-directory a > span:nth-of-type(2) { grid-column: 1; font-size: .9rem; }
+.recruit-directory .recruit-arrow { grid-column: 2; grid-row: 1; }
+.recruit-process ol { display: grid; gap: 1.4rem; margin-top: 2rem; list-style: none; padding: 0; }
+.recruit-process li, .recruit-process details { border-top: 1px solid #91b8d660; padding-top: 1rem; }
+.recruit-process .recruit-number, .recruit-page .section-navy .eyebrow { color: #b5dcff; }
+.recruit-process details { margin-top: 1.6rem; max-width: 70ch; }
+.recruit-process details summary { font-weight: 650; cursor: pointer; }
+.recruit-process details p { margin-top: .75rem; line-height: 1.65; }
+.recruit-candidate p { margin-top: .7rem; max-width: 60ch; }
+.recruit-candidate .recruit-split { align-items: center; }
+@media (min-width: 768px) {
+  .recruit-split { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: start; }
+  .recruit-directory ul { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .recruit-directory a { height: 100%; padding: 1.6rem; }
+  .recruit-directory li:last-child { grid-column: 1 / -1; }
+  .recruit-directory li:last-child a { min-height: 0; }
+  .recruit-situations > div > div { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 3rem; }
+  .recruit-process ol { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 2rem; }
+  .recruit-page.recruit-property .hero-with-image .intro-editorial-grid { grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); }
+  .recruit-page.recruit-facility .hero-with-image .intro-editorial-grid { grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); }
+  .recruit-city .hero-with-image .intro-editorial-grid { align-items: end; }
+}
+
+@media (min-width: 1100px) {
+  .recruit-directory ul { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .recruit-directory li:first-child, .recruit-directory li:nth-child(4) { grid-column: span 2; }
+}

@@ -108,6 +108,37 @@ export const hiringPages: HiringPage[] = [
     ]
   },
   {
+    slug: 'werving-selectie-technisch-beheer', label: 'Werving & selectie technisch beheer',
+    title: 'Werving & selectie technisch beheer | Wedeploy',
+    description: 'Een technisch beheerder, coördinator of installatieverantwoordelijke nodig? Wedeploy helpt je zoeken naar een vaste collega voor gebouwgebonden techniek.',
+    intro: 'Een vaste collega die grip houdt op onderhoud en installaties? We zoeken technisch beheerders en coördinatoren die weten wat er op locatie nodig is en goed afstemmen met gebruikers en onderhoudspartners.',
+    heading: 'Wie houdt overzicht op locatie?',
+    paragraphs: [
+      'De ene beheerder regelt het dagelijks onderhoud en handelt storingen af. De andere bewaakt onderhoudscontracten of stuurt technisch werk op meerdere locaties aan. We bespreken wat iemand zelf moet beoordelen, wat bij leveranciers ligt en hoeveel ruimte de rol krijgt om verbeteringen door te voeren.',
+      'Bij het selecteren kijken we naar de gebouwen, installaties en veiligheidsverantwoordelijkheden die bij de vacature horen. Zo maak je onderscheid tussen ervaring die vanaf dag één nodig is en kennis die iemand op locatie kan opbouwen.'
+    ],
+    image: { src: '/images/context-technisch-beheer-v2.webp', alt: 'Technicus bekijkt een tablet bij een luchtbehandelingsinstallatie', width: 1100, height: 800 },
+    situations: [
+      ['Onderhoud beter organiseren', 'Je zoekt een collega die meldingen, onderhoudsplanning en de voortgang van leveranciers bij elkaar houdt.'],
+      ['Technische verantwoordelijkheid beleggen', 'Je zoekt een collega die inspecties en veilig werken organiseert. We bespreken vooraf welke bevoegdheden en aanwijzingen de functie vraagt.']
+    ],
+    roles: [
+      { title: 'Technisch beheerder', text: 'Houdt grip op installaties, meldingen en gepland onderhoud.', href: '/functies/technisch-beheerder' },
+      { title: 'Technisch coördinator', text: 'Stemt werkzaamheden, planning en leveranciers af.', href: '/functies/technisch-coordinator' },
+      { title: 'Installatieverantwoordelijke', text: 'Draagt binnen de afgesproken aanwijzing verantwoordelijkheid voor veilige bedrijfsvoering van installaties.', href: '/functies/installatieverantwoordelijke' }
+    ],
+    selectionTitle: 'Welke techniek moet iemand kennen?',
+    selection: ['Ervaring met de gebouwtypen en installaties in jouw portefeuille.', 'Dagelijks beheer, onderhoudsplanning of regie op contractpartners.', 'Afstemming bij storingen en werkzaamheden in gebouwen die in gebruik blijven.', 'Vereiste bevoegdheden, certificaten en eventuele bereikbaarheidsdiensten.'],
+    sector: 'techniek', areaPath: '/technisch-beheer',
+    contextTitle: 'Een vaste collega of eerst tijdelijke versterking?',
+    context: 'Voor structureel beheer zoeken we een vaste collega. Is er eerst vervanging nodig of loopt er een afgebakend onderhoudsproject? Dan bespreken we ook detachering of interim-inzet.',
+    faq: [
+      { question: 'Zoeken jullie ook voor meerdere locaties?', answer: 'Ja. We bespreken de locaties, reisbewegingen en eventuele bereikbaarheidsdiensten vooraf, zodat die verwachtingen duidelijk zijn voor kandidaten.' },
+      { question: 'Kunnen jullie zoeken op specifieke installatiekennis?', answer: 'Ja. We spreken af welke installaties, disciplines en bevoegdheden centraal staan. Die eisen gebruiken we bij de zoektocht en de gesprekken.' },
+      { question: 'Komt de kandidaat rechtstreeks bij ons in dienst?', answer: 'Ja. Bij werving & selectie neemt jouw organisatie de kandidaat rechtstreeks in dienst. Voor tijdelijke inzet bespreken we een andere vorm.' }
+    ]
+  },
+  {
     slug: 'werving-selectie-amsterdam', label: 'Werving & selectie Amsterdam',
     title: 'Werving & selectie Amsterdam | Bespreek je vacature | Wedeploy',
     description: 'Een werving- en selectiebureau in Amsterdam zoeken? Wedeploy helpt bij projectmanagement, Facility Management en vastgoed. Bespreek jouw vacature.',
