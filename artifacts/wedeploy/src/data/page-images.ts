@@ -14,7 +14,7 @@ export const pageImages: Record<string, PageImage> = {
   'Contact': { src: '/images/contact-bureau.webp', alt: 'Een persoon werkt aan een laptop op een bureau met een telefoon', width: 1000, height: 668 },
   'Ons netwerk': { src: '/images/netwerk-overleg.webp', alt: 'Twee mensen schudden elkaar de hand', width: 900, height: 601 },
   'Expertise & diensten': { src: '/images/expertise-overzicht.webp', alt: 'Lijnen en vormen in moderne architectuur', width: 1000, height: 667 },
-  'Werving & selectie': { src: '/images/werving-kennismaking.webp', alt: 'Open kantoor met werkplekken en zichtbare plafondinstallaties', width: 1000, height: 667 },
+  'Werving & selectie': { src: '/images/kennis-interim-inhuren-v2.webp', alt: 'Twee mensen in gesprek aan een tafel met een laptop', width: 1100, height: 800 },
   'Detachering': { src: '/images/detachering-kantoor.webp', alt: 'Een lichte werkplek met uitzicht over de stad', width: 1000, height: 667 },
   'Interim & zzp-bemiddeling': { src: '/images/interim-projectteam.webp', alt: 'Professionals die samen aan een project werken', width: 1000, height: 667 },
   'Zzp-opdrachten': { src: '/images/zzp-werkoverleg.webp', alt: 'Twee mensen bekijken documenten naast een laptop', width: 1000, height: 667 },

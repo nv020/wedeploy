@@ -21,7 +21,7 @@ export const hiringPages: HiringPage[] = [
       'Facility Management raakt de hele organisatie. De ene functie draait om dagelijkse dienstverlening en het aansturen van een team. Een andere vraagt om leveranciersregie, contractmanagement of het ontwikkelen van de werkomgeving. De titel alleen vertelt dus niet wie je nodig hebt.',
       'Vanuit ervaring in facilitaire managementfuncties bespreken we de omvang van de locaties, de dienstverlening en de verdeling tussen eigen medewerkers en leveranciers. Dat vertalen we naar een zoekprofiel en een gerichte benadering van kandidaten.'
     ],
-    image: { src: '/images/functie-facilitair-manager.webp', alt: 'Medewerkers werken aan bureaus in een lichte kantoorruimte', width: 1100, height: 800 },
+    image: { src: '/images/context-workplace-manager-v2.webp', alt: 'Twee professionals tijdens een rondgang op kantoor', width: 1100, height: 800 },
     situations: [
       ['De facilitaire organisatie versterken', 'Een manager of coördinator vertrekt, het aantal locaties groeit of het team krijgt een ander takenpakket. We bespreken welke verantwoordelijkheid de nieuwe collega overneemt en wat diegene moet kunnen organiseren.'],
       ['Meer regie op dienstverlening', 'Je wilt de samenwerking met leveranciers verbeteren, afspraken beter bewaken of workplace en hospitality verder ontwikkelen. We zoeken naar ervaring met de diensten en de omgeving waarin iemand gaat werken.']
@@ -53,7 +53,7 @@ export const hiringPages: HiringPage[] = [
       'Een projectmanager voor een verhuizing heeft andere ervaring nodig dan iemand die een organisatieverandering begeleidt. Ook binnen PMO lopen functies uiteen: van praktische ondersteuning tot planning, rapportage en projectbeheersing.',
       'We bespreken de projecten, de fase waarin ze zich bevinden en de verantwoordelijkheid van de nieuwe collega. Hoeveel beslisruimte krijgt iemand? Met welke partijen werkt diegene samen? Zo zoeken we op relevante ervaring, in plaats van alleen op een functietitel.'
     ],
-    image: { src: '/images/functie-contractmanager.webp', alt: 'Een rustige vergaderruimte met een lange tafel en leren stoelen', width: 1100, height: 800 },
+    image: { src: '/images/functie-projectleider.webp', alt: 'Een projectteam bespreekt plannen rond een vergadertafel', width: 1100, height: 800 },
     situations: [
       ['Een eigen projectorganisatie opbouwen', 'Er komen meer projecten of je wilt minder afhankelijk zijn van tijdelijke inzet. We zoeken een vaste collega die past bij de opgaven en de manier waarop jouw organisatie projecten uitvoert.'],
       ['Meer overzicht en voortgang', 'Projectleiders hebben ondersteuning nodig bij planning, informatie en besluitvorming. We helpen het verschil tussen PMO, coördinatie en projectleiding concreet te maken voordat de zoektocht begint.']
@@ -85,7 +85,7 @@ export const hiringPages: HiringPage[] = [
       'Bij vastgoedbeheer komen techniek, financiën, dienstverlening en de belangen van eigenaren en gebruikers samen. Een portefeuille met kantoren vraagt andere kennis dan een organisatie met veel operationele locaties. Ook maakt het uit of iemand aan eigenaarszijde of als dienstverlener werkt.',
       'We bespreken het type vastgoed, de beheerorganisatie en de verantwoordelijkheid van de nieuwe collega. Onze achtergrond in vastgoedbeheer en huisvesting helpt om door te vragen over onderhoud, leveranciers, investeringen en de samenwerking met de organisatie.'
     ],
-    image: { src: '/images/technisch-beheer-modern.webp', alt: 'Moderne kantoorruimte met glaswanden en zichtbare klimaatinstallaties', width: 1100, height: 734 },
+    image: { src: '/images/functie-vastgoedmanager.webp', alt: 'Gevels van moderne kantoorgebouwen vanaf straatniveau', width: 1100, height: 800 },
     situations: [
       ['Een portefeuille vraagt om versterking', 'Meer locaties, een andere verdeling van taken of het vertrek van een collega. We bespreken hoeveel verantwoordelijkheid bij de functie hoort en hoe technisch, commercieel en administratief beheer samenkomen.'],
       ['Huisvesting en beheer beter verbinden', 'Verbouwingen, verhuizingen of onderhoudsplannen raken ook de dagelijkse bedrijfsvoering. We zoeken naar ervaring met de gebouwen én de afstemming met gebruikers en betrokken afdelingen.']
@@ -117,7 +117,7 @@ export const hiringPages: HiringPage[] = [
       'Wedeploy is gevestigd op IJburg. Onze achtergrond ligt in het aansturen van teams, vastgoedbeheer, facilitaire dienstverlening en projecten, ook binnen Amsterdam. Die ervaring helpt om de inhoud van een functie en de omgeving waarin iemand gaat werken te begrijpen.',
       'We helpen organisaties die een vaste collega willen aannemen en de zoektocht willen uitbesteden. Van het aanscherpen van het profiel tot het benaderen en spreken van kandidaten. De kandidaat komt rechtstreeks bij jouw organisatie in dienst.'
     ],
-    image: { src: '/images/werving-amsterdam.webp', alt: 'Professionals overleggen aan een tafel in een lichte glazen vergaderruimte', width: 1100, height: 800 },
+    image: { src: '/images/context-facilitair-manager-v2.webp', alt: 'Twee professionals bespreken documenten in een lichte vergaderruimte', width: 1100, height: 800 },
     situations: [
       ['Een vacature blijft openstaan', 'Er komen weinig passende reacties of de zoektocht kost intern veel tijd. We bespreken het profiel, de voorwaarden en de werving tot nu toe. Daarna bepalen we hoe we gericht mensen kunnen benaderen.'],
       ['Een gerichte of vertrouwelijke zoektocht', 'Je wilt een sleutelrol invullen of kandidaten persoonlijk laten benaderen. Vooraf spreken we af welke informatie gedeeld kan worden, wie de contacten begeleidt en hoe de selectie verloopt.']
