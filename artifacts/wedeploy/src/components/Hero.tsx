@@ -64,7 +64,7 @@ export function Hero() {
       />
 
       {/* Hero text content — overlaps image via z-index, aligned with container */}
-      <div className="flex-1 flex items-center relative z-10 pb-12 md:pb-24 pt-10 w-full">
+      <div className="flex-1 flex items-center relative z-10 pb-8 pt-10 w-full">
         <div className="container mx-auto px-4 md:px-6 w-full">
         <motion.div
           variants={stagger}
@@ -119,36 +119,23 @@ export function Hero() {
           {/* Contact details strip */}
           <motion.div
             variants={fadeUp}
-            className="flex flex-wrap gap-6 pt-7"
-            style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
+            className="flex flex-wrap gap-x-6 gap-y-1 border-t border-white/15 pt-3"
           >
-            <a href="tel:0852128668" className="flex items-center gap-2.5 group">
-
-              <span
-                className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
-                style={{ color: "rgba(255,255,255,0.60)" }}
-              >
-                085 212 8668
-              </span>
+            <a href="tel:0852128668" className="inline-flex min-h-11 items-center text-sm font-medium text-white/85 hover:text-white hover:underline underline-offset-4">
+              085 212 8668
             </a>
 
-            <a href="mailto:info@wedeploy.nl" className="flex items-center gap-2.5 group">
-
-              <span
-                className="text-[13.5px] font-medium group-hover:text-white transition-colors duration-200"
-                style={{ color: "rgba(255,255,255,0.60)" }}
-              >
-                info@wedeploy.nl
-              </span>
+            <a href="mailto:info@wedeploy.nl" className="inline-flex min-h-11 items-center text-sm font-medium text-white/85 hover:text-white hover:underline underline-offset-4">
+              info@wedeploy.nl
             </a>
           </motion.div>
         </motion.div>
         </div>
       </div>
 
-      {/* Curved bottom edge — cream arch */}
-      <div className="hidden md:block absolute bottom-0 left-0 right-0 leading-none pointer-events-none" style={{ zIndex: 20 }}>
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="block w-full h-24 md:h-36">
+      {/* Reserve space for the wave so it cannot cover the contact links. */}
+      <div aria-hidden="true" className="hidden md:block relative shrink-0 leading-none pointer-events-none">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="block w-full h-[clamp(4rem,8vw,9rem)]">
           <ellipse cx="720" cy="120" rx="900" ry="120" fill="hsl(36 28% 97%)" />
         </svg>
       </div>
