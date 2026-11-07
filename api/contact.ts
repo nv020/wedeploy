@@ -63,12 +63,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: "De toestemmingstekst is bijgewerkt. Vernieuw de pagina en maak jouw keuze opnieuw." });
     }
     const receivedAt = new Date().toISOString();
-    const sourcePath = get("sourcePath");
+    const submittedPath = get("sourcePath");
+    const sourcePath = /^\/(?!\/)[a-zA-Z0-9/_-]*$/.test(submittedPath) && submittedPath.length <= 300 ? submittedPath : null;
     const consentRecord = isCandidate ? {
       recordId: randomUUID(),
       receivedAt,
       source: "wedeploy.nl/contact-form",
-      sourcePath: /^\/(?!\/)[a-zA-Z0-9/_-]*$/.test(sourcePath) && sourcePath.length <= 300 ? sourcePath : null,
+      sourcePath,
       name: naam,
       email,
       purpose: "future_functions_and_assignments",
@@ -117,6 +118,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         "Nieuw bericht via wedeploy.nl", "",
         `Naam: ${naam}`, `E-mailadres: ${email}`,
         `Telefoon: ${get("telefoon") || "Niet ingevuld"}`, `Type: ${type}`,
+        `Pagina: ${sourcePath ?? "Niet meegestuurd"}`,
         ...(functie ? [`Functie: ${functie}`] : []),
         ...(onderwerp ? [`Onderwerp / profiel: ${onderwerp}`] : []),
         ...(referentie ? [`Vacaturereferentie: ${referentie}`] : []),
@@ -133,7 +135,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           "", "--- Registratiegegevens ---",
           `Ontvangen op (UTC): ${consentRecord.receivedAt}`,
           `Registratie: ${consentRecord.recordId}`,
-          `Pagina: ${consentRecord.sourcePath ?? "Niet meegestuurd"}`,
           `Tekstversie: ${consentRecord.consentVersion ?? "Onbekend (bijvoorbeeld een ouder formulier)"}`,
           `Privacyverklaring: ${consentRecord.privacyPolicyUrl}`,
           "De getoonde keuzetekst en de vastgelegde uitkomst staan ook in de JSON-bijlage. Bewaking van de bewaartermijn gebeurt niet automatisch via dit formulier.",
