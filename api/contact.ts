@@ -157,21 +157,24 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
     const functie = get("functie").replace(/[\r\n]/g, " ").slice(0, 200);
     const referentie = get("vacatureId").slice(0, 100);
-    const onderwerp = get("onderwerp").replace(/[\r\n]/g, " ").slice(0, 200);
+    const context = get("onderwerp").replace(/[\r\n]/g, " ").slice(0, 200);
+    const openApplication = isCandidate && !functie && !referentie;
+    const onderwerp = openApplication ? "Open inschrijving" : context || (isCandidate ? "Professional" : "Opdrachtgever");
     const type = isCandidate ? "Professional" : "Opdrachtgever";
     const preferences = isCandidate ? candidatePreferenceLines(fields) : [];
     const { error } = await new Resend(apiKey).emails.send({
       from: "Wedeploy <no-reply@wedeploy.nl>",
       to: "info@wedeploy.nl",
       replyTo: email,
-      subject: functie ? `Nieuwe reactie — ${functie}` : onderwerp ? `Nieuwe aanvraag — ${onderwerp}` : `Nieuwe aanvraag — ${type}`,
+      subject: functie ? `Nieuwe reactie — ${functie}` : `Nieuwe aanvraag — ${onderwerp}`,
       text: [
         "Nieuw bericht via wedeploy.nl", "",
         `Naam: ${naam}`, `E-mailadres: ${email}`,
         `Telefoon: ${get("telefoon") || "Niet ingevuld"}`, `Type: ${type}`,
         `Pagina: ${sourcePath ?? "Niet meegestuurd"}`,
         ...(functie ? [`Functie: ${functie}`] : []),
-        ...(onderwerp ? [`Onderwerp / profiel: ${onderwerp}`] : []),
+        `Onderwerp / profiel: ${onderwerp}`,
+        ...(openApplication && context && context !== onderwerp ? [`Context: ${context}`] : []),
         ...(referentie ? [`Vacaturereferentie: ${referentie}`] : []),
         `CV: ${cv ? attachments[0].filename : "Niet meegestuurd"}`,
         ...(preferences.length ? ["", "Werkvoorkeuren:", ...preferences] : []),
