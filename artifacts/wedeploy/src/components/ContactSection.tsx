@@ -84,20 +84,18 @@ function CandidatePreferences() {
         </label>}
         <label className="block min-w-0">
           <span className={caption}>Hoeveel uur per week wil je werken?</span>
-          <input name="candidateHours" type="number" min="1" max="80" step="0.5" placeholder="Bijv. 8, 16 of 32" className={inputCls} />
+          <input name="candidateHours" type="number" min="1" max="80" step="0.5" placeholder="Bijv. 8, 16, 24, 32 of 40" className={inputCls} />
         </label>
       </div>
-      <fieldset className="min-w-0">
-        <legend className={caption}>Hoe wil je werken?</legend>
-        <div className="flex flex-wrap gap-x-4 gap-y-0.5">
-          {([["onsite", "Op locatie"], ["hybrid", "Hybride"], ["remote", "Volledig remote"]] as const).map(([value, label]) => (
-            <label key={value} className="inline-flex min-h-9 items-center gap-2 text-sm text-primary">
-              <input type="checkbox" name="candidateWorkplace" value={value} className="size-4 shrink-0 accent-primary" />
-              {label}
-            </label>
-          ))}
-        </div>
-      </fieldset>
+      <label className="block min-w-0">
+        <span className={caption}>Hoe wil je werken?</span>
+        <select name="candidateWorkplace" className={inputCls} defaultValue="">
+          <option value="">Maak een keuze</option>
+          <option value="onsite">Op locatie</option>
+          <option value="hybrid">Hybride</option>
+          <option value="remote">Volledig remote</option>
+        </select>
+      </label>
       {(engagement === "permanent" || engagement === "both") && <CompensationPreference key="salary" />}
       {(engagement === "freelance" || engagement === "both") && <CompensationPreference key="rate" freelance />}
     </fieldset>
@@ -280,25 +278,12 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                     <input id="contact-onderwerp" type="text" name="onderwerp" maxLength={200} value={requestContext} onChange={(e) => setRequestContext(e.target.value)} placeholder={role === "opdrachtgever" ? "Bijvoorbeeld een functie of samenwerking" : "Bijvoorbeeld een functie of opdracht"} className={inputCls} />
                   </div>
 
-                  {/* Bericht */}
-                  <div>
-                    <label htmlFor="contact-bericht" className={labelCls}>
-                      {role === "opdrachtgever" ? "Omschrijving" : "Motivatie"}{" "}
-                      <span className="text-accent">*</span>
-                    </label>
-                    <textarea
-                      required
-                      rows={4}
-                      id="contact-bericht"
-                      name="bericht"
-                      placeholder={
-                        role === "opdrachtgever"
-                          ? "Vertel welke professional je zoekt en wat diegene moet doen..."
-                          : "Vertel kort over jouw ervaring, gewenste functie of opdracht, regio en beschikbaarheid..."
-                      }
-                      className={`${inputCls} resize-none`}
-                    />
-                  </div>
+                  {role === "opdrachtgever" && (
+                    <div>
+                      <label htmlFor="contact-bericht" className={labelCls}>Omschrijving <span className="text-accent">*</span></label>
+                      <textarea required rows={4} id="contact-bericht" name="bericht" placeholder="Vertel welke professional je zoekt en wat diegene moet doen..." className={`${inputCls} resize-none`} />
+                    </div>
+                  )}
 
                   {/* CV upload — kandidaat only */}
                   <AnimatePresence>
@@ -361,7 +346,17 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                     )}
                   </AnimatePresence>
 
-                  {role === "kandidaat" && <CandidatePreferences key={activeVacancyId} />}
+                  {role === "kandidaat" && <>
+                    <CandidatePreferences key={activeVacancyId} />
+                    <div>
+                      <label htmlFor="contact-opmerkingen" className={labelCls}>
+                        Opmerkingen{" "}
+                        {cvFile ? <span className="text-primary/30 font-normal normal-case">(optioneel)</span> : <span className="text-accent">*</span>}
+                      </label>
+                      <textarea required={!cvFile} rows={3} id="contact-opmerkingen" name="bericht" placeholder="Wil je nog iets toelichten?" className={`${inputCls} resize-none`} />
+                      {!cvFile && <p className="mt-1.5 text-xs text-muted-foreground">Stuur je geen cv mee? Geef dan kort een toelichting.</p>}
+                    </div>
+                  </>}
 
                   {/* Error */}
                   {error && (
