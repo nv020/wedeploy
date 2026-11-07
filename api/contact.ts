@@ -16,6 +16,51 @@ const MIME_TYPES: Record<string, string> = {
   ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
 };
 
+function candidatePreferenceLines(fields: Record<string, string[] | undefined>) {
+  const get = (name: string) => (fields[name]?.[0] ?? "").trim();
+  const numeric = (name: string, max: number, step: number) => {
+    const raw = get(name);
+    if (!/^\d+(?:\.\d{1,2})?$/.test(raw)) return null;
+    const value = Number(raw);
+    return value >= 1 && value <= max && Math.abs(value / step - Math.round(value / step)) < 1e-8 ? value : null;
+  };
+  const lines: string[] = [];
+  const engagement = get("candidateEngagement");
+  if (engagement === "permanent") lines.push("Type werk: Vaste baan");
+  if (engagement === "freelance") lines.push("Type werk: Zzp-opdracht");
+  if (engagement === "both") lines.push("Type werk: Geen voorkeur (beide)");
+  const availability = get("candidateAvailability");
+  if (availability === "now") lines.push("Beschikbaarheid: Per direct");
+  if (availability === "discuss") lines.push("Beschikbaarheid: In overleg");
+  if (availability === "date") {
+    const date = get("candidateStartDate");
+    const parsed = /^\d{4}-\d{2}-\d{2}$/.test(date) ? new Date(date) : null;
+    lines.push(parsed && Number.isFinite(parsed.valueOf()) && parsed.toISOString().slice(0, 10) === date
+      ? `Beschikbaar vanaf: ${date}` : "Beschikbaarheid: Datum niet ingevuld");
+  }
+  const hours = numeric("candidateHours", 80, 0.5);
+  if (hours !== null) lines.push(`Gewenste uren per week: ${hours}`);
+  const selected = fields.candidateWorkplace ?? [];
+  const workplace = ([["onsite", "Op locatie"], ["hybrid", "Hybride"], ["remote", "Volledig remote"]] as const)
+    .filter(([key]) => selected.includes(key)).map(([, label]) => label);
+  if (workplace.length) lines.push(`Werkvorm: ${workplace.join(", ")}`);
+  if (engagement === "permanent" || engagement === "both") {
+    const salary = numeric("candidateSalary", 999999, 1);
+    const salaryHours = numeric("candidateSalaryHours", 80, 0.5);
+    if (get("candidateSalaryLater") === "yes") lines.push("Salarisindicatie: Bespreek ik liever later");
+    else if (salary !== null) {
+      lines.push(`Salarisindicatie bruto per maand: € ${salary}`);
+      if (salaryHours !== null) lines.push(`Salaris gebaseerd op uren per week: ${salaryHours}`);
+    }
+  }
+  if (engagement === "freelance" || engagement === "both") {
+    const rate = numeric("candidateRate", 10000, 0.01);
+    if (get("candidateRateLater") === "yes") lines.push("Uurtarief: Bespreek ik liever later");
+    else if (rate !== null) lines.push(`Uurtarief (all-in, incl. reiskosten, excl. btw): € ${rate}`);
+  }
+  return lines;
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
@@ -28,7 +73,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       maxFiles: 1,
       maxFileSize: MAX_CV_BYTES,
       maxTotalFileSize: MAX_CV_BYTES,
-      maxFields: 16,
+      maxFields: 32,
       maxFieldsSize: 32 * 1024,
       allowEmptyFiles: false,
     });
@@ -108,7 +153,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const functie = get("functie").replace(/[\r\n]/g, " ").slice(0, 200);
     const referentie = get("vacatureId").slice(0, 100);
     const onderwerp = get("onderwerp").replace(/[\r\n]/g, " ").slice(0, 200);
-    const type = get("type") === "kandidaat" ? "Professional" : "Opdrachtgever";
+    const type = isCandidate ? "Professional" : "Opdrachtgever";
+    const preferences = isCandidate ? candidatePreferenceLines(fields) : [];
     const { error } = await new Resend(apiKey).emails.send({
       from: "Wedeploy <no-reply@wedeploy.nl>",
       to: "info@wedeploy.nl",
@@ -123,6 +169,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         ...(onderwerp ? [`Onderwerp / profiel: ${onderwerp}`] : []),
         ...(referentie ? [`Vacaturereferentie: ${referentie}`] : []),
         `CV: ${cv ? attachments[0].filename : "Niet meegestuurd"}`,
+        ...(preferences.length ? ["", "Werkvoorkeuren:", ...preferences] : []),
         ...(consentRecord ? [
           "", `Kandidatenpool: ${consentGranted ? "TOESTEMMING GEGEVEN" : "GEEN TOESTEMMING"}`,
           consentGranted
