@@ -41,9 +41,11 @@ function candidatePreferenceLines(fields: Record<string, string[] | undefined>) 
   const hours = numeric("candidateHours", 80, 0.5);
   if (hours !== null) lines.push(`Gewenste uren per week: ${hours}`);
   const selected = fields.candidateWorkplace ?? [];
-  const workplace = ([["onsite", "Op locatie"], ["hybrid", "Hybride"], ["remote", "Volledig remote"]] as const)
-    .filter(([key]) => selected.includes(key)).map(([, label]) => label);
-  if (workplace.length) lines.push(`Werkvorm: ${workplace.join(", ")}`);
+  const workplace = selected.length === 1
+    ? ([["onsite", "Op locatie"], ["hybrid", "Hybride"], ["remote", "Volledig remote"]] as const)
+      .find(([key]) => key === get("candidateWorkplace"))?.[1]
+    : null;
+  if (workplace) lines.push(`Werkvorm: ${workplace}`);
   if (engagement === "permanent" || engagement === "both") {
     const salary = numeric("candidateSalary", 999999, 1);
     const salaryHours = numeric("candidateSalaryHours", 80, 0.5);
@@ -86,8 +88,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const naam = get("naam");
     const email = get("email");
     const bericht = get("bericht");
-    if (!naam || !email || !bericht) {
-      return res.status(400).json({ error: "Naam, e-mail en bericht zijn verplicht." });
+    const isCandidate = get("type") === "kandidaat";
+    if (!naam || !email) {
+      return res.status(400).json({ error: "Naam en e-mail zijn verplicht." });
+    }
+    if (!bericht && !(isCandidate && files.cv?.length)) {
+      return res.status(400).json({ error: isCandidate ? "Stuur je cv mee of geef kort een toelichting." : "Vul een omschrijving in." });
     }
     if (naam.length > 200 || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return res.status(400).json({ error: "Vul een geldige naam en e-mailadres in." });
@@ -96,7 +102,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: "Upload uw bestand via het cv-veld." });
     }
 
-    const isCandidate = get("type") === "kandidaat";
     const consentValue = get("talentpoolConsent");
     const submittedVersion = get("talentpoolConsentVersion");
     const policy = talentpoolPolicy(submittedVersion);
@@ -177,7 +182,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             : "Geen toestemming geregistreerd voor 12 maanden bewaren. Behandel deze reactie en plan een kennismaking; vraag apart toestemming voor opname in de kandidatenpool.",
           ...(consentRecord.expiresAt ? [`Geldig tot (UTC): ${consentRecord.expiresAt}`] : []),
         ] : []),
-        "", "Bericht:", bericht,
+        ...(bericht ? ["", "Bericht:", bericht] : []),
         ...(consentRecord ? [
           "", "--- Registratiegegevens ---",
           `Ontvangen op (UTC): ${consentRecord.receivedAt}`,
