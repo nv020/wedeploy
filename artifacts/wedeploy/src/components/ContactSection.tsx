@@ -24,6 +24,8 @@ async function submitForm(data: FormData): Promise<void> {
 const inputCls =
   "w-full rounded-[10px] border border-primary/10 bg-[#FEFDF9] px-3.5 py-2.5 text-base text-primary placeholder:text-primary/30 outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all duration-200";
 
+const selectCls = inputCls.replace("text-base", "text-sm");
+
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
 function CompensationPreference({ freelance = false }: { freelance?: boolean }) {
@@ -62,7 +64,7 @@ function CandidatePreferences() {
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="block min-w-0">
           <span className={caption}>Waar sta je voor open?</span>
-          <select name="candidateEngagement" className={inputCls} value={engagement} onChange={event => setEngagement(event.target.value)}>
+          <select name="candidateEngagement" className={selectCls} value={engagement} onChange={event => setEngagement(event.target.value)}>
             <option value="">Maak een keuze</option>
             <option value="permanent">Vaste baan</option>
             <option value="freelance">Zzp-opdracht</option>
@@ -71,7 +73,7 @@ function CandidatePreferences() {
         </label>
         <label className="block min-w-0">
           <span className={caption}>Wanneer kun je starten?</span>
-          <select name="candidateAvailability" className={inputCls} value={availability} onChange={event => setAvailability(event.target.value)}>
+          <select name="candidateAvailability" className={selectCls} value={availability} onChange={event => setAvailability(event.target.value)}>
             <option value="">Maak een keuze</option>
             <option value="now">Per direct</option>
             <option value="date">Vanaf een datum</option>
@@ -84,12 +86,12 @@ function CandidatePreferences() {
         </label>}
         <label className="block min-w-0">
           <span className={caption}>Hoeveel uur per week wil je werken?</span>
-          <input name="candidateHours" type="number" min="1" max="80" step="0.5" placeholder="Bijv. 8, 16, 24, 32 of 40" className={inputCls} />
+          <input name="candidateHours" type="number" min="1" max="80" step="0.5" placeholder="Bijv. 32" className={inputCls} />
         </label>
       </div>
       <label className="block min-w-0">
         <span className={caption}>Hoe wil je werken?</span>
-        <select name="candidateWorkplace" className={inputCls} defaultValue="">
+        <select name="candidateWorkplace" className={selectCls} defaultValue="">
           <option value="">Maak een keuze</option>
           <option value="onsite">Op locatie</option>
           <option value="hybrid">Hybride</option>
@@ -249,6 +251,7 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                   <input type="hidden" name="type" value={role} />
                   <input type="hidden" name="vacatureId" value={activeVacancyId} />
                   <input type="hidden" name="functie" value={activeVacancyTitle} />
+                  <input type="hidden" name="onderwerp" value={requestContext} />
 
                   {/* Naam + Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -269,13 +272,6 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                       <span className="text-primary/30 font-normal normal-case">(optioneel)</span>
                     </label>
                     <input id="contact-telefoon" type="tel" name="telefoon" placeholder="+31 6 ..." className={inputCls} />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-onderwerp" className={labelCls}>
-                      Onderwerp{" "}<span className="text-primary/30 font-normal normal-case">(optioneel)</span>
-                    </label>
-                    <input id="contact-onderwerp" type="text" name="onderwerp" maxLength={200} value={requestContext} onChange={(e) => setRequestContext(e.target.value)} placeholder={role === "opdrachtgever" ? "Bijvoorbeeld een functie of samenwerking" : "Bijvoorbeeld een functie of opdracht"} className={inputCls} />
                   </div>
 
                   {role === "opdrachtgever" && (
