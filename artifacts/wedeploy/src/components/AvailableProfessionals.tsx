@@ -7,6 +7,8 @@ import type { ProfessionalSectorKey } from '@/data/publication';
 
 type SearchRole = { id: string; title: string; area: string; description: string };
 
+const hasProfileFact = (value?: string) => Boolean(value?.trim() && !/^(in overleg|by agreement)$/i.test(value.trim()));
+
 export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, searchRoles = [] }: { limit?: number; sectorFilter?: ProfessionalSectorKey; engagementFilter?: 'loondienst' | 'zzp'; searchRoles?: readonly SearchRole[] }) {
   const id = useId();
   const [interactive, setInteractive] = useState(false);
@@ -39,14 +41,20 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
       <p role="status" aria-live="polite">{matches.length} {matches.length === 1 ? 'professional' : 'professionals'}</p>
     </div>}
     <div className="role-directory available-directory" id={id + '-profiles'}>
-      {profiles.map(profile => <article key={profile.reference} lang={profile.language ?? 'nl'} className="available-profile" hidden={!shown.has(profile.reference)}>
+      {profiles.map(profile => {
+        const english = profile.language === 'en';
+        const facts = [
+          [english ? 'Availability' : 'Beschikbaarheid', profile.availabilityLabel],
+          [english ? 'Hours' : 'Inzet', profile.hours],
+          [english ? 'Location' : 'Regio', profile.region],
+        ].filter(([, value]) => hasProfileFact(value));
+        const labels = [profile.contract, ...(profile.labels ?? [])].filter(hasProfileFact);
+        return <article key={profile.reference} lang={profile.language ?? 'nl'} className="available-profile" hidden={!shown.has(profile.reference)}>
         <h3>{profile.title}</h3>
-        <ul className="profile-labels" aria-label={profile.language === 'en' ? 'Engagement and expertise' : 'Contractvorm en expertise'}><li>{profile.contract}</li>{profile.labels?.map(label => <li key={label}>{label}</li>)}</ul>
-        <dl className="profile-facts">
-          <div><dt>{profile.language === 'en' ? 'Availability' : 'Beschikbaarheid'}</dt><dd>{profile.availabilityLabel ?? (profile.language === 'en' ? 'By agreement' : 'In overleg')}</dd></div>
-          <div><dt>{profile.language === 'en' ? 'Hours' : 'Inzet'}</dt><dd>{profile.hours}</dd></div>
-          <div><dt>{profile.language === 'en' ? 'Location' : 'Regio'}</dt><dd>{profile.region}</dd></div>
-        </dl>
+        {labels.length > 0 && <ul className="profile-labels" aria-label={english ? 'Engagement and expertise' : 'Contractvorm en expertise'}>{labels.map(label => <li key={label}>{label}</li>)}</ul>}
+        {facts.length > 0 && <dl className="profile-facts">
+          {facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
+        </dl>}
         <p className="profile-preview">{profile.preview ?? profile.summary.split(/(?<=\.)\s+/).slice(0, 2).join(' ')}</p>
         <details className="profile-details">
           <summary className="profile-toggle action-arrow"><span className="profile-toggle-closed">{profile.language === 'en' ? 'View profile' : 'Bekijk profiel'}</span><span className="profile-toggle-open">{profile.language === 'en' ? 'Close profile' : 'Sluit profiel'}</span><span className="sr-only">: {profile.title}</span></summary>
@@ -56,7 +64,8 @@ export function AvailableProfessionals({ limit, sectorFilter, engagementFilter, 
             <a className="action-arrow profile-request" href={`/contact?type=opdrachtgever&profiel=${encodeURIComponent(`${profile.reference} — ${profile.title}`)}#contact`}>{profile.language === 'en' ? 'Request the full profile' : 'Vraag het volledige profiel op'}<span className="sr-only">: {profile.title}</span></a>
           </div>
         </details>
-      </article>)}
+      </article>;
+      })}
       {examples.map(role => <article key={role.id} className="available-profile profile-search-role">
         <h3>{role.title}</h3>
         <ul className="profile-labels" aria-label="Type en vakgebied"><li>Zoekprofiel</li><li>{role.area}</li></ul>

@@ -634,11 +634,18 @@ main a, main button { text-wrap: balance; }
 .vacancy-preview .home-preview-actions p { color: rgb(255 255 255 / .7); }
 .vacancy-preview .home-preview-actions p a { color: white; }
 .home-swipe-hint { display: none; }
-.home-profile-track { position: relative; min-width: 0; max-width: 100%; }
+.home-profile-track { position: relative; min-width: 0; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; padding-bottom: .75rem; }
+.home-profile-navigation { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: .35rem; }
+.home-profile-controls { display: flex; gap: .5rem; margin-inline-start: auto; }
+.home-profile-controls button { min-height: 44px; padding-inline: .75rem; border: 1px solid hsl(var(--primary) / .2); border-radius: 100px; color: hsl(var(--primary)); font-size: .8rem; font-weight: 600; }
+.home-profile-controls button:hover:not(:disabled) { border-color: hsl(var(--primary)); }
+.home-profile-controls button:disabled { opacity: .48; }
+.home-profile-track .role-directory.available-directory { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc((100% - 1.25rem) / 2); }
+.home-profile-track .available-directory > article { scroll-snap-align: start; }
+@media (min-width: 1024px) { .home-profile-track .role-directory.available-directory { grid-auto-columns: calc((100% - 2.5rem) / 3); } }
 .home-profile-track:focus-visible { outline: 2px solid hsl(var(--accent)); outline-offset: 4px; }
 @media (max-width: 767px) {
-  .home-profile-track { overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; padding-bottom: .75rem; }
-  .home-profile-track .available-directory, .home-profile-track .professional-list { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc(100% - 2rem); gap: 1rem; align-items: start; }
+  .home-profile-track .role-directory.available-directory, .home-profile-track .professional-list { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc(100% - 2rem); gap: 1rem; align-items: start; }
   .home-profile-track .available-directory > article, .home-profile-track .professional-list > article { scroll-snap-align: start; }
   .home-profile-track .professional-row { display: block; padding: 1.25rem; border: 1px solid hsl(var(--primary) / .15); border-radius: .75rem; }
   .home-swipe-hint { display: block; margin-top: .5rem; font-size: .75rem; color: hsl(var(--muted-foreground)); }

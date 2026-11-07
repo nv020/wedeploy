@@ -17,8 +17,8 @@
         "loondienst"
       ],
       "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg",
+      "hours": "Fulltime",
+      "region": "Randstad",
       "preview": "Civiel ingenieur met ervaring in kostenramingen en aanbestedingen voor infrastructuur.",
       "summary": "Civiel ingenieur met ervaring in kostenramingen, hoeveelhedenstaten en technische documentatie. Ondersteunt de voorbereiding van aanbestedingen en beoordeelt offertes en ontwerpen.",
       "experience": [
@@ -44,9 +44,9 @@
         "loondienst",
         "zzp"
       ],
-      "availabilityLabel": "By agreement",
+      "availabilityLabel": "January 2027 preferred",
       "hours": "By agreement",
-      "region": "By agreement",
+      "region": "Amsterdam region · hybrid / remote",
       "preview": "Talent acquisition specialist with experience in technical and commercial hiring.",
       "summary": "Talent acquisition professional with experience in technical and commercial recruitment. Partners with hiring managers to define roles, identify candidates and guide the selection process.",
       "experience": [
@@ -67,9 +67,9 @@
         "Procesverbetering",
         "Implementatie"
       ],
-      "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg",
+      "availabilityLabel": "Per direct",
+      "hours": "24 uur, opbouw naar 36 uur",
+      "region": "Amsterdam / Zaanstreek",
       "summary": "Hbo-opgeleide technisch bedrijfskundige met circa zeven jaar ervaring in projecten, procesverbetering en informatievoorziening. Heeft onder meer informatieprojecten aangestuurd, werkprocessen verbeterd en ICT-vraagstukken bij bouw- en verhuisprojecten begeleid. Analyseert knelpunten, brengt betrokkenen samen en helpt nieuwe werkwijzen in de praktijk te brengen. Zoekt een vaste functie waarin projectleiding en praktische verbetering samenkomen.",
       "experience": [
         "Projecten en implementaties begeleiden",
@@ -93,9 +93,9 @@
         "Projectleiding",
         "Verandering"
       ],
-      "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg",
+      "availabilityLabel": "Vanaf januari 2027",
+      "hours": "Fulltime",
+      "region": "Midden-Nederland",
       "summary": "Projectleider en procesadviseur met acht jaar ervaring in complexe organisaties. Werkt aan procesoptimalisatie, Lean-implementaties en verandering binnen teams. Brengt overzicht in vraagstukken, maakt verbeterpunten concreet en betrekt mensen bij een nieuwe aanpak. Combineert analyse met uitvoering en aandacht voor samenwerking. Beschikbaar voor opdrachten waarin processen slimmer worden ingericht en nieuwe werkwijzen worden ingevoerd.",
       "experience": [
         "Procesoptimalisatie en Lean-implementaties",
@@ -119,9 +119,9 @@
         "Elektrische veiligheid",
         "Projectrealisatie"
       ],
-      "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg",
+      "availabilityLabel": "Vanaf 1 maart 2027",
+      "hours": "24–32 uur per week",
+      "region": "Midden-Nederland",
       "summary": "Installatieverantwoordelijke met ruime ervaring in laag- en middenspanning en technisch onderhoud. Heeft een achtergrond in Engineering en Onderhouds- en Assetmanagement. Begeleidt technische teams en werkt aan elektrische veiligheid, waaronder de implementatie van NEN 3140. Zoekt een opdracht met technische diepgang, bij voorkeur in middenspanning, waarin advies en projectrealisatie samenkomen.",
       "experience": [
         "Hbo Engineering en post-hbo Onderhouds- en Assetmanagement",
@@ -146,8 +146,8 @@
         "Facilitair & huisvesting"
       ],
       "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg",
+      "hours": "32–40 uur per week",
+      "region": "Noord-Holland",
       "summary": "Senior manager met ruim twintig jaar ervaring in bedrijfsvoering, vastgoed en facilitaire dienstverlening. Heeft verschillende ondersteunende afdelingen aangestuurd en dienstverlening voor meerdere locaties samengebracht. Werkt rustig en betrokken, geeft teams vertrouwen en neemt mensen mee in veranderingen. Zoekt een leidinggevende rol waarin hij de organisatie en dienstverlening kan verbeteren, bij voorkeur binnen zorg, onderwijs of overheid.",
       "experience": [
         "Hbo Facility Management",
@@ -174,7 +174,7 @@
       ],
       "availabilityLabel": "In overleg",
       "hours": "In overleg",
-      "region": "In overleg",
+      "region": "Randstad · hybride",
       "summary": "Pentester met ervaring in geautoriseerde beveiligingstests van netwerken en IT-infrastructuur. Brengt kwetsbaarheden in kaart en vertaalt technische bevindingen naar risico’s en verbeterpunten. Zoekt een vaste functie waarin technische beveiligingstests centraal staan.",
       "experience": [
         "Beveiligingstests van netwerken en IT-infrastructuur",
@@ -196,7 +196,8 @@
       "labels": [
         "Implementatie",
         "Verandering",
-        "Projectmanagement"
+        "Projectmanagement",
+        "Hybride mogelijk"
       ],
       "summary": "Projectmanager met ervaring in implementaties en verandertrajecten. Stemt planning, besluitvorming en uitvoering af met betrokken teams.",
       "experience": [
@@ -207,7 +208,7 @@
       "engagementTypes": [
         "loondienst"
       ],
-      "availabilityLabel": "In overleg",
+      "availabilityLabel": "Per direct",
       "hours": "In overleg",
       "region": "In overleg"
     },
@@ -234,7 +235,7 @@
       ],
       "availabilityLabel": "In overleg",
       "hours": "In overleg",
-      "region": "Remote"
+      "region": "Volledig remote"
     },
     {
       "reference": "WD-P010",
@@ -276,9 +277,9 @@
         "Kwaliteitsbewaking",
         "Verbeteracties opvolgen"
       ],
-      "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg"
+      "availabilityLabel": "Op korte termijn",
+      "hours": "Maximaal 32 uur per week",
+      "region": "Regio Amsterdam"
     },
     {
       "reference": "WD-P012",
@@ -371,8 +372,8 @@
         "Afstemming met projectpartners"
       ],
       "availabilityLabel": "In overleg",
-      "hours": "In overleg",
-      "region": "In overleg"
+      "hours": "16–24 uur per week",
+      "region": "Gelderland en omgeving"
     },
     {
       "reference": "WD-P016",
@@ -393,7 +394,7 @@
         "Samenwerking met inkoop"
       ],
       "availabilityLabel": "In overleg",
-      "hours": "In overleg",
+      "hours": "Voorkeur: 32 uur per week",
       "region": "In overleg"
     },
     {
