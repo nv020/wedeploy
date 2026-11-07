@@ -26,6 +26,84 @@ const inputCls =
 
 const labelCls = "block text-[11px] font-bold text-primary mb-1.5 tracking-wide uppercase";
 
+function CompensationPreference({ freelance = false }: { freelance?: boolean }) {
+  const [later, setLater] = useState(false);
+  const name = freelance ? "candidateRate" : "candidateSalary";
+  return (
+    <div className="space-y-2 min-w-0">
+      <p className="text-sm font-semibold text-primary">{freelance ? "Uurtarief (all-in)" : "Salarisindicatie (bruto per maand)"}</p>
+      <p className="text-xs leading-relaxed text-muted-foreground">{freelance ? "Richtbedrag per uur, incl. reiskosten en excl. btw." : "Geef een richtbedrag en het aantal uren waarop het is gebaseerd."}</p>
+      {!later && <div className={freelance ? "" : "grid gap-2 sm:grid-cols-2"}>
+        <label className="block min-w-0">
+          <span className="sr-only">{freelance ? "Uurtarief in euro per uur" : "Richtbedrag in euro per maand"}</span>
+          <input className={inputCls} type="number" name={name} min="1" max={freelance ? "10000" : "999999"} step={freelance ? "0.01" : "1"} placeholder={freelance ? "Bijv. € 85 per uur" : "Bijv. € 4.500 per maand"} />
+        </label>
+        {!freelance && <label className="block min-w-0">
+          <span className="sr-only">Uren per week waarop het salaris is gebaseerd</span>
+          <input className={inputCls} type="number" name="candidateSalaryHours" min="1" max="80" step="0.5" placeholder="Bijv. 36 uur per week" />
+        </label>}
+      </div>}
+      <label className="inline-flex min-h-9 items-center gap-2 text-sm text-primary">
+        <input type="checkbox" name={name + "Later"} value="yes" checked={later} onChange={event => setLater(event.target.checked)} className="size-4 shrink-0 accent-primary" />
+        Bespreek ik liever later
+      </label>
+    </div>
+  );
+}
+
+function CandidatePreferences() {
+  const [engagement, setEngagement] = useState("");
+  const [availability, setAvailability] = useState("");
+  const caption = "mb-1.5 block text-sm font-semibold text-primary";
+  return (
+    <fieldset className="min-w-0 space-y-3 rounded-xl border border-primary/10 p-4">
+      <legend className="px-1 text-sm font-semibold text-primary">Je werkvoorkeuren <span className="font-normal text-muted-foreground">(optioneel)</span></legend>
+      <p className="text-sm leading-relaxed text-muted-foreground">Met je voorkeuren kunnen we gerichter voor je zoeken. Vul in wat je al weet.</p>
+      <div className="grid gap-3 sm:grid-cols-2">
+        <label className="block min-w-0">
+          <span className={caption}>Waar sta je voor open?</span>
+          <select name="candidateEngagement" className={inputCls} value={engagement} onChange={event => setEngagement(event.target.value)}>
+            <option value="">Maak een keuze</option>
+            <option value="permanent">Vaste baan</option>
+            <option value="freelance">Zzp-opdracht</option>
+            <option value="both">Geen voorkeur (beide)</option>
+          </select>
+        </label>
+        <label className="block min-w-0">
+          <span className={caption}>Wanneer kun je starten?</span>
+          <select name="candidateAvailability" className={inputCls} value={availability} onChange={event => setAvailability(event.target.value)}>
+            <option value="">Maak een keuze</option>
+            <option value="now">Per direct</option>
+            <option value="date">Vanaf een datum</option>
+            <option value="discuss">In overleg</option>
+          </select>
+        </label>
+        {availability === "date" && <label className="block min-w-0">
+          <span className={caption}>Startdatum</span>
+          <input name="candidateStartDate" type="date" className={inputCls} />
+        </label>}
+        <label className="block min-w-0">
+          <span className={caption}>Hoeveel uur per week wil je werken?</span>
+          <input name="candidateHours" type="number" min="1" max="80" step="0.5" placeholder="Bijv. 8, 16 of 32" className={inputCls} />
+        </label>
+      </div>
+      <fieldset className="min-w-0">
+        <legend className={caption}>Hoe wil je werken?</legend>
+        <div className="flex flex-wrap gap-x-4 gap-y-0.5">
+          {([["onsite", "Op locatie"], ["hybrid", "Hybride"], ["remote", "Volledig remote"]] as const).map(([value, label]) => (
+            <label key={value} className="inline-flex min-h-9 items-center gap-2 text-sm text-primary">
+              <input type="checkbox" name="candidateWorkplace" value={value} className="size-4 shrink-0 accent-primary" />
+              {label}
+            </label>
+          ))}
+        </div>
+      </fieldset>
+      {(engagement === "permanent" || engagement === "both") && <CompensationPreference key="salary" />}
+      {(engagement === "freelance" || engagement === "both") && <CompensationPreference key="rate" freelance />}
+    </fieldset>
+  );
+}
+
 export function ContactSection({ defaultRole = "opdrachtgever", heading, description, context = "", readQuery = false, vacancyId = "", showProfile = false, compact = false, lockRole = false, retainContext = false }: { defaultRole?: Role; heading?: string; description?: string; context?: string; readQuery?: boolean; vacancyId?: string; showProfile?: boolean; compact?: boolean; lockRole?: boolean; retainContext?: boolean }) {
   const [role, setRole] = useState<Role>(defaultRole);
   const [sent, setSent] = useState(false);
@@ -282,6 +360,8 @@ export function ContactSection({ defaultRole = "opdrachtgever", heading, descrip
                       </motion.div>
                     )}
                   </AnimatePresence>
+
+                  {role === "kandidaat" && <CandidatePreferences key={activeVacancyId} />}
 
                   {/* Error */}
                   {error && (
