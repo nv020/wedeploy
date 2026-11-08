@@ -29,9 +29,10 @@
       <p class="description">Open de kluis om het kandidaatprofiel te bekijken.</p>
     </section>
 
-    <figure class="stage" id="vault" aria-hidden="true">
-      <div class="stage-heading"><span>WEDEPLOY</span><span>01 / PROFIEL</span></div>
-      <svg class="mechanism" viewBox="0 0 560 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <figure class="stage" id="vault">
+      <div class="stage-heading" aria-hidden="true"><span>WEDEPLOY</span><span>01 / PROFIEL</span></div>
+      <div class="stage-body">
+      <svg class="mechanism" viewBox="0 0 560 376" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
           <linearGradient id="frame" x1="97" y1="75" x2="473" y2="306" gradientUnits="userSpaceOnUse">
             <stop stop-color="#7793bc"/><stop offset=".22" stop-color="#344d72"/><stop offset=".6" stop-color="#233a5b"/><stop offset="1" stop-color="#586f91"/>
@@ -46,7 +47,7 @@
             <stop stop-color="#7e97b9"/><stop offset=".48" stop-color="#3c567b"/><stop offset="1" stop-color="#223754"/>
           </linearGradient>
           <linearGradient id="paper" x1="238" y1="112" x2="336" y2="265" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#fff"/><stop offset="1" stop-color="#dceafa"/>
+            <stop stop-color="#192f49"/><stop offset="1" stop-color="#0e2036"/>
           </linearGradient>
           <radialGradient id="chamber" cx="0" cy="0" r="1" gradientTransform="translate(280 168) rotate(90) scale(147 214)" gradientUnits="userSpaceOnUse">
             <stop stop-color="#294b73"/><stop offset="1" stop-color="#0a1629"/>
@@ -89,13 +90,11 @@
           <path d="M141 96v184m278-184v184" stroke="#5e7fa6" stroke-opacity=".25" stroke-dasharray="2 5"/>
           <g class="document">
             <g filter="url(#paper-shadow)">
-              <rect x="227" y="113" width="106" height="150" rx="6" fill="url(#paper)" stroke="#d9eaff"/>
-              <path d="M243 136h19" stroke="#259bed" stroke-width="3" stroke-linecap="round"/>
-              <text x="243" y="157" fill="#152b4d" font-size="8" font-weight="800">WEDEPLOY</text>
-              <text x="243" y="185" fill="#152b4d" font-size="10" font-weight="800">Kandidaatprofiel</text>
-              <path d="M243 198h64m-64 9h51m-51 9h61" stroke="#a1b4cc" stroke-width="1.4" stroke-linecap="round"/>
-              <rect x="243" y="236" width="28" height="12" rx="6" fill="#d3e7fa"/>
-              <text x="249" y="244" fill="#285781" font-size="5.5" font-weight="800">PROFIEL</text>
+              <rect x="227" y="113" width="106" height="150" rx="6" fill="url(#paper)" stroke="#86bde3"/>
+              <path d="M243 139l4 4-4 4m8 0h9" stroke="#86d0fa" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="243" y="174" fill="#e7f3fc" font-size="9" font-weight="800">Kandidaatprofiel</text>
+              <path d="M243 190h63m-63 9h51m-51 9h60" stroke="#819eb9" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M243 236h20" stroke="#63b9f1" stroke-width="2" stroke-linecap="round"/>
             </g>
           </g>
 
@@ -120,7 +119,24 @@
           </g>
         </g>
       </svg>
-      <figcaption class="stage-footer">
+
+        <section class="profile-card" id="profile-card" aria-labelledby="card-title" hidden inert>
+          <div class="terminal-header">
+            <code><span aria-hidden="true">$</span> whoami</code>
+            <span class="terminal-label">Testprofiel</span>
+          </div>
+          <div class="profile-content">
+            <p class="profile-kicker">Kandidaatprofiel</p>
+            <h2 id="card-title">Pentester</h2>
+            <ul class="profile-details">
+              <li>Netwerken &amp; Active Directory</li>
+              <li>Interesse in AI &amp; cloud red teaming</li>
+            </ul>
+            <button type="button" id="download">Download PDF <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m-3-3 3 3 3-3M3 13h10"/></svg></button>
+          </div>
+        </section>
+      </div>
+      <figcaption class="stage-footer" aria-hidden="true">
         <span class="stage-state"><span></span><span id="vault-label">Kluis gesloten</span></span>
         <span>PDF / 1 pagina</span>
       </figcaption>
@@ -128,7 +144,6 @@
 
     <div class="actions">
       <button type="button" id="open" disabled>Open profiel <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4"/></svg></button>
-      <button type="button" id="download" hidden>Download PDF <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m-3-3 3 3 3-3M3 13h10"/></svg></button>
       <p id="status" role="status"></p>
     </div>
   </main>

@@ -1,8 +1,11 @@
 const invite = new URLSearchParams(window.location.search).get("u");
 const openButton = document.querySelector("#open");
 const downloadButton = document.querySelector("#download");
+const profileCard = document.querySelector("#profile-card");
 const status = document.querySelector("#status");
 let session;
+
+const wait = milliseconds => new Promise(resolve => setTimeout(resolve, milliseconds));
 
 async function request(action) {
   const response = await fetch("/api/kluis-test", {
@@ -45,13 +48,17 @@ openButton.addEventListener("click", async () => {
   try {
     const [{ notification }] = await Promise.all([
       request("open").then(response => response.json()),
-      new Promise(resolve => setTimeout(resolve, reducedMotion ? 0 : 1095)),
+      wait(reducedMotion ? 0 : 1050),
     ]);
     label.textContent = "Kluis geopend";
+    profileCard.hidden = false;
+    vault.classList.add("is-revealed");
+    if (!reducedMotion) await wait(1120);
     openButton.hidden = true;
-    downloadButton.hidden = false;
-    downloadButton.focus({ preventScroll: true });
-    status.textContent = notification === "accepted" ? "PDF · 1 pagina" : "PDF · 1 pagina. Testmail is niet bevestigd.";
+    document.querySelector(".description").textContent = "Het kandidaatprofiel staat klaar.";
+    profileCard.inert = false;
+    downloadButton.focus();
+    status.textContent = notification === "accepted" ? "" : "Testmail is niet bevestigd.";
   } catch (error) {
     vault.classList.remove("is-open");
     status.textContent = error.message;
