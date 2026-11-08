@@ -12,42 +12,128 @@
 </head>
 <body>
   <header class="masthead">
-    <a class="brand" href="https://www.wedeploy.nl" aria-label="Wedeploy home"><img src="/favicon.svg" alt=""> Wedeploy</a>
-    <span class="tag">Testomgeving</span>
+    <div class="masthead-inner">
+      <a class="brand" href="/" aria-label="Wedeploy home">
+        <span class="wordmark"><span>WE</span>DEPLOY</span>
+        <span class="strapline">Recruitment · Detachering · Interim</span>
+      </a>
+      <span class="masthead-note">Kandidaatintroductie</span>
+    </div>
   </header>
-  <main>
-    <section class="intro">
-      <p class="eyebrow">Kandidaatintroductie</p>
-      <h1>Pentester <span>Netwerken &amp; Active Directory</span></h1>
-      <p class="description">Een korte kennismaking met een fictief kandidaatprofiel. Open de kluis om het testdocument te downloaden.</p>
-      <div class="actions">
-        <button type="button" id="open" disabled>Open profiel <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4"/></svg></button>
-        <button type="button" id="download" hidden>Download profiel <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m-3-3 3 3 3-3M3 13h10"/></svg></button>
-        <p id="status" role="status"></p>
-      </div>
+
+  <main class="layout">
+    <section class="intro" aria-labelledby="profile-title">
+      <p class="eyebrow"><span></span> Fictief testprofiel</p>
+      <h1 id="profile-title">Pentester</h1>
+      <p class="specialism">Netwerken &amp; Active Directory</p>
+      <p class="description">Open de kluis om het kandidaatprofiel te bekijken.</p>
     </section>
-    <figure class="illustration" aria-hidden="true">
-      <div class="plinth">
-        <div class="vault" id="vault">
-          <div class="inside">
-            <div class="sheet"><b>WD</b><i></i><i></i><i></i></div>
-          </div>
-          <div class="door">
-            <div class="face">
-              <span class="screw top-left"></span><span class="screw top-right"></span>
-              <span class="screw bottom-left"></span><span class="screw bottom-right"></span>
-              <span class="dial"><i></i></span>
-              <span class="hinge hinge-top"></span><span class="hinge hinge-bottom"></span>
-            </div>
-            <div class="back"></div>
-          </div>
-          <div class="led"></div>
-        </div>
-      </div>
-      <figcaption><span class="signal"></span><span id="vault-label">KLUIS GESLOTEN</span></figcaption>
+
+    <figure class="stage" id="vault" aria-hidden="true">
+      <div class="stage-heading"><span>WEDEPLOY</span><span>01 / PROFIEL</span></div>
+      <svg class="mechanism" viewBox="0 0 560 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="frame" x1="97" y1="75" x2="473" y2="306" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7793bc"/><stop offset=".22" stop-color="#344d72"/><stop offset=".6" stop-color="#233a5b"/><stop offset="1" stop-color="#586f91"/>
+          </linearGradient>
+          <linearGradient id="housing" x1="280" y1="65" x2="280" y2="311" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2b4264"/><stop offset=".46" stop-color="#182e4f"/><stop offset="1" stop-color="#0c1b32"/>
+          </linearGradient>
+          <linearGradient id="panel" x1="150" y1="89" x2="410" y2="293" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#354e73"/><stop offset=".45" stop-color="#223b60"/><stop offset="1" stop-color="#122643"/>
+          </linearGradient>
+          <linearGradient id="metal" x1="280" y1="126" x2="280" y2="248" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7e97b9"/><stop offset=".48" stop-color="#3c567b"/><stop offset="1" stop-color="#223754"/>
+          </linearGradient>
+          <linearGradient id="paper" x1="238" y1="112" x2="336" y2="265" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff"/><stop offset="1" stop-color="#dceafa"/>
+          </linearGradient>
+          <radialGradient id="chamber" cx="0" cy="0" r="1" gradientTransform="translate(280 168) rotate(90) scale(147 214)" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#294b73"/><stop offset="1" stop-color="#0a1629"/>
+          </radialGradient>
+          <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+            <stop stop-color="#b6ddff" stop-opacity="0"/><stop offset=".48" stop-color="#b6ddff" stop-opacity=".19"/><stop offset="1" stop-color="#b6ddff" stop-opacity="0"/>
+          </linearGradient>
+          <clipPath id="door-slot"><rect x="107" y="80" width="346" height="216" rx="12"/></clipPath>
+          <clipPath id="left-half"><rect x="106" y="78" width="174" height="220"/></clipPath>
+          <clipPath id="right-half"><rect x="280" y="78" width="174" height="220"/></clipPath>
+          <filter id="vault-shadow" x="48" y="40" width="464" height="324" filterUnits="userSpaceOnUse">
+            <feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#040e21" flood-opacity=".55"/>
+          </filter>
+          <filter id="paper-shadow" x="182" y="72" width="220" height="260" filterUnits="userSpaceOnUse">
+            <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#020b1d" flood-opacity=".55"/>
+          </filter>
+          <g id="dial">
+            <circle cx="280" cy="188" r="59" fill="#172e50" stroke="#142846" stroke-width="3"/>
+            <circle cx="280" cy="188" r="55.5" fill="#213b60" stroke="url(#metal)"/>
+            <circle cx="280" cy="188" r="49" stroke="#a5c6e9" stroke-opacity=".36" stroke-width="1.75" pathLength="120" stroke-dasharray="1 4"/>
+            <circle cx="280" cy="188" r="40" stroke="#7f9dbf" stroke-opacity=".45"/>
+            <circle cx="280" cy="188" r="36" fill="#152e51" stroke="#102542"/>
+            <circle cx="280" cy="188" r="30" stroke="#45658c" stroke-opacity=".7"/>
+          </g>
+        </defs>
+
+        <g stroke="#adc6e9" stroke-opacity=".23">
+          <path d="M78 83V57h26m352 0h26v26M78 294v26h26m352 0h26v-26"/>
+          <path d="M65 188h17m396 0h17" stroke-dasharray="2 3"/>
+        </g>
+        <g filter="url(#vault-shadow)">
+          <rect x="89" y="62" width="382" height="252" rx="22" fill="url(#housing)" stroke="url(#frame)"/>
+          <rect x="96.5" y="69.5" width="367" height="237" rx="17.5" stroke="#0f223e" stroke-width="2"/>
+          <rect x="101" y="74" width="358" height="228" rx="16" stroke="#6485b0" stroke-opacity=".45"/>
+          <rect x="107" y="80" width="346" height="216" rx="12" fill="url(#chamber)"/>
+        </g>
+
+        <g clip-path="url(#door-slot)">
+          <path d="M114 87h332M114 289h332" stroke="#6585ab" stroke-opacity=".48"/>
+          <path d="M141 96v184m278-184v184" stroke="#5e7fa6" stroke-opacity=".25" stroke-dasharray="2 5"/>
+          <g class="document">
+            <g filter="url(#paper-shadow)">
+              <rect x="227" y="113" width="106" height="150" rx="6" fill="url(#paper)" stroke="#d9eaff"/>
+              <path d="M243 136h19" stroke="#259bed" stroke-width="3" stroke-linecap="round"/>
+              <text x="243" y="157" fill="#152b4d" font-size="8" font-weight="800">WEDEPLOY</text>
+              <text x="243" y="185" fill="#152b4d" font-size="10" font-weight="800">Kandidaatprofiel</text>
+              <path d="M243 198h64m-64 9h51m-51 9h61" stroke="#a1b4cc" stroke-width="1.4" stroke-linecap="round"/>
+              <rect x="243" y="236" width="28" height="12" rx="6" fill="#d3e7fa"/>
+              <text x="249" y="244" fill="#285781" font-size="5.5" font-weight="800">PROFIEL</text>
+            </g>
+          </g>
+
+          <g class="panel panel-left">
+            <path d="M119 80H279.5V296H119a12 12 0 0 1-12-12V92a12 12 0 0 1 12-12Z" fill="url(#panel)" stroke="#59779e"/>
+            <path d="M121 90h151v196H121a4 4 0 0 1-4-4V94a4 4 0 0 1 4-4Z" stroke="#b4c9e6" stroke-opacity=".17"/>
+            <path d="M139 181h20m-20 7h13m-13 7h20" stroke="#b6cef0" stroke-opacity=".36" stroke-linecap="round"/>
+            <use href="#dial" clip-path="url(#left-half)"/>
+          </g>
+          <g class="panel panel-right">
+            <path d="M280.5 80H441a12 12 0 0 1 12 12v192a12 12 0 0 1-12 12H280.5V80Z" fill="url(#panel)" stroke="#526f96"/>
+            <path d="M288 90h151a4 4 0 0 1 4 4v188a4 4 0 0 1-4 4H288" stroke="#b4c9e6" stroke-opacity=".17"/>
+            <path d="M401 181h20m-13 7h13m-20 7h20" stroke="#b6cef0" stroke-opacity=".36" stroke-linecap="round"/>
+            <use href="#dial" clip-path="url(#right-half)"/>
+          </g>
+          <rect class="light-pass" x="110" y="80" width="136" height="216" fill="url(#sheen)"/>
+          <g class="rotor">
+            <circle cx="280" cy="188" r="34" fill="#152c4c" stroke="#607ea5"/>
+            <path d="M280 150a38 38 0 0 1 38 38" stroke="#4cabed" stroke-width="2" stroke-linecap="round"/>
+            <path d="M280 169l15 8.5v20l-15 8.5-15-8.5v-20l15-8.5Z" stroke="#8faacb" stroke-opacity=".8"/>
+            <path d="M274 187v-3a6 6 0 0 1 12 0v3m-13 0h14v9h-14z" stroke="#d0e2f7" stroke-width="1.4" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption class="stage-footer">
+        <span class="stage-state"><span></span><span id="vault-label">Kluis gesloten</span></span>
+        <span>PDF / 1 pagina</span>
+      </figcaption>
     </figure>
+
+    <div class="actions">
+      <button type="button" id="open" disabled>Open profiel <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4"/></svg></button>
+      <button type="button" id="download" hidden>Download PDF <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m-3-3 3 3 3-3M3 13h10"/></svg></button>
+      <p id="status" role="status"></p>
+    </div>
   </main>
-  <footer>
+
+  <footer class="footer">
     <span>Wedeploy · Fictief testprofiel</span>
     <span>Bezoek, openen en downloaden worden per uitnodiging geregistreerd.</span>
   </footer>

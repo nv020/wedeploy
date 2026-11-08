@@ -45,12 +45,12 @@ openButton.addEventListener("click", async () => {
   try {
     const [{ notification }] = await Promise.all([
       request("open").then(response => response.json()),
-      new Promise(resolve => setTimeout(resolve, reducedMotion ? 0 : 850)),
+      new Promise(resolve => setTimeout(resolve, reducedMotion ? 0 : 1095)),
     ]);
     label.textContent = "Kluis geopend";
     openButton.hidden = true;
     downloadButton.hidden = false;
-    downloadButton.focus();
+    downloadButton.focus({ preventScroll: true });
     status.textContent = notification === "accepted" ? "PDF · 1 pagina" : "PDF · 1 pagina. Testmail is niet bevestigd.";
   } catch (error) {
     vault.classList.remove("is-open");
