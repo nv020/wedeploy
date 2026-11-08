@@ -12,8 +12,8 @@ const sessionPattern = /^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i;
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Cache-Control", "no-store");
   res.setHeader("X-Robots-Tag", "noindex, nofollow");
-  // These public-source invitations are exclusively for the fictional preview.
-  if (process.env.VERCEL_ENV === "production") return res.status(404).end();
+  // The published invitations are for the fictional demo and expire after one week.
+  if (Date.now() >= Date.parse("2026-11-15T23:00:00Z")) return res.status(410).end();
   if (req.method !== "POST") return res.status(405).setHeader("Allow", "POST").end();
   if (!req.headers["content-type"]?.startsWith("application/json")) return res.status(415).end();
 
