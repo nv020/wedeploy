@@ -3,6 +3,9 @@
   "outputDirectory": "artifacts/wedeploy/dist/public",
   "installCommand": "pnpm install",
   "framework": null,
+  "functions": {
+    "api/kluis-test.ts": { "includeFiles": "shared/kluis-testprofiel.pdf" }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
