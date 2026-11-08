@@ -38,17 +38,22 @@ async function prepare() {
 openButton.addEventListener("click", async () => {
   openButton.disabled = true;
   status.textContent = "De kluis wordt geopend…";
+  const vault = document.querySelector("#vault");
+  const label = document.querySelector("#vault-label");
+  vault.classList.add("is-open");
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   try {
-    const { notification } = await (await request("open")).json();
-    document.querySelector("#vault").classList.add("is-open");
-    document.querySelector("#vault-label").textContent = "Kluis geopend";
-    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    await new Promise(resolve => setTimeout(resolve, reducedMotion ? 0 : 850));
+    const [{ notification }] = await Promise.all([
+      request("open").then(response => response.json()),
+      new Promise(resolve => setTimeout(resolve, reducedMotion ? 0 : 850)),
+    ]);
+    label.textContent = "Kluis geopend";
     openButton.hidden = true;
     downloadButton.hidden = false;
     downloadButton.focus();
     status.textContent = notification === "accepted" ? "PDF · 1 pagina" : "PDF · 1 pagina. Testmail is niet bevestigd.";
   } catch (error) {
+    vault.classList.remove("is-open");
     status.textContent = error.message;
     openButton.disabled = false;
   }

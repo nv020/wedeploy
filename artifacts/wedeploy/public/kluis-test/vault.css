@@ -21,7 +21,7 @@ h1 span { display: block; font-size: .41em; line-height: 1.2; letter-spacing: -.
 .description { max-width: 37ch; color: var(--muted); line-height: 1.65; }
 .actions { margin-top: 30px; min-height: 91px; }
 button { color: #0b1b2a; background: #9cd9ff; border: 0; border-radius: 9px; min-height: 47px; padding: 0 16px; font: inherit; font-weight: 750; cursor: pointer; }
-button span { display: inline-block; margin-left: 16px; }
+button svg { width: 16px; height: 16px; margin-left: 14px; vertical-align: -.14em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 button:hover { background: #d1edff; }
 button:focus-visible, .brand:focus-visible { outline: 2px solid white; outline-offset: 4px; }
 button:disabled { opacity: .62; cursor: wait; }
